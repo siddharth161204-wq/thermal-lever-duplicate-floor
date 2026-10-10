@@ -7,301 +7,669 @@
    "metadata.pkl": "7579f48cf3767552154fba3ad9acb048c3166088c2a46fadb06b2a221b3a1e1f",
    "protocol_features.csv": "ed6da2af4d8dc3267217573014a18a90d0d578d92a2a12c1272f2b33ea5c85da"
   },
-  "dataset_licence": "CC BY 4.0 (doi.org/10.25740/td676xr4322)"
+  "dataset": "Geslin et al., Nature Energy 10, 172-180 (2025); dataset doi.org/10.25740/td676xr4322 (CC BY 4.0)"
  },
- "normalisation_check_constant_current": [
-  {
-   "cell": "cell_003",
-   "protocol": "CC_(5%_storage)_Co10",
-   "ncv": 0.03961604249510634,
-   "i_max_minus_mean": 0.04105292005927244,
-   "ratio": 0.9649993822098032
+ "normalisation_check": {
+  "plateau_currents_without_storage": {
+   "Co5": 0.19998325742164902,
+   "Co2": 0.4999590477148063,
+   "Co10": 0.09995934316621338
   },
-  {
-   "cell": "cell_004",
-   "protocol": "CC_(5%_storage)_Co10",
-   "ncv": 0.03963360520841378,
-   "i_max_minus_mean": 0.03997133409483277,
-   "ratio": 0.9915507226849691
+  "max_abs_plateau_difference": 2.687959344160884e-06,
+  "max_abs_rest_fraction_difference": 2.219059033747861e-06,
+  "max_ncv_without_rest": 1.895361567665772e-08,
+  "rows": [
+   {
+    "cell": "cell_003",
+    "protocol": "CC_(5%_storage)_Co10",
+    "c_plus_ncv": 0.0999593229358339,
+    "plateau_without_storage": 0.09995934316621338,
+    "difference": -2.0230379482732985e-08
+   },
+   {
+    "cell": "cell_004",
+    "protocol": "CC_(5%_storage)_Co10",
+    "c_plus_ncv": 0.099959822033581,
+    "plateau_without_storage": 0.09995934316621338,
+    "difference": 4.788673676203725e-07
+   },
+   {
+    "cell": "cell_005",
+    "protocol": "CC_(50%_storage)_Co10",
+    "c_plus_ncv": 0.09995972646443566,
+    "plateau_without_storage": 0.09995934316621338,
+    "difference": 3.8329822227289867e-07
+   },
+   {
+    "cell": "cell_006",
+    "protocol": "CC_(50%_storage)_Co10",
+    "c_plus_ncv": 0.0999593174105449,
+    "plateau_without_storage": 0.09995934316621338,
+    "difference": -2.5755668486837635e-08
+   },
+   {
+    "cell": "cell_007",
+    "protocol": "CC_(100%_storage)_Co10",
+    "c_plus_ncv": 0.09995983462067257,
+    "plateau_without_storage": 0.09995934316621338,
+    "difference": 4.914544591838599e-07,
+    "rest_fraction_minus_ncv_over_plateau": -1.5686138994941423e-06
+   },
+   {
+    "cell": "cell_008",
+    "protocol": "CC_(100%_storage)_Co10",
+    "c_plus_ncv": 0.09995962382902962,
+    "plateau_without_storage": 0.09995934316621338,
+    "difference": 2.8066281623773115e-07,
+    "rest_fraction_minus_ncv_over_plateau": -1.5813269536590902e-06
+   },
+   {
+    "cell": "cell_011",
+    "protocol": "CC_(5%_storage)_Co5",
+    "c_plus_ncv": 0.19998315614202788,
+    "plateau_without_storage": 0.19998325742164902,
+    "difference": -1.0127962113415379e-07
+   },
+   {
+    "cell": "cell_012",
+    "protocol": "CC_(5%_storage)_Co5",
+    "c_plus_ncv": 0.19998333334593676,
+    "plateau_without_storage": 0.19998325742164902,
+    "difference": 7.592428774572113e-08
+   },
+   {
+    "cell": "cell_013",
+    "protocol": "CC_(50%_storage)_Co5",
+    "c_plus_ncv": 0.19998403755376204,
+    "plateau_without_storage": 0.19998325742164902,
+    "difference": 7.801321130207484e-07
+   },
+   {
+    "cell": "cell_014",
+    "protocol": "CC_(50%_storage)_Co5",
+    "c_plus_ncv": 0.1999830729099466,
+    "plateau_without_storage": 0.19998325742164902,
+    "difference": -1.8451170241684522e-07
+   },
+   {
+    "cell": "cell_015",
+    "protocol": "CC_(100%_storage)_Co5",
+    "c_plus_ncv": 0.19998252532837113,
+    "plateau_without_storage": 0.19998325742164902,
+    "difference": -7.320932778887013e-07,
+    "rest_fraction_minus_ncv_over_plateau": -1.8380832557118865e-06
+   },
+   {
+    "cell": "cell_016",
+    "protocol": "CC_(100%_storage)_Co5",
+    "c_plus_ncv": 0.19998267111060242,
+    "plateau_without_storage": 0.19998325742164902,
+    "difference": -5.863110466020061e-07,
+    "rest_fraction_minus_ncv_over_plateau": -1.8393347941403348e-06
+   },
+   {
+    "cell": "cell_019",
+    "protocol": "CC_(5%_storage)_Co2",
+    "c_plus_ncv": 0.49996104627930177,
+    "plateau_without_storage": 0.4999590477148063,
+    "difference": 1.9985644954534365e-06
+   },
+   {
+    "cell": "cell_020",
+    "protocol": "CC_(5%_storage)_Co2",
+    "c_plus_ncv": 0.4999617356741505,
+    "plateau_without_storage": 0.4999590477148063,
+    "difference": 2.687959344160884e-06
+   },
+   {
+    "cell": "cell_021",
+    "protocol": "CC_(50%_storage)_Co2",
+    "c_plus_ncv": 0.49996165870426645,
+    "plateau_without_storage": 0.4999590477148063,
+    "difference": 2.610989460138935e-06
+   },
+   {
+    "cell": "cell_022",
+    "protocol": "CC_(50%_storage)_Co2",
+    "c_plus_ncv": 0.4999613635139493,
+    "plateau_without_storage": 0.4999590477148063,
+    "difference": 2.3157991430045044e-06
+   },
+   {
+    "cell": "cell_023",
+    "protocol": "CC_(100%_storage)_Co2",
+    "c_plus_ncv": 0.4999598499142841,
+    "plateau_without_storage": 0.4999590477148063,
+    "difference": 8.021994777895891e-07,
+    "rest_fraction_minus_ncv_over_plateau": -2.2174201353974965e-06
+   },
+   {
+    "cell": "cell_024",
+    "protocol": "CC_(100%_storage)_Co2",
+    "c_plus_ncv": 0.4999599135267464,
+    "plateau_without_storage": 0.4999590477148063,
+    "difference": 8.658119400872799e-07,
+    "rest_fraction_minus_ncv_over_plateau": -2.219059033747861e-06
+   }
+  ]
+ },
+ "charge_phase_proxy_DFN": {
+  "0.062500": {
+   "discharge": {
+    "t_h": 14.76744734580761,
+    "Q_Ah": 4.614827295564878,
+    "int_I2_A2h": 1.4421335298640245
+   },
+   "cc": {
+    "t_h": 1.6976390428310435,
+    "Q_Ah": 4.244097607077609,
+    "int_I2_A2h": 10.610244017694022
+   },
+   "cv": {
+    "t_h": 0.35657981126906535,
+    "Q_Ah": 0.3710020698021215,
+    "int_I2_A2h": 0.5143217500042074
+   },
+   "per_unit_discharged_capacity": {
+    "discharged_fraction_of_rated": 0.9229654591129757,
+    "t_ch_h": 2.2256725144127656,
+    "e_ch_Crate2_h": 0.48212273418724005,
+    "cv_share_of_charge": 0.08038874472435147
+   }
   },
-  {
-   "cell": "cell_005",
-   "protocol": "CC_(50%_storage)_Co10",
-   "ncv": 0.039662686049956535,
-   "i_max_minus_mean": 0.04032094926274094,
-   "ratio": 0.9836744118176631
+  "0.100000": {
+   "discharge": {
+    "t_h": 9.19919837476438,
+    "Q_Ah": 4.599599187382191,
+    "int_I2_A2h": 2.2997995936910955
+   },
+   "cc": {
+    "t_h": 1.6917141815600674,
+    "Q_Ah": 4.229285453900169,
+    "int_I2_A2h": 10.573213634750422
+   },
+   "cv": {
+    "t_h": 0.3564048748502359,
+    "Q_Ah": 0.3705986864480706,
+    "int_I2_A2h": 0.5133796194289275
+   },
+   "per_unit_discharged_capacity": {
+    "discharged_fraction_of_rated": 0.9199198374764382,
+    "t_ch_h": 2.226410359873081,
+    "e_ch_Crate2_h": 0.4820677977590981,
+    "cv_share_of_charge": 0.08056696106698331
+   }
   },
-  {
-   "cell": "cell_006",
-   "protocol": "CC_(50%_storage)_Co10",
-   "ncv": 0.03967181204388328,
-   "i_max_minus_mean": 0.04047239391433599,
-   "ratio": 0.9802190630940383
+  "0.200000": {
+   "discharge": {
+    "t_h": 4.560643668729095,
+    "Q_Ah": 4.560643668729095,
+    "int_I2_A2h": 4.560643668729095
+   },
+   "cc": {
+    "t_h": 1.675982418997043,
+    "Q_Ah": 4.189956047492607,
+    "int_I2_A2h": 10.474890118731517
+   },
+   "cv": {
+    "t_h": 0.35651282819146624,
+    "Q_Ah": 0.3709826774536959,
+    "int_I2_A2h": 0.514405617115918
+   },
+   "per_unit_discharged_capacity": {
+    "discharged_fraction_of_rated": 0.912128733745819,
+    "t_ch_h": 2.228298673194633,
+    "e_ch_Crate2_h": 0.4819186296529848,
+    "cv_share_of_charge": 0.08133910579078513
+   }
   },
-  {
-   "cell": "cell_007",
-   "protocol": "CC_(100%_storage)_Co10",
-   "ncv": 0.03970687890160108,
-   "i_max_minus_mean": 0.039946174520668835,
-   "ratio": 0.9940095485502888
-  },
-  {
-   "cell": "cell_008",
-   "protocol": "CC_(100%_storage)_Co10",
-   "ncv": 0.03974260900956014,
-   "i_max_minus_mean": 0.040058105338264156,
-   "ratio": 0.9921240326760375
-  },
-  {
-   "cell": "cell_009",
-   "protocol": "CC_(no_storage)_Co5",
-   "ncv": 1.2975476118690242e-08,
-   "i_max_minus_mean": 0.0,
-   "ratio": null
-  },
-  {
-   "cell": "cell_010",
-   "protocol": "CC_(no_storage)_Co5",
-   "ncv": 1.1544099050786991e-08,
-   "i_max_minus_mean": 0.0,
-   "ratio": null
-  },
-  {
-   "cell": "cell_011",
-   "protocol": "CC_(5%_storage)_Co5",
-   "ncv": 0.11406340725469677,
-   "i_max_minus_mean": 0.11531623189266887,
-   "ratio": 0.9891357476964893
-  },
-  {
-   "cell": "cell_012",
-   "protocol": "CC_(5%_storage)_Co5",
-   "ncv": 0.1140017172053631,
-   "i_max_minus_mean": 0.11539169583942634,
-   "ratio": 0.9879542576790148
-  },
-  {
-   "cell": "cell_013",
-   "protocol": "CC_(50%_storage)_Co5",
-   "ncv": 0.11416196112133027,
-   "i_max_minus_mean": 0.11520882309573992,
-   "ratio": 0.9909133524127776
-  },
-  {
-   "cell": "cell_014",
-   "protocol": "CC_(50%_storage)_Co5",
-   "ncv": 0.11411918621298497,
-   "i_max_minus_mean": 0.11537209408303835,
-   "ratio": 0.9891402866524066
-  },
-  {
-   "cell": "cell_015",
-   "protocol": "CC_(100%_storage)_Co5",
-   "ncv": 0.11426400495340269,
-   "i_max_minus_mean": 0.11529223723864965,
-   "ratio": 0.9910815132928806
-  },
-  {
-   "cell": "cell_016",
-   "protocol": "CC_(100%_storage)_Co5",
-   "ncv": 0.1142338711933391,
-   "i_max_minus_mean": 0.1148408086891472,
-   "ratio": 0.9947149667201406
-  },
-  {
-   "cell": "cell_017",
-   "protocol": "CC_(no_storage)_Co2",
-   "ncv": 6.681018424982567e-09,
-   "i_max_minus_mean": 0.0,
-   "ratio": null
-  },
-  {
-   "cell": "cell_019",
-   "protocol": "CC_(5%_storage)_Co2",
-   "ncv": 0.3863860545746054,
-   "i_max_minus_mean": 0.38718032987530365,
-   "ratio": 0.9979485649465869
-  },
-  {
-   "cell": "cell_020",
-   "protocol": "CC_(5%_storage)_Co2",
-   "ncv": 0.3864682497237681,
-   "i_max_minus_mean": 0.38762805214961765,
-   "ratio": 0.9970079502259503
-  },
-  {
-   "cell": "cell_021",
-   "protocol": "CC_(50%_storage)_Co2",
-   "ncv": 0.386499431952717,
-   "i_max_minus_mean": 0.38779664254819074,
-   "ratio": 0.9966549205094974
-  },
-  {
-   "cell": "cell_022",
-   "protocol": "CC_(50%_storage)_Co2",
-   "ncv": 0.3869423566004682,
-   "i_max_minus_mean": 0.38842296602512294,
-   "ratio": 0.9961881516950288
-  },
-  {
-   "cell": "cell_023",
-   "protocol": "CC_(100%_storage)_Co2",
-   "ncv": 0.38709454751087025,
-   "i_max_minus_mean": 0.38829102626940715,
-   "ratio": 0.9969186031157291
-  },
-  {
-   "cell": "cell_024",
-   "protocol": "CC_(100%_storage)_Co2",
-   "ncv": 0.3872611729913667,
-   "i_max_minus_mean": 0.3882433514782384,
-   "ratio": 0.9974701988247009
-  },
-  {
-   "cell": "cell_055",
-   "protocol": "CC_(no_storage)_Co10",
-   "ncv": 1.8563333159844682e-08,
-   "i_max_minus_mean": 0.0,
-   "ratio": null
-  },
-  {
-   "cell": "cell_056",
-   "protocol": "CC_(no_storage)_Co10",
-   "ncv": 1.895361567665772e-08,
-   "i_max_minus_mean": 0.0,
-   "ratio": null
+  "0.500000": {
+   "discharge": {
+    "t_h": 1.7814038618862953,
+    "Q_Ah": 4.453509654715739,
+    "int_I2_A2h": 11.133774136789347
+   },
+   "cc": {
+    "t_h": 1.6332207086707786,
+    "Q_Ah": 4.0830517716769466,
+    "int_I2_A2h": 10.207629429192366
+   },
+   "cv": {
+    "t_h": 0.3564154527309276,
+    "Q_Ah": 0.3707428052427582,
+    "int_I2_A2h": 0.5138240579504978
+   },
+   "per_unit_discharged_capacity": {
+    "discharged_fraction_of_rated": 0.8907019309431478,
+    "t_ch_h": 2.2337844931973114,
+    "e_ch_Crate2_h": 0.4814833386872807,
+    "cv_share_of_charge": 0.08324200832342118
+   }
   }
- ],
+ },
  "dataset_protocol_heat_by_rate": {
   "C/16": {
    "cells": 8,
-   "max_heat_ratio_to_brief": 13.753415982626713,
-   "max_heat_ratio_to_D19_constant_current": 1.6519783821092842,
-   "max_discharge_heat_factor": 6.6942202198121725,
+   "dynamic_protocols": [
+    "Drive_City1_Co16",
+    "Drive_City2_Co16",
+    "Synthetic_1a_Co16",
+    "Synthetic_1b_Co16"
+   ],
+   "max_heat_ratio_to_brief": 13.316854176930619,
+   "discharge_heat_factor_dynamic_range": [
+    2.0392076513532214,
+    6.6942202198121725
+   ],
    "hottest_protocol": "Synthetic_1a_Co16",
-   "max_q_cycle_avg_W": 0.02513328746008682,
-   "max_dT_module_K_h5": 0.08010592749536727,
-   "max_dT_cell_K_h5": 0.019784835564369215,
-   "max_implied_module_law_1_kucinskis2022_h5": 0.0007923302897261822,
+   "hottest_protocol_c_mean": [
+    0.06507393670685602,
+    0.06465163741593843
+   ],
+   "max_q_cycle_avg_W": 0.024335505049483185,
+   "max_dT_module_K_h5": 0.07757150331616458,
+   "max_dT_module_discharge_window_K_h5": 0.04208456537872962,
+   "max_dT_cell_K_h5": 0.01915682405433477,
+   "T_mean_C_range_h5": [
+    35.455432721658326,
+    35.7477574535701
+   ],
+   "max_implied_module_law_1_kucinskis2022_h5": 0.0007672622191478491,
+   "max_implied_module_cc_charge_law_1_kucinskis2022_h5": 0.0007923302897261822,
    "protocols_exceeding_mean_3.0pct_law_1_kucinskis2022_h5": [],
+   "protocols_exceeding_cc_charge_mean_3.0pct_law_1_kucinskis2022_h5": [],
    "protocols_exceeding_worst_of_8_4.1pct_law_1_kucinskis2022_h5": [],
+   "protocols_exceeding_cc_charge_worst_of_8_4.1pct_law_1_kucinskis2022_h5": [],
    "protocols_exceeding_p95_8.7pct_law_1_kucinskis2022_h5": [],
-   "max_implied_module_law_2_schimpe2018_h5": 0.004166386005840645,
+   "protocols_exceeding_cc_charge_p95_8.7pct_law_1_kucinskis2022_h5": [],
+   "protocols_exceeding_worst_of_8_4.1pct_hottest_minus_mean_law_1_kucinskis2022_h5": [],
+   "max_implied_module_law_2_schimpe2018_h5": 0.0040345681770825315,
+   "max_implied_module_cc_charge_law_2_schimpe2018_h5": 0.004166386005840645,
    "protocols_exceeding_mean_3.0pct_law_2_schimpe2018_h5": [],
+   "protocols_exceeding_cc_charge_mean_3.0pct_law_2_schimpe2018_h5": [],
    "protocols_exceeding_worst_of_8_4.1pct_law_2_schimpe2018_h5": [],
+   "protocols_exceeding_cc_charge_worst_of_8_4.1pct_law_2_schimpe2018_h5": [],
    "protocols_exceeding_p95_8.7pct_law_2_schimpe2018_h5": [],
-   "max_dT_module_K_h10": 0.08475720151642463,
-   "max_dT_cell_K_h10": 0.01976909873466792,
-   "max_implied_module_law_1_kucinskis2022_h10": 0.0008383361897628976,
+   "protocols_exceeding_cc_charge_p95_8.7pct_law_2_schimpe2018_h5": [],
+   "protocols_exceeding_worst_of_8_4.1pct_hottest_minus_mean_law_2_schimpe2018_h5": [],
+   "implied_module_law_2_schimpe2018_dynamic_range_h5": [
+    0.0024582530463304946,
+    0.0040345681770825315
+   ],
+   "law2_exact_pair_dynamic_range_h5": [
+    0.0024651953561288984,
+    0.004052613525585729
+   ],
+   "max_dT_module_K_h10": 0.08207252256664788,
+   "max_dT_module_discharge_window_K_h10": 0.044502974305203225,
+   "max_dT_cell_K_h10": 0.019141586744083693,
+   "T_mean_C_range_h10": [
+    35.33358829091554,
+    35.547931940749436
+   ],
+   "max_implied_module_law_1_kucinskis2022_h10": 0.0008117819444453908,
+   "max_implied_module_cc_charge_law_1_kucinskis2022_h10": 0.0008383361897628976,
    "protocols_exceeding_mean_3.0pct_law_1_kucinskis2022_h10": [],
+   "protocols_exceeding_cc_charge_mean_3.0pct_law_1_kucinskis2022_h10": [],
    "protocols_exceeding_worst_of_8_4.1pct_law_1_kucinskis2022_h10": [],
+   "protocols_exceeding_cc_charge_worst_of_8_4.1pct_law_1_kucinskis2022_h10": [],
    "protocols_exceeding_p95_8.7pct_law_1_kucinskis2022_h10": [],
-   "max_implied_module_law_2_schimpe2018_h10": 0.004408303222163798,
+   "protocols_exceeding_cc_charge_p95_8.7pct_law_1_kucinskis2022_h10": [],
+   "protocols_exceeding_worst_of_8_4.1pct_hottest_minus_mean_law_1_kucinskis2022_h10": [],
+   "max_implied_module_law_2_schimpe2018_h10": 0.004268670498890333,
+   "max_implied_module_cc_charge_law_2_schimpe2018_h10": 0.004408303222163798,
    "protocols_exceeding_mean_3.0pct_law_2_schimpe2018_h10": [],
+   "protocols_exceeding_cc_charge_mean_3.0pct_law_2_schimpe2018_h10": [],
    "protocols_exceeding_worst_of_8_4.1pct_law_2_schimpe2018_h10": [],
+   "protocols_exceeding_cc_charge_worst_of_8_4.1pct_law_2_schimpe2018_h10": [],
    "protocols_exceeding_p95_8.7pct_law_2_schimpe2018_h10": [],
-   "max_dT_module_K_h25": 0.0751263090880343,
-   "max_dT_cell_K_h25": 0.01972208170164962,
-   "max_implied_module_law_1_kucinskis2022_h25": 0.0007430767248681242,
+   "protocols_exceeding_cc_charge_p95_8.7pct_law_2_schimpe2018_h10": [],
+   "protocols_exceeding_worst_of_8_4.1pct_hottest_minus_mean_law_2_schimpe2018_h10": [],
+   "implied_module_law_2_schimpe2018_dynamic_range_h10": [
+    0.0025997181004017715,
+    0.004268670498890333
+   ],
+   "law2_exact_pair_dynamic_range_h10": [
+    0.002605195105211324,
+    0.004282994451209691
+   ],
+   "max_dT_module_K_h25": 0.07274363508270199,
+   "max_dT_module_discharge_window_K_h25": 0.039421337271846824,
+   "max_dT_cell_K_h25": 0.019096062128720677,
+   "T_mean_C_range_h25": [
+    35.1859403682443,
+    35.30551533441451
+   ],
+   "max_implied_module_law_1_kucinskis2022_h25": 0.0007195096201107744,
+   "max_implied_module_cc_charge_law_1_kucinskis2022_h25": 0.0007430767248681242,
    "protocols_exceeding_mean_3.0pct_law_1_kucinskis2022_h25": [],
+   "protocols_exceeding_cc_charge_mean_3.0pct_law_1_kucinskis2022_h25": [],
    "protocols_exceeding_worst_of_8_4.1pct_law_1_kucinskis2022_h25": [],
+   "protocols_exceeding_cc_charge_worst_of_8_4.1pct_law_1_kucinskis2022_h25": [],
    "protocols_exceeding_p95_8.7pct_law_1_kucinskis2022_h25": [],
-   "max_implied_module_law_2_schimpe2018_h25": 0.003907391283534504,
+   "protocols_exceeding_cc_charge_p95_8.7pct_law_1_kucinskis2022_h25": [],
+   "protocols_exceeding_worst_of_8_4.1pct_hottest_minus_mean_law_1_kucinskis2022_h25": [],
+   "max_implied_module_law_2_schimpe2018_h25": 0.0037834661266493166,
+   "max_implied_module_cc_charge_law_2_schimpe2018_h25": 0.003907391283534504,
    "protocols_exceeding_mean_3.0pct_law_2_schimpe2018_h25": [],
+   "protocols_exceeding_cc_charge_mean_3.0pct_law_2_schimpe2018_h25": [],
    "protocols_exceeding_worst_of_8_4.1pct_law_2_schimpe2018_h25": [],
-   "protocols_exceeding_p95_8.7pct_law_2_schimpe2018_h25": []
+   "protocols_exceeding_cc_charge_worst_of_8_4.1pct_law_2_schimpe2018_h25": [],
+   "protocols_exceeding_p95_8.7pct_law_2_schimpe2018_h25": [],
+   "protocols_exceeding_cc_charge_p95_8.7pct_law_2_schimpe2018_h25": [],
+   "protocols_exceeding_worst_of_8_4.1pct_hottest_minus_mean_law_2_schimpe2018_h25": [],
+   "implied_module_law_2_schimpe2018_dynamic_range_h25": [
+    0.002303062598795119,
+    0.0037834661266493166
+   ],
+   "law2_exact_pair_dynamic_range_h25": [
+    0.0023058582625239696,
+    0.0037907993283395275
+   ]
   },
   "C/10": {
    "cells": 34,
-   "max_heat_ratio_to_brief": 11.203080614071709,
-   "max_heat_ratio_to_D19_constant_current": 1.976741599522219,
-   "max_discharge_heat_factor": 6.759426667034911,
+   "dynamic_protocols": [
+    "Drive_City1_Co10",
+    "Drive_City2_Co10",
+    "Periodic_A_Co10",
+    "Periodic_B_Co10",
+    "Periodic_C_Co10",
+    "Periodic_D_Co10",
+    "Periodic_E_Co10",
+    "Synthetic_1a_Co10",
+    "Synthetic_1b_Co10",
+    "Synthetic_2a_Co10",
+    "Synthetic_2b_Co10",
+    "Synthetic_2c_Co10",
+    "Synthetic_3_Co10"
+   ],
+   "max_heat_ratio_to_brief": 10.80247865534936,
+   "discharge_heat_factor_dynamic_range": [
+    1.7760648137772792,
+    6.759426667034911
+   ],
    "hottest_protocol": "Synthetic_1b_Co10",
-   "max_q_cycle_avg_W": 0.052410239712172825,
-   "max_dT_module_K_h5": 0.1664349906407665,
-   "max_dT_cell_K_h5": 0.041257156519664086,
-   "max_implied_module_law_1_kucinskis2022_h5": 0.0016462138131113882,
+   "hottest_protocol_c_mean": [
+    0.11649912675748955,
+    0.11652826369392016
+   ],
+   "max_q_cycle_avg_W": 0.05053614405856907,
+   "max_dT_module_K_h5": 0.1605238082331084,
+   "max_dT_module_discharge_window_K_h5": 0.1189046853680793,
+   "max_dT_cell_K_h5": 0.03978187500715473,
+   "T_mean_C_range_h5": [
+    35.44465843570191,
+    36.54901014389509
+   ],
+   "max_implied_module_law_1_kucinskis2022_h5": 0.0015877461189453739,
+   "max_implied_module_cc_charge_law_1_kucinskis2022_h5": 0.0016462138131113882,
    "protocols_exceeding_mean_3.0pct_law_1_kucinskis2022_h5": [],
+   "protocols_exceeding_cc_charge_mean_3.0pct_law_1_kucinskis2022_h5": [],
    "protocols_exceeding_worst_of_8_4.1pct_law_1_kucinskis2022_h5": [],
+   "protocols_exceeding_cc_charge_worst_of_8_4.1pct_law_1_kucinskis2022_h5": [],
    "protocols_exceeding_p95_8.7pct_law_1_kucinskis2022_h5": [],
-   "max_implied_module_law_2_schimpe2018_h5": 0.008651271266230262,
+   "protocols_exceeding_cc_charge_p95_8.7pct_law_1_kucinskis2022_h5": [],
+   "protocols_exceeding_worst_of_8_4.1pct_hottest_minus_mean_law_1_kucinskis2022_h5": [],
+   "max_implied_module_law_2_schimpe2018_h5": 0.008344008698930353,
+   "max_implied_module_cc_charge_law_2_schimpe2018_h5": 0.008651271266230262,
    "protocols_exceeding_mean_3.0pct_law_2_schimpe2018_h5": [],
+   "protocols_exceeding_cc_charge_mean_3.0pct_law_2_schimpe2018_h5": [],
    "protocols_exceeding_worst_of_8_4.1pct_law_2_schimpe2018_h5": [],
+   "protocols_exceeding_cc_charge_worst_of_8_4.1pct_law_2_schimpe2018_h5": [],
    "protocols_exceeding_p95_8.7pct_law_2_schimpe2018_h5": [],
-   "max_dT_module_K_h10": 0.17632526767266654,
-   "max_dT_cell_K_h10": 0.041224340636812934,
-   "max_implied_module_law_1_kucinskis2022_h10": 0.001744038859411623,
+   "protocols_exceeding_cc_charge_p95_8.7pct_law_2_schimpe2018_h5": [],
+   "protocols_exceeding_worst_of_8_4.1pct_hottest_minus_mean_law_2_schimpe2018_h5": [],
+   "implied_module_law_2_schimpe2018_dynamic_range_h5": [
+    0.003985431766399705,
+    0.008344008698930353
+   ],
+   "law2_exact_pair_dynamic_range_h5": [
+    0.004009245742689304,
+    0.00844085126351445
+   ],
+   "max_dT_module_K_h10": 0.17004785889628238,
+   "max_dT_module_discharge_window_K_h10": 0.1258814387061875,
+   "max_dT_cell_K_h10": 0.039750232561092995,
+   "T_mean_C_range_h10": [
+    35.325691551472005,
+    36.136346945098694
+   ],
+   "max_implied_module_law_1_kucinskis2022_h10": 0.0016819488085248171,
+   "max_implied_module_cc_charge_law_1_kucinskis2022_h10": 0.001744038859411623,
    "protocols_exceeding_mean_3.0pct_law_1_kucinskis2022_h10": [],
+   "protocols_exceeding_cc_charge_mean_3.0pct_law_1_kucinskis2022_h10": [],
    "protocols_exceeding_worst_of_8_4.1pct_law_1_kucinskis2022_h10": [],
+   "protocols_exceeding_cc_charge_worst_of_8_4.1pct_law_1_kucinskis2022_h10": [],
    "protocols_exceeding_p95_8.7pct_law_1_kucinskis2022_h10": [],
-   "max_implied_module_law_2_schimpe2018_h10": 0.009165366704765865,
+   "protocols_exceeding_cc_charge_p95_8.7pct_law_1_kucinskis2022_h10": [],
+   "protocols_exceeding_worst_of_8_4.1pct_hottest_minus_mean_law_1_kucinskis2022_h10": [],
+   "max_implied_module_law_2_schimpe2018_h10": 0.008839067733831734,
+   "max_implied_module_cc_charge_law_2_schimpe2018_h10": 0.009165366704765865,
    "protocols_exceeding_mean_3.0pct_law_2_schimpe2018_h10": [],
+   "protocols_exceeding_cc_charge_mean_3.0pct_law_2_schimpe2018_h10": [],
    "protocols_exceeding_worst_of_8_4.1pct_law_2_schimpe2018_h10": [],
+   "protocols_exceeding_cc_charge_worst_of_8_4.1pct_law_2_schimpe2018_h10": [],
    "protocols_exceeding_p95_8.7pct_law_2_schimpe2018_h10": [],
-   "max_dT_module_K_h25": 0.1565137739966076,
-   "max_dT_cell_K_h25": 0.04112629640065969,
-   "max_implied_module_law_1_kucinskis2022_h25": 0.0015480827421172065,
+   "protocols_exceeding_cc_charge_p95_8.7pct_law_2_schimpe2018_h10": [],
+   "protocols_exceeding_worst_of_8_4.1pct_hottest_minus_mean_law_2_schimpe2018_h10": [],
+   "implied_module_law_2_schimpe2018_dynamic_range_h10": [
+    0.004216626576580162,
+    0.008839067733831734
+   ],
+   "law2_exact_pair_dynamic_range_h10": [
+    0.004235470675665461,
+    0.00891719919764961
+   ],
+   "max_dT_module_K_h25": 0.15092682764270648,
+   "max_dT_module_discharge_window_K_h25": 0.11164943394305737,
+   "max_dT_cell_K_h25": 0.039655694210008106,
+   "T_mean_C_range_h25": [
+    35.181536557183335,
+    35.634178372221186
+   ],
+   "max_implied_module_law_1_kucinskis2022_h25": 0.0014928220771242558,
+   "max_implied_module_cc_charge_law_1_kucinskis2022_h25": 0.0015480827421172065,
    "protocols_exceeding_mean_3.0pct_law_1_kucinskis2022_h25": [],
+   "protocols_exceeding_cc_charge_mean_3.0pct_law_1_kucinskis2022_h25": [],
    "protocols_exceeding_worst_of_8_4.1pct_law_1_kucinskis2022_h25": [],
+   "protocols_exceeding_cc_charge_worst_of_8_4.1pct_law_1_kucinskis2022_h25": [],
    "protocols_exceeding_p95_8.7pct_law_1_kucinskis2022_h25": [],
-   "max_implied_module_law_2_schimpe2018_h25": 0.008135567590283204,
+   "protocols_exceeding_cc_charge_p95_8.7pct_law_1_kucinskis2022_h25": [],
+   "protocols_exceeding_worst_of_8_4.1pct_hottest_minus_mean_law_1_kucinskis2022_h25": [],
+   "max_implied_module_law_2_schimpe2018_h25": 0.007845158774977058,
+   "max_implied_module_cc_charge_law_2_schimpe2018_h25": 0.008135567590283204,
    "protocols_exceeding_mean_3.0pct_law_2_schimpe2018_h25": [],
+   "protocols_exceeding_cc_charge_mean_3.0pct_law_2_schimpe2018_h25": [],
    "protocols_exceeding_worst_of_8_4.1pct_law_2_schimpe2018_h25": [],
-   "protocols_exceeding_p95_8.7pct_law_2_schimpe2018_h25": []
+   "protocols_exceeding_cc_charge_worst_of_8_4.1pct_law_2_schimpe2018_h25": [],
+   "protocols_exceeding_p95_8.7pct_law_2_schimpe2018_h25": [],
+   "protocols_exceeding_cc_charge_p95_8.7pct_law_2_schimpe2018_h25": [],
+   "protocols_exceeding_worst_of_8_4.1pct_hottest_minus_mean_law_2_schimpe2018_h25": [],
+   "implied_module_law_2_schimpe2018_dynamic_range_h25": [
+    0.0037372822239265203,
+    0.007845158774977058
+   ],
+   "law2_exact_pair_dynamic_range_h25": [
+    0.003746886732173765,
+    0.007885774381017365
+   ]
   },
   "C/5": {
    "cells": 27,
-   "max_heat_ratio_to_brief": 7.151868928316608,
-   "max_heat_ratio_to_D19_constant_current": 2.541926190086831,
-   "max_discharge_heat_factor": 5.978875442793707,
+   "dynamic_protocols": [
+    "Periodic_A_Co5",
+    "Periodic_B_Co5",
+    "Periodic_C_Co5",
+    "Periodic_D_Co5",
+    "Periodic_E_Co5",
+    "Synthetic_1a_Co5",
+    "Synthetic_2a_Co5",
+    "Synthetic_2b_Co5",
+    "Synthetic_2c_Co5",
+    "Synthetic_3_Co5"
+   ],
+   "max_heat_ratio_to_brief": 6.83888476785812,
+   "discharge_heat_factor_dynamic_range": [
+    1.763203392864713,
+    5.978875442793707
+   ],
    "hottest_protocol": "Synthetic_1a_Co5",
-   "max_q_cycle_avg_W": 0.13383146219703343,
-   "max_dT_module_K_h5": 0.4204172369542789,
-   "max_dT_cell_K_h5": 0.10535165672665467,
-   "max_implied_module_law_1_kucinskis2022_h5": 0.004158360330839804,
+   "hottest_protocol_c_mean": [
+    0.22431611244658897,
+    0.2255946144428019
+   ],
+   "max_q_cycle_avg_W": 0.1279746535420502,
+   "max_dT_module_K_h5": 0.40233077872244394,
+   "max_dT_module_discharge_window_K_h5": 0.4448230411714462,
+   "max_dT_cell_K_h5": 0.10074119753563815,
+   "T_mean_C_range_h5": [
+    35.705565383533326,
+    38.89442272645516
+   ],
+   "max_implied_module_law_1_kucinskis2022_h5": 0.003979466594271071,
+   "max_implied_module_cc_charge_law_1_kucinskis2022_h5": 0.004158360330839804,
    "protocols_exceeding_mean_3.0pct_law_1_kucinskis2022_h5": [],
+   "protocols_exceeding_cc_charge_mean_3.0pct_law_1_kucinskis2022_h5": [],
    "protocols_exceeding_worst_of_8_4.1pct_law_1_kucinskis2022_h5": [],
+   "protocols_exceeding_cc_charge_worst_of_8_4.1pct_law_1_kucinskis2022_h5": [],
    "protocols_exceeding_p95_8.7pct_law_1_kucinskis2022_h5": [],
-   "max_implied_module_law_2_schimpe2018_h5": 0.021833435932776847,
+   "protocols_exceeding_cc_charge_p95_8.7pct_law_1_kucinskis2022_h5": [],
+   "protocols_exceeding_worst_of_8_4.1pct_hottest_minus_mean_law_1_kucinskis2022_h5": [],
+   "max_implied_module_law_2_schimpe2018_h5": 0.020894155873956235,
+   "max_implied_module_cc_charge_law_2_schimpe2018_h5": 0.021833435932776847,
    "protocols_exceeding_mean_3.0pct_law_2_schimpe2018_h5": [],
+   "protocols_exceeding_cc_charge_mean_3.0pct_law_2_schimpe2018_h5": [],
    "protocols_exceeding_worst_of_8_4.1pct_law_2_schimpe2018_h5": [],
+   "protocols_exceeding_cc_charge_worst_of_8_4.1pct_law_2_schimpe2018_h5": [],
    "protocols_exceeding_p95_8.7pct_law_2_schimpe2018_h5": [],
-   "max_dT_module_K_h10": 0.44708625778758915,
-   "max_dT_cell_K_h10": 0.10526786017068819,
-   "max_implied_module_law_1_kucinskis2022_h10": 0.004422144468471721,
+   "protocols_exceeding_cc_charge_p95_8.7pct_law_2_schimpe2018_h5": [],
+   "protocols_exceeding_worst_of_8_4.1pct_hottest_minus_mean_law_2_schimpe2018_h5": [],
+   "implied_module_law_2_schimpe2018_dynamic_range_h5": [
+    0.009089631284157774,
+    0.020894155873956235
+   ],
+   "law2_exact_pair_dynamic_range_h5": [
+    0.009248864238597965,
+    0.021603130653569943
+   ],
+   "max_dT_module_K_h10": 0.42773742809112036,
+   "max_dT_module_discharge_window_K_h10": 0.47321194242550746,
+   "max_dT_cell_K_h10": 0.10066106813226933,
+   "T_mean_C_range_h10": [
+    35.516984188798915,
+    37.866362406171106
+   ],
+   "max_implied_module_law_1_kucinskis2022_h10": 0.004230764575390122,
+   "max_implied_module_cc_charge_law_1_kucinskis2022_h10": 0.004422144468471721,
    "protocols_exceeding_mean_3.0pct_law_1_kucinskis2022_h10": [],
+   "protocols_exceeding_cc_charge_mean_3.0pct_law_1_kucinskis2022_h10": [],
    "protocols_exceeding_worst_of_8_4.1pct_law_1_kucinskis2022_h10": [],
+   "protocols_exceeding_cc_charge_worst_of_8_4.1pct_law_1_kucinskis2022_h10": [],
    "protocols_exceeding_p95_8.7pct_law_1_kucinskis2022_h10": [],
-   "max_implied_module_law_2_schimpe2018_h10": 0.02321843232819651,
+   "protocols_exceeding_cc_charge_p95_8.7pct_law_1_kucinskis2022_h10": [],
+   "protocols_exceeding_worst_of_8_4.1pct_hottest_minus_mean_law_1_kucinskis2022_h10": [],
+   "max_implied_module_law_2_schimpe2018_h10": 0.022213593809651173,
+   "max_implied_module_cc_charge_law_2_schimpe2018_h10": 0.02321843232819651,
    "protocols_exceeding_mean_3.0pct_law_2_schimpe2018_h10": [],
+   "protocols_exceeding_cc_charge_mean_3.0pct_law_2_schimpe2018_h10": [],
    "protocols_exceeding_worst_of_8_4.1pct_law_2_schimpe2018_h10": [],
+   "protocols_exceeding_cc_charge_worst_of_8_4.1pct_law_2_schimpe2018_h10": [],
    "protocols_exceeding_p95_8.7pct_law_2_schimpe2018_h10": [],
-   "max_dT_module_K_h25": 0.39854794222247847,
-   "max_dT_cell_K_h25": 0.10501750063109365,
-   "max_implied_module_law_1_kucinskis2022_h25": 0.003942050437518154,
+   "protocols_exceeding_cc_charge_p95_8.7pct_law_2_schimpe2018_h10": [],
+   "protocols_exceeding_worst_of_8_4.1pct_hottest_minus_mean_law_2_schimpe2018_h10": [],
+   "implied_module_law_2_schimpe2018_dynamic_range_h10": [
+    0.00963100721729105,
+    0.022213593809651173
+   ],
+   "law2_exact_pair_dynamic_range_h10": [
+    0.009759308200126392,
+    0.022814597833665153
+   ],
+   "max_dT_module_K_h25": 0.381183153658867,
+   "max_dT_module_discharge_window_K_h25": 0.42201160283474337,
+   "max_dT_cell_K_h25": 0.10042166496940626,
+   "T_mean_C_range_h25": [
+    35.288245764841065,
+    36.60395169187893
+   ],
+   "max_implied_module_law_1_kucinskis2022_h25": 0.0037702947587085448,
+   "max_implied_module_cc_charge_law_1_kucinskis2022_h25": 0.003942050437518154,
    "protocols_exceeding_mean_3.0pct_law_1_kucinskis2022_h25": [],
+   "protocols_exceeding_cc_charge_mean_3.0pct_law_1_kucinskis2022_h25": [],
    "protocols_exceeding_worst_of_8_4.1pct_law_1_kucinskis2022_h25": [],
+   "protocols_exceeding_cc_charge_worst_of_8_4.1pct_law_1_kucinskis2022_h25": [],
    "protocols_exceeding_p95_8.7pct_law_1_kucinskis2022_h25": [],
-   "max_implied_module_law_2_schimpe2018_h25": 0.020697702657707283,
+   "protocols_exceeding_cc_charge_p95_8.7pct_law_1_kucinskis2022_h25": [],
+   "protocols_exceeding_worst_of_8_4.1pct_hottest_minus_mean_law_1_kucinskis2022_h25": [],
+   "max_implied_module_law_2_schimpe2018_h25": 0.019795900911098455,
+   "max_implied_module_cc_charge_law_2_schimpe2018_h25": 0.020697702657707283,
    "protocols_exceeding_mean_3.0pct_law_2_schimpe2018_h25": [],
+   "protocols_exceeding_cc_charge_mean_3.0pct_law_2_schimpe2018_h25": [],
    "protocols_exceeding_worst_of_8_4.1pct_law_2_schimpe2018_h25": [],
-   "protocols_exceeding_p95_8.7pct_law_2_schimpe2018_h25": []
+   "protocols_exceeding_cc_charge_worst_of_8_4.1pct_law_2_schimpe2018_h25": [],
+   "protocols_exceeding_p95_8.7pct_law_2_schimpe2018_h25": [],
+   "protocols_exceeding_cc_charge_p95_8.7pct_law_2_schimpe2018_h25": [],
+   "protocols_exceeding_worst_of_8_4.1pct_hottest_minus_mean_law_2_schimpe2018_h25": [],
+   "implied_module_law_2_schimpe2018_dynamic_range_h25": [
+    0.008550113211338662,
+    0.019795900911098455
+   ],
+   "law2_exact_pair_dynamic_range_h25": [
+    0.008616673703307225,
+    0.02012672409331546
+   ]
   },
   "C/2": {
    "cells": 23,
-   "max_heat_ratio_to_brief": 3.2649565868525885,
-   "max_heat_ratio_to_D19_constant_current": 2.6989689853918826,
-   "max_discharge_heat_factor": 4.436251116486908,
+   "dynamic_protocols": [
+    "Periodic_A_Co2",
+    "Periodic_B_Co2",
+    "Periodic_C_Co2",
+    "Periodic_D_Co2",
+    "Periodic_E_Co2",
+    "Synthetic_2a_Co2",
+    "Synthetic_2b_Co2",
+    "Synthetic_2c_Co2"
+   ],
+   "max_heat_ratio_to_brief": 3.0485505198682357,
+   "discharge_heat_factor_dynamic_range": [
+    1.7263230085492465,
+    4.300411406964663
+   ],
    "hottest_protocol": "Periodic_C_Co2",
-   "max_q_cycle_avg_W": 0.38185291006441757,
-   "max_dT_module_K_h5": 1.16134415648213,
-   "max_dT_cell_K_h5": 0.300593268882871,
-   "max_implied_module_law_1_kucinskis2022_h5": 0.011486892178241248,
+   "hottest_protocol_c_mean": [
+    0.6113885073083581,
+    0.5993920351015452
+   ],
+   "max_q_cycle_avg_W": 0.3565431443032653,
+   "max_dT_module_K_h5": 1.0879087690524898,
+   "max_dT_module_discharge_window_K_h5": 2.060531091023165,
+   "max_dT_cell_K_h5": 0.2806695102200888,
+   "T_mean_C_range_h5": [
+    36.26815953517399,
+    45.62647136875853
+   ],
+   "max_implied_module_law_1_kucinskis2022_h5": 0.010760540413552594,
+   "max_implied_module_cc_charge_law_1_kucinskis2022_h5": 0.011486892178241248,
    "protocols_exceeding_mean_3.0pct_law_1_kucinskis2022_h5": [],
+   "protocols_exceeding_cc_charge_mean_3.0pct_law_1_kucinskis2022_h5": [],
    "protocols_exceeding_worst_of_8_4.1pct_law_1_kucinskis2022_h5": [],
+   "protocols_exceeding_cc_charge_worst_of_8_4.1pct_law_1_kucinskis2022_h5": [],
    "protocols_exceeding_p95_8.7pct_law_1_kucinskis2022_h5": [],
-   "max_implied_module_law_2_schimpe2018_h5": 0.06024741568336334,
+   "protocols_exceeding_cc_charge_p95_8.7pct_law_1_kucinskis2022_h5": [],
+   "protocols_exceeding_worst_of_8_4.1pct_hottest_minus_mean_law_1_kucinskis2022_h5": [],
+   "max_implied_module_law_2_schimpe2018_h5": 0.0564377850173391,
+   "max_implied_module_cc_charge_law_2_schimpe2018_h5": 0.06024741568336334,
    "protocols_exceeding_mean_3.0pct_law_2_schimpe2018_h5": [
+    "Periodic_A_Co2",
+    "Periodic_B_Co2",
+    "Periodic_C_Co2",
+    "Periodic_D_Co2",
+    "Periodic_E_Co2",
+    "Synthetic_2a_Co2"
+   ],
+   "protocols_exceeding_cc_charge_mean_3.0pct_law_2_schimpe2018_h5": [
     "Periodic_A_Co2",
     "Periodic_B_Co2",
     "Periodic_C_Co2",
@@ -314,14 +682,40 @@
     "Periodic_D_Co2",
     "Periodic_E_Co2"
    ],
+   "protocols_exceeding_cc_charge_worst_of_8_4.1pct_law_2_schimpe2018_h5": [
+    "Periodic_C_Co2",
+    "Periodic_D_Co2",
+    "Periodic_E_Co2"
+   ],
    "protocols_exceeding_p95_8.7pct_law_2_schimpe2018_h5": [],
-   "max_dT_module_K_h10": 1.2486734311382293,
-   "max_dT_cell_K_h10": 0.3003541774299056,
-   "max_implied_module_law_1_kucinskis2022_h10": 0.012350668825654089,
+   "protocols_exceeding_cc_charge_p95_8.7pct_law_2_schimpe2018_h5": [],
+   "protocols_exceeding_worst_of_8_4.1pct_hottest_minus_mean_law_2_schimpe2018_h5": [],
+   "implied_module_law_2_schimpe2018_dynamic_range_h5": [
+    0.025813031323410094,
+    0.0564377850173391
+   ],
+   "law2_exact_pair_dynamic_range_h5": [
+    0.027185584518513103,
+    0.06079014043249785
+   ],
+   "max_dT_module_K_h10": 1.1684438084674298,
+   "max_dT_module_discharge_window_K_h10": 2.245067328041557,
+   "max_dT_cell_K_h10": 0.28044626609605705,
+   "T_mean_C_range_h10": [
+    35.929947957194145,
+    42.89476262788219
+   ],
+   "max_implied_module_law_1_kucinskis2022_h10": 0.011557115062993352,
+   "max_implied_module_cc_charge_law_1_kucinskis2022_h10": 0.012350668825654089,
    "protocols_exceeding_mean_3.0pct_law_1_kucinskis2022_h10": [],
+   "protocols_exceeding_cc_charge_mean_3.0pct_law_1_kucinskis2022_h10": [],
    "protocols_exceeding_worst_of_8_4.1pct_law_1_kucinskis2022_h10": [],
+   "protocols_exceeding_cc_charge_worst_of_8_4.1pct_law_1_kucinskis2022_h10": [],
    "protocols_exceeding_p95_8.7pct_law_1_kucinskis2022_h10": [],
-   "max_implied_module_law_2_schimpe2018_h10": 0.06477782390229303,
+   "protocols_exceeding_cc_charge_p95_8.7pct_law_1_kucinskis2022_h10": [],
+   "protocols_exceeding_worst_of_8_4.1pct_hottest_minus_mean_law_1_kucinskis2022_h10": [],
+   "max_implied_module_law_2_schimpe2018_h10": 0.06061572656001272,
+   "max_implied_module_cc_charge_law_2_schimpe2018_h10": 0.06477782390229303,
    "protocols_exceeding_mean_3.0pct_law_2_schimpe2018_h10": [
     "Periodic_A_Co2",
     "Periodic_B_Co2",
@@ -330,21 +724,63 @@
     "Periodic_E_Co2",
     "Synthetic_2a_Co2"
    ],
+   "protocols_exceeding_cc_charge_mean_3.0pct_law_2_schimpe2018_h10": [
+    "Periodic_A_Co2",
+    "Periodic_B_Co2",
+    "Periodic_C_Co2",
+    "Periodic_D_Co2",
+    "Periodic_E_Co2",
+    "Synthetic_2a_Co2"
+   ],
    "protocols_exceeding_worst_of_8_4.1pct_law_2_schimpe2018_h10": [
+    "Periodic_C_Co2",
+    "Periodic_D_Co2",
+    "Periodic_E_Co2"
+   ],
+   "protocols_exceeding_cc_charge_worst_of_8_4.1pct_law_2_schimpe2018_h10": [
     "Periodic_B_Co2",
     "Periodic_C_Co2",
     "Periodic_D_Co2",
     "Periodic_E_Co2"
    ],
    "protocols_exceeding_p95_8.7pct_law_2_schimpe2018_h10": [],
-   "max_dT_module_K_h25": 1.1274827493691646,
-   "max_dT_cell_K_h25": 0.2996398422714373,
-   "max_implied_module_law_1_kucinskis2022_h25": 0.011151967917987176,
+   "protocols_exceeding_cc_charge_p95_8.7pct_law_2_schimpe2018_h10": [],
+   "protocols_exceeding_worst_of_8_4.1pct_hottest_minus_mean_law_2_schimpe2018_h10": [],
+   "implied_module_law_2_schimpe2018_dynamic_range_h10": [
+    0.02748198394486292,
+    0.06061572656001272
+   ],
+   "law2_exact_pair_dynamic_range_h10": [
+    0.028659689545481034,
+    0.06483655853610132
+   ],
+   "max_dT_module_K_h25": 1.0536709895012564,
+   "max_dT_module_discharge_window_K_h25": 2.06066959835789,
+   "max_dT_cell_K_h25": 0.27977927810991415,
+   "T_mean_C_range_h25": [
+    35.518824969252535,
+    39.4522366881755
+   ],
+   "max_implied_module_law_1_kucinskis2022_h25": 0.010421893441479538,
+   "max_implied_module_cc_charge_law_1_kucinskis2022_h25": 0.011151967917987176,
    "protocols_exceeding_mean_3.0pct_law_1_kucinskis2022_h25": [],
+   "protocols_exceeding_cc_charge_mean_3.0pct_law_1_kucinskis2022_h25": [],
    "protocols_exceeding_worst_of_8_4.1pct_law_1_kucinskis2022_h25": [],
+   "protocols_exceeding_cc_charge_worst_of_8_4.1pct_law_1_kucinskis2022_h25": [],
    "protocols_exceeding_p95_8.7pct_law_1_kucinskis2022_h25": [],
-   "max_implied_module_law_2_schimpe2018_h25": 0.05849077682779958,
+   "protocols_exceeding_cc_charge_p95_8.7pct_law_1_kucinskis2022_h25": [],
+   "protocols_exceeding_worst_of_8_4.1pct_hottest_minus_mean_law_1_kucinskis2022_h25": [],
+   "max_implied_module_law_2_schimpe2018_h25": 0.05466162097054454,
+   "max_implied_module_cc_charge_law_2_schimpe2018_h25": 0.05849077682779958,
    "protocols_exceeding_mean_3.0pct_law_2_schimpe2018_h25": [
+    "Periodic_A_Co2",
+    "Periodic_B_Co2",
+    "Periodic_C_Co2",
+    "Periodic_D_Co2",
+    "Periodic_E_Co2",
+    "Synthetic_2a_Co2"
+   ],
+   "protocols_exceeding_cc_charge_mean_3.0pct_law_2_schimpe2018_h25": [
     "Periodic_A_Co2",
     "Periodic_B_Co2",
     "Periodic_C_Co2",
@@ -354,11 +790,30 @@
    ],
    "protocols_exceeding_worst_of_8_4.1pct_law_2_schimpe2018_h25": [
     "Periodic_C_Co2",
+    "Periodic_D_Co2"
+   ],
+   "protocols_exceeding_cc_charge_worst_of_8_4.1pct_law_2_schimpe2018_h25": [
+    "Periodic_C_Co2",
     "Periodic_D_Co2",
     "Periodic_E_Co2"
    ],
-   "protocols_exceeding_p95_8.7pct_law_2_schimpe2018_h25": []
+   "protocols_exceeding_p95_8.7pct_law_2_schimpe2018_h25": [],
+   "protocols_exceeding_cc_charge_p95_8.7pct_law_2_schimpe2018_h25": [],
+   "protocols_exceeding_worst_of_8_4.1pct_hottest_minus_mean_law_2_schimpe2018_h25": [],
+   "implied_module_law_2_schimpe2018_dynamic_range_h25": [
+    0.02453045491686852,
+    0.05466162097054454
+   ],
+   "law2_exact_pair_dynamic_range_h25": [
+    0.02518846192349754,
+    0.057401351610272926
+   ]
   }
+ },
+ "heat_multiple_of_brief_C2_to_reach_law2_mean_floor": {
+  "h5": 1.5798609893647342,
+  "h10": 1.4806918883002775,
+  "h25": 1.6588071200018093
  },
  "time_constants": {
   "cp_roll_35C_J_per_kgK": 889.2666666666667,
