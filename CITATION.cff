@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: If you use this work, please cite it as below.
+title: "The thermal lever against the duplicate-cell floor: how large a temperature spread a lifetime divergence needs, and how large a module offers"
+type: software
+authors:
+  - family-names: Satte
+    given-names: Siddharth
+    affiliation: Independent Researcher
+    orcid: https://orcid.org/0009-0001-3584-1008
+version: v1.0.0
+repository-code: https://github.com/siddharth161204-wq/thermal-lever-duplicate-floor
+license:
+  - MIT
+  - CC-BY-4.0
+keywords:
+  - lithium-ion battery
+  - cell-to-cell variability
+  - battery ageing
+  - battery module
+  - thermal model
+  - finite element method
+  - pre-registration

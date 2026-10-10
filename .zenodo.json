@@ -1,0 +1,21 @@
+{
+  "title": "The thermal lever against the duplicate-cell floor: how large a temperature spread a lifetime divergence needs, and how large a module offers",
+  "upload_type": "software",
+  "creators": [
+    {"name": "Satte, Siddharth", "affiliation": "Independent Researcher", "orcid": "0009-0001-3584-1008"}
+  ],
+  "description": "Pre-registered calculation of how large a steady temperature difference between nominally identical lithium-ion cells two published temperature-dependent ageing laws need to produce a lifetime difference as large as the duplicate-cell floor of the Geslin et al. dynamic-cycling dataset (mean 3.0 %, 95th percentile 8.7 %, worst of eight 4.1 % at 90 % state of health), and how large a temperature difference a module at 35 C offers: an eight-cell lumped network of LG M50 21700 cells and a resolved scikit-fem cell, at average rates from C/16 to 2C and convection coefficients of 5, 10 and 25 W/(m2 K). Predictions were committed and pushed before any lever or spread was computed. Code under the MIT licence; results, figure and note under CC BY 4.0.",
+  "license": "MIT",
+  "version": "1.0.0",
+  "keywords": ["lithium-ion battery", "cell-to-cell variability", "battery ageing", "temperature", "battery module", "thermal model", "finite element method", "pre-registration"],
+  "related_identifiers": [
+    {"identifier": "10.5281/zenodo.23205413", "relation": "isDerivedFrom", "scheme": "doi", "resource_type": "software"},
+    {"identifier": "10.5281/zenodo.23253738", "relation": "isDerivedFrom", "scheme": "doi", "resource_type": "software"},
+    {"identifier": "10.1016/j.jpowsour.2022.232129", "relation": "references", "scheme": "doi", "resource_type": "publication-article"},
+    {"identifier": "10.1149/2.1181714jes", "relation": "references", "scheme": "doi", "resource_type": "publication-article"},
+    {"identifier": "10.1038/s41560-024-01675-8", "relation": "references", "scheme": "doi", "resource_type": "publication-article"},
+    {"identifier": "10.1016/j.electacta.2022.140700", "relation": "references", "scheme": "doi", "resource_type": "publication-article"},
+    {"identifier": "10.1149/1945-7111/ab9050", "relation": "references", "scheme": "doi", "resource_type": "publication-article"},
+    {"identifier": "10.5334/jors.309", "relation": "references", "scheme": "doi", "resource_type": "publication-article"}
+  ]
+}

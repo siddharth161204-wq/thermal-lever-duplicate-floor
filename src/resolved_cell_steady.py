@@ -69,18 +69,29 @@ class SteadyCell:
         return d_conv, w_rad, d_base
 
     def solve(self, q_W, h, T_amb=T_AMB, base_h=None, tol=1e-11, maxit=60):
+        """Newton iteration on the rise u = T - T_amb (the conduction operator annihilates a uniform field), each step
+        solved by conjugate gradients with a smoothed-aggregation algebraic multigrid preconditioner (pyamg) built once
+        from the linearised operator at u = 0, to a relative residual of 1e-13."""
+        import pyamg
         m = self.m
         d_conv, w_rad, d_base = self.operators(h, base_h)
         src = 0.5 * q_W * m.w_vol / m.w_vol.sum()                 # half model, uniform per unit volume
-        T = np.full(self.n, T_amb + 1.0)
         K = m.K.tocsr()
+        J0 = (K + sp.diags(d_conv + d_base + 4.0 * w_rad * T_amb ** 3)).tocsr()
+        ml = pyamg.smoothed_aggregation_solver(J0, symmetry="symmetric")
+        M = ml.aspreconditioner(cycle="V")
+        u = np.zeros(self.n)
+        self.cg_info = []
         for it in range(maxit):
-            F = K @ T + (d_conv + d_base) * (T - T_amb) + w_rad * (T ** 4 - T_amb ** 4) - src
-            J = (K + sp.diags(d_conv + d_base + 4.0 * w_rad * T ** 3)).tocsc()
-            dT = spla.spsolve(J, -F)
-            T = T + dT
-            if np.abs(dT).max() < tol:
+            T = T_amb + u
+            F = K @ u + (d_conv + d_base) * u + w_rad * (T ** 4 - T_amb ** 4) - src
+            J = (K + sp.diags(d_conv + d_base + 4.0 * w_rad * T ** 3)).tocsr()
+            du, info = spla.cg(J, -F, rtol=1e-13, atol=0.0, maxiter=5000, M=M)
+            self.cg_info.append(info)
+            u = u + du
+            if np.abs(du).max() < tol:
                 break
+        T = T_amb + u
         loss = 2.0 * float((d_conv + d_base) @ (T - T_amb) + w_rad @ (T ** 4 - T_amb ** 4))
         vol_mean = float(m.w_vol @ T / m.w_vol.sum())
         w_out = m.w["outer"]
@@ -173,8 +184,10 @@ def verify_v3(out):
     h_eff = 10.0 + 4 * EPS * SIGMA * T_AMB ** 3
     q3 = q / (math.pi * R_CELL ** 2 * LP.L_CELL)
     w_lat = m.w["lateral"]
-    A = (m.K_roll + sp.diags(h_eff * w_lat)).tocsc()
-    x = spla.spsolve(A, q3 * m.w_vol + h_eff * w_lat * T_AMB)
+    import pyamg
+    A = (m.K_roll + sp.diags(h_eff * w_lat)).tocsr()
+    ml = pyamg.smoothed_aggregation_solver(A, symmetry="symmetric")
+    x = T_AMB + ml.solve(q3 * m.w_vol, tol=1e-13, accel="cg", maxiter=2000)
     ana = T_AMB + q3 * R_CELL / (2 * h_eff) + q3 * (R_CELL ** 2 - m.r_node ** 2) / (4 * LP.K_RADIAL)
     res["e_analytic_radial"] = {"h_eff": h_eff, "q3_W_per_m3": q3, "max_rise_analytic_K": float(ana.max() - T_AMB),
                                 "max_abs_err_K": float(np.abs(x - ana).max()),

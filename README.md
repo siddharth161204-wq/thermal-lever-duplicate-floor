@@ -25,7 +25,7 @@ The dataset's cells are a different 21700; the proxy sets magnitudes, not the da
 ## How to run
 
 ```
-python3 -m pip install numpy scipy matplotlib "scikit-fem==12.0.2" "pybamm==26.9.0.0"
+python3 -m pip install -r requirements.txt
 python3 src/lgm50_resistance.py --out inputs/lgm50_resistance.json   # the derived resistance (minutes)
 python3 src/verify_pre.py --out verification                         # V1 and V2
 python3 src/resolved_cell_steady.py --verify --out verification      # V3

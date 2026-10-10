@@ -55,3 +55,7 @@ D19. Secondary, with no prediction: the dataset's own protocol charges every cel
 ## Implementation
 
 D20. Changes to the brief's script, all made before any registered run: the laws (D3, D4) replace the empty Wang-form law and the empty second-law hook; the lifetime is computed in closed form for Law 2 and by interpolation for Law 1 instead of by bisection; the floors are read from `inputs/floor.json`; radiation follows D10; a per-node heat and an optional cold plate are allowed in the network solver (for V2 and D12); the output adds the positions of the hottest and coldest cells, the hottest-minus-mean spread and the cell temperatures; R_DC is read from `inputs/lgm50_resistance.json`. The script as received is kept in `provenance/thermal_lever_as_received.py`.
+
+## Added after the predictions commit, before the push and before any run
+
+D21. The steady resolved solve of D13 uses Newton iteration on the temperature rise with each step solved by conjugate gradients preconditioned by smoothed-aggregation algebraic multigrid (pyamg 5.3.0), to a relative residual of 1e-13, instead of a direct sparse solve: the direct solve took 46 s per case on the base mesh (39,990 nodes, half model) and ran out of memory on the refined mesh of V3 (297,057 nodes). The equations are unchanged. This was found by building both meshes and solving with zero heat, which carries no information about any registered case.
