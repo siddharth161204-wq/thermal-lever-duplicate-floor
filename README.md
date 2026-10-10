@@ -4,42 +4,48 @@ How large a temperature spread a lifetime divergence needs, and how large a modu
 
 Author: Siddharth Satte, independent researcher, Pune, India (ORCID 0009-0001-3584-1008).
 
-Nominally identical cells cycled under one protocol at one temperature still drift apart. In the Stanford dynamic-cycling dataset (Geslin et al., Nature Energy 2025; 92 SiOx-graphite/NCA 21700 cells, 47 protocols in duplicate, all at 35 C) the duplicate cells' lifetimes to 90 % state of health differ by 3.0 % on average and by 8.7 % at the 95th percentile, and the worst of eight identical cells falls 4.1 % below the module mean by selection alone (the floor, doi.org/10.5281/zenodo.23205413). A thermal explanation of cell-to-cell divergence in a module has to exceed that floor. This repository asks two questions before any module experiment or model is built:
+Nominally identical cells cycled under one protocol at one temperature still drift apart. In the Stanford dynamic-cycling dataset (Geslin et al., Nature Energy 2025; 92 commercial cylindrical SiOx-graphite/NCA cells, 47 protocols in duplicate, all at 35 C) the duplicate cells' lifetimes to 90 % state of health differ by 3.0 % on average and by 8.7 % at the 95th percentile, and the worst of eight identical cells falls 4.1 % below the module mean by selection alone (the floor, doi.org/10.5281/zenodo.23205413). A thermal explanation of cell-to-cell divergence in a module has to exceed that floor. This repository asks two questions before any module experiment or model is built:
 
 1. The lever: how large a steady temperature difference between two cells does a published temperature-dependent ageing law need to produce a lifetime difference as large as the floor?
 2. The availability: how large a temperature difference does a module at 35 C actually offer, cell to cell in a lumped network of eight 21700 cells, and inside one resolved cell?
 
 ## Result
 
-At the dataset's own conditions (35 C, average rates C/16 to C/2, convective cooling) the thermal lever of a module stays inside the floor under both ageing laws used.
+With the brief's constant-current heat, a module at the dataset's rates (C/16 to C/2, 35 C, convective cooling) stays inside the floor under both ageing laws used. A post-hoc estimate with the dataset's own discharge profiles lifts its dynamic C/2 protocols above the 3.0 % mean floor under Law 2, though not under Law 1. Whether a module test at the dataset's conditions could show a thermal share therefore turns on the dataset cell's own temperature sensitivity near 35 C, which neither law fixes.
 
-- The lever. Law 2, the full LiFePO4/graphite model of Schimpe et al. 2018, needs 1.68 K of steady temperature difference at 35 C for the 95th percentile (8.7 %), 0.79 K for the worst of eight (4.1 %) and 0.58 K for the mean (3.0 %). Law 1, the printed cycle counts of Kucinskis et al. 2022 for an NCA+LNO / Si-graphite 21700, the closest published match to the dataset's cells, needs 8.8 K with the opposite sign: at a C/2 charge its cycle life to 90 % SoH is 102, 126 and 124 cycles at 25, 35 and 45 C, so near 35 C a hotter cell lives slightly longer.
-- The availability. An eight-cell LG M50 module in 35 C air offers at most 0.39 K between cells at the dataset's rates, and a resolved cell 0.09 K inside itself. The implied lifetime divergence is at most 2.0 % under Law 2 and 0.4 % under Law 1, below the 3.0 % mean floor. The module first offers Law 2's 1.68 K at 2C, at every convection coefficient from 5 to 25 W/(m2 K) (4.8 to 5.4 K, with the cells 20 to 52 K above the air); 1C gives 1.4 to 1.5 K; no rate up to 2C reaches Law 1's 8.8 K.
-- What it means. This does not show that the dataset's own divergence is not thermal: its cells sat in separate test fixtures whose temperatures are not reported, and 0.6 K between two fixtures would suffice under Law 2. It shows that in a module at the dataset's conditions a thermal share would stay inside the floor, where a module test could not separate it from cell-to-cell chance, and that the measurement the thesis needs first is the dataset cell's own cycle life against temperature near 35 C at its C/2 charge, because the two laws disagree there in sign. The result is the lever and the availability, not a measurement of the thermal share.
+- The lever. Law 2, the full LiFePO4/graphite model of Schimpe et al. 2018, needs a steady 1.68 K at 35 C for the 95th percentile (8.7 %), 0.79 K for the worst of eight (4.1 %) and 0.58 K for the mean (3.0 %). Law 1, the printed cycle counts of Kucinskis et al. 2022 for an NCA+LNO / Si-graphite 21700, the closest published match found to the dataset's cells, gives 102, 126 and 124 cycles to 90 % SoH at 25, 35 and 45 C at a C/2 charge, so its cycle life peaks near 35 C. Its registered centred slope needs 8.8 K of the opposite sign (a hotter cell lives longer), but between 35 and 45 C a hotter cell lives slightly shorter, which is where every module cell sits. Near 35 C its lever is weak and its sign is not fixed.
+- The availability (registered). An eight-cell LG M50 module in 35 C air offers at most 0.39 K between cells at the dataset's rates, and a resolved cell 0.09 K inside itself, an implied lifetime divergence of at most 2.0 % under Law 2 and 0.4 % under Law 1, below the 3.0 % mean floor. The module first offers Law 2's 1.68 K at 2C, at every convection coefficient from 5 to 25 W/(m2 K) (4.8 to 5.4 K), with every cell above 55 C, outside both laws' fitted ranges; 1C gives 1.4 to 1.5 K; no rate up to 2C gives Law 1's 8.8 K.
+- The dataset's own profiles (post hoc, D24). The brief's heat is that of a constant current at the average rate. The dataset's dynamic discharges carry more: from the mean current and current variance its authors publish for every cell, the cycle-averaged heat of its C/2 protocols, with the C/2 charge, is up to 3.3 times the brief's C/2 heat. The module then offers up to 1.25 K (h = 10), and six of the eight dynamic C/2 protocols (Periodic A to E and Synthetic 2a) give 3.7 to 6.5 % under Law 2, above the 3.0 % mean floor; the hottest also pass the 4.1 % worst of eight, none the 8.7 % 95th percentile. Under Law 1 every protocol stays below 1.3 %. At C/5 and below, every protocol stays below 2.4 % under both laws.
+- What it means. The measurement the thesis needs first is the dataset cell's own cycle life against temperature near 35 C at its C/2 charge: under an Arrhenius-type sensitivity a module at the dataset's dynamic C/2 conditions could show a thermal share above the mean floor, under the closest published law it could not. The dataset's own divergence is neither shown nor ruled out as thermal: its cells sat in separate fixtures in a 35 C chamber, and their own temperatures are not reported. The result is the lever and the availability, not a measurement of the thermal share.
 
 The one-page note is `note/thermal_lever_note.pdf`; the figure is `results/thermal_lever_figure.png`.
 
 ## Pre-registration
 
-The predictions in [predictions.md](predictions.md) were committed in `24ab8d31cd18aa4fe2a010d89f82271652c2d024` (10 October 2026, 07:25 UTC), before any script computed a lever at 35 C, a module spread at a registered rate and cooling, or any field of the resolved cell. This repository was created and that commit pushed at 08:01:59 UTC the same day; every run of V3 and of the registered steps came after the push. One commit lies between the predictions and the push, `7791192`, which changed the linear solver of the resolved cell's steady state after a direct solve ran out of memory on the refined mesh (DECISIONS.md D21), and added the comparison and figure scripts and the release metadata; it was tested with zero heat only. The first commit holds the brief's script as received.
+The predictions in [predictions.md](predictions.md) were committed in `24ab8d31cd18aa4fe2a010d89f82271652c2d024` (10 October 2026, 07:25 UTC), before any script computed a lever at 35 C, a module spread at a registered rate and cooling, or any field of the resolved cell. This repository was created at 08:01:27 UTC and that commit pushed at 08:01:59 UTC the same day; every run of V3 and of the registered steps came after the push. One commit lies between the predictions and the push, `7791192`, which changed the linear solver of the resolved cell's steady state after a direct solve ran out of memory on the refined mesh (DECISIONS.md D21), and added the comparison and figure scripts and the release metadata; it was tested with zero heat only. The first commit holds the brief's script as received.
 
-After the push, one change was made to a check and none to a registered calculation: the first run of V3 returned a diverged solution in its analytic radial check (e), a breakdown of that check's linear solve at round-off, so the check was moved to the solver of the main steady solve and V3 was rerun in full (D22; the first run's output is kept in `verification/`). The figure layout and the note were written after the runs.
+After the push:
+
+- D22. The first run of V3 returned a diverged solution in its analytic radial check (e), a breakdown of that check's linear solve at round-off, so the check was moved to the solver of the main steady solve and V3 was rerun in full (the first run's output is kept in `verification/`).
+- D23. Two independent checks were run on the results (below). Their corrections change no registered number: Law 2's exact forms are left blank where the cells lie outside its fitted range, as D18 says; the exact pair difference is also given with its sign; V1 for Law 2 is also given with all four terms of the model; the scorecard's keys say "computed"; the worst-of-8 floor is also compared with the hottest-minus-mean spread; the lifetime curves are written at every rate.
+- D24. Post-hoc analyses, not pre-registered: the heat of the dataset's own discharge profiles, the module's time constants, and the air-conductivity sensitivity (`src/posthoc.py`).
+- The figure layout and the note were written after the runs.
 
 ## Prediction scorecard
 
 | | Prediction | Result | Computed (central estimate) |
 |--|--|--|--|
-| P1 | Delta T_floor(8.7 %) at 35 C lies between 1 and 3 K for every law | Failed | Law 2: 1.68 K (1.7 K); Law 1: -8.81 K (-8.8 K) |
+| P1 | Delta T_floor(8.7 %) at 35 C lies between 1 and 3 K for every law | Failed, as predictions.md expected | Law 2: 1.68 K (1.7 K); Law 1: -8.81 K (-8.8 K) |
 | P2 | At C/2 with h = 10 W/(m2 K) the eight-cell spread is below 1 K | Held | 0.391 K (0.39 K); 0.368 K at h = 5, 0.348 K at h = 25 |
 | P3 | At C/2 the resolved cell's spread is below 0.5 K | Held | 0.092 K at h = 5, 10 and 25 (0.12 K) |
-| P4 | The module first exceeds Delta T_floor(8.7 %) at 1C or higher with h = 10, and one rate lower with h = 5 | Failed | First clause held: 2C for Law 2, no rate up to 2C for Law 1 (as estimated); second clause failed: h = 5 gives the same rate as h = 10 for both laws (as estimated) |
-| P5 | The two laws' Delta T_floor(8.7 %) differ by less than a factor of 2 | Failed | A factor of 5.24 to 5.26, with opposite signs (5.2) |
+| P4 | The module first exceeds Delta T_floor(8.7 %) at 1C or higher with h = 10, and one rate lower with h = 5 | Failed, as expected | First clause held: 2C for Law 2, no rate up to 2C for Law 1 (as estimated); second clause failed: h = 5 gives the same rate as h = 10 for both laws (as estimated) |
+| P5 | The two laws' Delta T_floor(8.7 %) differ by less than a factor of 2 | Failed, as expected | A factor of 5.24 to 5.26, of opposite signs (8.8 against 1.7 K, "a factor of about 5") |
 
-P1 and P5 failed because Law 1, the chemistry nearest the dataset's, sits near its optimum temperature at 35 C. The predictions file expected both failures, and the failure of P4's second clause, before any lever was computed, because its central estimates were hand calculations from the copied law values and a two-node reduction of the network; as it says, their agreement with the scripts tests the implementation more than the physics. Scores are in `results/prediction_scorecard.json`.
+P1 and P5 failed because Law 1, the chemistry nearest the dataset's, peaks near 35 C. The predictions file expected both failures, and the failure of P4's second clause, before any lever was computed, because its central estimates were hand calculations from the copied law values and a two-node reduction of the network; as it says, their agreement with the scripts tests the implementation more than the physics. Scores are in `results/prediction_scorecard.json`.
 
 ## Results
 
-Table 1. The lever at 35 C. s = -d ln L/dT; Delta T_floor = f/s (D17; the exact pair inversion, in `results/lever.json`, differs by less than 0.1 %). Law 1 has no discharge-rate dependence (the paper tested one discharge rate), so its lever is the same at every rate.
+Table 1. The lever at 35 C. s = -d ln L/dT; Delta T_floor = f/s (D17; the exact pair inversion, in `results/lever.json`, differs by less than 0.1 %). Law 1 has no discharge-rate dependence (the paper tested one discharge rate), so its lever is the same at every rate. The lifetime curves from 15 to 55 C at every rate are in `results/lifetime_curves.csv`.
 
 | Law | Average rate | s (1/K) | L at 35 C (cycles to 90 %) | Delta T_floor, 3.0 % (K) | 4.1 % (K) | 8.7 % (K) |
 |---|---|---|---|---|---|---|
@@ -60,9 +66,9 @@ Table 2. Heat per cell, (c x 5 A)^2 x 18.71 mOhm, and the spreads (K): hottest m
 | 1C | 468 | 1.41 | 1.52 | 1.38 | 0.368 | 0.368 | 0.367 | 0.188 |
 | 2C | 1871 | 4.77 | 5.41 | 5.25 | 1.47 | 1.47 | 1.47 | 0.754 |
 
-At 1C and 2C the module's mean temperature is 41 to 49 C and 58 to 84 C, so the lever taken at 35 C no longer describes those cells, and at 2C every cell is above 55 C, beyond both laws' fitted ranges. Those rows show what it would take, not a prediction for a working module.
+At 1C and 2C the module's mean temperature is 41 to 49 C and 58 to 84 C, so the lever taken at 35 C no longer describes those cells, and at 2C every cell is above 55 C, beyond both laws' fitted ranges. Those rows show what it would take, not a prediction for a working module. An independent finite-volume solve of the resolved cell gives spreads 1.2 % larger (hottest minus mean 2.3 % larger), from the registered base mesh's discretisation (D23).
 
-Table 3. Implied lifetime divergence s x Delta T at h = 10 (%), cell to cell in the module and within the resolved cell.
+Table 3. Implied lifetime divergence |s| x Delta T at h = 10 (%), cell to cell in the module and within the resolved cell.
 
 | Rate | Law 1, module | Law 1, cell | Law 2, module | Law 2, cell |
 |---|---|---|---|---|
@@ -84,65 +90,77 @@ Table 4. Step 3: the lowest average rate at which the spread exceeds the magnitu
 | Law 2 | 4.1 % worst of 8 | 1C | 2C |
 | Law 2 | 8.7 % 95th percentile | 2C | none up to 2C |
 
+The worst-of-8 floor is a shortfall below the module mean, so D17 also compares it with the hottest-minus-mean spread: the module then first offers it at 2C under Law 2 and at no rate up to 2C under Law 1, and the resolved cell at none.
+
 Secondary results, none of them scored (`results/comparison.json`):
 
-- Law 1 by charge rate. At the printed charge rates the lever changes sign: s = +0.036 per K at 0.2C (Delta T_floor(8.7 %) = 2.4 K), +0.007 at 0.4C (12.8 K) and -0.027 at 0.6C (-3.3 K). The registered C/2 value lies between the last two, so the lever of this chemistry at 35 C is not known even in sign.
-- Law 1 with assumed noise (D16, an assumption, not a stated error). If each printed count carried the floor's per-cell noise averaged over two cells, s at a C/2 charge lies between -0.0117 and -0.0081 per K (95 %), and |Delta T_floor(8.7 %)| between 7.4 and 10.8 K. The hand figure in D16 (0.0013 per K) left out the averaging over the two printed charge rates that make up the C/2 value; the Monte Carlo standard error is 0.0009 per K.
-- Law 2 by term. The calendar term, part of the paper's own model of a cycling cell, carries 57 to 78 % of the loss at 35 C from 2C down to C/16. The calendar term alone gives s = 0.052 per K and the cycling terms alone 0.051, so the lever does not hinge on the calendar share. The more precise values printed in the paper's text give the same s within 0.1 %.
-- The dataset's C/2 charge (D19). The cycle-averaged heat of a dataset cell, which charges at C/2, is 8.0, 5.0 and 2.5 times the heat at the average rate for C/16, C/10 and C/5. At C/16 the module spread is then 0.044 to 0.049 K and Law 2's implied divergence at most 0.26 %, still below every floor.
+- Law 1 by charge rate. At the printed charge rates the lever changes sign: s = +0.036 per K at 0.2C (Delta T_floor(8.7 %) = 2.4 K), +0.007 at 0.4C (12.8 K) and -0.027 at 0.6C (-3.3 K). The registered C/2 value lies between the last two.
+- Law 1 at each cell's own temperature (D18, D23). Every module cell is above 35 C, where Law 1's lifetime falls slightly with temperature, so the hotter cell lives shorter in every case, against the registered slope: by 0.05 % at C/2 (h = 10). At 1C the cells sit at 40 to 50 C, and the pair difference is 0.2 % (h = 25), 14.8 % (h = 10) and 19.5 % (h = 5), on the steep 45 to 55 C segment, whose 55 C counts reach 95 % and 90 % SoH at the same 31 cycles and rest on one cell. This is exploratory and fragile.
+- Law 1 with assumed noise (D16, an assumption, not a stated error). If each printed count carried the floor's per-cell noise averaged over two cells, s at a C/2 charge lies between -0.0117 and -0.0081 per K (95 %), and |Delta T_floor(8.7 %)| between 7.4 and 10.8 K. The standard error is 0.0009 per K; the hand figure in D16 (0.0013) left out the averaging over the two printed charge rates that make up the C/2 value (D23).
+- Law 2 by term. The calendar term, part of the paper's own model of a cycling cell, carries 57 to 78 % of the loss at 35 C from 2C down to C/16. The calendar term alone gives s = 0.052 per K and the cycling terms alone 0.051, so the lever does not hinge on the calendar share. The more precise values printed in the paper's text give the same s within 0.1 %. Reading D4's time average of the calendar factor as a root mean square instead of a mean would change s by under 0.05 % and L at 35 C by about 12 %.
+- The dataset's C/2 charge (D19). The cycle-averaged heat of a dataset cell, which charges at C/2, is 8.0, 5.0 and 2.5 times the heat at the average rate for C/16, C/10 and C/5 with a constant-current discharge. At C/16 the module spread is then 0.044 to 0.049 K and Law 2's implied divergence at most 0.26 %. During each C/2 charge, of about 2 h against the module's time constants of 0.19 to 0.46 h (D24), the spread approaches its steady C/2 value, 0.35 to 0.39 K: still below every floor.
+- The dataset's own discharge profiles (post hoc, D24; `results/dataset_protocol_heat.csv`, `results/posthoc.json`). The authors' released features give each cell's mean discharge current c and normalized current variance, which is the variance over the mean in C-rate units (for the constant-current protocols with a storage rest it equals the maximum minus the mean current within 4 %, and for constant current without rest it is zero). The discharge heat is then c^2 + c NCV, 1.7 to 4.3 times that of a constant current for the dynamic C/2 protocols. With the C/2 charge, the module's largest spreads are 0.085 K (C/16), 0.18 K (C/10), 0.45 K (C/5) and 1.25 K (C/2) at h = 10, and Law 2's largest implied divergences 0.44, 0.92, 2.3 and 6.5 %. Six of the eight dynamic C/2 protocols exceed the 3.0 % mean floor under Law 2 at every h, three or four the 4.1 % worst of eight, none the 8.7 % 95th percentile; under Law 1 none exceeds any floor. The open circles in panels (b) and (c) of the figure are these cells at h = 10.
 - Cold plate (D12). One row of eight on a plate at 35 C under the bases: the C/2 module spread falls to 0.016 to 0.036 K, while a base-cooled resolved cell at h = 10 holds 0.29 K inside itself (1.16 K at 1C), because most of its heat now leaves along the jelly roll's axis.
-- Sensitivities at C/2 and h = 10: no strip 0.448 K; two strips per pair 0.347 K; the received radiation form (the four-fold understatement corrected in D10) 0.655 K; the 10 s and 30 s pulse resistances (15.47 and 20.37 mOhm) 0.324 and 0.425 K.
-- Exploratory: at 1C and h = 10 the module's cells sit at 44.5 to 46.1 C, on Law 1's steep 45 to 55 C segment, where Law 1 evaluated at each cell's own temperature gives a 14.8 % difference between the hottest and coldest cell. Law 1's lever is local, and small only near 35 C; the segment itself is coarsely resolved, since the printed counts at 55 C reach 95 % and 90 % SoH at the same 31 cycles.
+- Sensitivities at C/2 and h = 10: no strip 0.448 K; two strips per pair 0.347 K; the received radiation form (D10) 0.655 K; the 10 s and 30 s pulse resistances (15.47 and 20.37 mOhm) 0.324 and 0.425 K; the air conductivity 10 % lower or higher, 0.406 or 0.378 K.
 
 ## Verification
 
-- V1, before the predictions. Law 1: the transcription of the printed table reproduces every value and statement quoted in the paper's text. Law 2: 8.6 % capacity loss after 2800 full cycles at 1C and 25 C (the paper: less than 9 %) and 10.4 % at 45 C (the paper: 12 %), inside the paper's 2 point model error. Both laws kept.
+- V1, before the predictions. Law 1: the transcription of the printed table reproduces every value and statement quoted in the paper's text. Law 2: 8.6 % capacity loss after 2800 full cycles at 1C and 25 C (the paper: less than 9 %) and 10.4 % at 45 C (the paper: 12 %), inside the paper's 2 point model error. The registered V1 left out the model's high-SOC term, as its script says; with all four terms it gives 8.9 % and 10.4 %, still inside (D23). Both laws kept.
 - V2, before the predictions. The module network's energy balance closes to round-off (1e-12 relative or better), and with the strips at 1e3 W/K the eight cells agree within 0.0004 K.
-- V3, after the push (`verification/v3_resolved_cell.json`). (a) Energy closes within 8e-13 of the source. (b) The resolved cell's surface-mean temperature, which sets its losses, matches a lumped cell with the same losses within 2e-7 of the rise. (c) The brief's literal check, the volume-mean temperature against the lumped cell within 1 % of the rise, fails, as D15 stated before the run: the volume mean lies 1.8, 2.6 and 5.2 % of the rise above the lumped value at h = 5, 10 and 25 (hand estimate 2.4, 3.6 and 7.1 %), because a lumped cell has no internal gradient. (d) One mesh refinement (39,990 to 297,057 nodes) changes the cell's spread by 0.83 %. (e) The roll operator reproduces the analytic steady radial solution within 0.13 %. Numerical acceptance, (a), (b), (d) and (e), passes; every conjugate-gradient solve converged.
+- V3, after the push (`verification/v3_resolved_cell.json`). (a) Energy closes within 8e-13 of the source. (b) The resolved cell's surface-mean temperature, which sets its losses, matches a lumped cell with the same losses within 2e-7 of the rise. (c) The brief's literal check, the volume-mean temperature against the lumped cell within 1 % of the rise, fails, as D15 stated before the run: the volume mean lies 1.8, 2.6 and 5.2 % of the rise above the lumped value at h = 5, 10 and 25 (hand estimate 2.4, 3.6 and 7.1 %), because a lumped cell has no internal gradient. (d) One mesh refinement (39,990 to 297,057 nodes) changes the cell's spread by 0.83 %. (e) The roll operator reproduces the analytic steady radial solution within 0.13 % of the maximum rise (1.6 % of the centre-to-surface difference). Numerical acceptance, (a), (b), (d) and (e), passes; every conjugate-gradient solve converged.
+- Independent recomputation (`verification/independent_recomputation/`, with its report). A separate checker, who had not seen the study being built and did not use its code, recomputed 1,336 quantities from DECISIONS.md and the inputs at commit 0e4ee5e: the levers of both laws to 3e-9 or better, all 36 module cases (both arrangements) to 4e-10, the implied divergences, Step 3 and the scores exactly, and the resolved cell, with an axisymmetric finite-volume solver checked against an analytic series, within 1.2 % (hottest minus coldest) and 2.3 % (hottest minus mean), the registered mesh being the coarser. Its two discrepancies, V1's missing term and D16's standard error, are addressed in D23.
+- Independent audit, of commit 0e4ee5e. A second checker traced every number then in this README, the note and the release metadata to the results files and found none wrong or mis-rounded; reran the pipeline in a scratch clone with byte-identical or round-off-identical outputs; matched the floor to its source (values and SHA-256, at geslin-floor-pilot v1.0.1); confirmed on GitHub that 24ab8d3 was pushed at 08:01:59 UTC; and checked the references against Crossref and DataCite. Its points on substance and wording (the sign of Law 1, the heat of dynamic profiles, the limits of the note) are taken up in the note and here; the text added for them (D23, D24) came after that audit. The Schimpe et al. Table IV values and the Kucinskis et al. Fig. 7 counts could not be fetched again for it; they were transcribed from the full texts when the inputs were built (D3, D4).
 
 ## What changed from the brief
 
 - The ageing laws. The brief's examples, Wang et al. 2011 and Waldmann et al. 2014, could not be read (subscription full texts behind a CAPTCHA, which was not bypassed), so two open-access laws whose full texts were read replace them, chosen by a rule fixed before any of their numbers were used (D2 to D4).
 - The resistance. Neither Chen et al. 2020 nor a readable copy of O'Regan et al. 2022 reports a full-cell DC resistance of the LG M50, so the resistance is derived with PyBaMM's Doyle-Fuller-Newman model and the ORegan2022 parameter set (D8). It is a model value, not a measurement.
+- Three property values have no primary table: the air conductivity (0.03 W/(m K)) and the can's conductivity (15 W/(m K)), inherited from the two-cell study, and the nickel conductivity behind the brief's strip value (`inputs/SOURCES.md`).
 - The radiation term follows the two-cell study's corrected form (D10); the received form is reported as a sensitivity.
-- The note does not say that the dataset's divergence is not thermal in origin, which the brief allowed "if it is the case". It is not shown: the dataset's cells were cycled in separate fixtures, not in a module, their temperatures are not reported, and under Law 2 a 0.6 K difference between fixtures would reach the mean floor.
+- V3's acceptance. The brief's literal V3 test, the volume mean within 1 % of a lumped cell, cannot pass for a cell with internal heat, as D15 said before the run; acceptance rests on the surface mean, the energy balance, the refinement and the analytic radial check.
+- The note does not say that the dataset's divergence is not thermal in origin, which the brief allowed "if it is the case". It is not shown: the dataset's cells were cycled in separate fixtures, not in a module, their own temperatures are not reported, and under Law 2 a 0.6 K difference between fixtures would reach the mean floor. The post-hoc profile estimate points the same way.
 
 ## Inputs
 
 - The floor: copied from the published re-analysis (`inputs/floor.json`, with the file hash).
-- Two ageing laws, both open access and read in full (`inputs/SOURCES.md`): Kucinskis et al. 2022 (J. Power Sources 549, 232129), a 5 Ah NCA+LNO / Si-graphite 21700, the closest published chemistry to the dataset's cells, whose printed cycle counts to 90 % SoH against temperature and charge rate are the law (`inputs/kucinskis2022_fig7_cycles.csv`); and Schimpe et al. 2018 (J. Electrochem. Soc. 165, A181), the full temperature-dependent LiFePO4/graphite model with its Table IV parameters (`inputs/schimpe2018_parameters.json`).
-- The proxy cell, an LG M50, with the geometry, jelly-roll conductivities and can of the two-cell study (doi.org/10.5281/zenodo.23253738), whose resolved scikit-fem cell is reused unchanged in `src/twocell/`.
+- Two ageing laws, both open access and read in full (`inputs/SOURCES.md`): Kucinskis et al. 2022 (J. Power Sources 549, 232129), a 5 Ah NCA+LNO / Si-graphite 21700, the closest published chemistry found to the dataset's cells, whose printed cycle counts to 90 % SoH against temperature and charge rate are the law (`inputs/kucinskis2022_fig7_cycles.csv`); and Schimpe et al. 2018 (J. Electrochem. Soc. 165, A181), the full temperature-dependent LiFePO4/graphite model with its Table IV parameters (`inputs/schimpe2018_parameters.json`).
+- The proxy cell, an LG M50, with the geometry, jelly-roll conductivities and can of the two-cell study (doi.org/10.5281/zenodo.23253738), whose resolved scikit-fem cell is reused unchanged in `src/twocell/` (its comments cite that study's own decision numbers).
 - The resistance for the I^2 R heat is derived, not measured: 18.71 mOhm, the value whose I^2 R reproduces the steady C/2 cycling heat of PyBaMM's Doyle-Fuller-Newman model with the ORegan2022 parameter set at 35 C (D8; `inputs/lgm50_resistance.json`).
+- Post hoc only: the dataset authors' released per-cell discharge features (github.com/geslina/dynamic_cycling_Nature_Energy_2024 at commit 5b2f7f0), read from a local clone with hash checks and not redistributed.
 
-The dataset's cells are a different 21700; the proxy sets magnitudes, not the dataset's exact values.
+The LG M50 is a 21700 but a different cell from the dataset's; the proxy sets magnitudes, not the dataset's exact values.
 
 ## Files
 
-- `results/lever.json`: the floors, the laws, s, Delta T_floor (and the exact pair inversion) per law and rate, the lifetime curves from 15 to 55 C, and every module case.
+- `results/lever.json`: the floors, the laws, s, Delta T_floor (and the exact pair inversion) per law and rate, the lifetime curves at C/2, and every module case. `results/lifetime_curves.csv`: the lifetime curves from 15 to 55 C at every rate.
 - `results/module_spread.csv`, `results/module_spread_coldplate.csv`: heat per cell, every cell's temperature, the spreads, the hottest and coldest positions and the energy balance, per rate and h.
 - `results/resolved_cell.json`, `results/resolved_cell.csv`: the resolved cell per rate and h, with the hottest and coldest points.
-- `results/implied_divergence.csv`, `results/comparison.json`: Step 2(c), Step 3 and the secondary results.
+- `results/implied_divergence.csv`, `results/comparison.json`: Step 2(c), Step 3, the secondary results and the module network's constants.
 - `results/prediction_scorecard.json`, `results/thermal_lever_figure.png` (and `.pdf`), `note/thermal_lever_note.pdf`.
-- `verification/`: V1 and V2 (`v1_v2.json`), V3 (`v3_resolved_cell.json`) and V3's first run (`v3_first_run_diverged_check_e.json`).
-- `DECISIONS.md`: D1 to D20 fixed before the predictions, D21 before the push, D22 after it.
+- `results/posthoc.json`, `results/dataset_protocol_heat.csv`: the post-hoc analyses of D24.
+- `verification/`: V1 and V2 (`v1_v2.json`), V3 (`v3_resolved_cell.json`), V3's first run (`v3_first_run_diverged_check_e.json`) and the independent recomputation.
+- `DECISIONS.md`: D1 to D20 fixed before the predictions, D21 before the push, D22 to D24 after it.
 
 ## How to run
 
 ```
 python3 -m pip install -r requirements.txt
-python3 src/lgm50_resistance.py --out inputs/lgm50_resistance.json   # the derived resistance (minutes)
+python3 src/lgm50_resistance.py --out inputs/lgm50_resistance.json   # the derived resistance
 python3 src/verify_pre.py --out verification                         # V1 and V2
 python3 src/resolved_cell_steady.py --verify --out verification      # V3
 python3 src/thermal_lever.py --out results                           # Step 1 and Step 2(a)
 python3 src/resolved_cell_steady.py --out results                    # Step 2(b)
 python3 src/compare.py --results results                             # Step 2(c), Step 3, scoring
+git clone https://github.com/geslina/dynamic_cycling_Nature_Energy_2024 upstream
+git -C upstream checkout 5b2f7f04d05072fe1f9bd8af664f23eadbde6317
+python3 src/posthoc.py --upstream upstream --results results         # post hoc (D24)
 python3 src/make_figure.py --results results                         # the figure
 cd note && ./render_note.sh                                          # the note (pandoc and Chromium)
 ```
 
 ## Licence
 
-Code: MIT (LICENSE). Note, figure and results: CC BY 4.0. The two-cell study's solver files in `src/twocell/` are MIT, by the same author.
+Code: MIT (LICENSE). Note, figure and results: CC BY 4.0. The two-cell study's solver files in `src/twocell/` are MIT, by the same author. The dataset's features used post hoc are CC BY 4.0 (Geslin et al.; doi.org/10.25740/td676xr4322) and are not redistributed here.
 
 ## References
 
