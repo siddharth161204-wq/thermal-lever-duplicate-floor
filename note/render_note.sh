@@ -12,6 +12,7 @@ parts = re.split(r'(<[^>]+>)', h)
 for i, t in enumerate(parts):
     if not t.startswith('<'):
         parts[i] = re.sub(r'(\d) (?=' + unit + ')', '\\1\u00a0', t)
+        parts[i] = re.sub(r'\b([hfsc]) = ', '\\1\u00a0=\u00a0', parts[i])
 open(p, 'w').write(''.join(parts))
 PY
 CHROME=${CHROME:-$(ls -d /opt/pw-browsers/chromium-*/chrome-linux/chrome 2>/dev/null | head -1)}
