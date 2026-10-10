@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
-"""The figure: (a) Delta T_floor against the floor f for each law, with the three floors marked and the uncertainty
-bands; (b) Delta T_module (lumped, solid) and Delta T_cell (resolved, dashed) against C-rate for h = 5, 10, 25, with
-Delta T_floor(3.0 %) and Delta T_floor(8.7 %) of each law as horizontal lines; (c) the implied lifetime divergence
-s x Delta T against rate, with the floor lines.
+"""The figure: (a) the magnitude of Delta T_floor against the floor f for each law, with the three floors marked and the
+uncertainty bands; (b) Delta T_module (lumped, solid) and Delta T_cell (resolved, dashed) against C-rate for h = 5, 10,
+25, with Delta T_floor(3.0 %) and Delta T_floor(8.7 %) of each law as horizontal lines; (c) the implied lifetime
+divergence |s| x Delta T against rate, with the floor lines. Panels (b) and (c) also show, as open circles, the
+post-hoc estimate of src/posthoc.py (DECISIONS.md D24): the module at h = 10 with the cycle-averaged heat of each of the
+dataset's 92 cells, from its own discharge profile and the C/2 charge, at its measured average C-rate.
 
 Usage: python3 src/make_figure.py --results results
 """
-import argparse, json, os, sys
+import argparse, csv, json, os, sys
 import numpy as np
 import matplotlib
 matplotlib.use("Agg")
@@ -50,8 +52,11 @@ def main(res_dir):
     mod = {(round(r["crate"], 6), r["h"]): r for r in lev["module"]}
     cell = {(round(r["crate"], 6), r["h"]): r for r in cel["rows"] if r["base_h"] is None}
 
-    fig, ax = plt.subplots(1, 3, figsize=(7.4, 2.75), dpi=220)
-    fig.subplots_adjust(left=0.07, right=0.985, bottom=0.28, top=0.9, wspace=0.42)
+    ph_path = os.path.join(res_dir, "dataset_protocol_heat.csv")
+    ph = list(csv.DictReader(open(ph_path))) if os.path.exists(ph_path) else []
+
+    fig, ax = plt.subplots(1, 3, figsize=(7.4, 2.9), dpi=220)
+    fig.subplots_adjust(left=0.07, right=0.985, bottom=0.31, top=0.905, wspace=0.42)
 
     # (a) |Delta T_floor| against f
     a = ax[0]
@@ -92,6 +97,9 @@ def main(res_dir):
             below = (law == L2)
             b.text(1 / 16 * 0.82, v * (0.88 if below else 1.12), f"{tag}, {lab}", color=INK2, fontsize=5.4,
                    va="top" if below else "bottom", ha="left")
+    if ph:
+        b.plot([float(r["c_mean"]) for r in ph], [float(r["dT_module_K_h10"]) for r in ph], ls="none", marker="o", ms=2.4,
+               mfc="none", mec=INK2, mew=0.5, alpha=0.75, zorder=4)
     b.set_ylabel("temperature difference (K)")
     b.set_title("(b) what a module and a cell offer", loc="left", fontsize=6.9, color=INK)
 
@@ -109,8 +117,12 @@ def main(res_dir):
                             ("p95_8.7pct", "8.7 % 95th percentile", "bottom", 1.08)):
         c.axhline(100 * fl[k], color=INK2, lw=0.6, ls=":", zorder=2)
         c.text(1 / 16 * 0.82, 100 * fl[k] * fac, lab, color=INK2, fontsize=5.4, va=va, ha="left")
-    c.set_ylabel("implied lifetime divergence (%)")
-    c.set_title("(c) s × temperature difference", loc="left", fontsize=6.9, color=INK)
+    if ph:
+        for law in TL.LAWS:
+            c.plot([float(r["c_mean"]) for r in ph], [100 * float(r[f"implied_module_{law}_h10"]) for r in ph], ls="none",
+                   marker="o", ms=2.4, mfc="none", mec=COL[law], mew=0.5, alpha=0.8, zorder=4)
+    c.set_ylabel("implied divergence |s| × ΔT (%)")
+    c.set_title("(c) |s| × temperature difference", loc="left", fontsize=6.9, color=INK)
 
     handles = [Line2D([], [], color=COL[L1], lw=1.4, label="Law 1: NCA+LNO / Si-graphite 21700, C/2 charge"),
                Line2D([], [], color=COL[L2], lw=1.4, label="Law 2: LiFePO4 / graphite 26650, full model"),
@@ -118,8 +130,11 @@ def main(res_dir):
                Line2D([], [], color=INK2, lw=0.9, ls="--", label="one cell, resolved")]
     handles += [Line2D([], [], color=col, marker=mk, lw=0, ms=3.2, label=f"h = {h:g} W/(m\u00b2 K)") for h, (mk, col) in H_STYLE.items()]
     handles += [Patch(color=COL[L1], alpha=0.25, lw=0, label="bands: (a) Law 1 assumed noise, Law 2 C/16 to C/2; (c) h = 5 to 25")]
-    fig.legend(handles=handles, loc="lower center", ncol=4, fontsize=5.5, frameon=False, handlelength=2.0,
-               columnspacing=1.2, bbox_to_anchor=(0.5, 0.0))
+    if ph:
+        handles += [Line2D([], [], ls="none", marker="o", ms=2.8, mfc="none", mec=INK2, mew=0.6,
+                           label="post hoc: the dataset's 92 cells, own discharge profile and C/2 charge, module at h = 10")]
+    fig.legend(handles=handles, loc="lower center", ncol=3, fontsize=5.5, frameon=False, handlelength=2.0,
+               columnspacing=1.4, bbox_to_anchor=(0.5, 0.0))
     for ext in ("png", "pdf"):
         fig.savefig(os.path.join(res_dir, f"thermal_lever_figure.{ext}"))
     print("figure written")
