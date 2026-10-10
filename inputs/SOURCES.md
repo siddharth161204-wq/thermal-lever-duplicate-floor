@@ -20,6 +20,14 @@ Every number this study takes from outside comes from one of the works below. "R
 
 8. Cold-plate base conductance (secondary arrangement). Satte, S. Current collection and event duration set the error of uniform heat-generation models of base-cooled prismatic lithium-ion cells. SSRN preprint (2026), https://doi.org/10.2139/ssrn.7570666; code and data https://doi.org/10.5281/zenodo.23053419. Used: the 600 W/(m2 K) base-to-plate conductance.
 
+9. Post hoc (DECISIONS.md D24): the dataset authors' released per-cell discharge features, `data/protocol_features.csv` (mean discharge current and normalized current variance) with `data/metadata.pkl` (cell and protocol names), at https://github.com/geslina/dynamic_cycling_Nature_Energy_2024, commit 5b2f7f04d05072fe1f9bd8af664f23eadbde6317 (SHA-256 in `results/posthoc.json`; the metadata file is the one the floor study checked). The dataset is CC BY 4.0 (doi.org/10.25740/td676xr4322); the files are read from a local clone and not redistributed. Geslin et al. describe these features as computed from one representative ageing cycle of time-series current data (Methods, p. 177); the normalisation is inferred from the data as described in D24, because the Supplementary Method that defines it was not read.
+
+## Values without a primary table
+
+- Air conductivity 0.03 W/(m K) for the gap conduction, and the can's 15 W/(m K) in the resolved cell: inherited from the two-cell study, which gives no primary table for them. The C/2 module spread changes by +3.7 % and -3.4 % with the air conductivity 10 % lower and higher (`results/posthoc.json`).
+- Nickel 90 W/(m K) for the strip: the two-cell study's value, which gives the brief's 12 mW/K for two 0.2 by 8 mm strips; the strip sensitivity (none, one, two strips) is in `results/comparison.json`.
+- The 21700 format of the dataset's cells: Geslin et al.'s main text says commercial cylindrical EV energy cells and does not name the format; this study does not depend on it.
+
 ## Named in the brief but not used
 
 - Wang, J., Liu, P., Hicks-Garner, J., Sherman, E., Soukiazian, S., Verbrugge, M., Tataria, H., Musser, J. & Finamore, P. Journal of Power Sources 196(8), 3942 (2011), as printed in the reference list of Schimpe et al. 2018 (ref. 8). Subscription. Full text not read: ScienceDirect presented a CAPTCHA, and the Crossref query for its record was refused by a rate limit, so the title and page range are not checked against the publisher here.
