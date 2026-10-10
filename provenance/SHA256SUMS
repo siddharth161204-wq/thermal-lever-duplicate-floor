@@ -1,0 +1,10 @@
+# Files copied unchanged from other repositories, with their SHA-256 at the source.
+# github.com/siddharth161204-wq/m50-two-cell-pilot, tag v1.0.0, commit 2b35ac7aa1a2cc822ed59f61fc73128b220bdd1c
+edc7014caa80e6ccc8fdb0967dd601b16b965fd6b9e3d7497b6ee4282843adc1  src/twocell/resolved_cell2.py    (src/resolved_cell2.py there)
+c254d272f501dafa0ee563cb8a3a2e5b1b2bdc02e8eb0f4437ef0eb61ecf0a12  src/twocell/mesh_cell2.py        (src/mesh_cell2.py there)
+2e514aa1e25a3eb712499d86fe9aac53af77fa9689c83fff300ced606ed05488  src/twocell/lumped_two_cell.py   (src/lumped_two_cell.py there)
+68a6d178614aadbab805ac6ef65046bcfa09905687e69627cddb278bb1ed78ab  inputs/oregan2022_properties.txt (inputs/oregan2022_properties.txt there)
+# github.com/siddharth161204-wq/geslin-floor-pilot, tag v1.0.1, commit 103f7e7f9f19d267cfe0c2e5f4a4a702d80e410b
+be63577f328a2c49850b9ed6d9242459c89569e7b1a065ccce7880d3d825b8ac  results/results.json there; values copied into inputs/floor.json
+# the brief's script as received on 10 October 2026
+f0dd9a2b0a009505a079662a4fd769fc0e5dcd25229502d6b95ef8934d95ac3f  provenance/thermal_lever_as_received.py

@@ -1,0 +1,60 @@
+{
+ "source": "Schimpe, M., von Kuepach, M. E., Naumann, M., Hesse, H. C., Smith, K., Jossen, A. (2018). Comprehensive modeling of temperature-dependent degradation mechanisms in lithium iron phosphate batteries. Journal of The Electrochemical Society 165(2), A181-A193. https://doi.org/10.1149/2.1181714jes (open access, CC BY 4.0)",
+ "cell": "Sony US26650FTC1, LiFePO4/graphite, 26650, 3.0 Ah taken as nominal in the study, 2.0 to 3.6 V (Table I, p. A182)",
+ "tests": "storage at 10 to 55 C and SOC 0 to 100 %; cycle tests CC and CC-CV at 0.25C, 0.5C and 1C (same rate for charge and discharge), 0, 10, 15, 25, 35, 45 and 55 C, full range 2.0 to 3.6 V, CV cut-off C/10 (Table II and text, p. A182)",
+ "model": "Eq. 23, p. A188: Q_Loss = k_Cal(T,SOC) sqrt(t) + k_Cyc,HighT(T) sqrt(Q_Tot) + k_Cyc,LowT(T,I_Ch) sqrt(Q_Ch) + k_Cyc,LowT,HighSOC(T,I_Ch,SOC) Q_Ch; Q_Loss is the capacity loss as a fraction of the original capacity; time t in h, throughput in Ah; Q_Tot counts charge and discharge, Q_Ch charge only (p. A187); the rate-based integral form, Eq. 24, for varying conditions",
+ "stress_factors": {
+  "k_Cal(T,SOC)": "k_Cal,Ref * exp[-E_a,Cal/R_g (1/T - 1/T_Ref)] * (exp[alpha F (U_a,Ref - U_a(SOC)) / (R_g T_Ref)] + k_0)   (Eq. 9, p. A185)",
+  "k_Cyc,HighT(T)": "k_Cyc,HighT,Ref * exp[-E_a,Cyc,HighT/R_g (1/T - 1/T_Ref)]   (Eq. 15, p. A187)",
+  "k_Cyc,LowT(T,I_Ch)": "k_Cyc,LowT,Ref * exp[+E_a,Cyc,LowT/R_g (1/T - 1/T_Ref)] * exp[beta_LowT (I_Ch - I_Ch,Ref)/C_0]   (Eq. 18, p. A187)",
+  "k_Cyc,LowT,HighSOC(T,I_Ch,SOC)": "k_Cyc,LowT,HighSOC,Ref * exp[+E_a,Cyc,LowT,HighSOC/R_g (1/T - 1/T_Ref)] * exp[beta_LowT,HighSOC (I_Ch - I_Ch,Ref)/C_0] * (sgn(SOC - SOC_Ref) + 1)/2   (Eq. 21, p. A188)"
+ },
+ "table_IV_p_A190": {
+  "k_Cal_Ref_h^-0.5": 3.69e-4,
+  "k_Cyc_HighT_Ref_Ah^-0.5": 1.46e-4,
+  "k_Cyc_LowT_Ref_Ah^-0.5": 4.01e-4,
+  "k_Cyc_LowT_HighSOC_Ref_Ah^-1": 2.03e-6,
+  "E_a_Cal_J_per_mol": 2.06e4,
+  "E_a_Cyc_HighT_J_per_mol": 3.27e4,
+  "E_a_Cyc_LowT_J_per_mol": 5.55e4,
+  "E_a_Cyc_LowT_HighSOC_J_per_mol": 2.33e5,
+  "alpha": 0.384,
+  "beta_LowT_h": 2.64,
+  "beta_LowT_HighSOC_h": 7.84,
+  "T_Ref_K": 298.15,
+  "I_Ch_Ref_A": 3.0,
+  "U_a_Ref_V": 0.123,
+  "k_0": 0.142
+ },
+ "text_values_for_comparison": {
+  "k_Cal_Ref_h^-0.5": {"value": 3.694e-4, "where": "p. A184"},
+  "E_a_Cal_J_per_mol": {"value": 20592, "where": "p. A184"},
+  "k_Cyc_HighT_Ref_Ah^-0.5": {"value": 1.456e-4, "where": "p. A187"},
+  "k_Cyc_LowT_Ref_Ah^-0.5": {"value": 4.009e-4, "where": "p. A187"},
+  "E_a_Cyc_HighT_J_per_mol": {"value": 32699, "where": "p. A187"},
+  "E_a_Cyc_LowT_J_per_mol": {"value": 55546, "where": "p. A187"},
+  "k_Cyc_LowT_HighSOC_Ref_Ah^-1": {"value": 2.031e-6, "where": "p. A188"},
+  "E_a_Cyc_LowT_HighSOC_J_per_mol": {"value": 2.3e5, "where": "p. A188"},
+  "beta_LowT_HighSOC_h": {"value": 7.8, "where": "p. A188"}
+ },
+ "other": {
+  "C_0_Ah": {"value": 3.0, "where": "p. A187 (nominal cell capacity C_0 = 3 Ah)"},
+  "SOC_Ref": {"value": 0.82, "where": "p. A188 (SOC_Ref = 82 %)"},
+  "R_g_J_per_mol_K": {"value": 8.314, "where": "p. A184"},
+  "F_C_per_mol": {"value": 96485, "where": "p. A185"},
+  "end_of_test": "tests stopped at 80 % of the original capacity; the model does not include accelerating (non-linear) ageing (p. A183)"
+ },
+ "appendix_p_A192_A193": {
+  "U_a(x)": "0.6379 + 0.5416 exp(-305.5309 x) + 0.044 tanh(-(x - 0.1958)/0.1088) - 0.1978 tanh((x - 1.0571)/0.0854) - 0.6875 tanh((x + 0.0117)/0.0529) - 0.0175 tanh((x - 0.5692)/0.0875)   (Eq. A1, from Safari and Delacourt 2011)",
+  "x_a(SOC)": "x_a(0 %) + SOC [x_a(100 %) - x_a(0 %)]   (Eq. A2)",
+  "x_a_SOC0": 8.5e-3,
+  "x_a_SOC100": 7.8e-1,
+  "where_stoichiometry": "Table AI, p. A193"
+ },
+ "validation_statements_used_for_V1": {
+  "25C_1C_CC": {"text": "As the cells show a high cycle stability at 25 C, with less than 9% of capacity loss after 2800 full cycles at 1C", "where": "p. A183"},
+  "45C_1C_CC": {"text": "the test point CC cycling at ambient temperature of 45 C with 1C showed a capacity loss of 12% ... after 2800 full equivalent cycles", "where": "p. A183"},
+  "FEC": {"text": "1 FEC = 6 Ah throughput", "where": "p. A185"},
+  "model_error_CC": {"text": "For all cells except 0 C cycled at 1C, the model error is below 2%", "where": "p. A190"}
+ }
+}

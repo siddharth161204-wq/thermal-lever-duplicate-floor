@@ -1,0 +1,38 @@
+{
+ "source": "Satte, S. (2026). The cell-to-cell lifetime floor in the Geslin et al. dynamic-cycling dataset (v1.0.1). Zenodo. https://doi.org/10.5281/zenodo.23205413",
+ "repository": "https://github.com/siddharth161204-wq/geslin-floor-pilot",
+ "commit": "103f7e7f9f19d267cfe0c2e5f4a4a702d80e410b",
+ "tag": "v1.0.1",
+ "file": "results/results.json",
+ "file_sha256": "be63577f328a2c49850b9ed6d9242459c89569e7b1a065ccce7880d3d825b8ac",
+ "definition_pair": "|EFC_a - EFC_b| / mean(EFC_a, EFC_b) at 90 % state of health, over the 45 duplicate pairs",
+ "definition_worst_of_8": "(mean - min) / mean of the lifetimes of 8 nominally identical cells, by selection alone, resampled from the measured pair deviations (median over simulated modules)",
+ "keys_in_results_json": {
+  "mean": "A1_pair_relative_difference.soh0.900.mean",
+  "median": "A1_pair_relative_difference.soh0.900.median",
+  "p95": "A1_pair_relative_difference.soh0.900.p95",
+  "worst_of_8": "A3_selection_only_worst_of_N.soh0.900.worst_of_N_shortfall.8.nonparametric_median"
+ },
+ "mean": 0.029909975804944276,
+ "median": 0.017457049305555493,
+ "p95": 0.08717631863980334,
+ "p95_bootstrap_95": [
+  0.056536727866584216,
+  0.13941359756642235
+ ],
+ "mean_bootstrap_95": [
+  0.021306771569033787,
+  0.03924085959467895
+ ],
+ "worst_of_8": 0.040974943708388764,
+ "worst_of_8_bootstrap_95": [
+  0.02759376989441352,
+  0.055842449734207225
+ ],
+ "n_pairs": 45,
+ "FLOORS": {
+  "mean_3.0pct": 0.029909975804944276,
+  "worst_of_8_4.1pct": 0.040974943708388764,
+  "p95_8.7pct": 0.08717631863980334
+ }
+}

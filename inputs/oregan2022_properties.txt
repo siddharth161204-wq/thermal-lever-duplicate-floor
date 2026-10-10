@@ -1,0 +1,13 @@
+PyBaMM 26.9.0.0, parameter set ORegan2022
+pair thickness 186.8 um, electrode area 0.1027 m2, roll volume 1.9184e-05 m3
+cell volume 2.420e-05 m3, cooling area 0.00531 m2
+T_C   rho_eff  cp_eff  k_radial  k_inplane  roll_mass_g
+   0   2938.7   728.0    1.181     24.90       56.4
+  25   2938.7   842.4    1.225     25.09       56.4
+  40   2938.7   912.7    1.253     25.14       56.4
+  60   2938.7   999.4    1.295     25.14       56.4
+  80   2938.7  1068.6    1.339     25.05       56.4
+ 100   2938.7  1110.0    1.378     24.88       56.4
+ 150   2938.7  1024.3    1.305     24.07       56.4
+ 200   2938.7   539.6   12.641     22.71       56.4
+Note: the component specific-heat fits are polynomials; above about 150 C they are non-physical (positive electrode cp at 200 C: -1332 J/kgK).
