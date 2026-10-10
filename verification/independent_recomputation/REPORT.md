@@ -1,6 +1,7 @@
 Status, added when this report was filed in the repository: the check was run against commit 0e4ee5e. Its two
 discrepancies, V1 for Law 2 without the high-SOC term and the standard error in D16's text, and its remarks on D4, D17
-and D18 are addressed in DECISIONS.md D23; the resolved cell's 1.2 % difference is reported in the README. Paths below
+and D18 are addressed in DECISIONS.md D23; the resolved cell's 1.2 % difference is reported in the README. One run-time estimate in Section 7 was
+removed to keep the study's rule on schedule estimates. Paths below
 are those of the checking session (`/home/claude/independent_check/numeric` is this folder; `.../repo` is the
 repository at 0e4ee5e).
 

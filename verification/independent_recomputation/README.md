@@ -1,3 +1,8 @@
+Filed copy, adapted by the author: the paragraph after the first one (which commit was checked and how to rerun
+it), the words "by a separate checker who had not seen the study being built", the repository path in `common.py`,
+the line on `REPORT.md` and the removal of run-time estimates are the author's; the scripts, outputs and the rest of
+this file are the checker's.
+
 # Independent numerical check of "The thermal lever against the duplicate-cell floor"
 
 Everything here was written for this check, by a separate checker who had not seen the study being built, from the
