@@ -11,7 +11,7 @@ Nominally identical cells cycled under one protocol at one temperature still dri
 
 ## Pre-registration
 
-The predictions in [predictions.md](predictions.md) were committed before any script computed a lever at 35 C, a module spread at a registered rate and cooling, or any field of the resolved cell, and the commit was pushed to this public repository before those runs. The pre-registration commit is recorded here once it exists.
+The predictions in [predictions.md](predictions.md) were committed in `24ab8d31cd18aa4fe2a010d89f82271652c2d024` (10 October 2026, 07:25 UTC), before any script computed a lever at 35 C, a module spread at a registered rate and cooling, or any field of the resolved cell. This repository was created and that commit pushed at 08:01:59 UTC the same day; every run of V3 and of the registered steps came after the push. One commit lies between the predictions and the push, `7791192`, which changed the linear solver of the resolved cell's steady state after a direct solve ran out of memory on the refined mesh (DECISIONS.md D21), and added the comparison and figure scripts and the release metadata; it was tested with zero heat only. The first commit holds the brief's script as received.
 
 ## Inputs
 
