@@ -2,7 +2,8 @@
 """Step 2(c), Step 3 and the scoring: the implied lifetime divergence, where a module or a cell first offers the floor,
 the dataset's own conditions, the secondary results of DECISIONS.md D12 and D16 to D19, and the scorecard of
 predictions.md. Reads results/lever.json and results/resolved_cell.json; writes results/comparison.json,
-results/implied_divergence.csv and results/prediction_scorecard.json.
+results/implied_divergence.csv, results/lifetime_curves.csv and results/prediction_scorecard.json. The changes of D23
+(made after the results, none to a registered number) are marked.
 
 Usage: python3 src/compare.py --results results
 """
@@ -22,7 +23,15 @@ def lab(c):
     return min(RATE_LABEL.items(), key=lambda kv: abs(kv[0] - c))[1]
 
 
+# D18 evaluates a law at each cell's own temperature only inside the temperature range it was fitted over (D3, D4);
+# D23 applies this to Law 2 as well (0 to 55 C), which the first version did not.
+LAW_RANGE_C = {"law_1_kucinskis2022": (15.0, 55.0), "law_2_schimpe2018": (0.0, 55.0)}
+
+
 def law_life(law, T_K, c):
+    lo, hi = LAW_RANGE_C[law]
+    if not (lo - 1e-9 <= T_K - 273.15 <= hi + 1e-9):
+        return float("nan")
     try:
         L = TL.LAWS[law](T_K, c)
         return L if np.isfinite(L) else float("nan")
@@ -31,14 +40,16 @@ def law_life(law, T_K, c):
 
 
 def exact_divergence(law, T_cells_C, c):
-    """Law evaluated at each cell's temperature: pair difference hottest/coldest, worst-of-8 shortfall (D18)."""
+    """Law evaluated at each cell's temperature: pair difference hottest/coldest, worst-of-8 shortfall (D18), and the
+    signed pair difference (L_hot - L_cold) / mean, negative when the hotter cell lives shorter (D23)."""
     L = np.array([law_life(law, t + 273.15, c) for t in T_cells_C])
     if not np.all(np.isfinite(L)):
-        return float("nan"), float("nan")
+        return float("nan"), float("nan"), float("nan")
     i_hot, i_cold = int(np.argmax(T_cells_C)), int(np.argmin(T_cells_C))
     pair = abs(L[i_hot] - L[i_cold]) / (0.5 * (L[i_hot] + L[i_cold]))
+    signed = (L[i_hot] - L[i_cold]) / (0.5 * (L[i_hot] + L[i_cold]))
     short = (L.mean() - L.min()) / L.mean()
-    return float(pair), float(short)
+    return float(pair), float(short), float(signed)
 
 
 def main(res_dir):
@@ -59,17 +70,22 @@ def main(res_dir):
             for h in TL.H_LIST:
                 m, rc = mod[(ck, h)], cell[(ck, h)]
                 sv = s[law][ck]
-                pair, short = exact_divergence(law, m["T_cells_C"], c)
+                pair, short, signed = exact_divergence(law, m["T_cells_C"], c)
                 row = {"law": law, "rate": lab(c), "crate": c, "h": h, "q_cell_W": m["q_cell_W"], "s_per_K": sv,
                        "dT_module_K": m["dT_module_K"], "dT_module_hot_minus_mean_K": m["dT_hot_minus_mean_K"],
                        "dT_cell_K": rc["dT_cell_K"], "dT_cell_hot_minus_mean_K": rc["dT_hot_minus_mean_K"],
                        "implied_module": abs(sv) * m["dT_module_K"], "implied_module_hot_minus_mean": abs(sv) * m["dT_hot_minus_mean_K"],
                        "implied_cell": abs(sv) * rc["dT_cell_K"],
                        "exact_pair_hottest_coldest": pair, "exact_worst_of_8_shortfall": short,
+                       "exact_pair_signed_hot_minus_cold": signed,
                        "T_module_max_C": m["T_max_C"], "T_cell_max_C": rc["T_max_C"]}
                 for k, f in floors.items():
                     row[f"module_exceeds_{k}"] = m["dT_module_K"] > abs(dtf[law][ck][k])
                     row[f"cell_exceeds_{k}"] = rc["dT_cell_K"] > abs(dtf[law][ck][k])
+                # D17 alongside: the worst-of-8 shortfall against the hottest-minus-mean spread
+                k4 = "worst_of_8_4.1pct"
+                row[f"module_hot_minus_mean_exceeds_{k4}"] = m["dT_hot_minus_mean_K"] > abs(dtf[law][ck][k4])
+                row[f"cell_hot_minus_mean_exceeds_{k4}"] = rc["dT_hot_minus_mean_K"] > abs(dtf[law][ck][k4])
                 rows.append(row)
     with open(os.path.join(res_dir, "implied_divergence.csv"), "w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=list(rows[0])); w.writeheader(); w.writerows(rows)
@@ -83,6 +99,9 @@ def main(res_dir):
         return "none up to 2C"
     step3 = {law: {str(h): {k: {"module": lowest(law, h, k, "module"), "cell": lowest(law, h, k, "cell")} for k in floors}
                    for h in TL.H_LIST} for law in LAWS}
+    k4 = "worst_of_8_4.1pct"
+    step3_w8 = {law: {str(h): {"module": lowest(law, h, k4, "module_hot_minus_mean"), "cell": lowest(law, h, k4, "cell_hot_minus_mean")}
+                      for h in TL.H_LIST} for law in LAWS}
 
     # the dataset's own conditions: average rates C/16 to C/2, h = 5 to 25, the brief's heat
     ds = [x for x in rows if x["crate"] <= 0.5 + 1e-9]
@@ -145,19 +164,26 @@ def main(res_dir):
             T, _, _ = TL.module_steady((0.5 * TL.CAP_AH) ** 2 * pul["R_ohm"], 10.0)
             sens[f"R_{pul['pulse_s']}s_pulse_{1e3 * pul['R_ohm']:.2f}_mOhm"] = float(T.max() - T.min())
 
-    # scoring (predictions.md)
+    # D23: the lifetime curves L(T) from 15 to 55 C at every rate (the brief's Step 1 asks for them at each rate)
+    with open(os.path.join(res_dir, "lifetime_curves.csv"), "w", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(["T_C"] + [f"{law}_{lab(c)}_cycles_to_90pct" for law in LAWS for c in TL.CRATES])
+        for t in np.arange(15.0, 55.0 + 1e-9, 1.0):
+            w.writerow([f"{t:.0f}"] + [f"{law_life(law, t + 273.15, c):.6g}" for law in LAWS for c in TL.CRATES])
+
+    # scoring (predictions.md); D23 renames "measured" to "computed" and states P5's central estimate as registered
     score = {}
     p1 = {law: {lab(c): dtf[law][round(c, 6)]["p95_8.7pct"] for c in DATASET_RATES} for law in LAWS}
     score["P1"] = {"statement": "Delta T_floor(8.7 %) at 35 C lies between 1 and 3 K for every law used",
-                   "measured_K": p1, "central_K": {"law_1_kucinskis2022": -8.8, "law_2_schimpe2018": 1.7},
+                   "computed_K": p1, "central_K": {"law_1_kucinskis2022": -8.8, "law_2_schimpe2018": 1.7},
                    "held_per_law": {law: all(1.0 <= v <= 3.0 for v in p1[law].values()) for law in LAWS}}
     score["P1"]["held"] = all(score["P1"]["held_per_law"].values())
     v2 = mod[(0.5, 10.0)]["dT_module_K"]
-    score["P2"] = {"statement": "At C/2 with h = 10, Delta T_module is below 1 K", "measured_K": v2, "central_K": 0.39,
+    score["P2"] = {"statement": "At C/2 with h = 10, Delta T_module is below 1 K", "computed_K": v2, "central_K": 0.39,
                    "by_h_K": {str(h): mod[(0.5, h)]["dT_module_K"] for h in TL.H_LIST}, "held": v2 < 1.0}
     v3 = {str(h): cell[(0.5, h)]["dT_cell_K"] for h in TL.H_LIST}
     score["P3"] = {"statement": "At C/2 the within-cell spread Delta T_cell is below 0.5 K (scored at h = 10, must hold at 5 and 25)",
-                   "measured_K": v3, "central_K": 0.12, "held": all(v < 0.5 for v in v3.values())}
+                   "computed_K": v3, "central_K": 0.12, "held": all(v < 0.5 for v in v3.values())}
     grid = [lab(c) for c in TL.CRATES]
     p4 = {}
     for law in LAWS:
@@ -166,19 +192,27 @@ def main(res_dir):
         second = (r10 != "none up to 2C" and r5 != "none up to 2C" and grid.index(r5) == grid.index(r10) - 1)
         p4[law] = {"h10": r10, "h5": r5, "first_clause": first, "second_clause": second}
     score["P4"] = {"statement": "The lowest rate at which Delta T_module exceeds Delta T_floor(8.7 %) with h = 10 is 1C or higher, and with h = 5 one step lower",
-                   "measured": p4, "central": {"law_1_kucinskis2022": {"h10": "none up to 2C", "h5": "none up to 2C"},
+                   "computed": p4, "central": {"law_1_kucinskis2022": {"h10": "none up to 2C", "h5": "none up to 2C"},
                                                "law_2_schimpe2018": {"h10": "2C", "h5": "2C"}},
                    "held": all(v["first_clause"] and v["second_clause"] for v in p4.values())}
     ratio = {lab(c): max(abs(p1[l][lab(c)]) for l in LAWS) / min(abs(p1[l][lab(c)]) for l in LAWS) for c in DATASET_RATES}
-    score["P5"] = {"statement": "The two laws' Delta T_floor(8.7 %) differ by less than a factor of 2", "measured_ratio": ratio,
-                   "central_ratio": 5.2, "held": all(v < 2.0 for v in ratio.values())}
+    score["P5"] = {"statement": "The two laws' Delta T_floor(8.7 %) differ by less than a factor of 2", "computed_ratio": ratio,
+                   "central_ratio": 8.8 / 1.7, "central_as_registered": "8.8 K against 1.7 K in magnitude, a factor of about 5",
+                   "held": all(v < 2.0 for v in ratio.values())}
 
     out = {"floors": floors, "s_per_K": {law: {lab(c): s[law][round(c, 6)] for c in TL.CRATES} for law in LAWS},
            "dT_floor_K": {law: {lab(c): dtf[law][round(c, 6)] for c in TL.CRATES} for law in LAWS},
-           "step3_lowest_rate": step3, "dataset_conditions_brief_heat": dataset, "dataset_conditions_cycle_averaged_heat_D19": cyc,
+           "step3_lowest_rate": step3, "step3_worst_of_8_against_hottest_minus_mean": step3_w8,
+           "dataset_conditions_brief_heat": dataset, "dataset_conditions_cycle_averaged_heat_D19": cyc,
            "coldplate": {"module": {f"{lab(c)} h{h:g}": plate[(round(c, 6), h)]["dT_module_K"] for c in TL.CRATES for h in TL.H_LIST},
                          "cell_h10": {lab(c): cell_plate[round(c, 6)]["dT_cell_K"] for c in TL.CRATES}},
-           "law1_by_charge_rate": l1, "law1_assumed_noise_mc": l1_mc, "law2_by_term": l2, "module_sensitivity_C2_h10_K": sens}
+           "law1_by_charge_rate": l1, "law1_assumed_noise_mc": l1_mc, "law2_by_term": l2, "module_sensitivity_C2_h10_K": sens,
+           "law1_signed_exact_pair_hot_minus_cold": {f"{lab(r['crate'])} h{r['h']:g}": r["exact_pair_signed_hot_minus_cold"]
+                                                     for r in rows if r["law"] == LAWS[0]},
+           "module_network_constants": {"pitch_m": TL.PITCH, "gap_m": TL.GAP, "k_air_W_per_mK": TL.K_AIR, "eps": TL.EPS,
+                                        "G_strip_W_per_K": TL.G_STRIP, "G_gap_W_per_K": TL.G_GAP, "F_view": TL.F_VIEW,
+                                        "A_lat_m2": TL.A_LAT, "A_end_m2": TL.A_END, "A_outer_m2": TL.A_OUTER,
+                                        "A_face_m2": TL.A_FACE, "R_DC_ohm": TL.R_DC, "capacity_Ah": TL.CAP_AH}}
     with open(os.path.join(res_dir, "comparison.json"), "w") as f:
         json.dump(out, f, indent=1)
     with open(os.path.join(res_dir, "prediction_scorecard.json"), "w") as f:

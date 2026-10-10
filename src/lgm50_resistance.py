@@ -4,7 +4,7 @@
 Neither source named by the brief for the resistance reports a full-cell DC resistance that could be used:
 Chen et al. 2020 (J. Electrochem. Soc. 167, 080534) gives only half-cell charge-transfer resistances (its Table VI),
 and the full text of O'Regan et al. 2022 (Electrochim. Acta 425, 140700) was not accessible in this study
-(DECISIONS.md D7). The resistance is therefore DERIVED: the Doyle-Fuller-Newman model of PyBaMM with the
+(DECISIONS.md D8). The resistance is therefore DERIVED: the Doyle-Fuller-Newman model of PyBaMM with the
 ORegan2022 parameter set (which carries the temperature dependence O'Regan et al. measured), isothermal at the
 dataset's 35 C, on the cell's rated 2.5 to 4.2 V window (Chen et al. 2020, p. 9: "The rated capacity of the LGM50
 cell between 2.5 - 4.2 V is cited to be 5 Ah").

@@ -16,7 +16,7 @@ Every value comes from a named published source recorded in DECISIONS.md and inp
 resistance is labelled as derived. Nothing is fitted to the floor.
 
 This file is the brief's thermal_lever.py, filled. The script as received is kept in
-provenance/thermal_lever_as_received.py; every change is listed in DECISIONS.md (D1 to D16).
+provenance/thermal_lever_as_received.py; every change is listed in DECISIONS.md (D1 to D24).
 
 Usage:
   python3 src/thermal_lever.py --out results

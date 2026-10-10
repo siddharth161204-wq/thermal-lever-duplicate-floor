@@ -1,7 +1,7 @@
 {
  "P1": {
   "statement": "Delta T_floor(8.7 %) at 35 C lies between 1 and 3 K for every law used",
-  "measured_K": {
+  "computed_K": {
    "law_1_kucinskis2022": {
     "C/16": -8.813672720610569,
     "C/10": -8.813672720610569,
@@ -27,7 +27,7 @@
  },
  "P2": {
   "statement": "At C/2 with h = 10, Delta T_module is below 1 K",
-  "measured_K": 0.3912788825035136,
+  "computed_K": 0.3912788825035136,
   "central_K": 0.39,
   "by_h_K": {
    "5.0": 0.3682245219716265,
@@ -38,7 +38,7 @@
  },
  "P3": {
   "statement": "At C/2 the within-cell spread Delta T_cell is below 0.5 K (scored at h = 10, must hold at 5 and 25)",
-  "measured_K": {
+  "computed_K": {
    "5.0": 0.09206654388401603,
    "10.0": 0.091993314287663,
    "25.0": 0.09177452572509992
@@ -48,7 +48,7 @@
  },
  "P4": {
   "statement": "The lowest rate at which Delta T_module exceeds Delta T_floor(8.7 %) with h = 10 is 1C or higher, and with h = 5 one step lower",
-  "measured": {
+  "computed": {
    "law_1_kucinskis2022": {
     "h10": "none up to 2C",
     "h5": "none up to 2C",
@@ -76,13 +76,14 @@
  },
  "P5": {
   "statement": "The two laws' Delta T_floor(8.7 %) differ by less than a factor of 2",
-  "measured_ratio": {
+  "computed_ratio": {
    "C/16": 5.258395469496046,
    "C/10": 5.2552537205839185,
    "C/5": 5.250491586997095,
    "C/2": 5.244883885781175
   },
-  "central_ratio": 5.2,
+  "central_ratio": 5.176470588235294,
+  "central_as_registered": "8.8 K against 1.7 K in magnitude, a factor of about 5",
   "held": false
  }
 }

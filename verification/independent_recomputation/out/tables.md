@@ -1,0 +1,1140 @@
+
+<!-- law1 -->
+| Quantity | Repository | This check | Rel. diff. | Verdict | Note |
+|---|---|---|---|---|---|
+| L(25 C) at C/2 charge, cycles | 102.146953 | 102.146953 | 0 | agrees |  |
+| L(35 C) at C/2 charge, cycles | 126.039676 | 126.039676 | 0 | agrees |  |
+| L(45 C) at C/2 charge, cycles | 124.490964 | 124.490964 | 0 | agrees |  |
+| L(35 C) in levers (every rate) | 126.039676 | 126.039676 | 0 | agrees |  |
+| s(35 C), per K (centred secant) | -0.00989103197 | -0.00989103197 | -5.84e-14 | agrees |  |
+| same s at all six rates (no discharge-rate dependence, D3) | True | True | n/a | agrees |  |
+| Delta T_floor = f/s, mean_3.0pct, K | -3.02394896 | -3.02394896 | +5.83e-14 | agrees |  |
+| Delta T_floor = f/s, worst_of_8_4.1pct, K | -4.14263586 | -4.14263586 | +5.83e-14 | agrees |  |
+| Delta T_floor = f/s, p95_8.7pct, K | -8.81367272 | -8.81367272 | +5.84e-14 | agrees |  |
+| exact pair 2 atanh(f/2)/s, mean_3.0pct, K | -3.02417442 | -3.02417442 | +5.84e-14 | agrees |  |
+| exact pair 2 atanh(f/2)/s, worst_of_8_4.1pct, K | -4.14321561 | -4.14321561 | +5.85e-14 | agrees |  |
+| exact pair 2 atanh(f/2)/s, p95_8.7pct, K | -8.81926087 | -8.81926087 | +5.84e-14 | agrees |  |
+| charge 0.2C: L(25 C) | 267 | 267 | 0 | agrees |  |
+| charge 0.2C: L(35 C) | 197 | 197 | 0 | agrees |  |
+| charge 0.2C: L(45 C) | 131 | 131 | 0 | agrees |  |
+| charge 0.2C: s centred, per K | 0.0356025668 | 0.0356025668 | 0 | agrees |  |
+| charge 0.2C: s 25 to 35 C, per K | 0.030404493 | 0.030404493 | 0 | agrees |  |
+| charge 0.2C: s 35 to 45 C, per K | 0.0408006406 | 0.0408006406 | 0 | agrees |  |
+| charge 0.2C: Delta T_floor mean_3.0pct, K | 0.840107288 | 0.840107288 | 0 | agrees |  |
+| charge 0.2C: Delta T_floor worst_of_8_4.1pct, K | 1.15089859 | 1.15089859 | 0 | agrees |  |
+| charge 0.2C: Delta T_floor p95_8.7pct, K | 2.44859645 | 2.44859645 | 0 | agrees |  |
+| charge 0.4C: L(25 C) | 141 | 141 | 0 | agrees |  |
+| charge 0.4C: L(35 C) | 169 | 169 | 0 | agrees |  |
+| charge 0.4C: L(45 C) | 123 | 123 | 0 | agrees |  |
+| charge 0.4C: s centred, per K | 0.00682877675 | 0.00682877675 | 0 | agrees |  |
+| charge 0.4C: s 25 to 35 C, per K | -0.0181138825 | -0.0181138825 | 0 | agrees |  |
+| charge 0.4C: s 35 to 45 C, per K | 0.031771436 | 0.031771436 | 0 | agrees |  |
+| charge 0.4C: Delta T_floor mean_3.0pct, K | 4.37999028 | 4.37999028 | 0 | agrees |  |
+| charge 0.4C: Delta T_floor worst_of_8_4.1pct, K | 6.00033435 | 6.00033435 | 0 | agrees |  |
+| charge 0.4C: Delta T_floor p95_8.7pct, K | 12.7660226 | 12.7660226 | 0 | agrees |  |
+| charge 0.6C: L(25 C) | 74 | 74 | 0 | agrees |  |
+| charge 0.6C: L(35 C) | 94 | 94 | 0 | agrees |  |
+| charge 0.6C: L(45 C) | 126 | 126 | 0 | agrees |  |
+| charge 0.6C: s centred, per K | -0.0266108407 | -0.0266108407 | 0 | agrees |  |
+| charge 0.6C: s 25 to 35 C, per K | -0.0239229689 | -0.0239229689 | 0 | agrees |  |
+| charge 0.6C: s 35 to 45 C, per K | -0.0292987125 | -0.0292987125 | 0 | agrees |  |
+| charge 0.6C: Delta T_floor mean_3.0pct, K | -1.12397711 | -1.12397711 | 0 | agrees |  |
+| charge 0.6C: Delta T_floor worst_of_8_4.1pct, K | -1.53978389 | -1.53978389 | 0 | agrees |  |
+| charge 0.6C: Delta T_floor p95_8.7pct, K | -3.27597011 | -3.27597011 | 0 | agrees |  |
+| lifetime curve at C/2, 15 to 55 C (41 points): largest abs. rel. diff. | 41 values | 41 values | 0 | agrees | every point compared |
+
+
+<!-- law1mc -->
+| Quantity | Repository | This check | Rel. diff. | Verdict | Note |
+|---|---|---|---|---|---|
+| sigma of ln L per printed value | 0.0187383297 | 0.0187383297 | 0 | agrees |  |
+| s percentile 2.5, per K | -0.0117211113 | -0.0117282605 | +6.10e-04 | agrees |  |
+| s percentile 50, per K | -0.00988826327 | -0.00989036161 | +2.12e-04 | agrees |  |
+| s percentile 97.5, per K | -0.00807876228 | -0.0080525141 | -3.26e-03 | small difference explained | Monte Carlo sampling noise (20,000 draws in the repository, 2,000,000 here) |
+| abs Delta T_floor(8.7 %) percentile 2.5, K | 7.43754718 | 7.43301351 | +6.10e-04 | agrees |  |
+| abs Delta T_floor(8.7 %) percentile 50, K | 8.81614054 | 8.8142701 | +2.12e-04 | agrees |  |
+| abs Delta T_floor(8.7 %) percentile 97.5, K | 10.7908013 | 10.8259753 | -3.25e-03 | small difference explained | Monte Carlo sampling noise (20,000 draws in the repository, 2,000,000 here) |
+| fraction of draws with s > 0 | 0 | 0 | 0 | agrees |  |
+| D16 hand figure: standard error of the secant, per K | 0.0013 | 0.000936916485 | +3.88e-01 | disagrees | my propagation over the four printed values that enter the C/2 secant: sigma/20; MC std 0.000937; the D16 form sqrt(2) x 0.0187/20 = 0.00133 is the error of a single printed rate's secant |
+
+
+<!-- law2 -->
+| Quantity | Repository | This check | Rel. diff. | Verdict | Note |
+|---|---|---|---|---|---|
+| C/16: L(35 C), cycles to 10 % loss | 1196.1262 | 1196.1262 | -2.56e-09 | agrees |  |
+| C/16: s(35 C), per K (centred difference +-0.5 K) | 0.0520109577 | 0.0520109577 | -1.18e-10 | agrees | +-0.25 K gives 0.0520130, exact derivative 0.0520137 |
+| C/16: Delta T_floor mean_3.0pct, K | 0.575070661 | 0.575070661 | +1.18e-10 | agrees |  |
+| C/16: Delta T_floor worst_of_8_4.1pct, K | 0.787813675 | 0.787813675 | +1.18e-10 | agrees |  |
+| C/16: Delta T_floor p95_8.7pct, K | 1.67611447 | 1.67611447 | +1.18e-10 | agrees |  |
+| C/16: exact pair mean_3.0pct, K | 0.575113538 | 0.575113538 | +1.18e-10 | agrees |  |
+| C/16: exact pair worst_of_8_4.1pct, K | 0.787923927 | 0.787923927 | +1.18e-10 | agrees |  |
+| C/16: exact pair p95_8.7pct, K | 1.67717718 | 1.67717718 | +1.18e-10 | agrees |  |
+| C/10: L(35 C), cycles to 10 % loss | 1628.53105 | 1628.53106 | -2.43e-09 | agrees |  |
+| C/10: s(35 C), per K (centred difference +-0.5 K) | 0.0519798826 | 0.0519798826 | -1.75e-10 | agrees | +-0.25 K gives 0.0519823, exact derivative 0.0519831 |
+| C/10: Delta T_floor mean_3.0pct, K | 0.575414455 | 0.575414455 | +1.75e-10 | agrees |  |
+| C/10: Delta T_floor worst_of_8_4.1pct, K | 0.788284654 | 0.788284653 | +1.75e-10 | agrees |  |
+| C/10: Delta T_floor p95_8.7pct, K | 1.6771165 | 1.6771165 | +1.75e-10 | agrees |  |
+| C/10: exact pair mean_3.0pct, K | 0.575457359 | 0.575457358 | +1.75e-10 | agrees |  |
+| C/10: exact pair worst_of_8_4.1pct, K | 0.788394972 | 0.788394972 | +1.75e-10 | agrees |  |
+| C/10: exact pair p95_8.7pct, K | 1.67817984 | 1.67817984 | +1.75e-10 | agrees |  |
+| C/5: L(35 C), cycles to 10 % loss | 2394.82035 | 2394.82036 | -2.25e-09 | agrees |  |
+| C/5: s(35 C), per K (centred difference +-0.5 K) | 0.0519327801 | 0.0519327801 | +6.19e-11 | agrees | +-0.25 K gives 0.0519357, exact derivative 0.0519367 |
+| C/5: Delta T_floor mean_3.0pct, K | 0.575936349 | 0.575936349 | -6.19e-11 | agrees |  |
+| C/5: Delta T_floor worst_of_8_4.1pct, K | 0.788999618 | 0.788999618 | -6.19e-11 | agrees |  |
+| C/5: Delta T_floor p95_8.7pct, K | 1.67863762 | 1.67863762 | -6.19e-11 | agrees |  |
+| C/5: exact pair mean_3.0pct, K | 0.575979292 | 0.575979292 | -6.19e-11 | agrees |  |
+| C/5: exact pair worst_of_8_4.1pct, K | 0.789110037 | 0.789110037 | -6.19e-11 | agrees |  |
+| C/5: exact pair p95_8.7pct, K | 1.67970193 | 1.67970193 | -6.19e-11 | agrees |  |
+| C/2: L(35 C), cycles to 10 % loss | 3457.98039 | 3457.9804 | -2.04e-09 | agrees |  |
+| C/2: s(35 C), per K (centred difference +-0.5 K) | 0.0518773142 | 0.0518773142 | +8.13e-11 | agrees | +-0.25 K gives 0.0518809, exact derivative 0.0518820 |
+| C/2: Delta T_floor mean_3.0pct, K | 0.576552126 | 0.576552126 | -8.13e-11 | agrees |  |
+| C/2: Delta T_floor worst_of_8_4.1pct, K | 0.789843197 | 0.789843197 | -8.13e-11 | agrees |  |
+| C/2: Delta T_floor p95_8.7pct, K | 1.68043238 | 1.68043238 | -8.13e-11 | agrees |  |
+| C/2: exact pair mean_3.0pct, K | 0.576595114 | 0.576595114 | -8.13e-11 | agrees |  |
+| C/2: exact pair worst_of_8_4.1pct, K | 0.789953734 | 0.789953734 | -8.13e-11 | agrees |  |
+| C/2: exact pair p95_8.7pct, K | 1.68149783 | 1.68149783 | -8.13e-11 | agrees |  |
+| 1C: L(35 C), cycles to 10 % loss | 4118.29408 | 4118.29408 | -1.93e-09 | agrees |  |
+| 1C: s(35 C), per K (centred difference +-0.5 K) | 0.0518465466 | 0.0518465466 | +5.66e-11 | agrees | +-0.25 K gives 0.0518504, exact derivative 0.0518517 |
+| 1C: Delta T_floor mean_3.0pct, K | 0.576894273 | 0.576894273 | -5.66e-11 | agrees |  |
+| 1C: Delta T_floor worst_of_8_4.1pct, K | 0.790311919 | 0.790311919 | -5.66e-11 | agrees |  |
+| 1C: Delta T_floor p95_8.7pct, K | 1.68142961 | 1.68142961 | -5.66e-11 | agrees |  |
+| 1C: exact pair mean_3.0pct, K | 0.576937287 | 0.576937287 | -5.66e-11 | agrees |  |
+| 1C: exact pair worst_of_8_4.1pct, K | 0.790422521 | 0.790422521 | -5.66e-11 | agrees |  |
+| 1C: exact pair p95_8.7pct, K | 1.68249569 | 1.68249569 | -5.66e-11 | agrees |  |
+| 2C: L(35 C), cycles to 10 % loss | 4576.93196 | 4576.93197 | -1.86e-09 | agrees |  |
+| 2C: s(35 C), per K (centred difference +-0.5 K) | 0.0518263898 | 0.0518263898 | +3.55e-11 | agrees | +-0.25 K gives 0.0518305, exact derivative 0.0518319 |
+| 2C: Delta T_floor mean_3.0pct, K | 0.577118644 | 0.577118644 | -3.55e-11 | agrees |  |
+| 2C: Delta T_floor worst_of_8_4.1pct, K | 0.790619293 | 0.790619293 | -3.55e-11 | agrees |  |
+| 2C: Delta T_floor p95_8.7pct, K | 1.68208357 | 1.68208357 | -3.55e-11 | agrees |  |
+| 2C: exact pair mean_3.0pct, K | 0.577161674 | 0.577161674 | -3.55e-11 | agrees |  |
+| 2C: exact pair worst_of_8_4.1pct, K | 0.790729938 | 0.790729938 | -3.55e-11 | agrees |  |
+| 2C: exact pair p95_8.7pct, K | 1.68315006 | 1.68315006 | -3.55e-11 | agrees |  |
+
+
+<!-- law2terms -->
+| Quantity | Repository | This check | Rel. diff. | Verdict | Note |
+|---|---|---|---|---|---|
+| C/16: share of loss at L(35 C), cal | 0.779193967 | 0.77918437 | +1.23e-05 | agrees | mine over all four terms; the repository's shares sum to 1 over the three square-root terms (over three, mine is 0.7791939672); fourth term 1.2e-05, not reported |
+| C/16: share of loss at L(35 C), high | 0.189776259 | 0.189773922 | +1.23e-05 | agrees |  |
+| C/16: share of loss at L(35 C), low | 0.0310297735 | 0.0310293914 | +1.23e-05 | agrees |  |
+| C/16: s by term, calendar only | 0.0521871999 | 0.0521871999 | 0 | agrees |  |
+| C/16: s by term, high-temperature cycling only | 0.0828408464 | 0.0828408464 | +2.14e-14 | agrees |  |
+| C/16: s by term, low-temperature cycling only | -0.140601437 | -0.140601437 | 0 | agrees |  |
+| C/16: s by term, cycling terms only | 0.0512522393 | 0.0512522393 | 0 | agrees |  |
+| C/16: s with the text values (secondary) | 0.0519797541 | 0.0519797541 | -8.37e-12 | agrees |  |
+| C/16: L(35 C) in law2_by_term | 1196.1262 | 1196.1262 | -2.56e-09 | agrees |  |
+| C/10: share of loss at L(35 C), cal | 0.742354603 | 0.742342154 | +1.68e-05 | agrees | mine over all four terms; the repository's shares sum to 1 over the three square-root terms (over three, mine is 0.7423546026); fourth term 1.7e-05, not reported |
+| C/10: share of loss at L(35 C), high | 0.221438604 | 0.221434891 | +1.68e-05 | agrees |  |
+| C/10: share of loss at L(35 C), low | 0.0362067931 | 0.036206186 | +1.68e-05 | agrees |  |
+| C/10: s by term, calendar only | 0.0521871999 | 0.0521871999 | 0 | agrees |  |
+| C/10: s by term, high-temperature cycling only | 0.0828408464 | 0.0828408464 | +2.14e-14 | agrees |  |
+| C/10: s by term, low-temperature cycling only | -0.140601437 | -0.140601437 | 0 | agrees |  |
+| C/10: s by term, cycling terms only | 0.0512522393 | 0.0512522393 | 0 | agrees |  |
+| C/10: s with the text values (secondary) | 0.0519467424 | 0.0519467424 | +1.88e-10 | agrees |  |
+| C/10: L(35 C) in law2_by_term | 1628.53105 | 1628.53106 | -2.43e-09 | agrees |  |
+| C/5: share of loss at L(35 C), cal | 0.687561702 | 0.687544747 | +2.47e-05 | agrees | mine over all four terms; the repository's shares sum to 1 over the three square-root terms (over three, mine is 0.6875617017); fourth term 2.5e-05, not reported |
+| C/5: share of loss at L(35 C), high | 0.268531483 | 0.268524861 | +2.47e-05 | agrees |  |
+| C/5: share of loss at L(35 C), low | 0.043906815 | 0.0439057324 | +2.47e-05 | agrees |  |
+| C/5: s by term, calendar only | 0.0521871999 | 0.0521871999 | 0 | agrees |  |
+| C/5: s by term, high-temperature cycling only | 0.0828408464 | 0.0828408464 | +2.14e-14 | agrees |  |
+| C/5: s by term, low-temperature cycling only | -0.140601437 | -0.140601437 | 0 | agrees |  |
+| C/5: s by term, cycling terms only | 0.0512522393 | 0.0512522393 | 0 | agrees |  |
+| C/5: s with the text values (secondary) | 0.0518966984 | 0.0518966984 | -6.74e-11 | agrees |  |
+| C/5: L(35 C) in law2_by_term | 2394.82035 | 2394.82036 | -2.25e-09 | agrees |  |
+| C/2: share of loss at L(35 C), cal | 0.624557174 | 0.624534935 | +3.56e-05 | agrees | mine over all four terms; the repository's shares sum to 1 over the three square-root terms (over three, mine is 0.6245571732); fourth term 3.6e-05, not reported |
+| C/2: share of loss at L(35 C), high | 0.322682013 | 0.322670524 | +3.56e-05 | agrees |  |
+| C/2: share of loss at L(35 C), low | 0.0527608134 | 0.0527589348 | +3.56e-05 | agrees |  |
+| C/2: s by term, calendar only | 0.0521871999 | 0.0521871999 | +3.40e-14 | agrees |  |
+| C/2: s by term, high-temperature cycling only | 0.0828408464 | 0.0828408464 | +2.14e-14 | agrees |  |
+| C/2: s by term, low-temperature cycling only | -0.140601437 | -0.140601437 | 0 | agrees |  |
+| C/2: s by term, cycling terms only | 0.0512522393 | 0.0512522393 | 0 | agrees |  |
+| C/2: s with the text values (secondary) | 0.0518377583 | 0.0518377583 | +2.20e-11 | agrees |  |
+| C/2: L(35 C) in law2_by_term | 3457.98039 | 3457.9804 | -2.04e-09 | agrees |  |
+| 1C: share of loss at L(35 C), cal | 0.590273383 | 0.590248351 | +4.24e-05 | agrees | mine over all four terms; the repository's shares sum to 1 over the three square-root terms (over three, mine is 0.5902733824); fourth term 4.2e-05, not reported |
+| 1C: share of loss at L(35 C), high | 0.352147918 | 0.352132985 | +4.24e-05 | agrees |  |
+| 1C: share of loss at L(35 C), low | 0.0575786993 | 0.0575762577 | +4.24e-05 | agrees |  |
+| 1C: s by term, calendar only | 0.0521871999 | 0.0521871999 | 0 | agrees |  |
+| 1C: s by term, high-temperature cycling only | 0.0828408464 | 0.0828408464 | +2.14e-14 | agrees |  |
+| 1C: s by term, low-temperature cycling only | -0.140601437 | -0.140601437 | 0 | agrees |  |
+| 1C: s by term, cycling terms only | 0.0512522393 | 0.0512522393 | 0 | agrees |  |
+| 1C: s with the text values (secondary) | 0.0518050583 | 0.0518050583 | +3.72e-11 | agrees |  |
+| 1C: L(35 C) in law2_by_term | 4118.29408 | 4118.29408 | -1.93e-09 | agrees |  |
+| 2C: share of loss at L(35 C), cal | 0.568058652 | 0.56803188 | +4.71e-05 | agrees | mine over all four terms; the repository's shares sum to 1 over the three square-root terms (over three, mine is 0.5680586513); fourth term 4.7e-05, not reported |
+| 2C: share of loss at L(35 C), high | 0.371240823 | 0.371223327 | +4.71e-05 | agrees |  |
+| 2C: share of loss at L(35 C), low | 0.0607005256 | 0.0606976649 | +4.71e-05 | agrees |  |
+| 2C: s by term, calendar only | 0.0521871999 | 0.0521871999 | 0 | agrees |  |
+| 2C: s by term, high-temperature cycling only | 0.0828408464 | 0.0828408464 | +2.14e-14 | agrees |  |
+| 2C: s by term, low-temperature cycling only | -0.140601437 | -0.140601437 | 0 | agrees |  |
+| 2C: s by term, cycling terms only | 0.0512522393 | 0.0512522393 | 0 | agrees |  |
+| 2C: s with the text values (secondary) | 0.0517836336 | 0.0517836336 | +8.26e-11 | agrees |  |
+| 2C: L(35 C) in law2_by_term | 4576.93196 | 4576.93197 | -1.86e-09 | agrees |  |
+| lifetime curve at C/2, 15 to 55 C (41 points): largest abs. rel. diff. | 41 values | 41 values | +2.19e-09 | agrees | includes the fourth term: without it L(15 C) would be 6528.8 cycles (published 6085.4, mine 6085.4) |
+
+
+<!-- law2v1 -->
+| Quantity | Repository | This check | Rel. diff. | Verdict | Note |
+|---|---|---|---|---|---|
+| V1 25 C, 2800 FEC at 1C: loss, % (full Eq. 23, four terms) | 8.60209304 | 8.90902904 | -3.45e-02 | disagrees | three square-root terms only: 8.602093 %; fourth term 0.3069 points |
+| V1 25 C: cal part, % | 3.03449105 | 3.03449105 | +1.64e-09 | agrees |  |
+| V1 25 C: high part, % | 1.89237628 | 1.89237628 | -1.17e-16 | agrees |  |
+| V1 25 C: low part, % | 3.67522571 | 3.67522571 | +1.21e-16 | agrees |  |
+| V1 25 C: text values, three terms, % | 8.59928136 | 8.59928135 | +5.78e-10 | agrees |  |
+| V1 25 C: pass (accept 0 to 11 %) | True | True | n/a | agrees |  |
+| V1 45 C, 2800 FEC at 1C: loss, % (full Eq. 23, four terms) | 10.3526996 | 10.3535329 | -8.05e-05 | agrees | three square-root terms only: 10.352700 %; fourth term 0.0008 points |
+| V1 45 C: cal part, % | 5.11646879 | 5.11646878 | +1.64e-09 | agrees |  |
+| V1 45 C: high part, % | 4.33669675 | 4.33669675 | 0 | agrees |  |
+| V1 45 C: low part, % | 0.899534054 | 0.899534054 | +1.23e-16 | agrees |  |
+| V1 45 C: text values, three terms, % | 10.343943 | 10.343943 | +8.10e-10 | agrees |  |
+| V1 45 C: pass (accept 10 to 14 %) | True | True | n/a | agrees |  |
+
+
+<!-- module -->
+| Quantity | Repository | This check | Rel. diff. | Verdict | Note |
+|---|---|---|---|---|---|
+| C/16, h=5: q per cell, W | 0.00182742146 | 0.00182742146 | 0 | agrees |  |
+| C/16, h=5: Delta T_module, K | 0.00584270565 | 0.00584270565 | 0 | agrees |  |
+| C/16, h=5: T_max, C | 35.0591918 | 35.0591918 | 0 | agrees |  |
+| C/16, h=5: T_min, C | 35.0533491 | 35.0533491 | 0 | agrees |  |
+| C/16, h=5: T_mean, C | 35.0562704 | 35.0562704 | +8.11e-16 | agrees |  |
+| C/16, h=5: hottest minus mean, K | 0.00292135283 | 0.00292135283 | -9.73e-12 | agrees |  |
+| C/16, h=5: hottest position | inner (row 1, column 2) | inner (row 1, column 2) | n/a | agrees |  |
+| C/16, h=5: coldest position | corner (row 1, column 1) | corner (row 1, column 1) | n/a | agrees |  |
+| C/16, h=5: energy balance closes (|residual| < 1e-12 W) | True | True | n/a | agrees |  |
+| C/16, h=10: q per cell, W | 0.00182742146 | 0.00182742146 | 0 | agrees |  |
+| C/16, h=10: Delta T_module, K | 0.00617512743 | 0.00617512743 | 0 | agrees |  |
+| C/16, h=10: T_max, C | 35.0442804 | 35.0442804 | 0 | agrees |  |
+| C/16, h=10: T_min, C | 35.0381053 | 35.0381053 | 0 | agrees |  |
+| C/16, h=10: T_mean, C | 35.0411928 | 35.0411928 | 0 | agrees |  |
+| C/16, h=10: hottest minus mean, K | 0.00308756371 | 0.00308756371 | 0 | agrees |  |
+| C/16, h=10: hottest position | inner (row 1, column 2) | inner (row 1, column 2) | n/a | agrees |  |
+| C/16, h=10: coldest position | corner (row 1, column 1) | corner (row 1, column 1) | n/a | agrees |  |
+| C/16, h=10: energy balance closes (|residual| < 1e-12 W) | True | True | n/a | agrees |  |
+| C/16, h=25: q per cell, W | 0.00182742146 | 0.00182742146 | 0 | agrees |  |
+| C/16, h=25: Delta T_module, K | 0.00546674099 | 0.00546674099 | 0 | agrees |  |
+| C/16, h=25: T_max, C | 35.0256837 | 35.0256837 | 0 | agrees |  |
+| C/16, h=25: T_min, C | 35.020217 | 35.020217 | 0 | agrees |  |
+| C/16, h=25: T_mean, C | 35.0229503 | 35.0229503 | -8.12e-16 | agrees |  |
+| C/16, h=25: hottest minus mean, K | 0.00273337049 | 0.00273337049 | +1.04e-11 | agrees |  |
+| C/16, h=25: hottest position | inner (row 1, column 2) | inner (row 1, column 2) | n/a | agrees |  |
+| C/16, h=25: coldest position | corner (row 1, column 1) | corner (row 1, column 1) | n/a | agrees |  |
+| C/16, h=25: energy balance closes (|residual| < 1e-12 W) | True | True | n/a | agrees |  |
+| C/10, h=5: q per cell, W | 0.00467819893 | 0.00467819893 | 0 | agrees |  |
+| C/10, h=5: Delta T_module, K | 0.0149515915 | 0.0149515915 | 0 | agrees |  |
+| C/10, h=5: T_max, C | 35.1514893 | 35.1514893 | 0 | agrees |  |
+| C/10, h=5: T_min, C | 35.1365377 | 35.1365377 | 0 | agrees |  |
+| C/10, h=5: T_mean, C | 35.1440135 | 35.1440135 | 0 | agrees |  |
+| C/10, h=5: hottest minus mean, K | 0.00747579575 | 0.00747579575 | 0 | agrees |  |
+| C/10, h=5: hottest position | inner (row 1, column 2) | inner (row 1, column 2) | n/a | agrees |  |
+| C/10, h=5: coldest position | corner (row 1, column 1) | corner (row 1, column 1) | n/a | agrees |  |
+| C/10, h=5: energy balance closes (|residual| < 1e-12 W) | True | True | n/a | agrees |  |
+| C/10, h=10: q per cell, W | 0.00467819893 | 0.00467819893 | 0 | agrees |  |
+| C/10, h=10: Delta T_module, K | 0.0158044076 | 0.0158044076 | 0 | agrees |  |
+| C/10, h=10: T_max, C | 35.1133406 | 35.1133406 | 0 | agrees |  |
+| C/10, h=10: T_min, C | 35.0975362 | 35.0975362 | 0 | agrees |  |
+| C/10, h=10: T_mean, C | 35.1054384 | 35.1054384 | +8.10e-16 | agrees |  |
+| C/10, h=10: hottest minus mean, K | 0.00790220381 | 0.00790220381 | -3.60e-12 | agrees |  |
+| C/10, h=10: hottest position | inner (row 1, column 2) | inner (row 1, column 2) | n/a | agrees |  |
+| C/10, h=10: coldest position | corner (row 1, column 1) | corner (row 1, column 1) | n/a | agrees |  |
+| C/10, h=10: energy balance closes (|residual| < 1e-12 W) | True | True | n/a | agrees |  |
+| C/10, h=25: q per cell, W | 0.00467819893 | 0.00467819893 | 0 | agrees |  |
+| C/10, h=25: Delta T_module, K | 0.0139934894 | 0.0139934894 | 0 | agrees |  |
+| C/10, h=25: T_max, C | 35.0657469 | 35.0657469 | 0 | agrees |  |
+| C/10, h=25: T_min, C | 35.0517534 | 35.0517534 | 0 | agrees |  |
+| C/10, h=25: T_mean, C | 35.0587501 | 35.0587501 | -8.11e-16 | agrees |  |
+| C/10, h=25: hottest minus mean, K | 0.00699674469 | 0.00699674469 | +4.06e-12 | agrees |  |
+| C/10, h=25: hottest position | inner (row 1, column 2) | inner (row 1, column 2) | n/a | agrees |  |
+| C/10, h=25: coldest position | corner (row 1, column 1) | corner (row 1, column 1) | n/a | agrees |  |
+| C/10, h=25: energy balance closes (|residual| < 1e-12 W) | True | True | n/a | agrees |  |
+| C/5, h=5: q per cell, W | 0.0187127957 | 0.0187127957 | 0 | agrees |  |
+| C/5, h=5: Delta T_module, K | 0.0596936727 | 0.0596936727 | 0 | agrees |  |
+| C/5, h=5: T_max, C | 35.6051395 | 35.6051395 | 0 | agrees |  |
+| C/5, h=5: T_min, C | 35.5454458 | 35.5454458 | 0 | agrees |  |
+| C/5, h=5: T_mean, C | 35.5752927 | 35.5752927 | -7.99e-16 | agrees |  |
+| C/5, h=5: hottest minus mean, K | 0.0298468364 | 0.0298468364 | +9.52e-13 | agrees |  |
+| C/5, h=5: hottest position | inner (row 1, column 2) | inner (row 1, column 2) | n/a | agrees |  |
+| C/5, h=5: coldest position | corner (row 1, column 1) | corner (row 1, column 1) | n/a | agrees |  |
+| C/5, h=5: energy balance closes (|residual| < 1e-12 W) | True | True | n/a | agrees |  |
+| C/5, h=10: q per cell, W | 0.0187127957 | 0.0187127957 | 0 | agrees |  |
+| C/5, h=10: Delta T_module, K | 0.0631405435 | 0.0631405435 | 0 | agrees |  |
+| C/5, h=10: T_max, C | 35.4530231 | 35.4530231 | 0 | agrees |  |
+| C/5, h=10: T_min, C | 35.3898825 | 35.3898825 | 0 | agrees |  |
+| C/5, h=10: T_mean, C | 35.4214528 | 35.4214528 | +8.02e-16 | agrees |  |
+| C/5, h=10: hottest minus mean, K | 0.0315702717 | 0.0315702717 | -9.00e-13 | agrees |  |
+| C/5, h=10: hottest position | inner (row 1, column 2) | inner (row 1, column 2) | n/a | agrees |  |
+| C/5, h=10: coldest position | corner (row 1, column 1) | corner (row 1, column 1) | n/a | agrees |  |
+| C/5, h=10: energy balance closes (|residual| < 1e-12 W) | True | True | n/a | agrees |  |
+| C/5, h=25: q per cell, W | 0.0187127957 | 0.0187127957 | 0 | agrees |  |
+| C/5, h=25: Delta T_module, K | 0.0559470312 | 0.0559470312 | 0 | agrees |  |
+| C/5, h=25: T_max, C | 35.2629209 | 35.2629209 | 0 | agrees |  |
+| C/5, h=25: T_min, C | 35.2069739 | 35.2069739 | 0 | agrees |  |
+| C/5, h=25: T_mean, C | 35.2349474 | 35.2349474 | +8.07e-16 | agrees |  |
+| C/5, h=25: hottest minus mean, K | 0.0279735156 | 0.0279735156 | -1.02e-12 | agrees |  |
+| C/5, h=25: hottest position | inner (row 1, column 2) | inner (row 1, column 2) | n/a | agrees |  |
+| C/5, h=25: coldest position | corner (row 1, column 1) | corner (row 1, column 1) | n/a | agrees |  |
+| C/5, h=25: energy balance closes (|residual| < 1e-12 W) | True | True | n/a | agrees |  |
+| C/2, h=5: q per cell, W | 0.116954973 | 0.116954973 | 0 | agrees |  |
+| C/2, h=5: Delta T_module, K | 0.368224522 | 0.368224522 | 0 | agrees |  |
+| C/2, h=5: T_max, C | 38.7468304 | 38.7468304 | 0 | agrees |  |
+| C/2, h=5: T_min, C | 38.3786059 | 38.3786059 | 0 | agrees |  |
+| C/2, h=5: T_mean, C | 38.5627182 | 38.5627182 | +7.37e-16 | agrees |  |
+| C/2, h=5: hottest minus mean, K | 0.184112261 | 0.184112261 | -1.54e-13 | agrees |  |
+| C/2, h=5: hottest position | inner (row 1, column 2) | inner (row 1, column 2) | n/a | agrees |  |
+| C/2, h=5: coldest position | corner (row 1, column 1) | corner (row 1, column 1) | n/a | agrees |  |
+| C/2, h=5: energy balance closes (|residual| < 1e-12 W) | True | True | n/a | agrees |  |
+| C/2, h=10: q per cell, W | 0.116954973 | 0.116954973 | 0 | agrees |  |
+| C/2, h=10: Delta T_module, K | 0.391278883 | 0.391278883 | 0 | agrees |  |
+| C/2, h=10: T_max, C | 37.8166426 | 37.8166426 | 0 | agrees |  |
+| C/2, h=10: T_min, C | 37.4253637 | 37.4253637 | 0 | agrees |  |
+| C/2, h=10: T_mean, C | 37.6210031 | 37.6210031 | -7.55e-16 | agrees |  |
+| C/2, h=10: hottest minus mean, K | 0.195639441 | 0.195639441 | +1.45e-13 | agrees |  |
+| C/2, h=10: hottest position | inner (row 1, column 2) | inner (row 1, column 2) | n/a | agrees |  |
+| C/2, h=10: coldest position | corner (row 1, column 1) | corner (row 1, column 1) | n/a | agrees |  |
+| C/2, h=10: energy balance closes (|residual| < 1e-12 W) | True | True | n/a | agrees |  |
+| C/2, h=25: q per cell, W | 0.116954973 | 0.116954973 | 0 | agrees |  |
+| C/2, h=25: Delta T_module, K | 0.348492012 | 0.348492012 | 0 | agrees |  |
+| C/2, h=25: T_max, C | 36.6403445 | 36.6403445 | 0 | agrees |  |
+| C/2, h=25: T_min, C | 36.2918525 | 36.2918525 | 0 | agrees |  |
+| C/2, h=25: T_mean, C | 36.4660985 | 36.4660985 | 0 | agrees |  |
+| C/2, h=25: hottest minus mean, K | 0.174246006 | 0.174246006 | 0 | agrees |  |
+| C/2, h=25: hottest position | inner (row 1, column 2) | inner (row 1, column 2) | n/a | agrees |  |
+| C/2, h=25: coldest position | corner (row 1, column 1) | corner (row 1, column 1) | n/a | agrees |  |
+| C/2, h=25: energy balance closes (|residual| < 1e-12 W) | True | True | n/a | agrees |  |
+| 1C, h=5: q per cell, W | 0.467819893 | 0.467819893 | 0 | agrees |  |
+| 1C, h=5: Delta T_module, K | 1.40723678 | 1.40723678 | 0 | agrees |  |
+| 1C, h=5: T_max, C | 49.5093947 | 49.5093947 | 0 | agrees |  |
+| 1C, h=5: T_min, C | 48.1021579 | 48.1021579 | 0 | agrees |  |
+| 1C, h=5: T_mean, C | 48.8057763 | 48.8057763 | +5.82e-16 | agrees |  |
+| 1C, h=5: hottest minus mean, K | 0.703618391 | 0.703618391 | -4.04e-14 | agrees |  |
+| 1C, h=5: hottest position | inner (row 1, column 2) | inner (row 1, column 2) | n/a | agrees |  |
+| 1C, h=5: coldest position | corner (row 1, column 1) | corner (row 1, column 1) | n/a | agrees |  |
+| 1C, h=5: energy balance closes (|residual| < 1e-12 W) | True | True | n/a | agrees |  |
+| 1C, h=10: q per cell, W | 0.467819893 | 0.467819893 | 0 | agrees |  |
+| 1C, h=10: Delta T_module, K | 1.51857283 | 1.51857283 | 0 | agrees |  |
+| 1C, h=10: T_max, C | 46.0608767 | 46.0608767 | 0 | agrees |  |
+| 1C, h=10: T_min, C | 44.5423039 | 44.5423039 | 0 | agrees |  |
+| 1C, h=10: T_mean, C | 45.3015903 | 45.3015903 | 0 | agrees |  |
+| 1C, h=10: hottest minus mean, K | 0.759286413 | 0.759286413 | 0 | agrees |  |
+| 1C, h=10: hottest position | inner (row 1, column 2) | inner (row 1, column 2) | n/a | agrees |  |
+| 1C, h=10: coldest position | corner (row 1, column 1) | corner (row 1, column 1) | n/a | agrees |  |
+| 1C, h=10: energy balance closes (|residual| < 1e-12 W) | True | True | n/a | agrees |  |
+| 1C, h=25: q per cell, W | 0.467819893 | 0.467819893 | 0 | agrees |  |
+| 1C, h=25: Delta T_module, K | 1.37722092 | 1.37722092 | 0 | agrees |  |
+| 1C, h=25: T_max, C | 41.5199005 | 41.5199005 | 0 | agrees |  |
+| 1C, h=25: T_min, C | 40.1426796 | 40.1426796 | 0 | agrees |  |
+| 1C, h=25: T_mean, C | 40.8312901 | 40.8312901 | -6.96e-16 | agrees |  |
+| 1C, h=25: hottest minus mean, K | 0.688610459 | 0.688610459 | +4.13e-14 | agrees |  |
+| 1C, h=25: hottest position | inner (row 1, column 2) | inner (row 1, column 2) | n/a | agrees |  |
+| 1C, h=25: coldest position | corner (row 1, column 1) | corner (row 1, column 1) | n/a | agrees |  |
+| 1C, h=25: energy balance closes (|residual| < 1e-12 W) | True | True | n/a | agrees |  |
+| 2C, h=5: q per cell, W | 1.87127957 | 1.87127957 | 0 | agrees |  |
+| 2C, h=5: Delta T_module, K | 4.77389621 | 4.77389621 | 0 | agrees |  |
+| 2C, h=5: T_max, C | 86.7259849 | 86.7259849 | 0 | agrees |  |
+| 2C, h=5: T_min, C | 81.9520887 | 81.9520887 | 0 | agrees |  |
+| 2C, h=5: T_mean, C | 84.3390368 | 84.3390368 | 0 | agrees |  |
+| 2C, h=5: hottest minus mean, K | 2.38694811 | 2.38694811 | 0 | agrees |  |
+| 2C, h=5: hottest position | inner (row 1, column 2) | inner (row 1, column 2) | n/a | agrees |  |
+| 2C, h=5: coldest position | corner (row 1, column 1) | corner (row 1, column 1) | n/a | agrees |  |
+| 2C, h=5: energy balance closes (|residual| < 1e-12 W) | True | True | n/a | agrees |  |
+| 2C, h=10: q per cell, W | 1.87127957 | 1.87127957 | 0 | agrees |  |
+| 2C, h=10: Delta T_module, K | 5.40764687 | 5.40764687 | 0 | agrees |  |
+| 2C, h=10: T_max, C | 76.249607 | 76.249607 | 0 | agrees |  |
+| 2C, h=10: T_min, C | 70.8419601 | 70.8419601 | 0 | agrees |  |
+| 2C, h=10: T_mean, C | 73.5457835 | 73.5457835 | 0 | agrees |  |
+| 2C, h=10: hottest minus mean, K | 2.70382343 | 2.70382343 | 0 | agrees |  |
+| 2C, h=10: hottest position | inner (row 1, column 2) | inner (row 1, column 2) | n/a | agrees |  |
+| 2C, h=10: coldest position | corner (row 1, column 1) | corner (row 1, column 1) | n/a | agrees |  |
+| 2C, h=10: energy balance closes (|residual| < 1e-12 W) | True | True | n/a | agrees |  |
+| 2C, h=25: q per cell, W | 1.87127957 | 1.87127957 | 0 | agrees |  |
+| 2C, h=25: Delta T_module, K | 5.24589747 | 5.24589747 | 0 | agrees |  |
+| 2C, h=25: T_max, C | 60.4243875 | 60.4243875 | 0 | agrees |  |
+| 2C, h=25: T_min, C | 55.17849 | 55.17849 | 0 | agrees |  |
+| 2C, h=25: T_mean, C | 57.8014387 | 57.8014387 | 0 | agrees |  |
+| 2C, h=25: hottest minus mean, K | 2.62294873 | 2.62294873 | 0 | agrees |  |
+| 2C, h=25: hottest position | inner (row 1, column 2) | inner (row 1, column 2) | n/a | agrees |  |
+| 2C, h=25: coldest position | corner (row 1, column 1) | corner (row 1, column 1) | n/a | agrees |  |
+| 2C, h=25: energy balance closes (|residual| < 1e-12 W) | True | True | n/a | agrees |  |
+
+
+<!-- coldplate -->
+| Quantity | Repository | This check | Rel. diff. | Verdict | Note |
+|---|---|---|---|---|---|
+| C/16, h=5: Delta T_module, K | 0.000243054399 | 0.000243054399 | 0 | agrees |  |
+| C/16, h=5: T_max, C | 35.0075083 | 35.0075083 | 0 | agrees |  |
+| C/16, h=5: T_mean, C | 35.0074416 | 35.0074416 | -8.12e-16 | agrees |  |
+| C/16, h=5: hottest minus mean, K | 6.670392e-05 | 6.670392e-05 | +4.26e-10 | agrees |  |
+| C/16, h=5: hottest / coldest position | inner (position 4 of 8) / end (position 1 of 8) | inner (position 4 of 8) / end (position 1 of 8) | n/a | agrees |  |
+| C/16, h=5: energy balance closes (|residual| < 1e-12 W) | True | True | n/a | agrees |  |
+| C/16, h=10: Delta T_module, K | 0.000354985793 | 0.000354985793 | 0 | agrees |  |
+| C/16, h=10: T_max, C | 35.0071174 | 35.0071174 | 0 | agrees |  |
+| C/16, h=10: T_mean, C | 35.0070203 | 35.0070203 | -8.12e-16 | agrees |  |
+| C/16, h=10: hottest minus mean, K | 9.702364e-05 | 9.702364e-05 | +2.93e-10 | agrees |  |
+| C/16, h=10: hottest / coldest position | inner (position 4 of 8) / end (position 1 of 8) | inner (position 4 of 8) / end (position 1 of 8) | n/a | agrees |  |
+| C/16, h=10: energy balance closes (|residual| < 1e-12 W) | True | True | n/a | agrees |  |
+| C/16, h=25: Delta T_module, K | 0.000560002604 | 0.000560002604 | 0 | agrees |  |
+| C/16, h=25: T_max, C | 35.0061559 | 35.0061559 | 0 | agrees |  |
+| C/16, h=25: T_mean, C | 35.0060045 | 35.0060045 | -8.12e-16 | agrees |  |
+| C/16, h=25: hottest minus mean, K | 0.000151473842 | 0.000151473842 | +1.88e-10 | agrees |  |
+| C/16, h=25: hottest / coldest position | inner (position 4 of 8) / end (position 1 of 8) | inner (position 4 of 8) / end (position 1 of 8) | n/a | agrees |  |
+| C/16, h=25: energy balance closes (|residual| < 1e-12 W) | True | True | n/a | agrees |  |
+| C/10, h=5: Delta T_module, K | 0.0006222222 | 0.0006222222 | 0 | agrees |  |
+| C/10, h=5: T_max, C | 35.0192211 | 35.0192211 | 0 | agrees |  |
+| C/10, h=5: T_mean, C | 35.0190503 | 35.0190503 | -4.06e-16 | agrees |  |
+| C/10, h=5: hottest minus mean, K | 0.000170762894 | 0.000170762894 | +8.32e-11 | agrees |  |
+| C/10, h=5: hottest / coldest position | inner (position 4 of 8) / end (position 1 of 8) | inner (position 4 of 8) / end (position 1 of 8) | n/a | agrees |  |
+| C/10, h=5: energy balance closes (|residual| < 1e-12 W) | True | True | n/a | agrees |  |
+| C/10, h=10: Delta T_module, K | 0.000908761779 | 0.000908761779 | 0 | agrees |  |
+| C/10, h=10: T_max, C | 35.0182203 | 35.0182203 | 0 | agrees |  |
+| C/10, h=10: T_mean, C | 35.017972 | 35.017972 | 0 | agrees |  |
+| C/10, h=10: hottest minus mean, K | 0.000248380091 | 0.000248380091 | 0 | agrees |  |
+| C/10, h=10: hottest / coldest position | inner (position 4 of 8) / end (position 1 of 8) | inner (position 4 of 8) / end (position 1 of 8) | n/a | agrees |  |
+| C/10, h=10: energy balance closes (|residual| < 1e-12 W) | True | True | n/a | agrees |  |
+| C/10, h=25: Delta T_module, K | 0.00143359919 | 0.00143359919 | 0 | agrees |  |
+| C/10, h=25: T_max, C | 35.0157591 | 35.0157591 | 0 | agrees |  |
+| C/10, h=25: T_mean, C | 35.0153714 | 35.0153714 | -4.06e-16 | agrees |  |
+| C/10, h=25: hottest minus mean, K | 0.000387771122 | 0.000387771122 | +3.66e-11 | agrees |  |
+| C/10, h=25: hottest / coldest position | inner (position 4 of 8) / end (position 1 of 8) | inner (position 4 of 8) / end (position 1 of 8) | n/a | agrees |  |
+| C/10, h=25: energy balance closes (|residual| < 1e-12 W) | True | True | n/a | agrees |  |
+| C/5, h=5: Delta T_module, K | 0.00248894664 | 0.00248894664 | 0 | agrees |  |
+| C/5, h=5: T_max, C | 35.0768825 | 35.0768825 | 0 | agrees |  |
+| C/5, h=5: T_mean, C | 35.0761994 | 35.0761994 | +4.05e-16 | agrees |  |
+| C/5, h=5: hottest minus mean, K | 0.000683068427 | 0.000683068427 | -2.08e-11 | agrees |  |
+| C/5, h=5: hottest / coldest position | inner (position 4 of 8) / end (position 1 of 8) | inner (position 4 of 8) / end (position 1 of 8) | n/a | agrees |  |
+| C/5, h=5: energy balance closes (|residual| < 1e-12 W) | True | True | n/a | agrees |  |
+| C/5, h=10: Delta T_module, K | 0.00363501067 | 0.00363501067 | 0 | agrees |  |
+| C/5, h=10: T_max, C | 35.0728798 | 35.0728798 | 0 | agrees |  |
+| C/5, h=10: T_mean, C | 35.0718863 | 35.0718863 | -1.22e-15 | agrees |  |
+| C/5, h=10: hottest minus mean, K | 0.000993511831 | 0.000993511831 | +4.29e-11 | agrees |  |
+| C/5, h=10: hottest / coldest position | inner (position 4 of 8) / end (position 1 of 8) | inner (position 4 of 8) / end (position 1 of 8) | n/a | agrees |  |
+| C/5, h=10: energy balance closes (|residual| < 1e-12 W) | True | True | n/a | agrees |  |
+| C/5, h=25: Delta T_module, K | 0.00573424955 | 0.00573424955 | 0 | agrees |  |
+| C/5, h=25: T_max, C | 35.0630355 | 35.0630355 | 0 | agrees |  |
+| C/5, h=25: T_mean, C | 35.0614845 | 35.0614845 | 0 | agrees |  |
+| C/5, h=25: hottest minus mean, K | 0.0015510468 | 0.0015510468 | 0 | agrees |  |
+| C/5, h=25: hottest / coldest position | inner (position 4 of 8) / end (position 1 of 8) | inner (position 4 of 8) / end (position 1 of 8) | n/a | agrees |  |
+| C/5, h=25: energy balance closes (|residual| < 1e-12 W) | True | True | n/a | agrees |  |
+| C/2, h=5: Delta T_module, K | 0.0155584439 | 0.0155584439 | 0 | agrees |  |
+| C/2, h=5: T_max, C | 35.4804371 | 35.4804371 | 0 | agrees |  |
+| C/2, h=5: T_mean, C | 35.4761672 | 35.4761672 | 0 | agrees |  |
+| C/2, h=5: hottest minus mean, K | 0.00426991405 | 0.00426991405 | 0 | agrees |  |
+| C/2, h=5: hottest / coldest position | inner (position 4 of 8) / end (position 1 of 8) | inner (position 4 of 8) / end (position 1 of 8) | n/a | agrees |  |
+| C/2, h=5: energy balance closes (|residual| < 1e-12 W) | True | True | n/a | agrees |  |
+| C/2, h=10: Delta T_module, K | 0.0227172172 | 0.0227172172 | 0 | agrees |  |
+| C/2, h=10: T_max, C | 35.4554321 | 35.4554321 | 0 | agrees |  |
+| C/2, h=10: T_mean, C | 35.4492231 | 35.4492231 | -4.01e-16 | agrees |  |
+| C/2, h=10: hottest minus mean, K | 0.0062090743 | 0.0062090743 | +2.29e-12 | agrees |  |
+| C/2, h=10: hottest / coldest position | inner (position 4 of 8) / end (position 1 of 8) | inner (position 4 of 8) / end (position 1 of 8) | n/a | agrees |  |
+| C/2, h=10: energy balance closes (|residual| < 1e-12 W) | True | True | n/a | agrees |  |
+| C/2, h=25: Delta T_module, K | 0.035832613 | 0.035832613 | 0 | agrees |  |
+| C/2, h=25: T_max, C | 35.3939287 | 35.3939287 | 0 | agrees |  |
+| C/2, h=25: T_mean, C | 35.3842363 | 35.3842363 | +4.02e-16 | agrees |  |
+| C/2, h=25: hottest minus mean, K | 0.00969239224 | 0.00969239224 | -1.47e-12 | agrees |  |
+| C/2, h=25: hottest / coldest position | inner (position 4 of 8) / end (position 1 of 8) | inner (position 4 of 8) / end (position 1 of 8) | n/a | agrees |  |
+| C/2, h=25: energy balance closes (|residual| < 1e-12 W) | True | True | n/a | agrees |  |
+| 1C, h=5: Delta T_module, K | 0.0622696962 | 0.0622696962 | 0 | agrees |  |
+| 1C, h=5: T_max, C | 36.9206241 | 36.9206241 | 0 | agrees |  |
+| 1C, h=5: T_mean, C | 36.903534 | 36.903534 | +7.70e-16 | agrees |  |
+| 1C, h=5: hottest minus mean, K | 0.0170901278 | 0.0170901278 | -1.66e-12 | agrees |  |
+| 1C, h=5: hottest / coldest position | inner (position 4 of 8) / end (position 1 of 8) | inner (position 4 of 8) / end (position 1 of 8) | n/a | agrees |  |
+| 1C, h=5: energy balance closes (|residual| < 1e-12 W) | True | True | n/a | agrees |  |
+| 1C, h=10: Delta T_module, K | 0.0908457449 | 0.0908457449 | 0 | agrees |  |
+| 1C, h=10: T_max, C | 36.820771 | 36.820771 | 0 | agrees |  |
+| 1C, h=10: T_mean, C | 36.7959402 | 36.7959402 | 0 | agrees |  |
+| 1C, h=10: hottest minus mean, K | 0.0248308727 | 0.0248308727 | 0 | agrees |  |
+| 1C, h=10: hottest / coldest position | inner (position 4 of 8) / end (position 1 of 8) | inner (position 4 of 8) / end (position 1 of 8) | n/a | agrees |  |
+| 1C, h=10: energy balance closes (|residual| < 1e-12 W) | True | True | n/a | agrees |  |
+| 1C, h=25: Delta T_module, K | 0.143238018 | 0.143238018 | 0 | agrees |  |
+| 1C, h=25: T_max, C | 36.5750955 | 36.5750955 | 0 | agrees |  |
+| 1C, h=25: T_mean, C | 36.5363496 | 36.5363496 | -7.78e-16 | agrees |  |
+| 1C, h=25: hottest minus mean, K | 0.0387459049 | 0.0387459049 | +7.34e-13 | agrees |  |
+| 1C, h=25: hottest / coldest position | inner (position 4 of 8) / end (position 1 of 8) | inner (position 4 of 8) / end (position 1 of 8) | n/a | agrees |  |
+| 1C, h=25: energy balance closes (|residual| < 1e-12 W) | True | True | n/a | agrees |  |
+| 2C, h=5: Delta T_module, K | 0.249641812 | 0.249641812 | 0 | agrees |  |
+| 2C, h=5: T_max, C | 42.6643381 | 42.6643381 | 0 | agrees |  |
+| 2C, h=5: T_mean, C | 42.5958131 | 42.5958131 | -3.34e-16 | agrees |  |
+| 2C, h=5: hottest minus mean, K | 0.0685249924 | 0.0685249924 | +2.07e-13 | agrees |  |
+| 2C, h=5: hottest / coldest position | inner (position 4 of 8) / end (position 1 of 8) | inner (position 4 of 8) / end (position 1 of 8) | n/a | agrees |  |
+| 2C, h=5: energy balance closes (|residual| < 1e-12 W) | True | True | n/a | agrees |  |
+| 2C, h=10: Delta T_module, K | 0.362995905 | 0.362995905 | 0 | agrees |  |
+| 2C, h=10: T_max, C | 42.2676207 | 42.2676207 | 0 | agrees |  |
+| 2C, h=10: T_mean, C | 42.1683885 | 42.1683885 | +3.37e-16 | agrees |  |
+| 2C, h=10: hottest minus mean, K | 0.0992321758 | 0.0992321758 | -1.43e-13 | agrees |  |
+| 2C, h=10: hottest / coldest position | inner (position 4 of 8) / end (position 1 of 8) | inner (position 4 of 8) / end (position 1 of 8) | n/a | agrees |  |
+| 2C, h=10: energy balance closes (|residual| < 1e-12 W) | True | True | n/a | agrees |  |
+| 2C, h=25: Delta T_module, K | 0.571452159 | 0.571452159 | 0 | agrees |  |
+| 2C, h=25: T_max, C | 41.2903848 | 41.2903848 | 0 | agrees |  |
+| 2C, h=25: T_mean, C | 41.1357853 | 41.1357853 | +6.91e-16 | agrees |  |
+| 2C, h=25: hottest minus mean, K | 0.154599479 | 0.154599479 | -1.84e-13 | agrees |  |
+| 2C, h=25: hottest / coldest position | inner (position 4 of 8) / end (position 1 of 8) | inner (position 4 of 8) / end (position 1 of 8) | n/a | agrees |  |
+| 2C, h=25: energy balance closes (|residual| < 1e-12 W) | True | True | n/a | agrees |  |
+
+
+<!-- modulemisc -->
+| Quantity | Repository | This check | Rel. diff. | Verdict | Note |
+|---|---|---|---|---|---|
+| V2 (b): strip 1e3 W/K, 2C, h=5: max minus min, K | 0.000240464886 | 0.000240464886 | 0 | agrees |  |
+| V2 (b): strip 1e3 W/K, 2C, h=10: max minus min, K | 0.000293971956 | 0.000293971956 | 0 | agrees |  |
+| V2 (b): strip 1e3 W/K, 2C, h=25: max minus min, K | 0.000363170728 | 0.000363170728 | 0 | agrees |  |
+| sensitivity C/2, h=10: strip_0.00_mW_per_K, K | 0.44829146 | 0.44829146 | 0 | agrees |  |
+| sensitivity C/2, h=10: strip_6.23_mW_per_K, K | 0.391278883 | 0.391278883 | 0 | agrees |  |
+| sensitivity C/2, h=10: strip_12.47_mW_per_K, K | 0.347130519 | 0.347130519 | 0 | agrees |  |
+| sensitivity C/2, h=10: radiation_as_received, K | 0.654547698 | 0.654547698 | 0 | agrees | the received form: pair exchange eps sigma F (A_lat/4), room radiation over the convective area; with eps^2 instead of eps it would be 0.657696 K |
+| sensitivity C/2, h=10: R_10s_pulse_15.47_mOhm, K | 0.32400323 | 0.32400323 | 0 | agrees |  |
+| sensitivity C/2, h=10: R_30s_pulse_20.37_mOhm, K | 0.425481117 | 0.425481117 | 0 | agrees |  |
+| comparison.json coldplate.module C/16 h5, K | 0.000243054399 | 0.000243054399 | 0 | agrees |  |
+| comparison.json coldplate.module C/16 h10, K | 0.000354985793 | 0.000354985793 | 0 | agrees |  |
+| comparison.json coldplate.module C/16 h25, K | 0.000560002604 | 0.000560002604 | 0 | agrees |  |
+| comparison.json coldplate.module C/10 h5, K | 0.0006222222 | 0.0006222222 | 0 | agrees |  |
+| comparison.json coldplate.module C/10 h10, K | 0.000908761779 | 0.000908761779 | 0 | agrees |  |
+| comparison.json coldplate.module C/10 h25, K | 0.00143359919 | 0.00143359919 | 0 | agrees |  |
+| comparison.json coldplate.module C/5 h5, K | 0.00248894664 | 0.00248894664 | 0 | agrees |  |
+| comparison.json coldplate.module C/5 h10, K | 0.00363501067 | 0.00363501067 | 0 | agrees |  |
+| comparison.json coldplate.module C/5 h25, K | 0.00573424955 | 0.00573424955 | 0 | agrees |  |
+| comparison.json coldplate.module C/2 h5, K | 0.0155584439 | 0.0155584439 | 0 | agrees |  |
+| comparison.json coldplate.module C/2 h10, K | 0.0227172172 | 0.0227172172 | 0 | agrees |  |
+| comparison.json coldplate.module C/2 h25, K | 0.035832613 | 0.035832613 | 0 | agrees |  |
+| comparison.json coldplate.module 1C h5, K | 0.0622696962 | 0.0622696962 | 0 | agrees |  |
+| comparison.json coldplate.module 1C h10, K | 0.0908457449 | 0.0908457449 | 0 | agrees |  |
+| comparison.json coldplate.module 1C h25, K | 0.143238018 | 0.143238018 | 0 | agrees |  |
+| comparison.json coldplate.module 2C h5, K | 0.249641812 | 0.249641812 | 0 | agrees |  |
+| comparison.json coldplate.module 2C h10, K | 0.362995905 | 0.362995905 | 0 | agrees |  |
+| comparison.json coldplate.module 2C h25, K | 0.571452159 | 0.571452159 | 0 | agrees |  |
+
+
+<!-- twonode -->
+| Quantity | Repository | This check | Rel. diff. | Verdict | Note |
+|---|---|---|---|---|---|
+| C/2, h=5: published eight-node Delta T_module vs my two-node (corner/inner) reduction, K | 0.368224522 | 0.368224522 | 0 | agrees | symmetry makes the reduction exact |
+| C/2, h=10: published eight-node Delta T_module vs my two-node (corner/inner) reduction, K | 0.391278883 | 0.391278883 | 0 | agrees | symmetry makes the reduction exact |
+| C/2, h=25: published eight-node Delta T_module vs my two-node (corner/inner) reduction, K | 0.348492012 | 0.348492012 | 0 | agrees | symmetry makes the reduction exact |
+
+
+<!-- twonode_info -->
+| h, W/(m2 K) | predictions.md hand estimate, K | my two-node, linearised at 35 C, K | my two-node, linearised at the module mean, K | exact, K |
+|---|---|---|---|---|
+| 5 | 0.37 | 0.3740 | 0.3665 | 0.3682 |
+| 10 | 0.39 | 0.3953 | 0.3901 | 0.3913 |
+| 25 | 0.35 | 0.3499 | 0.3481 | 0.3485 |
+
+
+<!-- cellconv -->
+| Case | Quantity | Nr=20 | Nr=40 | Nr=80 | Nr=160 | Nr=320 | Observed order | Extrapolated | Repository (refine 1) | Rel. diff. (repo vs extrapolated) |
+|---|---|---|---|---|---|---|---|---|---|---|
+| C/2, h=5 | hottest minus coldest, K | 0.0930837 | 0.0931571 | 0.0931757 | 0.0931802 | 0.0931813 | 2.02 | 0.0931817 | 0.0920665 | -1.20e-02 |
+| C/2, h=5 | hottest minus volume mean, K | 0.0482804 | 0.0482418 | 0.0482321 | 0.0482297 | 0.0482291 | 2.00 | 0.0482289 | 0.0471436 | -2.25e-02 |
+| C/2, h=10 | hottest minus coldest, K | 0.0930092 | 0.0930828 | 0.0931016 | 0.0931061 | 0.0931072 | 1.95 | 0.0931076 | 0.0919933 | -1.20e-02 |
+| C/2, h=10 | hottest minus volume mean, K | 0.0482596 | 0.0482211 | 0.0482114 | 0.0482090 | 0.0482084 | 2.00 | 0.0482082 | 0.0471244 | -2.25e-02 |
+| C/2, h=25 | hottest minus coldest, K | 0.0927868 | 0.0928618 | 0.0928803 | 0.0928850 | 0.0928861 | 2.09 | 0.0928864 | 0.0917745 | -1.20e-02 |
+| C/2, h=25 | hottest minus volume mean, K | 0.0481977 | 0.0481594 | 0.0481498 | 0.0481474 | 0.0481468 | 2.00 | 0.0481466 | 0.0470670 | -2.24e-02 |
+| 2C, h=5 | hottest minus coldest, K | 1.4889315 | 1.4901068 | 1.4904065 | 1.4904781 | 1.4904960 | 2.00 | 1.4905020 | 1.4726645 | -1.20e-02 |
+| 2C, h=5 | hottest minus volume mean, K | 0.7723724 | 0.7717557 | 0.7716007 | 0.7715618 | 0.7715521 | 2.00 | 0.7715488 | 0.7541923 | -2.25e-02 |
+| 2C, h=10 | hottest minus coldest, K | 1.4878695 | 1.4890472 | 1.4893495 | 1.4894206 | 1.4894392 | 1.93 | 1.4894459 | 1.4716201 | -1.20e-02 |
+| 2C, h=10 | hottest minus volume mean, K | 0.7720761 | 0.7714604 | 0.7713056 | 0.7712668 | 0.7712570 | 2.00 | 0.7712538 | 0.7539176 | -2.25e-02 |
+| 2C, h=25 | hottest minus coldest, K | 1.4844499 | 1.4856514 | 1.4859467 | 1.4860213 | 1.4860391 | 2.07 | 1.4860446 | 1.4682558 | -1.20e-02 |
+| 2C, h=25 | hottest minus volume mean, K | 0.7711248 | 0.7705121 | 0.7703580 | 0.7703193 | 0.7703096 | 2.00 | 0.7703063 | 0.7530355 | -2.24e-02 |
+| C/2, h=10, base 600 | hottest minus coldest, K | 0.2917082 | 0.2917136 | 0.2917040 | 0.2917043 | 0.2917038 | n/a | 0.2917038 | 0.2912983 | -1.39e-03 |
+| C/2, h=10, base 600 | hottest minus volume mean, K | 0.1014129 | 0.1013972 | 0.1013928 | 0.1013919 | 0.1013916 | 1.72 | 0.1013915 | 0.1009372 | -4.48e-03 |
+| 2C, h=10, base 600 | hottest minus coldest, K | 4.6430541 | 4.6429992 | 4.6428602 | 4.6428904 | 4.6428794 | n/a | 4.6428794 | 4.6363066 | -1.42e-03 |
+| 2C, h=10, base 600 | hottest minus volume mean, K | 1.6148236 | 1.6145398 | 1.6144838 | 1.6144661 | 1.6144616 | 1.96 | 1.6144600 | 1.6071598 | -4.52e-03 |
+
+
+<!-- cellconv_cmp -->
+| Quantity | Repository | This check | Rel. diff. | Verdict | Note |
+|---|---|---|---|---|---|
+| C/2, h=5: hottest minus coldest, K | 0.0920665439 | 0.0931816931 | -1.20e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/2, h=5: hottest minus volume mean, K | 0.0471436315 | 0.0482289059 | -2.25e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/2, h=10: hottest minus coldest, K | 0.0919933143 | 0.0931076247 | -1.20e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/2, h=10: hottest minus volume mean, K | 0.0471243631 | 0.0482082087 | -2.25e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/2, h=25: hottest minus coldest, K | 0.0917745257 | 0.0928864063 | -1.20e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/2, h=25: hottest minus volume mean, K | 0.047066976 | 0.0481465723 | -2.24e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| 2C, h=5: hottest minus coldest, K | 1.4726645 | 1.49050197 | -1.20e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| 2C, h=5: hottest minus volume mean, K | 0.754192303 | 0.771548817 | -2.25e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| 2C, h=10: hottest minus coldest, K | 1.47162005 | 1.48944588 | -1.20e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| 2C, h=10: hottest minus volume mean, K | 0.753917642 | 0.771253796 | -2.25e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| 2C, h=25: hottest minus coldest, K | 1.46825582 | 1.48604462 | -1.20e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| 2C, h=25: hottest minus volume mean, K | 0.753035499 | 0.770306345 | -2.24e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/16, h=10, base 600 W/(m2 K): hottest minus coldest, K | 0.0045530898 | 0.00455942257 | -1.39e-03 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/16, h=10, base 600 W/(m2 K): hottest minus volume mean, K | 0.00157764154 | 0.00158473814 | -4.48e-03 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/10, h=10, base 600 W/(m2 K): hottest minus coldest, K | 0.0116558114 | 0.0116720236 | -1.39e-03 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/10, h=10, base 600 W/(m2 K): hottest minus volume mean, K | 0.00403873081 | 0.0040568982 | -4.48e-03 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/5, h=10, base 600 W/(m2 K): hottest minus coldest, K | 0.0466213063 | 0.0466861602 | -1.39e-03 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/5, h=10, base 600 W/(m2 K): hottest minus volume mean, K | 0.0161543024 | 0.0162269736 | -4.48e-03 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/2, h=10, base 600 W/(m2 K): hottest minus coldest, K | 0.291298272 | 0.291703839 | -1.39e-03 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/2, h=10, base 600 W/(m2 K): hottest minus volume mean, K | 0.100937215 | 0.101391477 | -4.48e-03 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| 1C, h=10, base 600 W/(m2 K): hottest minus coldest, K | 1.16397772 | 1.16560351 | -1.39e-03 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| 1C, h=10, base 600 W/(m2 K): hottest minus volume mean, K | 0.403359761 | 0.405178199 | -4.49e-03 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| 2C, h=10, base 600 W/(m2 K): hottest minus coldest, K | 4.63630661 | 4.64287938 | -1.42e-03 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| 2C, h=10, base 600 W/(m2 K): hottest minus volume mean, K | 1.60715982 | 1.61446001 | -4.52e-03 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| V3 (d) C/2, h=5: refine 2 hottest minus coldest, K | 0.0928319895 | 0.0931816931 | -3.75e-03 | small difference explained | discretisation (refine 2 is closer to the converged value) |
+| V3 (d) C/2, h=10: refine 2 hottest minus coldest, K | 0.0927575925 | 0.0931076247 | -3.76e-03 | small difference explained | discretisation (refine 2 is closer to the converged value) |
+| V3 (d) C/2, h=25: refine 2 hottest minus coldest, K | 0.0925353991 | 0.0928864063 | -3.78e-03 | small difference explained | discretisation (refine 2 is closer to the converged value) |
+
+
+<!-- cellall -->
+| Quantity | Repository | This check | Rel. diff. | Verdict | Note |
+|---|---|---|---|---|---|
+| C/16, h=5: hottest minus coldest, K | 0.0014385649 | 0.00145596642 | -1.20e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/16, h=5: hottest minus mean, K | 0.000736625889 | 0.000753596485 | -2.25e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/16, h=5: T_max rise, K | 0.0344749648 | 0.0344952002 | -5.87e-04 | agrees |  |
+| C/16, h=5: volume-mean rise, K | 0.0337383389 | 0.0337416037 | -9.68e-05 | agrees |  |
+| C/16, h=5: surface-mean rise, K | 0.0331536308 | 0.0331536308 | +1.71e-11 | agrees |  |
+| C/16, h=5: lumped-cell rise, K | 0.0331536309 | 0.0331536309 | 0 | agrees |  |
+| C/16, h=5: hottest point (r, z) mm | (0.00, 35.05) | (0.00, 35.05) | n/a | agrees | nearest published-mesh node to my point: r = 0.0 mm, 35.05 mm from the nearer end; reported node: r = 0.0 mm, 35.05 mm from the nearer end |
+| C/16, h=5: coldest point (r, z) mm | (10.55, 65.33) | (10.55, 4.88) | n/a | agrees | nearest published-mesh node to my point: r = 10.55 mm, 4.772 mm from the nearer end; reported node: r = 10.55 mm, 4.772 mm from the nearer end |
+| C/16, h=10: hottest minus coldest, K | 0.00143741247 | 0.00145479946 | -1.20e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/16, h=10: hottest minus mean, K | 0.000736322648 | 0.000753270742 | -2.25e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/16, h=10: T_max rise, K | 0.0236472351 | 0.0236674415 | -8.54e-04 | agrees |  |
+| C/16, h=10: volume-mean rise, K | 0.0229109125 | 0.0229141708 | -1.42e-04 | agrees |  |
+| C/16, h=10: surface-mean rise, K | 0.0223268016 | 0.0223268016 | +2.29e-11 | agrees |  |
+| C/16, h=10: lumped-cell rise, K | 0.0223268016 | 0.0223268016 | 0 | agrees |  |
+| C/16, h=10: hottest point (r, z) mm | (0.00, 35.05) | (0.00, 35.05) | n/a | agrees | nearest published-mesh node to my point: r = 0.0 mm, 35.05 mm from the nearer end; reported node: r = 0.0 mm, 35.05 mm from the nearer end |
+| C/16, h=10: coldest point (r, z) mm | (10.55, 65.33) | (10.55, 4.88) | n/a | agrees | nearest published-mesh node to my point: r = 10.55 mm, 4.772 mm from the nearer end; reported node: r = 10.55 mm, 4.772 mm from the nearer end |
+| C/16, h=25: hottest minus coldest, K | 0.00143398548 | 0.00145133617 | -1.20e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/16, h=25: hottest minus mean, K | 0.000735423751 | 0.000752305239 | -2.24e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/16, h=25: T_max rise, K | 0.0125954516 | 0.0126155722 | -1.59e-03 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/16, h=25: volume-mean rise, K | 0.0118600278 | 0.011863267 | -2.73e-04 | agrees |  |
+| C/16, h=25: surface-mean rise, K | 0.0112776864 | 0.0112776864 | +2.52e-11 | agrees |  |
+| C/16, h=25: lumped-cell rise, K | 0.0112776865 | 0.0112776865 | 0 | agrees |  |
+| C/16, h=25: hottest point (r, z) mm | (0.00, 35.05) | (0.00, 35.05) | n/a | agrees | nearest published-mesh node to my point: r = 0.0 mm, 35.05 mm from the nearer end; reported node: r = 0.0 mm, 35.05 mm from the nearer end |
+| C/16, h=25: coldest point (r, z) mm | (10.55, 65.33) | (10.55, 4.81) | n/a | agrees | nearest published-mesh node to my point: r = 10.55 mm, 4.772 mm from the nearer end; reported node: r = 10.55 mm, 4.772 mm from the nearer end |
+| C/16, h=10, base: hottest minus coldest, K | 0.0045530898 | 0.00455942929 | -1.39e-03 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/16, h=10, base: hottest minus mean, K | 0.00157764154 | 0.00158474388 | -4.48e-03 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/16, h=10, base: T_max rise, K | 0.0101308167 | 0.0101385644 | -7.64e-04 | agrees |  |
+| C/16, h=10, base: volume-mean rise, K | 0.00855317515 | 0.00855382053 | -7.54e-05 | agrees |  |
+| C/16, h=10, base: surface-mean rise, K | 0.00823721411 | 0.00823648198 | +8.89e-05 | agrees |  |
+| C/16, h=10, base: lumped-cell rise, K | 0.00638303325 | 0.00638303325 | 0 | agrees |  |
+| C/16, h=10, base: hottest point (r, z) mm | (0.00, 65.33) | (0.00, 65.55) | n/a | agrees | nearest published-mesh node to my point: r = 0.0 mm, 4.772 mm from the nearer end; reported node: r = 0.0 mm, 4.772 mm from the nearer end |
+| C/16, h=10, base: coldest point (r, z) mm | (9.73, 0.00) | (9.82, 0.00) | n/a | agrees | nearest published-mesh node to my point: r = 9.73 mm, 0.0 mm from the nearer end; reported node: r = 9.73 mm, 0.0 mm from the nearer end |
+| C/10, h=5: hottest minus coldest, K | 0.00368272456 | 0.00372727242 | -1.20e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/10, h=5: hottest minus mean, K | 0.00188576186 | 0.00192920655 | -2.25e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/10, h=5: T_max rise, K | 0.0882449056 | 0.0882967083 | -5.87e-04 | agrees |  |
+| C/10, h=5: volume-mean rise, K | 0.0863591437 | 0.0863675017 | -9.68e-05 | agrees |  |
+| C/10, h=5: surface-mean rise, K | 0.0848622918 | 0.0848622918 | +7.10e-11 | agrees |  |
+| C/10, h=5: lumped-cell rise, K | 0.0848622925 | 0.0848622925 | 0 | agrees |  |
+| C/10, h=5: hottest point (r, z) mm | (0.00, 35.05) | (0.00, 35.05) | n/a | agrees | nearest published-mesh node to my point: r = 0.0 mm, 35.05 mm from the nearer end; reported node: r = 0.0 mm, 35.05 mm from the nearer end |
+| C/10, h=5: coldest point (r, z) mm | (10.55, 65.33) | (10.55, 4.88) | n/a | agrees | nearest published-mesh node to my point: r = 10.55 mm, 4.772 mm from the nearer end; reported node: r = 10.55 mm, 4.772 mm from the nearer end |
+| C/10, h=10: hottest minus coldest, K | 0.00367977485 | 0.00372428554 | -1.20e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/10, h=10: hottest minus mean, K | 0.0018849857 | 0.0019283728 | -2.25e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/10, h=10: T_max rise, K | 0.0605335601 | 0.0605852885 | -8.54e-04 | agrees |  |
+| C/10, h=10: volume-mean rise, K | 0.0586485744 | 0.0586569157 | -1.42e-04 | agrees |  |
+| C/10, h=10: surface-mean rise, K | 0.0571532511 | 0.0571532511 | +7.46e-11 | agrees |  |
+| C/10, h=10: lumped-cell rise, K | 0.0571532515 | 0.0571532515 | 0 | agrees |  |
+| C/10, h=10: hottest point (r, z) mm | (0.00, 35.05) | (0.00, 35.05) | n/a | agrees | nearest published-mesh node to my point: r = 0.0 mm, 35.05 mm from the nearer end; reported node: r = 0.0 mm, 35.05 mm from the nearer end |
+| C/10, h=10: coldest point (r, z) mm | (10.55, 65.33) | (10.55, 4.88) | n/a | agrees | nearest published-mesh node to my point: r = 10.55 mm, 4.772 mm from the nearer end; reported node: r = 10.55 mm, 4.772 mm from the nearer end |
+| C/10, h=25: hottest minus coldest, K | 0.00367100229 | 0.00371542005 | -1.20e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/10, h=25: hottest minus mean, K | 0.00188268466 | 0.00192590126 | -2.24e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/10, h=25: T_max rise, K | 0.0322439223 | 0.0322954312 | -1.59e-03 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/10, h=25: volume-mean rise, K | 0.0303612377 | 0.0303695299 | -2.73e-04 | agrees |  |
+| C/10, h=25: surface-mean rise, K | 0.028870444 | 0.028870444 | +7.48e-11 | agrees |  |
+| C/10, h=25: lumped-cell rise, K | 0.0288704442 | 0.0288704442 | 0 | agrees |  |
+| C/10, h=25: hottest point (r, z) mm | (0.00, 35.05) | (0.00, 35.05) | n/a | agrees | nearest published-mesh node to my point: r = 0.0 mm, 35.05 mm from the nearer end; reported node: r = 0.0 mm, 35.05 mm from the nearer end |
+| C/10, h=25: coldest point (r, z) mm | (10.55, 65.33) | (10.55, 4.81) | n/a | agrees | nearest published-mesh node to my point: r = 10.55 mm, 4.772 mm from the nearer end; reported node: r = 10.55 mm, 4.772 mm from the nearer end |
+| C/10, h=10, base: hottest minus coldest, K | 0.0116558114 | 0.0116720408 | -1.39e-03 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/10, h=10, base: hottest minus mean, K | 0.00403873081 | 0.00405691292 | -4.48e-03 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/10, h=10, base: T_max rise, K | 0.0259346803 | 0.0259545146 | -7.64e-04 | agrees |  |
+| C/10, h=10, base: volume-mean rise, K | 0.0218959495 | 0.0218976017 | -7.55e-05 | agrees |  |
+| C/10, h=10, base: surface-mean rise, K | 0.0210870838 | 0.0210852096 | +8.89e-05 | agrees |  |
+| C/10, h=10, base: lumped-cell rise, K | 0.0163404917 | 0.0163404917 | 0 | agrees |  |
+| C/10, h=10, base: hottest point (r, z) mm | (0.00, 65.33) | (0.00, 65.55) | n/a | agrees | nearest published-mesh node to my point: r = 0.0 mm, 4.772 mm from the nearer end; reported node: r = 0.0 mm, 4.772 mm from the nearer end |
+| C/10, h=10, base: coldest point (r, z) mm | (9.73, 0.00) | (9.82, 0.00) | n/a | agrees | nearest published-mesh node to my point: r = 9.73 mm, 0.0 mm from the nearer end; reported node: r = 9.73 mm, 0.0 mm from the nearer end |
+| C/5, h=5: hottest minus coldest, K | 0.0147308669 | 0.0149090579 | -1.20e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/5, h=5: hottest minus mean, K | 0.00754303914 | 0.0077168173 | -2.25e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/5, h=5: T_max rise, K | 0.352763112 | 0.352970322 | -5.87e-04 | agrees |  |
+| C/5, h=5: volume-mean rise, K | 0.345220073 | 0.345253505 | -9.68e-05 | agrees |  |
+| C/5, h=5: surface-mean rise, K | 0.339232682 | 0.339232682 | +3.31e-10 | agrees |  |
+| C/5, h=5: lumped-cell rise, K | 0.339232692 | 0.339232692 | -1.68e-13 | agrees |  |
+| C/5, h=5: hottest point (r, z) mm | (0.00, 35.05) | (0.00, 35.05) | n/a | agrees | nearest published-mesh node to my point: r = 0.0 mm, 35.05 mm from the nearer end; reported node: r = 0.0 mm, 35.05 mm from the nearer end |
+| C/5, h=5: coldest point (r, z) mm | (10.55, 65.33) | (10.55, 4.88) | n/a | agrees | nearest published-mesh node to my point: r = 10.55 mm, 4.772 mm from the nearer end; reported node: r = 10.55 mm, 4.772 mm from the nearer end |
+| C/5, h=10: hottest minus coldest, K | 0.0147190783 | 0.0148971208 | -1.20e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/5, h=10: hottest minus mean, K | 0.00753993721 | 0.00771348519 | -2.25e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/5, h=10: T_max rise, K | 0.242068056 | 0.242274969 | -8.54e-04 | agrees |  |
+| C/5, h=10: volume-mean rise, K | 0.234528118 | 0.234561484 | -1.42e-04 | agrees |  |
+| C/5, h=10: surface-mean rise, K | 0.228546836 | 0.228546836 | +3.31e-10 | agrees |  |
+| C/5, h=10: lumped-cell rise, K | 0.228546843 | 0.228546843 | 0 | agrees |  |
+| C/5, h=10: hottest point (r, z) mm | (0.00, 35.05) | (0.00, 35.05) | n/a | agrees | nearest published-mesh node to my point: r = 0.0 mm, 35.05 mm from the nearer end; reported node: r = 0.0 mm, 35.05 mm from the nearer end |
+| C/5, h=10: coldest point (r, z) mm | (10.55, 65.33) | (10.55, 4.88) | n/a | agrees | nearest published-mesh node to my point: r = 10.55 mm, 4.772 mm from the nearer end; reported node: r = 10.55 mm, 4.772 mm from the nearer end |
+| C/5, h=25: hottest minus coldest, K | 0.0146839986 | 0.0148616695 | -1.20e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/5, h=25: hottest minus mean, K | 0.00753073584 | 0.00770360202 | -2.24e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/5, h=25: T_max rise, K | 0.128967149 | 0.129173184 | -1.60e-03 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/5, h=25: volume-mean rise, K | 0.121436413 | 0.121469582 | -2.73e-04 | agrees |  |
+| C/5, h=25: surface-mean rise, K | 0.115473243 | 0.115473243 | +3.29e-10 | agrees |  |
+| C/5, h=25: lumped-cell rise, K | 0.115473247 | 0.115473247 | 0 | agrees |  |
+| C/5, h=25: hottest point (r, z) mm | (0.00, 35.05) | (0.00, 35.05) | n/a | agrees | nearest published-mesh node to my point: r = 0.0 mm, 35.05 mm from the nearer end; reported node: r = 0.0 mm, 35.05 mm from the nearer end |
+| C/5, h=25: coldest point (r, z) mm | (10.55, 65.33) | (10.55, 4.81) | n/a | agrees | nearest published-mesh node to my point: r = 10.55 mm, 4.772 mm from the nearer end; reported node: r = 10.55 mm, 4.772 mm from the nearer end |
+| C/5, h=10, base: hottest minus coldest, K | 0.0466213063 | 0.0466862307 | -1.39e-03 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/5, h=10, base: hottest minus mean, K | 0.0161543024 | 0.0162270332 | -4.48e-03 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/5, h=10, base: T_max rise, K | 0.103734577 | 0.103813918 | -7.64e-04 | agrees |  |
+| C/5, h=10, base: volume-mean rise, K | 0.0875802741 | 0.0875868847 | -7.55e-05 | agrees |  |
+| C/5, h=10, base: surface-mean rise, K | 0.0843447061 | 0.08433721 | +8.89e-05 | agrees |  |
+| C/5, h=10, base: lumped-cell rise, K | 0.0653605215 | 0.0653605215 | 0 | agrees |  |
+| C/5, h=10, base: hottest point (r, z) mm | (0.00, 65.33) | (0.00, 65.55) | n/a | agrees | nearest published-mesh node to my point: r = 0.0 mm, 4.772 mm from the nearer end; reported node: r = 0.0 mm, 4.772 mm from the nearer end |
+| C/5, h=10, base: coldest point (r, z) mm | (9.73, 0.00) | (9.82, 0.00) | n/a | agrees | nearest published-mesh node to my point: r = 9.73 mm, 0.0 mm from the nearer end; reported node: r = 9.73 mm, 0.0 mm from the nearer end |
+| C/2, h=5: hottest minus coldest, K | 0.0920665439 | 0.0931802202 | -1.20e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/2, h=5: hottest minus mean, K | 0.0471436315 | 0.0482297179 | -2.25e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/2, h=5: T_max rise, K | 2.19535189 | 2.19664691 | -5.90e-04 | agrees |  |
+| C/2, h=5: volume-mean rise, K | 2.14820826 | 2.1484172 | -9.73e-05 | agrees |  |
+| C/2, h=5: surface-mean rise, K | 2.11078778 | 2.11078777 | +2.16e-09 | agrees |  |
+| C/2, h=5: lumped-cell rise, K | 2.1107882 | 2.1107882 | 0 | agrees |  |
+| C/2, h=5: hottest point (r, z) mm | (0.00, 35.05) | (0.00, 35.05) | n/a | agrees | nearest published-mesh node to my point: r = 0.0 mm, 35.05 mm from the nearer end; reported node: r = 0.0 mm, 35.05 mm from the nearer end |
+| C/2, h=5: coldest point (r, z) mm | (10.55, 65.33) | (10.55, 4.88) | n/a | agrees | nearest published-mesh node to my point: r = 10.55 mm, 4.772 mm from the nearer end; reported node: r = 10.55 mm, 4.772 mm from the nearer end |
+| C/2, h=10: hottest minus coldest, K | 0.0919933143 | 0.093106068 | -1.20e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/2, h=10: hottest minus mean, K | 0.0471243631 | 0.0482090198 | -2.25e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/2, h=10: T_max rise, K | 1.51003459 | 1.51132777 | -8.56e-04 | agrees |  |
+| C/2, h=10: volume-mean rise, K | 1.46291023 | 1.46311875 | -1.43e-04 | agrees |  |
+| C/2, h=10: surface-mean rise, K | 1.42552769 | 1.42552769 | +2.15e-09 | agrees |  |
+| C/2, h=10: lumped-cell rise, K | 1.42552798 | 1.42552798 | 0 | agrees |  |
+| C/2, h=10: hottest point (r, z) mm | (0.00, 35.05) | (0.00, 35.05) | n/a | agrees | nearest published-mesh node to my point: r = 0.0 mm, 35.05 mm from the nearer end; reported node: r = 0.0 mm, 35.05 mm from the nearer end |
+| C/2, h=10: coldest point (r, z) mm | (10.55, 65.33) | (10.55, 4.88) | n/a | agrees | nearest published-mesh node to my point: r = 10.55 mm, 4.772 mm from the nearer end; reported node: r = 10.55 mm, 4.772 mm from the nearer end |
+| C/2, h=25: hottest minus coldest, K | 0.0917745257 | 0.092884964 | -1.20e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/2, h=25: hottest minus mean, K | 0.047066976 | 0.0481473805 | -2.24e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/2, h=25: T_max rise, K | 0.805670901 | 0.806958608 | -1.60e-03 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/2, h=25: volume-mean rise, K | 0.758603925 | 0.758811227 | -2.73e-04 | agrees |  |
+| C/2, h=25: surface-mean rise, K | 0.721334359 | 0.721334357 | +2.09e-09 | agrees |  |
+| C/2, h=25: lumped-cell rise, K | 0.721334499 | 0.721334499 | 0 | agrees |  |
+| C/2, h=25: hottest point (r, z) mm | (0.00, 35.05) | (0.00, 35.05) | n/a | agrees | nearest published-mesh node to my point: r = 0.0 mm, 35.05 mm from the nearer end; reported node: r = 0.0 mm, 35.05 mm from the nearer end |
+| C/2, h=25: coldest point (r, z) mm | (10.55, 65.33) | (10.55, 4.81) | n/a | agrees | nearest published-mesh node to my point: r = 10.55 mm, 4.772 mm from the nearer end; reported node: r = 10.55 mm, 4.772 mm from the nearer end |
+| C/2, h=10, base: hottest minus coldest, K | 0.291298272 | 0.291704341 | -1.39e-03 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/2, h=10, base: hottest minus mean, K | 0.100937215 | 0.101391882 | -4.48e-03 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| C/2, h=10, base: T_max rise, K | 0.648159692 | 0.648655744 | -7.65e-04 | agrees |  |
+| C/2, h=10, base: volume-mean rise, K | 0.547222477 | 0.547263862 | -7.56e-05 | agrees |  |
+| C/2, h=10, base: surface-mean rise, K | 0.526995556 | 0.52694874 | +8.88e-05 | agrees |  |
+| C/2, h=10, base: lumped-cell rise, K | 0.408439992 | 0.408439992 | 0 | agrees |  |
+| C/2, h=10, base: hottest point (r, z) mm | (0.00, 65.33) | (0.00, 65.55) | n/a | agrees | nearest published-mesh node to my point: r = 0.0 mm, 4.772 mm from the nearer end; reported node: r = 0.0 mm, 4.772 mm from the nearer end |
+| C/2, h=10, base: coldest point (r, z) mm | (9.73, 0.00) | (9.82, 0.00) | n/a | agrees | nearest published-mesh node to my point: r = 9.73 mm, 0.0 mm from the nearer end; reported node: r = 9.73 mm, 0.0 mm from the nearer end |
+| 1C, h=5: hottest minus coldest, K | 0.368246435 | 0.372700884 | -1.20e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| 1C, h=5: hottest minus mean, K | 0.188569308 | 0.192913266 | -2.25e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| 1C, h=5: T_max rise, K | 8.64994368 | 8.65512321 | -5.98e-04 | agrees |  |
+| 1C, h=5: volume-mean rise, K | 8.46137437 | 8.46220995 | -9.87e-05 | agrees |  |
+| 1C, h=5: surface-mean rise, K | 8.31170271 | 8.31170264 | +8.91e-09 | agrees |  |
+| 1C, h=5: lumped-cell rise, K | 8.31170952 | 8.31170952 | -6.84e-15 | agrees |  |
+| 1C, h=5: hottest point (r, z) mm | (0.00, 35.05) | (0.00, 35.05) | n/a | agrees | nearest published-mesh node to my point: r = 0.0 mm, 35.05 mm from the nearer end; reported node: r = 0.0 mm, 35.05 mm from the nearer end |
+| 1C, h=5: coldest point (r, z) mm | (10.55, 65.33) | (10.55, 4.88) | n/a | agrees | nearest published-mesh node to my point: r = 10.55 mm, 4.772 mm from the nearer end; reported node: r = 10.55 mm, 4.772 mm from the nearer end |
+| 1C, h=10: hottest minus coldest, K | 0.367959931 | 0.372410774 | -1.20e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| 1C, h=10: hottest minus mean, K | 0.18849393 | 0.192832294 | -2.25e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| 1C, h=10: T_max rise, K | 5.99912058 | 6.00429293 | -8.61e-04 | agrees |  |
+| 1C, h=10: volume-mean rise, K | 5.81062665 | 5.81146064 | -1.44e-04 | agrees |  |
+| 1C, h=10: surface-mean rise, K | 5.66110344 | 5.6611034 | +8.79e-09 | agrees |  |
+| 1C, h=10: lumped-cell rise, K | 5.66110803 | 5.66110803 | 0 | agrees |  |
+| 1C, h=10: hottest point (r, z) mm | (0.00, 35.05) | (0.00, 35.05) | n/a | agrees | nearest published-mesh node to my point: r = 0.0 mm, 35.05 mm from the nearer end; reported node: r = 0.0 mm, 35.05 mm from the nearer end |
+| 1C, h=10: coldest point (r, z) mm | (10.55, 65.33) | (10.55, 4.88) | n/a | agrees | nearest published-mesh node to my point: r = 10.55 mm, 4.772 mm from the nearer end; reported node: r = 10.55 mm, 4.772 mm from the nearer end |
+| 1C, h=25: hottest minus coldest, K | 0.367091412 | 0.371533092 | -1.20e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| 1C, h=25: hottest minus mean, K | 0.188266135 | 0.192587621 | -2.24e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| 1C, h=25: T_max rise, K | 3.21733731 | 3.22248795 | -1.60e-03 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| 1C, h=25: volume-mean rise, K | 3.02907117 | 3.02990033 | -2.74e-04 | agrees |  |
+| 1C, h=25: surface-mean rise, K | 2.87999638 | 2.87999636 | +8.48e-09 | agrees |  |
+| 1C, h=25: lumped-cell rise, K | 2.87999865 | 2.87999865 | 0 | agrees |  |
+| 1C, h=25: hottest point (r, z) mm | (0.00, 35.05) | (0.00, 35.05) | n/a | agrees | nearest published-mesh node to my point: r = 0.0 mm, 35.05 mm from the nearer end; reported node: r = 0.0 mm, 35.05 mm from the nearer end |
+| 1C, h=25: coldest point (r, z) mm | (10.55, 65.33) | (10.55, 4.81) | n/a | agrees | nearest published-mesh node to my point: r = 10.55 mm, 4.772 mm from the nearer end; reported node: r = 10.55 mm, 4.772 mm from the nearer end |
+| 1C, h=10, base: hottest minus coldest, K | 1.16397772 | 1.16560617 | -1.40e-03 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| 1C, h=10, base: hottest minus mean, K | 0.403359761 | 0.405179857 | -4.49e-03 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| 1C, h=10, base: T_max rise, K | 2.5900421 | 2.59202872 | -7.66e-04 | agrees |  |
+| 1C, h=10, base: volume-mean rise, K | 2.18668234 | 2.18684886 | -7.61e-05 | agrees |  |
+| 1C, h=10, base: surface-mean rise, K | 2.10570852 | 2.10552177 | +8.87e-05 | agrees |  |
+| 1C, h=10, base: lumped-cell rise, K | 1.63285436 | 1.63285436 | 0 | agrees |  |
+| 1C, h=10, base: hottest point (r, z) mm | (0.00, 65.33) | (0.00, 65.55) | n/a | agrees | nearest published-mesh node to my point: r = 0.0 mm, 4.772 mm from the nearer end; reported node: r = 0.0 mm, 4.772 mm from the nearer end |
+| 1C, h=10, base: coldest point (r, z) mm | (9.73, 0.00) | (9.82, 0.00) | n/a | agrees | nearest published-mesh node to my point: r = 9.73 mm, 0.0 mm from the nearer end; reported node: r = 9.73 mm, 0.0 mm from the nearer end |
+| 2C, h=5: hottest minus coldest, K | 1.4726645 | 1.49047813 | -1.20e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| 2C, h=5: hottest minus mean, K | 0.754192303 | 0.771561805 | -2.25e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| 2C, h=5: T_max rise, K | 32.6744069 | 32.695116 | -6.33e-04 | agrees |  |
+| 2C, h=5: volume-mean rise, K | 31.9202146 | 31.9235542 | -1.05e-04 | agrees |  |
+| 2C, h=5: surface-mean rise, K | 31.3216952 | 31.3216939 | +3.87e-08 | agrees |  |
+| 2C, h=5: lumped-cell rise, K | 31.3218064 | 31.3218064 | 0 | agrees |  |
+| 2C, h=5: hottest point (r, z) mm | (0.00, 35.05) | (0.00, 35.05) | n/a | agrees | nearest published-mesh node to my point: r = 0.0 mm, 35.05 mm from the nearer end; reported node: r = 0.0 mm, 35.05 mm from the nearer end |
+| 2C, h=5: coldest point (r, z) mm | (10.55, 65.33) | (10.55, 4.88) | n/a | agrees | nearest published-mesh node to my point: r = 10.55 mm, 4.772 mm from the nearer end; reported node: r = 10.55 mm, 4.772 mm from the nearer end |
+| 2C, h=10: hottest minus coldest, K | 1.47162005 | 1.48942059 | -1.20e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| 2C, h=10: hottest minus mean, K | 0.753917642 | 0.77126677 | -2.25e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| 2C, h=10: T_max rise, K | 23.3581592 | 23.3788424 | -8.85e-04 | agrees |  |
+| 2C, h=10: volume-mean rise, K | 22.6042415 | 22.6075756 | -1.47e-04 | agrees |  |
+| 2C, h=10: surface-mean rise, K | 22.006263 | 22.0062621 | +3.78e-08 | agrees |  |
+| 2C, h=10: lumped-cell rise, K | 22.0063395 | 22.0063395 | 0 | agrees |  |
+| 2C, h=10: hottest point (r, z) mm | (0.00, 35.05) | (0.00, 35.05) | n/a | agrees | nearest published-mesh node to my point: r = 0.0 mm, 35.05 mm from the nearer end; reported node: r = 0.0 mm, 35.05 mm from the nearer end |
+| 2C, h=10: coldest point (r, z) mm | (10.55, 65.33) | (10.55, 4.88) | n/a | agrees | nearest published-mesh node to my point: r = 10.55 mm, 4.772 mm from the nearer end; reported node: r = 10.55 mm, 4.772 mm from the nearer end |
+| 2C, h=25: hottest minus coldest, K | 1.46825582 | 1.48602134 | -1.20e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| 2C, h=25: hottest minus mean, K | 0.753035499 | 0.770319273 | -2.24e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| 2C, h=25: T_max rise, K | 12.783435 | 12.8040345 | -1.61e-03 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| 2C, h=25: volume-mean rise, K | 12.0303995 | 12.0337152 | -2.76e-04 | agrees |  |
+| 2C, h=25: surface-mean rise, K | 11.4341574 | 11.434157 | +3.56e-08 | agrees |  |
+| 2C, h=25: lumped-cell rise, K | 11.4341951 | 11.4341951 | 0 | agrees |  |
+| 2C, h=25: hottest point (r, z) mm | (0.00, 35.05) | (0.00, 35.05) | n/a | agrees | nearest published-mesh node to my point: r = 0.0 mm, 35.05 mm from the nearer end; reported node: r = 0.0 mm, 35.05 mm from the nearer end |
+| 2C, h=25: coldest point (r, z) mm | (10.55, 65.33) | (10.55, 4.81) | n/a | agrees | nearest published-mesh node to my point: r = 10.55 mm, 4.772 mm from the nearer end; reported node: r = 10.55 mm, 4.772 mm from the nearer end |
+| 2C, h=10, base: hottest minus coldest, K | 4.63630661 | 4.64289042 | -1.42e-03 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| 2C, h=10, base: hottest minus mean, K | 1.60715982 | 1.61446613 | -4.53e-03 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| 2C, h=10, base: T_max rise, K | 10.3183145 | 10.3263028 | -7.74e-04 | agrees |  |
+| 2C, h=10, base: volume-mean rise, K | 8.71115472 | 8.71183672 | -7.83e-05 | agrees |  |
+| 2C, h=10, base: surface-mean rise, K | 8.38619463 | 8.38545584 | +8.81e-05 | agrees |  |
+| 2C, h=10, base: lumped-cell rise, K | 6.51681768 | 6.51681768 | 0 | agrees |  |
+| 2C, h=10, base: hottest point (r, z) mm | (0.00, 65.33) | (0.00, 65.49) | n/a | agrees | nearest published-mesh node to my point: r = 0.0 mm, 4.772 mm from the nearer end; reported node: r = 0.0 mm, 4.772 mm from the nearer end |
+| 2C, h=10, base: coldest point (r, z) mm | (9.73, 0.00) | (9.82, 0.00) | n/a | agrees | nearest published-mesh node to my point: r = 9.73 mm, 0.0 mm from the nearer end; reported node: r = 9.73 mm, 0.0 mm from the nearer end |
+
+
+<!-- cellv3 -->
+| Quantity | Repository | This check | Rel. diff. | Verdict | Note |
+|---|---|---|---|---|---|
+| V3 (b) C/2, h=5: (surface mean - lumped)/rise | -1.998650e-07 | -2.019891e-07 | +1.05e-02 | small difference explained | second-order radiation effect of a size set by the surface temperature variation (Section 3.4) |
+| V3 (c) C/2, h=5: (volume mean - lumped)/rise | 0.0177280032 | 0.0178274913 | -5.58e-03 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| V3 (c) C/2, h=5: brief's literal 1 % test passes | False | False | n/a | agrees |  |
+| V3 (b) C/2, h=10: (surface mean - lumped)/rise | -1.983172e-07 | -2.004429e-07 | +1.06e-02 | small difference explained | second-order radiation effect of a size set by the surface temperature variation (Section 3.4) |
+| V3 (c) C/2, h=10: (volume mean - lumped)/rise | 0.0262234429 | 0.026370466 | -5.58e-03 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| V3 (c) C/2, h=10: brief's literal 1 % test passes | False | False | n/a | agrees |  |
+| V3 (b) C/2, h=25: (surface mean - lumped)/rise | -1.941110e-07 | -1.961924e-07 | +1.06e-02 | small difference explained | second-order radiation effect of a size set by the surface temperature variation (Section 3.4) |
+| V3 (c) C/2, h=25: (volume mean - lumped)/rise | 0.0516673278 | 0.051956182 | -5.56e-03 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| V3 (c) C/2, h=25: brief's literal 1 % test passes | False | False | n/a | agrees |  |
+| V3 (e) analytic centre-minus-surface (infinite cylinder, C/2 heat), K | 0.102128619 | 0.102128619 | 0 | agrees |  |
+
+
+<!-- cellbase -->
+| Quantity | Repository | This check | Rel. diff. | Verdict | Note |
+|---|---|---|---|---|---|
+| base-cooled cell, h=10, C/16: hottest minus coldest, K (comparison.json) | 0.0045530898 | 0.00455942257 | -1.39e-03 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| base-cooled cell, h=10, C/10: hottest minus coldest, K (comparison.json) | 0.0116558114 | 0.0116720236 | -1.39e-03 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| base-cooled cell, h=10, C/5: hottest minus coldest, K (comparison.json) | 0.0466213063 | 0.0466861602 | -1.39e-03 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| base-cooled cell, h=10, C/2: hottest minus coldest, K (comparison.json) | 0.291298272 | 0.291703839 | -1.39e-03 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| base-cooled cell, h=10, 1C: hottest minus coldest, K (comparison.json) | 1.16397772 | 1.16560351 | -1.39e-03 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| base-cooled cell, h=10, 2C: hottest minus coldest, K (comparison.json) | 4.63630661 | 4.64287938 | -1.42e-03 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+
+
+<!-- step3 -->
+| Quantity | Repository | This check | Rel. diff. | Verdict | Note |
+|---|---|---|---|---|---|
+| Law 1, h=5, mean_3.0pct, module | 2C | 2C | n/a | agrees |  |
+| Law 1, h=5, mean_3.0pct, cell | none up to 2C | none up to 2C | n/a | agrees |  |
+| Law 1, h=5, worst_of_8_4.1pct, module | 2C | 2C | n/a | agrees |  |
+| Law 1, h=5, worst_of_8_4.1pct, cell | none up to 2C | none up to 2C | n/a | agrees |  |
+| Law 1, h=5, p95_8.7pct, module | none up to 2C | none up to 2C | n/a | agrees |  |
+| Law 1, h=5, p95_8.7pct, cell | none up to 2C | none up to 2C | n/a | agrees |  |
+| Law 1, h=10, mean_3.0pct, module | 2C | 2C | n/a | agrees |  |
+| Law 1, h=10, mean_3.0pct, cell | none up to 2C | none up to 2C | n/a | agrees |  |
+| Law 1, h=10, worst_of_8_4.1pct, module | 2C | 2C | n/a | agrees |  |
+| Law 1, h=10, worst_of_8_4.1pct, cell | none up to 2C | none up to 2C | n/a | agrees |  |
+| Law 1, h=10, p95_8.7pct, module | none up to 2C | none up to 2C | n/a | agrees |  |
+| Law 1, h=10, p95_8.7pct, cell | none up to 2C | none up to 2C | n/a | agrees |  |
+| Law 1, h=25, mean_3.0pct, module | 2C | 2C | n/a | agrees |  |
+| Law 1, h=25, mean_3.0pct, cell | none up to 2C | none up to 2C | n/a | agrees |  |
+| Law 1, h=25, worst_of_8_4.1pct, module | 2C | 2C | n/a | agrees |  |
+| Law 1, h=25, worst_of_8_4.1pct, cell | none up to 2C | none up to 2C | n/a | agrees |  |
+| Law 1, h=25, p95_8.7pct, module | none up to 2C | none up to 2C | n/a | agrees |  |
+| Law 1, h=25, p95_8.7pct, cell | none up to 2C | none up to 2C | n/a | agrees |  |
+| Law 2, h=5, mean_3.0pct, module | 1C | 1C | n/a | agrees |  |
+| Law 2, h=5, mean_3.0pct, cell | 2C | 2C | n/a | agrees |  |
+| Law 2, h=5, worst_of_8_4.1pct, module | 1C | 1C | n/a | agrees |  |
+| Law 2, h=5, worst_of_8_4.1pct, cell | 2C | 2C | n/a | agrees |  |
+| Law 2, h=5, p95_8.7pct, module | 2C | 2C | n/a | agrees |  |
+| Law 2, h=5, p95_8.7pct, cell | none up to 2C | none up to 2C | n/a | agrees |  |
+| Law 2, h=10, mean_3.0pct, module | 1C | 1C | n/a | agrees |  |
+| Law 2, h=10, mean_3.0pct, cell | 2C | 2C | n/a | agrees |  |
+| Law 2, h=10, worst_of_8_4.1pct, module | 1C | 1C | n/a | agrees |  |
+| Law 2, h=10, worst_of_8_4.1pct, cell | 2C | 2C | n/a | agrees |  |
+| Law 2, h=10, p95_8.7pct, module | 2C | 2C | n/a | agrees |  |
+| Law 2, h=10, p95_8.7pct, cell | none up to 2C | none up to 2C | n/a | agrees |  |
+| Law 2, h=25, mean_3.0pct, module | 1C | 1C | n/a | agrees |  |
+| Law 2, h=25, mean_3.0pct, cell | 2C | 2C | n/a | agrees |  |
+| Law 2, h=25, worst_of_8_4.1pct, module | 1C | 1C | n/a | agrees |  |
+| Law 2, h=25, worst_of_8_4.1pct, cell | 2C | 2C | n/a | agrees |  |
+| Law 2, h=25, p95_8.7pct, module | 2C | 2C | n/a | agrees |  |
+| Law 2, h=25, p95_8.7pct, cell | none up to 2C | none up to 2C | n/a | agrees |  |
+| dataset conditions (C/16 to C/2, every h), Law 1: max_implied_module | 0.00387015194 | 0.00387015194 | +5.84e-14 | agrees |  |
+| dataset conditions (C/16 to C/2, every h), Law 1: max_implied_cell | 0.000910633129 | 0.000921648537 | -1.20e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| dataset conditions (C/16 to C/2, every h), Law 1: max_dT_module_K | 0.391278883 | 0.391278883 | 0 | agrees |  |
+| dataset conditions (C/16 to C/2, every h), Law 2: max_implied_module | 0.0202984975 | 0.0202984975 | +8.13e-11 | agrees |  |
+| dataset conditions (C/16 to C/2, every h), Law 2: max_implied_cell | 0.00477616502 | 0.00483393956 | -1.20e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| dataset conditions (C/16 to C/2, every h), Law 2: max_dT_module_K | 0.391278883 | 0.391278883 | 0 | agrees |  |
+
+
+<!-- d19 -->
+| Quantity | Repository | This check | Rel. diff. | Verdict | Note |
+|---|---|---|---|---|---|
+| C/16, h=5: cycle-averaged heat, W | 0.0146193716 | 0.0146193716 | 0 | agrees |  |
+| C/16, h=5: ratio to the brief's heat | 8 | 8 | 0 | agrees |  |
+| C/16, h=5: Delta T_module, K | 0.0466613283 | 0.0466613283 | 0 | agrees |  |
+| C/16, h=5: implied, Law 1 | 0.00046152869 | 0.00046152869 | +5.84e-14 | agrees |  |
+| C/16, h=5: implied, Law 2 | 0.00242690037 | 0.00242690037 | -1.18e-10 | agrees |  |
+| C/16, h=10: cycle-averaged heat, W | 0.0146193716 | 0.0146193716 | 0 | agrees |  |
+| C/16, h=10: ratio to the brief's heat | 8 | 8 | 0 | agrees |  |
+| C/16, h=10: Delta T_module, K | 0.0493461043 | 0.0493461043 | 0 | agrees |  |
+| C/16, h=10: implied, Law 1 | 0.000488083896 | 0.000488083896 | +5.84e-14 | agrees |  |
+| C/16, h=10: implied, Law 2 | 0.00256653815 | 0.00256653815 | -1.18e-10 | agrees |  |
+| C/16, h=25: cycle-averaged heat, W | 0.0146193716 | 0.0146193716 | 0 | agrees |  |
+| C/16, h=25: ratio to the brief's heat | 8 | 8 | 0 | agrees |  |
+| C/16, h=25: Delta T_module, K | 0.0437147532 | 0.0437147532 | 0 | agrees |  |
+| C/16, h=25: implied, Law 1 | 0.000432384021 | 0.000432384021 | +5.83e-14 | agrees |  |
+| C/16, h=25: implied, Law 2 | 0.00227364618 | 0.00227364618 | -1.18e-10 | agrees |  |
+| C/10, h=5: cycle-averaged heat, W | 0.0233909946 | 0.0233909946 | 0 | agrees |  |
+| C/10, h=5: ratio to the brief's heat | 5 | 5 | 0 | agrees |  |
+| C/10, h=5: Delta T_module, K | 0.0745702466 | 0.0745702466 | 0 | agrees |  |
+| C/10, h=5: implied, Law 1 | 0.000737576693 | 0.000737576693 | +5.85e-14 | agrees |  |
+| C/10, h=5: implied, Law 2 | 0.00387615266 | 0.00387615266 | -1.75e-10 | agrees |  |
+| C/10, h=10: cycle-averaged heat, W | 0.0233909946 | 0.0233909946 | 0 | agrees |  |
+| C/10, h=10: ratio to the brief's heat | 5 | 5 | 0 | agrees |  |
+| C/10, h=10: Delta T_module, K | 0.0788935964 | 0.0788935964 | 0 | agrees |  |
+| C/10, h=10: implied, Law 1 | 0.000780339084 | 0.000780339084 | +5.84e-14 | agrees |  |
+| C/10, h=10: implied, Law 2 | 0.00410087987 | 0.00410087987 | -1.75e-10 | agrees |  |
+| C/10, h=25: cycle-averaged heat, W | 0.0233909946 | 0.0233909946 | 0 | agrees |  |
+| C/10, h=25: ratio to the brief's heat | 5 | 5 | 0 | agrees |  |
+| C/10, h=25: Delta T_module, K | 0.0699225714 | 0.0699225714 | 0 | agrees |  |
+| C/10, h=25: implied, Law 1 | 0.000691606389 | 0.000691606389 | +5.85e-14 | agrees |  |
+| C/10, h=25: implied, Law 2 | 0.00363456705 | 0.00363456705 | -1.75e-10 | agrees |  |
+| C/5, h=5: cycle-averaged heat, W | 0.0467819893 | 0.0467819893 | 0 | agrees |  |
+| C/5, h=5: ratio to the brief's heat | 2.5 | 2.5 | 0 | agrees |  |
+| C/5, h=5: Delta T_module, K | 0.148673711 | 0.148673711 | 0 | agrees |  |
+| C/5, h=5: implied, Law 1 | 0.00147053643 | 0.00147053643 | +5.84e-14 | agrees |  |
+| C/5, h=5: implied, Law 2 | 0.00772103915 | 0.00772103915 | +6.19e-11 | agrees |  |
+| C/5, h=10: cycle-averaged heat, W | 0.0467819893 | 0.0467819893 | 0 | agrees |  |
+| C/5, h=10: ratio to the brief's heat | 2.5 | 2.5 | 0 | agrees |  |
+| C/5, h=10: Delta T_module, K | 0.157466912 | 0.157466912 | 0 | agrees |  |
+| C/5, h=10: implied, Law 1 | 0.00155751026 | 0.00155751026 | +5.83e-14 | agrees |  |
+| C/5, h=10: implied, Law 2 | 0.00817769452 | 0.00817769452 | +6.19e-11 | agrees |  |
+| C/5, h=25: cycle-averaged heat, W | 0.0467819893 | 0.0467819893 | 0 | agrees |  |
+| C/5, h=25: ratio to the brief's heat | 2.5 | 2.5 | 0 | agrees |  |
+| C/5, h=25: Delta T_module, K | 0.139732993 | 0.139732993 | 0 | agrees |  |
+| C/5, h=25: implied, Law 1 | 0.0013821035 | 0.0013821035 | +5.84e-14 | agrees |  |
+| C/5, h=25: implied, Law 2 | 0.0072567228 | 0.0072567228 | +6.19e-11 | agrees |  |
+| C/2, h=5: cycle-averaged heat, W | 0.116954973 | 0.116954973 | 0 | agrees |  |
+| C/2, h=5: ratio to the brief's heat | 1 | 1 | 0 | agrees |  |
+| C/2, h=5: Delta T_module, K | 0.368224522 | 0.368224522 | 0 | agrees |  |
+| C/2, h=5: implied, Law 1 | 0.00364212052 | 0.00364212052 | +5.83e-14 | agrees |  |
+| C/2, h=5: implied, Law 2 | 0.0191024992 | 0.0191024992 | +8.13e-11 | agrees |  |
+| C/2, h=10: cycle-averaged heat, W | 0.116954973 | 0.116954973 | 0 | agrees |  |
+| C/2, h=10: ratio to the brief's heat | 1 | 1 | 0 | agrees |  |
+| C/2, h=10: Delta T_module, K | 0.391278883 | 0.391278883 | 0 | agrees |  |
+| C/2, h=10: implied, Law 1 | 0.00387015194 | 0.00387015194 | +5.84e-14 | agrees |  |
+| C/2, h=10: implied, Law 2 | 0.0202984975 | 0.0202984975 | +8.13e-11 | agrees |  |
+| C/2, h=25: cycle-averaged heat, W | 0.116954973 | 0.116954973 | 0 | agrees |  |
+| C/2, h=25: ratio to the brief's heat | 1 | 1 | 0 | agrees |  |
+| C/2, h=25: Delta T_module, K | 0.348492012 | 0.348492012 | 0 | agrees |  |
+| C/2, h=25: implied, Law 1 | 0.00344694563 | 0.00344694563 | +5.84e-14 | agrees |  |
+| C/2, h=25: implied, Law 2 | 0.0180788296 | 0.0180788296 | +8.13e-11 | agrees |  |
+
+
+<!-- scores -->
+| Quantity | Repository | This check | Rel. diff. | Verdict | Note |
+|---|---|---|---|---|---|
+| P1 value Law 1 C/16, K | -8.81367272 | -8.81367272 | +5.84e-14 | agrees |  |
+| P1 value Law 1 C/10, K | -8.81367272 | -8.81367272 | +5.84e-14 | agrees |  |
+| P1 value Law 1 C/5, K | -8.81367272 | -8.81367272 | +5.84e-14 | agrees |  |
+| P1 value Law 1 C/2, K | -8.81367272 | -8.81367272 | +5.84e-14 | agrees |  |
+| P1 held for Law 1 | False | False | n/a | agrees |  |
+| P1 value Law 2 C/16, K | 1.67611447 | 1.67611447 | +1.18e-10 | agrees |  |
+| P1 value Law 2 C/10, K | 1.6771165 | 1.6771165 | +1.75e-10 | agrees |  |
+| P1 value Law 2 C/5, K | 1.67863762 | 1.67863762 | -6.19e-11 | agrees |  |
+| P1 value Law 2 C/2, K | 1.68043238 | 1.68043238 | -8.13e-11 | agrees |  |
+| P1 held for Law 2 | True | True | n/a | agrees |  |
+| P1 held | False | False | n/a | agrees |  |
+| P2 value (C/2, h=10), K | 0.391278883 | 0.391278883 | 0 | agrees |  |
+| P2 held | True | True | n/a | agrees |  |
+| P3 value C/2, h=5, K | 0.0920665439 | 0.0931802202 | -1.20e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| P3 value C/2, h=10, K | 0.0919933143 | 0.093106068 | -1.20e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| P3 value C/2, h=25, K | 0.0917745257 | 0.092884964 | -1.20e-02 | small difference explained | discretisation of the published mesh (Section 4, item 3) |
+| P3 held | True | True | n/a | agrees |  |
+| P4 Law 1 h10 | none up to 2C | none up to 2C | n/a | agrees |  |
+| P4 Law 1 h5 | none up to 2C | none up to 2C | n/a | agrees |  |
+| P4 Law 1 first_clause | True | True | n/a | agrees |  |
+| P4 Law 1 second_clause | False | False | n/a | agrees |  |
+| P4 Law 2 h10 | 2C | 2C | n/a | agrees |  |
+| P4 Law 2 h5 | 2C | 2C | n/a | agrees |  |
+| P4 Law 2 first_clause | True | True | n/a | agrees |  |
+| P4 Law 2 second_clause | False | False | n/a | agrees |  |
+| P4 held | False | False | n/a | agrees |  |
+| P5 ratio C/16 | 5.25839547 | 5.25839547 | -1.18e-10 | agrees |  |
+| P5 ratio C/10 | 5.25525372 | 5.25525372 | -1.75e-10 | agrees |  |
+| P5 ratio C/5 | 5.25049159 | 5.25049159 | +6.18e-11 | agrees |  |
+| P5 ratio C/2 | 5.24488389 | 5.24488389 | +8.12e-11 | agrees |  |
+| P5 held | False | False | n/a | agrees |  |
+
+
+<!-- BODY_law2_compact -->
+| Rate | L(35 C) repo | L(35 C) mine | s repo, per K | s mine, per K | Delta T_floor 3.0 % repo / mine, K | 4.1 % repo / mine, K | 8.7 % repo / mine, K | largest abs. rel. diff. |
+|---|---|---|---|---|---|---|---|---|
+| C/16 | 1196.1262 | 1196.1262 | 0.0520110 | 0.0520110 | 0.57507 / 0.57507 | 0.78781 / 0.78781 | 1.67611 / 1.67611 | 2.6e-09 |
+| C/10 | 1628.5311 | 1628.5311 | 0.0519799 | 0.0519799 | 0.57541 / 0.57541 | 0.78828 / 0.78828 | 1.67712 / 1.67712 | 2.4e-09 |
+| C/5 | 2394.8204 | 2394.8204 | 0.0519328 | 0.0519328 | 0.57594 / 0.57594 | 0.78900 / 0.78900 | 1.67864 / 1.67864 | 2.3e-09 |
+| C/2 | 3457.9804 | 3457.9804 | 0.0518773 | 0.0518773 | 0.57655 / 0.57655 | 0.78984 / 0.78984 | 1.68043 / 1.68043 | 2.0e-09 |
+| 1C | 4118.2941 | 4118.2941 | 0.0518465 | 0.0518465 | 0.57689 / 0.57689 | 0.79031 / 0.79031 | 1.68143 / 1.68143 | 1.9e-09 |
+| 2C | 4576.9320 | 4576.9320 | 0.0518264 | 0.0518264 | 0.57712 / 0.57712 | 0.79062 / 0.79062 | 1.68208 / 1.68208 | 1.9e-09 |
+
+
+<!-- BODY_law2_terms_compact -->
+| Term (C/2 discharge, at L(35 C)) | Share, repo | Share, mine (over three square-root terms) | Share, mine (over all four terms) | s of the term alone, repo / mine, per K |
+|---|---|---|---|---|
+| calendar only | 0.624557 | 0.624557 | 0.624535 | 0.052187 / 0.052187 |
+| high-temperature cycling only | 0.322682 | 0.322682 | 0.322671 | 0.082841 / 0.082841 |
+| low-temperature cycling only | 0.052761 | 0.052761 | 0.052759 | -0.140601 / -0.140601 |
+| low-temperature high-SOC (fourth) | not reported | n/a | 3.6e-05 | n/a |
+
+
+<!-- BODY_module_compact -->
+| Rate | h | q per cell, W | Delta T repo, K | Delta T mine, K | rel. diff. | T_max repo / mine, C | T_mean repo / mine, C | hottest / coldest (same in both) |
+|---|---|---|---|---|---|---|---|---|
+| C/16 | 5 | 0.00182742 | 0.00584270565 | 0.00584270565 | 0 | 35.059192 / 35.059192 | 35.056270 / 35.056270 | inner (row 1, column 2) / corner (row 1, column 1) |
+| C/16 | 10 | 0.00182742 | 0.00617512743 | 0.00617512743 | 0 | 35.044280 / 35.044280 | 35.041193 / 35.041193 | inner (row 1, column 2) / corner (row 1, column 1) |
+| C/16 | 25 | 0.00182742 | 0.00546674099 | 0.00546674099 | 0 | 35.025684 / 35.025684 | 35.022950 / 35.022950 | inner (row 1, column 2) / corner (row 1, column 1) |
+| C/10 | 5 | 0.0046782 | 0.0149515915 | 0.0149515915 | 0 | 35.151489 / 35.151489 | 35.144014 / 35.144014 | inner (row 1, column 2) / corner (row 1, column 1) |
+| C/10 | 10 | 0.0046782 | 0.0158044076 | 0.0158044076 | 0 | 35.113341 / 35.113341 | 35.105438 / 35.105438 | inner (row 1, column 2) / corner (row 1, column 1) |
+| C/10 | 25 | 0.0046782 | 0.0139934894 | 0.0139934894 | 0 | 35.065747 / 35.065747 | 35.058750 / 35.058750 | inner (row 1, column 2) / corner (row 1, column 1) |
+| C/5 | 5 | 0.0187128 | 0.0596936727 | 0.0596936727 | 0 | 35.605140 / 35.605140 | 35.575293 / 35.575293 | inner (row 1, column 2) / corner (row 1, column 1) |
+| C/5 | 10 | 0.0187128 | 0.0631405435 | 0.0631405435 | 0 | 35.453023 / 35.453023 | 35.421453 / 35.421453 | inner (row 1, column 2) / corner (row 1, column 1) |
+| C/5 | 25 | 0.0187128 | 0.0559470312 | 0.0559470312 | 0 | 35.262921 / 35.262921 | 35.234947 / 35.234947 | inner (row 1, column 2) / corner (row 1, column 1) |
+| C/2 | 5 | 0.116955 | 0.368224522 | 0.368224522 | 0 | 38.746830 / 38.746830 | 38.562718 / 38.562718 | inner (row 1, column 2) / corner (row 1, column 1) |
+| C/2 | 10 | 0.116955 | 0.391278883 | 0.391278883 | 0 | 37.816643 / 37.816643 | 37.621003 / 37.621003 | inner (row 1, column 2) / corner (row 1, column 1) |
+| C/2 | 25 | 0.116955 | 0.348492012 | 0.348492012 | 0 | 36.640345 / 36.640345 | 36.466099 / 36.466099 | inner (row 1, column 2) / corner (row 1, column 1) |
+| 1C | 5 | 0.46782 | 1.40723678 | 1.40723678 | 0 | 49.509395 / 49.509395 | 48.805776 / 48.805776 | inner (row 1, column 2) / corner (row 1, column 1) |
+| 1C | 10 | 0.46782 | 1.51857283 | 1.51857283 | 0 | 46.060877 / 46.060877 | 45.301590 / 45.301590 | inner (row 1, column 2) / corner (row 1, column 1) |
+| 1C | 25 | 0.46782 | 1.37722092 | 1.37722092 | 0 | 41.519901 / 41.519901 | 40.831290 / 40.831290 | inner (row 1, column 2) / corner (row 1, column 1) |
+| 2C | 5 | 1.87128 | 4.77389621 | 4.77389621 | 0 | 86.725985 / 86.725985 | 84.339037 / 84.339037 | inner (row 1, column 2) / corner (row 1, column 1) |
+| 2C | 10 | 1.87128 | 5.40764687 | 5.40764687 | 0 | 76.249607 / 76.249607 | 73.545784 / 73.545784 | inner (row 1, column 2) / corner (row 1, column 1) |
+| 2C | 25 | 1.87128 | 5.24589747 | 5.24589747 | 0 | 60.424387 / 60.424387 | 57.801439 / 57.801439 | inner (row 1, column 2) / corner (row 1, column 1) |
+
+
+<!-- BODY_coldplate_compact -->
+| Rate | h | q per cell, W | Delta T repo, K | Delta T mine, K | rel. diff. | T_max repo / mine, C | T_mean repo / mine, C | hottest / coldest (same in both) |
+|---|---|---|---|---|---|---|---|---|
+| C/16 | 5 | 0.00182742 | 0.000243054399 | 0.000243054399 | 0 | 35.007508 / 35.007508 | 35.007442 / 35.007442 | inner (position 4 of 8) / end (position 1 of 8) |
+| C/16 | 10 | 0.00182742 | 0.000354985793 | 0.000354985793 | 0 | 35.007117 / 35.007117 | 35.007020 / 35.007020 | inner (position 4 of 8) / end (position 1 of 8) |
+| C/16 | 25 | 0.00182742 | 0.000560002604 | 0.000560002604 | 0 | 35.006156 / 35.006156 | 35.006004 / 35.006004 | inner (position 4 of 8) / end (position 1 of 8) |
+| C/10 | 5 | 0.0046782 | 0.0006222222 | 0.0006222222 | 0 | 35.019221 / 35.019221 | 35.019050 / 35.019050 | inner (position 4 of 8) / end (position 1 of 8) |
+| C/10 | 10 | 0.0046782 | 0.000908761779 | 0.000908761779 | 0 | 35.018220 / 35.018220 | 35.017972 / 35.017972 | inner (position 4 of 8) / end (position 1 of 8) |
+| C/10 | 25 | 0.0046782 | 0.00143359919 | 0.00143359919 | 0 | 35.015759 / 35.015759 | 35.015371 / 35.015371 | inner (position 4 of 8) / end (position 1 of 8) |
+| C/5 | 5 | 0.0187128 | 0.00248894664 | 0.00248894664 | 0 | 35.076882 / 35.076882 | 35.076199 / 35.076199 | inner (position 4 of 8) / end (position 1 of 8) |
+| C/5 | 10 | 0.0187128 | 0.00363501067 | 0.00363501067 | 0 | 35.072880 / 35.072880 | 35.071886 / 35.071886 | inner (position 4 of 8) / end (position 1 of 8) |
+| C/5 | 25 | 0.0187128 | 0.00573424955 | 0.00573424955 | 0 | 35.063036 / 35.063036 | 35.061484 / 35.061484 | inner (position 4 of 8) / end (position 1 of 8) |
+| C/2 | 5 | 0.116955 | 0.0155584439 | 0.0155584439 | 0 | 35.480437 / 35.480437 | 35.476167 / 35.476167 | inner (position 4 of 8) / end (position 1 of 8) |
+| C/2 | 10 | 0.116955 | 0.0227172172 | 0.0227172172 | 0 | 35.455432 / 35.455432 | 35.449223 / 35.449223 | inner (position 4 of 8) / end (position 1 of 8) |
+| C/2 | 25 | 0.116955 | 0.035832613 | 0.035832613 | 0 | 35.393929 / 35.393929 | 35.384236 / 35.384236 | inner (position 4 of 8) / end (position 1 of 8) |
+| 1C | 5 | 0.46782 | 0.0622696962 | 0.0622696962 | 0 | 36.920624 / 36.920624 | 36.903534 / 36.903534 | inner (position 4 of 8) / end (position 1 of 8) |
+| 1C | 10 | 0.46782 | 0.0908457449 | 0.0908457449 | 0 | 36.820771 / 36.820771 | 36.795940 / 36.795940 | inner (position 4 of 8) / end (position 1 of 8) |
+| 1C | 25 | 0.46782 | 0.143238018 | 0.143238018 | 0 | 36.575096 / 36.575096 | 36.536350 / 36.536350 | inner (position 4 of 8) / end (position 1 of 8) |
+| 2C | 5 | 1.87128 | 0.249641812 | 0.249641812 | 0 | 42.664338 / 42.664338 | 42.595813 / 42.595813 | inner (position 4 of 8) / end (position 1 of 8) |
+| 2C | 10 | 1.87128 | 0.362995905 | 0.362995905 | 0 | 42.267621 / 42.267621 | 42.168388 / 42.168388 | inner (position 4 of 8) / end (position 1 of 8) |
+| 2C | 25 | 1.87128 | 0.571452159 | 0.571452159 | 0 | 41.290385 / 41.290385 | 41.135785 / 41.135785 | inner (position 4 of 8) / end (position 1 of 8) |
+
+
+<!-- BODY_cell_compact -->
+| Case | Delta T_cell repo, K | mine (Nr=160), K | rel. diff. | hottest minus mean repo, K | mine, K | rel. diff. | volume-mean rise repo / mine, K | surface-mean rise repo / mine, K |
+|---|---|---|---|---|---|---|---|---|
+| C/16, h=5 | 0.00143856 | 0.00145597 | -1.20e-02 | 0.000736626 | 0.000753596 | -2.25e-02 | 0.0337383 / 0.0337416 | 0.0331536 / 0.0331536 |
+| C/16, h=10 | 0.00143741 | 0.0014548 | -1.20e-02 | 0.000736323 | 0.000753271 | -2.25e-02 | 0.0229109 / 0.0229142 | 0.0223268 / 0.0223268 |
+| C/16, h=25 | 0.00143399 | 0.00145134 | -1.20e-02 | 0.000735424 | 0.000752305 | -2.24e-02 | 0.01186 / 0.0118633 | 0.0112777 / 0.0112777 |
+| C/16, h=10, base 600 | 0.00455309 | 0.00455943 | -1.39e-03 | 0.00157764 | 0.00158474 | -4.48e-03 | 0.00855318 / 0.00855382 | 0.00823721 / 0.00823648 |
+| C/10, h=5 | 0.00368272 | 0.00372727 | -1.20e-02 | 0.00188576 | 0.00192921 | -2.25e-02 | 0.0863591 / 0.0863675 | 0.0848623 / 0.0848623 |
+| C/10, h=10 | 0.00367977 | 0.00372429 | -1.20e-02 | 0.00188499 | 0.00192837 | -2.25e-02 | 0.0586486 / 0.0586569 | 0.0571533 / 0.0571533 |
+| C/10, h=25 | 0.003671 | 0.00371542 | -1.20e-02 | 0.00188268 | 0.0019259 | -2.24e-02 | 0.0303612 / 0.0303695 | 0.0288704 / 0.0288704 |
+| C/10, h=10, base 600 | 0.0116558 | 0.011672 | -1.39e-03 | 0.00403873 | 0.00405691 | -4.48e-03 | 0.0218959 / 0.0218976 | 0.0210871 / 0.0210852 |
+| C/5, h=5 | 0.0147309 | 0.0149091 | -1.20e-02 | 0.00754304 | 0.00771682 | -2.25e-02 | 0.34522 / 0.345254 | 0.339233 / 0.339233 |
+| C/5, h=10 | 0.0147191 | 0.0148971 | -1.20e-02 | 0.00753994 | 0.00771349 | -2.25e-02 | 0.234528 / 0.234561 | 0.228547 / 0.228547 |
+| C/5, h=25 | 0.014684 | 0.0148617 | -1.20e-02 | 0.00753074 | 0.0077036 | -2.24e-02 | 0.121436 / 0.12147 | 0.115473 / 0.115473 |
+| C/5, h=10, base 600 | 0.0466213 | 0.0466862 | -1.39e-03 | 0.0161543 | 0.016227 | -4.48e-03 | 0.0875803 / 0.0875869 | 0.0843447 / 0.0843372 |
+| C/2, h=5 | 0.0920665 | 0.0931802 | -1.20e-02 | 0.0471436 | 0.0482297 | -2.25e-02 | 2.14821 / 2.14842 | 2.11079 / 2.11079 |
+| C/2, h=10 | 0.0919933 | 0.0931061 | -1.20e-02 | 0.0471244 | 0.048209 | -2.25e-02 | 1.46291 / 1.46312 | 1.42553 / 1.42553 |
+| C/2, h=25 | 0.0917745 | 0.092885 | -1.20e-02 | 0.047067 | 0.0481474 | -2.24e-02 | 0.758604 / 0.758811 | 0.721334 / 0.721334 |
+| C/2, h=10, base 600 | 0.291298 | 0.291704 | -1.39e-03 | 0.100937 | 0.101392 | -4.48e-03 | 0.547222 / 0.547264 | 0.526996 / 0.526949 |
+| 1C, h=5 | 0.368246 | 0.372701 | -1.20e-02 | 0.188569 | 0.192913 | -2.25e-02 | 8.46137 / 8.46221 | 8.3117 / 8.3117 |
+| 1C, h=10 | 0.36796 | 0.372411 | -1.20e-02 | 0.188494 | 0.192832 | -2.25e-02 | 5.81063 / 5.81146 | 5.6611 / 5.6611 |
+| 1C, h=25 | 0.367091 | 0.371533 | -1.20e-02 | 0.188266 | 0.192588 | -2.24e-02 | 3.02907 / 3.0299 | 2.88 / 2.88 |
+| 1C, h=10, base 600 | 1.16398 | 1.16561 | -1.40e-03 | 0.40336 | 0.40518 | -4.49e-03 | 2.18668 / 2.18685 | 2.10571 / 2.10552 |
+| 2C, h=5 | 1.47266 | 1.49048 | -1.20e-02 | 0.754192 | 0.771562 | -2.25e-02 | 31.9202 / 31.9236 | 31.3217 / 31.3217 |
+| 2C, h=10 | 1.47162 | 1.48942 | -1.20e-02 | 0.753918 | 0.771267 | -2.25e-02 | 22.6042 / 22.6076 | 22.0063 / 22.0063 |
+| 2C, h=25 | 1.46826 | 1.48602 | -1.20e-02 | 0.753035 | 0.770319 | -2.24e-02 | 12.0304 / 12.0337 | 11.4342 / 11.4342 |
+| 2C, h=10, base 600 | 4.63631 | 4.64289 | -1.42e-03 | 1.60716 | 1.61447 | -4.53e-03 | 8.71115 / 8.71184 | 8.38619 / 8.38546 |
+
+
+<!-- BODY_implied_h10 -->
+| Law | Rate | s, per K | Delta T_module, K | implied module repo / mine | Delta T_cell repo / mine, K | implied cell repo / mine |
+|---|---|---|---|---|---|---|
+| Law 1 | C/16 | -0.009891 | 0.00617513 | 6.10784e-05 / 6.10784e-05 | 0.00143741 / 0.0014548 | 1.42175e-05 / 1.43895e-05 |
+| Law 1 | C/10 | -0.009891 | 0.0158044 | 0.000156322 / 0.000156322 | 0.00367977 / 0.00372429 | 3.63968e-05 / 3.6837e-05 |
+| Law 1 | C/5 | -0.009891 | 0.0631405 | 0.000624525 / 0.000624525 | 0.0147191 / 0.0148971 | 0.000145587 / 0.000147348 |
+| Law 1 | C/2 | -0.009891 | 0.391279 | 0.00387015 / 0.00387015 | 0.0919933 / 0.0931061 | 0.000909909 / 0.000920915 |
+| Law 1 | 1C | -0.009891 | 1.51857 | 0.0150203 / 0.0150203 | 0.36796 / 0.372411 | 0.0036395 / 0.00368353 |
+| Law 1 | 2C | -0.009891 | 5.40765 | 0.0534872 / 0.0534872 | 1.47162 / 1.48942 | 0.0145558 / 0.0147319 |
+| Law 2 | C/16 | 0.052011 | 0.00617513 | 0.000321174 / 0.000321174 | 0.00143741 / 0.0014548 | 7.47612e-05 / 7.56655e-05 |
+| Law 2 | C/10 | 0.051980 | 0.0158044 | 0.000821511 / 0.000821511 | 0.00367977 / 0.00372429 | 0.000191274 / 0.000193588 |
+| Law 2 | C/5 | 0.051933 | 0.0631405 | 0.00327906 / 0.00327906 | 0.0147191 / 0.0148971 | 0.000764403 / 0.000773649 |
+| Law 2 | C/2 | 0.051877 | 0.391279 | 0.0202985 / 0.0202985 | 0.0919933 / 0.0931061 | 0.00477237 / 0.00483009 |
+| Law 2 | 1C | 0.051847 | 1.51857 | 0.0787328 / 0.0787328 | 0.36796 / 0.372411 | 0.0190775 / 0.0193082 |
+| Law 2 | 2C | 0.051826 | 5.40765 | 0.280259 / 0.280259 | 1.47162 / 1.48942 | 0.0762688 / 0.0771913 |
+
+
+<!-- BODY_step3_compact -->
+| Law | h | floor | module: repo / mine | cell: repo / mine |
+|---|---|---|---|---|
+| Law 1 | 5 | mean_3.0pct | 2C / 2C | none up to 2C / none up to 2C |
+| Law 1 | 5 | worst_of_8_4.1pct | 2C / 2C | none up to 2C / none up to 2C |
+| Law 1 | 5 | p95_8.7pct | none up to 2C / none up to 2C | none up to 2C / none up to 2C |
+| Law 1 | 10 | mean_3.0pct | 2C / 2C | none up to 2C / none up to 2C |
+| Law 1 | 10 | worst_of_8_4.1pct | 2C / 2C | none up to 2C / none up to 2C |
+| Law 1 | 10 | p95_8.7pct | none up to 2C / none up to 2C | none up to 2C / none up to 2C |
+| Law 1 | 25 | mean_3.0pct | 2C / 2C | none up to 2C / none up to 2C |
+| Law 1 | 25 | worst_of_8_4.1pct | 2C / 2C | none up to 2C / none up to 2C |
+| Law 1 | 25 | p95_8.7pct | none up to 2C / none up to 2C | none up to 2C / none up to 2C |
+| Law 2 | 5 | mean_3.0pct | 1C / 1C | 2C / 2C |
+| Law 2 | 5 | worst_of_8_4.1pct | 1C / 1C | 2C / 2C |
+| Law 2 | 5 | p95_8.7pct | 2C / 2C | none up to 2C / none up to 2C |
+| Law 2 | 10 | mean_3.0pct | 1C / 1C | 2C / 2C |
+| Law 2 | 10 | worst_of_8_4.1pct | 1C / 1C | 2C / 2C |
+| Law 2 | 10 | p95_8.7pct | 2C / 2C | none up to 2C / none up to 2C |
+| Law 2 | 25 | mean_3.0pct | 1C / 1C | 2C / 2C |
+| Law 2 | 25 | worst_of_8_4.1pct | 1C / 1C | 2C / 2C |
+| Law 2 | 25 | p95_8.7pct | 2C / 2C | none up to 2C / none up to 2C |
+
+
+<!-- BODY_d19_compact -->
+| Rate | h | heat repo / mine, W | ratio to the brief's heat | Delta T_module repo / mine, K | implied Law 1 repo / mine | implied Law 2 repo / mine |
+|---|---|---|---|---|---|---|
+| C/16 | 5 | 0.0146194 / 0.0146194 | 8.0000 / 8.0000 | 0.0466613 / 0.0466613 | 0.00046153 / 0.00046153 | 0.0024269 / 0.0024269 |
+| C/16 | 10 | 0.0146194 / 0.0146194 | 8.0000 / 8.0000 | 0.0493461 / 0.0493461 | 0.00048808 / 0.00048808 | 0.0025665 / 0.0025665 |
+| C/16 | 25 | 0.0146194 / 0.0146194 | 8.0000 / 8.0000 | 0.0437148 / 0.0437148 | 0.00043238 / 0.00043238 | 0.0022736 / 0.0022736 |
+| C/10 | 5 | 0.023391 / 0.023391 | 5.0000 / 5.0000 | 0.0745702 / 0.0745702 | 0.00073758 / 0.00073758 | 0.0038762 / 0.0038762 |
+| C/10 | 10 | 0.023391 / 0.023391 | 5.0000 / 5.0000 | 0.0788936 / 0.0788936 | 0.00078034 / 0.00078034 | 0.0041009 / 0.0041009 |
+| C/10 | 25 | 0.023391 / 0.023391 | 5.0000 / 5.0000 | 0.0699226 / 0.0699226 | 0.00069161 / 0.00069161 | 0.0036346 / 0.0036346 |
+| C/5 | 5 | 0.046782 / 0.046782 | 2.5000 / 2.5000 | 0.148674 / 0.148674 | 0.0014705 / 0.0014705 | 0.007721 / 0.007721 |
+| C/5 | 10 | 0.046782 / 0.046782 | 2.5000 / 2.5000 | 0.157467 / 0.157467 | 0.0015575 / 0.0015575 | 0.0081777 / 0.0081777 |
+| C/5 | 25 | 0.046782 / 0.046782 | 2.5000 / 2.5000 | 0.139733 / 0.139733 | 0.0013821 / 0.0013821 | 0.0072567 / 0.0072567 |
+| C/2 | 5 | 0.116955 / 0.116955 | 1.0000 / 1.0000 | 0.368225 / 0.368225 | 0.0036421 / 0.0036421 | 0.019102 / 0.019102 |
+| C/2 | 10 | 0.116955 / 0.116955 | 1.0000 / 1.0000 | 0.391279 / 0.391279 | 0.0038702 / 0.0038702 | 0.020298 / 0.020298 |
+| C/2 | 25 | 0.116955 / 0.116955 | 1.0000 / 1.0000 | 0.348492 / 0.348492 | 0.0034469 / 0.0034469 | 0.018079 / 0.018079 |
+
+
+<!-- BODY_scores_compact -->
+| Prediction | Repository value | My value | Repository score | My score |
+|---|---|---|---|---|
+| P1: Delta T_floor(8.7 %) in [1, 3] K for every law | Law 1 -8.8137 K; Law 2 1.6761 to 1.6804 K | Law 1 -8.8137 K; Law 2 1.6761 to 1.6804 K | failed | failed |
+| P2: Delta T_module(C/2, h=10) below 1 K | 0.391279 K | 0.391279 K | held | held |
+| P3: Delta T_cell(C/2) below 0.5 K at h = 5, 10, 25 | 0.09207, 0.09199, 0.09177 K | 0.09318, 0.09311, 0.09288 K | held | held |
+| P4: lowest rate (8.7 % floor) at h=10 is 1C or higher, at h=5 one step lower | Law 1: none up to 2C / none up to 2C; Law 2: 2C / 2C | Law 1: none up to 2C / none up to 2C; Law 2: 2C / 2C | failed (first clause held, second failed, both laws) | failed (same clauses) |
+| P5: the laws' Delta T_floor(8.7 %) within a factor of 2 | ratio 5.2584 to 5.2449 | ratio 5.2584 to 5.2449 | failed | failed |
+
+
+<!-- BODY_law1_compact -->
+| Quantity | Repository | This check | Rel. diff. | Verdict |
+|---|---|---|---|---|
+| L(25 C) at C/2 charge, cycles | 102.146953 | 102.146953 | 0 | agrees |
+| L(35 C) at C/2 charge, cycles | 126.039676 | 126.039676 | 0 | agrees |
+| L(45 C) at C/2 charge, cycles | 124.490964 | 124.490964 | 0 | agrees |
+| s(35 C), per K (centred secant) | -0.00989103197 | -0.00989103197 | -5.84e-14 | agrees |
+| same s at all six rates (no discharge-rate dependence, D3) | True | True | n/a | agrees |
+| Delta T_floor = f/s, mean_3.0pct, K | -3.02394896 | -3.02394896 | +5.83e-14 | agrees |
+| Delta T_floor = f/s, worst_of_8_4.1pct, K | -4.14263586 | -4.14263586 | +5.83e-14 | agrees |
+| Delta T_floor = f/s, p95_8.7pct, K | -8.81367272 | -8.81367272 | +5.84e-14 | agrees |
+| exact pair 2 atanh(f/2)/s, mean_3.0pct, K | -3.02417442 | -3.02417442 | +5.84e-14 | agrees |
+| exact pair 2 atanh(f/2)/s, worst_of_8_4.1pct, K | -4.14321561 | -4.14321561 | +5.85e-14 | agrees |
+| exact pair 2 atanh(f/2)/s, p95_8.7pct, K | -8.81926087 | -8.81926087 | +5.84e-14 | agrees |
+| charge 0.2C: s centred, per K | 0.0356025668 | 0.0356025668 | 0 | agrees |
+| charge 0.2C: Delta T_floor p95_8.7pct, K | 2.44859645 | 2.44859645 | 0 | agrees |
+| charge 0.4C: s centred, per K | 0.00682877675 | 0.00682877675 | 0 | agrees |
+| charge 0.4C: Delta T_floor p95_8.7pct, K | 12.7660226 | 12.7660226 | 0 | agrees |
+| charge 0.6C: s centred, per K | -0.0266108407 | -0.0266108407 | 0 | agrees |
+| charge 0.6C: Delta T_floor p95_8.7pct, K | -3.27597011 | -3.27597011 | 0 | agrees |
+| lifetime curve at C/2, 15 to 55 C (41 points): largest abs. rel. diff. | 41 values | 41 values | 0 | agrees |
+
+
+<!-- BODY_modulemisc_short -->
+| Quantity | Repository | This check | Rel. diff. | Verdict |
+|---|---|---|---|---|
+| V2 (b): strip 1e3 W/K, 2C, h=5: max minus min, K | 0.000240464886 | 0.000240464886 | 0 | agrees |
+| V2 (b): strip 1e3 W/K, 2C, h=10: max minus min, K | 0.000293971956 | 0.000293971956 | 0 | agrees |
+| V2 (b): strip 1e3 W/K, 2C, h=25: max minus min, K | 0.000363170728 | 0.000363170728 | 0 | agrees |
+| sensitivity C/2, h=10: strip_0.00_mW_per_K, K | 0.44829146 | 0.44829146 | 0 | agrees |
+| sensitivity C/2, h=10: strip_6.23_mW_per_K, K | 0.391278883 | 0.391278883 | 0 | agrees |
+| sensitivity C/2, h=10: strip_12.47_mW_per_K, K | 0.347130519 | 0.347130519 | 0 | agrees |
+| sensitivity C/2, h=10: radiation_as_received, K | 0.654547698 | 0.654547698 | 0 | agrees |
+| sensitivity C/2, h=10: R_10s_pulse_15.47_mOhm, K | 0.32400323 | 0.32400323 | 0 | agrees |
+| sensitivity C/2, h=10: R_30s_pulse_20.37_mOhm, K | 0.425481117 | 0.425481117 | 0 | agrees |
+
