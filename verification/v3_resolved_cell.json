@@ -1,0 +1,69 @@
+{
+ "mesh": {
+  "refine1_nodes": 39990,
+  "refine2_nodes": 297057
+ },
+ "cases": [
+  {
+   "h": 5.0,
+   "q_W": 0.11695497318465818,
+   "a_energy_residual_rel": -7.521808993520907e-13,
+   "a_pass": true,
+   "b_surface_mean_minus_lumped_over_rise": -1.9986495330683171e-07,
+   "b_pass": true,
+   "c_volume_mean_minus_lumped_over_rise": 0.01772800321824837,
+   "c_brief_literal_pass_1pct": false,
+   "c_hand_offset_over_rise_stated_before_the_run": 0.024192057510730242,
+   "d_dT_cell_refine1_K": 0.09206654388401603,
+   "d_dT_cell_refine2_K": 0.09283198954625504,
+   "d_rel_change": 0.00831404796951337,
+   "d_pass": true,
+   "d_dT_hot_minus_mean_rel_change": 0.015857944842646465
+  },
+  {
+   "h": 10.0,
+   "q_W": 0.11695497318465818,
+   "a_energy_residual_rel": -5.371703630488901e-13,
+   "a_pass": true,
+   "b_surface_mean_minus_lumped_over_rise": -1.983171538571141e-07,
+   "b_pass": true,
+   "c_volume_mean_minus_lumped_over_rise": 0.026223442908656018,
+   "c_brief_literal_pass_1pct": false,
+   "c_hand_offset_over_rise_stated_before_the_run": 0.035821331016040084,
+   "d_dT_cell_refine1_K": 0.091993314287663,
+   "d_dT_cell_refine2_K": 0.09275759246907,
+   "d_rel_change": 0.008307975284128915,
+   "d_pass": true,
+   "d_dT_hot_minus_mean_rel_change": 0.01584343511386533
+  },
+  {
+   "h": 25.0,
+   "q_W": 0.11695497318465818,
+   "a_energy_residual_rel": -2.507269664506969e-13,
+   "a_pass": true,
+   "b_surface_mean_minus_lumped_over_rise": -1.9411095196089045e-07,
+   "b_pass": true,
+   "c_volume_mean_minus_lumped_over_rise": 0.05166732784007252,
+   "c_brief_literal_pass_1pct": false,
+   "c_hand_offset_over_rise_stated_before_the_run": 0.07079144224596526,
+   "d_dT_cell_refine1_K": 0.09177452572509992,
+   "d_dT_cell_refine2_K": 0.09253539905546404,
+   "d_rel_change": 0.00829068114874523,
+   "d_pass": true,
+   "d_dT_hot_minus_mean_rel_change": 0.01580023965281035
+  }
+ ],
+ "e_analytic_radial": {
+  "h_eff": 15.309434055743885,
+  "q3_W_per_m3": 4771.400632272986,
+  "max_rise_analytic_K": 1.7461566244646178,
+  "max_abs_err_K": 0.0022182872299936207,
+  "rel_err": 0.0012703827359551788,
+  "center_to_surface_analytic_K": 0.10212861901414692,
+  "center_to_surface_numeric_K": 0.10054096176367011,
+  "cg_info": 0
+ },
+ "e_pass": true,
+ "V3_numerical_pass": true,
+ "V3_brief_literal_volume_mean_pass": false
+}

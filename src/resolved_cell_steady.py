@@ -104,7 +104,8 @@ class SteadyCell:
                 "T_vol_mean_C": vol_mean - 273.15, "T_surface_mean_C": surf_mean - 273.15,
                 "dT_cell_K": float(T.max() - T.min()), "dT_hot_minus_mean_K": float(T.max() - vol_mean),
                 "hot": loc(i_hot), "cold": loc(i_cold),
-                "energy_residual_rel": (q_W - loss) / q_W if q_W else 0.0}
+                "energy_residual_rel": (q_W - loss) / q_W if q_W else 0.0,
+                "cg_all_converged": all(i == 0 for i in self.cg_info)}
 
 
 def lumped_cell(q_W, h, T_amb=T_AMB, base_h=None):
@@ -167,7 +168,7 @@ def verify_v3(out):
         offset_hand = q / (8 * math.pi * LP.K_RADIAL * LP.L_CELL)           # radial conduction, infinite cylinder
         cases.append({
             "h": h, "q_W": q,
-            "a_energy_residual_rel": r1["energy_residual_rel"], "a_pass": abs(r1["energy_residual_rel"]) < 1e-8,
+            "a_energy_residual_rel": r1["energy_residual_rel"], "a_pass": abs(r1["energy_residual_rel"]) < 1e-8 and r1["cg_all_converged"] and r2["cg_all_converged"],
             "b_surface_mean_minus_lumped_over_rise": (r1["T_surface_mean_C"] + 273.15 - TL_) / rise,
             "b_pass": abs((r1["T_surface_mean_C"] + 273.15 - TL_) / rise) < 0.01,
             "c_volume_mean_minus_lumped_over_rise": (r1["T_vol_mean_C"] + 273.15 - TL_) / rise,
@@ -187,14 +188,16 @@ def verify_v3(out):
     import pyamg
     A = (m.K_roll + sp.diags(h_eff * w_lat)).tocsr()
     ml = pyamg.smoothed_aggregation_solver(A, symmetry="symmetric")
-    x = T_AMB + ml.solve(q3 * m.w_vol, tol=1e-13, accel="cg", maxiter=2000)
+    u, info_e = spla.cg(A, q3 * m.w_vol, rtol=1e-12, atol=0.0, maxiter=5000, M=ml.aspreconditioner(cycle="V"))
+    x = T_AMB + u
     ana = T_AMB + q3 * R_CELL / (2 * h_eff) + q3 * (R_CELL ** 2 - m.r_node ** 2) / (4 * LP.K_RADIAL)
     res["e_analytic_radial"] = {"h_eff": h_eff, "q3_W_per_m3": q3, "max_rise_analytic_K": float(ana.max() - T_AMB),
                                 "max_abs_err_K": float(np.abs(x - ana).max()),
                                 "rel_err": float(np.abs(x - ana).max() / (ana.max() - T_AMB)),
                                 "center_to_surface_analytic_K": float(q3 * R_CELL ** 2 / (4 * LP.K_RADIAL)),
                                 "center_to_surface_numeric_K": float(x.max() - x[np.argmax(m.r_node)])}
-    res["e_pass"] = res["e_analytic_radial"]["rel_err"] < 0.01
+    res["e_analytic_radial"]["cg_info"] = int(info_e)
+    res["e_pass"] = res["e_analytic_radial"]["rel_err"] < 0.01 and info_e == 0
     res["V3_numerical_pass"] = all(c["a_pass"] and c["b_pass"] and c["d_pass"] for c in cases) and res["e_pass"]
     res["V3_brief_literal_volume_mean_pass"] = all(c["c_brief_literal_pass_1pct"] for c in cases)
     os.makedirs(out, exist_ok=True)

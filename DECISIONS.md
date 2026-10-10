@@ -59,3 +59,7 @@ D20. Changes to the brief's script, all made before any registered run: the laws
 ## Added after the predictions commit, before the push and before any run
 
 D21. The steady resolved solve of D13 uses Newton iteration on the temperature rise with each step solved by conjugate gradients preconditioned by smoothed-aggregation algebraic multigrid (pyamg 5.3.0), to a relative residual of 1e-13, instead of a direct sparse solve: the direct solve took 46 s per case on the base mesh (39,990 nodes, half model) and ran out of memory on the refined mesh of V3 (297,057 nodes). The equations are unchanged. This was found by building both meshes and solving with zero heat, which carries no information about any registered case.
+
+## Added after the push
+
+D22. The first run of V3 (10 October 2026, after the push) passed (a), (b) and (d), failed (c) as D15 stated it would, and returned a diverged solution in (e), the analytic radial check: the pyamg solver's own conjugate gradients, asked for a relative residual of 1e-13, broke down at round-off and returned temperatures of order 1e13 K. That is a fault of the check's linear solve, not of the model. (e) was changed to SciPy's conjugate gradients with the same multigrid preconditioner and a relative residual of 1e-12, the solver of the main steady solve, and V3 now also requires every conjugate-gradient solve to report convergence. V3 was rerun in full. The first run's output is kept as `verification/v3_first_run_diverged_check_e.json`.
