@@ -8,6 +8,8 @@ authors:
     affiliation: Independent Researcher
     orcid: https://orcid.org/0009-0001-3584-1008
 version: v1.0.0
+doi: 10.5281/zenodo.23309131
+date-released: 2026-10-12
 repository-code: https://github.com/siddharth161204-wq/thermal-lever-duplicate-floor
 license:
   - MIT
@@ -20,3 +22,7 @@ keywords:
   - thermal model
   - finite element method
   - pre-registration
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23309131
+    description: The archived version v1.0.0 on Zenodo

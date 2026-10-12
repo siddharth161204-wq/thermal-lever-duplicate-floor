@@ -4,6 +4,8 @@ How large a temperature spread a lifetime divergence needs, and how large a modu
 
 Author: Siddharth Satte, independent researcher, Pune, India (ORCID 0009-0001-3584-1008).
 
+Archived at https://doi.org/10.5281/zenodo.23309131 (version v1.0.0).
+
 Nominally identical cells cycled under one protocol at one temperature still drift apart. In the Stanford dynamic-cycling dataset (Geslin et al., Nature Energy 2025; 92 commercial cylindrical SiOx-graphite/NCA cells, 47 protocols in duplicate, all at 35 C) the duplicate cells' lifetimes to 90 % state of health differ by 3.0 % on average and by 8.7 % at the 95th percentile, and the worst of eight identical cells falls 4.1 % below the module mean by selection alone (the floor, doi.org/10.5281/zenodo.23205413). A thermal explanation of cell-to-cell divergence in a module has to exceed that floor. This repository asks two questions before any module experiment or model is built:
 
 1. The lever: how large a steady temperature difference between two cells does a published temperature-dependent ageing law need to produce a lifetime difference as large as the floor?
@@ -159,6 +161,10 @@ python3 src/posthoc.py --upstream upstream --results results         # post hoc 
 python3 src/make_figure.py --results results                         # the figure
 cd note && ./render_note.sh                                          # the note (pandoc and Chromium)
 ```
+
+## Tooling
+
+The code and text in this repository were developed with the assistance of Claude (Anthropic) as a programming, writing and checking assistant, working from the author's brief; the study design and the five predictions are the author's, and the author is responsible for the decisions and interpretations.
 
 ## Licence
 
