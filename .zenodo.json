@@ -8,9 +8,9 @@
       "orcid": "0009-0001-3584-1008"
     }
   ],
-  "description": "Pre-registered calculation of how large a steady temperature difference between nominally identical lithium-ion cells two published temperature-dependent ageing laws need to produce a lifetime difference as large as the duplicate-cell floor of the Geslin et al. dynamic-cycling dataset (mean 3.0 %, 95th percentile 8.7 %, worst of eight 4.1 % at 90 % state of health), and how large a temperature difference a module at 35 C offers: an eight-cell lumped network of LG M50 21700 cells and a resolved scikit-fem cell, at average rates from C/16 to 2C and convection coefficients of 5, 10 and 25 W/(m2 K). Predictions were committed and pushed before any lever or spread was computed. At 35 C the LiFePO4 law of Schimpe et al. 2018 needs 1.68 K for the 95th percentile; the NCA+LNO / Si-graphite law of Kucinskis et al. 2022, the closest published match found to the dataset's cells, peaks near 35 C, so its lever there is weak and of undetermined sign (its registered slope needs 8.8 K of the opposite sign). With constant-current heat at the dataset's average rates (C/16 to C/2) the module offers at most 0.39 K between cells and a resolved cell 0.09 K inside itself, an implied lifetime divergence below the 3.0 % mean floor under both laws; a post-hoc estimate with the dataset's own published discharge-current variance and its CC-CV charge puts six of its eight dynamic C/2 protocols at 3.5 to 6.1 % under the LiFePO4 law (h = 10 W/(m2 K)), above the mean floor, while the NCA law's registered slope keeps every protocol below 1.2 %. An independent recomputation and the reports of two further independent checks are included. Code under the MIT licence; results, figure and note under CC BY 4.0.",
+  "description": "Pre-registered calculation of how large a steady temperature difference between nominally identical lithium-ion cells two published temperature-dependent ageing laws need to produce a lifetime difference as large as the duplicate-cell floor of the Geslin et al. dynamic-cycling dataset (mean 3.0 %, 95th percentile 8.7 %, worst of eight 4.1 % at 90 % state of health), and how large a temperature difference a module at 35 C offers: an eight-cell lumped network of LG M50 21700 cells and a resolved scikit-fem cell, at average rates from C/16 to 2C and convection coefficients of 5, 10 and 25 W/(m2 K). Predictions were committed and pushed before any lever or spread was computed. At 35 C the LiFePO4 law of Schimpe et al. 2018 needs 1.68 K for the 95th percentile; the NCA+LNO / Si-graphite law of Kucinskis et al. 2022, the closest published match found to the dataset's cells, peaks near 35 C, so its lever there is weak and of undetermined sign (its registered slope needs 8.8 K of the opposite sign). With constant-current heat at the dataset's average rates (C/16 to C/2) the module offers at most 0.39 K between cells and a resolved cell 0.09 K inside itself, an implied lifetime divergence below the 3.0 % mean floor under both laws; a post-hoc estimate with the dataset's own published discharge-current variance and its CC-CV charge puts six of its eight dynamic C/2 protocols at 3.5 to 6.1 % under the LiFePO4 law (h = 10 W/(m2 K)), above the mean floor, while the NCA law's registered slope keeps every protocol below 1.2 %. An independent recomputation and the reports of two further independent checks are included. Code under the MIT licence; results, figure and note under CC BY 4.0. Version 1.1.0 adds Stage 2, which measures the lever on the KIT ageing dataset of Luh and Blank (LG INR18650HG2, twelve protocols at 0, 10, 25 and 40 C, three cells each, doi:10.35097/1969), with eight predictions committed and pushed before any cell value was read: from 25 to 40 C the lever runs from -3.45 to +1.91 % per K by protocol (positive at a 0.33 C charge in five of six protocols, negative at 1C and faster), negative from 10 to 25 C in every protocol; the dataset's replicate floor is 7.3 % (mean) and 20.5 % (95th percentile) at 90 %, larger than the Geslin floor; the warmer replicate reached 90 % first in 40 % of 142 pairs; and Stage 1's 0.391 K module offer implies at most 1.35 % divergence. Five of the eight predictions held.",
   "license": "MIT",
-  "version": "v1.0.0",
+  "version": "v1.1.0",
   "keywords": [
     "lithium-ion battery",
     "cell-to-cell variability",
@@ -19,7 +19,9 @@
     "battery module",
     "thermal model",
     "finite element method",
-    "pre-registration"
+    "pre-registration",
+    "replicate variability",
+    "LG INR18650HG2"
   ],
   "related_identifiers": [
     {
@@ -72,6 +74,24 @@
     },
     {
       "identifier": "10.5334/jors.309",
+      "relation": "references",
+      "scheme": "doi",
+      "resource_type": "publication-article"
+    },
+    {
+      "identifier": "10.35097/1969",
+      "relation": "isDerivedFrom",
+      "scheme": "doi",
+      "resource_type": "dataset"
+    },
+    {
+      "identifier": "10.35097/1947",
+      "relation": "isDerivedFrom",
+      "scheme": "doi",
+      "resource_type": "dataset"
+    },
+    {
+      "identifier": "10.1038/s41597-024-03831-x",
       "relation": "references",
       "scheme": "doi",
       "resource_type": "publication-article"

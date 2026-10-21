@@ -7,9 +7,9 @@ authors:
     given-names: Siddharth
     affiliation: Independent Researcher
     orcid: https://orcid.org/0009-0001-3584-1008
-version: v1.0.0
+version: v1.1.0
 doi: 10.5281/zenodo.23309131
-date-released: 2026-10-12
+date-released: 2026-10-21
 repository-code: https://github.com/siddharth161204-wq/thermal-lever-duplicate-floor
 license:
   - MIT
@@ -25,4 +25,39 @@ keywords:
 identifiers:
   - type: doi
     value: 10.5281/zenodo.23309131
-    description: The archived version v1.0.0 on Zenodo
+    description: The archived version v1.1.0 on Zenodo
+references:
+  - type: data
+    title: "Comprehensive battery aging dataset: capacity and impedance fade measurements of a lithium-ion NMC/C-SiO cell [dataset, version 2: result data]"
+    authors:
+      - family-names: Luh
+        given-names: Matthias
+      - family-names: Blank
+        given-names: Thomas
+    year: 2024
+    publisher:
+      name: RADAR4KIT
+    doi: 10.35097/1969
+  - type: data
+    title: "Comprehensive battery aging dataset: capacity and impedance fade measurements of a lithium-ion NMC/C-SiO cell [dataset]"
+    authors:
+      - family-names: Luh
+        given-names: Matthias
+      - family-names: Blank
+        given-names: Thomas
+    year: 2024
+    publisher:
+      name: RADAR4KIT
+    doi: 10.35097/1947
+  - type: article
+    title: "Comprehensive battery aging dataset: capacity and impedance fade measurements of a lithium-ion NMC/C-SiO cell"
+    authors:
+      - family-names: Luh
+        given-names: Matthias
+      - family-names: Blank
+        given-names: Thomas
+    journal: Scientific Data
+    volume: 11
+    start: 1004
+    year: 2024
+    doi: 10.1038/s41597-024-03831-x

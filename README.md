@@ -4,7 +4,7 @@ How large a temperature spread a lifetime divergence needs, and how large a modu
 
 Author: Siddharth Satte, independent researcher, Pune, India (ORCID 0009-0001-3584-1008).
 
-Archived at https://doi.org/10.5281/zenodo.23309131 (version v1.0.0).
+Archived at https://doi.org/10.5281/zenodo.23309131 (version v1.1.0: Stage 1, and Stage 2 below).
 
 Nominally identical cells cycled under one protocol at one temperature still drift apart. In the Stanford dynamic-cycling dataset (Geslin et al., Nature Energy 2025; 92 commercial cylindrical SiOx-graphite/NCA cells, 47 protocols in duplicate, all at 35 C) the duplicate cells' lifetimes to 90 % state of health differ by 3.0 % on average and by 8.7 % at the 95th percentile, and the worst of eight identical cells falls 4.1 % below the module mean by selection alone (the floor, doi.org/10.5281/zenodo.23205413). A thermal explanation of cell-to-cell divergence in a module has to exceed that floor. This repository asks two questions before any module experiment or model is built:
 
@@ -21,6 +21,36 @@ With the brief's constant-current heat, a module at the dataset's rates (C/16 to
 - What it means. The measurement the thesis needs first is the dataset cell's own cycle life against temperature near 35 C at its C/2 charge: under an Arrhenius-type sensitivity a module at the dataset's dynamic C/2 conditions could show a thermal share above the mean floor; with the registered slope of the closest published law it could not, while that law at the cells' own temperatures could where they pass 45 C (exploratory); near 35 C it does not resolve even its own sign. The dataset's own divergence is neither shown nor ruled out as thermal: its cells sat in separate fixtures in a 35 C chamber, and their own temperatures are not reported. The result is the lever and the availability, not a measurement of the thermal share.
 
 The one-page note is `note/thermal_lever_note.pdf`; the figure is `results/thermal_lever_figure.png`.
+
+## Stage 2: the lever measured on public data with replicates (v1.1.0)
+
+Stage 1 ended on one unmeasured number: the slope of cycle life against cell temperature near 35 C, which the closest published law cannot fix even in sign. Stage 2 measures it on the KIT ageing dataset of Luh and Blank (doi.org/10.35097/1969, version 2, CC BY 4.0; version 1 doi.org/10.35097/1947; data descriptor Scientific Data 11, 1004, 2024): LG INR18650HG2 cells, NMC with a SiOx-graphite anode, the anode family of the Geslin cells, cycled in twelve protocols (windows 0-100, 10-100 and 10-90 % by charge/discharge rates 0.33/0.33, 0.33/1.00, 1.00/1.00 and 1.67/1.00 C), each on three cells at 0, 10, 25 and 40 C in temperature-controlled oil pools, with capacity check-ups at 25 C and the cell temperature logged at every run. The lifetime L is the equivalent full cycles to 90 % of each cell's first check-up capacity; s = -d ln L / dT between group means, against the logged group temperatures (DECISIONS.md D25 to D35). The Sandia study planned first waits for its files, which batteryarchive.org sends only on request, and will run as Stage 3.
+
+The eight predictions in [predictions_stage2.md](predictions_stage2.md) were committed in `f15ee119cc512a2a06bf28b39fd7705b6cbfd785` and pushed at 06:37 UTC on 21 October 2026, before any capacity, temperature or date of the cell data was read.
+
+- The lever near 35 C is a property of the protocol. From 25 to 40 C (logged group temperatures 14.6 to 15.1 K apart) s runs from -3.45 % per K (0-100 %, 1.67/1.00 C) to +1.91 % per K (10-90 %, 0.33/0.33 C), each with a 95 % interval of about plus or minus 0.9 % per K (pooled within-set standard deviation of ln L 0.082). It is positive in five of the six protocols with a 0.33 C charge (their mean 0.95 % per K), negative as a point estimate in all six with a 1C or 1.67 C charge, and lower at 1.67 C than at 0.33 C charge in every window. From 10 to 25 C every protocol's lever is negative (-1.8 to -11.6 % per K). The setpoint temperature difference in place of the logged one moves s by at most 0.07 % per K. At the secondary 80 % threshold s moves by up to 5 % per K and changes sign in two of the nine protocols determinable there, so the lever also depends on how far the cells have aged.
+- The replicate floor of this dataset is larger than the Geslin floor. The pre-specified pairs (cells 1 and 2 of each of 47 sets) differ by 7.3 % on average (median 4.1 %) and 20.5 % at the 95th percentile, and the worst of eight cells would fall 10.9 % below the mean; all 142 pairs give 7.9 % and 22.8 %, and the 80 % threshold 8.2 % and 22.1 %.
+- The warmer replicate does not age faster. In 142 pairs within triplets, a median 0.33 K apart, the warmer cell reached 90 % first in 57 (40 %; one-sided sign test p = 0.99).
+- Back to the module. At the largest measured magnitude, 3.45 % per K, Stage 1's registered offer of 0.391 K implies a 1.35 % lifetime divergence, below the 3.0 % mean floor at every protocol; the post-hoc dynamic offer of 1.17 K (D24) would give up to 4.0 %, above 3.0 % in two protocols and below 8.7 % in all.
+
+| | Prediction (abridged) | Result | Computed |
+|--|--|--|--|
+| P1 | 0.33 C charge: s > 0 in every window, mean 1 to 6 % per K | Failed | 0-100 %, 0.33/1.00 C: -0.62 % per K; mean 0.95 % per K |
+| P2 | s at 1.67 C charge below s at 0.33 C, every window | Held | -3.45 < -0.62; -1.91 < 0.67; -1.00 < 1.09 % per K |
+| P3 | the twelve point estimates take both signs | Held | -3.45 to +1.91 % per K |
+| P4 | floor mean 1.5 to 6.0 %, 95th percentile 4.4 to 17.4 % | Failed | 7.3 % and 20.5 % (47 pairs) |
+| P5 | the warmer cell reaches 90 % first in 45 to 65 % of pairs | Failed | 40 % (57 of 142) |
+| P6 | no protocol's s exceeds 7.7 % per K | Held | largest +1.91 % per K |
+| P7 | the mean s of P1's protocols lies between -0.99 and 5.2 % per K | Held | 0.95 % per K |
+| P8 | 10 to 25 C: s < 0 for at least half of the six 1C-and-faster protocols | Held | all six negative (-3.3 to -11.6 % per K) |
+
+Checks (`verification/stage2/`). V1: the archive's MD5 equals the repository's; 228 main-experiment cells as the descriptor states, 48 cyclic sets of three, 144 EOC files, the protocol table from the configuration files. V2: CHECK_V2_PLACEHOLDER. V3: the EOC running capacity estimate crosses 90 % at a median 66 % fewer equivalent full cycles than the check-ups, because it is estimated at the operating temperature, so it does not serve as a sensitivity; every 25 C cell crossed 90 % by 27 March 2023, before the Peltier failure of 23 April 2023; the November 2022 pool excursion falls inside 63 of the 144 lifetime windows. V4: synthetic files with planted lifetimes, temperatures and levers: lifetimes and temperatures recovered to 1e-14, the planted levers inside their 95 % intervals in 65 of 72 cases over six seeds.
+
+Limits. The 90 % crossing lies between check-ups three weeks apart that span a median 61 % of the lifetime (20 % at 80 %), so single lifetimes are coarse, though the floor at 80 % agrees. A logged cell temperature carries its sensor's offset, and cells in one pool differ by tenths of a kelvin. The HG2 is an 18650 and not the Geslin 21700; it shares the anode family. One cell (P044-2) stopped after its second check-up and is censored.
+
+What it means for the thesis. Near 35 C a cell's lifetime changes by at most about 3.5 % per kelvin in this dataset, and with a sign set by the protocol, so the 0.39 K a module offers at the Geslin rates moves lifetimes by at most 1.4 %, well inside either floor; and among replicates in the same pool the warmer cell is not the one that ages first. The replicate spread itself, 2.5 times the Geslin floor here, is not ordered by the cells' logged temperatures.
+
+The Stage 2 figure is `results/stage2_figure.png`; every number is in `results/stage2_*.csv` and `.json`.
 
 ## Pre-registration
 
@@ -126,6 +156,8 @@ Secondary results, none of them scored (`results/comparison.json`):
 
 ## Inputs
 
+- Stage 2: the KIT dataset (`inputs/kit/MANIFEST.md`, `inputs/kit/cyclic_cells.csv`); the raw files are not redistributed and are fetched from doi.org/10.35097/1969.
+
 - The floor: copied from the published re-analysis (`inputs/floor.json`, with the file hash).
 - Two ageing laws, both open access and read in full (`inputs/SOURCES.md`): Kucinskis et al. 2022 (J. Power Sources 549, 232129), a 5 Ah NCA+LNO / Si-graphite 21700, the closest published chemistry found to the dataset's cells, whose printed cycle counts to 90 % SoH against temperature and charge rate are the law (`inputs/kucinskis2022_fig7_cycles.csv`); and Schimpe et al. 2018 (J. Electrochem. Soc. 165, A181), the full temperature-dependent LiFePO4/graphite model with its Table IV parameters (`inputs/schimpe2018_parameters.json`).
 - The proxy cell, an LG M50, with the geometry, jelly-roll conductivities and can of the two-cell study (doi.org/10.5281/zenodo.23253738), whose resolved scikit-fem cell is reused unchanged in `src/twocell/` (its comments cite that study's own decision numbers).
@@ -143,11 +175,17 @@ The LG M50 is a 21700 but a different cell from the dataset's; the proxy sets ma
 - `results/prediction_scorecard.json`, `results/thermal_lever_figure.png` (and `.pdf`), `note/thermal_lever_note.pdf`.
 - `results/posthoc.json`, `results/dataset_protocol_heat.csv`: the post-hoc analyses of D24.
 - `verification/`: V1 and V2 (`v1_v2.json`), V3 (`v3_resolved_cell.json`), V3's first run (`v3_first_run_diverged_check_e.json`), the independent recomputation with its scripts and report, and the reports of the audit and of the check of the post-hoc analysis (`reviews/`).
-- `DECISIONS.md`: D1 to D20 fixed before the predictions, D21 before the push, D22 to D24 after it.
+- `DECISIONS.md`: D1 to D20 fixed before the predictions, D21 before the push, D22 to D24 after it; Stage 2's D25 to D35 before its predictions, D36 after.
+- Stage 2: `results/stage2_cells.csv` (every cell's lifetimes, censoring and temperatures), `stage2_checkups.csv`, `stage2_sets.csv`, `stage2_lever.csv` and `.json`, `stage2_pairs.csv`, `stage2_warmer_pairs.csv`, `stage2_scorecard.json`, `stage2_figure.png`; `verification/stage2/`. The Sandia code in `src/stage2/` (sandia_io, steps, lifetimes, laws, analysis, verify) is kept, unused, for Stage 3.
 
 ## How to run
 
 ```
+# Stage 2: unpack cfg.zip and cell_eocv2.zip of doi.org/10.35097/1969 into CFG_DIR and EOC_DIR
+python3 src/stage2/kit.py --eoc EOC_DIR --out results                 # Stage 2 computations and scorecard
+python3 src/stage2/kit_checks.py --cfg CFG_DIR --eoc EOC_DIR           # V1 and V3
+python3 tests/kit_synthetic.py WORKDIR SEED                            # V4
+python3 src/stage2/make_figure_kit.py                                  # the Stage 2 figure
 python3 -m pip install -r requirements.txt
 python3 src/lgm50_resistance.py --out inputs/lgm50_resistance.json   # the derived resistance
 python3 src/verify_pre.py --out verification                         # V1 and V2
@@ -183,6 +221,12 @@ O'Regan, K., Brosa Planella, F., Widanage, W. D. & Kendrick, E. Thermal-electroc
 Chen, C.-H., Brosa Planella, F., O'Regan, K., Gastol, D., Widanage, W. D. & Kendrick, E. Development of experimental techniques for parameterization of multi-scale lithium-ion battery models. Journal of The Electrochemical Society 167, 080534 (2020). https://doi.org/10.1149/1945-7111/ab9050
 
 Sulzer, V., Marquis, S. G., Timms, R., Robinson, M. & Chapman, S. J. Python Battery Mathematical Modelling (PyBaMM). Journal of Open Research Software 9, 14 (2021). https://doi.org/10.5334/jors.309
+
+Luh, M. & Blank, T. Comprehensive battery aging dataset: capacity and impedance fade measurements of a lithium-ion NMC/C-SiO cell [dataset, version 2: result data]. RADAR4KIT (2024). https://doi.org/10.35097/1969
+
+Luh, M. & Blank, T. Comprehensive battery aging dataset: capacity and impedance fade measurements of a lithium-ion NMC/C-SiO cell [dataset]. RADAR4KIT (2024). https://doi.org/10.35097/1947
+
+Luh, M. & Blank, T. Comprehensive battery aging dataset: capacity and impedance fade measurements of a lithium-ion NMC/C-SiO cell. Scientific Data 11, 1004 (2024). https://doi.org/10.1038/s41597-024-03831-x
 
 Satte, S. (2026). The cell-to-cell lifetime floor in the Geslin et al. dynamic-cycling dataset (v1.0.1). Zenodo. https://doi.org/10.5281/zenodo.23205413
 
