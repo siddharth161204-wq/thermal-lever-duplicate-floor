@@ -1,0 +1,62 @@
+{
+ "V1": {
+  "archive_md5": "aa60c8fd08755a253ac7479dde41c93d",
+  "archive_md5_matches_page": true,
+  "cell_cfg_files": 240,
+  "side_experiment_cfg_rows_parameter_id_0": 12,
+  "main_experiment_cells": 228,
+  "descriptor_cells": 228,
+  "by_age_type": {
+   "1": 48,
+   "2": 144,
+   "3": 36
+  },
+  "cyclic_sets": 48,
+  "cyclic_sets_with_three_cells": 48,
+  "eoc_files_cyclic": 144,
+  "protocol_table_reproduced": true,
+  "pass": true
+ },
+ "V3": {
+  "crossing_vs_running_estimate": {
+   "cells_compared": 143,
+   "cells_without_estimate_crossing": 0,
+   "median_rel_diff": -0.6585741216341497,
+   "p05": -0.9310667610540458,
+   "p95": 0.11825960466433923,
+   "within_resolution": 65,
+   "median_rel_diff_by_temperature": {
+    "0": -0.7565406734264171,
+    "10": -0.7105307594157879,
+    "25": -0.5661209927207742,
+    "40": -0.6311814092231125
+   },
+   "note": "cap_aged_est_Ah on regular-operation rows is estimated at the operating temperature, not at the 25 C check-up"
+  },
+  "lifetime_resolution": {
+   "median_resolution_over_L": 0.6115703190555528,
+   "p95_resolution_over_L": 1.9373279995283654,
+   "median_checkups_before_crossing": null
+  },
+  "pool_25C_before_after_23_April_2023": {
+   "cells_with_runs_after_in_window": 0,
+   "latest_25C_crossing_utc": "2023-03-27 02:31:52.455454111+00:00",
+   "mean_T_before_C": 25.518856611456147,
+   "mean_T_after_C": NaN,
+   "mean_after_minus_before_K": NaN
+  },
+  "november_2022_excursion": {
+   "cells_with_excursion_inside_lifetime_window": 63,
+   "of": 144
+  },
+  "censored_at_90": [
+   {
+    "cell": "P044-2",
+    "protocol": "0-100 1.67/1.00C",
+    "age_temp": 25,
+    "n_checkups": 2,
+    "efc_last_checkup": 53.00555333333333
+   }
+  ]
+ }
+}

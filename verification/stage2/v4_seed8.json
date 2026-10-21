@@ -1,0 +1,7 @@
+{
+ "max_rel_L_error": 2.4951721378675976e-15,
+ "max_T_error_K": 1.4210854715202004e-14,
+ "levers_inside": 12,
+ "levers": 12,
+ "pass": true
+}
