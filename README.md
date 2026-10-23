@@ -4,7 +4,7 @@ How large a temperature spread a lifetime divergence needs, and how large a modu
 
 Author: Siddharth Satte, independent researcher, Pune, India (ORCID 0009-0001-3584-1008).
 
-Archived at https://doi.org/10.5281/zenodo.23309131 (version v1.1.0: Stage 1, and Stage 2 below).
+Archived at https://doi.org/10.5281/zenodo.23604443 (version v1.2.0: Stage 1, and Stages 2 and 3 below; all versions https://doi.org/10.5281/zenodo.23309130).
 
 Nominally identical cells cycled under one protocol at one temperature still drift apart. In the Stanford dynamic-cycling dataset (Geslin et al., Nature Energy 2025; 92 commercial cylindrical SiOx-graphite/NCA cells, 47 protocols in duplicate, all at 35 C) the duplicate cells' lifetimes to 90 % state of health differ by 3.0 % on average and by 8.7 % at the 95th percentile, and the worst of eight identical cells falls 4.1 % below the module mean by selection alone (the floor, doi.org/10.5281/zenodo.23205413). A thermal explanation of cell-to-cell divergence in a module has to exceed that floor. This repository asks two questions before any module experiment or model is built:
 
@@ -51,6 +51,38 @@ Limits. The 90 % crossing lies between check-ups three weeks apart that span a m
 What it means for the thesis. Near 35 C a cell's lifetime changes by at most about 3.5 % per kelvin in this dataset, and with a sign set by the protocol, so the 0.39 K a module offers at the Geslin rates moves lifetimes by at most 1.4 %, well inside either floor; and among replicates in the same pool the warmer cell is not the one that ages first. The replicate spread itself, 2.5 times the Geslin floor here, is not ordered by the cells' logged temperatures.
 
 The Stage 2 figure is `results/stage2_figure.png`; every number is in `results/stage2_*.csv` and `.json`.
+
+## Stage 3: the lever in a second laboratory's data (v1.2.0)
+
+Stage 2 measured the lever on one cell model in one laboratory. Stage 3 measures it on the Sandia National Laboratories cycling study of Preger et al. 2020 (Journal of The Electrochemical Society 167, 120532; doi.org/10.1149/1945-7111/abae37), whose files Battery Archive (www.batteryarchive.org) shared on request on 23 October 2026: 86 commercial 18650 cells, LFP (A123 APR18650M1A), NCA (Panasonic NCR18650B) and NMC (LG 18650HG2, the KIT cell), cycled at 15, 25 and 35 C with a 0.5C charge and discharge rates from 0.5C to 3C in windows of 0-100, 20-80 and 40-60 %, with repeated 0.5C capacity checks and the skin temperature logged. The lifetime L is the equivalent full cycles to 90 % of each cell's first check (95 % for LFP, whose 1C cells at 15 and 25 C never reached 90 %), and s = -d ln L / dT between the logged cycling temperatures of the 1C series at 15, 25 and 35 C (DECISIONS.md D38 to D50). The cells cycle without rests, so the self-heating measure is the within-cycle swing, the mean skin temperature over each discharge minus that over the charge before it, chosen by the author before any temperature was read (D43).
+
+The ten predictions in [predictions_stage3.md](predictions_stage3.md) were committed in `bf4b99380c217aed7f875d06061a32b43271d622` and pushed at 19:34 UTC on 23 October 2026, before any lifetime or temperature value was computed. Structure checks after that push found that in all 18 cells at 35 C the cycler logs the last record of a cycle up to 0.42 s after the first record of the next, and that the next cycle often begins on the last sample of a discharge with the counters at zero: the registered ampere-hour rule would have counted under 3 % of the discharge of the LFP cells at 35 C. D50 puts the rows in cycle order, drops 4,313 rows of another record found in one file, and takes the counter difference sample by sample; it was pushed (`01e562b`, 20:11 UTC) before any lifetime or temperature was computed.
+
+- The lever. On the 1C series the lifetimes of both layered-oxide chemistries rise from 25 to 35 C: s = -2.44 % per K for NMC (95 % interval -4.33 to -0.44), inside the band the same cell spans at KIT with a 1C discharge (-0.62 to -2.69 % per K from 25 to 40 C), and -2.04 % per K for NCA (-2.95 to -1.20). LFP's 25 to 35 C lever is not determinable as registered, because one of its 35 C cells logged no cell temperature before cycle 259, after its lifetime, which leaves the group temperature of D43 undefined; its lifetimes fall from a geometric mean of 1,873 to 470 cycles, and with the group temperature over the three cells that have one s = +12.9 % per K, about three times Law 2 (post hoc, D52). From 15 to 25 C s is -5.62 % per K for NMC, -1.32 for NCA (interval -5.22 to +0.74) and +3.37 for LFP: cold shortens NMC and NCA life and lengthens LFP's. The secondary 2C series gives +11.0 (LFP), +1.3 (NCA) and -7.1 % per K (NMC) from 25 to 35 C. The logged group temperatures lie 10.6 to 10.9 K apart from 25 to 35 C and 8.2 to 8.8 K apart from 15 to 25 C; the 10 K setpoint difference in their place moves s by at most 0.2 and 1.0 % per K respectively.
+- The replicate floor here is mostly resolution. Except in the 0-100 % cells at 0.5C, which are checked at every cycle, the checks lie a median 60 to 470 equivalent full cycles apart, and the NCA and NMC cells of the 1C series reach 90 % within their first or second check interval, so a lifetime is an interpolation within one interval (the interval at the crossing is a median 26, 41 and 122 % of L for LFP, NCA and NMC). The pair differences average 17.5 % (LFP), 10.8 % (NCA) and 37.5 % (NMC), with 95th percentiles of 89, 26 and 154 %, but 76 of the 86 lie below their check spacing. The NMC value also carries an artefact: in its 20-80 % cells at 0.5C, runs of fixed 1.80 Ah cycling discharges reach the cut-off as the window drifts and count as checks at 0.61 of the first, setting three of the four lifetimes; without them the NMC floor is 17.8 % (post hoc, D53).
+- The warmer replicate. 59 of the 60 pairs with a swing for both cells differ in lifetime by less than their check spacing, so the registered sign test rests on one pair, which clears its resolution by 13 cycles: P7's verdict carries no information. By the raw sign the warmer cell lived shorter in 24 of 60 (40 %, as in the KIT data; post hoc). In the 1C pairs the swing differs by less than 1 K in 83 % (median 0.29 K).
+- Back to the module. The NCA lever puts Stage 1's 0.391 K offer at a 0.80 % lifetime divergence (interval 0.47 to 1.15 %), below the 3.0 % mean floor; with its negative sign, the hotter cell would live longer.
+
+| | Prediction (abridged) | Result | Computed |
+|--|--|--|--|
+| P1 | NMC, 25 to 35 C: s between -3.5 and +0.5 % per K | Held | -2.44 % per K |
+| P2 | NMC, 15 to 25 C: s < 0 and larger in magnitude than at 25 to 35 C | Held | -5.62 % per K |
+| P3 | NCA, 25 to 35 C: s between 0 and 5 % per K | Failed | -2.04 % per K |
+| P4 | LFP's s above NCA's and NMC's, with Law 2's sign, within a factor of 3 of it | Not scored | not determinable (a cell without temperature); post hoc 2.92 or 3.09 times Law 2 by reading |
+| P5 | every chemistry's floor mean between 1.5 and 10 % | Failed | 17.5, 10.8 and 37.5 % |
+| P6 | at 1C or below, at least 80 % of pairs differ in swing by less than 1 K | Held | 83 % (median 0.29 K, 36 pairs) |
+| P7 | the warmer cell lives shorter in 35 to 65 % of pairs | Failed | 0 of 1 untied pair (59 ties) |
+| P8 | that share larger at 2C and 3C than at 1C or below | Not scored | 1 and 0 untied pairs |
+| P9 | 0.391 K under the NCA lever implies less than 1.5 % | Held | 0.80 % |
+| P10 | 15 to 25 C: s < 0 in all three chemistries | Failed | LFP +3.37 % per K |
+
+Checks (`verification/stage3/`). V1: two of the five cells agree within the resolution; in the two LFP cells at 15 C and 2C the lifetime from the 2C capacity is 401 and 435 cycles shorter than from the 0.5C checks, and in the LFP cell checked at every cycle the two crossings of 95 % lie 76 cycles apart (D54). V2 and the independent read: a separate checker wrote its own code from DECISIONS.md and the inputs and opened no pipeline code or Stage 3 result until its outputs were frozen. The three V2 cells agree to 7e-15 (a second implementation in plain Python to 6e-15), every count of D50 reproduces cell by cell, and with the pipeline's two readings of D41 and D43 every per-cell value and all 1,306 group-level fields reproduce to 7e-13; under its own readings the ten verdicts are the same (`verification/stage3/v2_independent_report.md`, D55). V3: the laws reproduce Stage 1's registered levers exactly, and the KIT values are read unchanged. V4: the Stage 2 synthetic tests pass on the Sandia reader, and a Stage 3 test with planted lifetimes and temperatures and the faults of D50 recovers them to 2e-12 (`tests/stage3_synthetic.py`).
+
+Limits. The check spacing limits every lifetime, and with it the floor and the sign test. LFP's 95 % threshold lies on a flat fade, where one check can move the crossing by hundreds of cycles (one 35 C cell crosses at 222 cycles, its replicates at 558 to 655). Discharge steps of one or two records at the end of a CV charge split some checks; without that splitting NCA's lever would be -2.00 and NMC's -2.29 % per K (D55). A skin thermocouple's offset enters T_cyc but not the swing; one NCA cell at 15 C and 1C logs a swing of 0.02 K against 4.0 K for its replicate up to cycle 200, and without it the NCA 15 to 25 C lever is -4.1 % per K. Two cells at 35 C log no cell temperature before cycle 259. The data come from one test campaign of one laboratory, with one or two cells at 15 C.
+
+What it means for the thesis. In a second laboratory's data, near 30 C, the lifetimes of both layered-oxide cells rise with temperature at a 1C discharge, by about 2 % per K, as for the same NMC cell at KIT; Stage 1's 0.39 K module offer then moves lifetimes by under 1 %, inside every floor measured. LFP alone ages markedly faster when warm, but its registered lever is not determinable. Neither dataset shows a thermal share among replicates: at KIT the warmer replicate aged first in 40 % of pairs, and here the checks are too far apart to order 59 of 60 pairs.
+
+The Stage 3 figure is `results/stage3_figure.png`; every number is in `results/stage3_*.csv` and `.json`, the post-hoc numbers in `results/stage3_posthoc.json`.
 
 ## Pre-registration
 
@@ -157,6 +189,7 @@ Secondary results, none of them scored (`results/comparison.json`):
 ## Inputs
 
 - Stage 2: the KIT dataset (`inputs/kit/MANIFEST.md`, `inputs/kit/cyclic_cells.csv`); the raw files are not redistributed and are fetched from doi.org/10.35097/1969.
+- Stage 3: the Sandia files of Preger et al. 2020 (`inputs/sandia/MANIFEST.md`, every file's SHA-256 in `inputs/sandia/files_sha256.csv`, `inputs/sandia/inventory.csv`). Battery Archive shares them on request; the raw files are not redistributed, and their use asks for citations of the article and of www.batteryarchive.org. Per-cell derived values are in `results/stage3_cells.csv` and `stage3_checks.csv`.
 
 - The floor: copied from the published re-analysis (`inputs/floor.json`, with the file hash).
 - Two ageing laws, both open access and read in full (`inputs/SOURCES.md`): Kucinskis et al. 2022 (J. Power Sources 549, 232129), a 5 Ah NCA+LNO / Si-graphite 21700, the closest published chemistry found to the dataset's cells, whose printed cycle counts to 90 % SoH against temperature and charge rate are the law (`inputs/kucinskis2022_fig7_cycles.csv`); and Schimpe et al. 2018 (J. Electrochem. Soc. 165, A181), the full temperature-dependent LiFePO4/graphite model with its Table IV parameters (`inputs/schimpe2018_parameters.json`).
@@ -175,8 +208,9 @@ The LG M50 is a 21700 but a different cell from the dataset's; the proxy sets ma
 - `results/prediction_scorecard.json`, `results/thermal_lever_figure.png` (and `.pdf`), `note/thermal_lever_note.pdf`.
 - `results/posthoc.json`, `results/dataset_protocol_heat.csv`: the post-hoc analyses of D24.
 - `verification/`: V1 and V2 (`v1_v2.json`), V3 (`v3_resolved_cell.json`), V3's first run (`v3_first_run_diverged_check_e.json`), the independent recomputation with its scripts and report, and the reports of the audit and of the check of the post-hoc analysis (`reviews/`).
-- `DECISIONS.md`: D1 to D20 fixed before the predictions, D21 before the push, D22 to D24 after it; Stage 2's D25 to D35 before its predictions, D36 after.
-- Stage 2: `results/stage2_cells.csv` (every cell's lifetimes, censoring and temperatures), `stage2_checkups.csv`, `stage2_sets.csv`, `stage2_lever.csv` and `.json`, `stage2_pairs.csv`, `stage2_warmer_pairs.csv`, `stage2_scorecard.json`, `stage2_figure.png`; `verification/stage2/`. The Sandia code in `src/stage2/` (sandia_io, steps, lifetimes, laws, analysis, verify) is kept, unused, for Stage 3.
+- `DECISIONS.md`: D1 to D20 fixed before the predictions, D21 before the push, D22 to D24 after it; Stage 2's D25 to D35 before its predictions, D36 and D37 after; Stage 3's D38 to D49 before its predictions, D50 before its results, D51 to D55 after.
+- Stage 2: `results/stage2_cells.csv` (every cell's lifetimes, censoring and temperatures), `stage2_checkups.csv`, `stage2_sets.csv`, `stage2_lever.csv` and `.json`, `stage2_pairs.csv`, `stage2_warmer_pairs.csv`, `stage2_scorecard.json`, `stage2_figure.png`; `verification/stage2/`. The Sandia code in `src/stage2/` (sandia_io, steps, lifetimes, laws, analysis, verify), written before the Sandia files existed, is used unchanged by Stage 3.
+- Stage 3: `results/stage3_cells.csv` (every cell's checks, lifetime, resolution, sensitivity lifetime and temperature measures), `stage3_checks.csv`, `stage3_lever.csv` and `.json`, `stage3_pairs.csv`, `stage3_pairs_oriented_measure_a.csv` and `_b.csv`, `stage3_floor.csv`, `stage3_thermal_share.json`, `stage3_scorecard.json`, `stage3_prepare.json` (the counts of D50), `stage3_posthoc.json` (D51 to D54), `stage3_figure.png`; code in `src/stage3/`; `verification/stage3/` (V1, V3, V4 and the independent check).
 
 ## How to run
 
@@ -186,6 +220,14 @@ python3 src/stage2/kit.py --eoc EOC_DIR --out results                 # Stage 2 
 python3 src/stage2/kit_checks.py --cfg CFG_DIR --eoc EOC_DIR           # V1 and V3
 python3 tests/kit_synthetic.py WORKDIR SEED                            # V4
 python3 src/stage2/make_figure_kit.py                                  # the Stage 2 figure
+# Stage 3: unpack the three Battery Archive zips (SNL LFP, NCA, NMC) into RAW_DIR, then for every time series
+#   python3 -I src/stage2/steps.py FILE --i-rest-A <0.005 x rated Ah> --out STEPS_DIR/<cell>_steps.csv
+python3 -I src/stage3/prepare.py --raw RAW_DIR --steps STEPS_DIR --work WORK --out results/stage3_prepare.json   # D50
+python3 -I src/stage3/stage3.py --raw RAW_DIR --work WORK --out results            # Stage 3 computations and scorecard
+python3 src/stage2/verify.py v1 --cells results/stage3_cells.csv --ids ... --out verification/stage3/v1.json   # V1
+python3 -I tests/stage3_synthetic.py WORKDIR                                       # the Stage 3 synthetic test
+python3 src/stage3/make_figure.py --results results                                # the Stage 3 figure
+python3 -I src/stage3/posthoc.py --work WORK --results results                     # post hoc (D51 to D54)
 python3 -m pip install -r requirements.txt
 python3 src/lgm50_resistance.py --out inputs/lgm50_resistance.json   # the derived resistance
 python3 src/verify_pre.py --out verification                         # V1 and V2
@@ -227,6 +269,10 @@ Luh, M. & Blank, T. Comprehensive battery aging dataset: capacity and impedance 
 Luh, M. & Blank, T. Comprehensive battery aging dataset: capacity and impedance fade measurements of a lithium-ion NMC/C-SiO cell [dataset]. RADAR4KIT (2024). https://doi.org/10.35097/1947
 
 Luh, M. & Blank, T. Comprehensive battery aging dataset: capacity and impedance fade measurements of a lithium-ion NMC/C-SiO cell. Scientific Data 11, 1004 (2024). https://doi.org/10.1038/s41597-024-03831-x
+
+Preger, Y., Barkholtz, H. M., Fresquez, A., Campbell, D. L., Juba, B. W., Romàn-Kustas, J., Ferreira, S. R. & Chalamala, B. Degradation of commercial lithium-ion cells as a function of chemistry and cycling conditions. Journal of The Electrochemical Society 167, 120532 (2020). https://doi.org/10.1149/1945-7111/abae37
+
+Battery Archive. www.batteryarchive.org (source of the Sandia files, shared on request on 23 October 2026).
 
 Satte, S. (2026). The cell-to-cell lifetime floor in the Geslin et al. dynamic-cycling dataset (v1.0.1). Zenodo. https://doi.org/10.5281/zenodo.23205413
 
