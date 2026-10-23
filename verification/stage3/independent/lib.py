@@ -73,10 +73,16 @@ def step_ah_per_sample(Q, starts, ends):
     first row there is no sample before it, and its first value counts in full."""
     dq = np.diff(Q)
     inc = np.where(dq >= 0, dq, Q[1:])          # contribution of transition j-1 -> j, stored at j-1
-    csum = np.r_[0.0, np.cumsum(inc)]           # csum[j] = sum of contributions of transitions ending at rows 1..j
-    # transitions ending at rows max(s,1)..e  -> csum[e] - csum[max(s,1)-1]
-    s1 = np.maximum(starts, 1)
-    out = csum[ends] - csum[s1 - 1]
+    # each step sums its own transitions (rows max(s,1)..e, i.e. inc[max(s,1)-1 : e]); summed per step, not through
+    # a global running sum, so that no rounding accumulates across the file
+    lo = np.maximum(starts, 1) - 1
+    hi = ends                                   # exclusive end in inc
+    out = np.zeros(len(starts))
+    nonempty = hi > lo
+    if nonempty.any() and len(inc):
+        seg = np.add.reduceat(inc, lo[nonempty]) if len(lo[nonempty]) else np.zeros(0)
+        # reduceat sums inc[lo[i]:lo[i+1]]; the segments are contiguous because steps tile the rows
+        out[nonempty] = seg
     out = np.where(starts == 0, out + Q[0], out)
     return out
 
@@ -98,10 +104,14 @@ def counter_ah_registered(Q, starts, ends):
     return np.where(last >= before, last - before, last)
 
 
-def step_temperature(t, T, starts, ends):
+def step_temperature(t, T, starts, ends, zero_dt="sample_mean"):
     """D50 (3): a step's mean temperature is the trapezoidal mean over its consecutive pairs of samples that both
     hold a value; the mean of its valid samples when it has no such pair; missing when none holds a value.
-    Also returns the last valid value, the number of valid samples and the valid-pair duration."""
+    Also returns the last valid value, the number of valid samples and the valid-pair duration.
+
+    zero_dt: what to do when a step has valid pairs but their durations sum to zero (two records logged at the same
+    instant). "sample_mean" (primary reading) takes the mean of the valid samples, the limit of the trapezoidal mean
+    as the duration goes to zero; "nan" leaves the step mean missing (0/0)."""
     n = len(t)
     sid = np.repeat(np.arange(len(starts)), ends - starts + 1)
     valid = ~np.isnan(T)
@@ -117,6 +127,9 @@ def step_temperature(t, T, starts, ends):
     with np.errstate(invalid="ignore", divide="ignore"):
         trap = snum / sden
         smean = sval / nval
+    zero = (npair > 0) & (sden == 0)
+    if zero_dt == "sample_mean":
+        trap = np.where(zero, smean, trap)
     mean = np.where(npair > 0, trap, np.where(nval > 0, smean, np.nan))
     # last valid value of each step
     pos = np.where(valid, np.arange(n), -1)
@@ -124,7 +137,7 @@ def step_temperature(t, T, starts, ends):
     lastpos = np.where(lastpos >= starts, lastpos, -1)
     last = np.where(lastpos >= 0, T[np.maximum(lastpos, 0)], np.nan)
     return {"mean": mean, "npair": npair, "nvalid": nval, "pair_dt": sden, "last": last,
-            "zero_den": (npair > 0) & (sden == 0)}
+            "zero_den": zero}
 
 
 def step_temperature_loop(t, T, s, e):
@@ -136,7 +149,7 @@ def step_temperature_loop(t, T, s, e):
             num += 0.5 * (T[j] + T[j + 1]) * (t[j + 1] - t[j])
             den += t[j + 1] - t[j]
             npair += 1
-    if npair:
-        return num / den
     v = [x for x in T[s:e + 1] if not np.isnan(x)]
+    if npair and den != 0:
+        return num / den
     return float(np.mean(v)) if v else float("nan")

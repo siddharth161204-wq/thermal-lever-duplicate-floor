@@ -1,0 +1,92 @@
+[
+ {
+  "id": "F1",
+  "severity": "low",
+  "changes_scored": true,
+  "changes": "No verdict. Under my two-sided reading the NMC floor mean is 0.374767 against 0.374782 and its 95th percentile 1.53971 against 1.53980; no other scored number moves.",
+  "item": "D41, 'last voltage within 0.02 V of the cut-off'",
+  "finding": "The pipeline accepts a discharge whose last voltage is at or below the cut-off plus 0.02 V (one-sided); 'within' reads two-sided. D41's parenthetical 'lowest discharge end voltages 1.99 V' is not true of the files: end voltages reach 1.912 V (NMC 25 C 0-100 0.5/0.5C a) and 1.94 to 1.95 V in several NMC and LFP cells, as the inventory's own discharge_v_last_min shows. The readings differ in four cells: NMC 25 C 0-100 0.5/0.5C a (552 against 546 checks, all six after its lifetime) and the three NMC 25 C 20-80 0.5/0.5C cells of F3, where two or three more 1.8 Ah discharges join the spurious checks. Lifetimes move by at most 0.012 EFC.",
+  "suggestion": "State the one-sided rule in D41 and correct the parenthetical."
+ },
+ {
+  "id": "F2",
+  "severity": "low for verdicts, medium for unscored numbers",
+  "changes_scored": true,
+  "changes": "No verdict. Registered levers move by at most 6.5e-5 relative (NCA 25-35 C: -0.0203719 against -0.0203732 per K; NMC: -0.0244324 against -0.0244322), P9 by 6.5e-5 relative, P6's median by 0.0021 K with its fraction unchanged. The unscored 2C levers move by up to 7.8 % (NCA 15-25 C: -0.02476 against -0.02297), and the D47 mean over the NCA pairs is 2.38 % against 2.68 %.",
+  "item": "D43, 'a cycling discharge that is not part of a check and the charge step before it'",
+  "finding": "The pipeline counts a non-check discharge as a unit only when the step before it, rests aside, is a charge. My literal primary took every non-check discharge with the last charge before it. The two differ on the one-record discharge tails that end many 2C discharges after a short rest (inside the lifetime window: 215 in NCA 25 C 2C a, 300 and 279 in NCA 35 C 2C a and b, 156 and 199 in NMC 35 C 2C a and b), and on the cycling discharge that follows a one-record 'discharge' at the end of a CV charge in the 35 C cells (one to four per cell). For NCA 25 C 2C a the swing is 10.02 K against 13.16 K and T_cyc 28.38 C against 29.15 C. One measure-(b) orientation differs (NCA 35 C 2C a and b, a tie). The pipeline's reading is physically the better one, since the tails are the end of the same discharge, but D43 does not say it.",
+  "suggestion": "Write the rule as implemented into D43 or the note."
+ },
+ {
+  "id": "F3",
+  "severity": "medium",
+  "changes_scored": true,
+  "changes": "Changes a number that P5 scores, not the P5 verdict: the NMC floor mean is 0.375 with these checks and 0.178 without them. P5 fails either way, because LFP (0.175) and NCA (0.108) are above 0.10 as well.",
+  "item": "D41 and D42 on the NMC 25 C 20-80 0.5/0.5C cells a, b and c",
+  "finding": "Coulomb-limited cycling discharges count as capacity checks. These cells cycle a fixed 1.8 Ah (60 % of rated) at 0.5C. As the window drifts down, the end voltage of that discharge passes through 2.0 V for one to five cycles, and those discharges meet D41 (0.5C mean current, end voltage at the cut-off) and the half rule (0.61 of the first check). Each becomes a check at 0.61 of the first capacity, below the 90 % threshold, so the lifetimes become 68.3, 36.7 and 310.6 EFC. With those checks removed (my unregistered sensitivity) they are 406.7, 489.1 and 392.1 EFC. Both codes follow D41 as written. These cells do not enter the thermal share.",
+  "suggestion": "Report the NMC floor both ways and say why; a check rule that excludes discharges ending at the programmed cycling capacity would remove the artefact."
+ },
+ {
+  "id": "F4",
+  "severity": "low to medium",
+  "changes_scored": true,
+  "changes": "No verdict under either reading. If these steps did not split checks, NCA's 25-35 C lever would be -0.02000 per K instead of -0.02037, NMC's -0.02287 instead of -0.02443 (6.4 %), and the ties would still be 59 of 60.",
+  "item": "D41 'consecutive' with one- and two-record discharge steps",
+  "finding": "One- and two-record discharge steps (about -0.08 A at the end of a CV charge, 2 to 10 per cell at 35 C) fall between qualifying discharges and split checks, since D41 groups consecutive qualifying discharges. Both codes split them, and the inventory did too. The result is checks of one or two discharges 1 to 5 EFC before the rest of their check. In NCA 35 C 1C b the crossing falls inside such a split, which gives a resolution of 1.78 EFC instead of 64.9 EFC. Without the splitting, the lifetimes would be: NCA 35 C 1C a 227.14 instead of 229.69 EFC, b 233.63 instead of 234.82, NMC 35 C 1C b 154.36 instead of 164.87, NMC 35 C 2C b 167.99 instead of 186.15, and NCA 35 C 2C a 267.23 instead of 264.94.",
+  "suggestion": "Mention in the note; ignoring discharge steps of two records or fewer when grouping checks would remove it."
+ },
+ {
+  "id": "F5",
+  "severity": "high",
+  "changes_scored": true,
+  "changes": "The P4 verdict depends on a reading the rules did not foresee. Strict: not scored. Mean T_cyc over the cells that have one: holds. 10 K setpoint: does not hold.",
+  "item": "P4 and the LFP 25-35 C lever (D43, D44, D48)",
+  "finding": "LFP 35 C 0-100 0.5/1C c is uncensored (L = 222.1 EFC) but has no cell temperature before cycle 258, so none of its 237 units inside the lifetime has a step mean. Its first unit with a temperature starts at 241.4 EFC. D43's group temperature, the mean T_cyc of the uncensored cells, is therefore undefined, and the logged lever cannot be formed. D44's determinability rule concerns censoring only, and no cell here is censored, so the scorecard's reason ('a 25 to 35 C lever not determinable') names the wrong cause; stage3_lever.csv marks the secant determinable = False. stage3_lever.json lists T_group_C at 35 C as 35.0863 C, which is the mean over the three cells that do have T_cyc, beside an undefined lever. Over those three cells, s = 0.12866 per K against Law 2's 0.044007 per K over the same secant: the ratio is 2.92, inside [1/3, 3] by 0.08, LFP exceeds NCA (-0.0204) and NMC (-0.0244), and the signs agree, so P4 holds. With the 10 K setpoint, s = 0.13819 per K and the ratio to Law 2 at 25 and 35 C is 3.09 (3.14 against Law 2 at the logged temperatures), so P4 does not hold. Dropping the cell from both means gives s = 0.10538 per K, ratio 2.39, and P4 holds.",
+  "suggestion": "Keep 'not scored' only with the cause stated correctly, give both repairs and their opposite outcomes in the note, and label the 35.0863 C in the lever file."
+ },
+ {
+  "id": "F6",
+  "severity": "medium",
+  "changes_scored": true,
+  "changes": "The verdict is literal but carries no information: had that one pair's resolution been 13.4 EFC larger, no pair would be untied and the share would be undefined.",
+  "item": "P7 on one untied pair",
+  "finding": "59 of 60 pairs are ties because the check spacing (resolution 100 to 700 EFC) exceeds the replicate differences. The one untied pair is LFP 35 C 0-100 0.5/2C a and b: 248.7 EFC apart against a 235.2 EFC resolution, a margin of 13.4 EFC. By measure (a), the warmer cell a (0.973 against 0.874 K) lives longer, so the share is 0 of 1, with p = 1.0 one-sided and two-sided. By measure (b) the same pair gives 1 of 1. D48 sets no minimum count for P7 (it does for P8), so 'did not hold' is what D48 says.",
+  "suggestion": "Say in the note that P7's verdict rests on one pair and that the data show no sign signal either way."
+ },
+ {
+  "id": "F7",
+  "severity": "low to medium (data)",
+  "changes_scored": true,
+  "changes": "No verdict. It enters NCA's registered 15-25 C lever (-0.0132 per K, used in P10, which fails on LFP anyway) and one of the six P6 pairs at 1 K or more (P6 holds with or without it).",
+  "item": "Skin-temperature channels that do not follow the cell",
+  "finding": "NCA 15 C 0-100 0.5/1C b shows no within-cycle swing over its whole lifetime window: 0.01 to 0.02 K per unit for cycles 1 to 200, against 3.9 to 4.2 K in its replicate a and 1.6 to 4.1 K in every other NCA 1C cell. After cycle 250 it shows a normal 4 to 5 K swing, while replicate a's swing falls to 0.3 to 1.7 K after cycle 300, which suggests a detached or swapped sensor. This cell's measure (a) of 0.019 K and T_cyc of 15.98 C set the NCA 15 C group temperature at 18.45 C, and the NCA 15 C pair's 3.98 K difference is one of the six P6 pairs at 1 K or more. In LFP 25 C 1C a and c, 70 to 76 % of units swing by less than 0.1 K, against 3 to 5 % in b and d; in NMC 25 C 3C c, 18 % do, against none in its replicates.",
+  "suggestion": "One sentence in the note, and an NCA 15-25 C sensitivity without NCA 15 C 1C b."
+ },
+ {
+  "id": "F8",
+  "severity": "none for scored numbers",
+  "changes_scored": false,
+  "changes": "Unscored (V1 only).",
+  "item": "D42 sensitivity lifetime",
+  "finding": "D42 says only 'the per-cycle capacity at the cycling rate'. The pipeline's values follow a centred 11-point running median of the capacities of non-check discharges within 0.05C of the cycling rate that end at or below the cut-off plus 0.02 V, with the reference the median of the first ten and linear interpolation in EFC at the discharge start. With that rule my code reproduces 60 of 61 cells exactly. NMC 25 C 1C a differs by one discharge spacing (0.867 EFC), because its running median equals the threshold to within 4.4e-16. My primary reading, with no smoothing and the first check as the reference, differs by up to 327 EFC.",
+  "suggestion": "State the rule in D42 or the note."
+ },
+ {
+  "id": "F9",
+  "severity": "none for scored numbers",
+  "changes_scored": false,
+  "changes": "Unscored.",
+  "item": "D46 layout",
+  "finding": "The pipeline reports slopes (b) and RMS ratios (c) only for NCA and NMC, because LFP pairs have no prediction (LFP's s is undefined), and its 'one pair per group' takes the warmest and coolest cells. D46 fixes neither. Formed over the pairs that do have a prediction, the all-pairs slope for measure (a) is 1.57 (interval -2.05 to 2.71). The sign-test counts are identical under both layouts. With the pipeline's layout and draw order (bootstraps for NCA and NMC only, measure (a) then (b)), my code reproduces its four slope intervals to 1.2e-13.",
+  "suggestion": "Say in the note which subsets carry a slope, and why."
+ },
+ {
+  "id": "F10",
+  "severity": "none",
+  "changes_scored": false,
+  "changes": "Wording and representation only.",
+  "item": "Text and file details",
+  "finding": "D50 (1)'s '60 s for the single such record in each 15 C cell' is the record's lag behind the first record of the next cycle (60.09 and 60.08 s); it follows the row before it by 0.064 s, lies inside a rest and reads 34.4 C against 47.6 C around it. D43's 'the groups discharged at 0.5C carry no swing' holds only for the 0-100 % cells; the partial-window 0.5C cells have a measured swing of -0.15 to -0.75 K, which D50 (5) correctly sets aside. stage3_pairs.csv labels the 26 pairs at 0.5C '1C or below', and stage3_cells.csv leaves units_with_rest_record blank rather than zero for cells without units. D42's reason for the 90 % thresholds, that the NCA and NMC temperature-series cells 'all reached 0.80 or lower', is not quite right: in 9 of the 32 such cells the lowest check lies between 0.8001 and 0.8427 of the first (my checks and the inventory agree to 1e-4); every one of them does fall below 0.90, so the threshold and every lifetime are unaffected.",
+  "suggestion": "Optional wording fixes."
+ }
+]

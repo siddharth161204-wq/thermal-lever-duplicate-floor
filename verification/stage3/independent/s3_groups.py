@@ -47,9 +47,8 @@ def nanmean_or_nan(x):
     return float(np.mean(x)) if len(x) else float("nan")
 
 
-def main(cells_path, out_path):
-    cells = json.load(open(cells_path))
-    cells.sort(key=lambda r: r["cell_id"])
+def analyse(cells):
+    cells = sorted(cells, key=lambda r: r["cell_id"])
     by_id = {c["cell_id"]: c for c in cells}
     offer = module_offer()
     out = {"module_offer_K": offer}
@@ -297,6 +296,12 @@ def main(cells_path, out_path):
             items = slope_items(sub, True)
             sl, rms = slope(items) if items else (float("nan"), float("nan"))
             rr.update({"slope": sl, "rms_pred_over_obs": rms, "n_slope_pairs": len(items)})
+            if items:
+                # alternative reading of (c): the root mean square of the per-pair ratio predicted / observed
+                ratios = np.array([q["predicted"] / q["observed"] for q in items if q["observed"] != 0])
+                rr["rms_of_per_pair_ratio_alt"] = float(np.sqrt(np.mean(ratios ** 2))) if len(ratios) else float("nan")
+                rr["rms_predicted"] = float(np.sqrt(np.mean([q["predicted"] ** 2 for q in items])))
+                rr["rms_observed"] = float(np.sqrt(np.mean([q["observed"] ** 2 for q in items])))
             items_nt = slope_items(sub, False)
             if items_nt:
                 rr["slope_untied_only"], rr["rms_untied_only"] = slope(items_nt)
@@ -377,9 +382,15 @@ def main(cells_path, out_path):
                      "verdict": "holds" if (sl > sN_ and sl > sM_ and np.sign(sl) == np.sign(law2) and 1 / 3 <= ratio <= 3) else "did not hold"}
     out["P4_alternatives"] = alt
 
+    return out
+
+
+def main(cells_path, out_path):
+    out = analyse(json.load(open(cells_path)))
     with open(out_path, "w") as fh:
         json.dump(out, fh, indent=1, default=float)
-    print(json.dumps({"verdicts": v, "s_registered": s_reg, "P4_alt": alt}, indent=1, default=float))
+    print(json.dumps({"verdicts": out["verdicts"], "s_registered": out["s_registered"], "P4_alt": out["P4_alternatives"]},
+                     indent=1, default=float))
 
 
 if __name__ == "__main__":
