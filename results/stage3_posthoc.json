@@ -1,0 +1,310 @@
+{
+ "note": "Post hoc, after the registered results were committed at 9c6bb84; changes no registered number or verdict.",
+ "P4_readings": {
+  "mean_lnL_25C": 7.535038535499664,
+  "mean_lnL_35C": 6.15316716622346,
+  "cells_35C_without_T_cyc": [
+   "SNL_18650_LFP_35C_0-100_0.5/1C_c"
+  ],
+  "group temperature over the cells that have one": {
+   "T_lo_C": 24.345973239259912,
+   "T_hi_C": 35.08634766336788,
+   "s_per_K": 0.1286613775935446,
+   "law_2_per_K": 0.044006976295009076,
+   "ratio": 2.923658665640619,
+   "parts": {
+    "exceeds_NCA": true,
+    "exceeds_NMC": true,
+    "sign_of_law_2": true,
+    "ratio_within_factor_3": true
+   },
+   "P4_would_hold": true
+  },
+  "setpoint, 10 K": {
+   "T_lo_C": 25.0,
+   "T_hi_C": 35.0,
+   "s_per_K": 0.13818713692762047,
+   "law_2_per_K": 0.0446607858818485,
+   "ratio": 3.0941492452282153,
+   "parts": {
+    "exceeds_NCA": true,
+    "exceeds_NMC": true,
+    "sign_of_law_2": true,
+    "ratio_within_factor_3": false
+   },
+   "P4_would_hold": false
+  },
+  "without the cell lacking T_cyc": {
+   "s_per_K": 0.10538204857447925
+  }
+ },
+ "floor_variants": {
+  "registered, every pair": {
+   "LFP": {
+    "pairs": 30,
+    "groups": 10,
+    "mean": 0.17535919064108468,
+    "median": 0.08022016053836485,
+    "p95": 0.894710938961306,
+    "below_resolution": 25
+   },
+   "NCA": {
+    "pairs": 24,
+    "groups": 9,
+    "mean": 0.10754465371152551,
+    "median": 0.09025388596494495,
+    "p95": 0.255479506870213,
+    "below_resolution": 23
+   },
+   "NMC": {
+    "pairs": 32,
+    "groups": 12,
+    "mean": 0.3747816737856915,
+    "median": 0.1379076570519392,
+    "p95": 1.5398020486749864,
+    "below_resolution": 28
+   }
+  },
+  "groups discharged faster than 0.5C": {
+   "LFP": {
+    "pairs": 23,
+    "groups": 8,
+    "mean": 0.20087534956343886,
+    "median": 0.0542275773172966,
+    "p95": 0.9160537549611829,
+    "below_resolution": 19
+   },
+   "NCA": {
+    "pairs": 16,
+    "groups": 6,
+    "mean": 0.0984534252458543,
+    "median": 0.0774503866974994,
+    "p95": 0.24162923986583573,
+    "below_resolution": 16
+   },
+   "NMC": {
+    "pairs": 24,
+    "groups": 9,
+    "mean": 0.16039956283063464,
+    "median": 0.08320680043453149,
+    "p95": 0.4215084210418499,
+    "below_resolution": 24
+   }
+  },
+  "groups discharged at 0.5C": {
+   "LFP": {
+    "pairs": 7,
+    "groups": 2,
+    "mean": 0.09152038275334953,
+    "median": 0.1149325855004886,
+    "p95": 0.13849929650055035,
+    "below_resolution": 6
+   },
+   "NCA": {
+    "pairs": 8,
+    "groups": 3,
+    "mean": 0.12572711064286796,
+    "median": 0.1101450563597447,
+    "p95": 0.25043138310107527,
+    "below_resolution": 7
+   },
+   "NMC": {
+    "pairs": 8,
+    "groups": 3,
+    "mean": 1.017928006650862,
+    "median": 1.1053793632757354,
+    "p95": 1.670286618574557,
+    "below_resolution": 4
+   }
+  }
+ },
+ "low_checks": [
+  {
+   "cell_id": "SNL_18650_NCA_25C_0-100_0.5/0.5C_b",
+   "low_checks": [
+    {
+     "efc": 171.896875,
+     "frac": 0.7837238758708044,
+     "next_frac": 0.8362887903736542
+    },
+    {
+     "efc": 179.0603125,
+     "frac": 0.7463584547181762,
+     "next_frac": 0.8008233058898037
+    },
+    {
+     "efc": 199.2628125,
+     "frac": 0.7457251424952501,
+     "next_frac": 0.8651044965167829
+    }
+   ],
+   "registered_crossing_at_a_low_check": false
+  },
+  {
+   "cell_id": "SNL_18650_NMC_25C_0-100_0.5/0.5C_a",
+   "low_checks": [
+    {
+     "efc": 44.492,
+     "frac": 0.823529411764706,
+     "next_frac": 0.8806329549363605
+    },
+    {
+     "efc": 54.19266666666667,
+     "frac": 0.7708978328173375,
+     "next_frac": 0.8427932576539389
+    },
+    {
+     "efc": 60.61566666666666,
+     "frac": 0.7616099071207431,
+     "next_frac": 0.8352253181974544
+    },
+    {
+     "efc": 66.77666666666666,
+     "frac": 0.7536979704162367,
+     "next_frac": 0.803921568627451
+    },
+    {
+     "efc": 69.74133333333333,
+     "frac": 0.7647058823529411,
+     "next_frac": 0.9256965944272445
+    }
+   ],
+   "registered_crossing_at_a_low_check": false
+  },
+  {
+   "cell_id": "SNL_18650_NMC_25C_20-80_0.5/0.5C_a",
+   "low_checks": [
+    {
+     "efc": 267.7609999999983,
+     "frac": 0.6078351908139142,
+     "next_frac": 0.9112751483572153
+    }
+   ],
+   "registered_crossing_at_a_low_check": true
+  },
+  {
+   "cell_id": "SNL_18650_NMC_25C_20-80_0.5/0.5C_b",
+   "low_checks": [
+    {
+     "efc": 144.77266666666728,
+     "frac": 0.6054047992823504,
+     "next_frac": 0.9277864992150707
+    }
+   ],
+   "registered_crossing_at_a_low_check": true
+  },
+  {
+   "cell_id": "SNL_18650_NMC_25C_20-80_0.5/0.5C_c",
+   "low_checks": [
+    {
+     "efc": 375.5036666666624,
+     "frac": 0.6079270352437789,
+     "next_frac": 0.8253414190808629
+    }
+   ],
+   "registered_crossing_at_a_low_check": true
+  }
+ ],
+ "lifetimes_without_low_checks": {
+  "SNL_18650_NMC_25C_20-80_0.5/0.5C_a": {
+   "registered_L_efc": 68.27767146055764,
+   "L_efc": 406.7474666666657,
+   "resolution_efc": 58.407666666666614,
+   "censored": false
+  },
+  "SNL_18650_NMC_25C_20-80_0.5/0.5C_b": {
+   "registered_L_efc": 36.68890711376356,
+   "L_efc": 489.14379033816454,
+   "resolution_efc": 71.77733333333407,
+   "censored": false
+  },
+  "SNL_18650_NMC_25C_20-80_0.5/0.5C_c": {
+   "registered_L_efc": 310.6176199131203,
+   "L_efc": 392.12962046113347,
+   "resolution_efc": 273.9476666666638,
+   "censored": false
+  }
+ },
+ "NMC_20_80_0.5C_without_low_checks": {
+  "group_registered_mean": 1.188657153314052,
+  "group_without_low_checks_mean": 0.14040675337520905,
+  "NMC_floor_without_low_checks": {
+   "mean": 0.17823472379715846,
+   "median": 0.0913950350019556,
+   "p95": 0.43606438115886237,
+   "pairs": 32
+  }
+ },
+ "thermal_share_raw_sign": {
+  "pairs": 60,
+  "warmer_shorter_by_raw_sign": 24,
+  "warmer_longer_by_raw_sign": 36,
+  "share": 0.4,
+  "p_two_sided": 0.1550019040032606,
+  "slope_NCA_and_NMC_pairs": 1.3576949991652,
+  "pairs_with_prediction": 40,
+  "signs_agree_pairs_with_prediction": 24
+ },
+ "resolution_over_L": {
+  "LFP": {
+   "median": 0.25552896997225233,
+   "min": 0.0007815041550354949,
+   "max": 1.0624211853720067
+  },
+  "NCA": {
+   "median": 0.41312615120552876,
+   "min": 0.007572358427707946,
+   "max": 1.407237219988513
+  },
+  "NMC": {
+   "median": 1.2199326649242916,
+   "min": 0.012999932392625107,
+   "max": 3.9459520071764937
+  }
+ },
+ "check_rule_two_sided": {
+  "SNL_18650_NMC_25C_0-100_0.5/0.5C_a": {
+   "discharges_ending_below_1.98_V": 6,
+   "registered_L_efc": 25.157091666666663,
+   "two_sided_L_efc": 25.157091666666663
+  },
+  "SNL_18650_NMC_25C_20-80_0.5/0.5C_a": {
+   "discharges_ending_below_1.98_V": 3,
+   "registered_L_efc": 68.27767146055764,
+   "two_sided_L_efc": 68.28943333333292
+  },
+  "SNL_18650_NMC_25C_20-80_0.5/0.5C_b": {
+   "discharges_ending_below_1.98_V": 2,
+   "registered_L_efc": 36.68890711376356,
+   "two_sided_L_efc": 36.69933602425638
+  },
+  "SNL_18650_NMC_25C_20-80_0.5/0.5C_c": {
+   "discharges_ending_below_1.98_V": 2,
+   "registered_L_efc": 310.6176199131203,
+   "two_sided_L_efc": 310.6203839908492
+  }
+ },
+ "v1_cells": {
+  "SNL_18650_LFP_15C_0-100_0.5/2C_a": {
+   "L_efc": 2137.927689393939,
+   "L_sens_efc": 1737.1731590909033,
+   "resolution_efc": 222.01818181818453,
+   "q_ref_sens_Ah": 1.0305,
+   "q_first_Ah": 1.0326666666666666
+  },
+  "SNL_18650_LFP_15C_0-100_0.5/2C_b": {
+   "L_efc": 2084.5450454545403,
+   "L_sens_efc": 1649.2116363636328,
+   "resolution_efc": 222.0463636363595,
+   "q_ref_sens_Ah": 1.028,
+   "q_first_Ah": 1.0313333333333332
+  },
+  "SNL_18650_LFP_25C_0-100_0.5/0.5C_a": {
+   "L_efc": 1179.5435454545443,
+   "L_sens_efc": 1103.094999999997,
+   "resolution_efc": 0.9218181818180256,
+   "q_ref_sens_Ah": 1.07,
+   "q_first_Ah": 1.067
+  }
+ }
+}

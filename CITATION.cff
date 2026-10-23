@@ -7,9 +7,9 @@ authors:
     given-names: Siddharth
     affiliation: Independent Researcher
     orcid: https://orcid.org/0009-0001-3584-1008
-version: v1.1.0
-doi: 10.5281/zenodo.23309131
-date-released: 2026-10-21
+version: v1.2.0
+doi: 10.5281/zenodo.23604443
+date-released: 2026-10-24
 repository-code: https://github.com/siddharth161204-wq/thermal-lever-duplicate-floor
 license:
   - MIT
@@ -22,10 +22,15 @@ keywords:
   - thermal model
   - finite element method
   - pre-registration
+  - temperature dependence of ageing
+  - LiFePO4, NCA and NMC 18650 cells
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.23309131
-    description: The archived version v1.1.0 on Zenodo
+    value: 10.5281/zenodo.23604443
+    description: The archived version v1.2.0 on Zenodo
+  - type: doi
+    value: 10.5281/zenodo.23309130
+    description: All versions on Zenodo
 references:
   - type: data
     title: "Comprehensive battery aging dataset: capacity and impedance fade measurements of a lithium-ion NMC/C-SiO cell [dataset, version 2: result data]"
@@ -61,3 +66,33 @@ references:
     start: 1004
     year: 2024
     doi: 10.1038/s41597-024-03831-x
+  - type: article
+    title: "Degradation of Commercial Lithium-Ion Cells as a Function of Chemistry and Cycling Conditions"
+    authors:
+      - family-names: Preger
+        given-names: Y.
+      - family-names: Barkholtz
+        given-names: H. M.
+      - family-names: Fresquez
+        given-names: A.
+      - family-names: Campbell
+        given-names: D. L.
+      - family-names: Juba
+        given-names: B. W.
+      - family-names: Romàn-Kustas
+        given-names: J.
+      - family-names: Ferreira
+        given-names: S. R.
+      - family-names: Chalamala
+        given-names: B.
+    journal: Journal of The Electrochemical Society
+    volume: 167
+    start: 120532
+    year: 2020
+    doi: 10.1149/1945-7111/abae37
+  - type: website
+    title: "Battery Archive"
+    authors:
+      - name: "Battery Archive"
+    url: "https://www.batteryarchive.org"
+    notes: "Source of the Sandia 18650 cycling data of Preger et al. 2020, shared on request on 23 October 2026"
