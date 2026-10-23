@@ -1,0 +1,17 @@
+foreign-row twin LFP_25C_20-80_0.5-3C_c identical to LFP_25C_20-80_0.5-3C_a True
+foreign-row twin LFP_25C_20-80_0.5-3C_d identical to LFP_25C_20-80_0.5-3C_b True
+interrupted check dropped: NCA_25C_0-100_0.5-1C_b 1
+foreign-row twin NCA_25C_20-80_0.5-3C_c identical to NCA_25C_20-80_0.5-3C_a True
+foreign-row twin NCA_25C_20-80_0.5-3C_d identical to NCA_25C_20-80_0.5-3C_b True
+foreign-row twin NMC_25C_20-80_0.5-3C_c identical to NMC_25C_20-80_0.5-3C_a True
+foreign-row twin NMC_25C_20-80_0.5-3C_d identical to NMC_25C_20-80_0.5-3C_b True
+worst errors: {'L': 1.92e-12, 'swing': 1.69e-14, 'rest': 7.11e-15, 'Tcyc': 2.13e-14, 'efc_total': 5.68e-14}
+LFP s_25_35 setpoint s 0.03232 from planted lifetimes 0.03232 planted law 0.03 logged s 0.03273 CI [0.03   0.0349]
+LFP s_15_25 setpoint s -0.02041 from planted lifetimes -0.02041 planted law -0.02 logged s -0.02061 CI [-0.0221 -0.0182]
+NCA s_25_35 setpoint s 0.0094 from planted lifetimes 0.0094 planted law 0.01 logged s 0.00923 CI [0.0072 0.011 ]
+NCA s_15_25 setpoint s -0.02821 from planted lifetimes -0.02821 planted law -0.03 logged s -0.02834 CI [-0.0309 -0.026 ]
+NMC s_25_35 setpoint s -0.01769 from planted lifetimes -0.01769 planted law -0.02 logged s -0.01803 CI [-0.0202 -0.0161]
+NMC s_15_25 setpoint s -0.0432 from planted lifetimes -0.0432 planted law -0.04 logged s -0.04129 CI [-0.0451 -0.0377]
+prepare: {'late': 1998, 'foreign': 360}
+scorecard: {'held': ['P1', 'P2', 'P3', 'P4', 'P6', 'P9', 'P10'], 'did_not_hold': ['P5'], 'not_scored': ['P7', 'P8']}
+PASS

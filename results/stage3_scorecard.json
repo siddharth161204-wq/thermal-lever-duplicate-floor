@@ -1,0 +1,158 @@
+{
+ "P1": {
+  "scored": true,
+  "held": true,
+  "s_per_K": -0.024432246723733255,
+  "ci95": [
+   -0.04331400516209028,
+   -0.004447710615346805
+  ],
+  "band": [
+   -0.035,
+   0.005
+  ],
+  "central": -0.015
+ },
+ "P2": {
+  "scored": true,
+  "held": true,
+  "s_15_25_per_K": -0.05622710922010767,
+  "s_25_35_per_K": -0.024432246723733255,
+  "ci95_15_25": [
+   -0.08435430330433032,
+   -0.031004193082625826
+  ]
+ },
+ "P3": {
+  "scored": true,
+  "held": false,
+  "s_per_K": -0.02037323818538684,
+  "ci95": [
+   -0.029470212111818963,
+   -0.01200818861929082
+  ],
+  "band": [
+   0.0,
+   0.05
+  ],
+  "central": 0.02
+ },
+ "P4": {
+  "scored": false,
+  "held": null,
+  "reason": "a 25 to 35 C lever not determinable"
+ },
+ "P5": {
+  "scored": true,
+  "held": false,
+  "chemistries": {
+   "LFP": {
+    "mean": 0.17535919064108477,
+    "pairs": 30,
+    "groups": 10,
+    "within": false
+   },
+   "NCA": {
+    "mean": 0.10754465371152555,
+    "pairs": 24,
+    "groups": 9,
+    "within": false
+   },
+   "NMC": {
+    "mean": 0.37478167378569155,
+    "pairs": 32,
+    "groups": 12,
+    "within": false
+   }
+  },
+  "band": [
+   0.015,
+   0.1
+  ],
+  "central": 0.04
+ },
+ "P6": {
+  "scored": true,
+  "held": true,
+  "fraction_below_1K": 0.8333333333333334,
+  "median_dT_K": 0.29342368911741906,
+  "central_K": 0.3,
+  "pairs": 36
+ },
+ "P7": {
+  "scored": true,
+  "held": false,
+  "share": 0.0,
+  "warmer_shorter": 0,
+  "warmer_longer": 1,
+  "ties": 59,
+  "excluded_censored": 0,
+  "p_one_sided": 1.0,
+  "p_two_sided": 1.0,
+  "band": [
+   0.35,
+   0.65
+  ]
+ },
+ "P8": {
+  "scored": false,
+  "held": null,
+  "reason": "a rate group holds fewer than five pairs entering the sign test",
+  "pairs_entering_sign_test": {
+   "2C and 3C": 1,
+   "1C or below": 0
+  }
+ },
+ "P9": {
+  "scored": true,
+  "held": true,
+  "implied_divergence": 0.007971617870156074,
+  "implied_divergence_ci95": [
+   0.004698550623847522,
+   0.011531071662254035
+  ],
+  "limit": 0.015,
+  "offer_K": 0.3912788825035136
+ },
+ "P10": {
+  "scored": true,
+  "held": false,
+  "s_15_25_per_K": {
+   "LFP": 0.03371837126587428,
+   "NCA": -0.013151400589211071,
+   "NMC": -0.05622710922010767
+  },
+  "ci95": {
+   "LFP": [
+    0.02949074115460169,
+    0.038270002135397496
+   ],
+   "NCA": [
+    -0.05219898344987195,
+    0.007423156307895657
+   ],
+   "NMC": [
+    -0.08435430330433032,
+    -0.031004193082625826
+   ]
+  }
+ },
+ "summary": {
+  "held": [
+   "P1",
+   "P2",
+   "P6",
+   "P9"
+  ],
+  "did_not_hold": [
+   "P3",
+   "P5",
+   "P7",
+   "P10"
+  ],
+  "not_scored": [
+   "P4",
+   "P8"
+  ]
+ }
+}

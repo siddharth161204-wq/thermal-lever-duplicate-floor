@@ -1,0 +1,8 @@
+LFP s = 0.0506 CI [0.0494 0.0519] true 0.05 | floor mean 0.0118 pairs 30
+NCA s = 0.0298 CI [0.0292 0.0304] true 0.03 | floor mean 0.0085 pairs 24
+NMC s = 0.0194 CI [0.0183 0.0204] true 0.02 | floor mean 0.0098 pairs 32
+all {'pairs': 86, 'warmer_shorter': 56, 'warmer_longer': 17, 'ties': 13, 'share': 0.767, 'sign_test_p_one_sided': 0.0, 'slope': 0.803, 'sd_ratio_pred_over_obs': 0.626} slope CI [0.427 2.003]
+1C or below {'pairs': 62, 'warmer_shorter': 38, 'warmer_longer': 15, 'ties': 9, 'share': 0.717, 'sign_test_p_one_sided': 0.001, 'slope': 0.579, 'sd_ratio_pred_over_obs': 0.403} slope CI [-0.184  2.496]
+2C and 3C {'pairs': 24, 'warmer_shorter': 18, 'warmer_longer': 2, 'ties': 4, 'share': 0.9, 'sign_test_p_one_sided': 0.0, 'slope': 0.855, 'sd_ratio_pred_over_obs': 0.762} slope CI [0.493 2.556]
+module: 0.01167 scorecard: {'P1': True, 'P2': True, 'P3': False, 'P4': False, 'P5': True, 'P6': False, 'P7': True, 'P8': True}
+PASS

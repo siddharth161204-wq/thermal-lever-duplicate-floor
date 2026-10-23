@@ -1,0 +1,350 @@
+{
+ "floor": {
+  "LFP": {
+   "pairs_total": 30,
+   "pairs_with_difference": 30,
+   "pairs_censored": 0,
+   "groups": 10,
+   "groups_with_3plus_cells": 4,
+   "mean": 0.17535919064108477,
+   "median": 0.08022016053836489,
+   "p95": 0.8947109389613059,
+   "below_resolution": 25
+  },
+  "NCA": {
+   "pairs_total": 24,
+   "pairs_with_difference": 24,
+   "pairs_censored": 0,
+   "groups": 9,
+   "groups_with_3plus_cells": 3,
+   "mean": 0.10754465371152555,
+   "median": 0.09025388596494498,
+   "p95": 0.255479506870213,
+   "below_resolution": 23
+  },
+  "NMC": {
+   "pairs_total": 32,
+   "pairs_with_difference": 32,
+   "pairs_censored": 0,
+   "groups": 12,
+   "groups_with_3plus_cells": 4,
+   "mean": 0.37478167378569155,
+   "median": 0.13790765705193925,
+   "p95": 1.5398020486749864,
+   "below_resolution": 28
+  },
+  "geslin_floor": {
+   "mean": 0.029909975804944276,
+   "p95": 0.08717631863980334,
+   "n_pairs": 45
+  }
+ },
+ "geslin_floor": {
+  "mean": 0.029909975804944276,
+  "median": 0.017457049305555493,
+  "p95": 0.08717631863980334,
+  "n_pairs": 45
+ },
+ "kit_floor": {
+  "mean": 0.07332337183440621,
+  "median": 0.04090182488777854,
+  "p95": 0.2047513623131581,
+  "pairs": 47
+ },
+ "measure_a": {
+  "measure": "self-heating rise (a)",
+  "all": {
+   "pairs": 60,
+   "warmer_shorter": 0,
+   "warmer_longer": 1,
+   "ties": 59,
+   "excluded_censored": 0,
+   "share": 0.0,
+   "sign_test_p_one_sided": 1.0,
+   "sign_test_p_two_sided": 1.0,
+   "groups": 23,
+   "pairs_for_slope": 60,
+   "dT_K_median": 0.35030787019111503,
+   "dT_K_mean": 0.85275604535029,
+   "dT_K_max": 5.309339089617356,
+   "dT_below_1K_fraction": 0.7833333333333333
+  },
+  "1C or below": {
+   "pairs": 36,
+   "warmer_shorter": 0,
+   "warmer_longer": 0,
+   "ties": 36,
+   "excluded_censored": 0,
+   "share": NaN,
+   "sign_test_p_one_sided": NaN,
+   "sign_test_p_two_sided": NaN,
+   "groups": 9,
+   "pairs_for_slope": 36,
+   "dT_K_median": 0.29342368911741906,
+   "dT_K_mean": 0.6172947915381086,
+   "dT_K_max": 3.97922569846449,
+   "dT_below_1K_fraction": 0.8333333333333334
+  },
+  "2C and 3C": {
+   "pairs": 24,
+   "warmer_shorter": 0,
+   "warmer_longer": 1,
+   "ties": 23,
+   "excluded_censored": 0,
+   "share": 0.0,
+   "sign_test_p_one_sided": 1.0,
+   "sign_test_p_two_sided": 1.0,
+   "groups": 14,
+   "pairs_for_slope": 24,
+   "dT_K_median": 0.4689539124315927,
+   "dT_K_mean": 1.2059479260685617,
+   "dT_K_max": 5.309339089617356,
+   "dT_below_1K_fraction": 0.7083333333333334
+  },
+  "chemistry LFP": {
+   "pairs": 20,
+   "warmer_shorter": 0,
+   "warmer_longer": 1,
+   "ties": 19,
+   "excluded_censored": 0,
+   "share": 0.0,
+   "sign_test_p_one_sided": 1.0,
+   "sign_test_p_two_sided": 1.0,
+   "groups": 8,
+   "pairs_for_slope": 20,
+   "dT_K_median": 0.20118726234944803,
+   "dT_K_mean": 0.2837337083145307,
+   "dT_K_max": 1.1746233085832607,
+   "dT_below_1K_fraction": 0.95
+  },
+  "chemistry NCA": {
+   "pairs": 16,
+   "warmer_shorter": 0,
+   "warmer_longer": 0,
+   "ties": 16,
+   "excluded_censored": 0,
+   "share": NaN,
+   "sign_test_p_one_sided": NaN,
+   "sign_test_p_two_sided": NaN,
+   "groups": 6,
+   "pairs_for_slope": 16,
+   "slope": -0.8085965845257583,
+   "slope_ci95": [
+    -2.9903871076602964,
+    1.8535803466894505
+   ],
+   "rms_pred": 0.03589097936313757,
+   "rms_obs": 0.12274566147806194,
+   "sd_ratio_pred_over_obs": 0.2924012053130879,
+   "dT_K_median": 0.8517862174161825,
+   "dT_K_mean": 1.3163982502592892,
+   "dT_K_max": 4.006855063101742,
+   "dT_below_1K_fraction": 0.5625
+  },
+  "chemistry NMC": {
+   "pairs": 24,
+   "warmer_shorter": 0,
+   "warmer_longer": 0,
+   "ties": 24,
+   "excluded_censored": 0,
+   "share": NaN,
+   "sign_test_p_one_sided": NaN,
+   "sign_test_p_two_sided": NaN,
+   "groups": 9,
+   "pairs_for_slope": 24,
+   "slope": 2.3000406843271093,
+   "slope_ci95": [
+    -1.0999638555563132,
+    8.190302437561849
+   ],
+   "rms_pred": 0.04443170844981437,
+   "rms_obs": 0.22031476680901377,
+   "sd_ratio_pred_over_obs": 0.20167376473829954,
+   "dT_K_median": 0.35030787019111503,
+   "dT_K_mean": 1.0178465229407565,
+   "dT_K_max": 5.309339089617356,
+   "dT_below_1K_fraction": 0.7916666666666666
+  },
+  "one pair per group (warmest and coolest)": {
+   "pairs": 23,
+   "warmer_shorter": 0,
+   "warmer_longer": 1,
+   "ties": 22,
+   "excluded_censored": 0,
+   "share": 0.0,
+   "sign_test_p_one_sided": 1.0,
+   "sign_test_p_two_sided": 1.0,
+   "groups": 23,
+   "pairs_for_slope": 23,
+   "dT_K_median": 0.3519581297114014,
+   "dT_K_mean": 1.0815087458160106,
+   "dT_K_max": 5.309339089617356,
+   "dT_below_1K_fraction": 0.6956521739130435
+  }
+ },
+ "measure_b": {
+  "measure": "rest-period skin temperature (b)",
+  "all": {
+   "pairs": 60,
+   "warmer_shorter": 1,
+   "warmer_longer": 0,
+   "ties": 59,
+   "excluded_censored": 0,
+   "share": 1.0,
+   "sign_test_p_one_sided": 0.5,
+   "sign_test_p_two_sided": 1.0,
+   "groups": 23,
+   "pairs_for_slope": 60,
+   "dT_K_median": 0.3663259863074906,
+   "dT_K_mean": 0.6229400695501247,
+   "dT_K_max": 5.005982518987551,
+   "dT_below_1K_fraction": 0.9
+  },
+  "1C or below": {
+   "pairs": 36,
+   "warmer_shorter": 0,
+   "warmer_longer": 0,
+   "ties": 36,
+   "excluded_censored": 0,
+   "share": NaN,
+   "sign_test_p_one_sided": NaN,
+   "sign_test_p_two_sided": NaN,
+   "groups": 9,
+   "pairs_for_slope": 36,
+   "dT_K_median": 0.4105408189881725,
+   "dT_K_mean": 0.7448847527553125,
+   "dT_K_max": 5.005982518987551,
+   "dT_below_1K_fraction": 0.8611111111111112
+  },
+  "2C and 3C": {
+   "pairs": 24,
+   "warmer_shorter": 1,
+   "warmer_longer": 0,
+   "ties": 23,
+   "excluded_censored": 0,
+   "share": 1.0,
+   "sign_test_p_one_sided": 0.5,
+   "sign_test_p_two_sided": 1.0,
+   "groups": 14,
+   "pairs_for_slope": 24,
+   "dT_K_median": 0.25980986489126323,
+   "dT_K_mean": 0.44002304474234316,
+   "dT_K_max": 3.5741043187345305,
+   "dT_below_1K_fraction": 0.9583333333333334
+  },
+  "chemistry LFP": {
+   "pairs": 20,
+   "warmer_shorter": 1,
+   "warmer_longer": 0,
+   "ties": 19,
+   "excluded_censored": 0,
+   "share": 1.0,
+   "sign_test_p_one_sided": 0.5,
+   "sign_test_p_two_sided": 1.0,
+   "groups": 8,
+   "pairs_for_slope": 20,
+   "dT_K_median": 0.15244852800074682,
+   "dT_K_mean": 0.2071899163490646,
+   "dT_K_max": 0.5118056304836855,
+   "dT_below_1K_fraction": 1.0
+  },
+  "chemistry NCA": {
+   "pairs": 16,
+   "warmer_shorter": 0,
+   "warmer_longer": 0,
+   "ties": 16,
+   "excluded_censored": 0,
+   "share": NaN,
+   "sign_test_p_one_sided": NaN,
+   "sign_test_p_two_sided": NaN,
+   "groups": 6,
+   "pairs_for_slope": 16,
+   "slope": 0.66567084984372,
+   "slope_ci95": [
+    -3.0953674163820053,
+    0.7860146614235342
+   ],
+   "rms_pred": 0.046064144787577754,
+   "rms_obs": 0.12274566147806196,
+   "sd_ratio_pred_over_obs": 0.37528124605699964,
+   "dT_K_median": 0.5621947037027049,
+   "dT_K_mean": 1.4632787668101068,
+   "dT_K_max": 5.005982518987551,
+   "dT_below_1K_fraction": 0.625
+  },
+  "chemistry NMC": {
+   "pairs": 24,
+   "warmer_shorter": 0,
+   "warmer_longer": 0,
+   "ties": 24,
+   "excluded_censored": 0,
+   "share": NaN,
+   "sign_test_p_one_sided": NaN,
+   "sign_test_p_two_sided": NaN,
+   "groups": 9,
+   "pairs_for_slope": 24,
+   "slope": -1.0853899342235416,
+   "slope_ci95": [
+    -12.200120076369128,
+    4.868596230332728
+   ],
+   "rms_pred": 0.011371586379259398,
+   "rms_obs": 0.22031476680901377,
+   "sd_ratio_pred_over_obs": 0.051615180153208644,
+   "dT_K_median": 0.42650606672480507,
+   "dT_K_mean": 0.40917273237768675,
+   "dT_K_max": 0.7839030184634872,
+   "dT_below_1K_fraction": 1.0
+  },
+  "one pair per group (warmest and coolest)": {
+   "pairs": 23,
+   "warmer_shorter": 1,
+   "warmer_longer": 0,
+   "ties": 22,
+   "excluded_censored": 0,
+   "share": 1.0,
+   "sign_test_p_one_sided": 0.5,
+   "sign_test_p_two_sided": 1.0,
+   "groups": 23,
+   "pairs_for_slope": 23,
+   "dT_K_median": 0.3807860498898066,
+   "dT_K_mean": 0.7285796185862364,
+   "dT_K_max": 5.005982518987551,
+   "dT_below_1K_fraction": 0.8695652173913043
+  }
+ },
+ "module": {
+  "s_nca_per_K": -0.02037323818538684,
+  "s_nca_ci95": [
+   -0.029470212111818963,
+   -0.01200818861929082
+  ],
+  "module_largest_dT_K": 0.3912788825035136,
+  "module_case": {
+   "crate": 0.5,
+   "h": 10.0
+  },
+  "implied_divergence": 0.007971617870156074,
+  "implied_divergence_ci95": [
+   0.004698550623847522,
+   0.011531071662254035
+  ],
+  "pairs_nca": {
+   "n": 16,
+   "implied_mean": 0.026819295099358972,
+   "implied_max": 0.08163261257489501
+  },
+  "pairs_all": {
+   "n": 60,
+   "implied_mean": 0.017373402025950002,
+   "implied_max": 0.10816842987975932
+  },
+  "geslin_floor": {
+   "mean": 0.029909975804944276,
+   "p95": 0.08717631863980334,
+   "half_mean_registered": 0.015
+  }
+ },
+ "thermal_share_pairs": 63,
+ "pairs_total": 86
+}

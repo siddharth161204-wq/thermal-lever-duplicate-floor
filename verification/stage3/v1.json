@@ -1,0 +1,46 @@
+{
+ "check": "V1",
+ "cells": [
+  {
+   "cell_id": "SNL_18650_LFP_15C_0-100_0.5/1C_a",
+   "L_check_efc": 2518.6538798701613,
+   "L_sens_efc": 2403.6851363636542,
+   "resolution_efc": 486.6636363636444,
+   "difference_efc": 114.96874350650705,
+   "agree_within_resolution": true
+  },
+  {
+   "cell_id": "SNL_18650_LFP_15C_0-100_0.5/1C_b",
+   "L_check_efc": 2450.496347465994,
+   "L_sens_efc": 2406.048772727284,
+   "resolution_efc": 459.3563636363615,
+   "difference_efc": 44.447574738710045,
+   "agree_within_resolution": true
+  },
+  {
+   "cell_id": "SNL_18650_LFP_15C_0-100_0.5/2C_a",
+   "L_check_efc": 2137.927689393939,
+   "L_sens_efc": 1737.1731590909033,
+   "resolution_efc": 222.01818181818453,
+   "difference_efc": 400.75453030303584,
+   "agree_within_resolution": false
+  },
+  {
+   "cell_id": "SNL_18650_LFP_15C_0-100_0.5/2C_b",
+   "L_check_efc": 2084.5450454545403,
+   "L_sens_efc": 1649.2116363636328,
+   "resolution_efc": 222.0463636363595,
+   "difference_efc": 435.3334090909075,
+   "agree_within_resolution": false
+  },
+  {
+   "cell_id": "SNL_18650_LFP_25C_0-100_0.5/0.5C_a",
+   "L_check_efc": 1179.5435454545443,
+   "L_sens_efc": 1103.094999999997,
+   "resolution_efc": 0.9218181818180256,
+   "difference_efc": 76.44854545454723,
+   "agree_within_resolution": false
+  }
+ ],
+ "all_agree": false
+}

@@ -1,0 +1,6 @@
+SNL_18650_NCA_25C_0-100_0.5/0.5C_a: L=100.00 true=100.00 err=0.000 res=0.88 checks=141 rise=0.145 K (end-baseline 0.206) rest=25.285 C units=108 Lsens=103.96
+SNL_18650_NCA_25C_0-100_0.5/1C_a: L=250.00 true=250.00 err=0.000 res=55.26 checks=7 rise=0.245 K (end-baseline 0.475) rest=25.673 C units=254 Lsens=256.61
+SNL_18650_NCA_25C_0-100_0.5/1C_b: L=227.27 true=227.27 err=0.000 res=56.15 checks=7 rise=0.306 K (end-baseline 0.590) rest=25.041 C units=233 Lsens=233.88
+SNL_18650_NCA_25C_20-80_0.5/0.5C_a: L=200.00 true=200.00 err=0.000 res=34.41 checks=9 rise=0.140 K (end-baseline 0.204) rest=25.076 C units=329 Lsens=nan
+checks per cell: {'SNL_18650_NCA_25C_0-100_0.5/0.5C_a': 141, 'SNL_18650_NCA_25C_0-100_0.5/1C_a': 7, 'SNL_18650_NCA_25C_0-100_0.5/1C_b': 7, 'SNL_18650_NCA_25C_20-80_0.5/0.5C_a': 9}
+PASS

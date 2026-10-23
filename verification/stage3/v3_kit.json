@@ -1,0 +1,39 @@
+{
+ "check": "V3, KIT values read unchanged",
+ "kit_levers": [
+  {
+   "protocol": "0-100 0.33/1.00C",
+   "secant": "25 to 40 C",
+   "s_per_K": -0.0062363218429529,
+   "T_lo_C": 25.88558630833538,
+   "T_hi_C": 40.70929106389594,
+   "identical_to_stage2_lever_csv": true
+  },
+  {
+   "protocol": "0-100 0.33/1.00C",
+   "secant": "10 to 25 C",
+   "s_per_K": -0.0310413915052089,
+   "T_lo_C": 12.019835358158389,
+   "T_hi_C": 25.88558630833538,
+   "identical_to_stage2_lever_csv": true
+  },
+  {
+   "protocol": "0-100 1.00/1.00C",
+   "secant": "25 to 40 C",
+   "s_per_K": -0.0268504183628669,
+   "T_lo_C": 26.063604315193984,
+   "T_hi_C": 40.68718140063447,
+   "identical_to_stage2_lever_csv": true
+  },
+  {
+   "protocol": "0-100 1.00/1.00C",
+   "secant": "10 to 25 C",
+   "s_per_K": -0.0334104608897482,
+   "T_lo_C": 11.98919614753806,
+   "T_hi_C": 26.063604315193984,
+   "identical_to_stage2_lever_csv": true
+  }
+ ],
+ "kit_floor_identical": true,
+ "pass": true
+}
