@@ -97,6 +97,55 @@ def frozen_share_vs_pipeline(g):
     return out
 
 
+def posthoc_compare(frozen_groups, pr_cells, variants):
+    """After the freeze: my point (i) numbers, and the F1, F3 and raw-sign numbers, against results/stage3_posthoc.json."""
+    import hashlib
+    from scipy import stats
+    path = os.path.join(REPO, "results", "stage3_posthoc.json")
+    ph = json.load(open(path))
+    pr = s3_groups.analyse(copy.deepcopy(pr_cells))
+    P = ph["P4_readings"]
+    rel = lambda a, b: abs(a - b) / abs(b)
+    out = {"file": "results/stage3_posthoc.json", "sha256": hashlib.sha256(open(path, "rb").read()).hexdigest(),
+           "opened": "after the freeze, 2026-10-23 about 21:30 UTC; not used in the recomputation", "point_i": {}}
+    for name, pk, mk in (("T_cyc over the cells that have one", "group temperature over the cells that have one", "T_cyc_over_cells_with_one"),
+                         ("10 K setpoint", "setpoint, 10 K", "setpoint_10K")):
+        p = P[pk]
+        rec = {"posthoc": {"s_per_K": p["s_per_K"], "law_2_per_K": p["law_2_per_K"], "ratio": p["ratio"], "P4_would_hold": p["P4_would_hold"]}}
+        for tag, g in (("mine_frozen", frozen_groups), ("mine_pipeline_readings", pr)):
+            m = g["P4_alternatives"][mk]
+            rec[tag] = {"s_per_K": m["s_LFP"], "law_2_per_K": m["law2_s"], "ratio": m["ratio_to_law2"], "verdict": m["verdict"],
+                        "rel_diff_s": rel(m["s_LFP"], p["s_per_K"]), "rel_diff_law2": rel(m["law2_s"], p["law_2_per_K"]),
+                        "rel_diff_ratio": rel(m["ratio_to_law2"], p["ratio"])}
+        out["point_i"][name] = rec
+    d = P["without the cell lacking T_cyc"]["s_per_K"]
+    out["point_i"]["dropping the cell"] = {"posthoc_s_per_K": d,
+        "mine_frozen_rel_diff": rel(frozen_groups["P4_alternatives"]["drop_cell_without_T_cyc"]["s_LFP"], d),
+        "mine_pipeline_readings_rel_diff": rel(pr["P4_alternatives"]["drop_cell_without_T_cyc"]["s_LFP"], d)}
+    ch = variants["floor_without_coulomb_limited_checks"]
+    f3 = {}
+    for cid, v in ch["cells_changed"].items():
+        p = ph["lifetimes_without_low_checks"][cid]
+        f3[cid] = {"mine_without": v["L_without_coulomb_limited_checks"], "posthoc_without": p["L_efc"],
+                   "rel_diff": rel(v["L_without_coulomb_limited_checks"], p["L_efc"]),
+                   "mine_two_sided_registered_rule": v["L_registered_rule"],
+                   "posthoc_two_sided": ph["check_rule_two_sided"][cid]["two_sided_L_efc"],
+                   "posthoc_one_sided_registered": p["registered_L_efc"]}
+    f3["NMC_floor_mean_without"] = {"mine": ch["floor"]["NMC"]["mean"],
+                                    "posthoc": ph["NMC_20_80_0.5C_without_low_checks"]["NMC_floor_without_low_checks"]["mean"]}
+    out["F1_F3"] = f3
+    raw = {}
+    for tag, g in (("mine_frozen", frozen_groups), ("mine_pipeline_readings", pr)):
+        ori = [q for q in g["oriented_pairs"]["a"] if q["status"] == "both_observed"]
+        k = sum(q["observed"] < 0 for q in ori)
+        raw[tag] = {"warmer_shorter": k, "pairs": len(ori), "share": k / len(ori),
+                    "p_two_sided": float(stats.binomtest(k, len(ori), 0.5).pvalue)}
+    raw["posthoc"] = {k: ph["thermal_share_raw_sign"][k] for k in ("warmer_shorter_by_raw_sign", "pairs", "share", "p_two_sided")}
+    raw["note"] = "the share without D46's tie rule, which D46 does not allow; reported for point (ii) only"
+    out["raw_sign_share_point_ii"] = raw
+    return out
+
+
 def main():
     man = json.load(open(os.path.join(FROZEN, "freeze_manifest.json")))
     frozen_cells = json.load(open(os.path.join(FROZEN, "cells_full.json")))
@@ -188,7 +237,9 @@ def main():
                       "With one untied pair the share can only be 0 or 1, so P7 could not have held whatever the data; the "
                       "sign test gives p = 1.0 one-sided and two-sided, and measure (b) gives the opposite share (1/1) on "
                       "the same pair. The verdict is faithful to D48 but carries no information; the note should say it "
-                      "rests on one pair untied by 13 EFC (248.7 EFC difference against a 235.2 EFC resolution)."),
+                      "rests on one pair untied by 13 EFC (248.7 EFC difference against a 235.2 EFC resolution). Without the tie rule, which "
+                      "D46 does not allow, 24 of 60 pairs have the warmer cell shorter-lived (0.40, two-sided p = 0.155), inside the "
+                      "band; the registered tie rule alone turns the verdict."),
     }
     point_iii = {
         "question": "Measures for 0.5C-discharge groups excluded from the thermal share (D43, D50 (5)): applied consistently?",
@@ -220,8 +271,11 @@ def main():
                  "note_on_commit_767bb9c": ("At 20:42:06 UTC, during this check, commit 767bb9c (not made by me) added early versions of "
                                             "lib.py, s0_cache.py, s1_cells.py and s3_groups.py from this folder; the files here were "
                                             "changed after that and the frozen versions are the ones hashed above. That commit also "
-                                            "added results/stage3_posthoc.json and src/stage3/posthoc.py, neither of which I opened, "
-                                            "and changed CITATION.cff; it changed none of the inputs or results compared here."),
+                                            "added results/stage3_posthoc.json and src/stage3/posthoc.py and changed CITATION.cff; it changed none of the "
+                                            "inputs or results compared here. I never opened src/stage3/posthoc.py. I opened "
+                                            "results/stage3_posthoc.json only after the freeze, at the coordinator's leave, to compare my "
+                                            "point (i) numbers (and, beside them, the F1, F3 and raw-sign numbers it also holds); "
+                                            "nothing of it entered my recomputation."),
                  "raw_files_sha256": man["raw_files_sha256"]},
         "summary": {
             "verdict": ("Every registered number and all ten verdicts reproduce. Run with the two readings the pipeline uses "
@@ -262,6 +316,7 @@ def main():
                               "kit_beside_nmc": frozen_groups["kit_beside_nmc"], "kit_floor": frozen_groups["kit_floor"]},
         "reading_variants_end_to_end": variants,
         "points": {"i_P4": point_i, "ii_P7": point_ii, "iii_0p5C_exclusion": point_iii},
+        "posthoc_comparison": posthoc_compare(frozen_groups, pr_cells, variants),
         "flags": flags,
     }
     with open(OUT, "w") as fh:

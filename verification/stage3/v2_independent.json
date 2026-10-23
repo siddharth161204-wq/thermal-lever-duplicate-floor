@@ -91,7 +91,7 @@
    ]
   },
   "pipeline_files_opened_after_freeze_at_utc": "2026-10-23T20:58:59Z",
-  "note_on_commit_767bb9c": "At 20:42:06 UTC, during this check, commit 767bb9c (not made by me) added early versions of lib.py, s0_cache.py, s1_cells.py and s3_groups.py from this folder; the files here were changed after that and the frozen versions are the ones hashed above. That commit also added results/stage3_posthoc.json and src/stage3/posthoc.py, neither of which I opened, and changed CITATION.cff; it changed none of the inputs or results compared here.",
+  "note_on_commit_767bb9c": "At 20:42:06 UTC, during this check, commit 767bb9c (not made by me) added early versions of lib.py, s0_cache.py, s1_cells.py and s3_groups.py from this folder; the files here were changed after that and the frozen versions are the ones hashed above. That commit also added results/stage3_posthoc.json and src/stage3/posthoc.py and changed CITATION.cff; it changed none of the inputs or results compared here. I never opened src/stage3/posthoc.py. I opened results/stage3_posthoc.json only after the freeze, at the coordinator's leave, to compare my point (i) numbers (and, beside them, the F1, F3 and raw-sign numbers it also holds); nothing of it entered my recomputation.",
   "raw_files_sha256": {
    "SNL_18650_LFP_15C_0-100_0.5/1C_a": "0c9cfabb3146173fa4c6d41690cf68f55fdbf3d6a5c8ea7d6c825e9b1812c1df",
    "SNL_18650_LFP_15C_0-100_0.5/1C_b": "299b38af9e37554d600753494798d355954710f8fd8285c6d2904c2902b1e7c4",
@@ -32213,6 +32213,41 @@
     "within_factor_3": true,
     "verdict": "holds"
    },
+   "same_three_readings_with_the_pipeline_cell_table": {
+    "T_cyc_over_cells_with_one": {
+     "s_LFP": 0.12866137759354476,
+     "law2_s": 0.044006976295009076,
+     "ratio_to_law2": 2.923658665640623,
+     "s_NCA": -0.020373238185387003,
+     "s_NMC": -0.02443224672373309,
+     "exceeds_both": true,
+     "same_sign_as_law2": true,
+     "within_factor_3": true,
+     "verdict": "holds"
+    },
+    "setpoint_10K": {
+     "s_LFP": 0.13818713692762064,
+     "law2_s": 0.0446607858818485,
+     "ratio_to_law2": 3.094149245228219,
+     "s_NCA": -0.022276376985395974,
+     "s_NMC": -0.025849110202565927,
+     "exceeds_both": true,
+     "same_sign_as_law2": true,
+     "within_factor_3": false,
+     "verdict": "did not hold"
+    },
+    "drop_cell_without_T_cyc": {
+     "s_LFP": 0.10538204857447925,
+     "law2_s": 0.044006976295009076,
+     "ratio_to_law2": 2.394666878906444,
+     "s_NCA": -0.020373238185387003,
+     "s_NMC": -0.02443224672373309,
+     "exceeds_both": true,
+     "same_sign_as_law2": true,
+     "within_factor_3": true,
+     "verdict": "holds"
+    }
+   },
    "pipeline_T_group_35C_in_stage3_lever_json": 35.08634766336788,
    "judgement": "Defensible as a literal reading but not forced. D43 makes the group temperature the mean T_cyc of the uncensored cells, which is undefined here, so the registered logged lever cannot be formed; D48's 'not determinable' then applies in its ordinary sense. D44's own determinability rule is about censoring only, so the scorecard's reason misnames the cause. The case was not foreseen, and the two natural repairs give opposite verdicts: mean T_cyc over the three cells that have one gives s = 0.1287 per K and P4 holds (ratio to Law 2 2.92, inside [1/3, 3] by 0.08); the 10 K setpoint gives s = 0.1382 per K and P4 does not hold (ratio 3.09 to Law 2 at the setpoints, 3.14 to Law 2 at the logged temperatures). The note should report all three and say the verdict depends on this reading."
   },
@@ -32241,7 +32276,7 @@
     },
     "untied_margin_efc": 13.413036943138707
    },
-   "judgement": "Yes, literally. D48 sets no minimum number of pairs for P7 (it sets five per rate group for P8 only), and its 'not scored' clause covers only a lever that is not determinable, which P7 does not use. With one untied pair the share can only be 0 or 1, so P7 could not have held whatever the data; the sign test gives p = 1.0 one-sided and two-sided, and measure (b) gives the opposite share (1/1) on the same pair. The verdict is faithful to D48 but carries no information; the note should say it rests on one pair untied by 13 EFC (248.7 EFC difference against a 235.2 EFC resolution)."
+   "judgement": "Yes, literally. D48 sets no minimum number of pairs for P7 (it sets five per rate group for P8 only), and its 'not scored' clause covers only a lever that is not determinable, which P7 does not use. With one untied pair the share can only be 0 or 1, so P7 could not have held whatever the data; the sign test gives p = 1.0 one-sided and two-sided, and measure (b) gives the opposite share (1/1) on the same pair. The verdict is faithful to D48 but carries no information; the note should say it rests on one pair untied by 13 EFC (248.7 EFC difference against a 235.2 EFC resolution). Without the tie rule, which D46 does not allow, 24 of 60 pairs have the warmer cell shorter-lived (0.40, two-sided p = 0.155), inside the band; the registered tie rule alone turns the verdict."
   },
   "iii_0p5C_exclusion": {
    "question": "Measures for 0.5C-discharge groups excluded from the thermal share (D43, D50 (5)): applied consistently?",
@@ -32262,6 +32297,121 @@
    "judgement": "Yes. No 0.5C-discharge cell appears in either oriented-pair file, in P6, in the D47 pair numbers or in any slope; the floor keeps all 86 pairs. Including the 0.5C partial-window pairs, as D48's P6 wording alone would, raises P6's fraction to 0.895 and changes no verdict. In stage3_pairs.csv the 26 pairs at 0.5C carry the rate-group label '1C or below', which no thermal number uses."
   }
  },
+ "posthoc_comparison": {
+  "file": "results/stage3_posthoc.json",
+  "sha256": "a55362b64b51197dd23e28eeda0322c41c54064b57c154d6c18baf4c4481f0aa",
+  "opened": "after the freeze, 2026-10-23 about 21:30 UTC; not used in the recomputation",
+  "point_i": {
+   "T_cyc over the cells that have one": {
+    "posthoc": {
+     "s_per_K": 0.1286613775935446,
+     "law_2_per_K": 0.044006976295009076,
+     "ratio": 2.923658665640619,
+     "P4_would_hold": true
+    },
+    "mine_frozen": {
+     "s_per_K": 0.12866261153648387,
+     "law_2_per_K": 0.04400690017372432,
+     "ratio": 2.92369176262285,
+     "verdict": "holds",
+     "rel_diff_s": 9.590624337707264e-06,
+     "rel_diff_law2": 1.7297549425893513e-06,
+     "rel_diff_ratio": 1.1320398861818013e-05
+    },
+    "mine_pipeline_readings": {
+     "s_per_K": 0.12866137759354476,
+     "law_2_per_K": 0.044006976295009076,
+     "ratio": 2.923658665640623,
+     "verdict": "holds",
+     "rel_diff_s": 1.294354660338481e-15,
+     "rel_diff_law2": 0.0,
+     "rel_diff_ratio": 1.3670552365164015e-15
+    }
+   },
+   "10 K setpoint": {
+    "posthoc": {
+     "s_per_K": 0.13818713692762047,
+     "law_2_per_K": 0.0446607858818485,
+     "ratio": 3.0941492452282153,
+     "P4_would_hold": false
+    },
+    "mine_frozen": {
+     "s_per_K": 0.13818713692762064,
+     "law_2_per_K": 0.0446607858818485,
+     "ratio": 3.094149245228219,
+     "verdict": "did not hold",
+     "rel_diff_s": 1.2051299230622327e-15,
+     "rel_diff_law2": 0.0,
+     "rel_diff_ratio": 1.14820372167874e-15
+    },
+    "mine_pipeline_readings": {
+     "s_per_K": 0.13818713692762064,
+     "law_2_per_K": 0.0446607858818485,
+     "ratio": 3.094149245228219,
+     "verdict": "did not hold",
+     "rel_diff_s": 1.2051299230622327e-15,
+     "rel_diff_law2": 0.0,
+     "rel_diff_ratio": 1.14820372167874e-15
+    }
+   },
+   "dropping the cell": {
+    "posthoc_s_per_K": 0.10538204857447925,
+    "mine_frozen_rel_diff": 9.590624336357474e-06,
+    "mine_pipeline_readings_rel_diff": 0.0
+   }
+  },
+  "F1_F3": {
+   "SNL_18650_NMC_25C_20-80_0.5/0.5C_a": {
+    "mine_without": 406.7474666666657,
+    "posthoc_without": 406.7474666666657,
+    "rel_diff": 0.0,
+    "mine_two_sided_registered_rule": 68.28943333333292,
+    "posthoc_two_sided": 68.28943333333292,
+    "posthoc_one_sided_registered": 68.27767146055764
+   },
+   "SNL_18650_NMC_25C_20-80_0.5/0.5C_b": {
+    "mine_without": 489.14379033816533,
+    "posthoc_without": 489.14379033816454,
+    "rel_diff": 1.6269405433955087e-15,
+    "mine_two_sided_registered_rule": 36.699336024256375,
+    "posthoc_two_sided": 36.69933602425638,
+    "posthoc_one_sided_registered": 36.68890711376356
+   },
+   "SNL_18650_NMC_25C_20-80_0.5/0.5C_c": {
+    "mine_without": 392.12962046113347,
+    "posthoc_without": 392.12962046113347,
+    "rel_diff": 0.0,
+    "mine_two_sided_registered_rule": 310.6203839908492,
+    "posthoc_two_sided": 310.6203839908492,
+    "posthoc_one_sided_registered": 310.6176199131203
+   },
+   "NMC_floor_mean_without": {
+    "mine": 0.1782347237971592,
+    "posthoc": 0.17823472379715846
+   }
+  },
+  "raw_sign_share_point_ii": {
+   "mine_frozen": {
+    "warmer_shorter": 24,
+    "pairs": 60,
+    "share": 0.4,
+    "p_two_sided": 0.1550019040032606
+   },
+   "mine_pipeline_readings": {
+    "warmer_shorter": 24,
+    "pairs": 60,
+    "share": 0.4,
+    "p_two_sided": 0.1550019040032606
+   },
+   "posthoc": {
+    "warmer_shorter_by_raw_sign": 24,
+    "pairs": 60,
+    "share": 0.4,
+    "p_two_sided": 0.1550019040032606
+   },
+   "note": "the share without D46's tie rule, which D46 does not allow; reported for point (ii) only"
+  }
+ },
  "flags": [
   {
    "id": "F1",
@@ -32269,7 +32419,7 @@
    "changes_scored": true,
    "changes": "No verdict. Under my two-sided reading the NMC floor mean is 0.374767 against 0.374782 and its 95th percentile 1.53971 against 1.53980; no other scored number moves.",
    "item": "D41, 'last voltage within 0.02 V of the cut-off'",
-   "finding": "The pipeline accepts a discharge whose last voltage is at or below the cut-off plus 0.02 V (one-sided); 'within' reads two-sided. D41's parenthetical 'lowest discharge end voltages 1.99 V' is not true of the files: end voltages reach 1.912 V (NMC 25 C 0-100 0.5/0.5C a) and 1.94 to 1.95 V in several NMC and LFP cells, as the inventory's own discharge_v_last_min shows. The readings differ in four cells: NMC 25 C 0-100 0.5/0.5C a (552 against 546 checks, all six after its lifetime) and the three NMC 25 C 20-80 0.5/0.5C cells of F3, where two or three more 1.8 Ah discharges join the spurious checks. Lifetimes move by at most 0.012 EFC.",
+   "finding": "The pipeline accepts a discharge whose last voltage is at or below the cut-off plus 0.02 V (one-sided); 'within' reads two-sided. D41's parenthetical 'lowest discharge end voltages 1.99 V' is not true of the files: end voltages reach 1.912 V (NMC 25 C 0-100 0.5/0.5C a) and 1.94 to 1.95 V in several NMC and LFP cells, as the inventory's own discharge_v_last_min shows. The readings differ in four cells: NMC 25 C 0-100 0.5/0.5C a (552 against 546 checks, all six after its lifetime) and the three NMC 25 C 20-80 0.5/0.5C cells of F3, where two or three more 1.8 Ah discharges join the spurious checks. Lifetimes move by at most 0.012 EFC. results/stage3_posthoc.json (post hoc, opened after my freeze) lists the same two-sided lifetimes for these cells as my frozen primary, digit for digit (68.28943333333292, 36.69933602425638 and 310.6203839908492 EFC).",
    "suggestion": "State the one-sided rule in D41 and correct the parenthetical."
   },
   {
@@ -32287,7 +32437,7 @@
    "changes_scored": true,
    "changes": "Changes a number that P5 scores, not the P5 verdict: the NMC floor mean is 0.375 with these checks and 0.178 without them. P5 fails either way, because LFP (0.175) and NCA (0.108) are above 0.10 as well.",
    "item": "D41 and D42 on the NMC 25 C 20-80 0.5/0.5C cells a, b and c",
-   "finding": "Coulomb-limited cycling discharges count as capacity checks. These cells cycle a fixed 1.8 Ah (60 % of rated) at 0.5C. As the window drifts down, the end voltage of that discharge passes through 2.0 V for one to five cycles, and those discharges meet D41 (0.5C mean current, end voltage at the cut-off) and the half rule (0.61 of the first check). Each becomes a check at 0.61 of the first capacity, below the 90 % threshold, so the lifetimes become 68.3, 36.7 and 310.6 EFC. With those checks removed (my unregistered sensitivity) they are 406.7, 489.1 and 392.1 EFC. Both codes follow D41 as written. These cells do not enter the thermal share.",
+   "finding": "Coulomb-limited cycling discharges count as capacity checks. These cells cycle a fixed 1.8 Ah (60 % of rated) at 0.5C. As the window drifts down, the end voltage of that discharge passes through 2.0 V for one to five cycles, and those discharges meet D41 (0.5C mean current, end voltage at the cut-off) and the half rule (0.61 of the first check). Each becomes a check at 0.61 of the first capacity, below the 90 % threshold, so the lifetimes become 68.3, 36.7 and 310.6 EFC. With those checks removed (my unregistered sensitivity) they are 406.7, 489.1 and 392.1 EFC. Both codes follow D41 as written. These cells do not enter the thermal share. results/stage3_posthoc.json (post hoc, opened after my freeze) reports the same sensitivity: its lifetimes without these checks (406.7474666666657, 489.14379033816454 and 392.12962046113347 EFC) and its NMC floor mean without them (0.17823472379715846) agree with mine to 1.6e-15.",
    "suggestion": "Report the NMC floor both ways and say why; a check rule that excludes discharges ending at the programmed cycling capacity would remove the artefact."
   },
   {
@@ -32296,7 +32446,7 @@
    "changes_scored": true,
    "changes": "No verdict under either reading. If these steps did not split checks, NCA's 25-35 C lever would be -0.02000 per K instead of -0.02037, NMC's -0.02287 instead of -0.02443 (6.4 %), and the ties would still be 59 of 60.",
    "item": "D41 'consecutive' with one- and two-record discharge steps",
-   "finding": "One- and two-record discharge steps (about -0.08 A at the end of a CV charge, 7 to 10 per cell at 35 C) fall between qualifying discharges and split checks, since D41 groups consecutive qualifying discharges. Both codes split them, and the inventory did too. The result is checks of one or two discharges 1 to 5 EFC before the rest of their check. In NCA 35 C 1C b the crossing falls inside such a split, which gives a resolution of 1.78 EFC instead of 64.9 EFC. Without the splitting, the lifetimes would be: NCA 35 C 1C a 227.14 instead of 229.69 EFC, b 233.63 instead of 234.82, NMC 35 C 1C b 154.36 instead of 164.87, NMC 35 C 2C b 167.99 instead of 186.15, and NCA 35 C 2C a 267.23 instead of 264.94.",
+   "finding": "One- and two-record discharge steps (about -0.08 A at the end of a CV charge, 2 to 10 per cell at 35 C) fall between qualifying discharges and split checks, since D41 groups consecutive qualifying discharges. Both codes split them, and the inventory did too. The result is checks of one or two discharges 1 to 5 EFC before the rest of their check. In NCA 35 C 1C b the crossing falls inside such a split, which gives a resolution of 1.78 EFC instead of 64.9 EFC. Without the splitting, the lifetimes would be: NCA 35 C 1C a 227.14 instead of 229.69 EFC, b 233.63 instead of 234.82, NMC 35 C 1C b 154.36 instead of 164.87, NMC 35 C 2C b 167.99 instead of 186.15, and NCA 35 C 2C a 267.23 instead of 264.94.",
    "suggestion": "Mention in the note; ignoring discharge steps of two records or fewer when grouping checks would remove it."
   },
   {
@@ -32305,7 +32455,7 @@
    "changes_scored": true,
    "changes": "The P4 verdict depends on a reading the rules did not foresee. Strict: not scored. Mean T_cyc over the cells that have one: holds. 10 K setpoint: does not hold.",
    "item": "P4 and the LFP 25-35 C lever (D43, D44, D48)",
-   "finding": "LFP 35 C 0-100 0.5/1C c is uncensored (L = 222.1 EFC) but has no cell temperature before cycle 258, so none of its 237 units inside the lifetime has a step mean. Its first unit with a temperature starts at 241.4 EFC. D43's group temperature, the mean T_cyc of the uncensored cells, is therefore undefined, and the logged lever cannot be formed. D44's determinability rule concerns censoring only, and no cell here is censored, so the scorecard's reason ('a 25 to 35 C lever not determinable') names the wrong cause; stage3_lever.csv marks the secant determinable = False. stage3_lever.json lists T_group_C at 35 C as 35.0863 C, which is the mean over the three cells that do have T_cyc, beside an undefined lever. Over those three cells, s = 0.12866 per K against Law 2's 0.044007 per K over the same secant: the ratio is 2.92, inside [1/3, 3] by 0.08, LFP exceeds NCA (-0.0204) and NMC (-0.0244), and the signs agree, so P4 holds. With the 10 K setpoint, s = 0.13819 per K and the ratio to Law 2 at 25 and 35 C is 3.09 (3.14 against Law 2 at the logged temperatures), so P4 does not hold. Dropping the cell from both means gives s = 0.10538 per K, ratio 2.39, and P4 holds.",
+   "finding": "LFP 35 C 0-100 0.5/1C c is uncensored (L = 222.1 EFC) but has no cell temperature before cycle 259 (its cycle index jumps from 257 to 259), so none of its 237 units inside the lifetime has a step mean. Its first unit with a temperature starts at 241.4 EFC. D43's group temperature, the mean T_cyc of the uncensored cells, is therefore undefined, and the logged lever cannot be formed. D44's determinability rule concerns censoring only, and no cell here is censored, so the scorecard's reason ('a 25 to 35 C lever not determinable') names the wrong cause; stage3_lever.csv marks the secant determinable = False. stage3_lever.json lists T_group_C at 35 C as 35.0863 C, which is the mean over the three cells that do have T_cyc, beside an undefined lever. Over those three cells, s = 0.12866 per K against Law 2's 0.044007 per K over the same secant: the ratio is 2.92, inside [1/3, 3] by 0.08, LFP exceeds NCA (-0.0204) and NMC (-0.0244), and the signs agree, so P4 holds. With the 10 K setpoint, s = 0.13819 per K and the ratio to Law 2 at 25 and 35 C is 3.09 (3.14 against Law 2 at the logged temperatures), so P4 does not hold. Dropping the cell from both means gives s = 0.10538 per K, ratio 2.39, and P4 holds.",
    "suggestion": "Keep 'not scored' only with the cause stated correctly, give both repairs and their opposite outcomes in the note, and label the 35.0863 C in the lever file."
   },
   {
@@ -32314,7 +32464,7 @@
    "changes_scored": true,
    "changes": "The verdict is literal but carries no information: had that one pair's resolution been 13.4 EFC larger, no pair would be untied and the share would be undefined.",
    "item": "P7 on one untied pair",
-   "finding": "59 of 60 pairs are ties because the check spacing (resolution 100 to 700 EFC) exceeds the replicate differences. The one untied pair is LFP 35 C 0-100 0.5/2C a and b: 248.7 EFC apart against a 235.2 EFC resolution, a margin of 13.4 EFC. By measure (a), the warmer cell a (0.973 against 0.874 K) lives longer, so the share is 0 of 1, with p = 1.0 one-sided and two-sided. By measure (b) the same pair gives 1 of 1. D48 sets no minimum count for P7 (it does for P8), so 'did not hold' is what D48 says.",
+   "finding": "59 of 60 pairs are ties because the check spacing (resolution 100 to 700 EFC) exceeds the replicate differences. The one untied pair is LFP 35 C 0-100 0.5/2C a and b: 248.7 EFC apart against a 235.2 EFC resolution, a margin of 13.4 EFC. By measure (a), the warmer cell a (0.973 against 0.874 K) lives longer, so the share is 0 of 1, with p = 1.0 one-sided and two-sided. By measure (b) the same pair gives 1 of 1. D48 sets no minimum count for P7 (it does for P8), so 'did not hold' is what D48 says. Dropping the tie rule, which D46 does not allow, gives 24 of 60 pairs with the warmer cell shorter-lived (share 0.40, two-sided p = 0.155). That is inside the band, so the registered tie rule alone turns the verdict. Both of my runs and results/stage3_posthoc.json give this number.",
    "suggestion": "Say in the note that P7's verdict rests on one pair and that the data show no sign signal either way."
   },
   {
@@ -32341,7 +32491,7 @@
    "changes_scored": false,
    "changes": "Unscored.",
    "item": "D46 layout",
-   "finding": "The pipeline reports slopes (b) and RMS ratios (c) only for NCA and NMC, because LFP pairs have no prediction (LFP's s is undefined), and its 'one pair per group' takes the warmest and coolest cells. D46 fixes neither. Formed over the pairs that do have a prediction, the all-pairs slope for measure (a) is 1.57 (interval -2.05 to 2.71). The sign-test counts are identical under both layouts. With the pipeline's layout and draw order (bootstraps for NCA and NMC only, measure (a) then (b)), my code reproduces its four slope intervals to 1.2e-13.",
+   "finding": "The pipeline reports slopes (b) and RMS ratios (c) only for NCA and NMC, because LFP pairs have no prediction (LFP's s is undefined), and its 'one pair per group' takes the warmest and coolest cells. D46 fixes neither. Formed over the 40 pairs that do have a prediction, the all-pairs slope for measure (a) is 1.36 under the pipeline's unit reading (signs agreeing in 24 pairs; results/stage3_posthoc.json gives the same) and 1.57 under mine (interval -2.05 to 2.71). The sign-test counts are identical under both layouts. With the pipeline's layout and draw order (bootstraps for NCA and NMC only, measure (a) then (b)), my code reproduces its four slope intervals to 1.2e-13.",
    "suggestion": "Say in the note which subsets carry a slope, and why."
   },
   {
@@ -32350,7 +32500,7 @@
    "changes_scored": false,
    "changes": "Wording and representation only.",
    "item": "Text and file details",
-   "finding": "D50 (1)'s '60 s for the single such record in each 15 C cell' is the record's lag behind the first record of the next cycle (60.09 and 60.08 s); it follows the row before it by 0.064 s, lies inside a rest and reads 34.4 C against 47.6 C around it. D43's 'the groups discharged at 0.5C carry no swing' holds only for the 0-100 % cells; the partial-window 0.5C cells have a measured swing of -0.15 to -0.75 K, which D50 (5) correctly sets aside. stage3_pairs.csv labels the 26 pairs at 0.5C '1C or below', and stage3_cells.csv leaves units_with_rest_record blank rather than zero for cells without units.",
+   "finding": "D50 (1)'s '60 s for the single such record in each 15 C cell' is the record's lag behind the first record of the next cycle (60.09 and 60.08 s); it follows the row before it by 0.064 s, lies inside a rest and reads 34.4 C against 47.6 C around it. D43's 'the groups discharged at 0.5C carry no swing' holds only for the 0-100 % cells; the partial-window 0.5C cells have a measured swing of -0.15 to -0.75 K, which D50 (5) correctly sets aside. stage3_pairs.csv labels the 26 pairs at 0.5C '1C or below', and stage3_cells.csv leaves units_with_rest_record blank rather than zero for cells without units. D42's reason for the 90 % thresholds, that the NCA and NMC temperature-series cells 'all reached 0.80 or lower', is not quite right: in 9 of the 32 such cells the lowest check lies between 0.8001 and 0.8427 of the first (my checks and the inventory agree to 1e-4); every one of them does fall below 0.90, so the threshold and every lifetime are unaffected.",
    "suggestion": "Optional wording fixes."
   }
  ]

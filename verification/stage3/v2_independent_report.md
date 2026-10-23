@@ -21,7 +21,7 @@ V2 as registered (D49) passes. In the three V2 cells (LFP 15 C 0-100 0.5/1C a, L
 On the three points I was asked to judge:
 
 - (i) Reporting P4 as "not scored" is a defensible literal reading, but it is not forced. The reason given names the wrong rule, and the two natural repairs give opposite verdicts. Taking the mean T_cyc over the three cells that have one, P4 holds (ratio to Law 2 2.92, against a limit of 3). With the 10 K setpoint, P4 does not hold (ratio 3.09).
-- (ii) P7 "did not hold" on one untied pair is what D48 says, but the verdict carries no information.
+- (ii) P7 "did not hold" on one untied pair is what D48 says, but the verdict carries no information. Without the tie rule, which D46 does not allow, the share would be 24 of 60 = 0.40, inside the band.
 - (iii) The 0.5C exclusion is applied consistently.
 
 Flags that change or could change a scored number or verdict:
@@ -71,7 +71,7 @@ Two things in that run were written after seeing the pipeline, and are labelled 
 - the thermal-share layout: which subsets carry a slope, and "one pair per group" taken as the warmest and coolest cells;
 - the search for the unscored sensitivity-lifetime rule.
 
-During the check, at 20:42:06 UTC, commit 767bb9c (not mine) added early versions of `lib.py`, `s0_cache.py`, `s1_cells.py` and `s3_groups.py` from this folder. The files were changed after that, and the frozen versions are the ones hashed in the manifest. The same commit added `results/stage3_posthoc.json` and `src/stage3/posthoc.py`, which I did not open. It changed none of the inputs or results compared here. I made no commit.
+During the check, at 20:42:06 UTC, commit 767bb9c (not mine) added early versions of `lib.py`, `s0_cache.py`, `s1_cells.py` and `s3_groups.py` from this folder. The files were changed after that, and the frozen versions are the ones hashed in the manifest. The same commit added `results/stage3_posthoc.json` and `src/stage3/posthoc.py`, and it changed none of the inputs or results compared here. I never opened `src/stage3/posthoc.py`. I opened `results/stage3_posthoc.json` only after the freeze, with the coordinator's leave, to compare my point (i) numbers; nothing of it entered my recomputation. I made no commit.
 
 ### Readings where the wording left a choice
 
@@ -121,7 +121,7 @@ The four extra cells (unregistered) exercise D50:
 | Cell | rows logged | D50 feature | total discharge Ah (registered rule's share) | checks (dropped) | L (EFC) | measure (a), K | measure (b), C | T_cyc, C | units |
 |---|---|---|---|---|---|---|---|---|---|
 | NMC 35 C 0-100 0.5/1C a | 103,615 | 213 late records | 1955.243 (4.53 %) | 7 (0) | 162.18508096405245 | 1.2478123915974648 | 35.12291205268629 | 36.74001411246633 | 179 |
-| LFP 35 C 0-100 0.5/1C c | 382,258 | 1,217 late records; no cell temperature for cycles 1 to 257 | 3186.120 (2.80 %) | 16 (0) | 222.08962934987738 | none | none | none | 0 of 237 in the window |
+| LFP 35 C 0-100 0.5/1C c | 382,258 | 1,217 late records; no cell temperature for cycles 1 to 257 (the index then jumps to 259) | 3186.120 (2.80 %) | 16 (0) | 222.08962934987738 | none | none | none | 0 of 237 in the window |
 | NMC 25 C 20-80 0.5/3C a | 332,662 | 4,313 rows of another record dropped | 5150.135 (100 %) | 13 (0) | 493.29412365591236 | 7.738506361271583 | 24.886931140049207 | 27.843582611792176 | 881 |
 | NCA 25 C 0-100 0.5/0.5C b | 228,011 | capacity collapses after about 385 EFC; one interrupted check at 200 EFC | 1429.422 (100 %) | 914 (436) | 87.20171875000004 | none (no units) | none | none | 0 |
 
@@ -284,7 +284,7 @@ Every reading option of mine, run end to end, gives the same ten verdicts (`froz
 
 ## The three points
 
-**(i) P4.** LFP 35 C 0-100 0.5/1C c is uncensored, with L = 222.09 EFC. Its file has no cell temperature for cycles 1 to 257, so none of the 237 units inside its lifetime has a step mean. D43 makes a group's temperature "the mean T_cyc of its uncensored cells", so T_35 is undefined, and the logged lever of D44 cannot be formed. D48 then says a prediction resting on a lever that is not determinable is not scored. Read in the ordinary sense of "cannot be determined", the pipeline's verdict follows.
+**(i) P4.** LFP 35 C 0-100 0.5/1C c is uncensored, with L = 222.09 EFC. Its file has no cell temperature for cycles 1 to 257, after which the cycle index jumps to 259, so none of the 237 units inside its lifetime has a step mean. D43 makes a group's temperature "the mean T_cyc of its uncensored cells", so T_35 is undefined, and the logged lever of D44 cannot be formed. D48 then says a prediction resting on a lever that is not determinable is not scored. Read in the ordinary sense of "cannot be determined", the pipeline's verdict follows.
 
 The reading is not forced, though. D44 defines "not determinable" by censoring alone, and no cell is censored, so the scorecard's reason names the wrong rule. D43 also handles missing temperature elsewhere by skipping, not by voiding ("a unit with a missing step mean is skipped"). The case was not foreseen, and the two natural repairs give opposite verdicts:
 
@@ -292,13 +292,13 @@ The reading is not forced, though. D44 defines "not determinable" by censoring a
 - **The 10 K setpoint.** s = 0.138187 per K, and the ratio to Law 2 over 25 to 35 C is 3.094 (3.140 against Law 2 at the logged temperatures), so P4 does not hold. LFP still exceeds NCA (-0.0223) and NMC (-0.0258) at their setpoints.
 - **Dropping the cell from both means** gives s = 0.105382 per K and a ratio of 2.395, so P4 holds.
 
-These values come from the pipeline-readings run. My frozen values differ by under 1e-5.
+These values come from the pipeline-readings run. My frozen values differ by under 1e-5, with the same verdicts. `results/stage3_posthoc.json`, opened only after the freeze, gives the same three readings: s = 0.1286613775935446, ratio 2.923658665640619 and "would hold"; setpoint s = 0.13818713692762047, ratio 3.0941492452282153 and "would not hold"; and 0.10538204857447925 without the cell. These agree with my pipeline-readings run to 1.3e-15 relative and with my frozen primary to 9.6e-6.
 
 I agree that "not scored" is a faithful literal reading. It should be reported with the correct cause and with both repairs, since the verdict depends on this reading (F5).
 
 **(ii) P7.** D48 says "P7 holds if the share of D46 (a) over all pairs lies in [0.35, 0.65]". It sets a minimum pair count for P8 only, and its "not scored" clause covers only levers that are not determinable, which P7 does not use. With 59 ties and one untied pair the share is 0 of 1, outside the band, so "did not hold" is what D48 says, and I agree with that reading.
 
-The verdict is degenerate, however. With one pair the share can only be 0 or 1, so P7 could not have held whatever the physics; the sign test gives p = 1.0 both ways. The pair is LFP 35 C 0-100 0.5/2C a and b, at 667.81 and 419.15 EFC, so 248.66 EFC apart against a resolution of 235.25 EFC. Measure (b) gives the opposite share, 1 of 1, on the same pair. Had its resolution been 13.4 EFC larger there would be no untied pair at all. I recomputed the ties independently: they arise because the check spacing (about 100 to 700 EFC) exceeds the replicate differences (F6).
+The verdict is degenerate, however. With one pair the share can only be 0 or 1, so P7 could not have held whatever the physics; the sign test gives p = 1.0 both ways. The pair is LFP 35 C 0-100 0.5/2C a and b, at 667.81 and 419.15 EFC, so 248.66 EFC apart against a resolution of 235.25 EFC. Measure (b) gives the opposite share, 1 of 1, on the same pair. Had its resolution been 13.4 EFC larger there would be no untied pair at all. I recomputed the ties independently: they arise because the check spacing (about 100 to 700 EFC) exceeds the replicate differences. Without the tie rule, which D46 does not allow, 24 of the 60 pairs have the warmer cell shorter-lived (share 0.40, two-sided p = 0.155), inside the band. Both of my runs and the post hoc file give this number, so the registered tie rule alone turns the verdict (F6).
 
 **(iii) The 0.5C exclusion.** It is applied consistently. No cell discharged at 0.5C appears in either oriented-pair file (60 pairs each, all at 1, 2 or 3C), in P6 (36 pairs, all 1C), in the D47 pair numbers (60 and 16 pairs) or in any slope. The floor keeps all 86 pairs, as D50 (5) says, and the 0.5C cells' measures are reported with measures_used = False.
 
@@ -314,6 +314,7 @@ Including the 21 partial-window 0.5C pairs that do have measure (a), as D48's P6
 - What: D41's "last voltage within 0.02 V of the cut-off" is implemented one-sided (at or below cut-off + 0.02 V); "within" reads two-sided. D41's parenthetical "lowest discharge end voltages 1.99 V" is not true of the files: end voltages reach 1.912 V in NMC 25 C 0-100 0.5/0.5C a and 1.94 to 1.95 V in several NMC and LFP cells, as the inventory's own column shows.
 - Where: four cells. NMC 25 C 0-100 0.5/0.5C a has 552 against 546 checks, all six extra after its lifetime. In the three NMC 25 C 20-80 cells of F3, two or three more 1.8 Ah discharges join the spurious checks. Lifetimes move by at most 0.012 EFC.
 - Effect: the NMC floor mean is 0.374767 against 0.374782, and its 95th percentile 1.53971 against 1.53980.
+- Post hoc file: `results/stage3_posthoc.json`, opened after my freeze, lists the same two-sided lifetimes for these cells as my frozen primary, digit for digit.
 - Suggestion: state the one-sided rule in D41 and correct the parenthetical.
 
 **F2 (low for verdicts, medium for unscored numbers).**
@@ -329,6 +330,7 @@ Including the 21 partial-window 0.5C pairs that do have measure (a), as D48's P6
 - What: in NMC 25 C 20-80 0.5/0.5C a, b and c, coulomb-limited cycling discharges count as capacity checks. These cells cycle a fixed 1.8 Ah, 60 % of rated, at 0.5C. As the window drifts down, that discharge ends near 2.0 V for one to five cycles. Those discharges meet D41 (0.5C mean current, end voltage at the cut-off) and the half rule (0.61 of the first check). Each becomes a check at 0.61, below the 90 % threshold.
 - Effect on lifetimes: they become 68.3, 36.7 and 310.6 EFC. Without those checks (my unregistered sensitivity) they are 406.7, 489.1 and 392.1 EFC. Both codes follow D41 as written.
 - Effect on the floor: the NMC mean is 0.375 with these checks and 0.178 without. P5 fails either way, since LFP (0.175) and NCA (0.108) are above 0.10 as well. These cells do not enter the thermal share.
+- Post hoc file: `results/stage3_posthoc.json`, opened after my freeze, reports the same sensitivity. Its lifetimes without these checks and its NMC floor mean of 0.17823 agree with mine to 1.6e-15.
 - Suggestion: report the NMC floor both ways, and exclude discharges that end at the programmed cycling capacity from the check rule.
 
 **F4 (low to medium; no verdict change under either reading).**
@@ -353,6 +355,7 @@ Including the 21 partial-window 0.5C pairs that do have measure (a), as D48's P6
 **F6 (medium; the verdict is literal but carries no information).**
 
 - What: see point (ii). P7 rests on one untied pair, 13.4 EFC beyond its resolution. Measure (b) gives the opposite share on it.
+- Without the tie rule: 24 of 60, share 0.40, inside the band. That reading is not allowed by D46.
 - Suggestion: say so in the note, and add that the data show no sign signal either way.
 
 **F7 (low to medium; data quality, no verdict change).**
@@ -375,7 +378,7 @@ Including the 21 partial-window 0.5C pairs that do have measure (a), as D48's P6
 **F9 (none for scored numbers; unscored).**
 
 - What: the pipeline gives slopes (b) and ratios (c) only for NCA and NMC, since LFP pairs have no prediction. Its "one pair per group" takes the warmest and coolest cells; D46 fixes neither choice.
-- Over the pairs that do have a prediction, the all-pairs slope for measure (a) would be 1.57 (interval -2.05 to 2.71). The sign-test counts are the same either way.
+- Over the 40 pairs that do have a prediction, the all-pairs slope for measure (a) would be 1.36 under the pipeline's unit reading, with the signs agreeing in 24 pairs (the post hoc file gives the same), and 1.57 under mine (interval -2.05 to 2.71). The sign-test counts are the same either way.
 - Suggestion: say in the note which subsets carry a slope.
 
 **F10 (none; wording and representation).**
