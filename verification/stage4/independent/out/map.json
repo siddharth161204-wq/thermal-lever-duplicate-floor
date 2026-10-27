@@ -1,0 +1,164 @@
+{
+ "floors": {
+  "Geslin": {
+   "mean": 0.029909975804944276,
+   "median": 0.017457049305555493,
+   "p95": 0.08717631863980334,
+   "pairs": 45,
+   "file": "inputs/floor.json"
+  },
+  "KIT": {
+   "mean": 0.07332337183440621,
+   "median": 0.04090182488777854,
+   "p95": 0.2047513623131581,
+   "pairs": 47,
+   "file": "results/stage2_lever.json floor"
+  }
+ },
+ "map": {
+  "35 C, h = 5, Geslin": {
+   "ambient_C": 35.0,
+   "h": 5.0,
+   "floor": "Geslin",
+   "smallest_rate_offers": "2C",
+   "smallest_rate_detectable": "none up to 2C",
+   "monotone_in_rate": true
+  },
+  "35 C, h = 5, KIT": {
+   "ambient_C": 35.0,
+   "h": 5.0,
+   "floor": "KIT",
+   "smallest_rate_offers": "none up to 2C",
+   "smallest_rate_detectable": "none up to 2C",
+   "monotone_in_rate": true
+  },
+  "35 C, h = 10, Geslin": {
+   "ambient_C": 35.0,
+   "h": 10.0,
+   "floor": "Geslin",
+   "smallest_rate_offers": "2C",
+   "smallest_rate_detectable": "none up to 2C",
+   "monotone_in_rate": true
+  },
+  "35 C, h = 10, KIT": {
+   "ambient_C": 35.0,
+   "h": 10.0,
+   "floor": "KIT",
+   "smallest_rate_offers": "none up to 2C",
+   "smallest_rate_detectable": "none up to 2C",
+   "monotone_in_rate": true
+  },
+  "35 C, h = 25, Geslin": {
+   "ambient_C": 35.0,
+   "h": 25.0,
+   "floor": "Geslin",
+   "smallest_rate_offers": "2C",
+   "smallest_rate_detectable": "none up to 2C",
+   "monotone_in_rate": true
+  },
+  "35 C, h = 25, KIT": {
+   "ambient_C": 35.0,
+   "h": 25.0,
+   "floor": "KIT",
+   "smallest_rate_offers": "none up to 2C",
+   "smallest_rate_detectable": "none up to 2C",
+   "monotone_in_rate": true
+  },
+  "25 C, h = 5, Geslin": {
+   "ambient_C": 25.0,
+   "h": 5.0,
+   "floor": "Geslin",
+   "smallest_rate_offers": "2C",
+   "smallest_rate_detectable": "none up to 2C",
+   "monotone_in_rate": true
+  },
+  "25 C, h = 5, KIT": {
+   "ambient_C": 25.0,
+   "h": 5.0,
+   "floor": "KIT",
+   "smallest_rate_offers": "2C",
+   "smallest_rate_detectable": "none up to 2C",
+   "monotone_in_rate": true
+  },
+  "25 C, h = 10, Geslin": {
+   "ambient_C": 25.0,
+   "h": 10.0,
+   "floor": "Geslin",
+   "smallest_rate_offers": "2C",
+   "smallest_rate_detectable": "2C",
+   "monotone_in_rate": true
+  },
+  "25 C, h = 10, KIT": {
+   "ambient_C": 25.0,
+   "h": 10.0,
+   "floor": "KIT",
+   "smallest_rate_offers": "2C",
+   "smallest_rate_detectable": "none up to 2C",
+   "monotone_in_rate": true
+  },
+  "25 C, h = 25, Geslin": {
+   "ambient_C": 25.0,
+   "h": 25.0,
+   "floor": "Geslin",
+   "smallest_rate_offers": "2C",
+   "smallest_rate_detectable": "2C",
+   "monotone_in_rate": true
+  },
+  "25 C, h = 25, KIT": {
+   "ambient_C": 25.0,
+   "h": 25.0,
+   "floor": "KIT",
+   "smallest_rate_offers": "2C",
+   "smallest_rate_detectable": "none up to 2C",
+   "monotone_in_rate": true
+  },
+  "10 C, h = 5, Geslin": {
+   "ambient_C": 10.0,
+   "h": 5.0,
+   "floor": "Geslin",
+   "smallest_rate_offers": "C/2",
+   "smallest_rate_detectable": "1C",
+   "monotone_in_rate": true
+  },
+  "10 C, h = 5, KIT": {
+   "ambient_C": 10.0,
+   "h": 5.0,
+   "floor": "KIT",
+   "smallest_rate_offers": "1C",
+   "smallest_rate_detectable": "2C",
+   "monotone_in_rate": true
+  },
+  "10 C, h = 10, Geslin": {
+   "ambient_C": 10.0,
+   "h": 10.0,
+   "floor": "Geslin",
+   "smallest_rate_offers": "C/2",
+   "smallest_rate_detectable": "1C",
+   "monotone_in_rate": true
+  },
+  "10 C, h = 10, KIT": {
+   "ambient_C": 10.0,
+   "h": 10.0,
+   "floor": "KIT",
+   "smallest_rate_offers": "1C",
+   "smallest_rate_detectable": "2C",
+   "monotone_in_rate": true
+  },
+  "10 C, h = 25, Geslin": {
+   "ambient_C": 10.0,
+   "h": 25.0,
+   "floor": "Geslin",
+   "smallest_rate_offers": "C/2",
+   "smallest_rate_detectable": "1C",
+   "monotone_in_rate": true
+  },
+  "10 C, h = 25, KIT": {
+   "ambient_C": 10.0,
+   "h": 25.0,
+   "floor": "KIT",
+   "smallest_rate_offers": "1C",
+   "smallest_rate_detectable": "2C",
+   "monotone_in_rate": true
+  }
+ }
+}

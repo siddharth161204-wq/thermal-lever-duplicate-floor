@@ -1,0 +1,4248 @@
+{
+ "freeze_note": "written before opening any Stage 4 pipeline file",
+ "resistance_ohm": {
+  "35": 0.01871279570954531,
+  "25": 0.02664699559562891,
+  "10": 0.04794822605105359
+ },
+ "resistance_ratios": {
+  "25/35": 1.423998637575913,
+  "10/35": 2.5623229577927487
+ },
+ "resistance_failed_calls": {
+  "35": [],
+  "25": [
+   "2.0 charge"
+  ],
+  "10": [
+   "1.0 charge"
+  ]
+ },
+ "resistance_separate_code_spike_screened_ohm": {
+  "35.0": 0.01871278998608046,
+  "25.0": 0.026647091397532265,
+  "10.0": 0.04796309053703303
+ },
+ "resistance_separate_code_unscreened_ohm": {
+  "35.0": 0.01871278998608046,
+  "25.0": 0.026647091397532265,
+  "10.0": 0.05521094138111106
+ },
+ "cases": [
+  {
+   "case": "35 C C/4 h=5",
+   "spread_K": 0.09313971146576705,
+   "T_min_C": 35.85143536501033,
+   "T_max_C": 35.9445750764761,
+   "median_pct": 0.12135567591150584,
+   "p95_pct": 0.27876061874709124,
+   "offers_Geslin": false,
+   "detectable_Geslin": false,
+   "offers_KIT": false,
+   "detectable_KIT": false,
+   "cells_inside_band_secant_span": true,
+   "band_secant_span_C": [
+    24.915825004457602,
+    40.70929106389594
+   ]
+  },
+  {
+   "case": "35 C C/4 h=10",
+   "spread_K": 0.09856689798851903,
+   "T_min_C": 35.60888466110953,
+   "T_max_C": 35.70745155909805,
+   "median_pct": 0.12842698715352588,
+   "p95_pct": 0.29500380706418483,
+   "offers_Geslin": false,
+   "detectable_Geslin": false,
+   "offers_KIT": false,
+   "detectable_KIT": false,
+   "cells_inside_band_secant_span": true,
+   "band_secant_span_C": [
+    24.915825004457602,
+    40.70929106389594
+   ]
+  },
+  {
+   "case": "35 C C/4 h=25",
+   "spread_K": 0.08738568833183535,
+   "T_min_C": 35.32335024071443,
+   "T_max_C": 35.41073592904627,
+   "median_pct": 0.11385851540242083,
+   "p95_pct": 0.2615392313940778,
+   "offers_Geslin": false,
+   "detectable_Geslin": false,
+   "offers_KIT": false,
+   "detectable_KIT": false,
+   "cells_inside_band_secant_span": true,
+   "band_secant_span_C": [
+    24.915825004457602,
+    40.70929106389594
+   ]
+  },
+  {
+   "case": "35 C C/2 h=5",
+   "spread_K": 0.36822452197156963,
+   "T_min_C": 38.37860590494756,
+   "T_max_C": 38.74683042691913,
+   "median_pct": 0.479775329425141,
+   "p95_pct": 1.102070147816313,
+   "offers_Geslin": false,
+   "detectable_Geslin": false,
+   "offers_KIT": false,
+   "detectable_KIT": false,
+   "cells_inside_band_secant_span": true,
+   "band_secant_span_C": [
+    24.915825004457602,
+    40.70929106389594
+   ]
+  },
+  {
+   "case": "35 C C/2 h=10",
+   "spread_K": 0.3912788825035136,
+   "T_min_C": 37.42536370850894,
+   "T_max_C": 37.81664259101245,
+   "median_pct": 0.5098138324549674,
+   "p95_pct": 1.1710702306549345,
+   "offers_Geslin": false,
+   "detectable_Geslin": false,
+   "offers_KIT": false,
+   "detectable_KIT": false,
+   "cells_inside_band_secant_span": true,
+   "band_secant_span_C": [
+    24.915825004457602,
+    40.70929106389594
+   ]
+  },
+  {
+   "case": "35 C C/2 h=25",
+   "spread_K": 0.34849201233663507,
+   "T_min_C": 36.29185252564457,
+   "T_max_C": 36.64034453798121,
+   "median_pct": 0.4540650066584881,
+   "p95_pct": 1.0430121315448215,
+   "offers_Geslin": false,
+   "detectable_Geslin": false,
+   "offers_KIT": false,
+   "detectable_KIT": false,
+   "cells_inside_band_secant_span": true,
+   "band_secant_span_C": [
+    24.915825004457602,
+    40.70929106389594
+   ]
+  },
+  {
+   "case": "35 C 1C h=5",
+   "spread_K": 1.4072367818379803,
+   "T_min_C": 48.102157901125054,
+   "T_max_C": 49.509394682963034,
+   "median_pct": 1.8335484203238932,
+   "p95_pct": 4.211760911166252,
+   "offers_Geslin": false,
+   "detectable_Geslin": false,
+   "offers_KIT": false,
+   "detectable_KIT": false,
+   "cells_inside_band_secant_span": false,
+   "band_secant_span_C": [
+    24.915825004457602,
+    40.70929106389594
+   ]
+  },
+  {
+   "case": "35 C 1C h=10",
+   "spread_K": 1.5185728251341288,
+   "T_min_C": 44.54230386925752,
+   "T_max_C": 46.06087669439165,
+   "median_pct": 1.9786128678606754,
+   "p95_pct": 4.54498187384332,
+   "offers_Geslin": false,
+   "detectable_Geslin": false,
+   "offers_KIT": false,
+   "detectable_KIT": false,
+   "cells_inside_band_secant_span": false,
+   "band_secant_span_C": [
+    24.915825004457602,
+    40.70929106389594
+   ]
+  },
+  {
+   "case": "35 C 1C h=25",
+   "spread_K": 1.3772209171907548,
+   "T_min_C": 40.14267962642742,
+   "T_max_C": 41.51990054361818,
+   "median_pct": 1.794439478659723,
+   "p95_pct": 4.1219255351530375,
+   "offers_Geslin": false,
+   "detectable_Geslin": false,
+   "offers_KIT": false,
+   "detectable_KIT": false,
+   "cells_inside_band_secant_span": false,
+   "band_secant_span_C": [
+    24.915825004457602,
+    40.70929106389594
+   ]
+  },
+  {
+   "case": "35 C 2C h=5",
+   "spread_K": 4.773896214151989,
+   "T_min_C": 81.95208872407227,
+   "T_max_C": 86.72598493822426,
+   "median_pct": 6.220111622449316,
+   "p95_pct": 14.287936279258531,
+   "offers_Geslin": true,
+   "detectable_Geslin": false,
+   "offers_KIT": false,
+   "detectable_KIT": false,
+   "cells_inside_band_secant_span": false,
+   "band_secant_span_C": [
+    24.915825004457602,
+    40.70929106389594
+   ]
+  },
+  {
+   "case": "35 C 2C h=10",
+   "spread_K": 5.407646866468099,
+   "T_min_C": 70.8419601099767,
+   "T_max_C": 76.2496069764448,
+   "median_pct": 7.045852196054665,
+   "p95_pct": 16.184707497365036,
+   "offers_Geslin": true,
+   "detectable_Geslin": false,
+   "offers_KIT": false,
+   "detectable_KIT": false,
+   "cells_inside_band_secant_span": false,
+   "band_secant_span_C": [
+    24.915825004457602,
+    40.70929106389594
+   ]
+  },
+  {
+   "case": "35 C 2C h=25",
+   "spread_K": 5.245897465014934,
+   "T_min_C": 55.17849000943227,
+   "T_max_C": 60.4243874744472,
+   "median_pct": 6.83510204842462,
+   "p95_pct": 15.700602892342419,
+   "offers_Geslin": true,
+   "detectable_Geslin": false,
+   "offers_KIT": false,
+   "detectable_KIT": false,
+   "cells_inside_band_secant_span": false,
+   "band_secant_span_C": [
+    24.915825004457602,
+    40.70929106389594
+   ]
+  },
+  {
+   "case": "25 C C/4 h=5",
+   "spread_K": 0.14013915896248363,
+   "T_min_C": 26.287277659269137,
+   "T_max_C": 26.42741681823162,
+   "median_pct": 0.18259324717591452,
+   "p95_pct": 0.41942666611585033,
+   "offers_Geslin": false,
+   "detectable_Geslin": false,
+   "offers_KIT": false,
+   "detectable_KIT": false,
+   "cells_inside_band_secant_span": true,
+   "band_secant_span_C": [
+    24.915825004457602,
+    40.70929106389594
+   ]
+  },
+  {
+   "case": "25 C C/4 h=10",
+   "spread_K": 0.1473800041865161,
+   "T_min_C": 25.905348149799522,
+   "T_max_C": 26.05272815398604,
+   "median_pct": 0.19202765117507253,
+   "p95_pct": 0.4410980076214023,
+   "offers_Geslin": false,
+   "detectable_Geslin": false,
+   "offers_KIT": false,
+   "detectable_KIT": false,
+   "cells_inside_band_secant_span": true,
+   "band_secant_span_C": [
+    24.915825004457602,
+    40.70929106389594
+   ]
+  },
+  {
+   "case": "25 C C/4 h=25",
+   "spread_K": 0.12870763823997322,
+   "T_min_C": 25.471209234846697,
+   "T_max_C": 25.59991687308667,
+   "median_pct": 0.16769863453277226,
+   "p95_pct": 0.3852129269955779,
+   "offers_Geslin": false,
+   "detectable_Geslin": false,
+   "offers_KIT": false,
+   "detectable_KIT": false,
+   "cells_inside_band_secant_span": true,
+   "band_secant_span_C": [
+    24.915825004457602,
+    40.70929106389594
+   ]
+  },
+  {
+   "case": "25 C C/2 h=5",
+   "spread_K": 0.550902307909837,
+   "T_min_C": 30.08769334465154,
+   "T_max_C": 30.638595652561378,
+   "median_pct": 0.7177939558270907,
+   "p95_pct": 1.648811938596035,
+   "offers_Geslin": false,
+   "detectable_Geslin": false,
+   "offers_KIT": false,
+   "detectable_KIT": false,
+   "cells_inside_band_secant_span": true,
+   "band_secant_span_C": [
+    24.915825004457602,
+    40.70929106389594
+   ]
+  },
+  {
+   "case": "25 C C/2 h=10",
+   "spread_K": 0.5830632202109314,
+   "T_min_C": 28.59939058669687,
+   "T_max_C": 29.1824538069078,
+   "median_pct": 0.7596977709539442,
+   "p95_pct": 1.745067291671926,
+   "offers_Geslin": false,
+   "detectable_Geslin": false,
+   "offers_KIT": false,
+   "detectable_KIT": false,
+   "cells_inside_band_secant_span": true,
+   "band_secant_span_C": [
+    24.915825004457602,
+    40.70929106389594
+   ]
+  },
+  {
+   "case": "25 C C/2 h=25",
+   "spread_K": 0.512664806921066,
+   "T_min_C": 26.88167850966545,
+   "T_max_C": 27.394343316586514,
+   "median_pct": 0.6679726958657616,
+   "p95_pct": 1.5343697821063191,
+   "offers_Geslin": false,
+   "detectable_Geslin": false,
+   "offers_KIT": false,
+   "detectable_KIT": false,
+   "cells_inside_band_secant_span": true,
+   "band_secant_span_C": [
+    24.915825004457602,
+    40.70929106389594
+   ]
+  },
+  {
+   "case": "25 C 1C h=5",
+   "spread_K": 2.060881981504565,
+   "T_min_C": 44.439599161847866,
+   "T_max_C": 46.50048114335243,
+   "median_pct": 2.685210442500164,
+   "p95_pct": 6.1680751130530975,
+   "offers_Geslin": false,
+   "detectable_Geslin": false,
+   "offers_KIT": false,
+   "detectable_KIT": false,
+   "cells_inside_band_secant_span": false,
+   "band_secant_span_C": [
+    24.915825004457602,
+    40.70929106389594
+   ]
+  },
+  {
+   "case": "25 C 1C h=10",
+   "spread_K": 2.232727785414056,
+   "T_min_C": 39.05647223460272,
+   "T_max_C": 41.28920002001678,
+   "median_pct": 2.9091156206223587,
+   "p95_pct": 6.682397541940027,
+   "offers_Geslin": false,
+   "detectable_Geslin": false,
+   "offers_KIT": false,
+   "detectable_KIT": false,
+   "cells_inside_band_secant_span": false,
+   "band_secant_span_C": [
+    24.915825004457602,
+    40.70929106389594
+   ]
+  },
+  {
+   "case": "25 C 1C h=25",
+   "spread_K": 2.016141492431302,
+   "T_min_C": 32.47625344776395,
+   "T_max_C": 34.492394940195254,
+   "median_pct": 2.6269161638659346,
+   "p95_pct": 6.034169969684748,
+   "offers_Geslin": false,
+   "detectable_Geslin": false,
+   "offers_KIT": false,
+   "detectable_KIT": false,
+   "cells_inside_band_secant_span": true,
+   "band_secant_span_C": [
+    24.915825004457602,
+    40.70929106389594
+   ]
+  },
+  {
+   "case": "25 C 2C h=5",
+   "spread_K": 6.537342844889508,
+   "T_min_C": 91.60428172835412,
+   "T_max_C": 98.14162457324363,
+   "median_pct": 8.5177809456539,
+   "p95_pct": 19.565808265071386,
+   "offers_Geslin": true,
+   "detectable_Geslin": false,
+   "offers_KIT": true,
+   "detectable_KIT": false,
+   "cells_inside_band_secant_span": false,
+   "band_secant_span_C": [
+    24.915825004457602,
+    40.70929106389594
+   ]
+  },
+  {
+   "case": "25 C 2C h=10",
+   "spread_K": 7.568167697805961,
+   "T_min_C": 76.41495103940065,
+   "T_max_C": 83.98311873720661,
+   "median_pct": 9.860886317179913,
+   "p95_pct": 22.650994694111212,
+   "offers_Geslin": true,
+   "detectable_Geslin": true,
+   "offers_KIT": true,
+   "detectable_KIT": false,
+   "cells_inside_band_secant_span": false,
+   "band_secant_span_C": [
+    24.915825004457602,
+    40.70929106389594
+   ]
+  },
+  {
+   "case": "25 C 2C h=25",
+   "spread_K": 7.524734772598208,
+   "T_min_C": 54.10524244165646,
+   "T_max_C": 61.629977214254666,
+   "median_pct": 9.804295718900704,
+   "p95_pct": 22.52100299761171,
+   "offers_Geslin": true,
+   "detectable_Geslin": true,
+   "offers_KIT": true,
+   "detectable_KIT": false,
+   "cells_inside_band_secant_span": false,
+   "band_secant_span_C": [
+    24.915825004457602,
+    40.70929106389594
+   ]
+  },
+  {
+   "case": "10 C C/4 h=5",
+   "spread_K": 0.27301050347381306,
+   "T_min_C": 12.527592811432044,
+   "T_max_C": 12.800603314905857,
+   "median_pct": 0.977390461657774,
+   "p95_pct": 2.023844860911417,
+   "offers_Geslin": false,
+   "detectable_Geslin": false,
+   "offers_KIT": false,
+   "detectable_KIT": false,
+   "cells_inside_band_secant_span": true,
+   "band_secant_span_C": [
+    10.868361100482929,
+    27.261035205636933
+   ]
+  },
+  {
+   "case": "10 C C/4 h=10",
+   "spread_K": 0.2843332465708386,
+   "T_min_C": 11.733497028117256,
+   "T_max_C": 12.017830274688095,
+   "median_pct": 1.0179264152640266,
+   "p95_pct": 2.1077811019598616,
+   "offers_Geslin": false,
+   "detectable_Geslin": false,
+   "offers_KIT": false,
+   "detectable_KIT": false,
+   "cells_inside_band_secant_span": true,
+   "band_secant_span_C": [
+    10.868361100482929,
+    27.261035205636933
+   ]
+  },
+  {
+   "case": "10 C C/4 h=25",
+   "spread_K": 0.24286873352224347,
+   "T_min_C": 10.875984785990909,
+   "T_max_C": 11.118853519513152,
+   "median_pct": 0.8694815055066683,
+   "p95_pct": 1.800401933115382,
+   "offers_Geslin": false,
+   "detectable_Geslin": false,
+   "offers_KIT": false,
+   "detectable_KIT": false,
+   "cells_inside_band_secant_span": true,
+   "band_secant_span_C": [
+    10.868361100482929,
+    27.261035205636933
+   ]
+  },
+  {
+   "case": "10 C C/2 h=5",
+   "spread_K": 1.056627572857849,
+   "T_min_C": 19.87973502869471,
+   "T_max_C": 20.93636260155256,
+   "median_pct": 3.7827764796416545,
+   "p95_pct": 7.832849857480957,
+   "offers_Geslin": true,
+   "detectable_Geslin": false,
+   "offers_KIT": false,
+   "detectable_KIT": false,
+   "cells_inside_band_secant_span": true,
+   "band_secant_span_C": [
+    10.868361100482929,
+    27.261035205636933
+   ]
+  },
+  {
+   "case": "10 C C/2 h=10",
+   "spread_K": 1.1146453873019482,
+   "T_min_C": 16.856544192383126,
+   "T_max_C": 17.971189579685074,
+   "median_pct": 3.990482988081292,
+   "p95_pct": 8.26293974087354,
+   "offers_Geslin": true,
+   "detectable_Geslin": false,
+   "offers_KIT": false,
+   "detectable_KIT": false,
+   "cells_inside_band_secant_span": true,
+   "band_secant_span_C": [
+    10.868361100482929,
+    27.261035205636933
+   ]
+  },
+  {
+   "case": "10 C C/2 h=25",
+   "spread_K": 0.9643607031360943,
+   "T_min_C": 13.493717508335806,
+   "T_max_C": 14.4580782114719,
+   "median_pct": 3.4524567401239645,
+   "p95_pct": 7.148869469390623,
+   "offers_Geslin": true,
+   "detectable_Geslin": false,
+   "offers_KIT": false,
+   "detectable_KIT": false,
+   "cells_inside_band_secant_span": true,
+   "band_secant_span_C": [
+    10.868361100482929,
+    27.261035205636933
+   ]
+  },
+  {
+   "case": "10 C 1C h=5",
+   "spread_K": 3.7356579331889748,
+   "T_min_C": 46.304161154685005,
+   "T_max_C": 50.03981908787398,
+   "median_pct": 13.373831356145308,
+   "p95_pct": 27.69267853803529,
+   "offers_Geslin": true,
+   "detectable_Geslin": true,
+   "offers_KIT": true,
+   "detectable_KIT": false,
+   "cells_inside_band_secant_span": false,
+   "band_secant_span_C": [
+    10.868361100482929,
+    27.261035205636933
+   ]
+  },
+  {
+   "case": "10 C 1C h=10",
+   "spread_K": 4.117951479423084,
+   "T_min_C": 36.25252798793724,
+   "T_max_C": 40.370479467360326,
+   "median_pct": 14.742460258287101,
+   "p95_pct": 30.52664579959054,
+   "offers_Geslin": true,
+   "detectable_Geslin": true,
+   "offers_KIT": true,
+   "detectable_KIT": false,
+   "cells_inside_band_secant_span": false,
+   "band_secant_span_C": [
+    10.868361100482929,
+    27.261035205636933
+   ]
+  },
+  {
+   "case": "10 C 1C h=25",
+   "spread_K": 3.743915284326704,
+   "T_min_C": 23.81125822455283,
+   "T_max_C": 27.555173508879534,
+   "median_pct": 13.403393062152524,
+   "p95_pct": 27.753890826398532,
+   "offers_Geslin": true,
+   "detectable_Geslin": true,
+   "offers_KIT": true,
+   "detectable_KIT": false,
+   "cells_inside_band_secant_span": false,
+   "band_secant_span_C": [
+    10.868361100482929,
+    27.261035205636933
+   ]
+  },
+  {
+   "case": "10 C 2C h=5",
+   "spread_K": 10.172817683955202,
+   "T_min_C": 122.45140980836499,
+   "T_max_C": 132.6242274923202,
+   "median_pct": 36.419166464176165,
+   "p95_pct": 75.4117681506577,
+   "offers_Geslin": true,
+   "detectable_Geslin": true,
+   "offers_KIT": true,
+   "detectable_KIT": true,
+   "cells_inside_band_secant_span": false,
+   "band_secant_span_C": [
+    10.868361100482929,
+    27.261035205636933
+   ]
+  },
+  {
+   "case": "10 C 2C h=10",
+   "spread_K": 12.337615112587287,
+   "T_min_C": 99.92641851781696,
+   "T_max_C": 112.26403363040424,
+   "median_pct": 44.16924322402224,
+   "p95_pct": 91.45955420688733,
+   "offers_Geslin": true,
+   "detectable_Geslin": true,
+   "offers_KIT": true,
+   "detectable_KIT": true,
+   "cells_inside_band_secant_span": false,
+   "band_secant_span_C": [
+    10.868361100482929,
+    27.261035205636933
+   ]
+  },
+  {
+   "case": "10 C 2C h=25",
+   "spread_K": 13.223473750179892,
+   "T_min_C": 62.65646503123787,
+   "T_max_C": 75.87993878141776,
+   "median_pct": 47.3406588719305,
+   "p95_pct": 98.02648268902814,
+   "offers_Geslin": true,
+   "detectable_Geslin": true,
+   "offers_KIT": true,
+   "detectable_KIT": true,
+   "cells_inside_band_secant_span": false,
+   "band_secant_span_C": [
+    10.868361100482929,
+    27.261035205636933
+   ]
+  }
+ ],
+ "map": {
+  "35 C, h = 5, Geslin": {
+   "ambient_C": 35.0,
+   "h": 5.0,
+   "floor": "Geslin",
+   "smallest_rate_offers": "2C",
+   "smallest_rate_detectable": "none up to 2C",
+   "monotone_in_rate": true
+  },
+  "35 C, h = 5, KIT": {
+   "ambient_C": 35.0,
+   "h": 5.0,
+   "floor": "KIT",
+   "smallest_rate_offers": "none up to 2C",
+   "smallest_rate_detectable": "none up to 2C",
+   "monotone_in_rate": true
+  },
+  "35 C, h = 10, Geslin": {
+   "ambient_C": 35.0,
+   "h": 10.0,
+   "floor": "Geslin",
+   "smallest_rate_offers": "2C",
+   "smallest_rate_detectable": "none up to 2C",
+   "monotone_in_rate": true
+  },
+  "35 C, h = 10, KIT": {
+   "ambient_C": 35.0,
+   "h": 10.0,
+   "floor": "KIT",
+   "smallest_rate_offers": "none up to 2C",
+   "smallest_rate_detectable": "none up to 2C",
+   "monotone_in_rate": true
+  },
+  "35 C, h = 25, Geslin": {
+   "ambient_C": 35.0,
+   "h": 25.0,
+   "floor": "Geslin",
+   "smallest_rate_offers": "2C",
+   "smallest_rate_detectable": "none up to 2C",
+   "monotone_in_rate": true
+  },
+  "35 C, h = 25, KIT": {
+   "ambient_C": 35.0,
+   "h": 25.0,
+   "floor": "KIT",
+   "smallest_rate_offers": "none up to 2C",
+   "smallest_rate_detectable": "none up to 2C",
+   "monotone_in_rate": true
+  },
+  "25 C, h = 5, Geslin": {
+   "ambient_C": 25.0,
+   "h": 5.0,
+   "floor": "Geslin",
+   "smallest_rate_offers": "2C",
+   "smallest_rate_detectable": "none up to 2C",
+   "monotone_in_rate": true
+  },
+  "25 C, h = 5, KIT": {
+   "ambient_C": 25.0,
+   "h": 5.0,
+   "floor": "KIT",
+   "smallest_rate_offers": "2C",
+   "smallest_rate_detectable": "none up to 2C",
+   "monotone_in_rate": true
+  },
+  "25 C, h = 10, Geslin": {
+   "ambient_C": 25.0,
+   "h": 10.0,
+   "floor": "Geslin",
+   "smallest_rate_offers": "2C",
+   "smallest_rate_detectable": "2C",
+   "monotone_in_rate": true
+  },
+  "25 C, h = 10, KIT": {
+   "ambient_C": 25.0,
+   "h": 10.0,
+   "floor": "KIT",
+   "smallest_rate_offers": "2C",
+   "smallest_rate_detectable": "none up to 2C",
+   "monotone_in_rate": true
+  },
+  "25 C, h = 25, Geslin": {
+   "ambient_C": 25.0,
+   "h": 25.0,
+   "floor": "Geslin",
+   "smallest_rate_offers": "2C",
+   "smallest_rate_detectable": "2C",
+   "monotone_in_rate": true
+  },
+  "25 C, h = 25, KIT": {
+   "ambient_C": 25.0,
+   "h": 25.0,
+   "floor": "KIT",
+   "smallest_rate_offers": "2C",
+   "smallest_rate_detectable": "none up to 2C",
+   "monotone_in_rate": true
+  },
+  "10 C, h = 5, Geslin": {
+   "ambient_C": 10.0,
+   "h": 5.0,
+   "floor": "Geslin",
+   "smallest_rate_offers": "C/2",
+   "smallest_rate_detectable": "1C",
+   "monotone_in_rate": true
+  },
+  "10 C, h = 5, KIT": {
+   "ambient_C": 10.0,
+   "h": 5.0,
+   "floor": "KIT",
+   "smallest_rate_offers": "1C",
+   "smallest_rate_detectable": "2C",
+   "monotone_in_rate": true
+  },
+  "10 C, h = 10, Geslin": {
+   "ambient_C": 10.0,
+   "h": 10.0,
+   "floor": "Geslin",
+   "smallest_rate_offers": "C/2",
+   "smallest_rate_detectable": "1C",
+   "monotone_in_rate": true
+  },
+  "10 C, h = 10, KIT": {
+   "ambient_C": 10.0,
+   "h": 10.0,
+   "floor": "KIT",
+   "smallest_rate_offers": "1C",
+   "smallest_rate_detectable": "2C",
+   "monotone_in_rate": true
+  },
+  "10 C, h = 25, Geslin": {
+   "ambient_C": 10.0,
+   "h": 25.0,
+   "floor": "Geslin",
+   "smallest_rate_offers": "C/2",
+   "smallest_rate_detectable": "1C",
+   "monotone_in_rate": true
+  },
+  "10 C, h = 25, KIT": {
+   "ambient_C": 10.0,
+   "h": 25.0,
+   "floor": "KIT",
+   "smallest_rate_offers": "1C",
+   "smallest_rate_detectable": "2C",
+   "monotone_in_rate": true
+  }
+ },
+ "experiment": [
+  {
+   "group": "C1",
+   "lever": "KIT 10-100 1.00/1.00C",
+   "dT_K": 1.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 876,
+   "n_sim_10k": 868,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10-100 1.00/1.00C",
+   "dT_K": 1.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 621,
+   "n_sim_10k": 614,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10-100 1.00/1.00C",
+   "dT_K": 1.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 4777,
+   "n_sim_10k": 4767,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10-100 1.00/1.00C",
+   "dT_K": 1.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 3721,
+   "n_sim_10k": 3737,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "Sandia NMC 25 to 35 C",
+   "dT_K": 1.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 29,
+   "n_sim_10k": 26,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "Sandia NMC 25 to 35 C",
+   "dT_K": 1.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 21,
+   "n_sim_10k": 21,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "Sandia NMC 25 to 35 C",
+   "dT_K": 1.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 145,
+   "n_sim_10k": 144,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "Sandia NMC 25 to 35 C",
+   "dT_K": 1.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 113,
+   "n_sim_10k": 114,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10 to 25 C median of |s| (0-100 1.67/1.00C and 10-100 0.33/1.00C)",
+   "dT_K": 1.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 14,
+   "n_sim_10k": 13,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10 to 25 C median of |s| (0-100 1.67/1.00C and 10-100 0.33/1.00C)",
+   "dT_K": 1.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 11,
+   "n_sim_10k": 11,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10 to 25 C median of |s| (0-100 1.67/1.00C and 10-100 0.33/1.00C)",
+   "dT_K": 1.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 68,
+   "n_sim_10k": 65,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10 to 25 C median of |s| (0-100 1.67/1.00C and 10-100 0.33/1.00C)",
+   "dT_K": 1.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 53,
+   "n_sim_10k": 54,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10-90 1.67/1.00C",
+   "dT_K": 1.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 160,
+   "n_sim_10k": 157,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10-90 1.67/1.00C",
+   "dT_K": 1.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 114,
+   "n_sim_10k": 113,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10-90 1.67/1.00C",
+   "dT_K": 1.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 862,
+   "n_sim_10k": 864,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10-90 1.67/1.00C",
+   "dT_K": 1.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 672,
+   "n_sim_10k": 669,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10-100 1.00/1.00C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 221,
+   "n_sim_10k": 218,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10-100 1.00/1.00C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 157,
+   "n_sim_10k": 156,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10-100 1.00/1.00C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 1196,
+   "n_sim_10k": 1198,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10-100 1.00/1.00C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 932,
+   "n_sim_10k": 929,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "Sandia NMC 25 to 35 C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 9,
+   "n_sim_10k": 8,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "Sandia NMC 25 to 35 C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 7,
+   "n_sim_10k": 7,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "Sandia NMC 25 to 35 C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 38,
+   "n_sim_10k": 37,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "Sandia NMC 25 to 35 C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 30,
+   "n_sim_10k": 31,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10 to 25 C median of |s| (0-100 1.67/1.00C and 10-100 0.33/1.00C)",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 6,
+   "n_sim_10k": 5,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10 to 25 C median of |s| (0-100 1.67/1.00C and 10-100 0.33/1.00C)",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 5,
+   "n_sim_10k": 5,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10 to 25 C median of |s| (0-100 1.67/1.00C and 10-100 0.33/1.00C)",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 19,
+   "n_sim_10k": 18,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10 to 25 C median of |s| (0-100 1.67/1.00C and 10-100 0.33/1.00C)",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 15,
+   "n_sim_10k": 15,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10-90 1.67/1.00C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 42,
+   "n_sim_10k": 40,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10-90 1.67/1.00C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 30,
+   "n_sim_10k": 30,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10-90 1.67/1.00C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 217,
+   "n_sim_10k": 217,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10-90 1.67/1.00C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 170,
+   "n_sim_10k": 172,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10-100 1.00/1.00C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 37,
+   "n_sim_10k": 35,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10-100 1.00/1.00C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 27,
+   "n_sim_10k": 27,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10-100 1.00/1.00C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 193,
+   "n_sim_10k": 191,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10-100 1.00/1.00C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 151,
+   "n_sim_10k": 151,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "Sandia NMC 25 to 35 C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 4,
+   "n_sim_10k": 3,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "Sandia NMC 25 to 35 C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 4,
+   "n_sim_10k": 4,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "Sandia NMC 25 to 35 C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 8,
+   "n_sim_10k": 7,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "Sandia NMC 25 to 35 C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 7,
+   "n_sim_10k": 7,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10 to 25 C median of |s| (0-100 1.67/1.00C and 10-100 0.33/1.00C)",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 3,
+   "n_sim_10k": 3,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10 to 25 C median of |s| (0-100 1.67/1.00C and 10-100 0.33/1.00C)",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 3,
+   "n_sim_10k": 3,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10 to 25 C median of |s| (0-100 1.67/1.00C and 10-100 0.33/1.00C)",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 5,
+   "n_sim_10k": 5,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10 to 25 C median of |s| (0-100 1.67/1.00C and 10-100 0.33/1.00C)",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 5,
+   "n_sim_10k": 5,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10-90 1.67/1.00C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 9,
+   "n_sim_10k": 8,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10-90 1.67/1.00C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 7,
+   "n_sim_10k": 7,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10-90 1.67/1.00C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 37,
+   "n_sim_10k": 36,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10-90 1.67/1.00C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 29,
+   "n_sim_10k": 30,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10-100 1.00/1.00C",
+   "dT_K": 10.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 11,
+   "n_sim_10k": 10,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10-100 1.00/1.00C",
+   "dT_K": 10.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 9,
+   "n_sim_10k": 9,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10-100 1.00/1.00C",
+   "dT_K": 10.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 50,
+   "n_sim_10k": 49,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10-100 1.00/1.00C",
+   "dT_K": 10.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 40,
+   "n_sim_10k": 39,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "Sandia NMC 25 to 35 C",
+   "dT_K": 10.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 3,
+   "n_sim_10k": 3,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "Sandia NMC 25 to 35 C",
+   "dT_K": 10.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 3,
+   "n_sim_10k": 3,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "Sandia NMC 25 to 35 C",
+   "dT_K": 10.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 4,
+   "n_sim_10k": 4,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "Sandia NMC 25 to 35 C",
+   "dT_K": 10.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 4,
+   "n_sim_10k": 4,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10 to 25 C median of |s| (0-100 1.67/1.00C and 10-100 0.33/1.00C)",
+   "dT_K": 10.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 3,
+   "n_sim_10k": 3,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10 to 25 C median of |s| (0-100 1.67/1.00C and 10-100 0.33/1.00C)",
+   "dT_K": 10.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 3,
+   "n_sim_10k": 3,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10 to 25 C median of |s| (0-100 1.67/1.00C and 10-100 0.33/1.00C)",
+   "dT_K": 10.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 3,
+   "n_sim_10k": 3,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10 to 25 C median of |s| (0-100 1.67/1.00C and 10-100 0.33/1.00C)",
+   "dT_K": 10.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 3,
+   "n_sim_10k": 3,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10-90 1.67/1.00C",
+   "dT_K": 10.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 4,
+   "n_sim_10k": 4,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10-90 1.67/1.00C",
+   "dT_K": 10.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 4,
+   "n_sim_10k": 4,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10-90 1.67/1.00C",
+   "dT_K": 10.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 11,
+   "n_sim_10k": 10,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C1",
+   "lever": "KIT 10-90 1.67/1.00C",
+   "dT_K": 10.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 9,
+   "n_sim_10k": 9,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 25,
+   "n_sim_10k": 24,
+   "V4_pass_5pct": true,
+   "central": true
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 19,
+   "n_sim_10k": 19,
+   "V4_pass_5pct": true,
+   "central": true
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 128,
+   "n_sim_10k": 127,
+   "V4_pass_5pct": true,
+   "central": true
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 100,
+   "n_sim_10k": 100,
+   "V4_pass_5pct": true,
+   "central": true
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 0-100 0.33/1.00C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 103,
+   "n_sim_10k": 100,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 0-100 0.33/1.00C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 73,
+   "n_sim_10k": 73,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 0-100 0.33/1.00C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 549,
+   "n_sim_10k": 545,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 0-100 0.33/1.00C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 429,
+   "n_sim_10k": 426,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 0-100 1.00/1.00C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 8,
+   "n_sim_10k": 7,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 0-100 1.00/1.00C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 7,
+   "n_sim_10k": 6,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 0-100 1.00/1.00C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 32,
+   "n_sim_10k": 31,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 0-100 1.00/1.00C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 25,
+   "n_sim_10k": 25,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 0-100 1.67/1.00C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 6,
+   "n_sim_10k": 5,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 0-100 1.67/1.00C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 5,
+   "n_sim_10k": 5,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 0-100 1.67/1.00C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 20,
+   "n_sim_10k": 19,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 0-100 1.67/1.00C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 16,
+   "n_sim_10k": 17,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-100 0.33/0.33C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 24,
+   "n_sim_10k": 22,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-100 0.33/0.33C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 17,
+   "n_sim_10k": 18,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-100 0.33/0.33C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 117,
+   "n_sim_10k": 114,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-100 0.33/0.33C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 92,
+   "n_sim_10k": 93,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-100 0.33/1.00C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 89,
+   "n_sim_10k": 85,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-100 0.33/1.00C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 63,
+   "n_sim_10k": 63,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-100 0.33/1.00C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 473,
+   "n_sim_10k": 470,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-100 0.33/1.00C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 369,
+   "n_sim_10k": 367,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-100 1.00/1.00C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 221,
+   "n_sim_10k": 218,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-100 1.00/1.00C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 157,
+   "n_sim_10k": 155,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-100 1.00/1.00C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 1196,
+   "n_sim_10k": 1188,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-100 1.00/1.00C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 932,
+   "n_sim_10k": 939,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-100 1.67/1.00C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 13,
+   "n_sim_10k": 12,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-100 1.67/1.00C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 10,
+   "n_sim_10k": 10,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-100 1.67/1.00C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 60,
+   "n_sim_10k": 60,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-100 1.67/1.00C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 48,
+   "n_sim_10k": 47,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-90 0.33/0.33C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 13,
+   "n_sim_10k": 12,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-90 0.33/0.33C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 10,
+   "n_sim_10k": 10,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-90 0.33/0.33C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 61,
+   "n_sim_10k": 59,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-90 0.33/0.33C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 48,
+   "n_sim_10k": 47,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-90 0.33/1.00C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 35,
+   "n_sim_10k": 33,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-90 0.33/1.00C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 26,
+   "n_sim_10k": 25,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-90 0.33/1.00C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 182,
+   "n_sim_10k": 177,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-90 0.33/1.00C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 142,
+   "n_sim_10k": 140,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-90 1.00/1.00C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 1042,
+   "n_sim_10k": 1042,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-90 1.00/1.00C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 739,
+   "n_sim_10k": 739,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-90 1.00/1.00C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 5684,
+   "n_sim_10k": 5661,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-90 1.00/1.00C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 4428,
+   "n_sim_10k": 4440,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-90 1.67/1.00C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 42,
+   "n_sim_10k": 40,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-90 1.67/1.00C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 30,
+   "n_sim_10k": 31,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-90 1.67/1.00C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 217,
+   "n_sim_10k": 214,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-90 1.67/1.00C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 170,
+   "n_sim_10k": 169,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "Sandia NMC 25 to 35 C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 9,
+   "n_sim_10k": 8,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "Sandia NMC 25 to 35 C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 7,
+   "n_sim_10k": 7,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "Sandia NMC 25 to 35 C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 38,
+   "n_sim_10k": 37,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "Sandia NMC 25 to 35 C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 30,
+   "n_sim_10k": 30,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 5,
+   "n_sim_10k": 5,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 4,
+   "n_sim_10k": 4,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 16,
+   "n_sim_10k": 14,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 13,
+   "n_sim_10k": 13,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 0-100 0.33/1.00C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 7,
+   "n_sim_10k": 6,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 0-100 0.33/1.00C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 6,
+   "n_sim_10k": 6,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 0-100 0.33/1.00C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 25,
+   "n_sim_10k": 23,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 0-100 0.33/1.00C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 20,
+   "n_sim_10k": 20,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 0-100 1.00/1.00C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 6,
+   "n_sim_10k": 5,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 0-100 1.00/1.00C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 5,
+   "n_sim_10k": 5,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 0-100 1.00/1.00C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 22,
+   "n_sim_10k": 20,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 0-100 1.00/1.00C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 17,
+   "n_sim_10k": 17,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 0-100 1.67/1.00C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 6,
+   "n_sim_10k": 5,
+   "V4_pass_5pct": false,
+   "central": true
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 0-100 1.67/1.00C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 5,
+   "n_sim_10k": 5,
+   "V4_pass_5pct": true,
+   "central": true
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 0-100 1.67/1.00C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 19,
+   "n_sim_10k": 17,
+   "V4_pass_5pct": false,
+   "central": true
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 0-100 1.67/1.00C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 15,
+   "n_sim_10k": 15,
+   "V4_pass_5pct": true,
+   "central": true
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-100 0.33/0.33C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 11,
+   "n_sim_10k": 9,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-100 0.33/0.33C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 8,
+   "n_sim_10k": 8,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-100 0.33/0.33C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 47,
+   "n_sim_10k": 46,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-100 0.33/0.33C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 37,
+   "n_sim_10k": 37,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-100 0.33/1.00C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 6,
+   "n_sim_10k": 5,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-100 0.33/1.00C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 5,
+   "n_sim_10k": 5,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-100 0.33/1.00C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 19,
+   "n_sim_10k": 17,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-100 0.33/1.00C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 15,
+   "n_sim_10k": 15,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-100 1.00/1.00C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 5,
+   "n_sim_10k": 4,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-100 1.00/1.00C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 4,
+   "n_sim_10k": 4,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-100 1.00/1.00C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 15,
+   "n_sim_10k": 14,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-100 1.00/1.00C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 12,
+   "n_sim_10k": 12,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-100 1.67/1.00C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 3,
+   "n_sim_10k": 3,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-100 1.67/1.00C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 3,
+   "n_sim_10k": 3,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-100 1.67/1.00C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 4,
+   "n_sim_10k": 4,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-100 1.67/1.00C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 4,
+   "n_sim_10k": 4,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-90 0.33/0.33C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 15,
+   "n_sim_10k": 13,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-90 0.33/0.33C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 12,
+   "n_sim_10k": 12,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-90 0.33/0.33C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 71,
+   "n_sim_10k": 70,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-90 0.33/0.33C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 56,
+   "n_sim_10k": 56,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-90 0.33/1.00C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 11,
+   "n_sim_10k": 9,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-90 0.33/1.00C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 8,
+   "n_sim_10k": 8,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-90 0.33/1.00C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 46,
+   "n_sim_10k": 44,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-90 0.33/1.00C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 36,
+   "n_sim_10k": 36,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-90 1.00/1.00C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 5,
+   "n_sim_10k": 5,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-90 1.00/1.00C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 5,
+   "n_sim_10k": 5,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-90 1.00/1.00C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 17,
+   "n_sim_10k": 16,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-90 1.00/1.00C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 14,
+   "n_sim_10k": 14,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-90 1.67/1.00C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 4,
+   "n_sim_10k": 4,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-90 1.67/1.00C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 4,
+   "n_sim_10k": 4,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-90 1.67/1.00C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 10,
+   "n_sim_10k": 9,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-90 1.67/1.00C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 9,
+   "n_sim_10k": 9,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "Sandia NMC 15 to 25 C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 4,
+   "n_sim_10k": 4,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "Sandia NMC 15 to 25 C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 4,
+   "n_sim_10k": 4,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "Sandia NMC 15 to 25 C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 9,
+   "n_sim_10k": 8,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "Sandia NMC 15 to 25 C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 8,
+   "n_sim_10k": 8,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "Sandia NCA 15 to 25 C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 25,
+   "n_sim_10k": 23,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "Sandia NCA 15 to 25 C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 18,
+   "n_sim_10k": 19,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "Sandia NCA 15 to 25 C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 125,
+   "n_sim_10k": 124,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "Sandia NCA 15 to 25 C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 98,
+   "n_sim_10k": 97,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "Sandia LFP 15 to 25 C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 6,
+   "n_sim_10k": 5,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "Sandia LFP 15 to 25 C",
+   "dT_K": 2.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 5,
+   "n_sim_10k": 5,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "Sandia LFP 15 to 25 C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 21,
+   "n_sim_10k": 20,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "Sandia LFP 15 to 25 C",
+   "dT_K": 2.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 17,
+   "n_sim_10k": 17,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 6,
+   "n_sim_10k": 6,
+   "V4_pass_5pct": true,
+   "central": true
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 5,
+   "n_sim_10k": 5,
+   "V4_pass_5pct": true,
+   "central": true
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 23,
+   "n_sim_10k": 21,
+   "V4_pass_5pct": false,
+   "central": true
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 18,
+   "n_sim_10k": 18,
+   "V4_pass_5pct": true,
+   "central": true
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 0-100 0.33/1.00C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 19,
+   "n_sim_10k": 17,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 0-100 0.33/1.00C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 14,
+   "n_sim_10k": 14,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 0-100 0.33/1.00C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 90,
+   "n_sim_10k": 89,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 0-100 0.33/1.00C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 71,
+   "n_sim_10k": 70,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 0-100 1.00/1.00C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 4,
+   "n_sim_10k": 3,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 0-100 1.00/1.00C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 3,
+   "n_sim_10k": 3,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 0-100 1.00/1.00C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 7,
+   "n_sim_10k": 7,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 0-100 1.00/1.00C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 6,
+   "n_sim_10k": 6,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 0-100 1.67/1.00C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 3,
+   "n_sim_10k": 3,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 0-100 1.67/1.00C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 3,
+   "n_sim_10k": 3,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 0-100 1.67/1.00C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 6,
+   "n_sim_10k": 5,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 0-100 1.67/1.00C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 5,
+   "n_sim_10k": 5,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-100 0.33/0.33C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 6,
+   "n_sim_10k": 5,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-100 0.33/0.33C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 5,
+   "n_sim_10k": 5,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-100 0.33/0.33C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 21,
+   "n_sim_10k": 19,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-100 0.33/0.33C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 17,
+   "n_sim_10k": 17,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-100 0.33/1.00C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 16,
+   "n_sim_10k": 14,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-100 0.33/1.00C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 12,
+   "n_sim_10k": 12,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-100 0.33/1.00C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 78,
+   "n_sim_10k": 76,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-100 0.33/1.00C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 61,
+   "n_sim_10k": 61,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-100 1.00/1.00C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 37,
+   "n_sim_10k": 35,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-100 1.00/1.00C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 27,
+   "n_sim_10k": 27,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-100 1.00/1.00C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 193,
+   "n_sim_10k": 191,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-100 1.00/1.00C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 151,
+   "n_sim_10k": 153,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-100 1.67/1.00C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 4,
+   "n_sim_10k": 4,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-100 1.67/1.00C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 4,
+   "n_sim_10k": 4,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-100 1.67/1.00C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 12,
+   "n_sim_10k": 11,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-100 1.67/1.00C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 10,
+   "n_sim_10k": 10,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-90 0.33/0.33C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 4,
+   "n_sim_10k": 4,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-90 0.33/0.33C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 4,
+   "n_sim_10k": 4,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-90 0.33/0.33C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 12,
+   "n_sim_10k": 11,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-90 0.33/0.33C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 10,
+   "n_sim_10k": 10,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-90 0.33/1.00C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 8,
+   "n_sim_10k": 7,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-90 0.33/1.00C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 6,
+   "n_sim_10k": 6,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-90 0.33/1.00C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 31,
+   "n_sim_10k": 30,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-90 0.33/1.00C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 25,
+   "n_sim_10k": 25,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-90 1.00/1.00C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 169,
+   "n_sim_10k": 164,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-90 1.00/1.00C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 120,
+   "n_sim_10k": 121,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-90 1.00/1.00C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 912,
+   "n_sim_10k": 914,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-90 1.00/1.00C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 710,
+   "n_sim_10k": 712,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-90 1.67/1.00C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 9,
+   "n_sim_10k": 8,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-90 1.67/1.00C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 7,
+   "n_sim_10k": 7,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-90 1.67/1.00C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 37,
+   "n_sim_10k": 35,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "KIT 10-90 1.67/1.00C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 29,
+   "n_sim_10k": 30,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "Sandia NMC 25 to 35 C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 4,
+   "n_sim_10k": 4,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "Sandia NMC 25 to 35 C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 4,
+   "n_sim_10k": 4,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "Sandia NMC 25 to 35 C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 8,
+   "n_sim_10k": 7,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 warm chamber 35 C",
+   "lever": "Sandia NMC 25 to 35 C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 7,
+   "n_sim_10k": 7,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 3,
+   "n_sim_10k": 3,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 3,
+   "n_sim_10k": 3,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 5,
+   "n_sim_10k": 4,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 4,
+   "n_sim_10k": 4,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 0-100 0.33/1.00C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 3,
+   "n_sim_10k": 3,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 0-100 0.33/1.00C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 3,
+   "n_sim_10k": 3,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 0-100 0.33/1.00C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 6,
+   "n_sim_10k": 6,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 0-100 0.33/1.00C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 5,
+   "n_sim_10k": 5,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 0-100 1.00/1.00C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 3,
+   "n_sim_10k": 3,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 0-100 1.00/1.00C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 3,
+   "n_sim_10k": 3,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 0-100 1.00/1.00C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 6,
+   "n_sim_10k": 5,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 0-100 1.00/1.00C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 5,
+   "n_sim_10k": 5,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 0-100 1.67/1.00C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 3,
+   "n_sim_10k": 3,
+   "V4_pass_5pct": true,
+   "central": true
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 0-100 1.67/1.00C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 3,
+   "n_sim_10k": 3,
+   "V4_pass_5pct": true,
+   "central": true
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 0-100 1.67/1.00C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 5,
+   "n_sim_10k": 5,
+   "V4_pass_5pct": true,
+   "central": true
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 0-100 1.67/1.00C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 5,
+   "n_sim_10k": 5,
+   "V4_pass_5pct": true,
+   "central": true
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-100 0.33/0.33C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 4,
+   "n_sim_10k": 4,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-100 0.33/0.33C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 4,
+   "n_sim_10k": 4,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-100 0.33/0.33C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 10,
+   "n_sim_10k": 9,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-100 0.33/0.33C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 8,
+   "n_sim_10k": 8,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-100 0.33/1.00C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 3,
+   "n_sim_10k": 3,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-100 0.33/1.00C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 3,
+   "n_sim_10k": 3,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-100 0.33/1.00C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 5,
+   "n_sim_10k": 5,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-100 0.33/1.00C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 5,
+   "n_sim_10k": 5,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-100 1.00/1.00C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 3,
+   "n_sim_10k": 3,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-100 1.00/1.00C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 3,
+   "n_sim_10k": 3,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-100 1.00/1.00C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 5,
+   "n_sim_10k": 4,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-100 1.00/1.00C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 4,
+   "n_sim_10k": 4,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-100 1.67/1.00C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 2,
+   "n_sim_10k": 2,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-100 1.67/1.00C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 2,
+   "n_sim_10k": 2,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-100 1.67/1.00C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 3,
+   "n_sim_10k": 3,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-100 1.67/1.00C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 3,
+   "n_sim_10k": 3,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-90 0.33/0.33C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 5,
+   "n_sim_10k": 4,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-90 0.33/0.33C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 4,
+   "n_sim_10k": 4,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-90 0.33/0.33C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 14,
+   "n_sim_10k": 12,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-90 0.33/0.33C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 11,
+   "n_sim_10k": 11,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-90 0.33/1.00C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 4,
+   "n_sim_10k": 4,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-90 0.33/1.00C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 4,
+   "n_sim_10k": 4,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-90 0.33/1.00C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 10,
+   "n_sim_10k": 9,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-90 0.33/1.00C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 8,
+   "n_sim_10k": 8,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-90 1.00/1.00C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 3,
+   "n_sim_10k": 3,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-90 1.00/1.00C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 3,
+   "n_sim_10k": 3,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-90 1.00/1.00C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 5,
+   "n_sim_10k": 5,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-90 1.00/1.00C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 5,
+   "n_sim_10k": 5,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-90 1.67/1.00C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 3,
+   "n_sim_10k": 3,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-90 1.67/1.00C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 3,
+   "n_sim_10k": 3,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-90 1.67/1.00C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 4,
+   "n_sim_10k": 4,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "KIT 10-90 1.67/1.00C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 4,
+   "n_sim_10k": 4,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "Sandia NMC 15 to 25 C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 3,
+   "n_sim_10k": 3,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "Sandia NMC 15 to 25 C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 3,
+   "n_sim_10k": 3,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "Sandia NMC 15 to 25 C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 4,
+   "n_sim_10k": 4,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "Sandia NMC 15 to 25 C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 4,
+   "n_sim_10k": 4,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "Sandia NCA 15 to 25 C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 6,
+   "n_sim_10k": 6,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "Sandia NCA 15 to 25 C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 5,
+   "n_sim_10k": 5,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "Sandia NCA 15 to 25 C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 22,
+   "n_sim_10k": 20,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "Sandia NCA 15 to 25 C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 18,
+   "n_sim_10k": 18,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "Sandia LFP 15 to 25 C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "lognormal",
+   "n": 3,
+   "n_sim_10k": 3,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "Sandia LFP 15 to 25 C",
+   "dT_K": 5.0,
+   "floor": "Geslin",
+   "shape": "normal",
+   "n": 3,
+   "n_sim_10k": 3,
+   "V4_pass_5pct": true,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "Sandia LFP 15 to 25 C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "lognormal",
+   "n": 6,
+   "n_sim_10k": 5,
+   "V4_pass_5pct": false,
+   "central": false
+  },
+  {
+   "group": "C2 cold chamber 10 C",
+   "lever": "Sandia LFP 15 to 25 C",
+   "dT_K": 5.0,
+   "floor": "KIT",
+   "shape": "normal",
+   "n": 5,
+   "n_sim_10k": 5,
+   "V4_pass_5pct": true,
+   "central": false
+  }
+ ],
+ "scorecard": {
+  "P1": {
+   "held": true,
+   "median_warm": {
+    "0.25C h=5": 0.0012135567591150583,
+    "0.25C h=10": 0.0012842698715352589,
+    "0.25C h=25": 0.0011385851540242082,
+    "0.5C h=5": 0.00479775329425141,
+    "0.5C h=10": 0.005098138324549674,
+    "0.5C h=25": 0.004540650066584881,
+    "1C h=5": 0.018335484203238932,
+    "1C h=10": 0.019786128678606754,
+    "1C h=25": 0.01794439478659723
+   },
+   "max": 0.019786128678606754,
+   "floor": 0.029909975804944276
+  },
+  "P2": {
+   "held": false,
+   "median_h5": 0.06220111622449316,
+   "first_clause": true,
+   "second_clause": false,
+   "levers_above_Geslin_p95": [
+    [
+     "KIT 0-100 1.00/1.00C",
+     0.12818111057088735
+    ],
+    [
+     "KIT 0-100 1.67/1.00C",
+     0.1649267411251324
+    ],
+    [
+     "KIT 10-100 1.67/1.00C",
+     0.0914115392904908
+    ],
+    [
+     "KIT 10-90 0.33/0.33C",
+     0.09116900526867418
+    ],
+    [
+     "Sandia NMC 25 to 35 C",
+     0.11663701013765752
+    ]
+   ],
+   "max_lever_divergence": 0.1649267411251324,
+   "other_coolings": {
+    "h=10": {
+     "median": 0.07045852196054665,
+     "levers_above_p95": 5
+    },
+    "h=25": {
+     "median": 0.0683510204842462,
+     "levers_above_p95": 5
+    }
+   }
+  },
+  "P3": {
+   "held": true,
+   "cases": {
+    "h=5": {
+     "spread_10C": 3.7356579331889748,
+     "spread_35C": 1.4072367818379803,
+     "ratio": 2.6546050965992114
+    },
+    "h=10": {
+     "spread_10C": 4.117951479423084,
+     "spread_35C": 1.5185728251341288,
+     "ratio": 2.711724726839731
+    },
+    "h=25": {
+     "spread_10C": 3.743915284326704,
+     "spread_35C": 1.3772209171907548,
+     "ratio": 2.7184565944318613
+    }
+   }
+  },
+  "P4": {
+   "held": true,
+   "first_clause": true,
+   "second_clause": true,
+   "median_cold": {
+    "h=5": 0.13373831356145308,
+    "h=10": 0.14742460258287102,
+    "h=25": 0.13403393062152524
+   }
+  },
+  "P5": {
+   "held": false,
+   "clause_35C_none_above_KIT_mean": true,
+   "max_35C": 0.07045852196054665,
+   "clause_10C_every_2C_above": true,
+   "clause_10C_none_below_2C_above": false,
+   "cases_below_2C_above_KIT_mean": {
+    "1C h=5": 0.13373831356145308,
+    "1C h=10": 0.14742460258287102,
+    "1C h=25": 0.13403393062152524
+   },
+   "floor": 0.07332337183440621
+  },
+  "P6": {
+   "held": true,
+   "dT_cell_K": 0.9429483897957311,
+   "module_spread_K": 4.117951479423084,
+   "ratio": 0.2289848227953954
+  },
+  "P7": {
+   "held": false,
+   "scored": true,
+   "cold_central_lever": "KIT 0-100 1.67/1.00C",
+   "n_cold_dT5": 3,
+   "n_cold_sim": 3,
+   "V4_cold_pass": true,
+   "warm_central_lever": "KIT 0-100 0.33/0.33C",
+   "n_warm_dT2": 25,
+   "n_warm_sim": 24,
+   "V4_warm_pass": true,
+   "cold_clause": true,
+   "warm_clause": false,
+   "simulation_file": "simulation_lognormal_all.csv"
+  }
+ },
+ "resolved_cell": [
+  {
+   "T_amb_C": "10.0",
+   "crate": "1.0",
+   "h": "10.0",
+   "R_ohm": "0.04794822605105359",
+   "q_W": "1.1987056512763397",
+   "nodes": "39990",
+   "newton_iterations": "5",
+   "cg_all_converged": "True",
+   "energy_residual_rel": "-5.507095171689778e-13",
+   "T_max_C": "26.361911170004532",
+   "T_min_C": "25.4189627802088",
+   "T_vol_mean_C": "25.87889837445266",
+   "T_surface_mean_C": "25.49571159651498",
+   "dT_cell_K": "0.9429483897957311",
+   "dT_hot_minus_mean_K": "0.48301279555187193",
+   "hot_r_mm": "0.0",
+   "hot_z_mm": "35.05",
+   "cold_r_mm": "10.55",
+   "cold_z_mm": "65.32846185999999",
+   "module_spread_K": "4.117951479423084",
+   "ratio_cell_over_module": "0.2289848227953954",
+   "below_one_third": "True",
+   "analytic_infinite_cylinder_K": "1.0467460205904706",
+   "analytic_ratio_over_module": "0.2541909553380938",
+   "seconds": "13.62920355796814",
+   "archived_dT_cell_K": "",
+   "rerun_minus_archived_K": "",
+   "rerun_bitwise_equal": "",
+   "archived_q_equal": ""
+  },
+  {
+   "T_amb_C": "10.0",
+   "crate": "2.0",
+   "h": "10.0",
+   "R_ohm": "0.04794822605105359",
+   "q_W": "4.794822605105359",
+   "nodes": "39990",
+   "newton_iterations": "5",
+   "cg_all_converged": "True",
+   "energy_residual_rel": "-5.077345397107865e-13",
+   "T_max_C": "71.11562075229102",
+   "T_min_C": "67.34526244443498",
+   "T_vol_mean_C": "69.18394930041285",
+   "T_surface_mean_C": "67.65194909020244",
+   "dT_cell_K": "3.7703583078560428",
+   "dT_hot_minus_mean_K": "1.9316714518781737",
+   "hot_r_mm": "0.0",
+   "hot_z_mm": "35.05",
+   "cold_r_mm": "10.55",
+   "cold_z_mm": "65.32846185999999",
+   "module_spread_K": "12.337615112587287",
+   "ratio_cell_over_module": "0.305598632592241",
+   "below_one_third": "True",
+   "analytic_infinite_cylinder_K": "4.1869840823618825",
+   "analytic_ratio_over_module": "0.3393673772567413",
+   "seconds": "12.892080545425415",
+   "archived_dT_cell_K": "",
+   "rerun_minus_archived_K": "",
+   "rerun_bitwise_equal": "",
+   "archived_q_equal": ""
+  },
+  {
+   "T_amb_C": "35.0",
+   "crate": "1.0",
+   "h": "10.0",
+   "R_ohm": "0.01871279570954531",
+   "q_W": "0.4678198927386327",
+   "nodes": "39990",
+   "newton_iterations": "4",
+   "cg_all_converged": "True",
+   "energy_residual_rel": "-4.5126107591670626e-13",
+   "T_max_C": "40.99912058255717",
+   "T_min_C": "40.63116065159522",
+   "T_vol_mean_C": "40.81062665226278",
+   "T_surface_mean_C": "40.66110344488396",
+   "dT_cell_K": "0.3679599309619448",
+   "dT_hot_minus_mean_K": "0.18849393029438488",
+   "hot_r_mm": "0.0",
+   "hot_z_mm": "35.05",
+   "cold_r_mm": "10.55",
+   "cold_z_mm": "65.32846185999999",
+   "module_spread_K": "1.5185728251341288",
+   "ratio_cell_over_module": "0.24230641090883773",
+   "below_one_third": "True",
+   "analytic_infinite_cylinder_K": "0.4085144760565877",
+   "analytic_ratio_over_module": "0.26901210748355475",
+   "seconds": "2.925589084625244",
+   "archived_dT_cell_K": "0.36795993096200164",
+   "rerun_minus_archived_K": "-5.684341886080802e-14",
+   "rerun_bitwise_equal": "False",
+   "archived_q_equal": "True"
+  },
+  {
+   "T_amb_C": "35.0",
+   "crate": "2.0",
+   "h": "10.0",
+   "R_ohm": "0.01871279570954531",
+   "q_W": "1.871279570954531",
+   "nodes": "39990",
+   "newton_iterations": "5",
+   "cg_all_converged": "True",
+   "energy_residual_rel": "-5.065562800653219e-13",
+   "T_max_C": "58.35815917286436",
+   "T_min_C": "56.886539122045804",
+   "T_vol_mean_C": "57.60424153068806",
+   "T_surface_mean_C": "57.006262952333486",
+   "dT_cell_K": "1.471620050818558",
+   "dT_hot_minus_mean_K": "0.7539176421763045",
+   "hot_r_mm": "0.0",
+   "hot_z_mm": "35.05",
+   "cold_r_mm": "10.55",
+   "cold_z_mm": "65.32846185999999",
+   "module_spread_K": "5.407646866468099",
+   "ratio_cell_over_module": "0.2721368623280163",
+   "below_one_third": "True",
+   "analytic_infinite_cylinder_K": "1.6340579042263508",
+   "analytic_ratio_over_module": "0.30217540911535234",
+   "seconds": "3.3152060508728027",
+   "archived_dT_cell_K": "1.4716200508185011",
+   "rerun_minus_archived_K": "5.684341886080802e-14",
+   "rerun_bitwise_equal": "False",
+   "archived_q_equal": "True"
+  }
+ ],
+ "sensitivity_own_temperature_verdicts": {
+  "own": {
+   "P1": true,
+   "P2": true,
+   "P3_ratios": {
+    "5.0": 1.6130728446500229,
+    "10.0": 1.7134806648578542,
+    "25.0": 1.8674643850468322
+   },
+   "P3": true,
+   "P4": false,
+   "P4_first": true,
+   "P4_second": false,
+   "P5": true,
+   "P5_clauses": [
+    true,
+    true,
+    true
+   ]
+  },
+  "mean": {
+   "P1": true,
+   "P2": false,
+   "P3_ratios": {
+    "5.0": 1.8304846683607912,
+    "10.0": 1.9447938371684315,
+    "25.0": 2.1333850703894655
+   },
+   "P3": true,
+   "P4": false,
+   "P4_first": true,
+   "P4_second": false,
+   "P5": false,
+   "P5_clauses": [
+    true,
+    true,
+    false
+   ]
+  }
+ }
+}

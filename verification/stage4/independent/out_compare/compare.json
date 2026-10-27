@@ -1,0 +1,607 @@
+{
+ "pipeline_commits": {
+  "registered": "6f658f1",
+  "posthoc": "a2b3d6e"
+ },
+ "checker_freeze_commit": "fd5d1e7",
+ "quantities": {
+  "R_used_ohm": {
+   "n": 3,
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "where_max_abs": "",
+   "nan_both": 0
+  },
+  "R_rerun_ohm (procedure at each ambient)": {
+   "n": 3,
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "where_max_abs": "",
+   "nan_both": 0
+  },
+  "pulse R_ohm": {
+   "n": 12,
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "where_max_abs": "",
+   "nan_both": 0
+  },
+  "cycle_heat failed": {
+   "n": 36,
+   "disagree": 0
+  },
+  "cycle_heat R_eff_ohm": {
+   "n": 34,
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "where_max_abs": "",
+   "nan_both": 0
+  },
+  "cycle_heat charge_Ah": {
+   "n": 34,
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "where_max_abs": "",
+   "nan_both": 0
+  },
+  "ratio 25/35": {
+   "n": 1,
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "where_max_abs": "",
+   "nan_both": 0
+  },
+  "ratio 10/35": {
+   "n": 1,
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "where_max_abs": "",
+   "nan_both": 0
+  },
+  "35 C rerun identical to archived": {
+   "n": 1,
+   "disagree": 0
+  },
+  "module R_ohm (own solver)": {
+   "n": 36,
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "where_max_abs": "",
+   "nan_both": 0
+  },
+  "module q_cell_W (own solver)": {
+   "n": 36,
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "where_max_abs": "",
+   "nan_both": 0
+  },
+  "module T_max_C (own solver)": {
+   "n": 36,
+   "max_abs": 1.7053025658242404e-13,
+   "max_rel": 7.86320533467657e-15,
+   "where_max_abs": "25 C 1C h=25",
+   "nan_both": 0
+  },
+  "module T_min_C (own solver)": {
+   "n": 36,
+   "max_abs": 5.684341886080802e-14,
+   "max_rel": 2.1623927588699693e-15,
+   "where_max_abs": "25 C 0.25C h=5",
+   "nan_both": 0
+  },
+  "module T_mean_C (own solver)": {
+   "n": 36,
+   "max_abs": 1.1368683772161603e-13,
+   "max_rel": 4.488548539127776e-15,
+   "where_max_abs": "25 C 1C h=25",
+   "nan_both": 0
+  },
+  "module spread_K (own solver)": {
+   "n": 36,
+   "max_abs": 1.1368683772161603e-13,
+   "max_rel": 8.832951895951072e-13,
+   "where_max_abs": "10 C 0.5C h=25",
+   "nan_both": 0
+  },
+  "module hot_minus_mean_K (own solver)": {
+   "n": 36,
+   "max_abs": 1.1368683772161603e-13,
+   "max_rel": 1.7665903791894342e-12,
+   "where_max_abs": "25 C 0.25C h=25",
+   "nan_both": 0
+  },
+  "module T_cell_C (own solver)": {
+   "n": 288,
+   "max_abs": 1.7053025658242404e-13,
+   "max_rel": 7.86320533467657e-15,
+   "where_max_abs": "25 C 1C h=25 cell 1",
+   "nan_both": 0
+  },
+  "module T_cell_C (module_steady cross-check)": {
+   "n": 288,
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "where_max_abs": "",
+   "nan_both": 0
+  },
+  "module offset_K (own solver)": {
+   "n": 288,
+   "max_abs": 1.1368683772161603e-13,
+   "max_rel": 1.7665903791894342e-12,
+   "where_max_abs": "25 C 0.25C h=25 cell 1",
+   "nan_both": 0
+  },
+  "module spread_K (module_steady cross-check)": {
+   "n": 36,
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "where_max_abs": "",
+   "nan_both": 0
+  },
+  "module i_hot": {
+   "n": 36,
+   "disagree": 0
+  },
+  "module i_cold": {
+   "n": 36,
+   "disagree": 0
+  },
+  "module newton_iterations (module_steady)": {
+   "n": 36,
+   "disagree": 0
+  },
+  "module balance_W (module_steady)": {
+   "n": 36,
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "where_max_abs": "",
+   "nan_both": 0
+  },
+  "module converged": {
+   "n": 36,
+   "disagree": 0
+  },
+  "cells inside band set points (checker recomputed post-freeze with KIT set points)": {
+   "n": 36,
+   "disagree": 0
+  },
+  "resolved q_W": {
+   "n": 4,
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "where_max_abs": "",
+   "nan_both": 0
+  },
+  "resolved T_max_C": {
+   "n": 4,
+   "max_abs": 1.7621459846850485e-12,
+   "max_rel": 3.6656603324470025e-14,
+   "where_max_abs": "10 C 2C",
+   "nan_both": 0
+  },
+  "resolved T_min_C": {
+   "n": 4,
+   "max_abs": 1.4779288903810084e-12,
+   "max_rel": 3.13076450417148e-14,
+   "where_max_abs": "10 C 2C",
+   "nan_both": 0
+  },
+  "resolved T_vol_mean_C": {
+   "n": 4,
+   "max_abs": 1.4210854715202004e-12,
+   "max_rel": 3.51442587939061e-14,
+   "where_max_abs": "10 C 2C",
+   "nan_both": 0
+  },
+  "resolved T_surface_mean_C": {
+   "n": 4,
+   "max_abs": 1.4210854715202004e-12,
+   "max_rel": 3.5672458026128594e-14,
+   "where_max_abs": "10 C 2C",
+   "nan_both": 0
+  },
+  "resolved dT_cell_K": {
+   "n": 4,
+   "max_abs": 2.8421709430404007e-13,
+   "max_rel": 3.089652653873844e-13,
+   "where_max_abs": "10 C 2C",
+   "nan_both": 0
+  },
+  "resolved dT_hot_minus_mean_K": {
+   "n": 4,
+   "max_abs": 3.410605131648481e-13,
+   "max_rel": 1.7656238219666885e-13,
+   "where_max_abs": "10 C 2C",
+   "nan_both": 0
+  },
+  "resolved module_spread_K": {
+   "n": 4,
+   "max_abs": 5.684341886080802e-14,
+   "max_rel": 1.3803809769213803e-14,
+   "where_max_abs": "10 C 1C",
+   "nan_both": 0
+  },
+  "resolved within_over_module": {
+   "n": 4,
+   "max_abs": 7.485678743535118e-14,
+   "max_rel": 3.089344072843835e-13,
+   "where_max_abs": "35 C 1C",
+   "nan_both": 0
+  },
+  "resolved newton_iterations": {
+   "n": 4,
+   "disagree": 0
+  },
+  "resolved cg_all_converged": {
+   "n": 4,
+   "disagree": 0
+  },
+  "divergence |s| x spread": {
+   "n": 492,
+   "max_abs": 1.3322676295501878e-14,
+   "max_rel": 8.834241992412615e-13,
+   "where_max_abs": "10 C 2C h=25 KIT 10-100 1.67/1.00C",
+   "nan_both": 0
+  },
+  "divergence interval low": {
+   "n": 492,
+   "max_abs": 1.2212453270876722e-14,
+   "max_rel": 8.833668669386723e-13,
+   "where_max_abs": "10 C 2C h=25 KIT 10-100 1.67/1.00C",
+   "nan_both": 0
+  },
+  "divergence interval high": {
+   "n": 492,
+   "max_abs": 1.4224732503009818e-14,
+   "max_rel": 8.834113672752098e-13,
+   "where_max_abs": "10 C 0.5C h=25 KIT 10-100 1.67/1.00C",
+   "nan_both": 0
+  },
+  "lever s_per_K": {
+   "n": 492,
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "where_max_abs": "",
+   "nan_both": 0
+  },
+  "divergence ln-offset per cell": {
+   "n": 3936,
+   "max_abs": 6.661338147750939e-15,
+   "max_rel": 1.766735592859552e-12,
+   "where_max_abs": "10 C 2C h=25 KIT 10-100 1.67/1.00C",
+   "nan_both": 0
+  },
+  "band median": {
+   "n": 36,
+   "max_abs": 4.073130721593543e-15,
+   "max_rel": 8.832731477959168e-13,
+   "where_max_abs": "10 C 0.5C h=25",
+   "nan_both": 0
+  },
+  "band 95th percentile": {
+   "n": 36,
+   "max_abs": 8.43769498715119e-15,
+   "max_rel": 8.833192916614043e-13,
+   "where_max_abs": "10 C 0.5C h=25",
+   "nan_both": 0
+  },
+  "band median (map.json)": {
+   "n": 36,
+   "max_abs": 4.073130721593543e-15,
+   "max_rel": 8.832731477959168e-13,
+   "where_max_abs": "10 C 0.5C h=25",
+   "nan_both": 0
+  },
+  "band max": {
+   "n": 36,
+   "max_abs": 1.3322676295501878e-14,
+   "max_rel": 8.832512335850339e-13,
+   "where_max_abs": "10 C 2C h=25",
+   "nan_both": 0
+  },
+  "median lever": {
+   "n": 36,
+   "disagree": 0
+  },
+  "offers Geslin": {
+   "n": 36,
+   "disagree": 0
+  },
+  "detectable Geslin": {
+   "n": 36,
+   "disagree": 0
+  },
+  "levers above Geslin mean": {
+   "n": 36,
+   "disagree": 0
+  },
+  "levers above Geslin p95": {
+   "n": 36,
+   "disagree": 0
+  },
+  "offers KIT": {
+   "n": 36,
+   "disagree": 0
+  },
+  "detectable KIT": {
+   "n": 36,
+   "disagree": 0
+  },
+  "levers above KIT mean": {
+   "n": 36,
+   "disagree": 0
+  },
+  "levers above KIT p95": {
+   "n": 36,
+   "disagree": 0
+  },
+  "map smallest rate offering": {
+   "n": 18,
+   "disagree": 0
+  },
+  "map smallest rate detectable": {
+   "n": 18,
+   "disagree": 0
+  },
+  "experiment s_per_K": {
+   "n": 144,
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "where_max_abs": "",
+   "nan_both": 0
+  },
+  "experiment sd_e registered (log-normal)": {
+   "n": 144,
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "where_max_abs": "",
+   "nan_both": 0
+  },
+  "experiment sd_e normal shape": {
+   "n": 144,
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "where_max_abs": "",
+   "nan_both": 0
+  },
+  "experiment n calculated (log-normal)": {
+   "n": 144,
+   "disagree": 0
+  },
+  "experiment power at n": {
+   "n": 144,
+   "max_abs": 1.6887602427573256e-12,
+   "max_rel": 2.1108387488514525e-12,
+   "where_max_abs": "C1  KIT 10-100 1.00/1.00C dT=1.0 KIT",
+   "nan_both": 0
+  },
+  "experiment n calculated (normal shape)": {
+   "n": 144,
+   "disagree": 0
+  },
+  "experiment central flag": {
+   "n": 144,
+   "disagree": 0
+  },
+  "experiment conditional flag": {
+   "n": 144,
+   "disagree": 0
+  },
+  "V4 simulated n (log-normal), Monte Carlo": {
+   "n": 144,
+   "max_abs": 43.0,
+   "max_rel": 0.25,
+   "where_max_abs": "C2 warm (35 C) KIT 10-90 1.00/1.00C dT=2.0 KIT",
+   "nan_both": 0
+  },
+  "checker's normal-shape simulated n vs pipeline's calculated normal-shape n": {
+   "n": 144,
+   "max_abs": 16.0,
+   "max_rel": 0.14285714285714285,
+   "where_max_abs": "C1  KIT 10-100 1.00/1.00C dT=1.0 KIT",
+   "nan_both": 0
+  },
+  "V4 normal check, same sd(e) as registered (post-freeze), Monte Carlo": {
+   "n": 144,
+   "max_abs": 22.0,
+   "max_rel": 0.1111111111111111,
+   "where_max_abs": "C2 warm (35 C) KIT 10-90 1.00/1.00C dT=2.0 Geslin",
+   "nan_both": 0
+  },
+  "V4 normal check pass (post-freeze reading)": {
+   "n": 144,
+   "disagree": 4
+  },
+  "sim power at n_sim (log-normal), Monte Carlo": {
+   "n": 144,
+   "max_abs": 0.11699999999999999,
+   "max_rel": 0.12692558038620091,
+   "where_max_abs": "C1  Sandia NMC 25 to 35 C dT=5.0 Geslin",
+   "nan_both": 0
+  },
+  "figure curve n (lognormal)": {
+   "n": 80,
+   "disagree": 0
+  },
+  "figure curve n (normal)": {
+   "n": 80,
+   "disagree": 0
+  },
+  "verdict P1": {
+   "n": 1,
+   "disagree": 0
+  },
+  "verdict P2": {
+   "n": 1,
+   "disagree": 0
+  },
+  "verdict P3": {
+   "n": 1,
+   "disagree": 0
+  },
+  "verdict P4": {
+   "n": 1,
+   "disagree": 0
+  },
+  "verdict P5": {
+   "n": 1,
+   "disagree": 0
+  },
+  "verdict P6": {
+   "n": 1,
+   "disagree": 0
+  },
+  "verdict P7": {
+   "n": 1,
+   "disagree": 0
+  },
+  "post-hoc D66 spread_K (checker's solver)": {
+   "n": 36,
+   "max_abs": 1.1368683772161603e-13,
+   "max_rel": 1.2572858138658099e-12,
+   "where_max_abs": "10 C R(25) C/4 h=25",
+   "nan_both": 0
+  },
+  "post-hoc D66 median divergence": {
+   "n": 36,
+   "max_abs": 4.071395998117566e-15,
+   "max_rel": 1.2572544394829753e-12,
+   "where_max_abs": "10 C R(35) C/2 h=25",
+   "nan_both": 0
+  }
+ },
+ "mismatches": [
+  {
+   "quantity": "V4 normal check pass (post-freeze reading)",
+   "where": "C2 warm (35 C) KIT 0-100 0.33/1.00C dT=5.0 Geslin",
+   "checker": false,
+   "pipeline": true
+  },
+  {
+   "quantity": "V4 normal check pass (post-freeze reading)",
+   "where": "C2 cold (10 C) KIT 10-100 0.33/1.00C dT=2.0 KIT",
+   "checker": true,
+   "pipeline": false
+  },
+  {
+   "quantity": "V4 normal check pass (post-freeze reading)",
+   "where": "C2 cold (10 C) KIT 10-90 0.33/1.00C dT=5.0 KIT",
+   "checker": true,
+   "pipeline": false
+  },
+  {
+   "quantity": "V4 normal check pass (post-freeze reading)",
+   "where": "C2 cold (10 C) Sandia NMC 15 to 25 C dT=2.0 KIT",
+   "checker": true,
+   "pipeline": false
+  }
+ ],
+ "experiment_rows_unmatched": [],
+ "V4_pass_disagreements": [
+  {
+   "case": "C1  Sandia NMC 25 to 35 C dT=5.0 Geslin",
+   "n_calc": 4,
+   "checker_n_sim": 3,
+   "pipeline_n_sim": 4,
+   "checker_pass": false,
+   "pipeline_pass": true
+  },
+  {
+   "case": "C1  KIT 10-90 1.67/1.00C dT=2.0 Geslin",
+   "n_calc": 42,
+   "checker_n_sim": 40,
+   "pipeline_n_sim": 39,
+   "checker_pass": true,
+   "pipeline_pass": false
+  },
+  {
+   "case": "C1  KIT 10-90 1.67/1.00C dT=5.0 KIT",
+   "n_calc": 37,
+   "checker_n_sim": 36,
+   "pipeline_n_sim": 35,
+   "checker_pass": true,
+   "pipeline_pass": false
+  },
+  {
+   "case": "C2 warm (35 C) KIT 0-100 0.33/0.33C dT=2.0 Geslin",
+   "n_calc": 25,
+   "checker_n_sim": 24,
+   "pipeline_n_sim": 23,
+   "checker_pass": true,
+   "pipeline_pass": false
+  },
+  {
+   "case": "C2 warm (35 C) KIT 0-100 1.00/1.00C dT=2.0 KIT",
+   "n_calc": 32,
+   "checker_n_sim": 31,
+   "pipeline_n_sim": 30,
+   "checker_pass": true,
+   "pipeline_pass": false
+  },
+  {
+   "case": "C2 warm (35 C) KIT 10-100 0.33/1.00C dT=2.0 Geslin",
+   "n_calc": 89,
+   "checker_n_sim": 85,
+   "pipeline_n_sim": 84,
+   "checker_pass": true,
+   "pipeline_pass": false
+  },
+  {
+   "case": "C2 warm (35 C) Sandia NMC 25 to 35 C dT=2.0 KIT",
+   "n_calc": 38,
+   "checker_n_sim": 37,
+   "pipeline_n_sim": 36,
+   "checker_pass": true,
+   "pipeline_pass": false
+  },
+  {
+   "case": "C2 warm (35 C) Sandia NMC 25 to 35 C dT=5.0 KIT",
+   "n_calc": 8,
+   "checker_n_sim": 7,
+   "pipeline_n_sim": 8,
+   "checker_pass": false,
+   "pipeline_pass": true
+  },
+  {
+   "case": "C2 cold (10 C) Sandia NMC 15 to 25 C dT=2.0 KIT",
+   "n_calc": 9,
+   "checker_n_sim": 8,
+   "pipeline_n_sim": 9,
+   "checker_pass": false,
+   "pipeline_pass": true
+  },
+  {
+   "case": "C2 cold (10 C) Sandia NCA 15 to 25 C dT=5.0 KIT",
+   "n_calc": 22,
+   "checker_n_sim": 20,
+   "pipeline_n_sim": 21,
+   "checker_pass": false,
+   "pipeline_pass": true
+  }
+ ],
+ "checks": {
+  "v1": {
+   "max_abs_diff_K": 0.0,
+   "all_bitwise_identical": true,
+   "pass": true
+  },
+  "v2": {
+   "pass": true
+  },
+  "v3": {
+   "pass": true
+  },
+  "v4": {
+   "pass_all": false,
+   "failures": 62,
+   "max_abs_rel_diff": 0.25,
+   "normal_check_pass_all": false,
+   "normal_check_max_abs_rel_diff": 0.1111111111111111
+  },
+  "checker_V4_lognormal_pass_count": 84,
+  "checker_V4_normal_pass_count": 140,
+  "pipeline_V4_lognormal_pass_count": 82,
+  "pipeline_V4_normal_pass_count": 140
+ }
+}
