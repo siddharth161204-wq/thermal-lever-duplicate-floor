@@ -46,10 +46,20 @@ def lognormal_shape(m, q):
 
 
 def power_t(n, delta, sd):
+    """Two-sided power of the t-test at n. scipy's noncentral t returns nan for the lower tail P(T < -tc) at large
+    noncentrality; that tail is below P(T < 0) = Phi(-nc), so it is set to zero where Phi(-nc) < 1e-12."""
     df = n - 1
     tc = stats.t.ppf(1.0 - ALPHA / 2.0, df)
     nc = math.sqrt(n) * delta / sd
-    return float(stats.nct.sf(tc, df, nc) + stats.nct.cdf(-tc, df, nc))
+    upper = float(stats.nct.sf(tc, df, nc))
+    lower = float(stats.nct.cdf(-tc, df, nc))
+    if not math.isfinite(lower):
+        if stats.norm.cdf(-nc) > 1e-12:
+            raise SystemExit(f"noncentral t lower tail undefined at n = {n}, nc = {nc}")
+        lower = 0.0
+    if not math.isfinite(upper):
+        raise SystemExit(f"noncentral t upper tail undefined at n = {n}, nc = {nc}")
+    return upper + lower
 
 
 def n_required(delta, sd):

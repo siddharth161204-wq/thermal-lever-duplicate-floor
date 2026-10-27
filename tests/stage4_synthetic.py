@@ -37,6 +37,11 @@ def check(name, cond, detail=""):
 for d, want in ((0.2, 199), (0.5, 34), (0.8, 15), (1.0, 10)):
     n = EX.n_required(d, 1.0)
     check(f"n for d = {d}", n == want, f"{n} against {want}")
+pw = [EX.power_t(n, d, 1.0) for d in (4.0, 6.0, 8.0, 10.0) for n in (2, 3, 4)]
+check("power defined and below 1 at large noncentrality", all(math.isfinite(p) and 0.0 < p <= 1.0 for p in pw))
+ns_d = [EX.n_required(d, 1.0) for d in np.linspace(0.05, 12.0, 240)]
+check("n never rises with the effect", all(a >= b for a, b in zip(ns_d, ns_d[1:])), f"{ns_d[-5:]}")
+check("n at d = 8.1 (nc 14 at n = 3) is 3", EX.n_required(8.1, 1.0) == 3, f"{EX.n_required(8.1, 1.0)}")
 sim = EX.sim_power(34, 0.5, {"kind": "normal", "sd_e": 1.0}, [1, 2, 3])
 check("simulated power at d = 0.5, n = 34 (normal noise)", abs(sim - EX.power_t(34, 0.5, 1.0)) < 0.015,
       f"{sim:.4f} against {EX.power_t(34, 0.5, 1.0):.4f}")
