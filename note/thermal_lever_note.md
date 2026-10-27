@@ -1,6 +1,6 @@
 # The thermal lever against the duplicate-cell floor: how large a temperature spread a lifetime divergence needs, and how large a module offers
 
-Siddharth Satte, Independent researcher, Pune, India, 10 October 2026. doi.org/10.5281/zenodo.23309131. Predictions commit 24ab8d3, public at 08:02 UTC before any lever or spread was computed. [github.com/siddharth161204-wq/thermal-lever-duplicate-floor](https://github.com/siddharth161204-wq/thermal-lever-duplicate-floor){.nobr}.
+Siddharth Satte, Independent researcher, Pune, India, 27 October 2026 (first version 10 October 2026). doi.org/10.5281/zenodo.23309130 (all versions). Predictions commit 24ab8d3, public at 08:02 UTC on 10 October before any lever or spread was computed. [github.com/siddharth161204-wq/thermal-lever-duplicate-floor](https://github.com/siddharth161204-wq/thermal-lever-duplicate-floor){.nobr}.
 
 <div class="headline">
 
@@ -55,3 +55,11 @@ On the Sandia cycling study of Preger et al. 2020 (doi.org/10.1149/1945-7111/aba
 ![](../results/stage3_figure.png){style="width:100%;margin:2pt 0 0 0"}
 
 Figure 2. Stage 3. (a) ln L against the logged cycling temperature on the 1C series, with Law 1 (90 %), Law 2 (95 %) and the KIT NMC protocols at a 1C discharge. (b) The replicate floor per chemistry beside the KIT and Geslin floors. (c) Observed against predicted ln lifetime ratio per pair; filled where the signs agree.
+
+## Stage 4: the measured levers in the module, and the experiment that would settle it (v1.3.0)
+
+Stage 1's module at 35, 25 and 10 C ambient, heated through the same PyBaMM procedure (18.7, 26.6 and 47.9 mOhm; predictions commit c1e58a1, pushed before any run), offers 1.4 to 1.5 K at 1C and 4.8 to 5.4 K at 2C at 35 C, and 3.7 to 4.1 K at 1C at 10 C. Under each band's median measured lever (1.30 % per K from 25 to 40 C, KIT and Sandia; 3.58 % per K from 10 to 25 C), a 35 C module passes the Geslin mean floor only at 2C (6.2 to 7.0 %) and its 95th percentile at no rate; a 10 C module offers a share from C/2 and a detectable one from 1C (13 to 15 %), though from 1C and 2C with the 25 C resistance, nearer the cells' own temperature. The levers come from chamber set points: applying them inside a module assumes them local and linear over a few kelvin. To settle it, a paired t-test of log lifetimes with the Geslin floor as log-normal noise needs 3 duplicate pairs held 5 K apart at 10 C and 25 pairs held 2 K apart at 35 C (KIT floor: 5 and 128), up to 29 % fewer with a normal floor. Four of seven predictions held (P2, P5 and P7 failed); a separate recomputation agrees to XXX.
+
+![](../results/stage4_figure.png){style="width:100%;margin:2pt 0 0 0"}
+
+Figure 3. Stage 4. (a) Median implied divergence |s| × spread over each band's levers against rate, at three ambients and three coolings, with the band's 95th percentile at h = 10 and the four floors. (b) Duplicate pairs for 80 % power against the temperature difference held within each pair, under each chamber's median lever, against the Geslin (solid) and KIT (dashed) floors.

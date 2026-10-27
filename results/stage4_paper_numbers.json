@@ -1,0 +1,828 @@
+{
+ "commits": {
+  "predictions": {
+   "commit": "c1e58a19d1653bb477de485c4fc9f68e956ee070",
+   "pushed_utc": "2026-10-27T09:50:05Z"
+  },
+  "code": {
+   "commit": "e5ecf58a971ce153a0ea7a94ffedfb1282db8d77"
+  },
+  "power_fix_D64": {
+   "commit": "aa74702183cb1ed324cbf1a9933a1a539ab50401"
+  },
+  "results": {
+   "commit": "6f658f1fe534c8d9a158308dc1ff90eb12fd0318",
+   "pushed_utc": "2026-10-27T10:07:16Z"
+  }
+ },
+ "scorecard": {
+  "P1": true,
+  "P2": false,
+  "P3": true,
+  "P4": true,
+  "P5": false,
+  "P6": true,
+  "P7": false
+ },
+ "resistance_mOhm": {
+  "35": 18.712795709545308,
+  "25": 26.646995595628912,
+  "10": 47.94822605105359
+ },
+ "resistance_ratio": {
+  "35": 1.0,
+  "25": 1.423998637575913,
+  "10": 2.5623229577927487
+ },
+ "spread": {
+  "35 C C/4": {
+   "h10_K": 0.09856689798851903,
+   "range_over_h_K": [
+    0.087,
+    0.099
+   ],
+   "cells_C": [
+    35.3,
+    35.9
+   ]
+  },
+  "35 C C/2": {
+   "h10_K": 0.3912788825035136,
+   "range_over_h_K": [
+    0.348,
+    0.391
+   ],
+   "cells_C": [
+    36.3,
+    38.7
+   ]
+  },
+  "35 C 1C": {
+   "h10_K": 1.5185728251341288,
+   "range_over_h_K": [
+    1.377,
+    1.519
+   ],
+   "cells_C": [
+    40.1,
+    49.5
+   ]
+  },
+  "35 C 2C": {
+   "h10_K": 5.407646866468099,
+   "range_over_h_K": [
+    4.774,
+    5.408
+   ],
+   "cells_C": [
+    55.2,
+    86.7
+   ]
+  },
+  "25 C C/4": {
+   "h10_K": 0.14738000418657293,
+   "range_over_h_K": [
+    0.129,
+    0.147
+   ],
+   "cells_C": [
+    25.5,
+    26.4
+   ]
+  },
+  "25 C C/2": {
+   "h10_K": 0.5830632202109882,
+   "range_over_h_K": [
+    0.513,
+    0.583
+   ],
+   "cells_C": [
+    26.9,
+    30.6
+   ]
+  },
+  "25 C 1C": {
+   "h10_K": 2.2327277854139993,
+   "range_over_h_K": [
+    2.016,
+    2.233
+   ],
+   "cells_C": [
+    32.5,
+    46.5
+   ]
+  },
+  "25 C 2C": {
+   "h10_K": 7.568167697805961,
+   "range_over_h_K": [
+    6.537,
+    7.568
+   ],
+   "cells_C": [
+    54.1,
+    98.1
+   ]
+  },
+  "10 C C/4": {
+   "h10_K": 0.2843332465708386,
+   "range_over_h_K": [
+    0.243,
+    0.284
+   ],
+   "cells_C": [
+    10.9,
+    12.8
+   ]
+  },
+  "10 C C/2": {
+   "h10_K": 1.1146453873018913,
+   "range_over_h_K": [
+    0.964,
+    1.115
+   ],
+   "cells_C": [
+    13.5,
+    20.9
+   ]
+  },
+  "10 C 1C": {
+   "h10_K": 4.117951479423027,
+   "range_over_h_K": [
+    3.736,
+    4.118
+   ],
+   "cells_C": [
+    23.8,
+    50.0
+   ]
+  },
+  "10 C 2C": {
+   "h10_K": 12.337615112587287,
+   "range_over_h_K": [
+    10.173,
+    13.223
+   ],
+   "cells_C": [
+    62.7,
+    132.6
+   ]
+  }
+ },
+ "resolved_10C": {
+  "1C": {
+   "within_cell_K": 0.9429483897955606,
+   "module_K": 4.117951479423027,
+   "ratio": 0.22898482279535712
+  },
+  "2C": {
+   "within_cell_K": 3.7703583078557585,
+   "module_K": 12.337615112587287,
+   "ratio": 0.305598632592218
+  }
+ },
+ "median_divergence": {
+  "35 C C/4": {
+   "median_pct_range_over_h": [
+    0.11,
+    0.13
+   ],
+   "p95_pct_range_over_h": [
+    0.26,
+    0.3
+   ],
+   "max_lever_pct_range_over_h": [
+    0.3,
+    0.34
+   ],
+   "levers_above_Geslin_p95": [
+    0,
+    0,
+    0
+   ]
+  },
+  "35 C C/2": {
+   "median_pct_range_over_h": [
+    0.45,
+    0.51
+   ],
+   "p95_pct_range_over_h": [
+    1.04,
+    1.17
+   ],
+   "max_lever_pct_range_over_h": [
+    1.2,
+    1.35
+   ],
+   "levers_above_Geslin_p95": [
+    0,
+    0,
+    0
+   ]
+  },
+  "35 C 1C": {
+   "median_pct_range_over_h": [
+    1.79,
+    1.98
+   ],
+   "p95_pct_range_over_h": [
+    4.12,
+    4.54
+   ],
+   "max_lever_pct_range_over_h": [
+    4.76,
+    5.25
+   ],
+   "levers_above_Geslin_p95": [
+    0,
+    0,
+    0
+   ]
+  },
+  "35 C 2C": {
+   "median_pct_range_over_h": [
+    6.22,
+    7.05
+   ],
+   "p95_pct_range_over_h": [
+    14.29,
+    16.18
+   ],
+   "max_lever_pct_range_over_h": [
+    16.49,
+    18.68
+   ],
+   "levers_above_Geslin_p95": [
+    5,
+    5,
+    5
+   ]
+  },
+  "25 C C/4": {
+   "median_pct_range_over_h": [
+    0.17,
+    0.19
+   ],
+   "p95_pct_range_over_h": [
+    0.39,
+    0.44
+   ],
+   "max_lever_pct_range_over_h": [
+    0.44,
+    0.51
+   ],
+   "levers_above_Geslin_p95": [
+    0,
+    0,
+    0
+   ]
+  },
+  "25 C C/2": {
+   "median_pct_range_over_h": [
+    0.67,
+    0.76
+   ],
+   "p95_pct_range_over_h": [
+    1.53,
+    1.75
+   ],
+   "max_lever_pct_range_over_h": [
+    1.77,
+    2.01
+   ],
+   "levers_above_Geslin_p95": [
+    0,
+    0,
+    0
+   ]
+  },
+  "25 C 1C": {
+   "median_pct_range_over_h": [
+    2.63,
+    2.91
+   ],
+   "p95_pct_range_over_h": [
+    6.03,
+    6.68
+   ],
+   "max_lever_pct_range_over_h": [
+    6.97,
+    7.71
+   ],
+   "levers_above_Geslin_p95": [
+    0,
+    0,
+    0
+   ]
+  },
+  "25 C 2C": {
+   "median_pct_range_over_h": [
+    8.52,
+    9.86
+   ],
+   "p95_pct_range_over_h": [
+    19.57,
+    22.65
+   ],
+   "max_lever_pct_range_over_h": [
+    22.58,
+    26.15
+   ],
+   "levers_above_Geslin_p95": [
+    6,
+    7,
+    7
+   ]
+  },
+  "10 C C/4": {
+   "median_pct_range_over_h": [
+    0.87,
+    1.02
+   ],
+   "p95_pct_range_over_h": [
+    1.8,
+    2.11
+   ],
+   "max_lever_pct_range_over_h": [
+    2.81,
+    3.3
+   ],
+   "levers_above_Geslin_p95": [
+    0,
+    0,
+    0
+   ]
+  },
+  "10 C C/2": {
+   "median_pct_range_over_h": [
+    3.45,
+    3.99
+   ],
+   "p95_pct_range_over_h": [
+    7.15,
+    8.26
+   ],
+   "max_lever_pct_range_over_h": [
+    11.18,
+    12.92
+   ],
+   "levers_above_Geslin_p95": [
+    1,
+    1,
+    1
+   ]
+  },
+  "10 C 1C": {
+   "median_pct_range_over_h": [
+    13.37,
+    14.74
+   ],
+   "p95_pct_range_over_h": [
+    27.69,
+    30.53
+   ],
+   "max_lever_pct_range_over_h": [
+    43.3,
+    47.73
+   ],
+   "levers_above_Geslin_p95": [
+    11,
+    13,
+    11
+   ]
+  },
+  "10 C 2C": {
+   "median_pct_range_over_h": [
+    36.42,
+    47.34
+   ],
+   "p95_pct_range_over_h": [
+    75.41,
+    98.03
+   ],
+   "max_lever_pct_range_over_h": [
+    117.91,
+    153.27
+   ],
+   "levers_above_Geslin_p95": [
+    15,
+    15,
+    15
+   ]
+  }
+ },
+ "median_levers_pct_per_K": {
+  "warm": [
+   "KIT 0-100 0.33/0.33C",
+   1.302942364773262
+  ],
+  "cold": [
+   "KIT 0-100 1.67/1.00C",
+   -3.5800471015633453
+  ]
+ },
+ "map": {
+  "Geslin": {
+   "35 C": {
+    "h = 5": [
+     "2C",
+     "none up to 2C"
+    ],
+    "h = 10": [
+     "2C",
+     "none up to 2C"
+    ],
+    "h = 25": [
+     "2C",
+     "none up to 2C"
+    ]
+   },
+   "25 C": {
+    "h = 5": [
+     "2C",
+     "none up to 2C"
+    ],
+    "h = 10": [
+     "2C",
+     "2C"
+    ],
+    "h = 25": [
+     "2C",
+     "2C"
+    ]
+   },
+   "10 C": {
+    "h = 5": [
+     "C/2",
+     "1C"
+    ],
+    "h = 10": [
+     "C/2",
+     "1C"
+    ],
+    "h = 25": [
+     "C/2",
+     "1C"
+    ]
+   }
+  },
+  "KIT": {
+   "35 C": {
+    "h = 5": [
+     "none up to 2C",
+     "none up to 2C"
+    ],
+    "h = 10": [
+     "none up to 2C",
+     "none up to 2C"
+    ],
+    "h = 25": [
+     "none up to 2C",
+     "none up to 2C"
+    ]
+   },
+   "25 C": {
+    "h = 5": [
+     "2C",
+     "none up to 2C"
+    ],
+    "h = 10": [
+     "2C",
+     "none up to 2C"
+    ],
+    "h = 25": [
+     "2C",
+     "none up to 2C"
+    ]
+   },
+   "10 C": {
+    "h = 5": [
+     "1C",
+     "2C"
+    ],
+    "h = 10": [
+     "1C",
+     "2C"
+    ],
+    "h = 25": [
+     "1C",
+     "2C"
+    ]
+   }
+  }
+ },
+ "experiment": {
+  "warm_central": {
+   "2 K Geslin": {
+    "n": 25,
+    "n_sim_lognormal": 23,
+    "n_normal_shape": 19
+   },
+   "2 K KIT": {
+    "n": 128,
+    "n_sim_lognormal": 125,
+    "n_normal_shape": 100
+   },
+   "5 K Geslin": {
+    "n": 6,
+    "n_sim_lognormal": 6,
+    "n_normal_shape": 5
+   },
+   "5 K KIT": {
+    "n": 23,
+    "n_sim_lognormal": 21,
+    "n_normal_shape": 18
+   }
+  },
+  "cold_central": {
+   "2 K Geslin": {
+    "n": 6,
+    "n_sim_lognormal": 5,
+    "n_normal_shape": 5
+   },
+   "2 K KIT": {
+    "n": 19,
+    "n_sim_lognormal": 18,
+    "n_normal_shape": 15
+   },
+   "5 K Geslin": {
+    "n": 3,
+    "n_sim_lognormal": 3,
+    "n_normal_shape": 3
+   },
+   "5 K KIT": {
+    "n": 5,
+    "n_sim_lognormal": 5,
+    "n_normal_shape": 5
+   }
+  },
+  "c1": {
+   "KIT 10-100 1.00/1.00C": {
+    "1 K Geslin": {
+     "n": 876,
+     "n_sim_lognormal": 876,
+     "n_normal_shape": 621
+    },
+    "1 K KIT": {
+     "n": 4777,
+     "n_sim_lognormal": 4735,
+     "n_normal_shape": 3721
+    },
+    "2 K Geslin": {
+     "n": 221,
+     "n_sim_lognormal": 218,
+     "n_normal_shape": 157
+    },
+    "2 K KIT": {
+     "n": 1196,
+     "n_sim_lognormal": 1200,
+     "n_normal_shape": 932
+    },
+    "5 K Geslin": {
+     "n": 37,
+     "n_sim_lognormal": 34,
+     "n_normal_shape": 27
+    },
+    "5 K KIT": {
+     "n": 193,
+     "n_sim_lognormal": 192,
+     "n_normal_shape": 151
+    },
+    "10 K Geslin": {
+     "n": 11,
+     "n_sim_lognormal": 10,
+     "n_normal_shape": 9
+    },
+    "10 K KIT": {
+     "n": 50,
+     "n_sim_lognormal": 48,
+     "n_normal_shape": 40
+    }
+   },
+   "Sandia NMC 25 to 35 C": {
+    "1 K Geslin": {
+     "n": 29,
+     "n_sim_lognormal": 27,
+     "n_normal_shape": 21
+    },
+    "1 K KIT": {
+     "n": 145,
+     "n_sim_lognormal": 141,
+     "n_normal_shape": 113
+    },
+    "2 K Geslin": {
+     "n": 9,
+     "n_sim_lognormal": 8,
+     "n_normal_shape": 7
+    },
+    "2 K KIT": {
+     "n": 38,
+     "n_sim_lognormal": 37,
+     "n_normal_shape": 30
+    },
+    "5 K Geslin": {
+     "n": 4,
+     "n_sim_lognormal": 4,
+     "n_normal_shape": 4
+    },
+    "5 K KIT": {
+     "n": 8,
+     "n_sim_lognormal": 7,
+     "n_normal_shape": 7
+    },
+    "10 K Geslin": {
+     "n": 3,
+     "n_sim_lognormal": 3,
+     "n_normal_shape": 3
+    },
+    "10 K KIT": {
+     "n": 4,
+     "n_sim_lognormal": 4,
+     "n_normal_shape": 4
+    }
+   },
+   "KIT 10 to 25 C median": {
+    "1 K Geslin": {
+     "n": 14,
+     "n_sim_lognormal": 13,
+     "n_normal_shape": 11
+    },
+    "1 K KIT": {
+     "n": 68,
+     "n_sim_lognormal": 65,
+     "n_normal_shape": 53
+    },
+    "2 K Geslin": {
+     "n": 6,
+     "n_sim_lognormal": 5,
+     "n_normal_shape": 5
+    },
+    "2 K KIT": {
+     "n": 19,
+     "n_sim_lognormal": 17,
+     "n_normal_shape": 15
+    },
+    "5 K Geslin": {
+     "n": 3,
+     "n_sim_lognormal": 3,
+     "n_normal_shape": 3
+    },
+    "5 K KIT": {
+     "n": 5,
+     "n_sim_lognormal": 5,
+     "n_normal_shape": 5
+    },
+    "10 K Geslin": {
+     "n": 3,
+     "n_sim_lognormal": 3,
+     "n_normal_shape": 3
+    },
+    "10 K KIT": {
+     "n": 3,
+     "n_sim_lognormal": 3,
+     "n_normal_shape": 3
+    }
+   },
+   "KIT 10-90 1.67/1.00C": {
+    "1 K Geslin": {
+     "n": 160,
+     "n_sim_lognormal": 156,
+     "n_normal_shape": 114
+    },
+    "1 K KIT": {
+     "n": 862,
+     "n_sim_lognormal": 864,
+     "n_normal_shape": 672
+    },
+    "2 K Geslin": {
+     "n": 42,
+     "n_sim_lognormal": 39,
+     "n_normal_shape": 30
+    },
+    "2 K KIT": {
+     "n": 217,
+     "n_sim_lognormal": 215,
+     "n_normal_shape": 170
+    },
+    "5 K Geslin": {
+     "n": 9,
+     "n_sim_lognormal": 8,
+     "n_normal_shape": 7
+    },
+    "5 K KIT": {
+     "n": 37,
+     "n_sim_lognormal": 35,
+     "n_normal_shape": 29
+    },
+    "10 K Geslin": {
+     "n": 4,
+     "n_sim_lognormal": 4,
+     "n_normal_shape": 4
+    },
+    "10 K KIT": {
+     "n": 11,
+     "n_sim_lognormal": 10,
+     "n_normal_shape": 9
+    }
+   }
+  },
+  "warm_band_range_2K_Geslin": [
+   6,
+   1042
+  ],
+  "cold_band_range_5K_Geslin": [
+   2,
+   6
+  ],
+  "cold_band_range_2K_Geslin": [
+   3,
+   25
+  ]
+ },
+ "checks": {
+  "V1": {
+   "pass": true,
+   "bitwise": true
+  },
+  "V2": {
+   "pass": true,
+   "max_abs_rel": 0.00020308557656030645
+  },
+  "V3": {
+   "pass": true
+  },
+  "V4": {
+   "cases": 144,
+   "v4_within_5pct": 82,
+   "lognormal_rel_min": -0.25,
+   "lognormal_rel_max": 0.010570824524312896,
+   "lognormal_abs_rel_max_where_n_above_100": 0.029585798816568046,
+   "lognormal_largest_shortfall_pairs": 66,
+   "sim_power_at_calculated_n_min": 0.7941,
+   "normal_check_abs_pairs_max_where_n_at_most_50": 1,
+   "normal_check_abs_rel_max_where_n_above_100": 0.0234375,
+   "normal_check_within_5pct": 140,
+   "normal_shape_over_registered_n": {
+    "min": 0.7078651685393258,
+    "max": 1.0,
+    "where_n_above_100_mean": 0.7603773956761053
+   }
+  }
+ },
+ "posthoc": {
+  "cold_bracket_p3_ratios": {
+   "R(25 C)": {
+    "h 5": 1.5846652050533632,
+    "h 10": 1.5792787553881953,
+    "h 25": 1.537873409931383
+   },
+   "R(35 C)": {
+    "h 5": 1.1442277660980453,
+    "h 10": 1.1287735742847822,
+    "h 25": 1.0870756989366888
+   }
+  },
+  "margins": {
+   "P1_largest_median_to_1C": 0.019786128678606754,
+   "P5_largest_35C_median": 0.07045852196054665,
+   "P5_KIT_mean": 0.07332337183440621,
+   "cases_with_cells_outside_band_setpoints": 17,
+   "of_cases": 36
+  },
+  "signed_median": {
+   "signed_median_s": -0.00422194101015308,
+   "lever": "KIT 10-100 1.00/1.00C",
+   "warm_chamber_dT2_Geslin_n": 221,
+   "warm_chamber_dT5_Geslin_n": 37
+  },
+  "cold_bracket_1C": {
+   "R(25 C)": {
+    "spread_K": [
+     2.118,
+     2.398
+    ],
+    "median_pct": [
+     7.58,
+     8.59
+    ],
+    "cells_C": [
+     17.7,
+     33.4
+    ]
+   },
+   "R(35 C)": {
+    "spread_K": [
+     1.497,
+     1.714
+    ],
+    "median_pct": [
+     5.36,
+     6.14
+    ],
+    "cells_C": [
+     15.4,
+     26.8
+    ]
+   }
+  }
+ }
+}
