@@ -1,0 +1,591 @@
+{
+ "method": "A separate derivation of the C/2 resistance, written by the checker without src/lgm50_resistance.py.",
+ "rows": [
+  {
+   "T_C": 10.0,
+   "R_ohm": 0.05521094138111106,
+   "R_ohm_spike_screened": 0.04796309053703303,
+   "runs": {
+    "discharge": {
+     "T_C": 10.0,
+     "c_rate": 0.5,
+     "direction": "discharge",
+     "duration_s": 6734.589273191282,
+     "V_last": 2.499999999999731,
+     "termination": "event: Minimum voltage [V]",
+     "charge_Ah": 4.676798106382834,
+     "mean_irreversible_W": 0.30844040686960705,
+     "R_ohm": 0.049350465099137125,
+     "spike_samples": 0,
+     "spike_t_s": [],
+     "spike_q_W": [],
+     "R_ohm_spike_screened": 0.049350465099137125,
+     "status": "ok",
+     "seconds": 1.8191885948181152
+    },
+    "charge": {
+     "T_C": 10.0,
+     "c_rate": 0.5,
+     "direction": "charge",
+     "duration_s": 3965.371110650174,
+     "V_last": 4.200000000009303,
+     "termination": "event: Maximum voltage [V]",
+     "charge_Ah": 2.7537299379515097,
+     "mean_irreversible_W": 0.38169636039428123,
+     "R_ohm": 0.061071417663085,
+     "spike_samples": 3,
+     "spike_t_s": [
+      3154.0,
+      3155.0,
+      3954.0
+     ],
+     "spike_q_W": [
+      71.87492181705367,
+      152.30991084089578,
+      135.91376617369735
+     ],
+     "R_ohm_spike_screened": 0.046575715974928926,
+     "status": "ok",
+     "seconds": 1.3847551345825195
+    }
+   }
+  },
+  {
+   "T_C": 15.0,
+   "R_ohm": 0.04107974116152978,
+   "R_ohm_spike_screened": 0.03943527651873014,
+   "runs": {
+    "discharge": {
+     "T_C": 15.0,
+     "c_rate": 0.5,
+     "direction": "discharge",
+     "duration_s": 6784.647890964925,
+     "V_last": 2.499999999999714,
+     "termination": "event: Minimum voltage [V]",
+     "charge_Ah": 4.711561035392308,
+     "mean_irreversible_W": 0.2510891412992132,
+     "R_ohm": 0.040174262607874114,
+     "spike_samples": 0,
+     "spike_t_s": [],
+     "spike_q_W": [],
+     "R_ohm_spike_screened": 0.040174262607874114,
+     "status": "ok",
+     "seconds": 2.018606424331665
+    },
+    "charge": {
+     "T_C": 15.0,
+     "c_rate": 0.5,
+     "direction": "charge",
+     "duration_s": 4198.724586567432,
+     "V_last": 4.2000000000059,
+     "termination": "event: Maximum voltage [V]",
+     "charge_Ah": 2.9157809628940505,
+     "mean_irreversible_W": 0.26240762321990896,
+     "R_ohm": 0.041985219715185436,
+     "spike_samples": 1,
+     "spike_t_s": [
+      3447.0
+     ],
+     "spike_q_W": [
+      86.51880661146527
+     ],
+     "R_ohm_spike_screened": 0.038696290429586166,
+     "status": "ok",
+     "seconds": 1.4530999660491943
+    }
+   }
+  },
+  {
+   "T_C": 20.0,
+   "R_ohm": 0.03249221485966232,
+   "R_ohm_spike_screened": 0.03249221485966232,
+   "runs": {
+    "discharge": {
+     "T_C": 20.0,
+     "c_rate": 0.5,
+     "direction": "discharge",
+     "duration_s": 6817.1477951732795,
+     "V_last": 2.4999999999997193,
+     "termination": "event: Minimum voltage [V]",
+     "charge_Ah": 4.7341304133147775,
+     "mean_irreversible_W": 0.20537721979003012,
+     "R_ohm": 0.03286035516640482,
+     "spike_samples": 0,
+     "spike_t_s": [],
+     "spike_q_W": [],
+     "R_ohm_spike_screened": 0.03286035516640482,
+     "status": "ok",
+     "seconds": 2.0072803497314453
+    },
+    "charge": {
+     "T_C": 20.0,
+     "c_rate": 0.5,
+     "direction": "charge",
+     "duration_s": 4476.071853429992,
+     "V_last": 4.200000000000036,
+     "termination": "event: Maximum voltage [V]",
+     "charge_Ah": 3.1083832315486055,
+     "mean_irreversible_W": 0.2007754659557488,
+     "R_ohm": 0.03212407455291981,
+     "spike_samples": 0,
+     "spike_t_s": [],
+     "spike_q_W": [],
+     "R_ohm_spike_screened": 0.03212407455291981,
+     "status": "ok",
+     "seconds": 1.4992358684539795
+    }
+   }
+  },
+  {
+   "T_C": 25.0,
+   "R_ohm": 0.026647091397532265,
+   "R_ohm_spike_screened": 0.026647091397532265,
+   "runs": {
+    "discharge": {
+     "T_C": 25.0,
+     "c_rate": 0.5,
+     "direction": "discharge",
+     "duration_s": 6843.656123025355,
+     "V_last": 2.499999999999707,
+     "termination": "event: Minimum voltage [V]",
+     "charge_Ah": 4.752538974323163,
+     "mean_irreversible_W": 0.16938018021354495,
+     "R_ohm": 0.02710082883416719,
+     "spike_samples": 0,
+     "spike_t_s": [],
+     "spike_q_W": [],
+     "R_ohm_spike_screened": 0.02710082883416719,
+     "status": "ok",
+     "seconds": 2.4580657482147217
+    },
+    "charge": {
+     "T_C": 25.0,
+     "c_rate": 0.5,
+     "direction": "charge",
+     "duration_s": 6412.615816958842,
+     "V_last": 4.200000000000001,
+     "termination": "event: Maximum voltage [V]",
+     "charge_Ah": 4.45320542844364,
+     "mean_irreversible_W": 0.16370846225560837,
+     "R_ohm": 0.02619335396089734,
+     "spike_samples": 0,
+     "spike_t_s": [],
+     "spike_q_W": [],
+     "R_ohm_spike_screened": 0.02619335396089734,
+     "status": "ok",
+     "seconds": 1.9995336532592773
+    }
+   }
+  },
+  {
+   "T_C": 30.0,
+   "R_ohm": 0.022159874084295747,
+   "R_ohm_spike_screened": 0.022159874084295747,
+   "runs": {
+    "discharge": {
+     "T_C": 30.0,
+     "c_rate": 0.5,
+     "direction": "discharge",
+     "duration_s": 6866.870999703777,
+     "V_last": 2.499999999999692,
+     "termination": "event: Minimum voltage [V]",
+     "charge_Ah": 4.768660416460957,
+     "mean_irreversible_W": 0.14122556930046695,
+     "R_ohm": 0.022596091088074713,
+     "spike_samples": 0,
+     "spike_t_s": [],
+     "spike_q_W": [],
+     "R_ohm_spike_screened": 0.022596091088074713,
+     "status": "ok",
+     "seconds": 2.485098361968994
+    },
+    "charge": {
+     "T_C": 30.0,
+     "c_rate": 0.5,
+     "direction": "charge",
+     "duration_s": 6502.418322935198,
+     "V_last": 4.200000000000028,
+     "termination": "event: Maximum voltage [V]",
+     "charge_Ah": 4.51556827981611,
+     "mean_irreversible_W": 0.1357728567532299,
+     "R_ohm": 0.02172365708051678,
+     "spike_samples": 0,
+     "spike_t_s": [],
+     "spike_q_W": [],
+     "R_ohm_spike_screened": 0.02172365708051678,
+     "status": "ok",
+     "seconds": 2.468557119369507
+    }
+   }
+  },
+  {
+   "T_C": 35.0,
+   "R_ohm": 0.01871278998608046,
+   "R_ohm_spike_screened": 0.01871278998608046,
+   "runs": {
+    "discharge": {
+     "T_C": 35.0,
+     "c_rate": 0.5,
+     "direction": "discharge",
+     "duration_s": 6887.767898270703,
+     "V_last": 2.5,
+     "termination": "event: Minimum voltage [V]",
+     "charge_Ah": 4.783172151576877,
+     "mean_irreversible_W": 0.11917560343680393,
+     "R_ohm": 0.019068096549888627,
+     "spike_samples": 0,
+     "spike_t_s": [],
+     "spike_q_W": [],
+     "R_ohm_spike_screened": 0.019068096549888627,
+     "status": "ok",
+     "seconds": 2.1771113872528076
+    },
+    "charge": {
+     "T_C": 35.0,
+     "c_rate": 0.5,
+     "direction": "charge",
+     "duration_s": 6578.130667564766,
+     "V_last": 4.200000000000009,
+     "termination": "event: Maximum voltage [V]",
+     "charge_Ah": 4.568146296919976,
+     "mean_irreversible_W": 0.11473427138920184,
+     "R_ohm": 0.018357483422272294,
+     "spike_samples": 0,
+     "spike_t_s": [],
+     "spike_q_W": [],
+     "R_ohm_spike_screened": 0.018357483422272294,
+     "status": "ok",
+     "seconds": 2.868438243865967
+    }
+   }
+  },
+  {
+   "T_C": 40.0,
+   "R_ohm": 0.016024915649423686,
+   "R_ohm_spike_screened": 0.016024915649423686,
+   "runs": {
+    "discharge": {
+     "T_C": 40.0,
+     "c_rate": 0.5,
+     "direction": "discharge",
+     "duration_s": 6906.730427030657,
+     "V_last": 2.499999999999999,
+     "termination": "event: Minimum voltage [V]",
+     "charge_Ah": 4.7963405743268455,
+     "mean_irreversible_W": 0.10188794244848204,
+     "R_ohm": 0.016302070791757127,
+     "spike_samples": 0,
+     "spike_t_s": [],
+     "spike_q_W": [],
+     "R_ohm_spike_screened": 0.016302070791757127,
+     "status": "ok",
+     "seconds": 2.317535161972046
+    },
+    "charge": {
+     "T_C": 40.0,
+     "c_rate": 0.5,
+     "direction": "charge",
+     "duration_s": 6629.699463958455,
+     "V_last": 4.2,
+     "termination": "event: Maximum voltage [V]",
+     "charge_Ah": 4.603957961082261,
+     "mean_irreversible_W": 0.09842350316931403,
+     "R_ohm": 0.015747760507090244,
+     "spike_samples": 0,
+     "spike_t_s": [],
+     "spike_q_W": [],
+     "R_ohm_spike_screened": 0.015747760507090244,
+     "status": "ok",
+     "seconds": 2.483229875564575
+    }
+   }
+  },
+  {
+   "T_C": 45.0,
+   "R_ohm": 0.013926991122289525,
+   "R_ohm_spike_screened": 0.013926991122289525,
+   "runs": {
+    "discharge": {
+     "T_C": 45.0,
+     "c_rate": 0.5,
+     "direction": "discharge",
+     "duration_s": 6923.9480711972055,
+     "V_last": 2.499999999999999,
+     "termination": "event: Minimum voltage [V]",
+     "charge_Ah": 4.808297271664726,
+     "mean_irreversible_W": 0.08833762597192474,
+     "R_ohm": 0.014134020155507958,
+     "spike_samples": 0,
+     "spike_t_s": [],
+     "spike_q_W": [],
+     "R_ohm_spike_screened": 0.014134020155507958,
+     "status": "ok",
+     "seconds": 2.158923387527466
+    },
+    "charge": {
+     "T_C": 45.0,
+     "c_rate": 0.5,
+     "direction": "charge",
+     "duration_s": 6690.467854347971,
+     "V_last": 4.2,
+     "termination": "event: Maximum voltage [V]",
+     "charge_Ah": 4.646158232186091,
+     "mean_irreversible_W": 0.08574976305669432,
+     "R_ohm": 0.013719962089071091,
+     "spike_samples": 0,
+     "spike_t_s": [],
+     "spike_q_W": [],
+     "R_ohm_spike_screened": 0.013719962089071091,
+     "status": "ok",
+     "seconds": 3.241737127304077
+    }
+   }
+  },
+  {
+   "T_C": 50.0,
+   "R_ohm": 0.01227920422245267,
+   "R_ohm_spike_screened": 0.01227920422245267,
+   "runs": {
+    "discharge": {
+     "T_C": 50.0,
+     "c_rate": 0.5,
+     "direction": "discharge",
+     "duration_s": 6939.596945300261,
+     "V_last": 2.4999999999996527,
+     "termination": "event: Minimum voltage [V]",
+     "charge_Ah": 4.819164545347403,
+     "mean_irreversible_W": 0.07771185356073365,
+     "R_ohm": 0.012433896569717384,
+     "spike_samples": 0,
+     "spike_t_s": [],
+     "spike_q_W": [],
+     "R_ohm_spike_screened": 0.012433896569717384,
+     "status": "ok",
+     "seconds": 1.971907138824463
+    },
+    "charge": {
+     "T_C": 50.0,
+     "c_rate": 0.5,
+     "direction": "charge",
+     "duration_s": 6738.256634804821,
+     "V_last": 4.200000000000001,
+     "termination": "event: Maximum voltage [V]",
+     "charge_Ah": 4.679344885281126,
+     "mean_irreversible_W": 0.07577819921992471,
+     "R_ohm": 0.012124511875187953,
+     "spike_samples": 0,
+     "spike_t_s": [],
+     "spike_q_W": [],
+     "R_ohm_spike_screened": 0.012124511875187953,
+     "status": "ok",
+     "seconds": 2.6765806674957275
+    }
+   }
+  },
+  {
+   "T_C": 55.0,
+   "R_ohm": 0.010988432484654205,
+   "R_ohm_spike_screened": 0.010988432484654205,
+   "runs": {
+    "discharge": {
+     "T_C": 55.0,
+     "c_rate": 0.5,
+     "direction": "discharge",
+     "duration_s": 6953.83378777427,
+     "V_last": 2.4999999999996576,
+     "termination": "event: Minimum voltage [V]",
+     "charge_Ah": 4.82905124150991,
+     "mean_irreversible_W": 0.06939995341711405,
+     "R_ohm": 0.011103992546738248,
+     "spike_samples": 0,
+     "spike_t_s": [],
+     "spike_q_W": [],
+     "R_ohm_spike_screened": 0.011103992546738248,
+     "status": "ok",
+     "seconds": 1.9080357551574707
+    },
+    "charge": {
+     "T_C": 55.0,
+     "c_rate": 0.5,
+     "direction": "charge",
+     "duration_s": 6774.509121511359,
+     "V_last": 4.2,
+     "termination": "event: Maximum voltage [V]",
+     "charge_Ah": 4.704520223271777,
+     "mean_irreversible_W": 0.06795545264106352,
+     "R_ohm": 0.010872872422570163,
+     "spike_samples": 0,
+     "spike_t_s": [],
+     "spike_q_W": [],
+     "R_ohm_spike_screened": 0.010872872422570163,
+     "status": "ok",
+     "seconds": 2.6991968154907227
+    }
+   }
+  },
+  {
+   "T_C": 60.0,
+   "R_ohm": 0.009988214215198911,
+   "R_ohm_spike_screened": 0.009988214215198911,
+   "runs": {
+    "discharge": {
+     "T_C": 60.0,
+     "c_rate": 0.5,
+     "direction": "discharge",
+     "duration_s": 6966.7434281579,
+     "V_last": 2.4999999999996145,
+     "termination": "event: Minimum voltage [V]",
+     "charge_Ah": 4.838016269554097,
+     "mean_irreversible_W": 0.06297600932705187,
+     "R_ohm": 0.0100761614923283,
+     "spike_samples": 0,
+     "spike_t_s": [],
+     "spike_q_W": [],
+     "R_ohm_spike_screened": 0.0100761614923283,
+     "status": "ok",
+     "seconds": 1.809039831161499
+    },
+    "charge": {
+     "T_C": 60.0,
+     "c_rate": 0.5,
+     "direction": "charge",
+     "duration_s": 6806.818973594599,
+     "V_last": 4.2,
+     "termination": "event: Maximum voltage [V]",
+     "charge_Ah": 4.726957620551804,
+     "mean_irreversible_W": 0.06187666836293451,
+     "R_ohm": 0.009900266938069523,
+     "spike_samples": 0,
+     "spike_t_s": [],
+     "spike_q_W": [],
+     "R_ohm_spike_screened": 0.009900266938069523,
+     "status": "ok",
+     "seconds": 3.3497416973114014
+    }
+   }
+  },
+  {
+   "T_C": 70.0,
+   "R_ohm": 0.008656782339384014,
+   "R_ohm_spike_screened": 0.008656782339384014,
+   "runs": {
+    "discharge": {
+     "T_C": 70.0,
+     "c_rate": 0.5,
+     "direction": "discharge",
+     "duration_s": 6989.158032413882,
+     "V_last": 2.499999999999796,
+     "termination": "event: Minimum voltage [V]",
+     "charge_Ah": 4.853581966954085,
+     "mean_irreversible_W": 0.0544198996903274,
+     "R_ohm": 0.008707183950452384,
+     "spike_samples": 0,
+     "spike_t_s": [],
+     "spike_q_W": [],
+     "R_ohm_spike_screened": 0.008707183950452384,
+     "status": "ok",
+     "seconds": 2.120412826538086
+    },
+    "charge": {
+     "T_C": 70.0,
+     "c_rate": 0.5,
+     "direction": "charge",
+     "duration_s": 6848.232181916261,
+     "V_last": 4.200000000000001,
+     "termination": "event: Maximum voltage [V]",
+     "charge_Ah": 4.755716792997403,
+     "mean_irreversible_W": 0.05378987955197278,
+     "R_ohm": 0.008606380728315644,
+     "spike_samples": 0,
+     "spike_t_s": [],
+     "spike_q_W": [],
+     "R_ohm_spike_screened": 0.008606380728315644,
+     "status": "ok",
+     "seconds": 3.0443403720855713
+    }
+   }
+  },
+  {
+   "T_C": 80.0,
+   "R_ohm": 0.008007925580070727,
+   "R_ohm_spike_screened": 0.008007925580070727,
+   "runs": {
+    "discharge": {
+     "T_C": 80.0,
+     "c_rate": 0.5,
+     "direction": "discharge",
+     "duration_s": 7007.754877072552,
+     "V_last": 2.4999999999993734,
+     "termination": "event: Minimum voltage [V]",
+     "charge_Ah": 4.866496442411495,
+     "mean_irreversible_W": 0.050226112277625856,
+     "R_ohm": 0.008036177964420138,
+     "spike_samples": 0,
+     "spike_t_s": [],
+     "spike_q_W": [],
+     "R_ohm_spike_screened": 0.008036177964420138,
+     "status": "ok",
+     "seconds": 2.0086841583251953
+    },
+    "charge": {
+     "T_C": 80.0,
+     "c_rate": 0.5,
+     "direction": "charge",
+     "duration_s": 6879.494348368393,
+     "V_last": 4.200000000000019,
+     "termination": "event: Maximum voltage [V]",
+     "charge_Ah": 4.777426630811384,
+     "mean_irreversible_W": 0.049872957473258206,
+     "R_ohm": 0.007979673195721314,
+     "spike_samples": 0,
+     "spike_t_s": [],
+     "spike_q_W": [],
+     "R_ohm_spike_screened": 0.007979673195721314,
+     "status": "ok",
+     "seconds": 3.4697647094726562
+    }
+   }
+  },
+  {
+   "T_C": 90.0,
+   "R_ohm": 0.007893959772213426,
+   "R_ohm_spike_screened": 0.007893959772213426,
+   "runs": {
+    "discharge": {
+     "T_C": 90.0,
+     "c_rate": 0.5,
+     "direction": "discharge",
+     "duration_s": 7023.15762502697,
+     "V_last": 2.4999999999997398,
+     "termination": "event: Minimum voltage [V]",
+     "charge_Ah": 4.877192795157618,
+     "mean_irreversible_W": 0.04942864485964958,
+     "R_ohm": 0.007908583177543933,
+     "spike_samples": 0,
+     "spike_t_s": [],
+     "spike_q_W": [],
+     "R_ohm_spike_screened": 0.007908583177543933,
+     "status": "ok",
+     "seconds": 1.9277029037475586
+    },
+    "charge": {
+     "T_C": 90.0,
+     "c_rate": 0.5,
+     "direction": "charge",
+     "duration_s": 6888.186835102461,
+     "V_last": 4.200000000000014,
+     "termination": "event: Maximum voltage [V]",
+     "charge_Ah": 4.7834630799322655,
+     "mean_irreversible_W": 0.04924585229301824,
+     "R_ohm": 0.007879336366882919,
+     "spike_samples": 0,
+     "spike_t_s": [],
+     "spike_q_W": [],
+     "R_ohm_spike_screened": 0.007879336366882919,
+     "status": "ok",
+     "seconds": 3.1772897243499756
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,121 @@
+{
+ "P1": {
+  "held": true,
+  "median_warm": {
+   "0.25C h=5": 0.0012135567591150583,
+   "0.25C h=10": 0.0012842698715352589,
+   "0.25C h=25": 0.0011385851540242082,
+   "0.5C h=5": 0.00479775329425141,
+   "0.5C h=10": 0.005098138324549674,
+   "0.5C h=25": 0.004540650066584881,
+   "1C h=5": 0.018335484203238932,
+   "1C h=10": 0.019786128678606754,
+   "1C h=25": 0.01794439478659723
+  },
+  "max": 0.019786128678606754,
+  "floor": 0.029909975804944276
+ },
+ "P2": {
+  "held": false,
+  "median_h5": 0.06220111622449316,
+  "first_clause": true,
+  "second_clause": false,
+  "levers_above_Geslin_p95": [
+   [
+    "KIT 0-100 1.00/1.00C",
+    0.12818111057088735
+   ],
+   [
+    "KIT 0-100 1.67/1.00C",
+    0.1649267411251324
+   ],
+   [
+    "KIT 10-100 1.67/1.00C",
+    0.0914115392904908
+   ],
+   [
+    "KIT 10-90 0.33/0.33C",
+    0.09116900526867418
+   ],
+   [
+    "Sandia NMC 25 to 35 C",
+    0.11663701013765752
+   ]
+  ],
+  "max_lever_divergence": 0.1649267411251324,
+  "other_coolings": {
+   "h=10": {
+    "median": 0.07045852196054665,
+    "levers_above_p95": 5
+   },
+   "h=25": {
+    "median": 0.0683510204842462,
+    "levers_above_p95": 5
+   }
+  }
+ },
+ "P3": {
+  "held": true,
+  "cases": {
+   "h=5": {
+    "spread_10C": 3.7356579331889748,
+    "spread_35C": 1.4072367818379803,
+    "ratio": 2.6546050965992114
+   },
+   "h=10": {
+    "spread_10C": 4.117951479423084,
+    "spread_35C": 1.5185728251341288,
+    "ratio": 2.711724726839731
+   },
+   "h=25": {
+    "spread_10C": 3.743915284326704,
+    "spread_35C": 1.3772209171907548,
+    "ratio": 2.7184565944318613
+   }
+  }
+ },
+ "P4": {
+  "held": true,
+  "first_clause": true,
+  "second_clause": true,
+  "median_cold": {
+   "h=5": 0.13373831356145308,
+   "h=10": 0.14742460258287102,
+   "h=25": 0.13403393062152524
+  }
+ },
+ "P5": {
+  "held": false,
+  "clause_35C_none_above_KIT_mean": true,
+  "max_35C": 0.07045852196054665,
+  "clause_10C_every_2C_above": true,
+  "clause_10C_none_below_2C_above": false,
+  "cases_below_2C_above_KIT_mean": {
+   "1C h=5": 0.13373831356145308,
+   "1C h=10": 0.14742460258287102,
+   "1C h=25": 0.13403393062152524
+  },
+  "floor": 0.07332337183440621
+ },
+ "P6": {
+  "held": true,
+  "dT_cell_K": 0.9429483897957311,
+  "module_spread_K": 4.117951479423084,
+  "ratio": 0.2289848227953954
+ },
+ "P7": {
+  "held": false,
+  "scored": true,
+  "cold_central_lever": "KIT 0-100 1.67/1.00C",
+  "n_cold_dT5": 3,
+  "n_cold_sim": 3,
+  "V4_cold_pass": true,
+  "warm_central_lever": "KIT 0-100 0.33/0.33C",
+  "n_warm_dT2": 25,
+  "n_warm_sim": 24,
+  "V4_warm_pass": true,
+  "cold_clause": true,
+  "warm_clause": false,
+  "simulation_file": "simulation_lognormal_all.csv"
+ }
+}
