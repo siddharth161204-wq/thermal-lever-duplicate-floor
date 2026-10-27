@@ -1,0 +1,936 @@
+{
+ "cold_bracket": {
+  "note": "conditional: the registered 10 C heat uses R(10 C); these use R(25 C) or R(35 C) at 10 C ambient, and R(35 C) at 25 C ambient",
+  "cases": [
+   {
+    "ambient_C": 10.0,
+    "resistance_of_C": 25.0,
+    "R_ohm": 0.02664699559562891,
+    "rate": "C/4",
+    "h": 5.0,
+    "spread_K": 0.15247787471162155,
+    "T_min_C": 11.409603417089443,
+    "T_max_C": 11.562081291801064,
+    "median_divergence": 0.005458779734138796,
+    "offers_Geslin": false,
+    "detectable_Geslin": false,
+    "offers_KIT": false,
+    "detectable_KIT": false
+   },
+   {
+    "ambient_C": 10.0,
+    "resistance_of_C": 25.0,
+    "R_ohm": 0.02664699559562891,
+    "rate": "C/4",
+    "h": 10.0,
+    "spread_K": 0.158490098874438,
+    "T_min_C": 10.964995512759913,
+    "T_max_C": 11.12348561163435,
+    "median_divergence": 0.005674020191019197,
+    "offers_Geslin": false,
+    "detectable_Geslin": false,
+    "offers_KIT": false,
+    "detectable_KIT": false
+   },
+   {
+    "ambient_C": 10.0,
+    "resistance_of_C": 25.0,
+    "R_ohm": 0.02664699559562891,
+    "rate": "C/4",
+    "h": 25.0,
+    "spread_K": 0.1351195253105857,
+    "T_min_C": 10.487034564181272,
+    "T_max_C": 10.622154089491858,
+    "median_divergence": 0.004837342649527773,
+    "offers_Geslin": false,
+    "detectable_Geslin": false,
+    "offers_KIT": false,
+    "detectable_KIT": false
+   },
+   {
+    "ambient_C": 10.0,
+    "resistance_of_C": 25.0,
+    "R_ohm": 0.02664699559562891,
+    "rate": "C/2",
+    "h": 5.0,
+    "spread_K": 0.5987334862729199,
+    "T_min_C": 15.565638915975114,
+    "T_max_C": 16.164372402248034,
+    "median_divergence": 0.021434940821402838,
+    "offers_Geslin": false,
+    "detectable_Geslin": false,
+    "offers_KIT": false,
+    "detectable_KIT": false
+   },
+   {
+    "ambient_C": 10.0,
+    "resistance_of_C": 25.0,
+    "R_ohm": 0.02664699559562891,
+    "rate": "C/2",
+    "h": 10.0,
+    "spread_K": 0.6268903604694742,
+    "T_min_C": 13.835874225128293,
+    "T_max_C": 14.462764585597768,
+    "median_divergence": 0.02244297017996742,
+    "offers_Geslin": false,
+    "detectable_Geslin": false,
+    "offers_KIT": false,
+    "detectable_KIT": false
+   },
+   {
+    "ambient_C": 10.0,
+    "resistance_of_C": 25.0,
+    "R_ohm": 0.02664699559562891,
+    "rate": "C/2",
+    "h": 25.0,
+    "spread_K": 0.5382805597076867,
+    "T_min_C": 11.944981864288366,
+    "T_max_C": 12.483262423996052,
+    "median_divergence": 0.019270697576093992,
+    "offers_Geslin": false,
+    "detectable_Geslin": false,
+    "offers_KIT": false,
+    "detectable_KIT": false
+   },
+   {
+    "ambient_C": 10.0,
+    "resistance_of_C": 25.0,
+    "R_ohm": 0.02664699559562891,
+    "rate": "1C",
+    "h": 5.0,
+    "spread_K": 2.229999163449918,
+    "T_min_C": 31.186664751061016,
+    "T_max_C": 33.416663914510934,
+    "median_divergence": 0.07983502041597564,
+    "offers_Geslin": true,
+    "detectable_Geslin": false,
+    "offers_KIT": true,
+    "detectable_KIT": false
+   },
+   {
+    "ambient_C": 10.0,
+    "resistance_of_C": 25.0,
+    "R_ohm": 0.02664699559562891,
+    "rate": "1C",
+    "h": 10.0,
+    "spread_K": 2.3982498012441624,
+    "T_min_C": 24.96909649252649,
+    "T_max_C": 27.36734629377065,
+    "median_divergence": 0.08585847249769032,
+    "offers_Geslin": true,
+    "detectable_Geslin": false,
+    "offers_KIT": true,
+    "detectable_KIT": false
+   },
+   {
+    "ambient_C": 10.0,
+    "resistance_of_C": 25.0,
+    "R_ohm": 0.02664699559562891,
+    "rate": "1C",
+    "h": 25.0,
+    "spread_K": 2.117991428148798,
+    "T_min_C": 17.729398568866202,
+    "T_max_C": 19.847389997015,
+    "median_divergence": 0.07582509073480115,
+    "offers_Geslin": true,
+    "detectable_Geslin": false,
+    "offers_KIT": true,
+    "detectable_KIT": false
+   },
+   {
+    "ambient_C": 10.0,
+    "resistance_of_C": 25.0,
+    "R_ohm": 0.02664699559562891,
+    "rate": "2C",
+    "h": 5.0,
+    "spread_K": 6.9698693334284485,
+    "T_min_C": 81.75601010055823,
+    "T_max_C": 88.72587943398668,
+    "median_divergence": 0.24952460505415763,
+    "offers_Geslin": true,
+    "detectable_Geslin": true,
+    "offers_KIT": true,
+    "detectable_KIT": true
+   },
+   {
+    "ambient_C": 10.0,
+    "resistance_of_C": 25.0,
+    "R_ohm": 0.02664699559562891,
+    "rate": "2C",
+    "h": 10.0,
+    "spread_K": 8.086590215104934,
+    "T_min_C": 64.57665179936981,
+    "T_max_C": 72.66324201447475,
+    "median_divergence": 0.2895037386111693,
+    "offers_Geslin": true,
+    "detectable_Geslin": true,
+    "offers_KIT": true,
+    "detectable_KIT": true
+   },
+   {
+    "ambient_C": 10.0,
+    "resistance_of_C": 25.0,
+    "R_ohm": 0.02664699559562891,
+    "rate": "2C",
+    "h": 25.0,
+    "spread_K": 7.916665185566956,
+    "T_min_C": 40.11093745990553,
+    "T_max_C": 48.027602645472484,
+    "median_divergence": 0.2834203425163642,
+    "offers_Geslin": true,
+    "detectable_Geslin": true,
+    "offers_KIT": true,
+    "detectable_KIT": true
+   },
+   {
+    "ambient_C": 10.0,
+    "resistance_of_C": 35.0,
+    "R_ohm": 0.01871279570954531,
+    "rate": "C/4",
+    "h": 5.0,
+    "spread_K": 0.10727556652796011,
+    "T_min_C": 10.991181907482996,
+    "T_max_C": 11.098457474010957,
+    "median_divergence": 0.003840515810169894,
+    "offers_Geslin": false,
+    "detectable_Geslin": false,
+    "offers_KIT": false,
+    "detectable_KIT": false
+   },
+   {
+    "ambient_C": 10.0,
+    "resistance_of_C": 35.0,
+    "R_ohm": 0.01871279570954531,
+    "rate": "C/4",
+    "h": 10.0,
+    "spread_K": 0.11142342365855029,
+    "T_min_C": 10.678088826346027,
+    "T_max_C": 10.789512250004577,
+    "median_divergence": 0.003989011049150577,
+    "offers_Geslin": false,
+    "detectable_Geslin": false,
+    "offers_KIT": false,
+    "detectable_KIT": false
+   },
+   {
+    "ambient_C": 10.0,
+    "resistance_of_C": 35.0,
+    "R_ohm": 0.01871279570954531,
+    "rate": "C/4",
+    "h": 25.0,
+    "spread_K": 0.09492569149972496,
+    "T_min_C": 10.34207397105763,
+    "T_max_C": 10.436999662557355,
+    "median_divergence": 0.0033983844671748665,
+    "offers_Geslin": false,
+    "detectable_Geslin": false,
+    "offers_KIT": false,
+    "detectable_KIT": false
+   },
+   {
+    "ambient_C": 10.0,
+    "resistance_of_C": 35.0,
+    "R_ohm": 0.01871279570954531,
+    "rate": "C/2",
+    "h": 5.0,
+    "spread_K": 0.42354491981211595,
+    "T_min_C": 13.92854880488261,
+    "T_max_C": 14.352093724694726,
+    "median_divergence": 0.015163107625552452,
+    "offers_Geslin": false,
+    "detectable_Geslin": false,
+    "offers_KIT": false,
+    "detectable_KIT": false
+   },
+   {
+    "ambient_C": 10.0,
+    "resistance_of_C": 35.0,
+    "R_ohm": 0.01871279570954531,
+    "rate": "C/2",
+    "h": 10.0,
+    "spread_K": 0.4421956016620925,
+    "T_min_C": 12.700431737397025,
+    "T_max_C": 13.142627339059118,
+    "median_divergence": 0.015830810820544338,
+    "offers_Geslin": false,
+    "detectable_Geslin": false,
+    "offers_KIT": false,
+    "detectable_KIT": false
+   },
+   {
+    "ambient_C": 10.0,
+    "resistance_of_C": 35.0,
+    "R_ohm": 0.01871279570954531,
+    "rate": "C/2",
+    "h": 25.0,
+    "spread_K": 0.3786190093890127,
+    "T_min_C": 11.366739424116872,
+    "T_max_C": 11.745358433505885,
+    "median_divergence": 0.0135547388715992,
+    "offers_Geslin": false,
+    "detectable_Geslin": false,
+    "offers_KIT": false,
+    "detectable_KIT": false
+   },
+   {
+    "ambient_C": 10.0,
+    "resistance_of_C": 35.0,
+    "R_ohm": 0.01871279570954531,
+    "rate": "1C",
+    "h": 5.0,
+    "spread_K": 1.6101993992534744,
+    "T_min_C": 25.166938940098987,
+    "T_max_C": 26.77713833935246,
+    "median_divergence": 0.05764589692236441,
+    "offers_Geslin": true,
+    "detectable_Geslin": false,
+    "offers_KIT": false,
+    "detectable_KIT": false
+   },
+   {
+    "ambient_C": 10.0,
+    "resistance_of_C": 35.0,
+    "R_ohm": 0.01871279570954531,
+    "rate": "1C",
+    "h": 10.0,
+    "spread_K": 1.7141248756383902,
+    "T_min_C": 20.614878663608295,
+    "T_max_C": 22.329003539246685,
+    "median_divergence": 0.06136647792746849,
+    "offers_Geslin": true,
+    "detectable_Geslin": false,
+    "offers_KIT": false,
+    "detectable_KIT": false
+   },
+   {
+    "ambient_C": 10.0,
+    "resistance_of_C": 35.0,
+    "R_ohm": 0.01871279570954531,
+    "rate": "1C",
+    "h": 25.0,
+    "spread_K": 1.4971433911452436,
+    "T_min_C": 15.442043093678478,
+    "T_max_C": 16.939186484823722,
+    "median_divergence": 0.05359843858094247,
+    "offers_Geslin": true,
+    "detectable_Geslin": false,
+    "offers_KIT": false,
+    "detectable_KIT": false
+   },
+   {
+    "ambient_C": 10.0,
+    "resistance_of_C": 35.0,
+    "R_ohm": 0.01871279570954531,
+    "rate": "2C",
+    "h": 5.0,
+    "spread_K": 5.361395839362501,
+    "T_min_C": 63.548719233066606,
+    "T_max_C": 68.91011507242911,
+    "median_divergence": 0.191940496350435,
+    "offers_Geslin": true,
+    "detectable_Geslin": true,
+    "offers_KIT": true,
+    "detectable_KIT": false
+   },
+   {
+    "ambient_C": 10.0,
+    "resistance_of_C": 35.0,
+    "R_ohm": 0.01871279570954531,
+    "rate": "2C",
+    "h": 10.0,
+    "spread_K": 6.067033641779517,
+    "T_min_C": 49.71507320769598,
+    "T_max_C": 55.7821068494755,
+    "median_divergence": 0.21720266204340066,
+    "offers_Geslin": true,
+    "detectable_Geslin": true,
+    "offers_KIT": true,
+    "detectable_KIT": true
+   },
+   {
+    "ambient_C": 10.0,
+    "resistance_of_C": 35.0,
+    "R_ohm": 0.01871279570954531,
+    "rate": "2C",
+    "h": 25.0,
+    "spread_K": 5.712968955561507,
+    "T_min_C": 31.36970162946949,
+    "T_max_C": 37.082670585030996,
+    "median_divergence": 0.20452697950679347,
+    "offers_Geslin": true,
+    "detectable_Geslin": true,
+    "offers_KIT": true,
+    "detectable_KIT": false
+   },
+   {
+    "ambient_C": 25.0,
+    "resistance_of_C": 35.0,
+    "R_ohm": 0.01871279570954531,
+    "rate": "C/4",
+    "h": 5.0,
+    "spread_K": 0.09858364544879805,
+    "T_min_C": 25.90507663397898,
+    "T_max_C": 26.003660279427777,
+    "median_divergence": 0.0012844880812902578,
+    "offers_Geslin": false,
+    "detectable_Geslin": false,
+    "offers_KIT": false,
+    "detectable_KIT": false
+   },
+   {
+    "ambient_C": 25.0,
+    "resistance_of_C": 35.0,
+    "R_ohm": 0.01871279570954531,
+    "rate": "C/4",
+    "h": 10.0,
+    "spread_K": 0.10361070845112863,
+    "T_min_C": 25.636164838466357,
+    "T_max_C": 25.739775546917485,
+    "median_divergence": 0.0013499878148514656,
+    "offers_Geslin": false,
+    "detectable_Geslin": false,
+    "offers_KIT": false,
+    "detectable_KIT": false
+   },
+   {
+    "ambient_C": 25.0,
+    "resistance_of_C": 35.0,
+    "R_ohm": 0.01871279570954531,
+    "rate": "C/4",
+    "h": 25.0,
+    "spread_K": 0.09042242938545542,
+    "T_min_C": 25.330960727607476,
+    "T_max_C": 25.42138315699293,
+    "median_divergence": 0.001178152139720286,
+    "offers_Geslin": false,
+    "detectable_Geslin": false,
+    "offers_KIT": false,
+    "detectable_KIT": false
+   },
+   {
+    "ambient_C": 25.0,
+    "resistance_of_C": 35.0,
+    "R_ohm": 0.01871279570954531,
+    "rate": "C/2",
+    "h": 5.0,
+    "spread_K": 0.38953546401126005,
+    "T_min_C": 28.589784160326076,
+    "T_max_C": 28.979319624337336,
+    "median_divergence": 0.005075422586418811,
+    "offers_Geslin": false,
+    "detectable_Geslin": false,
+    "offers_KIT": false,
+    "detectable_KIT": false
+   },
+   {
+    "ambient_C": 25.0,
+    "resistance_of_C": 35.0,
+    "R_ohm": 0.01871279570954531,
+    "rate": "C/2",
+    "h": 10.0,
+    "spread_K": 0.4112470483927382,
+    "T_min_C": 27.533775100041964,
+    "T_max_C": 27.945022148434703,
+    "median_divergence": 0.005358312017388584,
+    "offers_Geslin": false,
+    "detectable_Geslin": false,
+    "offers_KIT": false,
+    "detectable_KIT": false
+   },
+   {
+    "ambient_C": 25.0,
+    "resistance_of_C": 35.0,
+    "R_ohm": 0.01871279570954531,
+    "rate": "C/2",
+    "h": 25.0,
+    "spread_K": 0.3606213110867884,
+    "T_min_C": 26.322285130046396,
+    "T_max_C": 26.682906441133184,
+    "median_divergence": 0.004698687838550543,
+    "offers_Geslin": false,
+    "detectable_Geslin": false,
+    "offers_KIT": false,
+    "detectable_KIT": false
+   },
+   {
+    "ambient_C": 25.0,
+    "resistance_of_C": 35.0,
+    "R_ohm": 0.01871279570954531,
+    "rate": "1C",
+    "h": 5.0,
+    "spread_K": 1.4855308639375835,
+    "T_min_C": 38.896317773987505,
+    "T_max_C": 40.38184863792509,
+    "median_divergence": 0.01935561096802502,
+    "offers_Geslin": false,
+    "detectable_Geslin": false,
+    "offers_KIT": false,
+    "detectable_KIT": false
+   },
+   {
+    "ambient_C": 25.0,
+    "resistance_of_C": 35.0,
+    "R_ohm": 0.01871279570954531,
+    "rate": "1C",
+    "h": 10.0,
+    "spread_K": 1.595168100538217,
+    "T_min_C": 34.96476529065694,
+    "T_max_C": 36.55993339119516,
+    "median_divergence": 0.020784120971261373,
+    "offers_Geslin": false,
+    "detectable_Geslin": false,
+    "offers_KIT": false,
+    "detectable_KIT": false
+   },
+   {
+    "ambient_C": 25.0,
+    "resistance_of_C": 35.0,
+    "R_ohm": 0.01871279570954531,
+    "rate": "1C",
+    "h": 25.0,
+    "spread_K": 1.4254348829998094,
+    "T_min_C": 30.26424008920219,
+    "T_max_C": 31.689674972202,
+    "median_divergence": 0.0185725949728607,
+    "offers_Geslin": false,
+    "detectable_Geslin": false,
+    "offers_KIT": false,
+    "detectable_KIT": false
+   },
+   {
+    "ambient_C": 25.0,
+    "resistance_of_C": 35.0,
+    "R_ohm": 0.01871279570954531,
+    "rate": "2C",
+    "h": 5.0,
+    "spread_K": 5.002059834633144,
+    "T_min_C": 74.5045756526099,
+    "T_max_C": 79.50663548724305,
+    "median_divergence": 0.06517395669674261,
+    "offers_Geslin": true,
+    "detectable_Geslin": false,
+    "offers_KIT": false,
+    "detectable_KIT": false
+   },
+   {
+    "ambient_C": 25.0,
+    "resistance_of_C": 35.0,
+    "R_ohm": 0.01871279570954531,
+    "rate": "2C",
+    "h": 10.0,
+    "spread_K": 5.665299865333907,
+    "T_min_C": 62.36551406850651,
+    "T_max_C": 68.03081393384042,
+    "median_divergence": 0.07381559203687804,
+    "offers_Geslin": true,
+    "detectable_Geslin": false,
+    "offers_KIT": true,
+    "detectable_KIT": false
+   },
+   {
+    "ambient_C": 25.0,
+    "resistance_of_C": 35.0,
+    "R_ohm": 0.01871279570954531,
+    "rate": "2C",
+    "h": 25.0,
+    "spread_K": 5.432751042748976,
+    "T_min_C": 45.66081372264449,
+    "T_max_C": 51.09356476539347,
+    "median_divergence": 0.07078561490863756,
+    "offers_Geslin": true,
+    "detectable_Geslin": false,
+    "offers_KIT": false,
+    "detectable_KIT": false
+   }
+  ],
+  "p3_ratio_with": {
+   "R(25 C)": {
+    "h 5": 1.5846652050533632,
+    "h 10": 1.5792787553881953,
+    "h 25": 1.537873409931383
+   },
+   "R(35 C)": {
+    "h 5": 1.1442277660980453,
+    "h 10": 1.1287735742847822,
+    "h 25": 1.0870756989366888
+   }
+  },
+  "registered_cell_temperatures_10C": {
+   "1C h 5": [
+    46.304161154685005,
+    50.03981908787398
+   ],
+   "1C h 10": [
+    36.25252798793724,
+    40.37047946736027
+   ],
+   "1C h 25": [
+    23.81125822455283,
+    27.555173508879534
+   ],
+   "2C h 5": [
+    122.45140980836499,
+    132.62422749232024
+   ],
+   "2C h 10": [
+    99.92641851781696,
+    112.26403363040424
+   ],
+   "2C h 25": [
+    62.65646503123787,
+    75.87993878141788
+   ]
+  }
+ },
+ "signed_median": {
+  "note": "conditional: the reading not chosen on 27 October 2026",
+  "signed_median_s": -0.00422194101015308,
+  "lever": "KIT 10-100 1.00/1.00C",
+  "cases": [
+   {
+    "ambient_C": 35.0,
+    "rate": "C/4",
+    "h": 5.0,
+    "median_registered": 0.0012135567591150583,
+    "median_signed_reading": 0.0003932303675111469,
+    "offers_Geslin": false,
+    "offers_KIT": false
+   },
+   {
+    "ambient_C": 35.0,
+    "rate": "C/4",
+    "h": 10.0,
+    "median_registered": 0.0012842698715352589,
+    "median_signed_reading": 0.0004161436288613036,
+    "offers_Geslin": false,
+    "offers_KIT": false
+   },
+   {
+    "ambient_C": 35.0,
+    "rate": "C/4",
+    "h": 25.0,
+    "median_registered": 0.0011385851540249487,
+    "median_signed_reading": 0.0003689372212688711,
+    "offers_Geslin": false,
+    "offers_KIT": false
+   },
+   {
+    "ambient_C": 35.0,
+    "rate": "C/2",
+    "h": 5.0,
+    "median_registered": 0.00479775329425215,
+    "median_signed_reading": 0.0015546222102560236,
+    "offers_Geslin": false,
+    "offers_KIT": false
+   },
+   {
+    "ambient_C": 35.0,
+    "rate": "C/2",
+    "h": 10.0,
+    "median_registered": 0.005098138324549674,
+    "median_signed_reading": 0.0016519563604484523,
+    "offers_Geslin": false,
+    "offers_KIT": false
+   },
+   {
+    "ambient_C": 35.0,
+    "rate": "C/2",
+    "h": 25.0,
+    "median_registered": 0.004540650066585622,
+    "median_signed_reading": 0.0014713127185950526,
+    "offers_Geslin": false,
+    "offers_KIT": false
+   },
+   {
+    "ambient_C": 35.0,
+    "rate": "1C",
+    "h": 5.0,
+    "median_registered": 0.018335484203238932,
+    "median_signed_reading": 0.005941270680237611,
+    "offers_Geslin": false,
+    "offers_KIT": false
+   },
+   {
+    "ambient_C": 35.0,
+    "rate": "1C",
+    "h": 10.0,
+    "median_registered": 0.019786128678606754,
+    "median_signed_reading": 0.0064113248873378,
+    "offers_Geslin": false,
+    "offers_KIT": false
+   },
+   {
+    "ambient_C": 35.0,
+    "rate": "1C",
+    "h": 25.0,
+    "median_registered": 0.01794439478659575,
+    "median_signed_reading": 0.005814545470327806,
+    "offers_Geslin": false,
+    "offers_KIT": false
+   },
+   {
+    "ambient_C": 35.0,
+    "rate": "2C",
+    "h": 5.0,
+    "median_registered": 0.0622011162244939,
+    "median_signed_reading": 0.02015510820474305,
+    "offers_Geslin": false,
+    "offers_KIT": false
+   },
+   {
+    "ambient_C": 35.0,
+    "rate": "2C",
+    "h": 10.0,
+    "median_registered": 0.07045852196054665,
+    "median_signed_reading": 0.02283076607396746,
+    "offers_Geslin": false,
+    "offers_KIT": false
+   },
+   {
+    "ambient_C": 35.0,
+    "rate": "2C",
+    "h": 25.0,
+    "median_registered": 0.06835102048424693,
+    "median_signed_reading": 0.022147869642604873,
+    "offers_Geslin": false,
+    "offers_KIT": false
+   },
+   {
+    "ambient_C": 25.0,
+    "rate": "C/4",
+    "h": 5.0,
+    "median_registered": 0.0018259324717591451,
+    "median_signed_reading": 0.0005916592623520712,
+    "offers_Geslin": false,
+    "offers_KIT": false
+   },
+   {
+    "ambient_C": 25.0,
+    "rate": "C/4",
+    "h": 10.0,
+    "median_registered": 0.0019202765117514661,
+    "median_signed_reading": 0.0006222296837518249,
+    "offers_Geslin": false,
+    "offers_KIT": false
+   },
+   {
+    "ambient_C": 25.0,
+    "rate": "C/4",
+    "h": 25.0,
+    "median_registered": 0.0016769863453292037,
+    "median_signed_reading": 0.0005433960562057697,
+    "offers_Geslin": false,
+    "offers_KIT": false
+   },
+   {
+    "ambient_C": 25.0,
+    "rate": "C/2",
+    "h": 5.0,
+    "median_registered": 0.007177939558271648,
+    "median_signed_reading": 0.00232587704635276,
+    "offers_Geslin": false,
+    "offers_KIT": false
+   },
+   {
+    "ambient_C": 25.0,
+    "rate": "C/2",
+    "h": 10.0,
+    "median_registered": 0.007596977709540182,
+    "median_signed_reading": 0.002461658520920687,
+    "offers_Geslin": false,
+    "offers_KIT": false
+   },
+   {
+    "ambient_C": 25.0,
+    "rate": "C/2",
+    "h": 25.0,
+    "median_registered": 0.006679726958656875,
+    "median_signed_reading": 0.002164440572802019,
+    "offers_Geslin": false,
+    "offers_KIT": false
+   },
+   {
+    "ambient_C": 25.0,
+    "rate": "1C",
+    "h": 5.0,
+    "median_registered": 0.026852104425002382,
+    "median_signed_reading": 0.008700922154799904,
+    "offers_Geslin": false,
+    "offers_KIT": false
+   },
+   {
+    "ambient_C": 25.0,
+    "rate": "1C",
+    "h": 10.0,
+    "median_registered": 0.029091156206222848,
+    "median_signed_reading": 0.009426445001747628,
+    "offers_Geslin": false,
+    "offers_KIT": false
+   },
+   {
+    "ambient_C": 25.0,
+    "rate": "1C",
+    "h": 25.0,
+    "median_registered": 0.026269161638657865,
+    "median_signed_reading": 0.00851203044916647,
+    "offers_Geslin": false,
+    "offers_KIT": false
+   },
+   {
+    "ambient_C": 25.0,
+    "rate": "2C",
+    "h": 5.0,
+    "median_registered": 0.08517780945653901,
+    "median_signed_reading": 0.02760027585426982,
+    "offers_Geslin": false,
+    "offers_KIT": false
+   },
+   {
+    "ambient_C": 25.0,
+    "rate": "2C",
+    "h": 10.0,
+    "median_registered": 0.09860886317179914,
+    "median_signed_reading": 0.03195235757508281,
+    "offers_Geslin": true,
+    "offers_KIT": false
+   },
+   {
+    "ambient_C": 25.0,
+    "rate": "2C",
+    "h": 25.0,
+    "median_registered": 0.09804295718900705,
+    "median_signed_reading": 0.03176898632695728,
+    "offers_Geslin": true,
+    "offers_KIT": false
+   }
+  ],
+  "warm_chamber_dT2_Geslin_n": 221,
+  "warm_chamber_dT5_Geslin_n": 37
+ },
+ "procedure": {
+  "35": {
+   "failed": [],
+   "C16": {
+    "discharge": {
+     "R_eff_ohm": 0.018964297990789917,
+     "mean_total_W": 0.005184672796939579,
+     "mean_reversible_W": 0.003332690571276501,
+     "mean_ohmic_plus_irreversible_W": 0.0018519822256630783
+    },
+    "charge": {
+     "R_eff_ohm": 0.04262103413628516,
+     "mean_total_W": -0.0009415179023830526,
+     "mean_reversible_W": -0.005103728267254651,
+     "mean_ohmic_plus_irreversible_W": 0.004162210364871597
+    }
+   },
+   "C2": {
+    "discharge": {
+     "duration_s": 6887.767898270703,
+     "charge_Ah": 4.783172151576877,
+     "R_eff_ohm": 0.01906771669072095
+    },
+    "charge": {
+     "duration_s": 6578.130667564766,
+     "charge_Ah": 4.568146296919976,
+     "R_eff_ohm": 0.018357874728369666
+    }
+   }
+  },
+  "25": {
+   "failed": [
+    "2.0 charge"
+   ],
+   "C16": {
+    "discharge": {
+     "R_eff_ohm": 0.026877525092333755,
+     "mean_total_W": 0.0058871453215092765,
+     "mean_reversible_W": 0.003262387011711058,
+     "mean_ohmic_plus_irreversible_W": 0.002624758309798219
+    },
+    "charge": {
+     "R_eff_ohm": 0.789359893106885,
+     "mean_total_W": 0.0711621968711422,
+     "mean_reversible_W": -0.005923730190077038,
+     "mean_ohmic_plus_irreversible_W": 0.07708592706121924
+    }
+   },
+   "C2": {
+    "discharge": {
+     "duration_s": 6843.656123025355,
+     "charge_Ah": 4.752538974323163,
+     "R_eff_ohm": 0.027100330089318104
+    },
+    "charge": {
+     "duration_s": 6412.615816958842,
+     "charge_Ah": 4.45320542844364,
+     "R_eff_ohm": 0.026193661101939717
+    }
+   }
+  },
+  "10": {
+   "failed": [
+    "1.0 charge"
+   ],
+   "C16": {
+    "discharge": {
+     "R_eff_ohm": 0.04897085470408503,
+     "mean_total_W": 0.007930095521918609,
+     "mean_reversible_W": 0.003147785492222805,
+     "mean_ohmic_plus_irreversible_W": 0.004782310029695805
+    },
+    "charge": {
+     "R_eff_ohm": 0.04908330162829996,
+     "mean_total_W": 0.002209505798800313,
+     "mean_reversible_W": -0.0025837853758383547,
+     "mean_ohmic_plus_irreversible_W": 0.004793291174638668
+    }
+   },
+   "C2": {
+    "discharge": {
+     "duration_s": 6734.589273191282,
+     "charge_Ah": 4.676798106382834,
+     "R_eff_ohm": 0.04934992107368009
+    },
+    "charge": {
+     "duration_s": 3965.371110650174,
+     "charge_Ah": 2.7537299379515097,
+     "R_eff_ohm": 0.04654653102842709
+    }
+   }
+  }
+ },
+ "v4": {
+  "cases": 144,
+  "v4_within_5pct": 82,
+  "lognormal_rel_min": -0.25,
+  "lognormal_rel_max": 0.010570824524312896,
+  "lognormal_abs_rel_max_where_n_above_100": 0.029585798816568046,
+  "lognormal_largest_shortfall_pairs": 66,
+  "sim_power_at_calculated_n_min": 0.7941,
+  "normal_check_abs_pairs_max_where_n_at_most_50": 1,
+  "normal_check_abs_rel_max_where_n_above_100": 0.0234375,
+  "normal_check_within_5pct": 140,
+  "normal_shape_over_registered_n": {
+   "min": 0.7078651685393258,
+   "max": 1.0,
+   "where_n_above_100_mean": 0.7603773956761053
+  }
+ },
+ "margins": {
+  "P1_largest_median_to_1C": 0.019786128678606754,
+  "P5_largest_35C_median": 0.07045852196054665,
+  "P5_KIT_mean": 0.07332337183440621,
+  "cases_with_cells_outside_band_setpoints": 17,
+  "of_cases": 36
+ },
+ "scorecard": {
+  "P1": true,
+  "P2": false,
+  "P3": true,
+  "P4": true,
+  "P5": false,
+  "P6": true,
+  "P7": false
+ }
+}
