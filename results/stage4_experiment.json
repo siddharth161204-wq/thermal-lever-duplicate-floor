@@ -1,0 +1,99 @@
+{
+ "method": "D61: paired t-test of ln L_warm - ln L_cool against zero, two-sided 5 %, power 0.80 from the noncentral t with sd(e) of the registered log-normal shape; normal shape sd(e) = m sqrt(pi/2)",
+ "z_0.95": 1.6448536269514722,
+ "shapes": {
+  "Geslin": {
+   "lognormal": {
+    "kind": "lognormal",
+    "sigma": 0.8924826121449437,
+    "mu": -3.907825821759782,
+    "roots": [
+     0.8924826121449437,
+     2.3972246417580005
+    ],
+    "median": 0.020084120083597105,
+    "median_with_larger_root": 0.0016902037303748235,
+    "mean_check": 0.02990997580494428,
+    "p95_check": 0.08717631863980337,
+    "sd_e": 0.04454298465298393
+   },
+   "normal": {
+    "kind": "normal",
+    "sd_e": 0.03748659552310122
+   },
+   "floor": {
+    "mean": 0.029909975804944276,
+    "median": 0.017457049305555493,
+    "p95": 0.08717631863980334,
+    "pairs": 45,
+    "file": "inputs/floor.json"
+   }
+  },
+  "KIT": {
+   "lognormal": {
+    "kind": "lognormal",
+    "sigma": 0.8375683482201406,
+    "mu": -2.963636238116627,
+    "roots": [
+     0.8375683482201406,
+     2.452138905682804
+    ],
+    "median": 0.05163083341684164,
+    "median_with_larger_root": 0.0036269308814753285,
+    "mean_check": 0.07332337183440621,
+    "p95_check": 0.20475136231315813,
+    "sd_e": 0.10412996462328801
+   },
+   "normal": {
+    "kind": "normal",
+    "sd_e": 0.09189721851570246
+   },
+   "floor": {
+    "mean": 0.07332337183440621,
+    "median": 0.04090182488777854,
+    "p95": 0.2047513623131581,
+    "pairs": 47,
+    "file": "results/stage2_lever.json (floor)"
+   }
+  }
+ },
+ "named": {
+  "median_warm": "KIT 0-100 0.33/0.33C",
+  "median_cold": "KIT 0-100 1.67/1.00C",
+  "c1": [
+   {
+    "name": "central KIT value at 1C",
+    "lever": "KIT 10-100 1.00/1.00C",
+    "s": -0.00422194101015308,
+    "conditional": false
+   },
+   {
+    "name": "Sandia 1C value",
+    "lever": "Sandia NMC 25 to 35 C",
+    "s": -0.024432246723733255,
+    "conditional": false
+   },
+   {
+    "name": "central cold KIT value",
+    "lever": "KIT 10 to 25 C median",
+    "s": -0.03613931036044149,
+    "conditional": false
+   },
+   {
+    "name": "KIT value at a 1C discharge",
+    "lever": "KIT 10-90 1.67/1.00C",
+    "s": -0.009952139770246315,
+    "conditional": true
+   }
+  ]
+ },
+ "cases": 144,
+ "simulated": true,
+ "v4": {
+  "pass_all": false,
+  "failures": 62,
+  "max_abs_rel_diff": 0.25,
+  "normal_check_pass_all": false,
+  "normal_check_max_abs_rel_diff": 0.1111111111111111
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "check": "V2 (D62): the resistance rederived by separate code, within 1 %",
+ "pybamm": "26.9.0.0",
+ "ambients": {
+  "35": {
+   "discharge": {
+    "T_C": 35.0,
+    "direction": "discharge",
+    "current_A": 2.5,
+    "x0": 0.9841951106298638,
+    "y0": 0.2638452248927604,
+    "duration_s": 6887.771404112936,
+    "samples": 6889,
+    "V_start": 4.174930254103654,
+    "V_end": 2.49999999999977,
+    "termination": "event: Minimum voltage [V]",
+    "mean_heat_W": 0.11918348701426319,
+    "R_ohm": 0.01906935792228211
+   },
+   "charge": {
+    "T_C": 35.0,
+    "direction": "charge",
+    "current_A": -2.5,
+    "x0": 0.02956238686388328,
+    "y0": 0.9572705997333886,
+    "duration_s": 6576.982725080352,
+    "samples": 6578,
+    "V_start": 2.5852945669473995,
+    "V_end": 4.200000000000001,
+    "termination": "event: Maximum voltage [V]",
+    "mean_heat_W": 0.11474675139398853,
+    "R_ohm": 0.018359480223038165
+   },
+   "R_ohm": 0.018714419072660138,
+   "R_registered_ohm": 0.01871279570954531,
+   "rel_diff": 8.67515009529554e-05,
+   "pass": true
+  },
+  "25": {
+   "discharge": {
+    "T_C": 25.0,
+    "direction": "discharge",
+    "current_A": 2.5,
+    "x0": 0.9841951106298638,
+    "y0": 0.2638452248927604,
+    "duration_s": 6843.638104164249,
+    "samples": 6845,
+    "V_start": 4.163731430024657,
+    "V_end": 2.499999999999999,
+    "termination": "event: Minimum voltage [V]",
+    "mean_heat_W": 0.1693995887776815,
+    "R_ohm": 0.02710393420442904
+   },
+   "charge": {
+    "T_C": 25.0,
+    "direction": "charge",
+    "current_A": -2.5,
+    "x0": 0.02956238686388328,
+    "y0": 0.9572705997333886,
+    "duration_s": 6413.308469589315,
+    "samples": 6415,
+    "V_start": 2.616353236790431,
+    "V_end": 4.200000000000001,
+    "termination": "event: Maximum voltage [V]",
+    "mean_heat_W": 0.16374252186020466,
+    "R_ohm": 0.026198803497632747
+   },
+   "R_ohm": 0.026651368851030893,
+   "R_registered_ohm": 0.02664699559562891,
+   "rel_diff": 0.00016411814181033408,
+   "pass": true
+  },
+  "10": {
+   "discharge": {
+    "T_C": 10.0,
+    "direction": "discharge",
+    "current_A": 2.5,
+    "x0": 0.9841951106298638,
+    "y0": 0.2638452248927604,
+    "duration_s": 6734.558188471245,
+    "samples": 6736,
+    "V_start": 4.135393194582932,
+    "V_end": 2.499999999999999,
+    "termination": "event: Minimum voltage [V]",
+    "mean_heat_W": 0.3084424561871036,
+    "R_ohm": 0.049350792989936575
+   },
+   "charge": {
+    "T_C": 10.0,
+    "direction": "charge",
+    "current_A": -2.5,
+    "x0": 0.02956238686388328,
+    "y0": 0.9572705997333886,
+    "duration_s": 3964.9240612730077,
+    "samples": 3966,
+    "V_start": 2.671499287968773,
+    "V_end": 4.200000000000021,
+    "termination": "event: Maximum voltage [V]",
+    "mean_heat_W": 0.2907886495369085,
+    "R_ohm": 0.04652618392590536
+   },
+   "R_ohm": 0.047938488457920966,
+   "R_registered_ohm": 0.04794822605105359,
+   "rel_diff": -0.00020308557656030645,
+   "pass": true
+  }
+ },
+ "pass": true
+}

@@ -1,0 +1,107 @@
+{
+ "check": "V1 (D62): the 35 C cases at C/2, 1C and 2C against results/module_spread.csv",
+ "cases": [
+  {
+   "crate": 0.5,
+   "h": 5.0,
+   "spread_K": 0.3682245219716265,
+   "spread_stage1_K": 0.3682245219716265,
+   "max_abs_diff_K": 0.0,
+   "q_diff_W": 0.0,
+   "bitwise_identical": true,
+   "six_decimals_identical": true,
+   "hot_cold_iterations_identical": true
+  },
+  {
+   "crate": 0.5,
+   "h": 10.0,
+   "spread_K": 0.3912788825035136,
+   "spread_stage1_K": 0.3912788825035136,
+   "max_abs_diff_K": 0.0,
+   "q_diff_W": 0.0,
+   "bitwise_identical": true,
+   "six_decimals_identical": true,
+   "hot_cold_iterations_identical": true
+  },
+  {
+   "crate": 0.5,
+   "h": 25.0,
+   "spread_K": 0.3484920123366919,
+   "spread_stage1_K": 0.3484920123366919,
+   "max_abs_diff_K": 0.0,
+   "q_diff_W": 0.0,
+   "bitwise_identical": true,
+   "six_decimals_identical": true,
+   "hot_cold_iterations_identical": true
+  },
+  {
+   "crate": 1.0,
+   "h": 5.0,
+   "spread_K": 1.4072367818379803,
+   "spread_stage1_K": 1.4072367818379803,
+   "max_abs_diff_K": 0.0,
+   "q_diff_W": 0.0,
+   "bitwise_identical": true,
+   "six_decimals_identical": true,
+   "hot_cold_iterations_identical": true
+  },
+  {
+   "crate": 1.0,
+   "h": 10.0,
+   "spread_K": 1.5185728251341288,
+   "spread_stage1_K": 1.5185728251341288,
+   "max_abs_diff_K": 0.0,
+   "q_diff_W": 0.0,
+   "bitwise_identical": true,
+   "six_decimals_identical": true,
+   "hot_cold_iterations_identical": true
+  },
+  {
+   "crate": 1.0,
+   "h": 25.0,
+   "spread_K": 1.377220917190641,
+   "spread_stage1_K": 1.377220917190641,
+   "max_abs_diff_K": 0.0,
+   "q_diff_W": 0.0,
+   "bitwise_identical": true,
+   "six_decimals_identical": true,
+   "hot_cold_iterations_identical": true
+  },
+  {
+   "crate": 2.0,
+   "h": 5.0,
+   "spread_K": 4.773896214152046,
+   "spread_stage1_K": 4.773896214152046,
+   "max_abs_diff_K": 0.0,
+   "q_diff_W": 0.0,
+   "bitwise_identical": true,
+   "six_decimals_identical": true,
+   "hot_cold_iterations_identical": true
+  },
+  {
+   "crate": 2.0,
+   "h": 10.0,
+   "spread_K": 5.407646866468099,
+   "spread_stage1_K": 5.407646866468099,
+   "max_abs_diff_K": 0.0,
+   "q_diff_W": 0.0,
+   "bitwise_identical": true,
+   "six_decimals_identical": true,
+   "hot_cold_iterations_identical": true
+  },
+  {
+   "crate": 2.0,
+   "h": 25.0,
+   "spread_K": 5.245897465014991,
+   "spread_stage1_K": 5.245897465014991,
+   "max_abs_diff_K": 0.0,
+   "q_diff_W": 0.0,
+   "bitwise_identical": true,
+   "six_decimals_identical": true,
+   "hot_cold_iterations_identical": true
+  }
+ ],
+ "max_abs_diff_K": 0.0,
+ "all_bitwise_identical": true,
+ "pass": true
+}
