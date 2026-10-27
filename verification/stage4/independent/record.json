@@ -1,0 +1,1632 @@
+{
+ "check": "Stage 4 independent check (D62's independent read)",
+ "base_commit": "c1e58a19d1653bb477de485c4fc9f68e956ee070 (pre-registration: D56 to D63, predictions_stage4.md)",
+ "freeze": {
+  "commit": "fd5d1e73f6fa87e5b60cc9c2689b26e072a6b1d0",
+  "committed_utc": "2026-10-27T10:33:27Z",
+  "pushed_utc": "2026-10-27T10:33:36Z",
+  "branch": "origin/stage4-independent",
+  "rule": "no file of src/stage4, results/stage4_*, verification/stage4 (outside this folder) or tests/stage4_synthetic.py opened, and no commit after c1e58a1 logged, shown or diffed, before this commit"
+ },
+ "pipeline_compared": {
+  "registered_results_commit": "6f658f1 (pushed 2026-10-27T10:07:16Z)",
+  "posthoc_commit": "a2b3d6e"
+ },
+ "agreement": {
+  "R_used_ohm": {
+   "n": 3,
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "where_max_abs": "",
+   "nan_both": 0
+  },
+  "R_rerun_ohm (procedure at each ambient)": {
+   "n": 3,
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "where_max_abs": "",
+   "nan_both": 0
+  },
+  "pulse R_ohm": {
+   "n": 12,
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "where_max_abs": "",
+   "nan_both": 0
+  },
+  "cycle_heat failed": {
+   "n": 36,
+   "disagree": 0
+  },
+  "cycle_heat R_eff_ohm": {
+   "n": 34,
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "where_max_abs": "",
+   "nan_both": 0
+  },
+  "cycle_heat charge_Ah": {
+   "n": 34,
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "where_max_abs": "",
+   "nan_both": 0
+  },
+  "ratio 25/35": {
+   "n": 1,
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "where_max_abs": "",
+   "nan_both": 0
+  },
+  "ratio 10/35": {
+   "n": 1,
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "where_max_abs": "",
+   "nan_both": 0
+  },
+  "35 C rerun identical to archived": {
+   "n": 1,
+   "disagree": 0
+  },
+  "module R_ohm (own solver)": {
+   "n": 36,
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "where_max_abs": "",
+   "nan_both": 0
+  },
+  "module q_cell_W (own solver)": {
+   "n": 36,
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "where_max_abs": "",
+   "nan_both": 0
+  },
+  "module T_max_C (own solver)": {
+   "n": 36,
+   "max_abs": 1.7053025658242404e-13,
+   "max_rel": 7.86320533467657e-15,
+   "where_max_abs": "25 C 1C h=25",
+   "nan_both": 0
+  },
+  "module T_min_C (own solver)": {
+   "n": 36,
+   "max_abs": 5.684341886080802e-14,
+   "max_rel": 2.1623927588699693e-15,
+   "where_max_abs": "25 C 0.25C h=5",
+   "nan_both": 0
+  },
+  "module T_mean_C (own solver)": {
+   "n": 36,
+   "max_abs": 1.1368683772161603e-13,
+   "max_rel": 4.488548539127776e-15,
+   "where_max_abs": "25 C 1C h=25",
+   "nan_both": 0
+  },
+  "module spread_K (own solver)": {
+   "n": 36,
+   "max_abs": 1.1368683772161603e-13,
+   "max_rel": 8.832951895951072e-13,
+   "where_max_abs": "10 C 0.5C h=25",
+   "nan_both": 0
+  },
+  "module hot_minus_mean_K (own solver)": {
+   "n": 36,
+   "max_abs": 1.1368683772161603e-13,
+   "max_rel": 1.7665903791894342e-12,
+   "where_max_abs": "25 C 0.25C h=25",
+   "nan_both": 0
+  },
+  "module T_cell_C (own solver)": {
+   "n": 288,
+   "max_abs": 1.7053025658242404e-13,
+   "max_rel": 7.86320533467657e-15,
+   "where_max_abs": "25 C 1C h=25 cell 1",
+   "nan_both": 0
+  },
+  "module T_cell_C (module_steady cross-check)": {
+   "n": 288,
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "where_max_abs": "",
+   "nan_both": 0
+  },
+  "module offset_K (own solver)": {
+   "n": 288,
+   "max_abs": 1.1368683772161603e-13,
+   "max_rel": 1.7665903791894342e-12,
+   "where_max_abs": "25 C 0.25C h=25 cell 1",
+   "nan_both": 0
+  },
+  "module spread_K (module_steady cross-check)": {
+   "n": 36,
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "where_max_abs": "",
+   "nan_both": 0
+  },
+  "module i_hot": {
+   "n": 36,
+   "disagree": 0
+  },
+  "module i_cold": {
+   "n": 36,
+   "disagree": 0
+  },
+  "module newton_iterations (module_steady)": {
+   "n": 36,
+   "disagree": 0
+  },
+  "module balance_W (module_steady)": {
+   "n": 36,
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "where_max_abs": "",
+   "nan_both": 0
+  },
+  "module converged": {
+   "n": 36,
+   "disagree": 0
+  },
+  "cells inside band set points (checker recomputed post-freeze with KIT set points)": {
+   "n": 36,
+   "disagree": 0
+  },
+  "resolved q_W": {
+   "n": 4,
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "where_max_abs": "",
+   "nan_both": 0
+  },
+  "resolved T_max_C": {
+   "n": 4,
+   "max_abs": 1.7621459846850485e-12,
+   "max_rel": 3.6656603324470025e-14,
+   "where_max_abs": "10 C 2C",
+   "nan_both": 0
+  },
+  "resolved T_min_C": {
+   "n": 4,
+   "max_abs": 1.4779288903810084e-12,
+   "max_rel": 3.13076450417148e-14,
+   "where_max_abs": "10 C 2C",
+   "nan_both": 0
+  },
+  "resolved T_vol_mean_C": {
+   "n": 4,
+   "max_abs": 1.4210854715202004e-12,
+   "max_rel": 3.51442587939061e-14,
+   "where_max_abs": "10 C 2C",
+   "nan_both": 0
+  },
+  "resolved T_surface_mean_C": {
+   "n": 4,
+   "max_abs": 1.4210854715202004e-12,
+   "max_rel": 3.5672458026128594e-14,
+   "where_max_abs": "10 C 2C",
+   "nan_both": 0
+  },
+  "resolved dT_cell_K": {
+   "n": 4,
+   "max_abs": 2.8421709430404007e-13,
+   "max_rel": 3.089652653873844e-13,
+   "where_max_abs": "10 C 2C",
+   "nan_both": 0
+  },
+  "resolved dT_hot_minus_mean_K": {
+   "n": 4,
+   "max_abs": 3.410605131648481e-13,
+   "max_rel": 1.7656238219666885e-13,
+   "where_max_abs": "10 C 2C",
+   "nan_both": 0
+  },
+  "resolved module_spread_K": {
+   "n": 4,
+   "max_abs": 5.684341886080802e-14,
+   "max_rel": 1.3803809769213803e-14,
+   "where_max_abs": "10 C 1C",
+   "nan_both": 0
+  },
+  "resolved within_over_module": {
+   "n": 4,
+   "max_abs": 7.485678743535118e-14,
+   "max_rel": 3.089344072843835e-13,
+   "where_max_abs": "35 C 1C",
+   "nan_both": 0
+  },
+  "resolved newton_iterations": {
+   "n": 4,
+   "disagree": 0
+  },
+  "resolved cg_all_converged": {
+   "n": 4,
+   "disagree": 0
+  },
+  "divergence |s| x spread": {
+   "n": 492,
+   "max_abs": 1.3322676295501878e-14,
+   "max_rel": 8.834241992412615e-13,
+   "where_max_abs": "10 C 2C h=25 KIT 10-100 1.67/1.00C",
+   "nan_both": 0
+  },
+  "divergence interval low": {
+   "n": 492,
+   "max_abs": 1.2212453270876722e-14,
+   "max_rel": 8.833668669386723e-13,
+   "where_max_abs": "10 C 2C h=25 KIT 10-100 1.67/1.00C",
+   "nan_both": 0
+  },
+  "divergence interval high": {
+   "n": 492,
+   "max_abs": 1.4224732503009818e-14,
+   "max_rel": 8.834113672752098e-13,
+   "where_max_abs": "10 C 0.5C h=25 KIT 10-100 1.67/1.00C",
+   "nan_both": 0
+  },
+  "lever s_per_K": {
+   "n": 492,
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "where_max_abs": "",
+   "nan_both": 0
+  },
+  "divergence ln-offset per cell": {
+   "n": 3936,
+   "max_abs": 6.661338147750939e-15,
+   "max_rel": 1.766735592859552e-12,
+   "where_max_abs": "10 C 2C h=25 KIT 10-100 1.67/1.00C",
+   "nan_both": 0
+  },
+  "band median": {
+   "n": 36,
+   "max_abs": 4.073130721593543e-15,
+   "max_rel": 8.832731477959168e-13,
+   "where_max_abs": "10 C 0.5C h=25",
+   "nan_both": 0
+  },
+  "band 95th percentile": {
+   "n": 36,
+   "max_abs": 8.43769498715119e-15,
+   "max_rel": 8.833192916614043e-13,
+   "where_max_abs": "10 C 0.5C h=25",
+   "nan_both": 0
+  },
+  "band median (map.json)": {
+   "n": 36,
+   "max_abs": 4.073130721593543e-15,
+   "max_rel": 8.832731477959168e-13,
+   "where_max_abs": "10 C 0.5C h=25",
+   "nan_both": 0
+  },
+  "band max": {
+   "n": 36,
+   "max_abs": 1.3322676295501878e-14,
+   "max_rel": 8.832512335850339e-13,
+   "where_max_abs": "10 C 2C h=25",
+   "nan_both": 0
+  },
+  "median lever": {
+   "n": 36,
+   "disagree": 0
+  },
+  "offers Geslin": {
+   "n": 36,
+   "disagree": 0
+  },
+  "detectable Geslin": {
+   "n": 36,
+   "disagree": 0
+  },
+  "levers above Geslin mean": {
+   "n": 36,
+   "disagree": 0
+  },
+  "levers above Geslin p95": {
+   "n": 36,
+   "disagree": 0
+  },
+  "offers KIT": {
+   "n": 36,
+   "disagree": 0
+  },
+  "detectable KIT": {
+   "n": 36,
+   "disagree": 0
+  },
+  "levers above KIT mean": {
+   "n": 36,
+   "disagree": 0
+  },
+  "levers above KIT p95": {
+   "n": 36,
+   "disagree": 0
+  },
+  "map smallest rate offering": {
+   "n": 18,
+   "disagree": 0
+  },
+  "map smallest rate detectable": {
+   "n": 18,
+   "disagree": 0
+  },
+  "experiment s_per_K": {
+   "n": 144,
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "where_max_abs": "",
+   "nan_both": 0
+  },
+  "experiment sd_e registered (log-normal)": {
+   "n": 144,
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "where_max_abs": "",
+   "nan_both": 0
+  },
+  "experiment sd_e normal shape": {
+   "n": 144,
+   "max_abs": 0.0,
+   "max_rel": 0.0,
+   "where_max_abs": "",
+   "nan_both": 0
+  },
+  "experiment n calculated (log-normal)": {
+   "n": 144,
+   "disagree": 0
+  },
+  "experiment power at n": {
+   "n": 144,
+   "max_abs": 1.6887602427573256e-12,
+   "max_rel": 2.1108387488514525e-12,
+   "where_max_abs": "C1  KIT 10-100 1.00/1.00C dT=1.0 KIT",
+   "nan_both": 0
+  },
+  "experiment n calculated (normal shape)": {
+   "n": 144,
+   "disagree": 0
+  },
+  "experiment central flag": {
+   "n": 144,
+   "disagree": 0
+  },
+  "experiment conditional flag": {
+   "n": 144,
+   "disagree": 0
+  },
+  "V4 simulated n (log-normal), Monte Carlo": {
+   "n": 144,
+   "max_abs": 43.0,
+   "max_rel": 0.25,
+   "where_max_abs": "C2 warm (35 C) KIT 10-90 1.00/1.00C dT=2.0 KIT",
+   "nan_both": 0
+  },
+  "checker's normal-shape simulated n vs pipeline's calculated normal-shape n": {
+   "n": 144,
+   "max_abs": 16.0,
+   "max_rel": 0.14285714285714285,
+   "where_max_abs": "C1  KIT 10-100 1.00/1.00C dT=1.0 KIT",
+   "nan_both": 0
+  },
+  "V4 normal check, same sd(e) as registered (post-freeze), Monte Carlo": {
+   "n": 144,
+   "max_abs": 22.0,
+   "max_rel": 0.1111111111111111,
+   "where_max_abs": "C2 warm (35 C) KIT 10-90 1.00/1.00C dT=2.0 Geslin",
+   "nan_both": 0
+  },
+  "V4 normal check pass (post-freeze reading)": {
+   "n": 144,
+   "disagree": 4
+  },
+  "sim power at n_sim (log-normal), Monte Carlo": {
+   "n": 144,
+   "max_abs": 0.11699999999999999,
+   "max_rel": 0.12692558038620091,
+   "where_max_abs": "C1  Sandia NMC 25 to 35 C dT=5.0 Geslin",
+   "nan_both": 0
+  },
+  "figure curve n (lognormal)": {
+   "n": 80,
+   "disagree": 0
+  },
+  "figure curve n (normal)": {
+   "n": 80,
+   "disagree": 0
+  },
+  "verdict P1": {
+   "n": 1,
+   "disagree": 0
+  },
+  "verdict P2": {
+   "n": 1,
+   "disagree": 0
+  },
+  "verdict P3": {
+   "n": 1,
+   "disagree": 0
+  },
+  "verdict P4": {
+   "n": 1,
+   "disagree": 0
+  },
+  "verdict P5": {
+   "n": 1,
+   "disagree": 0
+  },
+  "verdict P6": {
+   "n": 1,
+   "disagree": 0
+  },
+  "verdict P7": {
+   "n": 1,
+   "disagree": 0
+  },
+  "post-hoc D66 spread_K (checker's solver)": {
+   "n": 36,
+   "max_abs": 1.1368683772161603e-13,
+   "max_rel": 1.2572858138658099e-12,
+   "where_max_abs": "10 C R(25) C/4 h=25",
+   "nan_both": 0
+  },
+  "post-hoc D66 median divergence": {
+   "n": 36,
+   "max_abs": 4.071395998117566e-15,
+   "max_rel": 1.2572544394829753e-12,
+   "where_max_abs": "10 C R(35) C/2 h=25",
+   "nan_both": 0
+  }
+ },
+ "deterministic_mismatches": [],
+ "monte_carlo_differences": {
+  "normal_check_pass_differences": [
+   {
+    "quantity": "V4 normal check pass (post-freeze reading)",
+    "where": "C2 warm (35 C) KIT 0-100 0.33/1.00C dT=5.0 Geslin",
+    "checker": false,
+    "pipeline": true
+   },
+   {
+    "quantity": "V4 normal check pass (post-freeze reading)",
+    "where": "C2 cold (10 C) KIT 10-100 0.33/1.00C dT=2.0 KIT",
+    "checker": true,
+    "pipeline": false
+   },
+   {
+    "quantity": "V4 normal check pass (post-freeze reading)",
+    "where": "C2 cold (10 C) KIT 10-90 0.33/1.00C dT=5.0 KIT",
+    "checker": true,
+    "pipeline": false
+   },
+   {
+    "quantity": "V4 normal check pass (post-freeze reading)",
+    "where": "C2 cold (10 C) Sandia NMC 15 to 25 C dT=2.0 KIT",
+    "checker": true,
+    "pipeline": false
+   }
+  ],
+  "V4_lognormal_pass_differences": [
+   {
+    "case": "C1  Sandia NMC 25 to 35 C dT=5.0 Geslin",
+    "n_calc": 4,
+    "checker_n_sim": 3,
+    "pipeline_n_sim": 4,
+    "checker_pass": false,
+    "pipeline_pass": true
+   },
+   {
+    "case": "C1  KIT 10-90 1.67/1.00C dT=2.0 Geslin",
+    "n_calc": 42,
+    "checker_n_sim": 40,
+    "pipeline_n_sim": 39,
+    "checker_pass": true,
+    "pipeline_pass": false
+   },
+   {
+    "case": "C1  KIT 10-90 1.67/1.00C dT=5.0 KIT",
+    "n_calc": 37,
+    "checker_n_sim": 36,
+    "pipeline_n_sim": 35,
+    "checker_pass": true,
+    "pipeline_pass": false
+   },
+   {
+    "case": "C2 warm (35 C) KIT 0-100 0.33/0.33C dT=2.0 Geslin",
+    "n_calc": 25,
+    "checker_n_sim": 24,
+    "pipeline_n_sim": 23,
+    "checker_pass": true,
+    "pipeline_pass": false
+   },
+   {
+    "case": "C2 warm (35 C) KIT 0-100 1.00/1.00C dT=2.0 KIT",
+    "n_calc": 32,
+    "checker_n_sim": 31,
+    "pipeline_n_sim": 30,
+    "checker_pass": true,
+    "pipeline_pass": false
+   },
+   {
+    "case": "C2 warm (35 C) KIT 10-100 0.33/1.00C dT=2.0 Geslin",
+    "n_calc": 89,
+    "checker_n_sim": 85,
+    "pipeline_n_sim": 84,
+    "checker_pass": true,
+    "pipeline_pass": false
+   },
+   {
+    "case": "C2 warm (35 C) Sandia NMC 25 to 35 C dT=2.0 KIT",
+    "n_calc": 38,
+    "checker_n_sim": 37,
+    "pipeline_n_sim": 36,
+    "checker_pass": true,
+    "pipeline_pass": false
+   },
+   {
+    "case": "C2 warm (35 C) Sandia NMC 25 to 35 C dT=5.0 KIT",
+    "n_calc": 8,
+    "checker_n_sim": 7,
+    "pipeline_n_sim": 8,
+    "checker_pass": false,
+    "pipeline_pass": true
+   },
+   {
+    "case": "C2 cold (10 C) Sandia NMC 15 to 25 C dT=2.0 KIT",
+    "n_calc": 9,
+    "checker_n_sim": 8,
+    "pipeline_n_sim": 9,
+    "checker_pass": false,
+    "pipeline_pass": true
+   },
+   {
+    "case": "C2 cold (10 C) Sandia NCA 15 to 25 C dT=5.0 KIT",
+    "n_calc": 22,
+    "checker_n_sim": 20,
+    "pipeline_n_sim": 21,
+    "checker_pass": false,
+    "pipeline_pass": true
+   }
+  ],
+  "counts": {
+   "v1": {
+    "max_abs_diff_K": 0.0,
+    "all_bitwise_identical": true,
+    "pass": true
+   },
+   "v2": {
+    "pass": true
+   },
+   "v3": {
+    "pass": true
+   },
+   "v4": {
+    "pass_all": false,
+    "failures": 62,
+    "max_abs_rel_diff": 0.25,
+    "normal_check_pass_all": false,
+    "normal_check_max_abs_rel_diff": 0.1111111111111111
+   },
+   "checker_V4_lognormal_pass_count": 84,
+   "checker_V4_normal_pass_count": 140,
+   "pipeline_V4_lognormal_pass_count": 82,
+   "pipeline_V4_normal_pass_count": 140
+  },
+  "checker_literal_normal_check_pass": 142
+ },
+ "verdicts": {
+  "checker": {
+   "P1": true,
+   "P2": false,
+   "P3": true,
+   "P4": true,
+   "P5": false,
+   "P6": true,
+   "P7": false
+  },
+  "pipeline": {
+   "P1": true,
+   "P2": false,
+   "P3": true,
+   "P4": true,
+   "P5": false,
+   "P6": true,
+   "P7": false
+  },
+  "checker_details": {
+   "P1": {
+    "held": true,
+    "median_warm": {
+     "0.25C h=5": 0.0012135567591150583,
+     "0.25C h=10": 0.0012842698715352589,
+     "0.25C h=25": 0.0011385851540242082,
+     "0.5C h=5": 0.00479775329425141,
+     "0.5C h=10": 0.005098138324549674,
+     "0.5C h=25": 0.004540650066584881,
+     "1C h=5": 0.018335484203238932,
+     "1C h=10": 0.019786128678606754,
+     "1C h=25": 0.01794439478659723
+    },
+    "max": 0.019786128678606754,
+    "floor": 0.029909975804944276
+   },
+   "P2": {
+    "held": false,
+    "median_h5": 0.06220111622449316,
+    "first_clause": true,
+    "second_clause": false,
+    "levers_above_Geslin_p95": [
+     [
+      "KIT 0-100 1.00/1.00C",
+      0.12818111057088735
+     ],
+     [
+      "KIT 0-100 1.67/1.00C",
+      0.1649267411251324
+     ],
+     [
+      "KIT 10-100 1.67/1.00C",
+      0.0914115392904908
+     ],
+     [
+      "KIT 10-90 0.33/0.33C",
+      0.09116900526867418
+     ],
+     [
+      "Sandia NMC 25 to 35 C",
+      0.11663701013765752
+     ]
+    ],
+    "max_lever_divergence": 0.1649267411251324,
+    "other_coolings": {
+     "h=10": {
+      "median": 0.07045852196054665,
+      "levers_above_p95": 5
+     },
+     "h=25": {
+      "median": 0.0683510204842462,
+      "levers_above_p95": 5
+     }
+    }
+   },
+   "P3": {
+    "held": true,
+    "cases": {
+     "h=5": {
+      "spread_10C": 3.7356579331889748,
+      "spread_35C": 1.4072367818379803,
+      "ratio": 2.6546050965992114
+     },
+     "h=10": {
+      "spread_10C": 4.117951479423084,
+      "spread_35C": 1.5185728251341288,
+      "ratio": 2.711724726839731
+     },
+     "h=25": {
+      "spread_10C": 3.743915284326704,
+      "spread_35C": 1.3772209171907548,
+      "ratio": 2.7184565944318613
+     }
+    }
+   },
+   "P4": {
+    "held": true,
+    "first_clause": true,
+    "second_clause": true,
+    "median_cold": {
+     "h=5": 0.13373831356145308,
+     "h=10": 0.14742460258287102,
+     "h=25": 0.13403393062152524
+    }
+   },
+   "P5": {
+    "held": false,
+    "clause_35C_none_above_KIT_mean": true,
+    "max_35C": 0.07045852196054665,
+    "clause_10C_every_2C_above": true,
+    "clause_10C_none_below_2C_above": false,
+    "cases_below_2C_above_KIT_mean": {
+     "1C h=5": 0.13373831356145308,
+     "1C h=10": 0.14742460258287102,
+     "1C h=25": 0.13403393062152524
+    },
+    "floor": 0.07332337183440621
+   },
+   "P6": {
+    "held": true,
+    "dT_cell_K": 0.9429483897957311,
+    "module_spread_K": 4.117951479423084,
+    "ratio": 0.2289848227953954
+   },
+   "P7": {
+    "held": false,
+    "scored": true,
+    "cold_central_lever": "KIT 0-100 1.67/1.00C",
+    "n_cold_dT5": 3,
+    "n_cold_sim": 3,
+    "V4_cold_pass": true,
+    "warm_central_lever": "KIT 0-100 0.33/0.33C",
+    "n_warm_dT2": 25,
+    "n_warm_sim": 24,
+    "V4_warm_pass": true,
+    "cold_clause": true,
+    "warm_clause": false,
+    "simulation_file": "simulation_lognormal_all.csv"
+   }
+  }
+ },
+ "resistance": {
+  "procedure_ohm": {
+   "35": 0.01871279570954531,
+   "25": 0.02664699559562891,
+   "10": 0.04794822605105359
+  },
+  "ratios": {
+   "25/35": 1.423998637575913,
+   "10/35": 2.5623229577927487
+  },
+  "failed_calls": {
+   "35": [],
+   "25": [
+    "2.0 charge"
+   ],
+   "10": [
+    "1.0 charge"
+   ]
+  },
+  "separate_code_1s_default_tolerance_ohm": {
+   "35.0": 0.01871278998608046,
+   "25.0": 0.026647091397532265,
+   "10.0": 0.05521094138111106
+  },
+  "separate_code_1s_spike_screened_ohm": {
+   "35.0": 0.01871278998608046,
+   "25.0": 0.026647091397532265,
+   "10.0": 0.04796309053703303
+  },
+  "C2_charge_10C_spike": {
+   "default_tolerance_0p01s": {
+    "points": 12386,
+    "t_end": 3965.371110650174,
+    "R_ohm_whole_charge": 0.1855452452269014,
+    "q_max_W": 13838.616400399946,
+    "t_at_q_max": 3954.7011106525606,
+    "V_at_q_max": 3.9746494075727288,
+    "ce_min_at_q_max": 575.4008647771539,
+    "ce_min_overall": 574.0732442716316,
+    "t_at_ce_min": 3960.8711106526953,
+    "heat_J_last_120s": 3485.546608157174,
+    "heat_J_total": 4598.473469632856
+   },
+   "tolerance_test": {
+    "default_solver": {
+     "t_end": 3965.371110650174,
+     "q_max_W": 13835.830535063293,
+     "t_at_q_max": 3954.700000002386,
+     "heat_J_last_120s": 3485.244993469757,
+     "R_ohm": 0.19456825130892885
+    },
+    "idaklu_rtol1e-8_atol1e-10": {
+     "t_end": 3964.9240612730077,
+     "q_max_W": 0.5078783983930725,
+     "t_at_q_max": 3964.9240612730077,
+     "heat_J_last_120s": 40.54862467199844,
+     "R_ohm": 0.04652597007831079
+    }
+   }
+  }
+ },
+ "sensitivity_heat_at_own_temperature_not_registered": {
+  "own": {
+   "P1": true,
+   "P2": true,
+   "P3_ratios": {
+    "5.0": 1.6130728446500229,
+    "10.0": 1.7134806648578542,
+    "25.0": 1.8674643850468322
+   },
+   "P3": true,
+   "P4": false,
+   "P4_first": true,
+   "P4_second": false,
+   "P5": true,
+   "P5_clauses": [
+    true,
+    true,
+    true
+   ]
+  },
+  "mean": {
+   "P1": true,
+   "P2": false,
+   "P3_ratios": {
+    "5.0": 1.8304846683607912,
+    "10.0": 1.9447938371684315,
+    "25.0": 2.1333850703894655
+   },
+   "P3": true,
+   "P4": false,
+   "P4_first": true,
+   "P4_second": false,
+   "P5": false,
+   "P5_clauses": [
+    true,
+    true,
+    false
+   ]
+  }
+ },
+ "P7_precise_simulation_200k": [
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "lognormal",
+   "n": "18",
+   "sim_power_200k": "0.72492",
+   "mc_se": "0.0009985263982489397",
+   "wrong_sign": "0.0",
+   "calc_power": "0.6481434681758462"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "normal",
+   "n": "18",
+   "sim_power_200k": "0.793525",
+   "mc_se": "0.0009051051717203918",
+   "wrong_sign": "5e-06",
+   "calc_power": "0.7937257491390253"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "lognormal",
+   "n": "19",
+   "sim_power_200k": "0.742135",
+   "mc_se": "0.000978188738881715",
+   "wrong_sign": "0.0",
+   "calc_power": "0.6745197156192921"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "normal",
+   "n": "19",
+   "sim_power_200k": "0.8185",
+   "mc_se": "0.0008618519304381698",
+   "wrong_sign": "0.0",
+   "calc_power": "0.8173175239298676"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "lognormal",
+   "n": "20",
+   "sim_power_200k": "0.75978",
+   "mc_se": "0.0009552862178425897",
+   "wrong_sign": "0.0",
+   "calc_power": "0.6993202304863291"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "normal",
+   "n": "20",
+   "sim_power_200k": "0.837875",
+   "mc_se": "0.0008241373804621411",
+   "wrong_sign": "0.0",
+   "calc_power": "0.8385365563562025"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "lognormal",
+   "n": "21",
+   "sim_power_200k": "0.774405",
+   "mc_se": "0.0009346172905927858",
+   "wrong_sign": "5e-06",
+   "calc_power": "0.722585720754637"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "normal",
+   "n": "21",
+   "sim_power_200k": "0.85753",
+   "mc_se": "0.0007815762889827198",
+   "wrong_sign": "0.0",
+   "calc_power": "0.8575637983064295"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "lognormal",
+   "n": "22",
+   "sim_power_200k": "0.78971",
+   "mc_se": "0.0009112302560275311",
+   "wrong_sign": "0.0",
+   "calc_power": "0.7443643618893339"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "normal",
+   "n": "22",
+   "sim_power_200k": "0.87504",
+   "mc_se": "0.0007394085420117893",
+   "wrong_sign": "0.0",
+   "calc_power": "0.8745775471888393"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "lognormal",
+   "n": "23",
+   "sim_power_200k": "0.802425",
+   "mc_se": "0.0008903345421104361",
+   "wrong_sign": "0.0",
+   "calc_power": "0.7647100816083019"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "normal",
+   "n": "23",
+   "sim_power_200k": "0.889935",
+   "mc_se": "0.000699823891329097",
+   "wrong_sign": "0.0",
+   "calc_power": "0.8897507394837555"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "lognormal",
+   "n": "24",
+   "sim_power_200k": "0.815035",
+   "mc_se": "0.0008681962588464662",
+   "wrong_sign": "0.0",
+   "calc_power": "0.7836810743751818"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "normal",
+   "n": "24",
+   "sim_power_200k": "0.904",
+   "mc_se": "0.0006587260432076447",
+   "wrong_sign": "0.0",
+   "calc_power": "0.9032489822644066"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "lognormal",
+   "n": "25",
+   "sim_power_200k": "0.82514",
+   "mc_se": "0.0008493644106035995",
+   "wrong_sign": "0.0",
+   "calc_power": "0.8013385222078413"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "normal",
+   "n": "25",
+   "sim_power_200k": "0.915675",
+   "mc_se": "0.0006213464990446151",
+   "wrong_sign": "0.0",
+   "calc_power": "0.9152291888612051"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "lognormal",
+   "n": "26",
+   "sim_power_200k": "0.83692",
+   "mc_se": "0.0008260899273081593",
+   "wrong_sign": "0.0",
+   "calc_power": "0.8177455004299768"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "normal",
+   "n": "26",
+   "sim_power_200k": "0.92651",
+   "mc_se": "0.0005834775912577965",
+   "wrong_sign": "0.0",
+   "calc_power": "0.9258387038013769"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "lognormal",
+   "n": "27",
+   "sim_power_200k": "0.84864",
+   "mc_se": "0.0008014054853817762",
+   "wrong_sign": "0.0",
+   "calc_power": "0.8329660487273833"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "normal",
+   "n": "27",
+   "sim_power_200k": "0.935895",
+   "mc_se": "0.000547702241071734",
+   "wrong_sign": "0.0",
+   "calc_power": "0.9352148190494258"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "lognormal",
+   "n": "28",
+   "sim_power_200k": "0.856485",
+   "mc_se": "0.0007839593253957757",
+   "wrong_sign": "0.0",
+   "calc_power": "0.8470643894297893"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "normal",
+   "n": "28",
+   "sim_power_200k": "0.94308",
+   "mc_se": "0.0005180739020641745",
+   "wrong_sign": "0.0",
+   "calc_power": "0.9434845985782387"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "lognormal",
+   "n": "29",
+   "sim_power_200k": "0.866525",
+   "mc_se": "0.0007604584945116992",
+   "wrong_sign": "0.0",
+   "calc_power": "0.8601042763899656"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "normal",
+   "n": "29",
+   "sim_power_200k": "0.95142",
+   "mc_se": "0.00048072852838166344",
+   "wrong_sign": "0.0",
+   "calc_power": "0.9507649415513582"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "lognormal",
+   "n": "30",
+   "sim_power_200k": "0.87403",
+   "mc_se": "0.0007419621253810737",
+   "wrong_sign": "0.0",
+   "calc_power": "0.8721484592037865"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "normal",
+   "n": "30",
+   "sim_power_200k": "0.95626",
+   "mc_se": "0.00045731177767470633",
+   "wrong_sign": "0.0",
+   "calc_power": "0.9571628260179449"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "lognormal",
+   "n": "31",
+   "sim_power_200k": "0.882635",
+   "mc_se": "0.000719689018865093",
+   "wrong_sign": "0.0",
+   "calc_power": "0.8832582488211979"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "normal",
+   "n": "31",
+   "sim_power_200k": "0.96287",
+   "mc_se": "0.00042279642323463426",
+   "wrong_sign": "0.0",
+   "calc_power": "0.9627756851397982"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "lognormal",
+   "n": "32",
+   "sim_power_200k": "0.888985",
+   "mc_se": "0.00070246234694466",
+   "wrong_sign": "0.0",
+   "calc_power": "0.8934931718410487"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "normal",
+   "n": "32",
+   "sim_power_200k": "0.967745",
+   "mc_se": "0.0003950608495852255",
+   "wrong_sign": "0.0",
+   "calc_power": "0.9676918767109405"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "lognormal",
+   "n": "33",
+   "sim_power_200k": "0.89629",
+   "mc_se": "0.000681741284872788",
+   "wrong_sign": "0.0",
+   "calc_power": "0.9029107019629036"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "normal",
+   "n": "33",
+   "sim_power_200k": "0.97215",
+   "mc_se": "0.00036792918815989605",
+   "wrong_sign": "0.0",
+   "calc_power": "0.9719912142260312"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "lognormal",
+   "n": "34",
+   "sim_power_200k": "0.902585",
+   "mc_se": "0.0006630434291017445",
+   "wrong_sign": "0.0",
+   "calc_power": "0.9115660581830933"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "normal",
+   "n": "34",
+   "sim_power_200k": "0.975475",
+   "mc_se": "0.0003458578058610216",
+   "wrong_sign": "0.0",
+   "calc_power": "0.9757455341305395"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "lognormal",
+   "n": "35",
+   "sim_power_200k": "0.909705",
+   "mc_se": "0.0006408658712047318",
+   "wrong_sign": "0.0",
+   "calc_power": "0.9195120603691892"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "normal",
+   "n": "35",
+   "sim_power_200k": "0.979685",
+   "mc_se": "0.0003154544402524711",
+   "wrong_sign": "0.0",
+   "calc_power": "0.9790192792692379"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "lognormal",
+   "n": "36",
+   "sim_power_200k": "0.915345",
+   "mc_se": "0.0006224489174823908",
+   "wrong_sign": "0.0",
+   "calc_power": "0.9267990338251537"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "normal",
+   "n": "36",
+   "sim_power_200k": "0.981915",
+   "mc_se": "0.0002979759451281262",
+   "wrong_sign": "0.0",
+   "calc_power": "0.9818700830578189"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "lognormal",
+   "n": "37",
+   "sim_power_200k": "0.9197",
+   "mc_se": "0.0006076673020658592",
+   "wrong_sign": "0.0",
+   "calc_power": "0.9334747553677212"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "normal",
+   "n": "37",
+   "sim_power_200k": "0.984515",
+   "mc_se": "0.00027609069863905204",
+   "wrong_sign": "0.0",
+   "calc_power": "0.9843493426461706"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "lognormal",
+   "n": "38",
+   "sim_power_200k": "0.925215",
+   "mc_se": "0.0005881845109104795",
+   "wrong_sign": "0.0",
+   "calc_power": "0.9395844342741039"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "normal",
+   "n": "38",
+   "sim_power_200k": "0.98669",
+   "mc_se": "0.0002562503063412807",
+   "wrong_sign": "0.0",
+   "calc_power": "0.9865027724237252"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "lognormal",
+   "n": "39",
+   "sim_power_200k": "0.93017",
+   "mc_se": "0.0005698849493538145",
+   "wrong_sign": "0.0",
+   "calc_power": "0.945170722232664"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "normal",
+   "n": "39",
+   "sim_power_200k": "0.98822",
+   "mc_se": "0.00024125952416433234",
+   "wrong_sign": "0.0",
+   "calc_power": "0.9883709317300049"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "lognormal",
+   "n": "40",
+   "sim_power_200k": "0.934525",
+   "mc_se": "0.0005531185423351849",
+   "wrong_sign": "0.0",
+   "calc_power": "0.9502737471339281"
+  },
+  {
+   "case": "warm chamber central, dT = 2 K",
+   "lever": "KIT 0-100 0.33/0.33C",
+   "s_per_K": "0.013029423647732621",
+   "dT_K": "2.0",
+   "shape": "normal",
+   "n": "40",
+   "sim_power_200k": "0.989675",
+   "mc_se": "0.00022603533324460612",
+   "wrong_sign": "0.0",
+   "calc_power": "0.9899897226606572"
+  },
+  {
+   "case": "cold chamber central, dT = 5 K",
+   "lever": "KIT 0-100 1.67/1.00C",
+   "s_per_K": "-0.03580047101563345",
+   "dT_K": "5.0",
+   "shape": "lognormal",
+   "n": "2",
+   "sim_power_200k": "0.444345",
+   "mc_se": "0.0011110862274706676",
+   "wrong_sign": "0.0",
+   "calc_power": "0.3443307068002639"
+  },
+  {
+   "case": "cold chamber central, dT = 5 K",
+   "lever": "KIT 0-100 1.67/1.00C",
+   "s_per_K": "-0.03580047101563345",
+   "dT_K": "5.0",
+   "shape": "normal",
+   "n": "2",
+   "sim_power_200k": "0.40228",
+   "mc_se": "0.0010964734415388274",
+   "wrong_sign": "0.0",
+   "calc_power": "0.4037739998966078"
+  },
+  {
+   "case": "cold chamber central, dT = 5 K",
+   "lever": "KIT 0-100 1.67/1.00C",
+   "s_per_K": "-0.03580047101563345",
+   "dT_K": "5.0",
+   "shape": "lognormal",
+   "n": "3",
+   "sim_power_200k": "0.91644",
+   "mc_se": "0.0006187799544264503",
+   "wrong_sign": "0.0",
+   "calc_power": "0.910467758429419"
+  },
+  {
+   "case": "cold chamber central, dT = 5 K",
+   "lever": "KIT 0-100 1.67/1.00C",
+   "s_per_K": "-0.03580047101563345",
+   "dT_K": "5.0",
+   "shape": "normal",
+   "n": "3",
+   "sim_power_200k": "0.965955",
+   "mc_se": "0.00040549930933973235",
+   "wrong_sign": "0.0",
+   "calc_power": "0.9661571853856993"
+  },
+  {
+   "case": "cold chamber central, dT = 5 K",
+   "lever": "KIT 0-100 1.67/1.00C",
+   "s_per_K": "-0.03580047101563345",
+   "dT_K": "5.0",
+   "shape": "lognormal",
+   "n": "4",
+   "sim_power_200k": "0.97815",
+   "mc_se": "0.0003268988949201269",
+   "wrong_sign": "0.0",
+   "calc_power": "0.9984046043169246"
+  },
+  {
+   "case": "cold chamber central, dT = 5 K",
+   "lever": "KIT 0-100 1.67/1.00C",
+   "s_per_K": "-0.03580047101563345",
+   "dT_K": "5.0",
+   "shape": "normal",
+   "n": "4",
+   "sim_power_200k": "0.999925",
+   "mc_se": "1.9364190533049302e-05",
+   "wrong_sign": "0.0",
+   "calc_power": "0.9999112889441099"
+  },
+  {
+   "case": "cold chamber central, dT = 5 K",
+   "lever": "KIT 0-100 1.67/1.00C",
+   "s_per_K": "-0.03580047101563345",
+   "dT_K": "5.0",
+   "shape": "lognormal",
+   "n": "5",
+   "sim_power_200k": "0.990975",
+   "mc_se": "0.00021146571087294448",
+   "wrong_sign": "0.0",
+   "calc_power": "0.999991490681269"
+  },
+  {
+   "case": "cold chamber central, dT = 5 K",
+   "lever": "KIT 0-100 1.67/1.00C",
+   "s_per_K": "-0.03580047101563345",
+   "dT_K": "5.0",
+   "shape": "normal",
+   "n": "5",
+   "sim_power_200k": "1.0",
+   "mc_se": "0.0",
+   "wrong_sign": "0.0",
+   "calc_power": "0.9999999604089872"
+  },
+  {
+   "case": "cold chamber central, dT = 5 K",
+   "lever": "KIT 0-100 1.67/1.00C",
+   "s_per_K": "-0.03580047101563345",
+   "dT_K": "5.0",
+   "shape": "lognormal",
+   "n": "6",
+   "sim_power_200k": "0.99546",
+   "mc_se": "0.00015032279268294594",
+   "wrong_sign": "0.0",
+   "calc_power": "0.9999999761731423"
+  },
+  {
+   "case": "cold chamber central, dT = 5 K",
+   "lever": "KIT 0-100 1.67/1.00C",
+   "s_per_K": "-0.03580047101563345",
+   "dT_K": "5.0",
+   "shape": "normal",
+   "n": "6",
+   "sim_power_200k": "1.0",
+   "mc_se": "0.0",
+   "wrong_sign": "0.0",
+   "calc_power": "0.9999999999929557"
+  },
+  {
+   "case": "cold chamber central, dT = 5 K",
+   "lever": "KIT 0-100 1.67/1.00C",
+   "s_per_K": "-0.03580047101563345",
+   "dT_K": "5.0",
+   "shape": "lognormal",
+   "n": "7",
+   "sim_power_200k": "0.997465",
+   "mc_se": "0.0001124405126055541",
+   "wrong_sign": "0.0",
+   "calc_power": "0.9999999999540192"
+  },
+  {
+   "case": "cold chamber central, dT = 5 K",
+   "lever": "KIT 0-100 1.67/1.00C",
+   "s_per_K": "-0.03580047101563345",
+   "dT_K": "5.0",
+   "shape": "normal",
+   "n": "7",
+   "sim_power_200k": "1.0",
+   "mc_se": "0.0",
+   "wrong_sign": "0.0",
+   "calc_power": "0.9999999999999994"
+  }
+ ],
+ "choices": [
+  {
+   "point": "D58 fails to solve",
+   "checker": "a raised exception",
+   "pipeline": "the same",
+   "effect": "same two failures"
+  },
+  {
+   "point": "D58 resistance at the ambient",
+   "checker": "as registered",
+   "pipeline": "as registered",
+   "effect": "decides P2, P4, P5 (flag 2)"
+  },
+  {
+   "point": "D61 two-sided power",
+   "checker": "both tails by quadrature",
+   "pipeline": "lower tail zero where scipy nan (D64)",
+   "effect": "n identical in 144 cases"
+  },
+  {
+   "point": "D62 V4 seeds",
+   "checker": "SeedSequence([20261027, case, n, shape])",
+   "pipeline": "own seeds",
+   "effect": "10 boundary pass/fail differences"
+  },
+  {
+   "point": "D62 normal check sd(e)",
+   "checker": "normal-shape sd at freeze; registered sd post-freeze",
+   "pipeline": "registered sd",
+   "effect": "none on verdicts"
+  },
+  {
+   "point": "cells inside band",
+   "checker": "logged secant span at freeze; set points post-freeze",
+   "pipeline": "set points",
+   "effect": "17 of 36 outside, all flags agree"
+  },
+  {
+   "point": "P2 levers",
+   "checker": "point estimates",
+   "pipeline": "point estimates",
+   "effect": "none"
+  },
+  {
+   "point": "P7 central cold lever",
+   "checker": "cold band median 3.5800",
+   "pipeline": "the same",
+   "effect": "3.6139 gives n = 3 too"
+  },
+  {
+   "point": "figure grid",
+   "checker": "0.5 K",
+   "pipeline": "0.1 K",
+   "effect": "agree where overlapping"
+  }
+ ],
+ "flags": [
+  "1. R(10 C) rests on the 10 s grid missing a 13.8 kW sub-second solver spike (t = 3954.70 s) in the C/2 charge at default tolerances; 1 s grid +15 %, 0.01 s grid 4x on the charge; at rtol 1e-8 it vanishes (46.526 vs 46.547 mOhm); registered value right, D65's no-spike statement describes samples, V2's agreement depends on its tight tolerances.",
+  "2. The resistance at the ambient is an upper bracket that decides P2, P4 and P5: with heat at each cell's own temperature P2 holds, P4 fails (5.54 % at h = 5), P5 holds (5.54 to 7.27 %); D66's brackets do not cover P2.",
+  "3. 17 of 36 cases have cells outside their band's set points; P4 rests on 10 C 1C cells at 24 to 50 C under 10 to 25 C levers; 10 C 2C 95th percentiles reach 75 to 98 %.",
+  "4. V4's 5 % rule is granular and seed-dependent at small n; P7 warm case precise simulated n = 23 (power 0.8024 at 23, 0.7897 at 22), 8 % below 25; P7's verdict is unaffected.",
+  "5. P7 turns on the registered median-|s| reading (signed median gives 221 pairs, P7 would hold); the note's 25 pairs is the noncentral-t upper estimate (23 simulated).",
+  "6. P5's 35 C clause holds by 0.29 points (7.046 vs 7.332 %).",
+  "7. The 10 C C/2 charge ends at 2.75 Ah; R(10 C) mixes a full-window discharge and a 55 % charge (discharge alone +2.9 %); no verdict moves.",
+  "8. Wording: 'a 10 C module' (cells at 24 to 50 C at 1C); 'offers a share from C/2' only under the upper bracket; note's 'KIT and Sandia, 25 to 40 C' median lever.",
+  "9. Unscored 2C within-cell ratio 0.306 near one third (analytic bracket 0.339).",
+  "10. Agreed: C/16 charge values are solver spikes (D65); scipy nct nan at n = 3 (D64)."
+ ],
+ "checker_own_slips_resolved_postfreeze": [
+  "out/divergence.csv ln_offset_cell columns written as np.float64(...) strings; digits intact",
+  "summary.json used the logged secant span for cells inside the band; set points recomputed post-freeze",
+  "normal-shape V4 at freeze used m sqrt(pi/2); literal reading run post-freeze"
+ ],
+ "report_md": "not written: the harness refused a report .md from this agent; the report text was returned to the caller"
+}
