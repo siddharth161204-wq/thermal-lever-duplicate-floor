@@ -88,6 +88,21 @@ def main():
                                                        "cells_C": rng([x["T_min_C"] for x in cb if x["resistance_of_C"] == float(k) and x["rate"] == "1C"]
                                                                       + [x["T_max_C"] for x in cb if x["resistance_of_C"] == float(k) and x["rate"] == "1C"], 1)}
                                          for k in ("25", "35")}
+    own = json.load(open(os.path.join(RES, "stage4_posthoc_own_temperature.json")))
+    oc = own["cases"]
+    pick = lambda T, rate, key: rng([x[key] for x in oc if x["ambient_C"] == T and x["rate"] == rate], 4)
+    out["posthoc"]["own_temperature"] = {
+        "R_mOhm_at": {k: 1e3 * v for k, v in own["R_of_T_ohm"].items() if k in ("10", "35", "50", "90")},
+        "spread_K": {"35 C 1C": pick(35.0, "1C", "own_spread_K"), "35 C 2C": pick(35.0, "2C", "own_spread_K"),
+                     "10 C 1C": pick(10.0, "1C", "own_spread_K"), "10 C 2C": pick(10.0, "2C", "own_spread_K")},
+        "median": {"35 C 2C": pick(35.0, "2C", "own_median"), "10 C 1C": pick(10.0, "1C", "own_median")},
+        "max_lever_35C_2C_h5": [x["own_max_lever"] for x in oc if x["ambient_C"] == 35.0 and x["rate"] == "2C" and x["h"] == 5.0][0],
+        "verdicts": own["verdicts"]}
+    ind = json.load(open(os.path.join(CM.ROOT, "verification", "stage4", "independent", "record.json")))
+    out["independent"] = {"freeze_commit": "fd5d1e73f6fa87e5b60cc9c2689b26e072a6b1d0", "frozen_utc": "2026-10-27T10:33:27Z",
+                          "pushed_utc": "2026-10-27T10:33:36Z", "comparison_commit": "2c17f4d",
+                          "largest_deterministic_difference": "2e-12 (power at n 1.7e-12; divergences 8.8e-13 relative; module 1.7e-13 K)",
+                          "verdicts_identical": True, "record": "verification/stage4/independent/record.json", "freeze_in_record": ind["freeze"]["commit"]}
     json.dump(out, open(os.path.join(RES, "stage4_paper_numbers.json"), "w"), indent=1)
     print(json.dumps(out, indent=1))
 
