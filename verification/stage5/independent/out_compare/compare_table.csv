@@ -1,0 +1,27 @@
+class,mismatches,max_abs_diff,max_rel_diff,where_max_rel
+pairs: categorical,0,,,
+pairs: numeric,,6.938893903907228e-18,2.197529719804314e-16,d
+B point beta,,2.220446049250313e-16,1.2879326590077845e-15,KIT
+B point s_w_per_K,,6.938893903907228e-18,6.560879564670914e-16,KIT cold
+B point resid_sd,,0.0,0.0,
+counts,0,,,
+sign counts,0,,,
+sign p and share,,0.0,0.0,
+C1 counts,0,,,
+C1 detectable_s_per_K,,1.4960255256823984e-14,1.7606146823476637e-13,pooled | Geslin
+C1 normal_shape_per_K,,8.61116733474887e-15,1.5208538163058424e-13,Sandia cold | KIT
+C1 F,,8.881784197001252e-16,5.921189482976256e-16,KIT | Geslin
+C1 shared_cells_per_K,,1.201816424156732e-14,2.1290950937529698e-13,pooled cold | KIT
+C1 dT_rms_K,,2.220446049250313e-16,2.546712926545177e-16,KIT | Geslin
+C1 sum_dT2_K2,,2.842170943040401e-14,3.5271494710935673e-16,KIT | Geslin
+C1 dT_median_K,,0.0,0.0,
+C1 sd_e,,0.0,0.0,
+C1 power_at_detectable,,1.4721557306529576e-13,1.840194663316176e-13,pooled | Geslin
+"C2 pairs needed (calc, shared, normal shape)",0,,,
+C2 power_calc,,2.7755575615628914e-17,2.147201697318135e-16,KIT | warm | KIT
+C2 dT_rms_K,,2.220446049250313e-16,1.2742761202544247e-16,Sandia | warm | Geslin
+C2 sd_e,,0.0,0.0,
+C2 F,,2.220446049250313e-16,1.4802973772515627e-16,KIT | warm | Geslin
+C2 abs_s_per_K,,0.0,0.0,
+verdicts P1 to P8,0,,,
+B4 floor verdicts,0,,,

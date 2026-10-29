@@ -1,0 +1,1662 @@
+{
+ "method": "D74 as read by the independent checker",
+ "n_draws": 10000,
+ "percentiles": [
+  2.5,
+  97.5
+ ],
+ "base_seed": 5550129,
+ "generator": "numpy.random.Generator(SFC64(SeedSequence([BASE_SEED, k])))",
+ "sd_e": {
+  "Geslin": 0.04454298465298393,
+  "KIT": 0.10412996462328801
+ },
+ "band_medians": {
+  "warm": {
+   "label": "KIT 0-100 0.33/0.33C",
+   "s": 0.013029423647732621
+  },
+  "cold": {
+   "label": "KIT 0-100 1.67/1.00C",
+   "s": -0.03580047101563345
+  }
+ },
+ "analyses": {
+  "KIT": {
+   "name": "B1/B4 KIT",
+   "registered": true,
+   "note": "",
+   "measure": "a",
+   "n_pairs": 106,
+   "n_sets": 36,
+   "s_w_per_K": -0.02609128580559712,
+   "beta": -0.08620194672914543,
+   "resid_sd": 0.13085807008015998,
+   "strata_pairs": [
+    106
+   ],
+   "bootstrap": {
+    "draws": 10000,
+    "seed": [
+     5550129,
+     1
+    ],
+    "generator": "numpy Generator(SFC64(SeedSequence(seed)))",
+    "strata_sets": [
+     36
+    ],
+    "s_w_left_out": 0,
+    "s_w_ci95": [
+     -0.1009252887504374,
+     0.03408003532731295
+    ],
+    "beta_left_out": 0,
+    "beta_ci95": [
+     -1.9134729640234256,
+     1.4273526803988161
+    ],
+    "resid_sd_left_out": 0,
+    "resid_sd_ci95": [
+     0.09114492413556946,
+     0.16776712404030047
+    ],
+    "beta_draws_mean": -0.16427682046804679,
+    "beta_draws_sd": 0.8223184665049645
+   },
+   "sign": {
+    "pairs_tested": 106,
+    "agree": 45,
+    "left_out": 0,
+    "share": 0.42452830188679247,
+    "p_two_sided": 0.14478233933005036
+   },
+   "floor_verdicts": {
+    "KIT": {
+     "sd_e": 0.10412996462328801,
+     "inside_interval": true,
+     "point_over_sd_e": 1.2566802510071573
+    },
+    "Geslin": {
+     "sd_e": 0.04454298465298393,
+     "inside_interval": false,
+     "point_over_sd_e": 2.937793035191094
+    }
+   },
+   "s_w_pct_per_K": -2.609128580559712,
+   "s_w_ci95_pct_per_K": [
+    -10.09252887504374,
+    3.408003532731295
+   ],
+   "beta_ci95": [
+    -1.9134729640234256,
+    1.4273526803988161
+   ],
+   "beta_ci95_width": 3.3408256444222415,
+   "resid_sd_ci95": [
+    0.09114492413556946,
+    0.16776712404030047
+   ]
+  },
+  "Sandia": {
+   "name": "B1/B4 Sandia",
+   "registered": true,
+   "note": "",
+   "measure": "a",
+   "n_pairs": 56,
+   "n_sets": 21,
+   "s_w_per_K": -0.0235642878620017,
+   "beta": 1.5495857828171264,
+   "resid_sd": 0.15814440057660337,
+   "strata_pairs": [
+    56
+   ],
+   "bootstrap": {
+    "draws": 10000,
+    "seed": [
+     5550129,
+     2
+    ],
+    "generator": "numpy Generator(SFC64(SeedSequence(seed)))",
+    "strata_sets": [
+     21
+    ],
+    "s_w_left_out": 0,
+    "s_w_ci95": [
+     -0.051704734044946056,
+     0.048375430481636915
+    ],
+    "beta_left_out": 0,
+    "beta_ci95": [
+     -0.7069762621721137,
+     2.4815507569899866
+    ],
+    "resid_sd_left_out": 0,
+    "resid_sd_ci95": [
+     0.08966589765481081,
+     0.22034948212981578
+    ],
+    "beta_draws_mean": 1.3271213249112865,
+    "beta_draws_sd": 0.8456270212802574
+   },
+   "sign": {
+    "pairs_tested": 56,
+    "agree": 32,
+    "left_out": 0,
+    "share": 0.5714285714285714,
+    "p_two_sided": 0.34968195298368476
+   },
+   "floor_verdicts": {
+    "KIT": {
+     "sd_e": 0.10412996462328801,
+     "inside_interval": true,
+     "point_over_sd_e": 1.5187213512337578
+    },
+    "Geslin": {
+     "sd_e": 0.04454298465298393,
+     "inside_interval": false,
+     "point_over_sd_e": 3.550377277334272
+    }
+   },
+   "s_w_pct_per_K": -2.35642878620017,
+   "s_w_ci95_pct_per_K": [
+    -5.170473404494605,
+    4.837543048163692
+   ],
+   "beta_ci95": [
+    -0.7069762621721137,
+    2.4815507569899866
+   ],
+   "beta_ci95_width": 3.1885270191621005,
+   "resid_sd_ci95": [
+    0.08966589765481081,
+    0.22034948212981578
+   ]
+  },
+  "pooled": {
+   "name": "B1/B4 pooled (stratified)",
+   "registered": true,
+   "note": "",
+   "measure": "a",
+   "n_pairs": 162,
+   "n_sets": 57,
+   "s_w_per_K": -0.02389824356789823,
+   "beta": 1.0955874575178046,
+   "resid_sd": 0.1416642793293986,
+   "strata_pairs": [
+    106,
+    56
+   ],
+   "bootstrap": {
+    "draws": 10000,
+    "seed": [
+     5550129,
+     3
+    ],
+    "generator": "numpy Generator(SFC64(SeedSequence(seed)))",
+    "strata_sets": [
+     36,
+     21
+    ],
+    "s_w_left_out": 0,
+    "s_w_ci95": [
+     -0.0505994749979725,
+     0.0317435353915456
+    ],
+    "beta_left_out": 0,
+    "beta_ci95": [
+     -0.5573992754968562,
+     1.946636586796124
+    ],
+    "resid_sd_left_out": 0,
+    "resid_sd_ci95": [
+     0.1055691067174742,
+     0.17408739846004567
+    ],
+    "beta_draws_mean": 0.928979632423355,
+    "beta_draws_sd": 0.6643811174562688
+   },
+   "sign": {
+    "pairs_tested": 162,
+    "agree": 77,
+    "left_out": 0,
+    "share": 0.47530864197530864,
+    "p_two_sided": 0.5824757301133331
+   },
+   "floor_verdicts": {
+    "KIT": {
+     "sd_e": 0.10412996462328801,
+     "inside_interval": false,
+     "point_over_sd_e": 1.360456424256926
+    },
+    "Geslin": {
+     "sd_e": 0.04454298465298393,
+     "inside_interval": false,
+     "point_over_sd_e": 3.180394857530242
+    }
+   },
+   "s_w_pct_per_K": -2.389824356789823,
+   "s_w_ci95_pct_per_K": [
+    -5.05994749979725,
+    3.1743535391545596
+   ],
+   "beta_ci95": [
+    -0.5573992754968562,
+    1.946636586796124
+   ],
+   "beta_ci95_width": 2.50403586229298,
+   "resid_sd_ci95": [
+    0.1055691067174742,
+    0.17408739846004567
+   ]
+  },
+  "KIT warm": {
+   "name": "B2 KIT warm",
+   "registered": true,
+   "note": "",
+   "measure": "a",
+   "n_pairs": 70,
+   "n_sets": 24,
+   "s_w_per_K": -0.05190860433846528,
+   "beta": -7.752268429221527,
+   "resid_sd": 0.13437150172823675,
+   "strata_pairs": [
+    70
+   ],
+   "bootstrap": {
+    "draws": 10000,
+    "seed": [
+     5550129,
+     4
+    ],
+    "generator": "numpy Generator(SFC64(SeedSequence(seed)))",
+    "strata_sets": [
+     24
+    ],
+    "s_w_left_out": 0,
+    "s_w_ci95": [
+     -0.16008217216724954,
+     0.0820114274947321
+    ],
+    "beta_left_out": 0,
+    "beta_ci95": [
+     -17.818381900054796,
+     -1.9456789309455447
+    ],
+    "resid_sd_left_out": 0,
+    "resid_sd_ci95": [
+     0.08926375079556706,
+     0.17524687180750562
+    ],
+    "beta_draws_mean": -8.251389201880604,
+    "beta_draws_sd": 4.054169508110105
+   },
+   "sign": {
+    "pairs_tested": 70,
+    "agree": 24,
+    "left_out": 0,
+    "share": 0.34285714285714286,
+    "p_two_sided": 0.011526409654363478
+   },
+   "floor_verdicts_extra": {
+    "KIT": {
+     "sd_e": 0.10412996462328801,
+     "inside_interval": true,
+     "point_over_sd_e": 1.290421083060518
+    },
+    "Geslin": {
+     "sd_e": 0.04454298465298393,
+     "inside_interval": false,
+     "point_over_sd_e": 3.016670364033076
+    }
+   },
+   "s_w_pct_per_K": -5.190860433846528,
+   "s_w_ci95_pct_per_K": [
+    -16.008217216724955,
+    8.20114274947321
+   ],
+   "beta_ci95": [
+    -17.818381900054796,
+    -1.9456789309455447
+   ],
+   "beta_ci95_width": 15.872702969109252,
+   "resid_sd_ci95": [
+    0.08926375079556706,
+    0.17524687180750562
+   ],
+   "band_median_lever_pct_per_K": 1.302942364773262,
+   "band_median_lever_label": "KIT 0-100 0.33/0.33C"
+  },
+  "KIT cold": {
+   "name": "B2 KIT cold",
+   "registered": true,
+   "note": "",
+   "measure": "a",
+   "n_pairs": 36,
+   "n_sets": 12,
+   "s_w_per_K": -0.007932123089035023,
+   "beta": 0.32307149062306334,
+   "resid_sd": 0.11448950827805332,
+   "strata_pairs": [
+    36
+   ],
+   "bootstrap": {
+    "draws": 10000,
+    "seed": [
+     5550129,
+     5
+    ],
+    "generator": "numpy Generator(SFC64(SeedSequence(seed)))",
+    "strata_sets": [
+     12
+    ],
+    "s_w_left_out": 0,
+    "s_w_ci95": [
+     -0.0932237554353926,
+     0.04048240467331763
+    ],
+    "beta_left_out": 0,
+    "beta_ci95": [
+     -0.7831726391657701,
+     2.6526599624637726
+    ],
+    "resid_sd_left_out": 0,
+    "resid_sd_ci95": [
+     0.05338289024787751,
+     0.1731848295936752
+    ],
+    "beta_draws_mean": 0.45386531820801257,
+    "beta_draws_sd": 0.7992078593242466
+   },
+   "sign": {
+    "pairs_tested": 36,
+    "agree": 21,
+    "left_out": 0,
+    "share": 0.5833333333333334,
+    "p_two_sided": 0.4050322461407632
+   },
+   "floor_verdicts_extra": {
+    "KIT": {
+     "sd_e": 0.10412996462328801,
+     "inside_interval": true,
+     "point_over_sd_e": 1.0994866721816638
+    },
+    "Geslin": {
+     "sd_e": 0.04454298465298393,
+     "inside_interval": false,
+     "point_over_sd_e": 2.5703151499611887
+    }
+   },
+   "s_w_pct_per_K": -0.7932123089035024,
+   "s_w_ci95_pct_per_K": [
+    -9.32237554353926,
+    4.048240467331763
+   ],
+   "beta_ci95": [
+    -0.7831726391657701,
+    2.6526599624637726
+   ],
+   "beta_ci95_width": 3.4358326016295426,
+   "resid_sd_ci95": [
+    0.05338289024787751,
+    0.1731848295936752
+   ],
+   "band_median_lever_pct_per_K": -3.5800471015633453,
+   "band_median_lever_label": "KIT 0-100 1.67/1.00C"
+  },
+  "Sandia warm": {
+   "name": "B2 Sandia warm",
+   "registered": true,
+   "note": "",
+   "measure": "a",
+   "n_pairs": 36,
+   "n_sets": 11,
+   "s_w_per_K": -0.04345486296296944,
+   "beta": 1.9394614419331873,
+   "resid_sd": 0.17480332165914483,
+   "strata_pairs": [
+    36
+   ],
+   "bootstrap": {
+    "draws": 10000,
+    "seed": [
+     5550129,
+     6
+    ],
+    "generator": "numpy Generator(SFC64(SeedSequence(seed)))",
+    "strata_sets": [
+     11
+    ],
+    "s_w_left_out": 0,
+    "s_w_ci95": [
+     -0.07014789304711526,
+     0.005233815929940973
+    ],
+    "beta_left_out": 0,
+    "beta_ci95": [
+     -0.22405179579579182,
+     3.528606872155533
+    ],
+    "resid_sd_left_out": 0,
+    "resid_sd_ci95": [
+     0.07731214595798733,
+     0.25866599870807716
+    ],
+    "beta_draws_mean": 1.8096806467520372,
+    "beta_draws_sd": 0.9761083697248981
+   },
+   "sign": {
+    "pairs_tested": 36,
+    "agree": 23,
+    "left_out": 0,
+    "share": 0.6388888888888888,
+    "p_two_sided": 0.13249816396273675
+   },
+   "floor_verdicts_extra": {
+    "KIT": {
+     "sd_e": 0.10412996462328801,
+     "inside_interval": true,
+     "point_over_sd_e": 1.678703361626334
+    },
+    "Geslin": {
+     "sd_e": 0.04454298465298393,
+     "inside_interval": false,
+     "point_over_sd_e": 3.9243737935606604
+    }
+   },
+   "s_w_pct_per_K": -4.345486296296944,
+   "s_w_ci95_pct_per_K": [
+    -7.014789304711526,
+    0.5233815929940974
+   ],
+   "beta_ci95": [
+    -0.22405179579579182,
+    3.528606872155533
+   ],
+   "beta_ci95_width": 3.7526586679513247,
+   "resid_sd_ci95": [
+    0.07731214595798733,
+    0.25866599870807716
+   ],
+   "band_median_lever_pct_per_K": 1.302942364773262,
+   "band_median_lever_label": "KIT 0-100 0.33/0.33C"
+  },
+  "Sandia cold": {
+   "name": "B2 Sandia cold",
+   "registered": true,
+   "note": "",
+   "measure": "a",
+   "n_pairs": 20,
+   "n_sets": 10,
+   "s_w_per_K": 0.07104824601238863,
+   "beta": 0.29380683943008934,
+   "resid_sd": 0.11879460991813641,
+   "strata_pairs": [
+    20
+   ],
+   "bootstrap": {
+    "draws": 10000,
+    "seed": [
+     5550129,
+     7
+    ],
+    "generator": "numpy Generator(SFC64(SeedSequence(seed)))",
+    "strata_sets": [
+     10
+    ],
+    "s_w_left_out": 0,
+    "s_w_ci95": [
+     -0.04031617101001738,
+     0.18630666269999624
+    ],
+    "beta_left_out": 0,
+    "beta_ci95": [
+     -5.623582347609039,
+     4.260647028323421
+    ],
+    "resid_sd_left_out": 0,
+    "resid_sd_ci95": [
+     0.02625507387407005,
+     0.16022561837685498
+    ],
+    "beta_draws_mean": -0.09146368400874065,
+    "beta_draws_sd": 2.374958464423224
+   },
+   "sign": {
+    "pairs_tested": 20,
+    "agree": 9,
+    "left_out": 0,
+    "share": 0.45,
+    "p_two_sided": 0.8238029479980469
+   },
+   "floor_verdicts_extra": {
+    "KIT": {
+     "sd_e": 0.10412996462328801,
+     "inside_interval": true,
+     "point_over_sd_e": 1.140830214894443
+    },
+    "Geslin": {
+     "sd_e": 0.04454298465298393,
+     "inside_interval": true,
+     "point_over_sd_e": 2.66696564775837
+    }
+   },
+   "s_w_pct_per_K": 7.104824601238863,
+   "s_w_ci95_pct_per_K": [
+    -4.031617101001738,
+    18.630666269999622
+   ],
+   "beta_ci95": [
+    -5.623582347609039,
+    4.260647028323421
+   ],
+   "beta_ci95_width": 9.88422937593246,
+   "resid_sd_ci95": [
+    0.02625507387407005,
+    0.16022561837685498
+   ],
+   "band_median_lever_pct_per_K": -3.5800471015633453,
+   "band_median_lever_label": "KIT 0-100 1.67/1.00C"
+  },
+  "pooled warm": {
+   "name": "B2 pooled warm (stratified)",
+   "registered": true,
+   "note": "",
+   "measure": "a",
+   "n_pairs": 106,
+   "n_sets": 35,
+   "s_w_per_K": -0.04405269896391494,
+   "beta": 1.69833115632463,
+   "resid_sd": 0.15286087190223768,
+   "strata_pairs": [
+    70,
+    36
+   ],
+   "bootstrap": {
+    "draws": 10000,
+    "seed": [
+     5550129,
+     8
+    ],
+    "generator": "numpy Generator(SFC64(SeedSequence(seed)))",
+    "strata_sets": [
+     24,
+     11
+    ],
+    "s_w_left_out": 0,
+    "s_w_ci95": [
+     -0.0710814647621066,
+     -0.0002992324667988162
+    ],
+    "beta_left_out": 0,
+    "beta_ci95": [
+     -1.0662064839817966,
+     2.3849560740948315
+    ],
+    "resid_sd_left_out": 0,
+    "resid_sd_ci95": [
+     0.10635888939383288,
+     0.19540728166070487
+    ],
+    "beta_draws_mean": 1.3339297757930713,
+    "beta_draws_sd": 1.0041869143086706
+   },
+   "sign": {
+    "pairs_tested": 106,
+    "agree": 47,
+    "left_out": 0,
+    "share": 0.44339622641509435,
+    "p_two_sided": 0.28528442186565844
+   },
+   "floor_verdicts_extra": {
+    "KIT": {
+     "sd_e": 0.10412996462328801,
+     "inside_interval": false,
+     "point_over_sd_e": 1.4679815983347728
+    },
+    "Geslin": {
+     "sd_e": 0.04454298465298393,
+     "inside_interval": false,
+     "point_over_sd_e": 3.431760873078305
+    }
+   },
+   "s_w_pct_per_K": -4.405269896391494,
+   "s_w_ci95_pct_per_K": [
+    -7.10814647621066,
+    -0.02992324667988162
+   ],
+   "beta_ci95": [
+    -1.0662064839817966,
+    2.3849560740948315
+   ],
+   "beta_ci95_width": 3.451162558076628,
+   "resid_sd_ci95": [
+    0.10635888939383288,
+    0.19540728166070487
+   ],
+   "band_median_lever_pct_per_K": 1.302942364773262,
+   "band_median_lever_label": "KIT 0-100 0.33/0.33C"
+  },
+  "pooled cold": {
+   "name": "B2 pooled cold (stratified)",
+   "registered": true,
+   "note": "",
+   "measure": "a",
+   "n_pairs": 56,
+   "n_sets": 22,
+   "s_w_per_K": 0.04421256826043753,
+   "beta": 0.31154704322526033,
+   "resid_sd": 0.11496364798128787,
+   "strata_pairs": [
+    36,
+    20
+   ],
+   "bootstrap": {
+    "draws": 10000,
+    "seed": [
+     5550129,
+     9
+    ],
+    "generator": "numpy Generator(SFC64(SeedSequence(seed)))",
+    "strata_sets": [
+     12,
+     10
+    ],
+    "s_w_left_out": 0,
+    "s_w_ci95": [
+     -0.030529910190108277,
+     0.080569448422205
+    ],
+    "beta_left_out": 0,
+    "beta_ci95": [
+     -1.2184806864999367,
+     1.9731242387049026
+    ],
+    "resid_sd_left_out": 0,
+    "resid_sd_ci95": [
+     0.06631893123817255,
+     0.16093454290827147
+    ],
+    "beta_draws_mean": 0.31627282361310655,
+    "beta_draws_sd": 0.7712687087632277
+   },
+   "sign": {
+    "pairs_tested": 56,
+    "agree": 30,
+    "left_out": 0,
+    "share": 0.5357142857142857,
+    "p_two_sided": 0.6888797607233395
+   },
+   "floor_verdicts_extra": {
+    "KIT": {
+     "sd_e": 0.10412996462328801,
+     "inside_interval": true,
+     "point_over_sd_e": 1.1040400176567138
+    },
+    "Geslin": {
+     "sd_e": 0.04454298465298393,
+     "inside_interval": false,
+     "point_over_sd_e": 2.580959692686118
+    }
+   },
+   "s_w_pct_per_K": 4.421256826043753,
+   "s_w_ci95_pct_per_K": [
+    -3.0529910190108276,
+    8.0569448422205
+   ],
+   "beta_ci95": [
+    -1.2184806864999367,
+    1.9731242387049026
+   ],
+   "beta_ci95_width": 3.1916049252048393,
+   "resid_sd_ci95": [
+    0.06631893123817255,
+    0.16093454290827147
+   ],
+   "band_median_lever_pct_per_K": -3.5800471015633453,
+   "band_median_lever_label": "KIT 0-100 1.67/1.00C"
+  },
+  "KIT 0 C": {
+   "name": "B2 KIT 0 C sets (unscored, no between-set lever)",
+   "registered": false,
+   "note": "",
+   "measure": "a",
+   "n_pairs": 36,
+   "n_sets": 12,
+   "s_w_per_K": -0.012806283734062653,
+   "beta": null,
+   "resid_sd": null,
+   "strata_pairs": [
+    36
+   ],
+   "bootstrap": {
+    "draws": 10000,
+    "seed": [
+     5550129,
+     10
+    ],
+    "generator": "numpy Generator(SFC64(SeedSequence(seed)))",
+    "strata_sets": [
+     12
+    ],
+    "s_w_left_out": 0,
+    "s_w_ci95": [
+     -0.034724357629013686,
+     0.006671712435124952
+    ]
+   },
+   "s_w_pct_per_K": -1.2806283734062653,
+   "s_w_ci95_pct_per_K": [
+    -3.4724357629013687,
+    0.6671712435124952
+   ]
+  },
+  "untied KIT": {
+   "name": "bracket: untied pairs, KIT",
+   "registered": false,
+   "note": "bootstrap over the sets holding an untied pair",
+   "measure": "a",
+   "n_pairs": 2,
+   "n_sets": 2,
+   "s_w_per_K": 1.703365545393553,
+   "beta": -88.22420283930613,
+   "resid_sd": 0.45617556290473626,
+   "strata_pairs": [
+    2
+   ],
+   "bootstrap": {
+    "draws": 10000,
+    "seed": [
+     5550129,
+     11
+    ],
+    "generator": "numpy Generator(SFC64(SeedSequence(seed)))",
+    "strata_sets": [
+     2
+    ],
+    "s_w_left_out": 0,
+    "s_w_ci95": [
+     1.6858206979404486,
+     1.8507198081070828
+    ],
+    "beta_left_out": 0,
+    "beta_ci95": [
+     -169.39278756720321,
+     96.90951721302008
+    ],
+    "resid_sd_left_out": 0,
+    "resid_sd_ci95": [
+     0.0,
+     0.4561755629047363
+    ],
+    "beta_draws_mean": -62.756957260576705,
+    "beta_draws_sd": 97.98348318332218
+   },
+   "sign": {
+    "pairs_tested": 2,
+    "agree": 1,
+    "left_out": 0,
+    "share": 0.5,
+    "p_two_sided": 1.0
+   },
+   "floor_verdicts": {
+    "KIT": {
+     "sd_e": 0.10412996462328801,
+     "inside_interval": true,
+     "point_over_sd_e": 4.38082894347508
+    },
+    "Geslin": {
+     "sd_e": 0.04454298465298393,
+     "inside_interval": true,
+     "point_over_sd_e": 10.241243743736806
+    }
+   },
+   "s_w_pct_per_K": 170.3365545393553,
+   "s_w_ci95_pct_per_K": [
+    168.58206979404486,
+    185.07198081070828
+   ],
+   "beta_ci95": [
+    -169.39278756720321,
+    96.90951721302008
+   ],
+   "beta_ci95_width": 266.30230478022327,
+   "resid_sd_ci95": [
+    0.0,
+    0.4561755629047363
+   ]
+  },
+  "untied KIT warm": {
+   "name": "bracket: untied pairs, KIT warm",
+   "registered": false,
+   "note": "",
+   "measure": "a",
+   "n_pairs": 2,
+   "n_sets": 2,
+   "s_w_per_K": 1.703365545393553,
+   "beta": -88.22420283930613,
+   "resid_sd": 0.45617556290473626,
+   "strata_pairs": [
+    2
+   ],
+   "bootstrap": {
+    "draws": 10000,
+    "seed": [
+     5550129,
+     12
+    ],
+    "generator": "numpy Generator(SFC64(SeedSequence(seed)))",
+    "strata_sets": [
+     2
+    ],
+    "s_w_left_out": 0,
+    "s_w_ci95": [
+     1.6858206979404486,
+     1.8507198081070828
+    ],
+    "beta_left_out": 0,
+    "beta_ci95": [
+     -169.39278756720321,
+     96.90951721302008
+    ],
+    "resid_sd_left_out": 0,
+    "resid_sd_ci95": [
+     0.0,
+     0.4561755629047363
+    ],
+    "beta_draws_mean": -62.13150965946208,
+    "beta_draws_sd": 98.01271131031372
+   },
+   "sign": {
+    "pairs_tested": 2,
+    "agree": 1,
+    "left_out": 0,
+    "share": 0.5,
+    "p_two_sided": 1.0
+   },
+   "s_w_pct_per_K": 170.3365545393553,
+   "s_w_ci95_pct_per_K": [
+    168.58206979404486,
+    185.07198081070828
+   ],
+   "beta_ci95": [
+    -169.39278756720321,
+    96.90951721302008
+   ],
+   "beta_ci95_width": 266.30230478022327,
+   "resid_sd_ci95": [
+    0.0,
+    0.4561755629047363
+   ],
+   "band_median_lever_pct_per_K": 1.302942364773262,
+   "band_median_lever_label": "KIT 0-100 0.33/0.33C"
+  },
+  "untied pooled": {
+   "name": "bracket: untied pairs, pooled (Sandia has none)",
+   "registered": false,
+   "note": "",
+   "measure": "a",
+   "n_pairs": 2,
+   "n_sets": 2,
+   "s_w_per_K": 1.703365545393553,
+   "beta": -88.22420283930613,
+   "resid_sd": 0.45617556290473626,
+   "strata_pairs": [
+    2,
+    0
+   ],
+   "bootstrap": {
+    "draws": 10000,
+    "seed": [
+     5550129,
+     13
+    ],
+    "generator": "numpy Generator(SFC64(SeedSequence(seed)))",
+    "strata_sets": [
+     2
+    ],
+    "s_w_left_out": 0,
+    "s_w_ci95": [
+     1.6858206979404486,
+     1.8507198081070828
+    ],
+    "beta_left_out": 0,
+    "beta_ci95": [
+     -169.39278756720321,
+     96.90951721302008
+    ],
+    "resid_sd_left_out": 0,
+    "resid_sd_ci95": [
+     0.0,
+     0.4561755629047363
+    ],
+    "beta_draws_mean": -61.24970676838987,
+    "beta_draws_sd": 98.53927819979856
+   },
+   "sign": {
+    "pairs_tested": 2,
+    "agree": 1,
+    "left_out": 0,
+    "share": 0.5,
+    "p_two_sided": 1.0
+   },
+   "floor_verdicts": {
+    "KIT": {
+     "sd_e": 0.10412996462328801,
+     "inside_interval": true,
+     "point_over_sd_e": 4.38082894347508
+    },
+    "Geslin": {
+     "sd_e": 0.04454298465298393,
+     "inside_interval": true,
+     "point_over_sd_e": 10.241243743736806
+    }
+   },
+   "s_w_pct_per_K": 170.3365545393553,
+   "s_w_ci95_pct_per_K": [
+    168.58206979404486,
+    185.07198081070828
+   ],
+   "beta_ci95": [
+    -169.39278756720321,
+    96.90951721302008
+   ],
+   "beta_ci95_width": 266.30230478022327,
+   "resid_sd_ci95": [
+    0.0,
+    0.4561755629047363
+   ]
+  },
+  "untied pooled warm": {
+   "name": "bracket: untied pairs, pooled warm",
+   "registered": false,
+   "note": "",
+   "measure": "a",
+   "n_pairs": 2,
+   "n_sets": 2,
+   "s_w_per_K": 1.703365545393553,
+   "beta": -88.22420283930613,
+   "resid_sd": 0.45617556290473626,
+   "strata_pairs": [
+    2,
+    0
+   ],
+   "bootstrap": {
+    "draws": 10000,
+    "seed": [
+     5550129,
+     14
+    ],
+    "generator": "numpy Generator(SFC64(SeedSequence(seed)))",
+    "strata_sets": [
+     2
+    ],
+    "s_w_left_out": 0,
+    "s_w_ci95": [
+     1.6858206979404486,
+     1.8507198081070828
+    ],
+    "beta_left_out": 0,
+    "beta_ci95": [
+     -169.39278756720321,
+     96.90951721302008
+    ],
+    "resid_sd_left_out": 0,
+    "resid_sd_ci95": [
+     0.0,
+     0.4561755629047363
+    ],
+    "beta_draws_mean": -62.557214451236234,
+    "beta_draws_sd": 96.91181491061216
+   },
+   "sign": {
+    "pairs_tested": 2,
+    "agree": 1,
+    "left_out": 0,
+    "share": 0.5,
+    "p_two_sided": 1.0
+   },
+   "s_w_pct_per_K": 170.3365545393553,
+   "s_w_ci95_pct_per_K": [
+    168.58206979404486,
+    185.07198081070828
+   ],
+   "beta_ci95": [
+    -169.39278756720321,
+    96.90951721302008
+   ],
+   "beta_ci95_width": 266.30230478022327,
+   "resid_sd_ci95": [
+    0.0,
+    0.4561755629047363
+   ],
+   "band_median_lever_pct_per_K": 1.302942364773262,
+   "band_median_lever_label": "KIT 0-100 0.33/0.33C"
+  },
+  "Sandia measure b": {
+   "name": "bracket: Sandia with measure (b)",
+   "registered": false,
+   "note": "",
+   "measure": "b",
+   "n_pairs": 56,
+   "n_sets": 21,
+   "s_w_per_K": -0.008376005637015725,
+   "beta": 0.6975568717976246,
+   "resid_sd": 0.16748264996474693,
+   "strata_pairs": [
+    56
+   ],
+   "bootstrap": {
+    "draws": 10000,
+    "seed": [
+     5550129,
+     15
+    ],
+    "generator": "numpy Generator(SFC64(SeedSequence(seed)))",
+    "strata_sets": [
+     21
+    ],
+    "s_w_left_out": 0,
+    "s_w_ci95": [
+     -0.022647501311556795,
+     0.1095817449754174
+    ],
+    "beta_left_out": 0,
+    "beta_ci95": [
+     -2.2556747214308857,
+     2.645927560682631
+    ],
+    "resid_sd_left_out": 0,
+    "resid_sd_ci95": [
+     0.09914491116078349,
+     0.22608250312173847
+    ],
+    "beta_draws_mean": 0.5783435456271538,
+    "beta_draws_sd": 1.1145431433428028
+   },
+   "sign": {
+    "pairs_tested": 56,
+    "agree": 31,
+    "left_out": 0,
+    "share": 0.5535714285714286,
+    "p_two_sided": 0.5044037600228255
+   },
+   "s_w_pct_per_K": -0.8376005637015725,
+   "s_w_ci95_pct_per_K": [
+    -2.2647501311556795,
+    10.958174497541739
+   ],
+   "beta_ci95": [
+    -2.2556747214308857,
+    2.645927560682631
+   ],
+   "beta_ci95_width": 4.901602282113517,
+   "resid_sd_ci95": [
+    0.09914491116078349,
+    0.22608250312173847
+   ]
+  },
+  "Sandia measure b warm": {
+   "name": "bracket: Sandia with measure (b), warm",
+   "registered": false,
+   "note": "",
+   "measure": "b",
+   "n_pairs": 36,
+   "n_sets": 11,
+   "s_w_per_K": -0.012706485585441532,
+   "beta": 0.5956491464487198,
+   "resid_sd": 0.1911430448263903,
+   "strata_pairs": [
+    36
+   ],
+   "bootstrap": {
+    "draws": 10000,
+    "seed": [
+     5550129,
+     151
+    ],
+    "generator": "numpy Generator(SFC64(SeedSequence(seed)))",
+    "strata_sets": [
+     11
+    ],
+    "s_w_left_out": 0,
+    "s_w_ci95": [
+     -0.03419308458720028,
+     0.0582525938000595
+    ],
+    "beta_left_out": 0,
+    "beta_ci95": [
+     -2.8533388085986107,
+     1.6855103084408827
+    ],
+    "resid_sd_left_out": 0,
+    "resid_sd_ci95": [
+     0.09855834348244237,
+     0.2679367714670207
+    ],
+    "beta_draws_mean": 0.33759495305779985,
+    "beta_draws_sd": 1.1095724651085324
+   },
+   "sign": {
+    "pairs_tested": 36,
+    "agree": 20,
+    "left_out": 0,
+    "share": 0.5555555555555556,
+    "p_two_sided": 0.617719317029696
+   },
+   "s_w_pct_per_K": -1.2706485585441532,
+   "s_w_ci95_pct_per_K": [
+    -3.419308458720028,
+    5.82525938000595
+   ],
+   "beta_ci95": [
+    -2.8533388085986107,
+    1.6855103084408827
+   ],
+   "beta_ci95_width": 4.538849117039494,
+   "resid_sd_ci95": [
+    0.09855834348244237,
+    0.2679367714670207
+   ],
+   "band_median_lever_pct_per_K": 1.302942364773262,
+   "band_median_lever_label": "KIT 0-100 0.33/0.33C"
+  },
+  "Sandia measure b cold": {
+   "name": "bracket: Sandia with measure (b), cold",
+   "registered": false,
+   "note": "",
+   "measure": "b",
+   "n_pairs": 20,
+   "n_sets": 10,
+   "s_w_per_K": 0.23064030551239328,
+   "beta": 2.9285901753848838,
+   "resid_sd": 0.11590445177991092,
+   "strata_pairs": [
+    20
+   ],
+   "bootstrap": {
+    "draws": 10000,
+    "seed": [
+     5550129,
+     152
+    ],
+    "generator": "numpy Generator(SFC64(SeedSequence(seed)))",
+    "strata_sets": [
+     10
+    ],
+    "s_w_left_out": 0,
+    "s_w_ci95": [
+     -0.05936862007065689,
+     0.5499011540423153
+    ],
+    "beta_left_out": 0,
+    "beta_ci95": [
+     -15.231737380900343,
+     11.359104459747618
+    ],
+    "resid_sd_left_out": 0,
+    "resid_sd_ci95": [
+     0.04419062325720961,
+     0.155139474397864
+    ],
+    "beta_draws_mean": 1.2447526652143714,
+    "beta_draws_sd": 6.951884564616647
+   },
+   "sign": {
+    "pairs_tested": 20,
+    "agree": 11,
+    "left_out": 0,
+    "share": 0.55,
+    "p_two_sided": 0.8238029479980469
+   },
+   "s_w_pct_per_K": 23.064030551239327,
+   "s_w_ci95_pct_per_K": [
+    -5.936862007065689,
+    54.99011540423153
+   ],
+   "beta_ci95": [
+    -15.231737380900343,
+    11.359104459747618
+   ],
+   "beta_ci95_width": 26.59084184064796,
+   "resid_sd_ci95": [
+    0.04419062325720961,
+    0.155139474397864
+   ],
+   "band_median_lever_pct_per_K": -3.5800471015633453,
+   "band_median_lever_label": "KIT 0-100 1.67/1.00C"
+  },
+  "Sandia without NCA 15C 1C": {
+   "name": "bracket: Sandia without the NCA 15 C 1C pair",
+   "registered": false,
+   "note": "",
+   "measure": "a",
+   "n_pairs": 55,
+   "n_sets": 20,
+   "s_w_per_K": -0.036652802227402664,
+   "beta": 1.808921185018189,
+   "resid_sd": 0.15112722311250015,
+   "strata_pairs": [
+    55
+   ],
+   "bootstrap": {
+    "draws": 10000,
+    "seed": [
+     5550129,
+     16
+    ],
+    "generator": "numpy Generator(SFC64(SeedSequence(seed)))",
+    "strata_sets": [
+     20
+    ],
+    "s_w_left_out": 0,
+    "s_w_ci95": [
+     -0.05730366119055894,
+     0.03065778876003311
+    ],
+    "beta_left_out": 0,
+    "beta_ci95": [
+     0.11744741246365885,
+     2.8321231535904245
+    ],
+    "resid_sd_left_out": 0,
+    "resid_sd_ci95": [
+     0.08150604617595487,
+     0.21858049663466217
+    ],
+    "beta_draws_mean": 1.6993608852597875,
+    "beta_draws_sd": 0.6896019280595166
+   },
+   "sign": {
+    "pairs_tested": 55,
+    "agree": 32,
+    "left_out": 0,
+    "share": 0.5818181818181818,
+    "p_two_sided": 0.2806097176983541
+   },
+   "s_w_pct_per_K": -3.6652802227402663,
+   "s_w_ci95_pct_per_K": [
+    -5.730366119055894,
+    3.065778876003311
+   ],
+   "beta_ci95": [
+    0.11744741246365885,
+    2.8321231535904245
+   ],
+   "beta_ci95_width": 2.714675741126766,
+   "resid_sd_ci95": [
+    0.08150604617595487,
+    0.21858049663466217
+   ]
+  },
+  "sens untied KIT, all 36 sets drawn": {
+   "name": "sensitivity: untied KIT pairs, drawing all 36 sets",
+   "registered": false,
+   "measure": "a",
+   "note": "draws with no untied pair have sum p^2 = 0 and are left out and counted",
+   "n_pairs": 2,
+   "n_sets": 2,
+   "s_w_per_K": 1.703365545393553,
+   "beta": -88.22420283930613,
+   "resid_sd": 0.45617556290473626,
+   "bootstrap": {
+    "draws": 10000,
+    "seed": [
+     5550129,
+     17
+    ],
+    "generator": "numpy Generator(SFC64(SeedSequence(seed)))",
+    "strata_sets": [
+     36
+    ],
+    "s_w_left_out": 1225,
+    "s_w_ci95": [
+     1.6858206979404486,
+     1.850719808107083
+    ],
+    "beta_left_out": 1225,
+    "beta_ci95": [
+     -169.39278756720321,
+     96.90951721302008
+    ],
+    "resid_sd_left_out": 3944,
+    "resid_sd_ci95": [
+     0.0,
+     0.4561755629047363
+    ],
+    "beta_draws_mean": -58.36483456401572,
+    "beta_draws_sd": 103.05049836818694
+   },
+   "s_w_pct_per_K": 170.3365545393553,
+   "s_w_ci95_pct_per_K": [
+    168.58206979404486,
+    185.0719808107083
+   ],
+   "beta_ci95": [
+    -169.39278756720321,
+    96.90951721302008
+   ],
+   "beta_ci95_width": 266.30230478022327,
+   "resid_sd_ci95": [
+    0.0,
+    0.4561755629047363
+   ]
+  },
+  "sens KIT, protocol clusters": {
+   "name": "sensitivity: KIT resampling the 12 protocols (each with its sets)",
+   "registered": false,
+   "note": "",
+   "measure": "a",
+   "n_pairs": 106,
+   "n_sets": 12,
+   "s_w_per_K": -0.02609128580559712,
+   "beta": -0.08620194672914543,
+   "resid_sd": 0.13085807008015998,
+   "strata_pairs": [
+    106
+   ],
+   "bootstrap": {
+    "draws": 10000,
+    "seed": [
+     5550129,
+     20
+    ],
+    "generator": "numpy Generator(SFC64(SeedSequence(seed)))",
+    "strata_sets": [
+     12
+    ],
+    "s_w_left_out": 0,
+    "s_w_ci95": [
+     -0.06359423782334067,
+     0.01216160062999522
+    ],
+    "beta_left_out": 0,
+    "beta_ci95": [
+     -1.674881885578072,
+     1.2419095906251671
+    ],
+    "resid_sd_left_out": 0,
+    "resid_sd_ci95": [
+     0.08317625134859526,
+     0.18212118448144984
+    ],
+    "beta_draws_mean": -0.11622232318366689,
+    "beta_draws_sd": 0.6990423071505777
+   },
+   "sign": {
+    "pairs_tested": 106,
+    "agree": 45,
+    "left_out": 0,
+    "share": 0.42452830188679247,
+    "p_two_sided": 0.14478233933005036
+   },
+   "s_w_pct_per_K": -2.609128580559712,
+   "s_w_ci95_pct_per_K": [
+    -6.359423782334067,
+    1.2161600629995222
+   ],
+   "beta_ci95": [
+    -1.674881885578072,
+    1.2419095906251671
+   ],
+   "beta_ci95_width": 2.9167914762032394,
+   "resid_sd_ci95": [
+    0.08317625134859526,
+    0.18212118448144984
+   ]
+  },
+  "sens Sandia, protocol clusters": {
+   "name": "sensitivity: Sandia resampling chemistry x window x rates",
+   "registered": false,
+   "note": "",
+   "measure": "a",
+   "n_pairs": 56,
+   "n_sets": 11,
+   "s_w_per_K": -0.0235642878620017,
+   "beta": 1.5495857828171264,
+   "resid_sd": 0.15814440057660337,
+   "strata_pairs": [
+    56
+   ],
+   "bootstrap": {
+    "draws": 10000,
+    "seed": [
+     5550129,
+     21
+    ],
+    "generator": "numpy Generator(SFC64(SeedSequence(seed)))",
+    "strata_sets": [
+     11
+    ],
+    "s_w_left_out": 0,
+    "s_w_ci95": [
+     -0.0546764126920846,
+     0.036101298617821846
+    ],
+    "beta_left_out": 0,
+    "beta_ci95": [
+     -0.13871105041044277,
+     2.5308786775680137
+    ],
+    "resid_sd_left_out": 0,
+    "resid_sd_ci95": [
+     0.08985440554865276,
+     0.2019388789304017
+    ],
+    "beta_draws_mean": 1.4022620925293374,
+    "beta_draws_sd": 0.7314700416477119
+   },
+   "sign": {
+    "pairs_tested": 56,
+    "agree": 32,
+    "left_out": 0,
+    "share": 0.5714285714285714,
+    "p_two_sided": 0.34968195298368476
+   },
+   "s_w_pct_per_K": -2.35642878620017,
+   "s_w_ci95_pct_per_K": [
+    -5.4676412692084595,
+    3.6101298617821844
+   ],
+   "beta_ci95": [
+    -0.13871105041044277,
+    2.5308786775680137
+   ],
+   "beta_ci95_width": 2.6695897279784564,
+   "resid_sd_ci95": [
+    0.08985440554865276,
+    0.2019388789304017
+   ]
+  },
+  "sens pooled, protocol clusters": {
+   "name": "sensitivity: pooled, protocol clusters",
+   "registered": false,
+   "note": "",
+   "measure": "a",
+   "n_pairs": 162,
+   "n_sets": 23,
+   "s_w_per_K": -0.02389824356789823,
+   "beta": 1.0955874575178046,
+   "resid_sd": 0.1416642793293986,
+   "strata_pairs": [
+    106,
+    56
+   ],
+   "bootstrap": {
+    "draws": 10000,
+    "seed": [
+     5550129,
+     22
+    ],
+    "generator": "numpy Generator(SFC64(SeedSequence(seed)))",
+    "strata_sets": [
+     12,
+     11
+    ],
+    "s_w_left_out": 0,
+    "s_w_ci95": [
+     -0.05058649885264237,
+     0.01976211954959636
+    ],
+    "beta_left_out": 0,
+    "beta_ci95": [
+     -0.23262929364235552,
+     1.931967523243118
+    ],
+    "resid_sd_left_out": 0,
+    "resid_sd_ci95": [
+     0.10047989737760683,
+     0.17838747967381438
+    ],
+    "beta_draws_mean": 0.9612614161037388,
+    "beta_draws_sd": 0.5978016797064085
+   },
+   "sign": {
+    "pairs_tested": 162,
+    "agree": 77,
+    "left_out": 0,
+    "share": 0.47530864197530864,
+    "p_two_sided": 0.5824757301133331
+   },
+   "s_w_pct_per_K": -2.389824356789823,
+   "s_w_ci95_pct_per_K": [
+    -5.058649885264237,
+    1.976211954959636
+   ],
+   "beta_ci95": [
+    -0.23262929364235552,
+    1.931967523243118
+   ],
+   "beta_ci95_width": 2.1645968168854735,
+   "resid_sd_ci95": [
+    0.10047989737760683,
+    0.17838747967381438
+   ]
+  },
+  "sens KIT warm, protocol clusters": {
+   "name": "sensitivity: KIT warm, 12 protocols",
+   "registered": false,
+   "note": "",
+   "measure": "a",
+   "n_pairs": 70,
+   "n_sets": 12,
+   "s_w_per_K": -0.05190860433846528,
+   "beta": -7.752268429221527,
+   "resid_sd": 0.13437150172823675,
+   "strata_pairs": [
+    70
+   ],
+   "bootstrap": {
+    "draws": 10000,
+    "seed": [
+     5550129,
+     23
+    ],
+    "generator": "numpy Generator(SFC64(SeedSequence(seed)))",
+    "strata_sets": [
+     12
+    ],
+    "s_w_left_out": 0,
+    "s_w_ci95": [
+     -0.15239865132931105,
+     0.08175207239217926
+    ],
+    "beta_left_out": 0,
+    "beta_ci95": [
+     -19.421264487538558,
+     -1.879856287522182
+    ],
+    "resid_sd_left_out": 0,
+    "resid_sd_ci95": [
+     0.08502345970560878,
+     0.1793913750454504
+    ],
+    "beta_draws_mean": -8.57197314253524,
+    "beta_draws_sd": 4.552814833567711
+   },
+   "sign": {
+    "pairs_tested": 70,
+    "agree": 24,
+    "left_out": 0,
+    "share": 0.34285714285714286,
+    "p_two_sided": 0.011526409654363478
+   },
+   "s_w_pct_per_K": -5.190860433846528,
+   "s_w_ci95_pct_per_K": [
+    -15.239865132931104,
+    8.175207239217926
+   ],
+   "beta_ci95": [
+    -19.421264487538558,
+    -1.879856287522182
+   ],
+   "beta_ci95_width": 17.541408200016377,
+   "resid_sd_ci95": [
+    0.08502345970560878,
+    0.1793913750454504
+   ]
+  },
+  "sens KIT cold, protocol clusters": {
+   "name": "sensitivity: KIT cold, 12 protocols",
+   "registered": false,
+   "note": "",
+   "measure": "a",
+   "n_pairs": 36,
+   "n_sets": 12,
+   "s_w_per_K": -0.007932123089035023,
+   "beta": 0.32307149062306334,
+   "resid_sd": 0.11448950827805332,
+   "strata_pairs": [
+    36
+   ],
+   "bootstrap": {
+    "draws": 10000,
+    "seed": [
+     5550129,
+     24
+    ],
+    "generator": "numpy Generator(SFC64(SeedSequence(seed)))",
+    "strata_sets": [
+     12
+    ],
+    "s_w_left_out": 0,
+    "s_w_ci95": [
+     -0.09141818742921809,
+     0.04039760445471673
+    ],
+    "beta_left_out": 0,
+    "beta_ci95": [
+     -0.7822258337151103,
+     2.7327753667483146
+    ],
+    "resid_sd_left_out": 0,
+    "resid_sd_ci95": [
+     0.0528333936854001,
+     0.17336081518431815
+    ],
+    "beta_draws_mean": 0.4459427005788335,
+    "beta_draws_sd": 0.806612169397085
+   },
+   "sign": {
+    "pairs_tested": 36,
+    "agree": 21,
+    "left_out": 0,
+    "share": 0.5833333333333334,
+    "p_two_sided": 0.4050322461407632
+   },
+   "s_w_pct_per_K": -0.7932123089035024,
+   "s_w_ci95_pct_per_K": [
+    -9.141818742921808,
+    4.039760445471673
+   ],
+   "beta_ci95": [
+    -0.7822258337151103,
+    2.7327753667483146
+   ],
+   "beta_ci95_width": 3.515001200463425,
+   "resid_sd_ci95": [
+    0.0528333936854001,
+    0.17336081518431815
+   ]
+  }
+ }
+}

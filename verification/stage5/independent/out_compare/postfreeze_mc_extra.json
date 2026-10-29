@@ -1,0 +1,318 @@
+{
+ "note": "post-freeze Monte Carlo spread for the comparison; no frozen output is changed",
+ "Sandia measure b beta": {
+  "replicates": 200,
+  "lo_mean": -2.1269812675515287,
+  "lo_sd": 0.07945185816951583,
+  "hi_mean": 2.5914169581476796,
+  "hi_sd": 0.0659288883865035,
+  "big_ci95": [
+   -2.11327181480756,
+   2.5912865331738724
+  ]
+ },
+ "C1 normal same sd": [
+  {
+   "case": "KIT",
+   "floor": "Geslin",
+   "replicates": 20,
+   "mean_pct_per_K": 2.8046438443690125,
+   "sd_pct_per_K": 0.01781906555042321
+  },
+  {
+   "case": "KIT",
+   "floor": "KIT",
+   "replicates": 20,
+   "mean_pct_per_K": 6.558610926827906,
+   "sd_pct_per_K": 0.028889570492523043
+  },
+  {
+   "case": "Sandia",
+   "floor": "Geslin",
+   "replicates": 20,
+   "mean_pct_per_K": 1.1033817193229005,
+   "sd_pct_per_K": 0.004797820398592082
+  },
+  {
+   "case": "Sandia",
+   "floor": "KIT",
+   "replicates": 20,
+   "mean_pct_per_K": 2.587036366406217,
+   "sd_pct_per_K": 0.013375699566332963
+  },
+  {
+   "case": "pooled",
+   "floor": "Geslin",
+   "replicates": 20,
+   "mean_pct_per_K": 1.0176695724575644,
+   "sd_pct_per_K": 0.005370514640271084
+  },
+  {
+   "case": "pooled",
+   "floor": "KIT",
+   "replicates": 20,
+   "mean_pct_per_K": 2.3765853668324133,
+   "sd_pct_per_K": 0.010173564940329425
+  },
+  {
+   "case": "KIT warm",
+   "floor": "Geslin",
+   "replicates": 20,
+   "mean_pct_per_K": 4.38855205266709,
+   "sd_pct_per_K": 0.018622970775902685
+  },
+  {
+   "case": "KIT warm",
+   "floor": "KIT",
+   "replicates": 20,
+   "mean_pct_per_K": 10.261394895737515,
+   "sd_pct_per_K": 0.04241162626784014
+  },
+  {
+   "case": "KIT cold",
+   "floor": "Geslin",
+   "replicates": 20,
+   "mean_pct_per_K": 3.737616136307971,
+   "sd_pct_per_K": 0.015026098207576924
+  },
+  {
+   "case": "KIT cold",
+   "floor": "KIT",
+   "replicates": 20,
+   "mean_pct_per_K": 8.710408040388726,
+   "sd_pct_per_K": 0.03377605398990766
+  },
+  {
+   "case": "Sandia warm",
+   "floor": "Geslin",
+   "replicates": 20,
+   "mean_pct_per_K": 1.2280721025062311,
+   "sd_pct_per_K": 0.007464650118304862
+  },
+  {
+   "case": "Sandia warm",
+   "floor": "KIT",
+   "replicates": 20,
+   "mean_pct_per_K": 2.8752765212261675,
+   "sd_pct_per_K": 0.016484182204356043
+  },
+  {
+   "case": "Sandia cold",
+   "floor": "Geslin",
+   "replicates": 20,
+   "mean_pct_per_K": 2.7478530763395366,
+   "sd_pct_per_K": 0.0128497403953886
+  },
+  {
+   "case": "Sandia cold",
+   "floor": "KIT",
+   "replicates": 20,
+   "mean_pct_per_K": 6.42978780258349,
+   "sd_pct_per_K": 0.03238616002628165
+  },
+  {
+   "case": "pooled warm",
+   "floor": "Geslin",
+   "replicates": 20,
+   "mean_pct_per_K": 1.1611964817302671,
+   "sd_pct_per_K": 0.00471397797452941
+  },
+  {
+   "case": "pooled warm",
+   "floor": "KIT",
+   "replicates": 20,
+   "mean_pct_per_K": 2.719447358873619,
+   "sd_pct_per_K": 0.009976279147942763
+  },
+  {
+   "case": "pooled cold",
+   "floor": "Geslin",
+   "replicates": 20,
+   "mean_pct_per_K": 2.1498577459963313,
+   "sd_pct_per_K": 0.009578845967647947
+  },
+  {
+   "case": "pooled cold",
+   "floor": "KIT",
+   "replicates": 20,
+   "mean_pct_per_K": 5.045126964625581,
+   "sd_pct_per_K": 0.02498628116650689
+  },
+  {
+   "case": "KIT all 142",
+   "floor": "Geslin",
+   "replicates": 20,
+   "mean_pct_per_K": 1.6495550555849208,
+   "sd_pct_per_K": 0.00825639080532388
+  },
+  {
+   "case": "KIT all 142",
+   "floor": "KIT",
+   "replicates": 20,
+   "mean_pct_per_K": 3.846194164170474,
+   "sd_pct_per_K": 0.02413405798666472
+  }
+ ],
+ "C2 n_sim": [
+  {
+   "dataset": "KIT",
+   "band": "warm",
+   "floor": "Geslin",
+   "n_calc": 774,
+   "registered_run_n_sim": 761,
+   "replicate_n_sim": [
+    776,
+    768,
+    776,
+    773,
+    776
+   ],
+   "mean": 773.8,
+   "sd": 3.4928498393145966
+  },
+  {
+   "dataset": "Sandia",
+   "band": "warm",
+   "floor": "Geslin",
+   "n_calc": 33,
+   "registered_run_n_sim": 35,
+   "replicate_n_sim": [
+    35,
+    35,
+    35,
+    35,
+    35
+   ],
+   "mean": 35.0,
+   "sd": 0.0
+  },
+  {
+   "dataset": "Sandia",
+   "band": "warm",
+   "floor": "KIT",
+   "n_calc": 168,
+   "registered_run_n_sim": 169,
+   "replicate_n_sim": [
+    170,
+    167,
+    170,
+    169,
+    166
+   ],
+   "mean": 168.4,
+   "sd": 1.816590212458495
+  },
+  {
+   "dataset": "pooled",
+   "band": "warm",
+   "floor": "Geslin",
+   "n_calc": 85,
+   "registered_run_n_sim": 92,
+   "replicate_n_sim": [
+    93,
+    92,
+    93,
+    94,
+    91
+   ],
+   "mean": 92.6,
+   "sd": 1.140175425099138
+  },
+  {
+   "dataset": "pooled",
+   "band": "warm",
+   "floor": "KIT",
+   "n_calc": 454,
+   "registered_run_n_sim": 460,
+   "replicate_n_sim": [
+    458,
+    460,
+    463,
+    458,
+    459
+   ],
+   "mean": 459.6,
+   "sd": 2.0736441353327724
+  },
+  {
+   "dataset": "KIT",
+   "band": "cold",
+   "floor": "Geslin",
+   "n_calc": 39,
+   "registered_run_n_sim": 39,
+   "replicate_n_sim": [
+    39,
+    39,
+    39,
+    38,
+    38
+   ],
+   "mean": 38.6,
+   "sd": 0.5477225575051661
+  },
+  {
+   "dataset": "Sandia",
+   "band": "cold",
+   "floor": "Geslin",
+   "n_calc": 13,
+   "registered_run_n_sim": 19,
+   "replicate_n_sim": [
+    19,
+    19,
+    19,
+    19,
+    19
+   ],
+   "mean": 19.0,
+   "sd": 0.0
+  },
+  {
+   "dataset": "Sandia",
+   "band": "cold",
+   "floor": "KIT",
+   "n_calc": 60,
+   "registered_run_n_sim": 65,
+   "replicate_n_sim": [
+    65,
+    65,
+    66,
+    65,
+    65
+   ],
+   "mean": 65.2,
+   "sd": 0.4472135954999579
+  },
+  {
+   "dataset": "pooled",
+   "band": "cold",
+   "floor": "Geslin",
+   "n_calc": 22,
+   "registered_run_n_sim": 28,
+   "replicate_n_sim": [
+    28,
+    28,
+    28,
+    29,
+    28
+   ],
+   "mean": 28.2,
+   "sd": 0.4472135954999579
+  },
+  {
+   "dataset": "pooled",
+   "band": "cold",
+   "floor": "KIT",
+   "n_calc": 109,
+   "registered_run_n_sim": 114,
+   "replicate_n_sim": [
+    114,
+    117,
+    114,
+    115,
+    116
+   ],
+   "mean": 115.2,
+   "sd": 1.3038404810405297
+  }
+ ]
+}

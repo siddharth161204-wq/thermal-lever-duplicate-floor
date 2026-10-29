@@ -1,0 +1,113 @@
+{
+ "scoring": "D78, read by the independent checker",
+ "verdicts": {
+  "P1": true,
+  "P2": true,
+  "P3": false,
+  "P4": true,
+  "P5": true,
+  "P6": true,
+  "P7": false,
+  "P8": true
+ },
+ "details": {
+  "P1": {
+   "rule": "the 95 % interval of beta for KIT (B1) contains zero, its ends included",
+   "held": true,
+   "value": [
+    -1.9134729640234256,
+    1.4273526803988161
+   ],
+   "margin": 1.4273526803988161,
+   "mc_share_same": 1.0,
+   "big_draw_interval": [
+    -2.0322681943964356,
+    1.3432522725020115
+   ]
+  },
+  "P2": {
+   "rule": "the KIT beta interval contains one",
+   "held": true,
+   "value": [
+    -1.9134729640234256,
+    1.4273526803988161
+   ],
+   "margin": 0.42735268039881613,
+   "mc_share_same": 1.0,
+   "big_draw_interval": [
+    -2.0322681943964356,
+    1.3432522725020115
+   ]
+  },
+  "P3": {
+   "rule": "s_w of the KIT warm band (B2) is above zero",
+   "held": false,
+   "value_pct_per_K": -5.190860433846528,
+   "interval_pct_per_K": [
+    -16.008217216724955,
+    8.20114274947321
+   ],
+   "note": "point estimate, no Monte Carlo"
+  },
+  "P4": {
+   "rule": "s_w of the KIT cold band is below zero",
+   "held": true,
+   "value_pct_per_K": -0.7932123089035024,
+   "interval_pct_per_K": [
+    -9.32237554353926,
+    4.048240467331763
+   ],
+   "note": "point estimate, no Monte Carlo"
+  },
+  "P5": {
+   "rule": "the exact two-sided binomial p of the KIT sign agreement (B3) exceeds 0.05",
+   "held": true,
+   "agree": 45,
+   "pairs": 106,
+   "left_out": 0,
+   "share": 0.42452830188679247,
+   "p_two_sided": 0.14478233933005036
+  },
+  "P6": {
+   "rule": "the KIT detectable |s| of C1 (calculation, KIT floor, registered shape, 106 pairs) exceeds both band medians; not scored if V4 fails there and the simulated value gives the other verdict",
+   "held": true,
+   "scored": true,
+   "detectable_calc_pct_per_K": 6.559944091124835,
+   "detectable_sim_lognormal_pct_per_K": 6.508125227345019,
+   "v4_rel_diff": -0.007899284362792646,
+   "v4_pass": true,
+   "band_medians_abs_pct_per_K": [
+    1.302942364773262,
+    3.5800471015633453
+   ],
+   "margin_over_cold_pct_per_K": 2.9798969895614893,
+   "under_Geslin_floor_beside": 2.8061037956989523
+  },
+  "P7": {
+   "rule": "the width of the Sandia beta interval is at least twice that of the KIT interval",
+   "held": false,
+   "width_sandia": 3.1885270191621005,
+   "width_kit": 3.3408256444222415,
+   "ratio": 0.9544128782912048,
+   "mc_mean_widths": [
+    3.2232321661537453,
+    3.3592700390127113
+   ],
+   "big_draw_ratio": 0.9532163105415162
+  },
+  "P8": {
+   "rule": "the upper end of the pooled beta interval is at most 3",
+   "held": true,
+   "value": [
+    -0.5573992754968562,
+    1.946636586796124
+   ],
+   "margin": 1.053363413203876,
+   "mc_share_same": 1.0,
+   "big_draw_interval": [
+    -0.5108273448316075,
+    1.948627622480048
+   ]
+  }
+ }
+}
