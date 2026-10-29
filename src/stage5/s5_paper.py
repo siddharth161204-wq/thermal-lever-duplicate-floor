@@ -17,6 +17,9 @@ COMMITS = {
                     "predictions_stage5_md_sha256": "db5ba3ff88b721d12fe5f556e2673acf132b394bfc412b6fd28b268ee4f87799"},
     "code": {"commit": "ee4a403", "pushed_utc": "2026-10-29T04:16:27Z"},
     "results": {"commit": "101ca54a199def64ab7227a41277e2408b7f5e91", "pushed_utc": "2026-10-29T04:22:03Z"},
+    "independent_freeze": {"commit": "ea3a5b46a891e74d504c818d30b35d34b4351ff5", "committed_utc": "2026-10-29T04:40:07Z",
+                           "pushed_utc": "2026-10-29T04:40:14Z", "branch": "stage5-independent"},
+    "independent_comparison": {"commit": "4e418317f03ff1b26700b36c91a9e0710e5a7d0b", "pushed_utc": "2026-10-29T04:58:38Z"},
 }
 
 
@@ -79,9 +82,14 @@ def main():
                      "V4_registered_rel_range": [min(r["v4_rel_diff"] for r in v["v4"]["rows"] if r["registered"]),
                                                  max(r["v4_rel_diff"] for r in v["v4"]["rows"] if r["registered"])],
                      "normal_check_max_abs_rel": max(abs(r["normal_check_rel_diff"]) for r in v["v4"]["rows"])}
-    rec = os.path.join(V, "independent", "record.json")
-    if os.path.exists(rec):
-        out["independent"] = json.load(open(rec))
+    out["posthoc_flags"] = json.load(open(os.path.join(R, "stage5_posthoc_flags.json")))
+    cmp_ = os.path.join(V, "independent", "out_compare", "compare.json")
+    if os.path.exists(cmp_):
+        c = json.load(open(cmp_))
+        out["independent"] = {"freeze": COMMITS["independent_freeze"], "comparison": COMMITS["independent_comparison"],
+                              "report": "verification/stage5/independent/report.md",
+                              "compare_json": "verification/stage5/independent/out_compare/compare.json",
+                              "summary": {k: c.get(k) for k in ("deterministic_all_agree", "verdicts", "monte_carlo_summary", "table")}}
     json.dump(out, open(os.path.join(R, "stage5_paper_numbers.json"), "w"), indent=1)
     print(json.dumps({k: out[k] for k in ("beta", "headline", "scorecard", "checks")}, indent=1))
 

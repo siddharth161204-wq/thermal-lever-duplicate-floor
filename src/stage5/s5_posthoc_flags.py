@@ -6,7 +6,9 @@ sum(p^2), and beta without the set of largest share. (2) beta per band, with the
 brief's "resampling protocols": beta's interval when whole protocols (KIT: a protocol's sets at 10, 25 and 40 C; Sandia:
 a chemistry, window and rates at every ambient) are drawn instead of sets. (4) Every registered interval again with
 1,000,000 draws, to show how far 10,000 draws move an end. (5) The Sandia pairs that measure (b) orients the other way,
-and the median dT of the scored pairs.
+and the median dT of the scored pairs. (6) Each dataset's sum of p^2; beta with any one set left out (the range) and
+without the set of largest share (with its interval); Sandia's 1C groups apart from its 2C and 3C groups, which carry
+the chemistry's 1C lever (D72); beta by band with 1,000,000 draws; the warm median's pairs at all 106 KIT pairs' spread.
 
 Writes results/stage5_posthoc_flags.json.
 
@@ -105,6 +107,42 @@ def main():
     out["median_dT_K"] = {"KIT scored": statistics.median(r["dT_K"] for r in kit),
                           "KIT all 142": statistics.median(r["dT_K"] for r in P if r["dataset"] == "KIT"),
                           "Sandia scored": statistics.median(r["dT_K"] for r in snl)}
+    # (6) added after the checker's comparison
+    out["sum_p2"] = {name: float(sum(r["p"] ** 2 for r in rows)) for name, rows in (("KIT", kit), ("Sandia", snl), ("pooled", pool))}
+    loo = {}
+    k = 990
+    for name, rows in (("KIT", kit), ("Sandia", snl), ("pooled", pool)):
+        keys = []
+        for r in rows:
+            if (r["dataset"], r["set"]) not in keys:
+                keys.append((r["dataset"], r["set"]))
+        vals = [W.beta_point([r for r in rows if (r["dataset"], r["set"]) != kk]) for kk in keys]
+        big = out["influence"][name]["largest"][0]
+        rest = [r for r in rows if (r["dataset"], r["set"]) != (big["dataset"], big["set"])]
+        loo[name] = {"beta_leave_one_set_out_range": [min(vals), max(vals)], "sets": len(keys),
+                     "without_largest": {"set": big["set"], "beta": W.beta_point(rest), **boot_ends(rest, [A.SEED, k])}}
+        k += 1
+    out["leave_one_out"] = loo
+    rate = lambda r: float(r["protocol"].split("/")[-1].rstrip("C"))
+    one = [r for r in snl if rate(r) == 1.0]
+    fast = [r for r in snl if rate(r) > 1.0]
+    out["sandia_by_discharge_rate"] = {
+        "1C": {"pairs": len(one), "groups": len({r["set"] for r in one}), "beta": W.beta_point(one), **boot_ends(one, [A.SEED, 995])},
+        "2C and 3C": {"pairs": len(fast), "groups": len({r["set"] for r in fast}), "beta": W.beta_point(fast),
+                      "share_of_sum_p2": float(sum(r["p"] ** 2 for r in fast) / out["sum_p2"]["Sandia"]), **boot_ends(fast, [A.SEED, 996])}}
+    out["beta_by_band_million_draws"] = {}
+    k = 1000
+    for name, rows in (("KIT", kit), ("Sandia", snl), ("pooled", pool)):
+        for b in ("warm", "cold"):
+            out["beta_by_band_million_draws"][f"{name} {b}"] = boot_ends(band(rows, b), [A.SEED, k], n_boot=BIG)
+            k += 1
+    import s5_power as PW
+    noise = A.noise()
+    med = A.medians()
+    dT = np.array([r["dT_K"] for r in kit])
+    rms = float(np.sqrt(dT @ dT / len(dT)))
+    out["warm_median_pairs_at_all_KIT_spread"] = {"dT_rms_K": rms, "KIT floor": A.EX4.n_required(med["warm"]["abs_s_per_K"] * rms, noise["KIT"]["sd_e"]),
+                                                  "Geslin floor": A.EX4.n_required(med["warm"]["abs_s_per_K"] * rms, noise["Geslin"]["sd_e"])}
     json.dump(out, open(os.path.join(A.ROOT, "results", "stage5_posthoc_flags.json"), "w"), indent=1)
     print(json.dumps(out, indent=1))
 

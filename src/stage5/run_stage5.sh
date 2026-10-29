@@ -3,12 +3,16 @@
 # the checks V1 to V3 and the figure. Part C's simulations take a few minutes.
 set -e
 cd "$(dirname "$0")/../.."
-python3 tests/stage5_synthetic.py
-python3 src/stage5/s5_inputs.py
-python3 src/stage5/s5_within.py
-python3 src/stage5/s5_power.py
-python3 src/stage5/s5_score.py
-python3 verification/stage5/v1_inputs.py
-python3 verification/stage5/v2_separate.py
-python3 verification/stage5/v3_hand.py
-python3 src/stage5/s5_figure.py
+python3 -I tests/stage5_synthetic.py
+python3 -I src/stage5/s5_inputs.py
+python3 -I src/stage5/s5_within.py
+python3 -I src/stage5/s5_power.py
+python3 -I src/stage5/s5_score.py
+python3 -I verification/stage5/v1_inputs.py
+python3 -I verification/stage5/v2_separate.py
+python3 -I verification/stage5/v3_hand.py
+python3 -I src/stage5/s5_figure.py
+# after the results: the post-hoc numbers of D80 and D81 and the quoted numbers
+python3 -I src/stage5/s5_posthoc.py
+python3 -I src/stage5/s5_posthoc_flags.py
+python3 -I src/stage5/s5_paper.py
