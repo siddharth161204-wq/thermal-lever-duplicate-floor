@@ -1,0 +1,121 @@
+{
+ "check": "V1 (D77)",
+ "files": [
+  {
+   "file": "results/stage2_warmer_pairs.csv",
+   "sha256": "f5bb9d423bb849eed84a654a9268df488e53fba4e6ef8eb60d8ab58e80ff51d4",
+   "sha256_v1.3.0": "f5bb9d423bb849eed84a654a9268df488e53fba4e6ef8eb60d8ab58e80ff51d4",
+   "equal_to_v1.3.0": true,
+   "first_release": "v1.1.0",
+   "sha256_first_release": "f5bb9d423bb849eed84a654a9268df488e53fba4e6ef8eb60d8ab58e80ff51d4",
+   "equal_to_first_release": true
+  },
+  {
+   "file": "results/stage2_cells.csv",
+   "sha256": "1450c1ad454a0e709675727d7100cda402e4da2c4ec6cc2acdbeeb12d6f39cc1",
+   "sha256_v1.3.0": "1450c1ad454a0e709675727d7100cda402e4da2c4ec6cc2acdbeeb12d6f39cc1",
+   "equal_to_v1.3.0": true,
+   "first_release": "v1.1.0",
+   "sha256_first_release": "1450c1ad454a0e709675727d7100cda402e4da2c4ec6cc2acdbeeb12d6f39cc1",
+   "equal_to_first_release": true
+  },
+  {
+   "file": "results/stage2_lever.json",
+   "sha256": "20bb6f6b78304adefd2eb43781cf2d6860c583626b273ca05956133050df9ccf",
+   "sha256_v1.3.0": "20bb6f6b78304adefd2eb43781cf2d6860c583626b273ca05956133050df9ccf",
+   "equal_to_v1.3.0": true,
+   "first_release": "v1.1.0",
+   "sha256_first_release": "20bb6f6b78304adefd2eb43781cf2d6860c583626b273ca05956133050df9ccf",
+   "equal_to_first_release": true
+  },
+  {
+   "file": "results/stage3_pairs.csv",
+   "sha256": "672476bc058fe323a069d6b9341162d0d8c523a323a1218764aa8915f29bc4c8",
+   "sha256_v1.3.0": "672476bc058fe323a069d6b9341162d0d8c523a323a1218764aa8915f29bc4c8",
+   "equal_to_v1.3.0": true,
+   "first_release": "v1.2.0",
+   "sha256_first_release": "672476bc058fe323a069d6b9341162d0d8c523a323a1218764aa8915f29bc4c8",
+   "equal_to_first_release": true
+  },
+  {
+   "file": "results/stage3_pairs_oriented_measure_a.csv",
+   "sha256": "45720d4201b02bcf12382e687fb75f4e4f47ff44f2c6c1175363f7f83c121bac",
+   "sha256_v1.3.0": "45720d4201b02bcf12382e687fb75f4e4f47ff44f2c6c1175363f7f83c121bac",
+   "equal_to_v1.3.0": true,
+   "first_release": "v1.2.0",
+   "sha256_first_release": "45720d4201b02bcf12382e687fb75f4e4f47ff44f2c6c1175363f7f83c121bac",
+   "equal_to_first_release": true
+  },
+  {
+   "file": "results/stage3_lever.csv",
+   "sha256": "2cadaad5babc3f14b19fa6d7642fa3c8fea474512b3854425181262979ff1eb7",
+   "sha256_v1.3.0": "2cadaad5babc3f14b19fa6d7642fa3c8fea474512b3854425181262979ff1eb7",
+   "equal_to_v1.3.0": true,
+   "first_release": "v1.2.0",
+   "sha256_first_release": "2cadaad5babc3f14b19fa6d7642fa3c8fea474512b3854425181262979ff1eb7",
+   "equal_to_first_release": true
+  },
+  {
+   "file": "inputs/floor.json",
+   "sha256": "280a6438cd50730219fd85d5002640bae9aa6fd8582699b00f4630d3bc475d6d",
+   "sha256_v1.3.0": "280a6438cd50730219fd85d5002640bae9aa6fd8582699b00f4630d3bc475d6d",
+   "equal_to_v1.3.0": true,
+   "first_release": "v1.0.0",
+   "sha256_first_release": "280a6438cd50730219fd85d5002640bae9aa6fd8582699b00f4630d3bc475d6d",
+   "equal_to_first_release": true
+  },
+  {
+   "file": "results/stage4_experiment.json",
+   "sha256": "e96ae27047b3d02a7392faf3a612c4d014f2c8ac57c2256ac12df0c31ebfd3e4",
+   "sha256_v1.3.0": "e96ae27047b3d02a7392faf3a612c4d014f2c8ac57c2256ac12df0c31ebfd3e4",
+   "equal_to_v1.3.0": true,
+   "first_release": "v1.3.0",
+   "sha256_first_release": "e96ae27047b3d02a7392faf3a612c4d014f2c8ac57c2256ac12df0c31ebfd3e4",
+   "equal_to_first_release": true
+  },
+  {
+   "file": "results/stage4_paper_numbers.json",
+   "sha256": "0c9e1b8655475805d4fa2c651108bb6b442a84cf79dc7a31d437428c69a26e8b",
+   "sha256_v1.3.0": "0c9e1b8655475805d4fa2c651108bb6b442a84cf79dc7a31d437428c69a26e8b",
+   "equal_to_v1.3.0": true,
+   "first_release": "v1.3.0",
+   "sha256_first_release": "0c9e1b8655475805d4fa2c651108bb6b442a84cf79dc7a31d437428c69a26e8b",
+   "equal_to_first_release": true
+  },
+  {
+   "file": "src/stage4/common.py",
+   "sha256": "f62a761b09d326890983f461d197ca52a0828e85d56ea148eb8a6e38484ead7a",
+   "sha256_v1.3.0": "f62a761b09d326890983f461d197ca52a0828e85d56ea148eb8a6e38484ead7a",
+   "equal_to_v1.3.0": true,
+   "first_release": "v1.3.0",
+   "sha256_first_release": "f62a761b09d326890983f461d197ca52a0828e85d56ea148eb8a6e38484ead7a",
+   "equal_to_first_release": true
+  },
+  {
+   "file": "src/stage4/experiment.py",
+   "sha256": "d5d594c5155fb35c17e3bde2dce5299478926648522d59756c8b5ecdede5fe34",
+   "sha256_v1.3.0": "d5d594c5155fb35c17e3bde2dce5299478926648522d59756c8b5ecdede5fe34",
+   "equal_to_v1.3.0": true,
+   "first_release": "v1.3.0",
+   "sha256_first_release": "d5d594c5155fb35c17e3bde2dce5299478926648522d59756c8b5ecdede5fe34",
+   "equal_to_first_release": true
+  }
+ ],
+ "values": {
+  "KIT": {
+   "pairs": 142,
+   "mismatches": [],
+   "max_abs_dT_vs_cells_K": 0.0,
+   "dT_vs_cells_within_1e-12": true
+  },
+  "Sandia": {
+   "pairs": 86,
+   "oriented_by_measure_a": 60,
+   "in_stage3_oriented_file": 60,
+   "mismatches": [],
+   "max_abs_dT_vs_stage3_K": 0.0,
+   "max_abs_d_vs_stage3_obs_ln_ratio": 0.0
+  }
+ },
+ "pass": true
+}

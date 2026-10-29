@@ -107,7 +107,12 @@ def sign_test(rows, dkey="d", pkey="p"):
 
 # -------------------------------------------------------------------------------------------------------------- analyses
 def analyse(rows, k, what, dkey="d", pkey="p", tkey="dT_K", noise=None):
-    """Point values and the bootstrap over sets for one subset; `what` lists the quantities D74 asks for."""
+    """Point values and the bootstrap over sets for one subset; `what` lists the quantities D74 asks for.
+    A bracket's subset may hold no pair, or too few for a residual: then only its counts are returned."""
+    if len(rows) == 0:
+        return {"pairs": 0, "sets": 0, "note": "no pair in this subset", "seed": [A.SEED, k]}
+    if "resid" in what and len(rows) < 2:
+        what = tuple(w for w in what if w != "resid")
     t = set_table(rows, dkey, pkey if ("beta" in what or "resid" in what) else None, tkey)
     rng = np.random.default_rng([A.SEED, k])
     C = boot_counts(t["strata"], N_BOOT, rng)
