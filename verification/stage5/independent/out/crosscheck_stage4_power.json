@@ -1,0 +1,307 @@
+{
+ "stage4_experiment_py_sha256": "d5d594c5155fb35c17e3bde2dce5299478926648522d59756c8b5ecdede5fe34",
+ "sha256_at_v1.3.0": "d5d594c5155fb35c17e3bde2dce5299478926648522d59756c8b5ecdede5fe34",
+ "C1": [
+  {
+   "case": "KIT",
+   "floor": "Geslin",
+   "stage4_power_t_pct_per_K": 2.8061037956989527,
+   "checker_pct_per_K": 2.8061037956989523,
+   "rel_diff": 1.2363929507067412e-16
+  },
+  {
+   "case": "KIT",
+   "floor": "KIT",
+   "stage4_power_t_pct_per_K": 6.559944091124834,
+   "checker_pct_per_K": 6.559944091124835,
+   "rel_diff": 2.1155344641717563e-16
+  },
+  {
+   "case": "Sandia",
+   "floor": "Geslin",
+   "stage4_power_t_pct_per_K": 1.1043861797526926,
+   "checker_pct_per_K": 1.104386179752693,
+   "rel_diff": 4.712274133216516e-16
+  },
+  {
+   "case": "Sandia",
+   "floor": "KIT",
+   "stage4_power_t_pct_per_K": 2.5817689300349187,
+   "checker_pct_per_K": 2.5817689300349187,
+   "rel_diff": 0.0
+  },
+  {
+   "case": "pooled",
+   "floor": "Geslin",
+   "stage4_power_t_pct_per_K": 1.0168236384470561,
+   "checker_pct_per_K": 1.0168236384470593,
+   "rel_diff": 3.070839562234297e-15
+  },
+  {
+   "case": "pooled",
+   "floor": "KIT",
+   "stage4_power_t_pct_per_K": 2.377070380992583,
+   "checker_pct_per_K": 2.3770703809925826,
+   "rel_diff": 2.919094848596694e-16
+  },
+  {
+   "case": "KIT warm",
+   "floor": "Geslin",
+   "stage4_power_t_pct_per_K": 4.388143819568486,
+   "checker_pct_per_K": 4.388143819568489,
+   "rel_diff": 6.325128974090525e-16
+  },
+  {
+   "case": "KIT warm",
+   "floor": "KIT",
+   "stage4_power_t_pct_per_K": 10.258344030005546,
+   "checker_pct_per_K": 10.258344030005553,
+   "rel_diff": 6.764146224391611e-16
+  },
+  {
+   "case": "KIT cold",
+   "floor": "Geslin",
+   "stage4_power_t_pct_per_K": 3.7321699122943577,
+   "checker_pct_per_K": 3.7321699122943586,
+   "rel_diff": 1.8592116830076288e-16
+  },
+  {
+   "case": "KIT cold",
+   "floor": "KIT",
+   "stage4_power_t_pct_per_K": 8.724846885833394,
+   "checker_pct_per_K": 8.724846885833394,
+   "rel_diff": 1.590605312552583e-16
+  },
+  {
+   "case": "Sandia warm",
+   "floor": "Geslin",
+   "stage4_power_t_pct_per_K": 1.2276144000128635,
+   "checker_pct_per_K": 1.2276144000128637,
+   "rel_diff": 2.82616996991666e-16
+  },
+  {
+   "case": "Sandia warm",
+   "floor": "KIT",
+   "stage4_power_t_pct_per_K": 2.869844601574427,
+   "checker_pct_per_K": 2.869844601574426,
+   "rel_diff": 2.41786398472603e-16
+  },
+  {
+   "case": "Sandia cold",
+   "floor": "Geslin",
+   "stage4_power_t_pct_per_K": 2.7444258679609344,
+   "checker_pct_per_K": 2.7444258679609344,
+   "rel_diff": 0.0
+  },
+  {
+   "case": "Sandia cold",
+   "floor": "KIT",
+   "stage4_power_t_pct_per_K": 6.4157570663120005,
+   "checker_pct_per_K": 6.4157570663120005,
+   "rel_diff": 0.0
+  },
+  {
+   "case": "pooled warm",
+   "floor": "Geslin",
+   "stage4_power_t_pct_per_K": 1.1612684120275094,
+   "checker_pct_per_K": 1.1612684120275096,
+   "rel_diff": 2.9876356887174377e-16
+  },
+  {
+   "case": "pooled warm",
+   "floor": "KIT",
+   "stage4_power_t_pct_per_K": 2.714744860602102,
+   "checker_pct_per_K": 2.7147448606021016,
+   "rel_diff": 1.2780011124817554e-16
+  },
+  {
+   "case": "pooled cold",
+   "floor": "Geslin",
+   "stage4_power_t_pct_per_K": 2.153036555680777,
+   "checker_pct_per_K": 2.1530365556807767,
+   "rel_diff": 1.6114203647864198e-16
+  },
+  {
+   "case": "pooled cold",
+   "floor": "KIT",
+   "stage4_power_t_pct_per_K": 5.033241982375024,
+   "checker_pct_per_K": 5.033241982375024,
+   "rel_diff": 0.0
+  },
+  {
+   "case": "KIT all 142",
+   "floor": "Geslin",
+   "stage4_power_t_pct_per_K": 1.6452598030606609,
+   "checker_pct_per_K": 1.6452598030606607,
+   "rel_diff": 2.1087532470552287e-16
+  },
+  {
+   "case": "KIT all 142",
+   "floor": "KIT",
+   "stage4_power_t_pct_per_K": 3.8461914131599997,
+   "checker_pct_per_K": 3.846191413159999,
+   "rel_diff": 1.804094793661424e-16
+  }
+ ],
+ "C2": [
+  {
+   "band": "warm",
+   "dataset": "KIT",
+   "floor": "Geslin",
+   "stage4_n_required": 774,
+   "checker_n_required": 774,
+   "stage4_n_shared": 1160,
+   "checker_n_shared": 1160,
+   "stage4_power_t": 0.13227908406438538,
+   "checker_power_calc": 0.13227908406438535,
+   "power_abs_diff": 2.7755575615628914e-17,
+   "n_equal": true
+  },
+  {
+   "band": "warm",
+   "dataset": "KIT",
+   "floor": "KIT",
+   "stage4_n_required": 4221,
+   "checker_n_required": 4221,
+   "stage4_n_shared": 6330,
+   "checker_n_shared": 6330,
+   "stage4_power_t": 0.06463197111453421,
+   "checker_power_calc": 0.06463197111453423,
+   "power_abs_diff": 1.3877787807814457e-17,
+   "n_equal": true
+  },
+  {
+   "band": "warm",
+   "dataset": "Sandia",
+   "floor": "Geslin",
+   "stage4_n_required": 33,
+   "checker_n_required": 33,
+   "stage4_n_shared": 58,
+   "checker_n_shared": 58,
+   "stage4_power_t": 0.8445639106553383,
+   "checker_power_calc": 0.8445639106553383,
+   "power_abs_diff": 0.0,
+   "n_equal": true
+  },
+  {
+   "band": "warm",
+   "dataset": "Sandia",
+   "floor": "KIT",
+   "stage4_n_required": 168,
+   "checker_n_required": 168,
+   "stage4_n_shared": 308,
+   "checker_n_shared": 308,
+   "stage4_power_t": 0.2464953411605754,
+   "checker_power_calc": 0.24649534116057537,
+   "power_abs_diff": 2.7755575615628914e-17,
+   "n_equal": true
+  },
+  {
+   "band": "warm",
+   "dataset": "pooled",
+   "floor": "Geslin",
+   "stage4_n_required": 85,
+   "checker_n_required": 85,
+   "stage4_n_shared": 153,
+   "checker_n_shared": 153,
+   "stage4_power_t": 0.8816704836008469,
+   "checker_power_calc": 0.8816704836008469,
+   "power_abs_diff": 0.0,
+   "n_equal": true
+  },
+  {
+   "band": "warm",
+   "dataset": "pooled",
+   "floor": "KIT",
+   "stage4_n_required": 454,
+   "checker_n_required": 454,
+   "stage4_n_shared": 826,
+   "checker_n_shared": 826,
+   "stage4_power_t": 0.2696576062086751,
+   "checker_power_calc": 0.2696576062086751,
+   "power_abs_diff": 0.0,
+   "n_equal": true
+  },
+  {
+   "band": "cold",
+   "dataset": "KIT",
+   "floor": "Geslin",
+   "stage4_n_required": 39,
+   "checker_n_required": 39,
+   "stage4_n_shared": 58,
+   "checker_n_shared": 58,
+   "stage4_power_t": 0.7665437748221144,
+   "checker_power_calc": 0.7665437748221144,
+   "power_abs_diff": 0.0,
+   "n_equal": true
+  },
+  {
+   "band": "cold",
+   "dataset": "KIT",
+   "floor": "KIT",
+   "stage4_n_required": 205,
+   "checker_n_required": 205,
+   "stage4_n_shared": 306,
+   "checker_n_shared": 306,
+   "stage4_power_t": 0.2099328504599557,
+   "checker_power_calc": 0.2099328504599557,
+   "power_abs_diff": 0.0,
+   "n_equal": true
+  },
+  {
+   "band": "cold",
+   "dataset": "Sandia",
+   "floor": "Geslin",
+   "stage4_n_required": 13,
+   "checker_n_required": 13,
+   "stage4_n_shared": 15,
+   "checker_n_shared": 15,
+   "stage4_power_t": 0.9546588184397683,
+   "checker_power_calc": 0.9546588184397683,
+   "power_abs_diff": 0.0,
+   "n_equal": true
+  },
+  {
+   "band": "cold",
+   "dataset": "Sandia",
+   "floor": "KIT",
+   "stage4_n_required": 60,
+   "checker_n_required": 60,
+   "stage4_n_shared": 68,
+   "checker_n_shared": 68,
+   "stage4_power_t": 0.34667079630646314,
+   "checker_power_calc": 0.34667079630646314,
+   "power_abs_diff": 0.0,
+   "n_equal": true
+  },
+  {
+   "band": "cold",
+   "dataset": "pooled",
+   "floor": "Geslin",
+   "stage4_n_required": 22,
+   "checker_n_required": 22,
+   "stage4_n_shared": 27,
+   "checker_n_shared": 27,
+   "stage4_power_t": 0.9965075702058976,
+   "checker_power_calc": 0.9965075702058976,
+   "power_abs_diff": 0.0,
+   "n_equal": true
+  },
+  {
+   "band": "cold",
+   "dataset": "pooled",
+   "floor": "KIT",
+   "stage4_n_required": 109,
+   "checker_n_required": 109,
+   "stage4_n_shared": 137,
+   "checker_n_shared": 137,
+   "stage4_power_t": 0.513168018999524,
+   "checker_power_calc": 0.513168018999524,
+   "power_abs_diff": 0.0,
+   "n_equal": true
+  }
+ ],
+ "C1_max_rel_diff": 3.070839562234297e-15,
+ "C2_all_n_equal": true,
+ "C2_max_power_abs_diff": 2.7755575615628914e-17
+}

@@ -1,0 +1,65 @@
+{
+ "check": "V3 (D77) by hand, plain Python",
+ "kit_pair": {
+  "set": "P041",
+  "warm": "P041-1",
+  "cool": "P041-2",
+  "dT_K": 0.1523299686641053,
+  "band": "warm",
+  "s_per_K": 0.013029423647732621,
+  "p": -0.001984771695970463,
+  "d": 0.035025430341377055,
+  "tie": true,
+  "L_warm": 118.60691277708278,
+  "L_cool": 114.52456494732527
+ },
+ "sandia_pair": {
+  "set": "NMC_25C_0-100_0.5/1C",
+  "warm": "SNL_18650_NMC_25C_0-100_0.5/1C_a",
+  "cool": "SNL_18650_NMC_25C_0-100_0.5/1C_b",
+  "dT_K": 0.5598288816613695,
+  "band": "warm",
+  "s_per_K": -0.024432246723733255,
+  "p": 0.013677877359822246,
+  "d": -0.022625830137654263,
+  "tie": true,
+  "L_warm": 157.17546089489002,
+  "L_cool": 160.77222259554807
+ },
+ "against_own_pairs_csv": {
+  "KIT": {
+   "max_rel_diff": 0.0,
+   "band_equal": true,
+   "tie_equal": true,
+   "pass_1e-12": true
+  },
+  "Sandia": {
+   "max_rel_diff": 0.0,
+   "band_equal": true,
+   "tie_equal": true,
+   "pass_1e-12": true
+  }
+ },
+ "literal_first_nmc_25C_pair": "NMC_25C_0-100_0.5/0.5C (no measure (a); not scored)",
+ "steps": [
+  "KIT: the first 25 C pair is row 73 of results/stage2_warmer_pairs.csv: set 41, protocol 0-100 0.33/0.33C, warm P041-1, cool P041-2",
+  "  T_C P041-1 = 25.377166893848635 C, T_C P041-2 = 25.22483692518453 C; the warm cell is the one with the higher T_C: ok",
+  "  dT = 25.377166893848635 - 25.22483692518453 = 0.1523299686641053 K; archived dT_K = 0.1523299686641053 K; difference 0.0",
+  "  L90 warm = 118.60691277708278 EFC, L90 cool = 114.52456494732527 EFC (archived pair file: 118.60691277708278, 114.52456494732527); censored90: False, False",
+  "  25 C band: the 25 to 40 C interval [0.004121652080784894, 0.02193719521468035] is 0.017815543133895453 wide, the 10 to 25 C interval [-0.049812535984042006, -0.0305468952763097] is 0.019265640707732307 wide; the narrower is warm",
+  "  lever: 25 to 40 C 0-100 0.33/0.33C, s = 0.013029423647732621 per K",
+  "  p = -s dT = -(0.013029423647732621) x 0.1523299686641053 = -0.001984771695970463",
+  "  d = ln(L_warm / L_cool) = ln(118.60691277708278 / 114.52456494732527) = ln(1.0356460452972265) = 0.035025430341377055",
+  "  tie: |L_warm - L_cool| = 4.082347829757509 against the larger res90_efc 74.35842966666665: tie",
+  "Sandia: the first NMC pair at 25 C in file order is row 57, group NMC_25C_0-100_0.5/0.5C (rise_a_K '', rise_b_K ''): it has no measure (a); D77 names the 0-100 %, 0.5/1C pair of cells a and b, used here",
+  "  row 58: group NMC_25C_0-100_0.5/1C, cells SNL_18650_NMC_25C_0-100_0.5/1C_a and SNL_18650_NMC_25C_0-100_0.5/1C_b",
+  "  measure (a): rise_a = 1.5363353815280179 K, rise_b = 0.9765064998666484 K; warm = SNL_18650_NMC_25C_0-100_0.5/1C_a; dT = 0.5598288816613695 K",
+  "  lifetimes: L_a = 157.17546089489002, L_b = 160.77222259554807 EFC (censored False, False)",
+  "  25 C band for NMC: 25 to 35 C interval 0.03886629454674348 wide, 15 to 25 C interval 0.053350110221704494 wide; the narrower is warm",
+  "  lever: NMC 25 to 35 C (registered 1C), s = -0.024432246723733255 per K",
+  "  p = -s dT = -(-0.024432246723733255) x 0.5598288816613695 = 0.013677877359822246",
+  "  d = ln(L_warm / L_cool) = ln(157.17546089489002 / 160.77222259554807) = -0.022625830137654263",
+  "  tie flag (below_resolution, archived): True (|dL| = 3.5967617006580497, resolution 222.86733333333336)",
+  "against out/pairs.csv: {'KIT': {'max_rel_diff': 0.0, 'band_equal': True, 'tie_equal': True, 'pass_1e-12': True}, 'Sandia': {'max_rel_diff': 0.0, 'band_equal': True, 'tie_equal': True, 'pass_1e-12': True}}"
+ ]
+}

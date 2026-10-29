@@ -1,0 +1,1038 @@
+{
+ "check": "Stage 5 independent check (D77's independent read)",
+ "base_commit": "da613a1488838fd8a73032882d4f9fc5d6a0750d (pre-registration: DECISIONS.md D71 to D78 and predictions_stage5.md)",
+ "branch": "stage5-independent",
+ "freeze": {
+  "rule": "Until the commit that adds this record (message starting 'Stage 5 independent check: outputs frozen') was committed and pushed to origin/stage5-independent: nothing under src/stage5/, results/stage5_*, verification/stage5/ outside this folder, or tests/stage5_synthetic.py was opened, listed or imported, and no commit after da613a1 was logged, shown, diffed or fetched (no git fetch, no git log of origin/stage5). Stage 1 to 4 code and results were read; src/stage4/experiment.py was imported only after the checker's own power code had run, as a cross-check (crosscheck_stage4_power.py).",
+  "commit_and_push_time": "given in the hand-back message; a commit cannot hold its own hash"
+ },
+ "environment": {
+  "python": "3.13.16",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1"
+ },
+ "inputs": [
+  {
+   "file": "results/stage2_warmer_pairs.csv",
+   "sha256_worktree": "f5bb9d423bb849eed84a654a9268df488e53fba4e6ef8eb60d8ab58e80ff51d4",
+   "sha256_at_v1.3.0": "f5bb9d423bb849eed84a654a9268df488e53fba4e6ef8eb60d8ab58e80ff51d4",
+   "equal_to_archive": true,
+   "first_archived": {
+    "tag": "v1.1.0",
+    "sha256": "f5bb9d423bb849eed84a654a9268df488e53fba4e6ef8eb60d8ab58e80ff51d4"
+   }
+  },
+  {
+   "file": "results/stage2_cells.csv",
+   "sha256_worktree": "1450c1ad454a0e709675727d7100cda402e4da2c4ec6cc2acdbeeb12d6f39cc1",
+   "sha256_at_v1.3.0": "1450c1ad454a0e709675727d7100cda402e4da2c4ec6cc2acdbeeb12d6f39cc1",
+   "equal_to_archive": true,
+   "first_archived": {
+    "tag": "v1.1.0",
+    "sha256": "1450c1ad454a0e709675727d7100cda402e4da2c4ec6cc2acdbeeb12d6f39cc1"
+   }
+  },
+  {
+   "file": "results/stage2_lever.json",
+   "sha256_worktree": "20bb6f6b78304adefd2eb43781cf2d6860c583626b273ca05956133050df9ccf",
+   "sha256_at_v1.3.0": "20bb6f6b78304adefd2eb43781cf2d6860c583626b273ca05956133050df9ccf",
+   "equal_to_archive": true,
+   "first_archived": {
+    "tag": "v1.1.0",
+    "sha256": "20bb6f6b78304adefd2eb43781cf2d6860c583626b273ca05956133050df9ccf"
+   }
+  },
+  {
+   "file": "results/stage3_pairs.csv",
+   "sha256_worktree": "672476bc058fe323a069d6b9341162d0d8c523a323a1218764aa8915f29bc4c8",
+   "sha256_at_v1.3.0": "672476bc058fe323a069d6b9341162d0d8c523a323a1218764aa8915f29bc4c8",
+   "equal_to_archive": true,
+   "first_archived": {
+    "tag": "v1.2.0",
+    "sha256": "672476bc058fe323a069d6b9341162d0d8c523a323a1218764aa8915f29bc4c8"
+   }
+  },
+  {
+   "file": "results/stage3_pairs_oriented_measure_a.csv",
+   "sha256_worktree": "45720d4201b02bcf12382e687fb75f4e4f47ff44f2c6c1175363f7f83c121bac",
+   "sha256_at_v1.3.0": "45720d4201b02bcf12382e687fb75f4e4f47ff44f2c6c1175363f7f83c121bac",
+   "equal_to_archive": true,
+   "first_archived": {
+    "tag": "v1.2.0",
+    "sha256": "45720d4201b02bcf12382e687fb75f4e4f47ff44f2c6c1175363f7f83c121bac"
+   }
+  },
+  {
+   "file": "results/stage3_lever.csv",
+   "sha256_worktree": "2cadaad5babc3f14b19fa6d7642fa3c8fea474512b3854425181262979ff1eb7",
+   "sha256_at_v1.3.0": "2cadaad5babc3f14b19fa6d7642fa3c8fea474512b3854425181262979ff1eb7",
+   "equal_to_archive": true,
+   "first_archived": {
+    "tag": "v1.2.0",
+    "sha256": "2cadaad5babc3f14b19fa6d7642fa3c8fea474512b3854425181262979ff1eb7"
+   }
+  },
+  {
+   "file": "inputs/floor.json",
+   "sha256_worktree": "280a6438cd50730219fd85d5002640bae9aa6fd8582699b00f4630d3bc475d6d",
+   "sha256_at_v1.3.0": "280a6438cd50730219fd85d5002640bae9aa6fd8582699b00f4630d3bc475d6d",
+   "equal_to_archive": true,
+   "first_archived": {
+    "tag": "v1.0.0",
+    "sha256": "280a6438cd50730219fd85d5002640bae9aa6fd8582699b00f4630d3bc475d6d"
+   }
+  },
+  {
+   "file": "results/stage4_experiment.json",
+   "sha256_worktree": "e96ae27047b3d02a7392faf3a612c4d014f2c8ac57c2256ac12df0c31ebfd3e4",
+   "sha256_at_v1.3.0": "e96ae27047b3d02a7392faf3a612c4d014f2c8ac57c2256ac12df0c31ebfd3e4",
+   "equal_to_archive": true,
+   "first_archived": {
+    "tag": "v1.3.0",
+    "sha256": "e96ae27047b3d02a7392faf3a612c4d014f2c8ac57c2256ac12df0c31ebfd3e4"
+   }
+  },
+  {
+   "file": "results/stage4_paper_numbers.json",
+   "sha256_worktree": "0c9e1b8655475805d4fa2c651108bb6b442a84cf79dc7a31d437428c69a26e8b",
+   "sha256_at_v1.3.0": "0c9e1b8655475805d4fa2c651108bb6b442a84cf79dc7a31d437428c69a26e8b",
+   "equal_to_archive": true,
+   "first_archived": {
+    "tag": "v1.3.0",
+    "sha256": "0c9e1b8655475805d4fa2c651108bb6b442a84cf79dc7a31d437428c69a26e8b"
+   }
+  }
+ ],
+ "checks": {
+  "v1_oriented_measure_a": {
+   "pairs_compared": 60,
+   "oriented_file_rows": 60,
+   "max_abs_diff_dT_and_d": 1.734723475976807e-18
+  },
+  "kit_dT_and_lifetimes_against_stage2_cells": "exact (stop otherwise)",
+  "sd_e_rebuilt": {
+   "Geslin": 0.04454298465298393,
+   "KIT": 0.10412996462328801
+  },
+  "sd_e_equal_to_task_values": {
+   "Geslin": true,
+   "KIT": true
+  },
+  "v3_by_hand": {
+   "KIT": {
+    "max_rel_diff": 0.0,
+    "band_equal": true,
+    "tie_equal": true,
+    "pass_1e-12": true
+   },
+   "Sandia": {
+    "max_rel_diff": 0.0,
+    "band_equal": true,
+    "tie_equal": true,
+    "pass_1e-12": true
+   }
+  },
+  "part_b_second_method_max_diff": 3.4371039695383e-16,
+  "part_c_against_stage4_power_t": {
+   "C1_max_rel_diff": 3.070839562234297e-15,
+   "C2_all_n_equal": true,
+   "C2_max_power_abs_diff": 2.7755575615628914e-17
+  }
+ },
+ "readings": [
+  "Sets for every bootstrap are KIT parameter sets (one protocol at one temperature) and Sandia groups (chemistry, ambient, window, rates), as D74 reads the brief's 'resampling protocols, not pairs'; the pooled draws are stratified (KIT sets and Sandia groups drawn separately). Resampling protocols instead is reported as a sensitivity (out/B.json, 'sens ... protocol clusters').",
+  "The 25 C band is the one whose archived interval (hi - lo) is narrower, protocol by protocol for KIT and chemistry by chemistry for Sandia; a lever that is not determinable has no interval and cannot be the narrower (LFP 25 C goes to 15 to 25 C). Sandia 15 C sets take the 15 to 25 C lever and 35 C sets the 25 to 35 C lever.",
+  "Every Sandia pair takes its chemistry's registered 1C lever for its band, the 2C and 3C groups included (D72's literal wording); the secondary 2C series is not used.",
+  "KIT tie: |L_warm - L_cool| strictly below the larger res90_efc of the two cells. Sandia tie: below_resolution as archived.",
+  "Orientation: KIT as archived (warm = higher T_C, checked against stage2_cells.csv); Sandia by the larger rise (measure (a)) and, for the measure (b) bracket, by the larger rest temperature; no exact tie occurs in either.",
+  "d = ln(L_warm / L_cool) as the log of the ratio; p = -s dT with s in natural-log units per K.",
+  "Untied bracket: the dataset restricted to its untied pairs, the bootstrap drawing the sets that hold one (2 KIT sets); drawing all 36 KIT sets (sets without an untied pair adding nothing, empty draws left out and counted) gives the same interval and is reported as a sensitivity. Pooled untied equals KIT untied (Sandia has no untied scored pair).",
+  "B4's interval uses B1's draws: in each draw beta is refitted over the drawn pairs, the residuals of those pairs give sd* = sqrt(sum r^2 / (n* - 1)) with n* the draw's pair count. 'Lies inside that interval' is read as the closed interval.",
+  "B2 for the 0 C KIT sets uses the same bootstrap over its 12 sets.",
+  "B3 is computed for KIT, Sandia and pooled, each over all scored pairs and per band; a pair with d = 0 or p = 0 would be left out (none is).",
+  "Extras not named in D74, computed from the same draws and labelled so: beta and B4 per band (D76 mentions 'B1 to B4 per dataset and band'), s_w over a whole dataset.",
+  "C1 calculation: noncentral t with df n - 1 and nc = |s| sqrt(sum dT^2) / sd(e), both tails, from scipy.stats.nct directly; where scipy returns nan for the lower tail the quadrature value is used (this happened only at Brent's trial points nc = 11.8 and 23.7, never at a reported value). Brent's method on nc, then |s| = nc sd(e) / sqrt(sum dT^2).",
+  "C1 simulation: one set of 10,000 datasets per case and shape; rejection |t| > t_0.975(n - 1); 'reaches 0.80' as simulated power >= 0.80; bisection on |s| from [0, 2 s_calc] (doubling if needed) until hi - lo <= 1e-6 hi, the reported value being hi; the exact step of the simulated power is reported beside. The random sign is +1 or -1 with probability 1/2 each.",
+  "The normal-e simulation uses the registered shape's sd(e); the normal-shape calculation uses m sqrt(pi / 2).",
+  "Shared-cell F = (sum over cells of w^2) / (2 sum over pairs of dT^2) per selection; the pooled F sums over the cells of both datasets; the shared-cell line keeps df = n - 1.",
+  "C2's simulated power is C1's per-band simulation (the same 10,000 datasets) evaluated at the band's median |s|.",
+  "C2's simulated n follows Stage 4's bisection (2 first; then lo = 2, hi = max(4 n_calc, 3), doubling while hi fails), fresh 10,000 datasets at each n tried, each drawing n dT values with replacement from the band's observed dT and e from the registered shape.",
+  "C2 is computed for every dataset, band and floor; D75 names KIT under the KIT floor and Sandia and pooled under both floors; KIT under the Geslin floor is an extra.",
+  "P6 compares the detectable |s| with the full-precision band medians (1.302942364773262 and 3.5800471015633453 % per K), 'exceeds' strict. P1 and P2 read the interval as closed; P7 as width ratio >= 2; P8 as upper end <= 3.",
+  "V3: D77's 'first Sandia NMC pair at 25 C in the order of results/stage3_pairs.csv' is literally the 0-100 %, 0.5/0.5C pair, which has no measure (a) and is not scored; its parenthesis names the 0-100 %, 0.5/1C pair of cells a and b, which is the one computed."
+ ],
+ "seeds": {
+  "base_seed": 5550129,
+  "generator": "numpy.random.Generator(numpy.random.SFC64(numpy.random.SeedSequence([5550129, *key])))",
+  "B (partb.py)": {
+   "KIT": [
+    1
+   ],
+   "Sandia": [
+    2
+   ],
+   "pooled": [
+    3
+   ],
+   "KIT warm": [
+    4
+   ],
+   "KIT cold": [
+    5
+   ],
+   "Sandia warm": [
+    6
+   ],
+   "Sandia cold": [
+    7
+   ],
+   "pooled warm": [
+    8
+   ],
+   "pooled cold": [
+    9
+   ],
+   "KIT 0 C": [
+    10
+   ],
+   "untied KIT": [
+    11
+   ],
+   "untied KIT warm": [
+    12
+   ],
+   "untied pooled": [
+    13
+   ],
+   "untied pooled warm": [
+    14
+   ],
+   "Sandia measure b": [
+    15
+   ],
+   "Sandia measure b warm": [
+    151
+   ],
+   "Sandia measure b cold": [
+    152
+   ],
+   "Sandia without NCA 15C 1C": [
+    16
+   ],
+   "sens untied all sets": [
+    17
+   ],
+   "sens protocol clusters": [
+    20,
+    21,
+    22,
+    23,
+    24
+   ]
+  },
+  "B replicates (crosscheck_b.py)": "[900 + i, r] for 200 replicates, [950 + i] for 1,000,000 draws",
+  "C1 (partc.py)": "[100 + case index, floor index (0 Geslin, 1 KIT), 1 log-normal or 2 normal]",
+  "C2 simulated n (partc.py)": "[200 + 10 band index + dataset index, floor index, 1, n]",
+  "C replicates (mc_spread_c.py)": "C1 [700 + case, floor, r]; C2 [800 + (band == cold), r, n]",
+  "not used": "the pipeline's default_rng([20261029, k]) and V2's random.Random(20261030)"
+ },
+ "headline": {
+  "counts": {
+   "KIT": {
+    "in_file": 142,
+    "scored": 106,
+    "sets": 36,
+    "warm": {
+     "pairs": 70,
+     "sets": 24,
+     "ties": 68,
+     "untied": 2
+    },
+    "cold": {
+     "pairs": 36,
+     "sets": 12,
+     "ties": 36,
+     "untied": 0
+    },
+    "not_scored": {
+     "0 C set: no secant of results/stage2_lever.json reaches 0 C (D72)": 36
+    }
+   },
+   "Sandia": {
+    "in_file": 86,
+    "with_measure_a": 60,
+    "scored": 56,
+    "sets": 21,
+    "warm": {
+     "pairs": 36,
+     "sets": 11,
+     "ties": 36,
+     "untied": 0
+    },
+    "cold": {
+     "pairs": 20,
+     "sets": 10,
+     "ties": 20,
+     "untied": 0
+    },
+    "not_scored": {
+     "measure (a) missing for a cell (0.5C discharge group, D50 (5), or LFP cell c at 35 C, D52)": 26,
+     "LFP 25 to 35 C lever not determinable (D52)": 4
+    }
+   },
+   "pooled": {
+    "scored_pairs": 162,
+    "scored_sets": 57
+   }
+  },
+  "B": {
+   "KIT": {
+    "pairs": 106,
+    "sets": 36,
+    "beta": -0.08620194672914543,
+    "beta_ci95": [
+     -1.9134729640234256,
+     1.4273526803988161
+    ],
+    "resid_sd": 0.13085807008015998,
+    "resid_sd_ci95": [
+     0.09114492413556946,
+     0.16776712404030047
+    ],
+    "s_w_pct_per_K": -2.609128580559712,
+    "s_w_ci95_pct_per_K": [
+     -10.09252887504374,
+     3.408003532731295
+    ],
+    "sign": {
+     "agree": 45,
+     "pairs_tested": 106,
+     "left_out": 0,
+     "share": 0.42452830188679247,
+     "p_two_sided": 0.14478233933005036
+    },
+    "floor_verdicts": {
+     "KIT": true,
+     "Geslin": false
+    }
+   },
+   "Sandia": {
+    "pairs": 56,
+    "sets": 21,
+    "beta": 1.5495857828171264,
+    "beta_ci95": [
+     -0.7069762621721137,
+     2.4815507569899866
+    ],
+    "resid_sd": 0.15814440057660337,
+    "resid_sd_ci95": [
+     0.08966589765481081,
+     0.22034948212981578
+    ],
+    "s_w_pct_per_K": -2.35642878620017,
+    "s_w_ci95_pct_per_K": [
+     -5.170473404494605,
+     4.837543048163692
+    ],
+    "sign": {
+     "agree": 32,
+     "pairs_tested": 56,
+     "left_out": 0,
+     "share": 0.5714285714285714,
+     "p_two_sided": 0.34968195298368476
+    },
+    "floor_verdicts": {
+     "KIT": true,
+     "Geslin": false
+    }
+   },
+   "pooled": {
+    "pairs": 162,
+    "sets": 57,
+    "beta": 1.0955874575178046,
+    "beta_ci95": [
+     -0.5573992754968562,
+     1.946636586796124
+    ],
+    "resid_sd": 0.1416642793293986,
+    "resid_sd_ci95": [
+     0.1055691067174742,
+     0.17408739846004567
+    ],
+    "s_w_pct_per_K": -2.389824356789823,
+    "s_w_ci95_pct_per_K": [
+     -5.05994749979725,
+     3.1743535391545596
+    ],
+    "sign": {
+     "agree": 77,
+     "pairs_tested": 162,
+     "left_out": 0,
+     "share": 0.47530864197530864,
+     "p_two_sided": 0.5824757301133331
+    },
+    "floor_verdicts": {
+     "KIT": false,
+     "Geslin": false
+    }
+   },
+   "KIT warm": {
+    "pairs": 70,
+    "sets": 24,
+    "beta": -7.752268429221527,
+    "beta_ci95": [
+     -17.818381900054796,
+     -1.9456789309455447
+    ],
+    "resid_sd": 0.13437150172823675,
+    "resid_sd_ci95": [
+     0.08926375079556706,
+     0.17524687180750562
+    ],
+    "s_w_pct_per_K": -5.190860433846528,
+    "s_w_ci95_pct_per_K": [
+     -16.008217216724955,
+     8.20114274947321
+    ],
+    "sign": {
+     "agree": 24,
+     "pairs_tested": 70,
+     "left_out": 0,
+     "share": 0.34285714285714286,
+     "p_two_sided": 0.011526409654363478
+    }
+   },
+   "KIT cold": {
+    "pairs": 36,
+    "sets": 12,
+    "beta": 0.32307149062306334,
+    "beta_ci95": [
+     -0.7831726391657701,
+     2.6526599624637726
+    ],
+    "resid_sd": 0.11448950827805332,
+    "resid_sd_ci95": [
+     0.05338289024787751,
+     0.1731848295936752
+    ],
+    "s_w_pct_per_K": -0.7932123089035024,
+    "s_w_ci95_pct_per_K": [
+     -9.32237554353926,
+     4.048240467331763
+    ],
+    "sign": {
+     "agree": 21,
+     "pairs_tested": 36,
+     "left_out": 0,
+     "share": 0.5833333333333334,
+     "p_two_sided": 0.4050322461407632
+    }
+   },
+   "Sandia warm": {
+    "pairs": 36,
+    "sets": 11,
+    "beta": 1.9394614419331873,
+    "beta_ci95": [
+     -0.22405179579579182,
+     3.528606872155533
+    ],
+    "resid_sd": 0.17480332165914483,
+    "resid_sd_ci95": [
+     0.07731214595798733,
+     0.25866599870807716
+    ],
+    "s_w_pct_per_K": -4.345486296296944,
+    "s_w_ci95_pct_per_K": [
+     -7.014789304711526,
+     0.5233815929940974
+    ],
+    "sign": {
+     "agree": 23,
+     "pairs_tested": 36,
+     "left_out": 0,
+     "share": 0.6388888888888888,
+     "p_two_sided": 0.13249816396273675
+    }
+   },
+   "Sandia cold": {
+    "pairs": 20,
+    "sets": 10,
+    "beta": 0.29380683943008934,
+    "beta_ci95": [
+     -5.623582347609039,
+     4.260647028323421
+    ],
+    "resid_sd": 0.11879460991813641,
+    "resid_sd_ci95": [
+     0.02625507387407005,
+     0.16022561837685498
+    ],
+    "s_w_pct_per_K": 7.104824601238863,
+    "s_w_ci95_pct_per_K": [
+     -4.031617101001738,
+     18.630666269999622
+    ],
+    "sign": {
+     "agree": 9,
+     "pairs_tested": 20,
+     "left_out": 0,
+     "share": 0.45,
+     "p_two_sided": 0.8238029479980469
+    }
+   },
+   "pooled warm": {
+    "pairs": 106,
+    "sets": 35,
+    "beta": 1.69833115632463,
+    "beta_ci95": [
+     -1.0662064839817966,
+     2.3849560740948315
+    ],
+    "resid_sd": 0.15286087190223768,
+    "resid_sd_ci95": [
+     0.10635888939383288,
+     0.19540728166070487
+    ],
+    "s_w_pct_per_K": -4.405269896391494,
+    "s_w_ci95_pct_per_K": [
+     -7.10814647621066,
+     -0.02992324667988162
+    ],
+    "sign": {
+     "agree": 47,
+     "pairs_tested": 106,
+     "left_out": 0,
+     "share": 0.44339622641509435,
+     "p_two_sided": 0.28528442186565844
+    }
+   },
+   "pooled cold": {
+    "pairs": 56,
+    "sets": 22,
+    "beta": 0.31154704322526033,
+    "beta_ci95": [
+     -1.2184806864999367,
+     1.9731242387049026
+    ],
+    "resid_sd": 0.11496364798128787,
+    "resid_sd_ci95": [
+     0.06631893123817255,
+     0.16093454290827147
+    ],
+    "s_w_pct_per_K": 4.421256826043753,
+    "s_w_ci95_pct_per_K": [
+     -3.0529910190108276,
+     8.0569448422205
+    ],
+    "sign": {
+     "agree": 30,
+     "pairs_tested": 56,
+     "left_out": 0,
+     "share": 0.5357142857142857,
+     "p_two_sided": 0.6888797607233395
+    }
+   },
+   "KIT 0 C": {
+    "pairs": 36,
+    "sets": 12,
+    "s_w_pct_per_K": -1.2806283734062653,
+    "s_w_ci95_pct_per_K": [
+     -3.4724357629013687,
+     0.6671712435124952
+    ]
+   },
+   "untied KIT": {
+    "pairs": 2,
+    "sets": 2,
+    "beta": -88.22420283930613,
+    "beta_ci95": [
+     -169.39278756720321,
+     96.90951721302008
+    ],
+    "resid_sd": 0.45617556290473626,
+    "resid_sd_ci95": [
+     0.0,
+     0.4561755629047363
+    ],
+    "s_w_pct_per_K": 170.3365545393553,
+    "s_w_ci95_pct_per_K": [
+     168.58206979404486,
+     185.07198081070828
+    ],
+    "sign": {
+     "agree": 1,
+     "pairs_tested": 2,
+     "left_out": 0,
+     "share": 0.5,
+     "p_two_sided": 1.0
+    },
+    "floor_verdicts": {
+     "KIT": true,
+     "Geslin": true
+    }
+   },
+   "untied pooled": {
+    "pairs": 2,
+    "sets": 2,
+    "beta": -88.22420283930613,
+    "beta_ci95": [
+     -169.39278756720321,
+     96.90951721302008
+    ],
+    "resid_sd": 0.45617556290473626,
+    "resid_sd_ci95": [
+     0.0,
+     0.4561755629047363
+    ],
+    "s_w_pct_per_K": 170.3365545393553,
+    "s_w_ci95_pct_per_K": [
+     168.58206979404486,
+     185.07198081070828
+    ],
+    "sign": {
+     "agree": 1,
+     "pairs_tested": 2,
+     "left_out": 0,
+     "share": 0.5,
+     "p_two_sided": 1.0
+    },
+    "floor_verdicts": {
+     "KIT": true,
+     "Geslin": true
+    }
+   },
+   "Sandia measure b": {
+    "pairs": 56,
+    "sets": 21,
+    "beta": 0.6975568717976246,
+    "beta_ci95": [
+     -2.2556747214308857,
+     2.645927560682631
+    ],
+    "resid_sd": 0.16748264996474693,
+    "resid_sd_ci95": [
+     0.09914491116078349,
+     0.22608250312173847
+    ],
+    "s_w_pct_per_K": -0.8376005637015725,
+    "s_w_ci95_pct_per_K": [
+     -2.2647501311556795,
+     10.958174497541739
+    ],
+    "sign": {
+     "agree": 31,
+     "pairs_tested": 56,
+     "left_out": 0,
+     "share": 0.5535714285714286,
+     "p_two_sided": 0.5044037600228255
+    }
+   },
+   "Sandia without NCA 15C 1C": {
+    "pairs": 55,
+    "sets": 20,
+    "beta": 1.808921185018189,
+    "beta_ci95": [
+     0.11744741246365885,
+     2.8321231535904245
+    ],
+    "resid_sd": 0.15112722311250015,
+    "resid_sd_ci95": [
+     0.08150604617595487,
+     0.21858049663466217
+    ],
+    "s_w_pct_per_K": -3.6652802227402663,
+    "s_w_ci95_pct_per_K": [
+     -5.730366119055894,
+     3.065778876003311
+    ],
+    "sign": {
+     "agree": 32,
+     "pairs_tested": 55,
+     "left_out": 0,
+     "share": 0.5818181818181818,
+     "p_two_sided": 0.2806097176983541
+    }
+   }
+  },
+  "C1": {
+   "KIT | Geslin": {
+    "pairs": 106,
+    "calc_pct_per_K": 2.8061037956989523,
+    "sim_lognormal_pct_per_K": 2.763749016670511,
+    "v4_rel_diff": -0.015093803405761604,
+    "v4_pass": true,
+    "sim_normal_same_sd_pct_per_K": 2.8059940752250685,
+    "calc_normal_shape_pct_per_K": 2.361567793552849,
+    "F": 1.4999999953618885,
+    "calc_shared_cell_pct_per_K": 3.436761227061403
+   },
+   "KIT | KIT": {
+    "pairs": 106,
+    "calc_pct_per_K": 6.559944091124835,
+    "sim_lognormal_pct_per_K": 6.508125227345019,
+    "v4_rel_diff": -0.007899284362792646,
+    "v4_pass": true,
+    "sim_normal_same_sd_pct_per_K": 6.554125964441843,
+    "calc_normal_shape_pct_per_K": 5.789309712855395,
+    "F": 1.4999999953618885,
+    "calc_shared_cell_pct_per_K": 8.03425786979944
+   },
+   "Sandia | Geslin": {
+    "pairs": 56,
+    "calc_pct_per_K": 1.104386179752693,
+    "sim_lognormal_pct_per_K": 1.0711653651605608,
+    "v4_rel_diff": -0.03008079528808612,
+    "v4_pass": true,
+    "sim_normal_same_sd_pct_per_K": 1.100647231943357,
+    "calc_normal_shape_pct_per_K": 0.9294320608333733,
+    "F": 1.7240052424998333,
+    "calc_shared_cell_pct_per_K": 1.4500742960204556
+   },
+   "Sandia | KIT": {
+    "pairs": 56,
+    "calc_pct_per_K": 2.5817689300349187,
+    "sim_lognormal_pct_per_K": 2.5241960856335526,
+    "v4_rel_diff": -0.022299766540527444,
+    "v4_pass": true,
+    "sim_normal_same_sd_pct_per_K": 2.593892638961589,
+    "calc_normal_shape_pct_per_K": 2.278473678338398,
+    "F": 1.7240052424998333,
+    "calc_shared_cell_pct_per_K": 3.38989823699733
+   },
+   "pooled | Geslin": {
+    "pairs": 162,
+    "calc_pct_per_K": 1.0168236384470593,
+    "sim_lognormal_pct_per_K": 0.990529718925258,
+    "v4_rel_diff": -0.025858879089355673,
+    "v4_pass": true,
+    "sim_normal_same_sd_pct_per_K": 1.0170107941346016,
+    "calc_normal_shape_pct_per_K": 0.8557409601028958,
+    "F": 1.6944018031214687,
+    "calc_shared_cell_pct_per_K": 1.3235910941277944
+   },
+   "pooled | KIT": {
+    "pairs": 162,
+    "calc_pct_per_K": 2.3770703809925826,
+    "sim_lognormal_pct_per_K": 2.335786936866209,
+    "v4_rel_diff": -0.017367362976074326,
+    "v4_pass": true,
+    "sim_normal_same_sd_pct_per_K": 2.3775963136177714,
+    "calc_normal_shape_pct_per_K": 2.097822245686477,
+    "F": 1.6944018031214687,
+    "calc_shared_cell_pct_per_K": 3.094213261212019
+   },
+   "KIT warm | Geslin": {
+    "pairs": 70,
+    "calc_pct_per_K": 4.388143819568489,
+    "sim_lognormal_pct_per_K": 4.289916784300743,
+    "v4_rel_diff": -0.022384643554687375,
+    "v4_pass": true,
+    "sim_normal_same_sd_pct_per_K": 4.413232055612718,
+    "calc_normal_shape_pct_per_K": 3.6929849614453434,
+    "F": 1.4999999887677766,
+    "calc_shared_cell_pct_per_K": 5.374356617823213
+   },
+   "KIT warm | KIT": {
+    "pairs": 70,
+    "calc_pct_per_K": 10.258344030005553,
+    "sim_lognormal_pct_per_K": 10.06456978741148,
+    "v4_rel_diff": -0.018889427185058743,
+    "v4_pass": true,
+    "sim_normal_same_sd_pct_per_K": 10.238141888795033,
+    "calc_normal_shape_pct_per_K": 9.05323733034132,
+    "F": 1.4999999887677766,
+    "calc_shared_cell_pct_per_K": 12.563854192679818
+   },
+   "KIT cold | Geslin": {
+    "pairs": 36,
+    "calc_pct_per_K": 3.7321699122943586,
+    "sim_lognormal_pct_per_K": 3.62459795636625,
+    "v4_rel_diff": -0.028822898864746187,
+    "v4_pass": true,
+    "sim_normal_same_sd_pct_per_K": 3.70004745912124,
+    "calc_normal_shape_pct_per_K": 3.1409288132714845,
+    "F": 1.4999999999999998,
+    "calc_shared_cell_pct_per_K": 4.570955959244512
+   },
+   "KIT cold | KIT": {
+    "pairs": 36,
+    "calc_pct_per_K": 8.724846885833394,
+    "sim_lognormal_pct_per_K": 8.360601569066423,
+    "v4_rel_diff": -0.041748046874999986,
+    "v4_pass": true,
+    "sim_normal_same_sd_pct_per_K": 8.761341311074162,
+    "calc_normal_shape_pct_per_K": 7.699888919429848,
+    "F": 1.4999999999999998,
+    "calc_shared_cell_pct_per_K": 10.685711477101325
+   },
+   "Sandia warm | Geslin": {
+    "pairs": 36,
+    "calc_pct_per_K": 1.2276144000128637,
+    "sim_lognormal_pct_per_K": 1.175207201104844,
+    "v4_rel_diff": -0.04269027709960926,
+    "v4_pass": true,
+    "sim_normal_same_sd_pct_per_K": 1.2225392233694392,
+    "calc_normal_shape_pct_per_K": 1.0331387721351089,
+    "F": 1.8482403528220621,
+    "calc_shared_cell_pct_per_K": 1.6689418232411157
+   },
+   "Sandia warm | KIT": {
+    "pairs": 36,
+    "calc_pct_per_K": 2.869844601574426,
+    "sim_lognormal_pct_per_K": 2.8092798059008257,
+    "v4_rel_diff": -0.021103858947754024,
+    "v4_pass": true,
+    "sim_normal_same_sd_pct_per_K": 2.8826204371840047,
+    "calc_normal_shape_pct_per_K": 2.532707443156207,
+    "F": 1.8482403528220621,
+    "calc_shared_cell_pct_per_K": 3.9015538443668523
+   },
+   "Sandia cold | Geslin": {
+    "pairs": 20,
+    "calc_pct_per_K": 2.7444258679609344,
+    "sim_lognormal_pct_per_K": 2.575055896907345,
+    "v4_rel_diff": -0.06171417236328132,
+    "v4_pass": false,
+    "sim_normal_same_sd_pct_per_K": 2.7421749998822764,
+    "calc_normal_shape_pct_per_K": 2.309660730121184,
+    "F": 1.1330621187296896,
+    "calc_shared_cell_pct_per_K": 2.9213148358208487
+   },
+   "Sandia cold | KIT": {
+    "pairs": 20,
+    "calc_pct_per_K": 6.4157570663120005,
+    "sim_lognormal_pct_per_K": 6.114219984001779,
+    "v4_rel_diff": -0.046999454498291154,
+    "v4_pass": true,
+    "sim_normal_same_sd_pct_per_K": 6.409369307697241,
+    "calc_normal_shape_pct_per_K": 5.662061167498733,
+    "F": 1.1330621187296896,
+    "calc_shared_cell_pct_per_K": 6.829277671385977
+   },
+   "pooled warm | Geslin": {
+    "pairs": 106,
+    "calc_pct_per_K": 1.1612684120275096,
+    "sim_lognormal_pct_per_K": 1.1209819082125025,
+    "v4_rel_diff": -0.034691810607910246,
+    "v4_pass": true,
+    "sim_normal_same_sd_pct_per_K": 1.1556867538581268,
+    "calc_normal_shape_pct_per_K": 0.9773031509803215,
+    "F": 1.823613312868192,
+    "calc_shared_cell_pct_per_K": 1.568191118342626
+   },
+   "pooled warm | KIT": {
+    "pairs": 106,
+    "calc_pct_per_K": 2.7147448606021016,
+    "sim_lognormal_pct_per_K": 2.6389290985611313,
+    "v4_rel_diff": -0.027927398681640764,
+    "v4_pass": true,
+    "sim_normal_same_sd_pct_per_K": 2.715203110495602,
+    "calc_normal_shape_pct_per_K": 2.395828161199024,
+    "F": 1.823613312868192,
+    "calc_shared_cell_pct_per_K": 3.6660247836498074
+   },
+   "pooled cold | Geslin": {
+    "pairs": 56,
+    "calc_pct_per_K": 2.1530365556807767,
+    "sim_lognormal_pct_per_K": 2.0688452735108824,
+    "v4_rel_diff": -0.0391035079956055,
+    "v4_pass": true,
+    "sim_normal_same_sd_pct_per_K": 2.1635638025574693,
+    "calc_normal_shape_pct_per_K": 1.8119578456188952,
+    "F": 1.2577390080476993,
+    "calc_shared_cell_pct_per_K": 2.414608187341285
+   },
+   "pooled cold | KIT": {
+    "pairs": 56,
+    "calc_pct_per_K": 5.033241982375024,
+    "sim_lognormal_pct_per_K": 4.854890447438953,
+    "v4_rel_diff": -0.035434722900390535,
+    "v4_pass": true,
+    "sim_normal_same_sd_pct_per_K": 5.01239526270048,
+    "calc_normal_shape_pct_per_K": 4.441958085456611,
+    "F": 1.2577390080476993,
+    "calc_shared_cell_pct_per_K": 5.644728728569969
+   },
+   "KIT all 142 | Geslin": {
+    "pairs": 142,
+    "calc_pct_per_K": 1.6452598030606607,
+    "sim_lognormal_pct_per_K": 1.6135761375912967,
+    "v4_rel_diff": -0.019257545471191382,
+    "v4_pass": true,
+    "sim_normal_same_sd_pct_per_K": 1.6596228136933826,
+    "calc_normal_shape_pct_per_K": 1.384621826494973,
+    "F": 1.4999999983980101,
+    "calc_shared_cell_pct_per_K": 2.0150235048292644
+   },
+   "KIT all 142 | KIT": {
+    "pairs": 142,
+    "calc_pct_per_K": 3.846191413159999,
+    "sim_lognormal_pct_per_K": 3.8053957618222167,
+    "v4_rel_diff": -0.01060676574707047,
+    "v4_pass": true,
+    "sim_normal_same_sd_pct_per_K": 3.8272387849939924,
+    "calc_normal_shape_pct_per_K": 3.3943571768902245,
+    "F": 1.4999999983980101,
+    "calc_shared_cell_pct_per_K": 4.710603205142631
+   }
+  },
+  "C2": {
+   "KIT warm | Geslin": {
+    "named": false,
+    "power_calc": 0.13227908406438535,
+    "power_sim_lognormal": 0.1473,
+    "n_calc": 774,
+    "n_sim_lognormal": 761,
+    "n_shared_cell": 1160
+   },
+   "KIT warm | KIT": {
+    "named": true,
+    "power_calc": 0.06463197111453423,
+    "power_sim_lognormal": 0.0619,
+    "n_calc": 4221,
+    "n_sim_lognormal": 4147,
+    "n_shared_cell": 6330
+   },
+   "Sandia warm | Geslin": {
+    "named": false,
+    "power_calc": 0.8445639106553383,
+    "power_sim_lognormal": 0.8604,
+    "n_calc": 33,
+    "n_sim_lognormal": 35,
+    "n_shared_cell": 58
+   },
+   "Sandia warm | KIT": {
+    "named": false,
+    "power_calc": 0.24649534116057537,
+    "power_sim_lognormal": 0.27,
+    "n_calc": 168,
+    "n_sim_lognormal": 169,
+    "n_shared_cell": 308
+   },
+   "pooled warm | Geslin": {
+    "named": false,
+    "power_calc": 0.8816704836008469,
+    "power_sim_lognormal": 0.8929,
+    "n_calc": 85,
+    "n_sim_lognormal": 92,
+    "n_shared_cell": 153
+   },
+   "pooled warm | KIT": {
+    "named": false,
+    "power_calc": 0.2696576062086751,
+    "power_sim_lognormal": 0.2761,
+    "n_calc": 454,
+    "n_sim_lognormal": 460,
+    "n_shared_cell": 826
+   },
+   "KIT cold | Geslin": {
+    "named": false,
+    "power_calc": 0.7665437748221144,
+    "power_sim_lognormal": 0.7925,
+    "n_calc": 39,
+    "n_sim_lognormal": 39,
+    "n_shared_cell": 58
+   },
+   "KIT cold | KIT": {
+    "named": true,
+    "power_calc": 0.2099328504599557,
+    "power_sim_lognormal": 0.2437,
+    "n_calc": 205,
+    "n_sim_lognormal": 198,
+    "n_shared_cell": 306
+   },
+   "Sandia cold | Geslin": {
+    "named": false,
+    "power_calc": 0.9546588184397683,
+    "power_sim_lognormal": 0.9425,
+    "n_calc": 13,
+    "n_sim_lognormal": 19,
+    "n_shared_cell": 15
+   },
+   "Sandia cold | KIT": {
+    "named": false,
+    "power_calc": 0.34667079630646314,
+    "power_sim_lognormal": 0.4008,
+    "n_calc": 60,
+    "n_sim_lognormal": 65,
+    "n_shared_cell": 68
+   },
+   "pooled cold | Geslin": {
+    "named": false,
+    "power_calc": 0.9965075702058976,
+    "power_sim_lognormal": 0.9846,
+    "n_calc": 22,
+    "n_sim_lognormal": 28,
+    "n_shared_cell": 27
+   },
+   "pooled cold | KIT": {
+    "named": false,
+    "power_calc": 0.513168018999524,
+    "power_sim_lognormal": 0.5503,
+    "n_calc": 109,
+    "n_sim_lognormal": 114,
+    "n_shared_cell": 137
+   }
+  },
+  "verdicts": {
+   "P1": true,
+   "P2": true,
+   "P3": false,
+   "P4": true,
+   "P5": true,
+   "P6": true,
+   "P7": false,
+   "P8": true
+  }
+ },
+ "flags": [
+  "Ties: by D72's rule 140 of the 142 KIT pairs (104 of the 106 scored) are ties, so the KIT untied bracket holds two pairs (P049-3/P049-2 and P052-3/P052-1, both 25 C, warm band) in two sets and no cold pair; its numbers (beta -88.2, s_w 170 % per K, residual sd 0.456) carry no information, and the pooled untied bracket is the same two pairs. D72 reports the empty Sandia bracket but not the near-empty KIT one.",
+  "Monte Carlo noise in the intervals: this run's KIT beta interval [-1.913, 1.427] lies 2.4 and 2.0 Monte Carlo sd from the mean of 200 replicate 10,000-draw bootstraps [-2.015, 1.344] (end sd 0.043, 0.042); 1,000,000 draws give [-2.032, 1.343]. The pooled lower end -0.557 lies 2.2 sd from its replicate mean -0.511. The seed was fixed before the run and is kept; the pipeline's intervals should be compared within several Monte Carlo sd, not to rounding. P1, P2 and P8 hold in all 200 replicates and at 1,000,000 draws.",
+  "Pooled warm s_w: this run's interval [-7.108, -0.030] % per K excludes zero, but 65.5% of the replicates and the 1,000,000-draw interval [-7.106, 0.031] include it: any statement that the pooled warm within-set lever is negative rests on Monte Carlo noise (unscored).",
+  "B4, pooled against the KIT floor: the interval's lower end 0.1056 lies 0.0014 above sd(e) = 0.10413, so the pooled noise is recorded as not the KIT floor; stable over Monte Carlo (no replicate includes it; 1,000,000 draws give 0.1057) but a margin of 1.4 %. KIT and Sandia include the KIT floor's sd(e) and exclude Geslin's in every replicate. For KIT the comparison is partly circular (D74): the KIT floor comes from cells 1 and 2 of these same sets.",
+  "P3 fails on the point estimate: the KIT warm s_w is -5.19 % per K [-16.0, 8.2]. In the same band the registered per-band sign test (unscored) gives 24 of 70 agreeing, two-sided p = 0.0115, and the per-band beta (an extra, not a B1 quantity) is -7.75 [-17.82, -1.95], excluding both 0 and 1: the KIT beta near zero (-0.086) mixes a negative warm band with a cold band at 0.32 [-0.78, 2.65].",
+  "P4 holds on a point estimate of -0.79 % per K whose interval [-9.3, 4.0] spans zero widely: deterministic, but the sign carries little information.",
+  "P7 fails by a wide margin (width ratio 0.954; replicate means 3.223 and 3.359; 1,000,000 draws 0.953): the Sandia swing differences (dT rms 1.54 K against 0.44 K for KIT) give its 56 pairs more leverage than KIT's 106; the ties the prediction names do not decide the width.",
+  "Sandia without the NCA 15 C 1C pair (bracket): beta 1.809 [0.117, 2.832] excludes zero in every replicate (lower end sd 0.025; 1,000,000 draws 0.116), against 1.550 [-0.707, 2.482] with it: one pair whose cell b sensor did not follow the cell (dT 3.98 K, the largest in its band) moves the Sandia interval off zero. Unscored.",
+  "Sandia measure (b) orients 21 of the 56 pairs the other way from measure (a); beta 0.698 [-2.256, 2.646].",
+  "Pooling mixes two temperature measures: KIT dT is the difference of mean cell temperatures, Sandia dT the difference of within-cycle swings (D43, D72); and the Sandia 2C and 3C groups carry the 1C lever (D72), though Stage 3's secondary 2C levers differ (NCA 25 to 35 C +1.30 against -2.04 % per K at 1C; NMC -7.14 against -2.44).",
+  "V4 (C1): within 5 % in 19 of 20 cases with this run's seeds; it fails in Sandia cold | Geslin (-0.0617; passes in 5% of 20 replicate simulations, mean -0.0590). Seed-dependent V4 verdicts (replicate pass share strictly between 0 and 1): Sandia warm | Geslin (replicate pass share 0.95, mean -0.0395); Sandia cold | Geslin (replicate pass share 0.05, mean -0.0590); Sandia cold | KIT (replicate pass share 0.75, mean -0.0474). P6's case passes in every replicate.",
+  "P6 holds with margin: KIT calculated detectable |s| 6.560 % per K (simulated 6.508) against 3.580; under the Geslin floor, beside it, the value is 2.806 % per K, below the cold median, so the verdict rests on the KIT floor being the one scored.",
+  "C1's calculation keeps df = n - 1 and independent pairs, while the pairs of a set share cells (F = 1.5000 KIT, 1.7240 Sandia, 1.6944 pooled); the shared-cell line raises KIT's detectable |s| to 8.034 % per K, still at df = n - 1.",
+  "C2: with dT resampled from a skewed band the simulated n exceeds the calculation at small n: Sandia cold under the Geslin floor 19 against 13, pooled cold 28 against 22. The named cases agree closely: KIT warm 4147 against 4221 (5 replicates [4176, 4196, 4242, 4230, 4203]), KIT cold 198 against 205 (5 replicates [204, 203, 207, 204, 205]).",
+  "Influence (checker's leave-one-set-out sensitivity, out/influence.json): one set carries most of each fit. KIT P036 (10 C, 10-100 1.67/1.00C, lever -11.59 % per K) holds 52% of KIT's sum of p^2; without it KIT beta is -0.373 [-2.91, 2.01]. Sandia NMC 25 C 0-100 0.5/3C (a 3C group carrying the 1C lever; its cell c has the smallest swing, 6.0 K against 10.1 to 11.3 K, and the shortest life) holds 57% of Sandia's and 41% of the pooled sum of p^2 (Sandia as a whole 72 %); without it Sandia beta is 0.679 [-1.42, 2.94] and pooled 0.320 [-0.86, 1.56], against 1.550 and 1.096 with it. No verdict changes (P7's ratio would be about 1.3), but the Sandia and pooled point values describe one group more than the dataset.",
+  "C2 simulated n, Monte Carlo: this run's KIT cold value 198 is below all five replicates ([204, 203, 207, 204, 205]): at n = 198 this run's simulated power is 0.8005, while other seeds average about 0.793 there, so the bisection's first crossing landed a few pairs low; the simulated n carries a spread of a few pairs near 200 and about 1 % near 4,200.",
+  "D77's V3 wording: the literal first NMC pair at 25 C in stage3_pairs.csv is the 0.5/0.5C pair without measure (a); the parenthesis names the 0.5/1C pair, which this check computed.",
+  "Brief against D72: the brief's A1 gives every one of the 142 KIT pairs a lever and P1's expectation cites 142 pairs at a median 0.6 K; D72 leaves the 36 pairs at 0 C unscored (no secant reaches 0 C), so the scored test has 106, and 0.59 K is the median within-set temperature range, while the median pair dT is 0.33 K over the 142 pairs and 0.26 K over the 106 scored. The predictions file states both.",
+  "Brief against D74: the brief resamples 'protocols, not pairs'; D74 resamples sets. With protocols as clusters (the 12 KIT protocols; the 11 Sandia chemistry, window and rate combinations) the KIT interval is [-1.675, 1.242], Sandia [-0.139, 2.531], pooled [-0.233, 1.932]: no verdict would change.",
+  "scipy's noncentral t returned nan for the lower tail 36 times, all at Brent's trial points nc = 11.8 and 23.7 far from the root (about 2.8), filled by quadrature; no reported value is affected (D64's issue, harmless here)."
+ ],
+ "outputs_sha256": {
+  "out/B.csv": "044c0b4be4e22b22630ebf22317d25f374c899ba50304ef935f81d924ca8c28b",
+  "out/B.json": "5e3f63eb18ab810aa08401cba131443f054e21ad1b33f442fc40b372ed65d310",
+  "out/B_crosscheck.json": "18e221fe4ddfdba7cba0b8bd17722e7b255f2ac020621daf7b3c777053979d2b",
+  "out/C.json": "c37e0110421ace47e2622c30651589ceaac44f393da56c4af78f03ad6488b9cc",
+  "out/C1.csv": "9d4664d7f96bd9fcb50fe01305c1809619acebb108b1973ae519653681e2afa8",
+  "out/C2.csv": "96af9b55f6012c97f04084ba77355061abcdb37dc32742dbbfc2a00775b3efda",
+  "out/C_mc_spread.json": "7785949ac21f2f7b0f0ce5107c6183cc5b71d65d3943000940dbe593266178b3",
+  "out/crosscheck_stage4_power.json": "13eb66bfe63da7d1b96054460c5bd647d7080356e84e404bdae6e8b71677e8e1",
+  "out/influence.json": "e606d3367323ae729654928e36311940b2c3074246cae32ef04f9f08aa4e0198",
+  "out/pairs.csv": "b3bf1e87e71b50bf33a4947a1aeefb283b638d8de1f9d4978b553a3a5939a34b",
+  "out/pairs.json": "ef913a13c052a33c362db0afa48142285d4d7a183d551e0497c9447e101054a0",
+  "out/scorecard.csv": "bcb5c7a1eaa17267b3255c2adbb4f5c5245a7701f4b00423b66273718f7faa2c",
+  "out/scorecard.json": "297963fb94a92e461f94d3039ecccc8d96108e1343797444eefaa885069cf4a2",
+  "out/v3_hand.json": "578c98d55a598c96c496cd37b1231ac32e126a87f439abbfc14e53052ead8c31",
+  "crosscheck_b.py": "29623e5c2a56820fe718f19317ebb97629bfe1f8cdaa9fbc856264693baea754",
+  "crosscheck_stage4_power.py": "51c3ddf0687f3879f0ff1a586f0fd4c30c26f4864fe12f28e8f7315ac68eb639",
+  "hand_v3.py": "a2bd9fa6440e8bae3afce4d999ed357cc9364e4e00a0bb8cf448c634225847f2",
+  "ind_common.py": "1a44587aa2bd85c48c657bc144ce61138c88f912efb684a6987a92f5f333b2d7",
+  "influence.py": "4eb0b00c92b42f429c6a227ce7214eed21eea34187fe11f389250feebd8ed5d3",
+  "make_record.py": "d52f300b78fd0896aad261566b96411b73535857c8eabd934fe51f895e59cbe0",
+  "mc_spread_c.py": "0c1e014b676e4dd66ac959cb9663b48acbfdbe14aa25da21c141b19f5693bc2d",
+  "pairs.py": "43c75b115b9e54f88c0e1a117b5d1c729691c16bb68a1afd16029cff26c763f1",
+  "partb.py": "ba643610385f4ca939c064097033fae29c50b255ae138333996d8359d21c9e93",
+  "partc.py": "78714d43194c49eeef1a1f711523291bab99e7343c0044eb24cfba51ded40b46",
+  "run_all.sh": "c1be8f76db2e9cba437efcdb34fb0d7b81fee61beaef144147b482fb37e0e314",
+  "score.py": "fc53ed72d6896c9b224211080fb4284f1f60ad6186dcbb01d56c5158ab6e2134"
+ }
+}

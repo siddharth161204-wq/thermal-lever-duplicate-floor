@@ -1,0 +1,329 @@
+{
+ "counts": {
+  "KIT": {
+   "pairs_in_file": 142,
+   "sets_in_file": 48,
+   "scored_pairs": 106,
+   "scored_sets": 36,
+   "scored_ties": 104,
+   "scored_untied": 2,
+   "scored_censored": 0,
+   "by_band": {
+    "warm": {
+     "pairs": 70,
+     "sets": 24,
+     "ties": 68,
+     "untied": 2
+    },
+    "cold": {
+     "pairs": 36,
+     "sets": 12,
+     "ties": 36,
+     "untied": 0
+    }
+   },
+   "not_scored_by_reason": {
+    "0 C set: no secant of results/stage2_lever.json reaches 0 C (D72)": 36
+   },
+   "by_temperature_scored": {
+    "10.0": 36,
+    "25.0": 34,
+    "40.0": 36
+   },
+   "by_temperature_in_file": {
+    "0.0": 36,
+    "10.0": 36,
+    "25.0": 34,
+    "40.0": 36
+   },
+   "untied_pairs": [
+    "P049 P049-3-P049-2 (warm)",
+    "P052 P052-3-P052-1 (warm)"
+   ],
+   "ties_all_142": 140
+  },
+  "Sandia": {
+   "pairs_in_file": 86,
+   "sets_in_file": 31,
+   "scored_pairs": 56,
+   "scored_sets": 21,
+   "scored_ties": 56,
+   "scored_untied": 0,
+   "scored_censored": 0,
+   "by_band": {
+    "warm": {
+     "pairs": 36,
+     "sets": 11,
+     "ties": 36,
+     "untied": 0
+    },
+    "cold": {
+     "pairs": 20,
+     "sets": 10,
+     "ties": 20,
+     "untied": 0
+    }
+   },
+   "not_scored_by_reason": {
+    "measure (a) missing for a cell (0.5C discharge group, D50 (5), or LFP cell c at 35 C, D52)": 26,
+    "LFP 25 to 35 C lever not determinable (D52)": 4
+   },
+   "by_temperature_scored": {
+    "15.0": 6,
+    "25.0": 36,
+    "35.0": 14
+   },
+   "by_temperature_in_file": {
+    "15.0": 6,
+    "25.0": 59,
+    "35.0": 21
+   },
+   "pairs_with_measure_a_both": 60,
+   "ties_among_measure_a_pairs": 59,
+   "untied_measure_a_pairs": [
+    "LFP_35C_0-100_0.5/2C"
+   ],
+   "scored_with_measure_b": 56,
+   "scored_orientation_b_differs": 21,
+   "by_chemistry_band": {
+    "LFP cold": 16,
+    "NCA cold": 2,
+    "NCA warm": 14,
+    "NMC cold": 2,
+    "NMC warm": 22
+   }
+  },
+  "pooled": {
+   "scored_pairs": 162,
+   "scored_sets": 57
+  }
+ },
+ "band_of_25C_sets": {
+  "kit_25C": {
+   "0-100 0.33/0.33C": {
+    "band": "warm",
+    "width_warm": 0.017815543133895453,
+    "width_cold": 0.019265640707732307
+   },
+   "0-100 0.33/1.00C": {
+    "band": "warm",
+    "width_warm": 0.01780720945172606,
+    "width_cold": 0.019037469833499715
+   },
+   "0-100 1.00/1.00C": {
+    "band": "warm",
+    "width_warm": 0.01805090600545519,
+    "width_cold": 0.018755233775259922
+   },
+   "0-100 1.67/1.00C": {
+    "band": "warm",
+    "width_warm": 0.01998945929508314,
+    "width_cold": 0.020658715925304147
+   },
+   "10-100 0.33/0.33C": {
+    "band": "warm",
+    "width_warm": 0.018013601659863022,
+    "width_cold": 0.018791207953068715
+   },
+   "10-100 0.33/1.00C": {
+    "band": "warm",
+    "width_warm": 0.017870896892236792,
+    "width_cold": 0.01855970677657136
+   },
+   "10-100 1.00/1.00C": {
+    "band": "warm",
+    "width_warm": 0.017749413063273,
+    "width_cold": 0.01834863392986319
+   },
+   "10-100 1.67/1.00C": {
+    "band": "warm",
+    "width_warm": 0.017767140366992118,
+    "width_cold": 0.018489346194261402
+   },
+   "10-90 0.33/0.33C": {
+    "band": "warm",
+    "width_warm": 0.01810824031452421,
+    "width_cold": 0.018885423085955318
+   },
+   "10-90 0.33/1.00C": {
+    "band": "warm",
+    "width_warm": 0.018048271357740533,
+    "width_cold": 0.01887615552114219
+   },
+   "10-90 1.00/1.00C": {
+    "band": "warm",
+    "width_warm": 0.017526317021411667,
+    "width_cold": 0.019376280468484275
+   },
+   "10-90 1.67/1.00C": {
+    "band": "warm",
+    "width_warm": 0.01769195585604521,
+    "width_cold": 0.018494946477324595
+   }
+  },
+  "sandia_25C": {
+   "LFP": {
+    "band": "cold",
+    "width_warm": Infinity,
+    "width_cold": 0.008779260980795806
+   },
+   "NCA": {
+    "band": "warm",
+    "width_warm": 0.017462023492528143,
+    "width_cold": 0.0596221397577676
+   },
+   "NMC": {
+    "band": "warm",
+    "width_warm": 0.03886629454674348,
+    "width_cold": 0.053350110221704494
+   }
+  }
+ },
+ "v1_oriented_measure_a": {
+  "pairs_compared": 60,
+  "oriented_file_rows": 60,
+  "max_abs_diff_dT_and_d": 1.734723475976807e-18
+ },
+ "input_hashes": [
+  {
+   "file": "results/stage2_warmer_pairs.csv",
+   "sha256_worktree": "f5bb9d423bb849eed84a654a9268df488e53fba4e6ef8eb60d8ab58e80ff51d4",
+   "sha256_at_v1.3.0": "f5bb9d423bb849eed84a654a9268df488e53fba4e6ef8eb60d8ab58e80ff51d4",
+   "equal_to_archive": true,
+   "first_archived": {
+    "tag": "v1.1.0",
+    "sha256": "f5bb9d423bb849eed84a654a9268df488e53fba4e6ef8eb60d8ab58e80ff51d4"
+   }
+  },
+  {
+   "file": "results/stage2_cells.csv",
+   "sha256_worktree": "1450c1ad454a0e709675727d7100cda402e4da2c4ec6cc2acdbeeb12d6f39cc1",
+   "sha256_at_v1.3.0": "1450c1ad454a0e709675727d7100cda402e4da2c4ec6cc2acdbeeb12d6f39cc1",
+   "equal_to_archive": true,
+   "first_archived": {
+    "tag": "v1.1.0",
+    "sha256": "1450c1ad454a0e709675727d7100cda402e4da2c4ec6cc2acdbeeb12d6f39cc1"
+   }
+  },
+  {
+   "file": "results/stage2_lever.json",
+   "sha256_worktree": "20bb6f6b78304adefd2eb43781cf2d6860c583626b273ca05956133050df9ccf",
+   "sha256_at_v1.3.0": "20bb6f6b78304adefd2eb43781cf2d6860c583626b273ca05956133050df9ccf",
+   "equal_to_archive": true,
+   "first_archived": {
+    "tag": "v1.1.0",
+    "sha256": "20bb6f6b78304adefd2eb43781cf2d6860c583626b273ca05956133050df9ccf"
+   }
+  },
+  {
+   "file": "results/stage3_pairs.csv",
+   "sha256_worktree": "672476bc058fe323a069d6b9341162d0d8c523a323a1218764aa8915f29bc4c8",
+   "sha256_at_v1.3.0": "672476bc058fe323a069d6b9341162d0d8c523a323a1218764aa8915f29bc4c8",
+   "equal_to_archive": true,
+   "first_archived": {
+    "tag": "v1.2.0",
+    "sha256": "672476bc058fe323a069d6b9341162d0d8c523a323a1218764aa8915f29bc4c8"
+   }
+  },
+  {
+   "file": "results/stage3_pairs_oriented_measure_a.csv",
+   "sha256_worktree": "45720d4201b02bcf12382e687fb75f4e4f47ff44f2c6c1175363f7f83c121bac",
+   "sha256_at_v1.3.0": "45720d4201b02bcf12382e687fb75f4e4f47ff44f2c6c1175363f7f83c121bac",
+   "equal_to_archive": true,
+   "first_archived": {
+    "tag": "v1.2.0",
+    "sha256": "45720d4201b02bcf12382e687fb75f4e4f47ff44f2c6c1175363f7f83c121bac"
+   }
+  },
+  {
+   "file": "results/stage3_lever.csv",
+   "sha256_worktree": "2cadaad5babc3f14b19fa6d7642fa3c8fea474512b3854425181262979ff1eb7",
+   "sha256_at_v1.3.0": "2cadaad5babc3f14b19fa6d7642fa3c8fea474512b3854425181262979ff1eb7",
+   "equal_to_archive": true,
+   "first_archived": {
+    "tag": "v1.2.0",
+    "sha256": "2cadaad5babc3f14b19fa6d7642fa3c8fea474512b3854425181262979ff1eb7"
+   }
+  },
+  {
+   "file": "inputs/floor.json",
+   "sha256_worktree": "280a6438cd50730219fd85d5002640bae9aa6fd8582699b00f4630d3bc475d6d",
+   "sha256_at_v1.3.0": "280a6438cd50730219fd85d5002640bae9aa6fd8582699b00f4630d3bc475d6d",
+   "equal_to_archive": true,
+   "first_archived": {
+    "tag": "v1.0.0",
+    "sha256": "280a6438cd50730219fd85d5002640bae9aa6fd8582699b00f4630d3bc475d6d"
+   }
+  },
+  {
+   "file": "results/stage4_experiment.json",
+   "sha256_worktree": "e96ae27047b3d02a7392faf3a612c4d014f2c8ac57c2256ac12df0c31ebfd3e4",
+   "sha256_at_v1.3.0": "e96ae27047b3d02a7392faf3a612c4d014f2c8ac57c2256ac12df0c31ebfd3e4",
+   "equal_to_archive": true,
+   "first_archived": {
+    "tag": "v1.3.0",
+    "sha256": "e96ae27047b3d02a7392faf3a612c4d014f2c8ac57c2256ac12df0c31ebfd3e4"
+   }
+  },
+  {
+   "file": "results/stage4_paper_numbers.json",
+   "sha256_worktree": "0c9e1b8655475805d4fa2c651108bb6b442a84cf79dc7a31d437428c69a26e8b",
+   "sha256_at_v1.3.0": "0c9e1b8655475805d4fa2c651108bb6b442a84cf79dc7a31d437428c69a26e8b",
+   "equal_to_archive": true,
+   "first_archived": {
+    "tag": "v1.3.0",
+    "sha256": "0c9e1b8655475805d4fa2c651108bb6b442a84cf79dc7a31d437428c69a26e8b"
+   }
+  }
+ ],
+ "shapes_rebuilt": {
+  "Geslin": {
+   "sigma": 0.8924826121449437,
+   "mu": -3.907825821759782,
+   "roots": [
+    0.8924826121449437,
+    2.3972246417580005
+   ],
+   "sd_e": 0.04454298465298393,
+   "sd_e_normal_shape": 0.03748659552310122,
+   "median": 0.020084120083597105,
+   "mean_check": 0.02990997580494428,
+   "p95_check": 0.08717631863980337,
+   "floor": {
+    "mean": 0.029909975804944276,
+    "median": 0.017457049305555493,
+    "p95": 0.08717631863980334,
+    "pairs": 45
+   }
+  },
+  "KIT": {
+   "sigma": 0.8375683482201406,
+   "mu": -2.963636238116627,
+   "roots": [
+    0.8375683482201406,
+    2.452138905682804
+   ],
+   "sd_e": 0.10412996462328801,
+   "sd_e_normal_shape": 0.09189721851570246,
+   "median": 0.05163083341684164,
+   "mean_check": 0.07332337183440621,
+   "p95_check": 0.20475136231315813,
+   "floor": {
+    "mean": 0.07332337183440621,
+    "median": 0.04090182488777854,
+    "p95": 0.2047513623131581,
+    "pairs": 47
+   }
+  }
+ },
+ "band_medians": {
+  "warm": {
+   "label": "KIT 0-100 0.33/0.33C",
+   "s": 0.013029423647732621
+  },
+  "cold": {
+   "label": "KIT 0-100 1.67/1.00C",
+   "s": -0.03580047101563345
+  }
+ }
+}
