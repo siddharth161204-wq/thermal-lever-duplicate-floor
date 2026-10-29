@@ -1,0 +1,927 @@
+{
+ "commits": {
+  "predictions": {
+   "commit": "da613a1488838fd8a73032882d4f9fc5d6a0750d",
+   "pushed_utc": "2026-10-29T04:09:13Z",
+   "predictions_stage5_md_sha256": "db5ba3ff88b721d12fe5f556e2673acf132b394bfc412b6fd28b268ee4f87799"
+  },
+  "code": {
+   "commit": "ee4a403",
+   "pushed_utc": "2026-10-29T04:16:27Z"
+  },
+  "results": {
+   "commit": "101ca54a199def64ab7227a41277e2408b7f5e91",
+   "pushed_utc": "2026-10-29T04:22:03Z"
+  }
+ },
+ "counts": {
+  "KIT pairs in file": 142,
+  "KIT scored": 106,
+  "KIT scored sets": 36,
+  "KIT 0 C pairs, not scored": 36,
+  "KIT warm": 70,
+  "KIT cold": 36,
+  "KIT ties among scored": 104,
+  "KIT ties among all 142": 140,
+  "Sandia pairs in file": 86,
+  "Sandia with measure (a)": 60,
+  "Sandia scored": 56,
+  "Sandia scored groups": 21,
+  "Sandia warm": 36,
+  "Sandia cold": 20,
+  "Sandia ties among scored": 56,
+  "Sandia ties among the 60 with measure (a)": 59,
+  "Sandia with measure (a) but no lever": 4,
+  "pooled scored": 162
+ },
+ "beta": {
+  "KIT": {
+   "beta": -0.08620194672914532,
+   "ci95": [
+    -2.047874370928099,
+    1.3713407424405013
+   ],
+   "width": 3.4192151133686,
+   "pairs": 106,
+   "sets": 36
+  },
+  "Sandia": {
+   "beta": 1.5495857828171264,
+   "ci95": [
+    -0.7415311750654159,
+    2.497771531486677
+   ],
+   "width": 3.2393027065520927,
+   "pairs": 56,
+   "sets": 21
+  },
+  "pooled": {
+   "beta": 1.0955874575178044,
+   "ci95": [
+    -0.4926223944285118,
+    1.955666809066538
+   ],
+   "width": 2.4482892034950496,
+   "pairs": 162,
+   "sets": 57
+  }
+ },
+ "within_set_lever_pct_per_K": {
+  "KIT": {
+   "warm": {
+    "s_w": -5.190860433846528,
+    "ci95": [
+     -16.34543488478575,
+     8.183156854380558
+    ],
+    "pairs": 70,
+    "band_median": 1.302942364773262
+   },
+   "cold": {
+    "s_w": -0.7932123089035018,
+    "ci95": [
+     -9.44139853141182,
+     4.062047902146028
+    ],
+    "pairs": 36,
+    "band_median": -3.5800471015633453
+   }
+  },
+  "Sandia": {
+   "warm": {
+    "s_w": -4.345486296296944,
+    "ci95": [
+     -7.124944497780987,
+     0.4554431054211509
+    ],
+    "pairs": 36,
+    "band_median": 1.302942364773262
+   },
+   "cold": {
+    "s_w": 7.104824601238863,
+    "ci95": [
+     -4.081310945925567,
+     18.47503637485085
+    ],
+    "pairs": 20,
+    "band_median": -3.5800471015633453
+   }
+  },
+  "pooled": {
+   "warm": {
+    "s_w": -4.405269896391495,
+    "ci95": [
+     -7.1449361186744875,
+     -0.10472392897073303
+    ],
+    "pairs": 106,
+    "band_median": 1.302942364773262
+   },
+   "cold": {
+    "s_w": 4.421256826043753,
+    "ci95": [
+     -3.259910227993789,
+     8.095634051223492
+    ],
+    "pairs": 56,
+    "band_median": -3.5800471015633453
+   }
+  },
+  "KIT 0 C (unscored)": {
+   "s_w": -1.2806283734062653,
+   "ci95": [
+    -3.5028946058671795,
+    0.6543238317114637
+   ],
+   "pairs": 36
+  }
+ },
+ "sign": {
+  "KIT": {
+   "all": {
+    "pairs": 106,
+    "left_out_zero": 0,
+    "agree": 45,
+    "share": 0.42452830188679247,
+    "p_two_sided": 0.14478233933005036
+   },
+   "warm": {
+    "pairs": 70,
+    "left_out_zero": 0,
+    "agree": 24,
+    "share": 0.34285714285714286,
+    "p_two_sided": 0.011526409654363478
+   },
+   "cold": {
+    "pairs": 36,
+    "left_out_zero": 0,
+    "agree": 21,
+    "share": 0.5833333333333334,
+    "p_two_sided": 0.4050322461407632
+   }
+  },
+  "Sandia": {
+   "all": {
+    "pairs": 56,
+    "left_out_zero": 0,
+    "agree": 32,
+    "share": 0.5714285714285714,
+    "p_two_sided": 0.34968195298368476
+   },
+   "warm": {
+    "pairs": 36,
+    "left_out_zero": 0,
+    "agree": 23,
+    "share": 0.6388888888888888,
+    "p_two_sided": 0.13249816396273675
+   },
+   "cold": {
+    "pairs": 20,
+    "left_out_zero": 0,
+    "agree": 9,
+    "share": 0.45,
+    "p_two_sided": 0.8238029479980469
+   }
+  },
+  "pooled": {
+   "all": {
+    "pairs": 162,
+    "left_out_zero": 0,
+    "agree": 77,
+    "share": 0.47530864197530864,
+    "p_two_sided": 0.5824757301133331
+   },
+   "warm": {
+    "pairs": 106,
+    "left_out_zero": 0,
+    "agree": 47,
+    "share": 0.44339622641509435,
+    "p_two_sided": 0.28528442186565844
+   },
+   "cold": {
+    "pairs": 56,
+    "left_out_zero": 0,
+    "agree": 30,
+    "share": 0.5357142857142857,
+    "p_two_sided": 0.6888797607233395
+   }
+  }
+ },
+ "residual": {
+  "KIT": {
+   "sd": 0.13085807008015998,
+   "ci95": [
+    0.0919219482334293,
+    0.16762870610651337
+   ],
+   "floors": {
+    "Geslin": {
+     "sd_e": 0.04454298465298393,
+     "inside": false,
+     "ratio_resid_to_sd_e": 2.937793035191094
+    },
+    "KIT": {
+     "sd_e": 0.10412996462328801,
+     "inside": true,
+     "ratio_resid_to_sd_e": 1.2566802510071573
+    }
+   }
+  },
+  "Sandia": {
+   "sd": 0.15814440057660337,
+   "ci95": [
+    0.09057816345491684,
+    0.2217686655887071
+   ],
+   "floors": {
+    "Geslin": {
+     "sd_e": 0.04454298465298393,
+     "inside": false,
+     "ratio_resid_to_sd_e": 3.550377277334272
+    },
+    "KIT": {
+     "sd_e": 0.10412996462328801,
+     "inside": true,
+     "ratio_resid_to_sd_e": 1.5187213512337578
+    }
+   }
+  },
+  "pooled": {
+   "sd": 0.1416642793293986,
+   "ci95": [
+    0.10513465311531804,
+    0.17532819036857952
+   ],
+   "floors": {
+    "Geslin": {
+     "sd_e": 0.04454298465298393,
+     "inside": false,
+     "ratio_resid_to_sd_e": 3.180394857530242
+    },
+    "KIT": {
+     "sd_e": 0.10412996462328801,
+     "inside": false,
+     "ratio_resid_to_sd_e": 1.360456424256926
+    }
+   }
+  }
+ },
+ "brackets": {
+  "KIT untied": {
+   "pairs": 2,
+   "beta": -88.22420283930613,
+   "ci95": [
+    -169.39278756720321,
+    96.90951721302008
+   ]
+  },
+  "Sandia untied": {
+   "pairs": 0,
+   "note": "no scored Sandia pair is untied (D72)"
+  },
+  "pooled untied": {
+   "same_pairs_as": "KIT untied",
+   "pairs": 2,
+   "note": "no scored Sandia pair is untied, so the pooled untied pairs are the KIT untied pairs and their numbers are KIT's"
+  },
+  "Sandia measure (b)": {
+   "beta": 0.6975568717976246,
+   "ci95": [
+    -2.026720282004891,
+    2.6420442734988234
+   ],
+   "sign": {
+    "pairs": 56,
+    "left_out_zero": 0,
+    "agree": 31,
+    "share": 0.5535714285714286,
+    "p_two_sided": 0.5044037600228255
+   }
+  },
+  "Sandia without the NCA 15 C 1C pair": {
+   "beta": 1.808921185018189,
+   "ci95": [
+    0.108834023035711,
+    2.8957796225611596
+   ],
+   "sign": {
+    "pairs": 55,
+    "left_out_zero": 0,
+    "agree": 32,
+    "share": 0.5818181818181818,
+    "p_two_sided": 0.2806097176983541
+   }
+  }
+ },
+ "C1": [
+  {
+   "case": "KIT",
+   "floor": "KIT",
+   "registered": true,
+   "pairs": 106,
+   "dT_rms_K": 0.4359435306009399,
+   "detectable_s_per_K": 0.06559944091124832,
+   "sim_lognormal_detectable_s_per_K": 0.064711957630335,
+   "detectable_s_shared_cells_per_K": 0.08034257869799437,
+   "shared_cell_F": 1.4999999953618894,
+   "detectable_s_normal_shape_per_K": 0.05789309712855512,
+   "v4_rel_diff": -0.013528823852538936,
+   "v4_pass": true
+  },
+  {
+   "case": "KIT",
+   "floor": "Geslin",
+   "registered": true,
+   "pairs": 106,
+   "dT_rms_K": 0.4359435306009399,
+   "detectable_s_per_K": 0.028061037956985384,
+   "sim_lognormal_detectable_s_per_K": 0.02763128159354465,
+   "detectable_s_shared_cells_per_K": 0.03436761227061404,
+   "shared_cell_F": 1.4999999953618894,
+   "detectable_s_normal_shape_per_K": 0.02361567793552849,
+   "v4_rel_diff": -0.015315055847168002,
+   "v4_pass": true
+  },
+  {
+   "case": "Sandia",
+   "floor": "KIT",
+   "registered": true,
+   "pairs": 56,
+   "dT_rms_K": 1.5369800142453887,
+   "detectable_s_per_K": 0.025817689300349188,
+   "sim_lognormal_detectable_s_per_K": 0.025098170319918487,
+   "detectable_s_shared_cells_per_K": 0.033898982369973366,
+   "shared_cell_F": 1.7240052424998333,
+   "detectable_s_normal_shape_per_K": 0.022784736783383698,
+   "v4_rel_diff": -0.027869224548339774,
+   "v4_pass": true
+  },
+  {
+   "case": "Sandia",
+   "floor": "Geslin",
+   "registered": true,
+   "pairs": 56,
+   "dT_rms_K": 1.5369800142453887,
+   "detectable_s_per_K": 0.01104386179752693,
+   "sim_lognormal_detectable_s_per_K": 0.010640097563108065,
+   "detectable_s_shared_cells_per_K": 0.0145007429602048,
+   "shared_cell_F": 1.7240052424998333,
+   "detectable_s_normal_shape_per_K": 0.009294320608333958,
+   "v4_rel_diff": -0.03656005859375033,
+   "v4_pass": true
+  },
+  {
+   "case": "pooled",
+   "floor": "KIT",
+   "registered": true,
+   "pairs": 162,
+   "dT_rms_K": 0.9700266648783246,
+   "detectable_s_per_K": 0.023770703809925825,
+   "sim_lognormal_detectable_s_per_K": 0.023475569463057865,
+   "detectable_s_shared_cells_per_K": 0.030942132612120192,
+   "shared_cell_F": 1.6944018031214685,
+   "detectable_s_normal_shape_per_K": 0.020978222456864874,
+   "v4_rel_diff": -0.012415885925292735,
+   "v4_pass": true
+  },
+  {
+   "case": "pooled",
+   "floor": "Geslin",
+   "registered": true,
+   "pairs": 162,
+   "dT_rms_K": 0.9700266648783246,
+   "detectable_s_per_K": 0.010168236384468803,
+   "sim_lognormal_detectable_s_per_K": 0.009829358526600945,
+   "detectable_s_shared_cells_per_K": 0.013235910941277951,
+   "shared_cell_F": 1.6944018031214685,
+   "detectable_s_normal_shape_per_K": 0.008557409601028963,
+   "v4_rel_diff": -0.03332710266113283,
+   "v4_pass": true
+  },
+  {
+   "case": "KIT warm",
+   "floor": "KIT",
+   "registered": false,
+   "pairs": 70,
+   "dT_rms_K": 0.3447242389907206,
+   "detectable_s_per_K": 0.1025834403000705,
+   "sim_lognormal_detectable_s_per_K": 0.10105541490749352,
+   "detectable_s_shared_cells_per_K": 0.12563854192679816,
+   "shared_cell_F": 1.4999999887677764,
+   "detectable_s_normal_shape_per_K": 0.09053237330340991,
+   "v4_rel_diff": -0.014895439147949137,
+   "v4_pass": true
+  },
+  {
+   "case": "KIT warm",
+   "floor": "Geslin",
+   "registered": false,
+   "pairs": 70,
+   "dT_rms_K": 0.3447242389907206,
+   "detectable_s_per_K": 0.043881438195684866,
+   "sim_lognormal_detectable_s_per_K": 0.042989937457652824,
+   "detectable_s_shared_cells_per_K": 0.05374356617822361,
+   "shared_cell_F": 1.4999999887677764,
+   "detectable_s_normal_shape_per_K": 0.036929849614455924,
+   "v4_rel_diff": -0.020316123962402594,
+   "v4_pass": true
+  },
+  {
+   "case": "KIT cold",
+   "floor": "KIT",
+   "registered": false,
+   "pairs": 36,
+   "dT_rms_K": 0.5731618128169229,
+   "detectable_s_per_K": 0.08724846885833396,
+   "sim_lognormal_detectable_s_per_K": 0.08483639203821386,
+   "detectable_s_shared_cells_per_K": 0.10685711477101327,
+   "shared_cell_F": 1.5,
+   "detectable_s_normal_shape_per_K": 0.0769988891942985,
+   "v4_rel_diff": -0.027646064758300854,
+   "v4_pass": true
+  },
+  {
+   "case": "KIT cold",
+   "floor": "Geslin",
+   "registered": false,
+   "pairs": 36,
+   "dT_rms_K": 0.5731618128169229,
+   "detectable_s_per_K": 0.037321699122944085,
+   "sim_lognormal_detectable_s_per_K": 0.036116493154085355,
+   "detectable_s_shared_cells_per_K": 0.04570955959244478,
+   "shared_cell_F": 1.5,
+   "detectable_s_normal_shape_per_K": 0.03140928813271484,
+   "v4_rel_diff": -0.03229236602783209,
+   "v4_pass": true
+  },
+  {
+   "case": "Sandia warm",
+   "floor": "KIT",
+   "registered": false,
+   "pairs": 36,
+   "dT_rms_K": 1.7425156243271465,
+   "detectable_s_per_K": 0.028698446015745577,
+   "sim_lognormal_detectable_s_per_K": 0.027730761312129704,
+   "detectable_s_shared_cells_per_K": 0.03901553844366852,
+   "shared_cell_F": 1.8482403528220621,
+   "detectable_s_normal_shape_per_K": 0.025327074431562076,
+   "v4_rel_diff": -0.03371906280517585,
+   "v4_pass": true
+  },
+  {
+   "case": "Sandia warm",
+   "floor": "Geslin",
+   "registered": false,
+   "pairs": 36,
+   "dT_rms_K": 1.7425156243271465,
+   "detectable_s_per_K": 0.012276144000130435,
+   "sim_lognormal_detectable_s_per_K": 0.011715088197863124,
+   "detectable_s_shared_cells_per_K": 0.016689418232411875,
+   "shared_cell_F": 1.8482403528220621,
+   "detectable_s_normal_shape_per_K": 0.010331387721351512,
+   "v4_rel_diff": -0.045702934265136504,
+   "v4_pass": true
+  },
+  {
+   "case": "Sandia cold",
+   "floor": "KIT",
+   "registered": false,
+   "pairs": 20,
+   "dT_rms_K": 1.071919734815862,
+   "detectable_s_per_K": 0.06415757066311999,
+   "sim_lognormal_detectable_s_per_K": 0.06085199735812312,
+   "detectable_s_shared_cells_per_K": 0.06829277671385978,
+   "shared_cell_F": 1.1330621187296896,
+   "detectable_s_normal_shape_per_K": 0.056620611674995935,
+   "v4_rel_diff": -0.05152273178100595,
+   "v4_pass": false
+  },
+  {
+   "case": "Sandia cold",
+   "floor": "Geslin",
+   "registered": false,
+   "pairs": 20,
+   "dT_rms_K": 1.071919734815862,
+   "detectable_s_per_K": 0.027444258679609347,
+   "sim_lognormal_detectable_s_per_K": 0.025554641841134026,
+   "detectable_s_shared_cells_per_K": 0.02921314835820871,
+   "shared_cell_F": 1.1330621187296896,
+   "detectable_s_normal_shape_per_K": 0.023096607301211807,
+   "v4_rel_diff": -0.0688529014587403,
+   "v4_pass": false
+  },
+  {
+   "case": "pooled warm",
+   "floor": "KIT",
+   "registered": false,
+   "pairs": 106,
+   "dT_rms_K": 1.053419505137388,
+   "detectable_s_per_K": 0.02714744860601917,
+   "sim_lognormal_detectable_s_per_K": 0.02651827409122627,
+   "detectable_s_shared_cells_per_K": 0.036660247836498044,
+   "shared_cell_F": 1.8236133128681922,
+   "detectable_s_normal_shape_per_K": 0.023958281611990238,
+   "v4_rel_diff": -0.023176193237304722,
+   "v4_pass": true
+  },
+  {
+   "case": "pooled warm",
+   "floor": "Geslin",
+   "registered": false,
+   "pairs": 106,
+   "dT_rms_K": 1.053419505137388,
+   "detectable_s_per_K": 0.011612684120275094,
+   "sim_lognormal_detectable_s_per_K": 0.011302913166592942,
+   "detectable_s_shared_cells_per_K": 0.015681911183426257,
+   "shared_cell_F": 1.8236133128681922,
+   "detectable_s_normal_shape_per_K": 0.009773031509803215,
+   "v4_rel_diff": -0.026675224304199305,
+   "v4_pass": true
+  },
+  {
+   "case": "pooled cold",
+   "floor": "KIT",
+   "registered": false,
+   "pairs": 56,
+   "dT_rms_K": 0.7883839602305271,
+   "detectable_s_per_K": 0.050332419823750245,
+   "sim_lognormal_detectable_s_per_K": 0.04862642566314013,
+   "detectable_s_shared_cells_per_K": 0.05644728728571171,
+   "shared_cell_F": 1.2577390080476993,
+   "detectable_s_normal_shape_per_K": 0.044419580854566106,
+   "v4_rel_diff": -0.03389453887939467,
+   "v4_pass": true
+  },
+  {
+   "case": "pooled cold",
+   "floor": "Geslin",
+   "registered": false,
+   "pairs": 56,
+   "dT_rms_K": 0.7883839602305271,
+   "detectable_s_per_K": 0.021530365556807766,
+   "sim_lognormal_detectable_s_per_K": 0.020922918567145024,
+   "detectable_s_shared_cells_per_K": 0.024146081873412852,
+   "shared_cell_F": 1.2577390080476993,
+   "detectable_s_normal_shape_per_K": 0.018119578456188855,
+   "v4_rel_diff": -0.028213500976562417,
+   "v4_pass": true
+  },
+  {
+   "case": "KIT all 142 pairs",
+   "floor": "KIT",
+   "registered": false,
+   "pairs": 142,
+   "dT_rms_K": 0.6408844831037515,
+   "detectable_s_per_K": 0.038461914131599995,
+   "sim_lognormal_detectable_s_per_K": 0.03785900267589139,
+   "detectable_s_shared_cells_per_K": 0.04710603205142633,
+   "shared_cell_F": 1.4999999983980108,
+   "detectable_s_normal_shape_per_K": 0.0339435717689023,
+   "v4_rel_diff": -0.01567554473876952,
+   "v4_pass": true
+  },
+  {
+   "case": "KIT all 142 pairs",
+   "floor": "Geslin",
+   "registered": false,
+   "pairs": 142,
+   "dT_rms_K": 0.6408844831037515,
+   "detectable_s_per_K": 0.016452598030606613,
+   "sim_lognormal_detectable_s_per_K": 0.016210008444204477,
+   "detectable_s_shared_cells_per_K": 0.02015023504829265,
+   "shared_cell_F": 1.4999999983980108,
+   "detectable_s_normal_shape_per_K": 0.013846218264949731,
+   "v4_rel_diff": -0.01474475860595691,
+   "v4_pass": true
+  }
+ ],
+ "C2": [
+  {
+   "dataset": "KIT",
+   "band": "warm",
+   "floor": "KIT",
+   "registered": true,
+   "pairs": 70,
+   "dT_rms_K": 0.3447242389907206,
+   "abs_s_per_K": 0.013029423647732621,
+   "power_calc": 0.06463197111453421,
+   "power_sim_lognormal": 0.0631,
+   "pairs_needed_calc": 4221,
+   "pairs_needed_sim_lognormal_resampled": 4259,
+   "pairs_needed_shared_cells": 6330,
+   "pairs_needed_normal_shape": 3288
+  },
+  {
+   "dataset": "KIT",
+   "band": "warm",
+   "floor": "Geslin",
+   "registered": false,
+   "pairs": 70,
+   "dT_rms_K": 0.3447242389907206,
+   "abs_s_per_K": 0.013029423647732621,
+   "power_calc": 0.13227908406438538,
+   "power_sim_lognormal": 0.1436,
+   "pairs_needed_calc": 774,
+   "pairs_needed_sim_lognormal_resampled": 766,
+   "pairs_needed_shared_cells": 1160,
+   "pairs_needed_normal_shape": 549
+  },
+  {
+   "dataset": "KIT",
+   "band": "cold",
+   "floor": "KIT",
+   "registered": true,
+   "pairs": 36,
+   "dT_rms_K": 0.5731618128169229,
+   "abs_s_per_K": 0.03580047101563345,
+   "power_calc": 0.2099328504599557,
+   "power_sim_lognormal": 0.2423,
+   "pairs_needed_calc": 205,
+   "pairs_needed_sim_lognormal_resampled": 207,
+   "pairs_needed_shared_cells": 306,
+   "pairs_needed_normal_shape": 160
+  },
+  {
+   "dataset": "KIT",
+   "band": "cold",
+   "floor": "Geslin",
+   "registered": false,
+   "pairs": 36,
+   "dT_rms_K": 0.5731618128169229,
+   "abs_s_per_K": 0.03580047101563345,
+   "power_calc": 0.7665437748221144,
+   "power_sim_lognormal": 0.7897,
+   "pairs_needed_calc": 39,
+   "pairs_needed_sim_lognormal_resampled": 38,
+   "pairs_needed_shared_cells": 58,
+   "pairs_needed_normal_shape": 29
+  },
+  {
+   "dataset": "Sandia",
+   "band": "warm",
+   "floor": "KIT",
+   "registered": false,
+   "pairs": 36,
+   "dT_rms_K": 1.7425156243271465,
+   "abs_s_per_K": 0.013029423647732621,
+   "power_calc": 0.24649534116057537,
+   "power_sim_lognormal": 0.2768,
+   "pairs_needed_calc": 168,
+   "pairs_needed_sim_lognormal_resampled": 170,
+   "pairs_needed_shared_cells": 308,
+   "pairs_needed_normal_shape": 131
+  },
+  {
+   "dataset": "Sandia",
+   "band": "warm",
+   "floor": "Geslin",
+   "registered": false,
+   "pairs": 36,
+   "dT_rms_K": 1.7425156243271465,
+   "abs_s_per_K": 0.013029423647732621,
+   "power_calc": 0.8445639106553383,
+   "power_sim_lognormal": 0.8601,
+   "pairs_needed_calc": 33,
+   "pairs_needed_sim_lognormal_resampled": 34,
+   "pairs_needed_shared_cells": 58,
+   "pairs_needed_normal_shape": 24
+  },
+  {
+   "dataset": "Sandia",
+   "band": "cold",
+   "floor": "KIT",
+   "registered": false,
+   "pairs": 20,
+   "dT_rms_K": 1.071919734815862,
+   "abs_s_per_K": 0.03580047101563345,
+   "power_calc": 0.34667079630646314,
+   "power_sim_lognormal": 0.3991,
+   "pairs_needed_calc": 60,
+   "pairs_needed_sim_lognormal_resampled": 65,
+   "pairs_needed_shared_cells": 68,
+   "pairs_needed_normal_shape": 47
+  },
+  {
+   "dataset": "Sandia",
+   "band": "cold",
+   "floor": "Geslin",
+   "registered": false,
+   "pairs": 20,
+   "dT_rms_K": 1.071919734815862,
+   "abs_s_per_K": 0.03580047101563345,
+   "power_calc": 0.9546588184397683,
+   "power_sim_lognormal": 0.9394,
+   "pairs_needed_calc": 13,
+   "pairs_needed_sim_lognormal_resampled": 19,
+   "pairs_needed_shared_cells": 15,
+   "pairs_needed_normal_shape": 10
+  },
+  {
+   "dataset": "pooled",
+   "band": "warm",
+   "floor": "KIT",
+   "registered": false,
+   "pairs": 106,
+   "dT_rms_K": 1.053419505137388,
+   "abs_s_per_K": 0.013029423647732621,
+   "power_calc": 0.2696576062086751,
+   "power_sim_lognormal": 0.2722,
+   "pairs_needed_calc": 454,
+   "pairs_needed_sim_lognormal_resampled": 463,
+   "pairs_needed_shared_cells": 826,
+   "pairs_needed_normal_shape": 354
+  },
+  {
+   "dataset": "pooled",
+   "band": "warm",
+   "floor": "Geslin",
+   "registered": false,
+   "pairs": 106,
+   "dT_rms_K": 1.053419505137388,
+   "abs_s_per_K": 0.013029423647732621,
+   "power_calc": 0.8816704836008469,
+   "power_sim_lognormal": 0.8874,
+   "pairs_needed_calc": 85,
+   "pairs_needed_sim_lognormal_resampled": 94,
+   "pairs_needed_shared_cells": 153,
+   "pairs_needed_normal_shape": 61
+  },
+  {
+   "dataset": "pooled",
+   "band": "cold",
+   "floor": "KIT",
+   "registered": false,
+   "pairs": 56,
+   "dT_rms_K": 0.7883839602305271,
+   "abs_s_per_K": 0.03580047101563345,
+   "power_calc": 0.513168018999524,
+   "power_sim_lognormal": 0.5407,
+   "pairs_needed_calc": 109,
+   "pairs_needed_sim_lognormal_resampled": 115,
+   "pairs_needed_shared_cells": 137,
+   "pairs_needed_normal_shape": 86
+  },
+  {
+   "dataset": "pooled",
+   "band": "cold",
+   "floor": "Geslin",
+   "registered": false,
+   "pairs": 56,
+   "dT_rms_K": 0.7883839602305271,
+   "abs_s_per_K": 0.03580047101563345,
+   "power_calc": 0.9965075702058976,
+   "power_sim_lognormal": 0.9865,
+   "pairs_needed_calc": 22,
+   "pairs_needed_sim_lognormal_resampled": 28,
+   "pairs_needed_shared_cells": 27,
+   "pairs_needed_normal_shape": 16
+  }
+ ],
+ "headline": {
+  "KIT detectable over warm median": 5.0347154781987555,
+  "KIT detectable over cold median": 1.8323625094933016,
+  "Sandia interval width over KIT": 0.9473819573056174,
+  "Sandia dT rms over KIT": 3.525640149142002
+ },
+ "scorecard": {
+  "P1": true,
+  "P2": true,
+  "P3": false,
+  "P4": true,
+  "P5": true,
+  "P6": true,
+  "P7": false,
+  "P8": true
+ },
+ "posthoc": {
+  "note": "after the results; no registered number or verdict changes (D80)",
+  "one_pair_per_set": {
+   "KIT": {
+    "all": {
+     "pairs": 36,
+     "agree": 15,
+     "share": 0.4166666666666667,
+     "p_two_sided": 0.4050322461407632
+    },
+    "warm": {
+     "pairs": 24,
+     "agree": 8,
+     "share": 0.3333333333333333,
+     "p_two_sided": 0.15158963203430176
+    },
+    "cold": {
+     "pairs": 12,
+     "agree": 7,
+     "share": 0.5833333333333334,
+     "p_two_sided": 0.7744140625
+    }
+   },
+   "Sandia": {
+    "all": {
+     "pairs": 21,
+     "agree": 10,
+     "share": 0.47619047619047616,
+     "p_two_sided": 1.0
+    },
+    "warm": {
+     "pairs": 11,
+     "agree": 7,
+     "share": 0.6363636363636364,
+     "p_two_sided": 0.548828125
+    },
+    "cold": {
+     "pairs": 10,
+     "agree": 3,
+     "share": 0.3,
+     "p_two_sided": 0.34375
+    }
+   },
+   "pooled": {
+    "all": {
+     "pairs": 57,
+     "agree": 25,
+     "share": 0.43859649122807015,
+     "p_two_sided": 0.42704285650325524
+    },
+    "warm": {
+     "pairs": 35,
+     "agree": 15,
+     "share": 0.42857142857142855,
+     "p_two_sided": 0.4995598332025112
+    },
+    "cold": {
+     "pairs": 22,
+     "agree": 10,
+     "share": 0.45454545454545453,
+     "p_two_sided": 0.8318119049072266
+    }
+   }
+  },
+  "ties": {
+   "KIT": {
+    "pairs": 106,
+    "ties": 104,
+    "median_lifetime_difference_over_resolution": 0.08620008154763564,
+    "max_lifetime_difference_over_resolution": 1.3553328768297732,
+    "median_resolution_over_lifetime": 0.497996645772932,
+    "resolution_basis": "each cell's res90_efc over its L90 (KIT); the pair's resolution over the pair's mean lifetime (Sandia)"
+   },
+   "Sandia": {
+    "pairs": 56,
+    "ties": 56,
+    "median_lifetime_difference_over_resolution": 0.09780007542753305,
+    "max_lifetime_difference_over_resolution": 0.7181777948330839,
+    "median_resolution_over_lifetime": 1.0476761052090402,
+    "resolution_basis": "each cell's res90_efc over its L90 (KIT); the pair's resolution over the pair's mean lifetime (Sandia)"
+   }
+  },
+  "kit_untied_pairs": [
+   {
+    "set": "P049",
+    "temp_C": "25.0",
+    "protocol": "10-90 0.33/0.33C",
+    "band": "warm",
+    "warm": "P049-3",
+    "cool": "P049-2",
+    "dT_K": "0.10757901087649557",
+    "d": "-0.19909860636569765",
+    "p": "-0.0020544793957445098",
+    "L_warm_efc": "459.3194885785861",
+    "L_cool_efc": "560.5086235433696",
+    "resolution_efc": "74.659987"
+   },
+   {
+    "set": "P052",
+    "temp_C": "25.0",
+    "protocol": "10-90 1.67/1.00C",
+    "band": "warm",
+    "warm": "P052-3",
+    "cool": "P052-1",
+    "dT_K": "0.31176984031093014",
+    "d": "-0.5255880497897545",
+    "p": "0.0031027770269217506",
+    "L_warm_efc": "317.8470322487613",
+    "L_cool_efc": "537.6233844766097",
+    "resolution_efc": "187.2123850000001"
+   }
+  ]
+ },
+ "checks": {
+  "V1": true,
+  "V2": true,
+  "V2_max_point_diff": 2.220446049250313e-16,
+  "V2_max_end_diff_in_mc_sd": 2.186485693062196,
+  "V3": true,
+  "V4_registered": true,
+  "V4_all": false,
+  "V4_failures": [
+   "Sandia cold / KIT",
+   "Sandia cold / Geslin"
+  ],
+  "V4_registered_rel_range": [
+   -0.03656005859375033,
+   -0.012415885925292735
+  ],
+  "normal_check_max_abs_rel": 0.01166820526123026
+ }
+}

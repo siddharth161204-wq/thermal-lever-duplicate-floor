@@ -1,0 +1,113 @@
+{
+ "note": "after the results; no registered number or verdict changes (D80)",
+ "one_pair_per_set": {
+  "KIT": {
+   "all": {
+    "pairs": 36,
+    "agree": 15,
+    "share": 0.4166666666666667,
+    "p_two_sided": 0.4050322461407632
+   },
+   "warm": {
+    "pairs": 24,
+    "agree": 8,
+    "share": 0.3333333333333333,
+    "p_two_sided": 0.15158963203430176
+   },
+   "cold": {
+    "pairs": 12,
+    "agree": 7,
+    "share": 0.5833333333333334,
+    "p_two_sided": 0.7744140625
+   }
+  },
+  "Sandia": {
+   "all": {
+    "pairs": 21,
+    "agree": 10,
+    "share": 0.47619047619047616,
+    "p_two_sided": 1.0
+   },
+   "warm": {
+    "pairs": 11,
+    "agree": 7,
+    "share": 0.6363636363636364,
+    "p_two_sided": 0.548828125
+   },
+   "cold": {
+    "pairs": 10,
+    "agree": 3,
+    "share": 0.3,
+    "p_two_sided": 0.34375
+   }
+  },
+  "pooled": {
+   "all": {
+    "pairs": 57,
+    "agree": 25,
+    "share": 0.43859649122807015,
+    "p_two_sided": 0.42704285650325524
+   },
+   "warm": {
+    "pairs": 35,
+    "agree": 15,
+    "share": 0.42857142857142855,
+    "p_two_sided": 0.4995598332025112
+   },
+   "cold": {
+    "pairs": 22,
+    "agree": 10,
+    "share": 0.45454545454545453,
+    "p_two_sided": 0.8318119049072266
+   }
+  }
+ },
+ "ties": {
+  "KIT": {
+   "pairs": 106,
+   "ties": 104,
+   "median_lifetime_difference_over_resolution": 0.08620008154763564,
+   "max_lifetime_difference_over_resolution": 1.3553328768297732,
+   "median_resolution_over_lifetime": 0.497996645772932,
+   "resolution_basis": "each cell's res90_efc over its L90 (KIT); the pair's resolution over the pair's mean lifetime (Sandia)"
+  },
+  "Sandia": {
+   "pairs": 56,
+   "ties": 56,
+   "median_lifetime_difference_over_resolution": 0.09780007542753305,
+   "max_lifetime_difference_over_resolution": 0.7181777948330839,
+   "median_resolution_over_lifetime": 1.0476761052090402,
+   "resolution_basis": "each cell's res90_efc over its L90 (KIT); the pair's resolution over the pair's mean lifetime (Sandia)"
+  }
+ },
+ "kit_untied_pairs": [
+  {
+   "set": "P049",
+   "temp_C": "25.0",
+   "protocol": "10-90 0.33/0.33C",
+   "band": "warm",
+   "warm": "P049-3",
+   "cool": "P049-2",
+   "dT_K": "0.10757901087649557",
+   "d": "-0.19909860636569765",
+   "p": "-0.0020544793957445098",
+   "L_warm_efc": "459.3194885785861",
+   "L_cool_efc": "560.5086235433696",
+   "resolution_efc": "74.659987"
+  },
+  {
+   "set": "P052",
+   "temp_C": "25.0",
+   "protocol": "10-90 1.67/1.00C",
+   "band": "warm",
+   "warm": "P052-3",
+   "cool": "P052-1",
+   "dT_K": "0.31176984031093014",
+   "d": "-0.5255880497897545",
+   "p": "0.0031027770269217506",
+   "L_warm_efc": "317.8470322487613",
+   "L_cool_efc": "537.6233844766097",
+   "resolution_efc": "187.2123850000001"
+  }
+ ]
+}
