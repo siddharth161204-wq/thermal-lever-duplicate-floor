@@ -1,6 +1,6 @@
 # The thermal lever against the duplicate-cell floor: how large a temperature spread a lifetime divergence needs, and how large a module offers
 
-Siddharth Satte, Independent researcher, Pune, India, 27 October 2026 (first version 10 October 2026). doi.org/10.5281/zenodo.23309130 (all versions). Predictions commit 24ab8d3, public at 08:02 UTC on 10 October before any lever or spread was computed. [github.com/siddharth161204-wq/thermal-lever-duplicate-floor](https://github.com/siddharth161204-wq/thermal-lever-duplicate-floor){.nobr}.
+Siddharth Satte, Independent researcher, Pune, India, 29 October 2026 (first version 10 October 2026). doi.org/10.5281/zenodo.23309130 (all versions). Predictions commit 24ab8d3, public at 08:02 UTC on 10 October before any lever or spread was computed. [github.com/siddharth161204-wq/thermal-lever-duplicate-floor](https://github.com/siddharth161204-wq/thermal-lever-duplicate-floor){.nobr}.
 
 <div class="headline">
 
@@ -63,3 +63,11 @@ Stage 1's module in 35, 25 and 10 C air, its heat from the same PyBaMM procedure
 ![](../results/stage4_figure.png){style="width:100%;margin:2pt 0 0 0"}
 
 Figure 3. Stage 4. (a) Median implied divergence |s| × spread over each band's levers against rate, at three ambients and three coolings, with the band's 95th percentile at h = 10 and the four floors. (b) Duplicate pairs for 80 % power against the temperature difference held within each pair, under each chamber's median lever, against the Geslin (solid) and KIT (dashed) floors.
+
+## Stage 5: the lever within the set (v1.4.0)
+
+Replicates of a set sat at slightly different temperatures, a test of the lever's locality (predictions commit da613a1, pushed before any computation). Over the 106 KIT pairs with a measured lever (0.44 K rms apart; the 0 C sets have none), the within-set lifetime difference is β = −0.09 times the between-set prediction (95 %: −2.05 to +1.37); the within-set lever is −5.2 % per K warm (−16 to +8) and −0.8 % per K cold (−9 to +4), and the sign agrees in 45 of 106 pairs. Sandia's 56 pairs give β = 1.55 (−0.74 to +2.50), but are ordered by Stage 3's swing, a cell's own heat, and show no thermal lever. The replicates could not have shown one: 104 KIT pairs and all Sandia pairs differ by less than their check spacing, the residual spread is the KIT floor's, and the smallest |s| they could detect is 6.6 % per K, 5.0 and 1.8 times the band medians (1.30 and 3.58); at the warm band's 0.35 K the warm median needs 4,221 pairs, against Stage 4's 128 held 2 K apart. Six of eight predictions held (P3 and P7 failed); INDEPENDENT_NOTE_PLACEHOLDER.
+
+![](../results/stage5_figure.png){style="width:100%;margin:2pt 0 0 0"}
+
+Figure 4. Stage 5. (a) Observed against predicted log-lifetime difference for the 106 KIT replicate pairs with a measured lever, by band; rings are pairs tied within their check spacing; the dashed line is β = 1, the solid line the fit with its 95 % interval (grey). (b) The smallest |s| detectable at 80 % power against the number of pairs at the observed temperature spread of the KIT and Sandia pairs, against the KIT (solid) and Geslin (dashed) floors; dots mark the pairs available (rings simulated), horizontal lines the band medians, edge ticks the KIT between-set levers.

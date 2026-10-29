@@ -4,7 +4,7 @@ How large a temperature spread a lifetime divergence needs, and how large a modu
 
 Author: Siddharth Satte, independent researcher, Pune, India (ORCID 0009-0001-3584-1008).
 
-Archived at https://doi.org/10.5281/zenodo.23688940 (version v1.3.0: Stage 1, and Stages 2 to 4 below; all versions https://doi.org/10.5281/zenodo.23309130).
+Archived at https://doi.org/10.5281/zenodo.23753694 (version v1.4.0: Stage 1, and Stages 2 to 5 below; all versions https://doi.org/10.5281/zenodo.23309130).
 
 Nominally identical cells cycled under one protocol at one temperature still drift apart. In the Stanford dynamic-cycling dataset (Geslin et al., Nature Energy 2025; 92 commercial cylindrical SiOx-graphite/NCA cells, 47 protocols in duplicate, all at 35 C) the duplicate cells' lifetimes to 90 % state of health differ by 3.0 % on average and by 8.7 % at the 95th percentile, and the worst of eight identical cells falls 4.1 % below the module mean by selection alone (the floor, doi.org/10.5281/zenodo.23205413). A thermal explanation of cell-to-cell divergence in a module has to exceed that floor. This repository asks two questions before any module experiment or model is built:
 
@@ -112,6 +112,41 @@ Limits. The levers were measured between chamber set points, not between the cel
 What it means for the thesis. In 35 C air the measured levers produce a thermal share above the Geslin mean floor only at 2C, and a detectable one at no rate up to 2C, whichever way the heat is bracketed; in 10 C air, with more heat and the steeper cold levers, the module offers one from C/2 and a detectable one from 1C under the registered heat, and from 1C and 2C with each cell's heat at its own temperature. The experiment that would settle whether temperature differences drive duplicate divergence is small in the cold: three duplicate pairs held 5 K apart at 10 C detect the median cold lever against the Geslin floor. At 35 C, where the lever's sign depends on the protocol, 2 K needs about 25 pairs at the median lever and hundreds where the lever is small.
 
 The Stage 4 figure is `results/stage4_figure.png`; every number is in `results/stage4_*.csv` and `.json`, the quoted ones in `results/stage4_paper_numbers.json` and the post-hoc ones in `results/stage4_posthoc.json`.
+
+## Stage 5: the lever within the set (v1.4.0)
+
+Stages 2 and 3 measured the lever between chamber set points, and Stage 4 applied it to the spread a module offers, assuming it local and linear over a few kelvin. The replicates hold a direct test of that assumption: the cells of one set sat at slightly different temperatures. Stage 5 asks whether their lifetime differences follow the between-set lever times their temperature difference, by how much, and whether these data could have shown it (DECISIONS.md D71 to D78). Each pair, oriented warm minus cool by its measured temperatures, carries the log-lifetime difference its between-set lever predicts, p = -s dT (its protocol's lever for KIT, its chemistry's for Sandia), and the observed d = ln(L_warm / L_cool). beta, the least-squares slope of d on p through the origin, is 1 where the within-set lever equals the between-set one and 0 where there is none; the within-set lever s_w is the slope of d on dT with its sign changed, so that it reads like s. Intervals come from 10,000 bootstrap draws of sets, since the three pairs of a set share cells. Read before the predictions were pushed: the 36 KIT pairs at 0 C carry no measured lever (no secant reaches 0 C) and are not scored, so 106 KIT pairs in 36 sets are; every 25 C set takes the band whose interval is narrower, the warm band for all twelve KIT protocols and for the Sandia NMC and NCA cells, the cold band for LFP; the Sandia temperature difference is Stage 3's measure (a), the within-cycle swing, and the four LFP pairs at 35 C carry no lever (LFP's 25 to 35 C lever is not determinable), so 56 Sandia pairs in 21 groups are scored, every one of them tied within its check spacing; the band medians are Stage 4's, +1.30 % per K warm and -3.58 % per K cold.
+
+The eight predictions in [predictions_stage5.md](predictions_stage5.md) were committed in `da613a1488838fd8a73032882d4f9fc5d6a0750d` and pushed at 04:09 UTC on 29 October 2026, before any Stage 5 computation (the file's SHA-256 is `db5ba3ff88b721d12fe5f556e2673acf132b394bfc412b6fd28b268ee4f87799`). The code and its synthetic tests followed in `ee4a403`, before any run on the archived pairs; the results were pushed in `101ca54` at 04:22 UTC, after one change that lets an empty bracket return its counts (D79).
+
+- The recovery coefficient. KIT: beta = -0.09 (95 %: -2.05 to +1.37) over 106 pairs, 0.44 K root mean square apart. Sandia: +1.55 (-0.74 to +2.50) over 56 pairs, 1.54 K apart in swing. Pooled: +1.10 (-0.49 to +1.96).
+- The within-set lever. KIT warm band -5.19 % per K (-16.35 to +8.18) beside the band median +1.30; cold band -0.79 % per K (-9.44 to +4.06) beside -3.58. Sandia warm -4.35 (-7.12 to +0.46), cold +7.10 (-4.08 to +18.48); pooled warm -4.41 (-7.14 to -0.10), cold +4.42 (-3.26 to +8.10). Unscored, the twelve 0 C KIT sets: -1.28 % per K (-3.50 to +0.65).
+- The sign. In KIT the sign of d agrees with that of p in 45 of 106 pairs (42 %, two-sided p = 0.14); in the warm band 24 of 70 (p = 0.012) and in the cold 21 of 36 (p = 0.41). The registered test counts the three pairs of a set as independent; with only each set's warmest and coolest cell (post hoc, D80) KIT agrees in 15 of 36 sets (p = 0.41) and its warm band in 8 of 24 (p = 0.15). Sandia agrees in 32 of 56 pairs (p = 0.35).
+- The noise. The KIT residual standard deviation, 0.131 (0.092 to 0.168), holds the KIT floor's sd(e) of 0.104 and is 2.9 times Geslin's 0.045: the between-set lever takes up none of the within-set spread, which is the floor. Sandia 0.158 (0.091 to 0.222); pooled 0.142 (0.105 to 0.175).
+- The ties (post hoc, D80). 104 of the 106 KIT pairs, like all 56 Sandia pairs, differ by less than their check spacing: a KIT lifetime at 90 % lies inside a check-up interval a median 50 % of the lifetime long, and a pair's difference is a median 9 % of it. The untied bracket rests on two KIT pairs and carries no information.
+- What the data could detect. At the KIT pairs' spread the smallest |s| detectable at 80 % power is 6.56 % per K against the KIT floor (6.47 simulated; 8.03 counting the shared cells; 2.81 against the Geslin floor), 5.0 times the warm median and 1.8 times the cold; all 142 KIT pairs, the 0 C sets included, would bring it to 3.85. The warm band had a power of 0.065 to detect +1.30 % per K and would need 4,221 pairs at its 0.35 K spread (4,259 simulated, 6,330 with shared cells, 774 against the Geslin floor); the cold band had 0.21 for -3.58 % per K and would need 205 pairs (207, 306, 39). For Sandia, against the KIT floor, the detectable |s| is 2.58 % per K.
+- Sandia, and what beta does not show. Measure (a) is a cell's own heating seen through its skin sensor, so the Sandia pairs are ordered by heat and by how well each sensor follows its cell, not by place in the chamber, and all of them are tied. Their beta is 0.70 (-2.03 to +2.64) with measure (b), the rest temperature, and 1.81 (+0.11 to +2.90) without the NCA pair whose sensor did not follow its cell (D55): a cell that heats more may differ in resistance and age differently for that reason, so a beta at or above one does not show a thermal lever.
+
+| | Prediction (abridged) | Result | Computed |
+|--|--|--|--|
+| P1 | KIT beta's 95 % interval includes zero | Held | -0.09 (-2.05 to +1.37) |
+| P2 | it also includes one | Held | as P1 |
+| P3 | KIT warm-band within-set lever positive, as the band median | Failed | -5.19 % per K (-16.35 to +8.18) |
+| P4 | KIT cold-band within-set lever negative | Held | -0.79 % per K (-9.44 to +4.06) |
+| P5 | KIT sign agreement not distinguishable from one half | Held | 45 of 106, p = 0.14 |
+| P6 | KIT detectable \|s\| above the band median \|s\| in both bands | Held | 6.56 against 1.30 and 3.58 % per K (6.47 simulated) |
+| P7 | Sandia beta interval at least twice as wide as KIT's | Failed | 3.24 against 3.42 wide (0.95 times) |
+| P8 | pooled beta interval excludes values above 3 | Held | upper end 1.96 |
+
+P3 fails on a sign whose interval is about 25 % per K wide and holds +1.30; P7 fails because the Sandia pairs span 3.5 times KIT's temperature difference, which outweighs their fewer pairs and their ties (D80).
+
+Checks (`verification/stage5/`). V1: every file Stage 5 reads is identical (SHA-256) to its version at v1.3.0 and at the release that first archived it, and every lifetime, temperature difference and lever in `results/stage5_pairs.csv` equals the archived value exactly; the KIT dT equal the cells' logged temperatures' differences and the Sandia orientation, dT and d equal Stage 3's oriented file. V2: separate code, with least squares by numpy's lstsq and its own bootstrap on Python's Mersenne Twister, agrees with beta and every within-set lever to 2e-16 and with every interval end within 2.2 Monte Carlo standard deviations. V3: two pairs by hand agree to 6e-15. V4: the simulated detectable |s| lies 1.2 to 3.7 % below the calculated one in the six registered cases, and 5.2 and 6.9 % below in the 20 unscored Sandia cold-band pairs, where V4 fails as Stage 4 found at small n; with normal differences the simulation agrees within 1.2 % everywhere. INDEPENDENT_README_PLACEHOLDER
+
+Limits. Within a set the temperature difference is partly a cell's own heat (in KIT alongside the chamber's gradient, in Sandia's swing entirely), so a warmer cell may differ in resistance and age differently for that reason; the warmer replicate is not a cell held warmer. The lifetimes of nearly every pair lie within one check interval, so d is a difference of interpolated crossings. The registered sign test counts pairs as independent within a set. The noise model of Part C is Stage 4's, with each pair's difference independent; with shared cells the detectable |s| rises by the square root of F, 1.5 for KIT's three-cell sets and 1.1 to 1.8 for the Sandia groups (shown beside it). Nothing here measures the thermal share of divergence in a module.
+
+What it means for the thesis. The lever cannot be read from existing replicates: at the few tenths of a kelvin that separate cells of one set, their lifetime differences recover neither the between-set lever nor its absence (KIT beta -0.09, interval -2.05 to +1.37), their spread is the duplicate floor, and they could detect only a lever five times the warm median. The sized chamber experiment is what can measure it: duplicates held a few kelvin apart, where the pairs needed fall with the square of the difference (Stage 4: 25 pairs at 2 K in a 35 C chamber against the Geslin floor, 128 against the KIT floor, against 4,221 at the warm band's 0.35 K).
+
+The Stage 5 figure is `results/stage5_figure.png`; every number is in `results/stage5_*.csv` and `.json`, the quoted ones in `results/stage5_paper_numbers.json` and the post-hoc ones in `results/stage5_posthoc.json`.
 
 ## Pre-registration
 
@@ -239,10 +274,11 @@ The LG M50 is a 21700 but a different cell from the dataset's; the proxy sets ma
 - `results/prediction_scorecard.json`, `results/thermal_lever_figure.png` (and `.pdf`), `note/thermal_lever_note.pdf`.
 - `results/posthoc.json`, `results/dataset_protocol_heat.csv`: the post-hoc analyses of D24.
 - `verification/`: V1 and V2 (`v1_v2.json`), V3 (`v3_resolved_cell.json`), V3's first run (`v3_first_run_diverged_check_e.json`), the independent recomputation with its scripts and report, and the reports of the audit and of the check of the post-hoc analysis (`reviews/`).
-- `DECISIONS.md`: D1 to D20 fixed before the predictions, D21 before the push, D22 to D24 after it; Stage 2's D25 to D35 before its predictions, D36 and D37 after; Stage 3's D38 to D49 before its predictions, D50 before its results, D51 to D55 after; Stage 4's D56 to D63 before its predictions, D64 to D70 after its results.
+- `DECISIONS.md`: D1 to D20 fixed before the predictions, D21 before the push, D22 to D24 after it; Stage 2's D25 to D35 before its predictions, D36 and D37 after; Stage 3's D38 to D49 before its predictions, D50 before its results, D51 to D55 after; Stage 4's D56 to D63 before its predictions, D64 to D70 after its results; Stage 5's D71 to D78 before its predictions, D79 to D81 after its results.
 - Stage 2: `results/stage2_cells.csv` (every cell's lifetimes, censoring and temperatures), `stage2_checkups.csv`, `stage2_sets.csv`, `stage2_lever.csv` and `.json`, `stage2_pairs.csv`, `stage2_warmer_pairs.csv`, `stage2_scorecard.json`, `stage2_figure.png`; `verification/stage2/`. The Sandia code in `src/stage2/` (sandia_io, steps, lifetimes, laws, analysis, verify), written before the Sandia files existed, is used unchanged by Stage 3.
 - Stage 3: `results/stage3_cells.csv` (every cell's checks, lifetime, resolution, sensitivity lifetime and temperature measures), `stage3_checks.csv`, `stage3_lever.csv` and `.json`, `stage3_pairs.csv`, `stage3_pairs_oriented_measure_a.csv` and `_b.csv`, `stage3_floor.csv`, `stage3_thermal_share.json`, `stage3_scorecard.json`, `stage3_prepare.json` (the counts of D50), `stage3_posthoc.json` (D51 to D54), `stage3_figure.png`; code in `src/stage3/`; `verification/stage3/` (V1, V3, V4 and the independent check).
 - Stage 4: `results/stage4_resistance.json` (the procedure's every run at 35, 25 and 10 C), `stage4_module.csv` (every case: resistance, heat, the eight cell temperatures, spread, offsets), `stage4_resolved_cell.csv` and `.json`, `stage4_divergence.csv` (case by lever: offsets, implied divergence with its interval, the band's median and 95th percentile), `stage4_map.json` (verdicts per case and the map), `stage4_experiment.csv` and `.json` (pairs needed, calculated and simulated, with the floor shapes), `stage4_experiment_curves.csv`, `stage4_scorecard.json`, `stage4_posthoc.json` (D65 to D68), `stage4_posthoc_own_temperature.json` (D70), `stage4_paper_numbers.json`, `stage4_figure.png`; code in `src/stage4/`; `verification/stage4/` (V1 to V4, the heat traces of the procedure and the independent check); `tests/stage4_synthetic.py`.
+- Stage 5: `results/stage5_pairs.csv` (every KIT and Sandia pair: set, band, warm and cool cell, dT, lifetimes, d, the lever with its interval, p, the tie flag, scored or not and why, and Sandia's measure (b)), `stage5_beta.json` (B1 to B4 with intervals, seeds and the brackets), `stage5_power.json` (C1, C2, V4 and the figure's curves), `stage5_scorecard.json`, `stage5_posthoc.json` (D80), `stage5_paper_numbers.json`, `stage5_figure.png`; code in `src/stage5/` (`run_stage5.sh` runs it in order); `verification/stage5/` (V1 to V4 and the independent check); `tests/stage5_synthetic.py`.
 
 ## How to run
 
@@ -274,6 +310,18 @@ python3 -I src/stage4/posthoc_own_temperature.py        # post hoc: each cell's 
 python3 -I verification/stage4/procedure_heat_check.py  # the procedure's heat traces (D65)
 python3 -I src/stage4/paper_numbers.py                  # the quoted numbers
 python3 -I tests/stage4_synthetic.py                    # checks of the Stage 4 code on made-up inputs
+# Stage 5 (reads only archived results)
+python3 tests/stage5_synthetic.py                       # checks of the Stage 5 code on made-up pairs
+python3 src/stage5/s5_inputs.py                         # Part A: the pairs, their levers, p and d
+python3 src/stage5/s5_within.py                         # Part B: beta, the within-set levers, signs, noise
+python3 src/stage5/s5_power.py                          # Part C with V4 (a few minutes)
+python3 src/stage5/s5_score.py                          # the scorecard
+python3 verification/stage5/v1_inputs.py                # V1
+python3 verification/stage5/v2_separate.py              # V2
+python3 verification/stage5/v3_hand.py                  # V3
+python3 src/stage5/s5_figure.py                         # the Stage 5 figure
+python3 src/stage5/s5_posthoc.py                        # post hoc (D80)
+python3 src/stage5/s5_paper.py                          # the quoted numbers
 python3 -m pip install -r requirements.txt
 python3 src/lgm50_resistance.py --out inputs/lgm50_resistance.json   # the derived resistance
 python3 src/verify_pre.py --out verification                         # V1 and V2
