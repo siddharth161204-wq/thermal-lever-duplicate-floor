@@ -1,0 +1,388 @@
+{
+ "check": "Stage 5 independent check, comparison phase",
+ "freeze": {
+  "commit": "ea3a5b46a891e74d504c818d30b35d34b4351ff5",
+  "committed_utc": "2026-10-29T04:40:07Z",
+  "pushed_utc": "2026-10-29T04:40:14Z",
+  "branch": "origin/stage5-independent"
+ },
+ "opened_after_the_freeze": {
+  "fetch": "git fetch origin +refs/heads/stage5:refs/remotes/origin/stage5, after the freeze push",
+  "read_with_git_show": {
+   "101ca54a199def64ab7227a41277e2408b7f5e91": "registered results, V1 to V4 and the figure (pushed 2026-10-29T04:22:03Z)",
+   "157827f1a77ef43e1f4545fc1c6fb24c2fb42270": "D79, D80, results/stage5_posthoc.json, results/stage5_paper_numbers.json",
+   "67685ae92dd66fd10359456d21fde8e66a87bc1c": "README, note, CITATION.cff, .zenodo.json, D80 rounding",
+   "ee4a403eb7bc23e41e1fdf35facd289995a46cb0": "the code change D79 (1) describes (diff against 101ca54)"
+  },
+  "branch_never_switched": true
+ },
+ "deterministic_all_agree": true,
+ "table": [
+  {
+   "class": "pairs: categorical",
+   "mismatches": 0,
+   "max_abs_diff": null,
+   "max_rel_diff": null,
+   "where_max_rel": null
+  },
+  {
+   "class": "pairs: numeric",
+   "mismatches": null,
+   "max_abs_diff": 6.938893903907228e-18,
+   "max_rel_diff": 2.197529719804314e-16,
+   "where_max_rel": "d"
+  },
+  {
+   "class": "B point beta",
+   "mismatches": null,
+   "max_abs_diff": 2.220446049250313e-16,
+   "max_rel_diff": 1.2879326590077845e-15,
+   "where_max_rel": "KIT"
+  },
+  {
+   "class": "B point s_w_per_K",
+   "mismatches": null,
+   "max_abs_diff": 6.938893903907228e-18,
+   "max_rel_diff": 6.560879564670914e-16,
+   "where_max_rel": "KIT cold"
+  },
+  {
+   "class": "B point resid_sd",
+   "mismatches": null,
+   "max_abs_diff": 0.0,
+   "max_rel_diff": 0.0,
+   "where_max_rel": ""
+  },
+  {
+   "class": "counts",
+   "mismatches": 0,
+   "max_abs_diff": null,
+   "max_rel_diff": null,
+   "where_max_rel": null
+  },
+  {
+   "class": "sign counts",
+   "mismatches": 0,
+   "max_abs_diff": null,
+   "max_rel_diff": null,
+   "where_max_rel": null
+  },
+  {
+   "class": "sign p and share",
+   "mismatches": null,
+   "max_abs_diff": 0.0,
+   "max_rel_diff": 0.0,
+   "where_max_rel": ""
+  },
+  {
+   "class": "C1 counts",
+   "mismatches": 0,
+   "max_abs_diff": null,
+   "max_rel_diff": null,
+   "where_max_rel": null
+  },
+  {
+   "class": "C1 detectable_s_per_K",
+   "mismatches": null,
+   "max_abs_diff": 1.4960255256823984e-14,
+   "max_rel_diff": 1.7606146823476637e-13,
+   "where_max_rel": "pooled | Geslin"
+  },
+  {
+   "class": "C1 normal_shape_per_K",
+   "mismatches": null,
+   "max_abs_diff": 8.61116733474887e-15,
+   "max_rel_diff": 1.5208538163058424e-13,
+   "where_max_rel": "Sandia cold | KIT"
+  },
+  {
+   "class": "C1 F",
+   "mismatches": null,
+   "max_abs_diff": 8.881784197001252e-16,
+   "max_rel_diff": 5.921189482976256e-16,
+   "where_max_rel": "KIT | Geslin"
+  },
+  {
+   "class": "C1 shared_cells_per_K",
+   "mismatches": null,
+   "max_abs_diff": 1.201816424156732e-14,
+   "max_rel_diff": 2.1290950937529698e-13,
+   "where_max_rel": "pooled cold | KIT"
+  },
+  {
+   "class": "C1 dT_rms_K",
+   "mismatches": null,
+   "max_abs_diff": 2.220446049250313e-16,
+   "max_rel_diff": 2.546712926545177e-16,
+   "where_max_rel": "KIT | Geslin"
+  },
+  {
+   "class": "C1 sum_dT2_K2",
+   "mismatches": null,
+   "max_abs_diff": 2.842170943040401e-14,
+   "max_rel_diff": 3.5271494710935673e-16,
+   "where_max_rel": "KIT | Geslin"
+  },
+  {
+   "class": "C1 dT_median_K",
+   "mismatches": null,
+   "max_abs_diff": 0.0,
+   "max_rel_diff": 0.0,
+   "where_max_rel": ""
+  },
+  {
+   "class": "C1 sd_e",
+   "mismatches": null,
+   "max_abs_diff": 0.0,
+   "max_rel_diff": 0.0,
+   "where_max_rel": ""
+  },
+  {
+   "class": "C1 power_at_detectable",
+   "mismatches": null,
+   "max_abs_diff": 1.4721557306529576e-13,
+   "max_rel_diff": 1.840194663316176e-13,
+   "where_max_rel": "pooled | Geslin"
+  },
+  {
+   "class": "C2 pairs needed (calc, shared, normal shape)",
+   "mismatches": 0,
+   "max_abs_diff": null,
+   "max_rel_diff": null,
+   "where_max_rel": null
+  },
+  {
+   "class": "C2 power_calc",
+   "mismatches": null,
+   "max_abs_diff": 2.7755575615628914e-17,
+   "max_rel_diff": 2.147201697318135e-16,
+   "where_max_rel": "KIT | warm | KIT"
+  },
+  {
+   "class": "C2 dT_rms_K",
+   "mismatches": null,
+   "max_abs_diff": 2.220446049250313e-16,
+   "max_rel_diff": 1.2742761202544247e-16,
+   "where_max_rel": "Sandia | warm | Geslin"
+  },
+  {
+   "class": "C2 sd_e",
+   "mismatches": null,
+   "max_abs_diff": 0.0,
+   "max_rel_diff": 0.0,
+   "where_max_rel": ""
+  },
+  {
+   "class": "C2 F",
+   "mismatches": null,
+   "max_abs_diff": 2.220446049250313e-16,
+   "max_rel_diff": 1.4802973772515627e-16,
+   "where_max_rel": "KIT | warm | Geslin"
+  },
+  {
+   "class": "C2 abs_s_per_K",
+   "mismatches": null,
+   "max_abs_diff": 0.0,
+   "max_rel_diff": 0.0,
+   "where_max_rel": ""
+  },
+  {
+   "class": "verdicts P1 to P8",
+   "mismatches": 0,
+   "max_abs_diff": null,
+   "max_rel_diff": null,
+   "where_max_rel": null
+  },
+  {
+   "class": "B4 floor verdicts",
+   "mismatches": 0,
+   "max_abs_diff": null,
+   "max_rel_diff": null,
+   "where_max_rel": null
+  }
+ ],
+ "verdicts": {
+  "P1_to_P8_mismatches": 0,
+  "floor_verdict_mismatches": 0,
+  "v4_pass_differences": [
+   {
+    "case": "Sandia cold | KIT",
+    "checker_rel": -0.046999454498291154,
+    "pipeline_rel": -0.05152273178100595,
+    "replicate_pass_share": 0.75,
+    "replicate_rel_mean": -0.04743533134460458,
+    "replicate_rel_sd": 0.005865615979490884
+   }
+  ]
+ },
+ "monte_carlo_summary": {
+  "quantities": 101,
+  "with_spread": 92,
+  "max_abs_diff_over_sqrt2_sd": 4.196271637081412,
+  "where": "C2 simulated pairs KIT | cold | KIT",
+  "over_3_sqrt2_sd": [
+   "C2 simulated pairs KIT | cold | KIT"
+  ],
+  "over_2_sqrt2_sd": [
+   "beta lo KIT",
+   "beta lo pooled",
+   "beta lo Sandia measure b",
+   "C1 simulated normal pooled warm | Geslin (% per K)",
+   "C1 simulated normal pooled cold | Geslin (% per K)",
+   "C2 simulated pairs KIT | warm | KIT",
+   "C2 simulated pairs KIT | cold | KIT"
+  ],
+  "pipeline_max_abs_z": 2.2331335038240727,
+  "pipeline_where": "C2 simulated pairs KIT | warm | Geslin",
+  "pipeline_count_abs_z_over_2": 4,
+  "checker_max_abs_z": 4.351911124412191,
+  "checker_where": "C2 simulated pairs KIT | cold | KIT",
+  "checker_count_abs_z_over_2": 7,
+  "expected_count_over_2_by_chance": 4.2,
+  "zero_spread_cases": [
+   {
+    "quantity": "C2 simulated pairs Sandia | warm | Geslin",
+    "checker": 35,
+    "pipeline": 34,
+    "replicates": [
+     35,
+     35,
+     35,
+     35,
+     35
+    ],
+    "note": "all replicates equal; the spread is below one unit"
+   },
+   {
+    "quantity": "C2 simulated pairs Sandia | cold | Geslin",
+    "checker": 19,
+    "pipeline": 19,
+    "replicates": [
+     19,
+     19,
+     19,
+     19,
+     19
+    ],
+    "note": "all replicates equal; the spread is below one unit"
+   }
+  ],
+  "reading": "z is a run's distance from the mean of the checker's independent replicate runs, in replicate sd; the pipeline's values are the test of consistency, the checker's own registered run is one draw of the same distribution"
+ },
+ "text_review": {
+  "numbers_checked": 96,
+  "numbers_not_matching": [
+   [
+    "D80 (5), README, note, Zenodo",
+    0.35,
+    0.3447242389907206
+   ]
+  ],
+  "findings": [
+   {
+    "id": 1,
+    "kind": "mis-rounded",
+    "where": "D80 (5); README 'What the data could detect' and 'What it means for the thesis'; note; Zenodo description",
+    "suggest": "0.34 K"
+   },
+   {
+    "id": 2,
+    "kind": "Monte Carlo, wording",
+    "where": "README 'The within-set lever' (pooled warm), and any later use",
+    "suggest": "pooled warm -4.41 (-7.14 to -0.10 in the registered draw; with 1,000,000 draws -7.11 to +0.03, so the interval's upper end lies at zero within its Monte Carlo error and the pooled warm lever is not resolved from zero)"
+   },
+   {
+    "id": 3,
+    "kind": "overstated",
+    "where": "README 'The noise' and 'What it means for the thesis'; note; Zenodo; D80 (3)",
+    "suggest": "'the residual spread is consistent with the KIT floor (0.131 against its sd(e) of 0.104, from cells of these same sets); the pooled interval lies just above it'"
+   },
+   {
+    "id": 4,
+    "kind": "overstated",
+    "where": "note (Sandia sentence)",
+    "suggest": "'and cannot show a thermal lever' (as the README and D80 (4) say: 'does not show')"
+   },
+   {
+    "id": 5,
+    "kind": "missing",
+    "where": "D80 (4) and (6); README 'Sandia, and what beta does not show' and the P7 sentence; note",
+    "suggest": "record in D81 (flags 7 and 9) and add one clause where Sandia's beta and P7 are explained"
+   },
+   {
+    "id": 6,
+    "kind": "missing",
+    "where": "D80 (6) P3; README P3 sentence",
+    "suggest": "record in D81 (flag 5); the P3 sentence can stay, with 'the warm band's within-set differences run against its levers more often than not (D81)'"
+   },
+   {
+    "id": 7,
+    "kind": "seed-dependent",
+    "where": "D79 (3); README checks paragraph",
+    "suggest": "'fails in this run in the 20 Sandia cold-band pairs under either floor (5.2 and 6.9 % below; under the KIT floor the verdict depends on the seed)'"
+   },
+   {
+    "id": 8,
+    "kind": "imprecise",
+    "where": "README Limits",
+    "suggest": "'1.5 for KIT (three-cell sets) and 1.72 over the Sandia pairs (1.13 cold band, 1.85 warm; 1 for a two-cell group, 2 for a four-cell one)'"
+   },
+   {
+    "id": 9,
+    "kind": "missing",
+    "where": "note; Zenodo description",
+    "suggest": "add 'against the KIT floor' once"
+   },
+   {
+    "id": 10,
+    "kind": "clarity",
+    "where": "note Figure 4 caption (b)",
+    "suggest": "add 'all 106 KIT pairs (0.44 K rms)' to the caption, or say in the text which spread 4,221 belongs to"
+   },
+   {
+    "id": 11,
+    "kind": "precision",
+    "where": "README bullets (intervals at two decimals)",
+    "suggest": "quote the s_w interval ends to 0.1 % per K, as D80 and the note do, or say the registered draw's ends carry Monte Carlo error of a few hundredths"
+   },
+   {
+    "id": 12,
+    "kind": "pending",
+    "where": "README file list",
+    "suggest": "keep once D81 is committed"
+   },
+   {
+    "id": 13,
+    "kind": "minor omission",
+    "where": "D79 (1)",
+    "suggest": "'... to return the counts of an empty subset and to skip the residual of a one-pair subset'"
+   },
+   {
+    "id": 14,
+    "kind": "verified",
+    "where": "README checks paragraph (V1)",
+    "suggest": "none"
+   },
+   {
+    "id": 15,
+    "kind": "style",
+    "where": "README How to run (Stage 5 lines)",
+    "suggest": "use -I as for Stage 4, if the modules allow it"
+   }
+  ]
+ },
+ "post_freeze_files": {
+  "out_compare/compare.json": "8c4ac91a0288b38f845cc5acd516305188807cfaf99c5a81acd03a1cd11121cb",
+  "out_compare/compare_table.csv": "108ce389b82f6ef7d4672579bdbef2c7e9bc7ba3246ab0c08eb3b64e535b005e",
+  "out_compare/postfreeze_d80_checks.json": "ede5786b20652aa27417678d3fb39ae0358f7bd71ea4206952456fb0032789ff",
+  "out_compare/postfreeze_flag_numbers.json": "2aff8244ba7083014a7f6be12de4506da68a41c16298d2bdf41ee50b506199d6",
+  "out_compare/postfreeze_mc_extra.json": "0354db76f830cc070cf845c45adc801eaed33a5557e0d33bc1927270ce445b17",
+  "out_compare/text_review.json": "d4f504e7c41a95c3ed3fa174db0bc6564e01fd52c9984b392204e3069326ea25",
+  "compare.py": "0b862eb6799a7c8a3c22631e6e0a6fab6a3e6e374953132764bd64a4a59f7ca2",
+  "compare_text.py": "d9c971b3bb7fe3bbced762edebd4330490b17a3513acbea247738c466a5e1b83",
+  "postfreeze_d80_checks.py": "1ad52668df518d8e8bad737100e4bb8b20a463386bc90a6f0f185d8a70d25176",
+  "postfreeze_flag_numbers.py": "2199a68f52250b295e88027c247c10cf23a473ee72bd3fba5491884bbf3f2d1c",
+  "postfreeze_mc_extra.py": "136086fcb3000dffee2a8091a988fb5ff8e6cc3ad893acd3bd105db501532152",
+  "postfreeze_record.py": "d178b9b9bc3156c7deae181490d3d41b0a6bc41655bc882f41ff2531ed36021e"
+ }
+}

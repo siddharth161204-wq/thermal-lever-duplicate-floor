@@ -1,0 +1,212 @@
+{
+ "ties": {
+  "KIT": {
+   "pairs": 106,
+   "ties": 104,
+   "median_dL_over_res": 0.08620008154763564,
+   "max_dL_over_res": 1.3553328768297732,
+   "median_res_over_L_distinct_cells": 0.4984308377818304,
+   "distinct_cells": 107,
+   "median_res_over_L_cell_entries": 0.497996645772932,
+   "median_pair_res_over_mean_L": 0.4971690737971731
+  },
+  "Sandia": {
+   "pairs": 56,
+   "ties": 56,
+   "median_dL_over_res": 0.09780007542753305,
+   "max_dL_over_res": 0.7181777948330839,
+   "median_res_over_mean_L": 1.0476761052090402
+  }
+ },
+ "one_pair_per_set": {
+  "KIT": {
+   "all": {
+    "pairs": 36,
+    "agree": 15,
+    "p_two_sided": 0.4050322461407632
+   },
+   "warm": {
+    "pairs": 24,
+    "agree": 8,
+    "p_two_sided": 0.15158963203430176
+   },
+   "cold": {
+    "pairs": 12,
+    "agree": 7,
+    "p_two_sided": 0.7744140625
+   }
+  },
+  "Sandia": {
+   "all": {
+    "pairs": 21,
+    "agree": 10,
+    "p_two_sided": 1.0
+   },
+   "warm": {
+    "pairs": 11,
+    "agree": 7,
+    "p_two_sided": 0.548828125
+   },
+   "cold": {
+    "pairs": 10,
+    "agree": 3,
+    "p_two_sided": 0.34375
+   }
+  },
+  "pooled": {
+   "all": {
+    "pairs": 57,
+    "agree": 25,
+    "p_two_sided": 0.42704285650325524
+   },
+   "warm": {
+    "pairs": 35,
+    "agree": 15,
+    "p_two_sided": 0.4995598332025112
+   },
+   "cold": {
+    "pairs": 22,
+    "agree": 10,
+    "p_two_sided": 0.8318119049072266
+   }
+  }
+ },
+ "stage4_warm_chamber_central_2K": {
+  "Geslin": {
+   "n_pairs": 25,
+   "n_sim_lognormal": 23
+  },
+  "KIT": {
+   "n_pairs": 128,
+   "n_sim_lognormal": 125
+  }
+ },
+ "predictions_stage5_sha256_at_da613a1": "db5ba3ff88b721d12fe5f556e2673acf132b394bfc412b6fd28b268ee4f87799",
+ "dT_rms_K": {
+  "KIT": 0.43594353060093977,
+  "KIT warm": 0.3447242389907206,
+  "KIT cold": 0.5731618128169229,
+  "Sandia": 1.5369800142453887,
+  "Sandia over KIT": 3.5256401491420033
+ },
+ "dT_mean_K": {
+  "KIT warm": 0.2794802069888667
+ },
+ "sum_p2": {
+  "KIT": 0.02976385980514008,
+  "Sandia": 0.0774774094684502
+ },
+ "pipeline_posthoc_157827f": {
+  "note": "after the results; no registered number or verdict changes (D80)",
+  "one_pair_per_set": {
+   "KIT": {
+    "all": {
+     "pairs": 36,
+     "agree": 15,
+     "share": 0.4166666666666667,
+     "p_two_sided": 0.4050322461407632
+    },
+    "warm": {
+     "pairs": 24,
+     "agree": 8,
+     "share": 0.3333333333333333,
+     "p_two_sided": 0.15158963203430176
+    },
+    "cold": {
+     "pairs": 12,
+     "agree": 7,
+     "share": 0.5833333333333334,
+     "p_two_sided": 0.7744140625
+    }
+   },
+   "Sandia": {
+    "all": {
+     "pairs": 21,
+     "agree": 10,
+     "share": 0.47619047619047616,
+     "p_two_sided": 1.0
+    },
+    "warm": {
+     "pairs": 11,
+     "agree": 7,
+     "share": 0.6363636363636364,
+     "p_two_sided": 0.548828125
+    },
+    "cold": {
+     "pairs": 10,
+     "agree": 3,
+     "share": 0.3,
+     "p_two_sided": 0.34375
+    }
+   },
+   "pooled": {
+    "all": {
+     "pairs": 57,
+     "agree": 25,
+     "share": 0.43859649122807015,
+     "p_two_sided": 0.42704285650325524
+    },
+    "warm": {
+     "pairs": 35,
+     "agree": 15,
+     "share": 0.42857142857142855,
+     "p_two_sided": 0.4995598332025112
+    },
+    "cold": {
+     "pairs": 22,
+     "agree": 10,
+     "share": 0.45454545454545453,
+     "p_two_sided": 0.8318119049072266
+    }
+   }
+  },
+  "ties": {
+   "KIT": {
+    "pairs": 106,
+    "ties": 104,
+    "median_lifetime_difference_over_resolution": 0.08620008154763564,
+    "max_lifetime_difference_over_resolution": 1.3553328768297732,
+    "median_resolution_over_lifetime": 0.497996645772932,
+    "resolution_basis": "each cell's res90_efc over its L90 (KIT); the pair's resolution over the pair's mean lifetime (Sandia)"
+   },
+   "Sandia": {
+    "pairs": 56,
+    "ties": 56,
+    "median_lifetime_difference_over_resolution": 0.09780007542753305,
+    "max_lifetime_difference_over_resolution": 0.7181777948330839,
+    "median_resolution_over_lifetime": 1.0476761052090402,
+    "resolution_basis": "each cell's res90_efc over its L90 (KIT); the pair's resolution over the pair's mean lifetime (Sandia)"
+   }
+  },
+  "kit_untied_pairs": [
+   {
+    "set": "P049",
+    "temp_C": "25.0",
+    "protocol": "10-90 0.33/0.33C",
+    "band": "warm",
+    "warm": "P049-3",
+    "cool": "P049-2",
+    "dT_K": "0.10757901087649557",
+    "d": "-0.19909860636569765",
+    "p": "-0.0020544793957445098",
+    "L_warm_efc": "459.3194885785861",
+    "L_cool_efc": "560.5086235433696",
+    "resolution_efc": "74.659987"
+   },
+   {
+    "set": "P052",
+    "temp_C": "25.0",
+    "protocol": "10-90 1.67/1.00C",
+    "band": "warm",
+    "warm": "P052-3",
+    "cool": "P052-1",
+    "dT_K": "0.31176984031093014",
+    "d": "-0.5255880497897545",
+    "p": "0.0031027770269217506",
+    "L_warm_efc": "317.8470322487613",
+    "L_cool_efc": "537.6233844766097",
+    "resolution_efc": "187.2123850000001"
+   }
+  ]
+ }
+}

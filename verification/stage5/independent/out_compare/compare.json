@@ -1,0 +1,2048 @@
+{
+ "pipeline_commit": "101ca54a199def64ab7227a41277e2408b7f5e91",
+ "checker_freeze_commit": "ea3a5b46a891e74d504c818d30b35d34b4351ff5",
+ "pipeline_files_sha256": {
+  "results/stage5_pairs.csv": "9a56c38e71a5fe4d86792f23622a498cccd345b662e8f6377e16dc7ff755e56b",
+  "results/stage5_beta.json": "eef5a9334f4561ce806af2ad15bd80d50c1ed28356ede881691f23e8f28d17a7",
+  "results/stage5_power.json": "311dcb8a1cd9a0b4bd9e09487dd8fe87f428f6dc103e8e1ac918bb225e85aad2",
+  "results/stage5_scorecard.json": "1c8a09502651ba1465232f4ffbfc4051579d5838388002c9549446484792ffb0"
+ },
+ "pairs": {
+  "rows_checker": 228,
+  "rows_pipeline": 228,
+  "only_checker": [],
+  "only_pipeline": [],
+  "categorical": {
+   "scored": {
+    "compared": 228,
+    "mismatches": 0,
+    "list": []
+   },
+   "band": {
+    "compared": 228,
+    "mismatches": 0,
+    "list": []
+   },
+   "tie": {
+    "compared": 228,
+    "mismatches": 0,
+    "list": []
+   },
+   "orientation (warm, cool)": {
+    "compared": 202,
+    "mismatches": 0,
+    "list": []
+   },
+   "orientation by measure (b)": {
+    "compared": 56,
+    "mismatches": 0,
+    "list": []
+   }
+  },
+  "numeric": {
+   "dT_K": {
+    "compared": 202,
+    "max_abs_diff": 0.0,
+    "where_max_abs": "",
+    "max_rel_diff": 0.0,
+    "where_max_rel": "",
+    "present_on_one_side_only": []
+   },
+   "d": {
+    "compared": 202,
+    "max_abs_diff": 6.938893903907228e-18,
+    "where_max_abs": "KIT P027 P027-1/P027-3",
+    "max_rel_diff": 2.197529719804314e-16,
+    "where_max_rel": "KIT P047 P047-2/P047-3",
+    "present_on_one_side_only": []
+   },
+   "p": {
+    "compared": 162,
+    "max_abs_diff": 0.0,
+    "where_max_abs": "",
+    "max_rel_diff": 0.0,
+    "where_max_rel": "",
+    "present_on_one_side_only": []
+   },
+   "s_per_K": {
+    "compared": 162,
+    "max_abs_diff": 0.0,
+    "where_max_abs": "",
+    "max_rel_diff": 0.0,
+    "where_max_rel": "",
+    "present_on_one_side_only": []
+   },
+   "s_lo_per_K": {
+    "compared": 162,
+    "max_abs_diff": 0.0,
+    "where_max_abs": "",
+    "max_rel_diff": 0.0,
+    "where_max_rel": "",
+    "present_on_one_side_only": []
+   },
+   "s_hi_per_K": {
+    "compared": 162,
+    "max_abs_diff": 0.0,
+    "where_max_abs": "",
+    "max_rel_diff": 0.0,
+    "where_max_rel": "",
+    "present_on_one_side_only": []
+   },
+   "L_warm": {
+    "compared": 202,
+    "max_abs_diff": 0.0,
+    "where_max_abs": "",
+    "max_rel_diff": 0.0,
+    "where_max_rel": "",
+    "present_on_one_side_only": []
+   },
+   "L_cool": {
+    "compared": 202,
+    "max_abs_diff": 0.0,
+    "where_max_abs": "",
+    "max_rel_diff": 0.0,
+    "where_max_rel": "",
+    "present_on_one_side_only": []
+   },
+   "resolution_efc": {
+    "compared": 228,
+    "max_abs_diff": 0.0,
+    "where_max_abs": "",
+    "max_rel_diff": 0.0,
+    "where_max_rel": "",
+    "present_on_one_side_only": []
+   },
+   "dT_b_K": {
+    "compared": 56,
+    "max_abs_diff": 0.0,
+    "where_max_abs": "",
+    "max_rel_diff": 0.0,
+    "where_max_rel": "",
+    "present_on_one_side_only": []
+   },
+   "d_b": {
+    "compared": 56,
+    "max_abs_diff": 1.734723475976807e-18,
+    "where_max_abs": "Sandia LFP_25C_0-100_0.5/1C SNL_18650_LFP_25C_0-100_0.5/1C_b/SNL_18650_LFP_25C_0-100_0.5/1C_d",
+    "max_rel_diff": 1.1174995884395452e-16,
+    "where_max_rel": "Sandia LFP_25C_0-100_0.5/1C SNL_18650_LFP_25C_0-100_0.5/1C_b/SNL_18650_LFP_25C_0-100_0.5/1C_d",
+    "present_on_one_side_only": []
+   },
+   "p_b": {
+    "compared": 56,
+    "max_abs_diff": 0.0,
+    "where_max_abs": "",
+    "max_rel_diff": 0.0,
+    "where_max_rel": "",
+    "present_on_one_side_only": []
+   }
+  }
+ },
+ "B_point": {
+  "beta": {
+   "compared": 6,
+   "max_abs_diff": 2.220446049250313e-16,
+   "where_max_abs": "pooled",
+   "max_rel_diff": 1.2879326590077845e-15,
+   "where_max_rel": "KIT",
+   "present_on_one_side_only": []
+  },
+  "s_w_per_K": {
+   "compared": 8,
+   "max_abs_diff": 6.938893903907228e-18,
+   "where_max_abs": "pooled warm",
+   "max_rel_diff": 6.560879564670914e-16,
+   "where_max_rel": "KIT cold",
+   "present_on_one_side_only": []
+  },
+  "resid_sd": {
+   "compared": 4,
+   "max_abs_diff": 0.0,
+   "where_max_abs": "",
+   "max_rel_diff": 0.0,
+   "where_max_rel": "",
+   "present_on_one_side_only": []
+  }
+ },
+ "B_point_note": "the pipeline gives no per-band beta or residual sd and no s_w over a whole dataset; those are extras of the checker and are not compared. Its pooled untied bracket points to the KIT untied numbers ('same_pairs_as'), which the checker's pooled untied bracket equals exactly.",
+ "counts": {
+  "compared": 46,
+  "mismatches": 0,
+  "list": []
+ },
+ "sign": {
+  "counts": {
+   "compared": 13,
+   "mismatches": 0,
+   "list": []
+  },
+  "p_and_share": {
+   "compared": 26,
+   "max_abs_diff": 0.0,
+   "where_max_abs": "",
+   "max_rel_diff": 0.0,
+   "where_max_rel": "",
+   "present_on_one_side_only": []
+  }
+ },
+ "C1_calculated": {
+  "counts": {
+   "compared": 20,
+   "mismatches": 0,
+   "list": []
+  },
+  "detectable_s_per_K": {
+   "compared": 20,
+   "max_abs_diff": 1.4960255256823984e-14,
+   "where_max_abs": "KIT warm | KIT",
+   "max_rel_diff": 1.7606146823476637e-13,
+   "where_max_rel": "pooled | Geslin",
+   "present_on_one_side_only": []
+  },
+  "normal_shape_per_K": {
+   "compared": 20,
+   "max_abs_diff": 8.61116733474887e-15,
+   "where_max_abs": "Sandia cold | KIT",
+   "max_rel_diff": 1.5208538163058424e-13,
+   "where_max_rel": "Sandia cold | KIT",
+   "present_on_one_side_only": []
+  },
+  "F": {
+   "compared": 20,
+   "max_abs_diff": 8.881784197001252e-16,
+   "where_max_abs": "KIT | Geslin",
+   "max_rel_diff": 5.921189482976256e-16,
+   "where_max_rel": "KIT | Geslin",
+   "present_on_one_side_only": []
+  },
+  "shared_cells_per_K": {
+   "compared": 20,
+   "max_abs_diff": 1.201816424156732e-14,
+   "where_max_abs": "pooled cold | KIT",
+   "max_rel_diff": 2.1290950937529698e-13,
+   "where_max_rel": "pooled cold | KIT",
+   "present_on_one_side_only": []
+  },
+  "dT_rms_K": {
+   "compared": 20,
+   "max_abs_diff": 2.220446049250313e-16,
+   "where_max_abs": "Sandia warm | Geslin",
+   "max_rel_diff": 2.546712926545177e-16,
+   "where_max_rel": "KIT | Geslin",
+   "present_on_one_side_only": []
+  },
+  "sum_dT2_K2": {
+   "compared": 20,
+   "max_abs_diff": 2.842170943040401e-14,
+   "where_max_abs": "Sandia | Geslin",
+   "max_rel_diff": 3.5271494710935673e-16,
+   "where_max_rel": "KIT | Geslin",
+   "present_on_one_side_only": []
+  },
+  "dT_median_K": {
+   "compared": 20,
+   "max_abs_diff": 0.0,
+   "where_max_abs": "",
+   "max_rel_diff": 0.0,
+   "where_max_rel": "",
+   "present_on_one_side_only": []
+  },
+  "sd_e": {
+   "compared": 20,
+   "max_abs_diff": 0.0,
+   "where_max_abs": "",
+   "max_rel_diff": 0.0,
+   "where_max_rel": "",
+   "present_on_one_side_only": []
+  },
+  "power_at_detectable": {
+   "compared": 20,
+   "max_abs_diff": 1.4721557306529576e-13,
+   "where_max_abs": "pooled | Geslin",
+   "max_rel_diff": 1.840194663316176e-13,
+   "where_max_rel": "pooled | Geslin",
+   "present_on_one_side_only": []
+  }
+ },
+ "C2_calculated": {
+  "pairs_needed": {
+   "compared": 12,
+   "mismatches": 0,
+   "list": []
+  },
+  "power_calc": {
+   "compared": 12,
+   "max_abs_diff": 2.7755575615628914e-17,
+   "where_max_abs": "KIT | warm | Geslin",
+   "max_rel_diff": 2.147201697318135e-16,
+   "where_max_rel": "KIT | warm | KIT",
+   "present_on_one_side_only": []
+  },
+  "dT_rms_K": {
+   "compared": 12,
+   "max_abs_diff": 2.220446049250313e-16,
+   "where_max_abs": "Sandia | warm | Geslin",
+   "max_rel_diff": 1.2742761202544247e-16,
+   "where_max_rel": "Sandia | warm | Geslin",
+   "present_on_one_side_only": []
+  },
+  "sd_e": {
+   "compared": 12,
+   "max_abs_diff": 0.0,
+   "where_max_abs": "",
+   "max_rel_diff": 0.0,
+   "where_max_rel": "",
+   "present_on_one_side_only": []
+  },
+  "F": {
+   "compared": 12,
+   "max_abs_diff": 2.220446049250313e-16,
+   "where_max_abs": "KIT | warm | Geslin",
+   "max_rel_diff": 1.4802973772515627e-16,
+   "where_max_rel": "KIT | warm | Geslin",
+   "present_on_one_side_only": []
+  },
+  "abs_s_per_K": {
+   "compared": 12,
+   "max_abs_diff": 0.0,
+   "where_max_abs": "",
+   "max_rel_diff": 0.0,
+   "where_max_rel": "",
+   "present_on_one_side_only": []
+  }
+ },
+ "verdicts": {
+  "P1_to_P8": {
+   "compared": 9,
+   "mismatches": 0,
+   "list": []
+  },
+  "floor_verdicts": {
+   "compared": 8,
+   "mismatches": 0,
+   "list": []
+  },
+  "v4_pass": {
+   "compared": 20,
+   "mismatches": 1,
+   "list": [
+    {
+     "where": "Sandia cold | KIT",
+     "checker": true,
+     "pipeline": false
+    }
+   ]
+  },
+  "v4_differences": [
+   {
+    "case": "Sandia cold | KIT",
+    "checker_rel": -0.046999454498291154,
+    "pipeline_rel": -0.05152273178100595,
+    "replicate_pass_share": 0.75,
+    "replicate_rel_mean": -0.04743533134460458,
+    "replicate_rel_sd": 0.005865615979490884
+   }
+  ]
+ },
+ "monte_carlo": [
+  {
+   "quantity": "beta lo KIT",
+   "checker": -1.9134729640234256,
+   "pipeline": -2.047874370928099,
+   "replicate_mean": -2.015299889673704,
+   "replicate_sd": 0.04293856217571068,
+   "z_checker": 2.371456343451567,
+   "z_pipeline": -0.7586299960649704,
+   "diff": -0.1344014069046735,
+   "diff_over_sd": -3.1300863395165375,
+   "diff_over_sqrt2_sd": -2.2133052763715217,
+   "big_draw_value": -2.0322681943964356,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "beta hi KIT",
+   "checker": 1.4273526803988161,
+   "pipeline": 1.3713407424405013,
+   "replicate_mean": 1.3439701493390066,
+   "replicate_sd": 0.0424908555291238,
+   "z_checker": 1.9623641374473626,
+   "z_pipeline": 0.6441525537826492,
+   "diff": -0.05601193795831483,
+   "diff_over_sd": -1.3182115836647132,
+   "diff_over_sqrt2_sd": -0.9321163498479766,
+   "big_draw_value": 1.3432522725020115,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "beta lo Sandia",
+   "checker": -0.7069762621721137,
+   "pipeline": -0.7415311750654159,
+   "replicate_mean": -0.7416651728820398,
+   "replicate_sd": 0.034690896698737754,
+   "z_checker": 0.9999427518743916,
+   "z_pipeline": 0.0038626218799587136,
+   "diff": -0.03455491289330215,
+   "diff_over_sd": -0.996080129994433,
+   "diff_over_sqrt2_sd": -0.7043350145242413,
+   "big_draw_value": -0.7348491257092836,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "beta hi Sandia",
+   "checker": 2.4815507569899866,
+   "pipeline": 2.497771531486677,
+   "replicate_mean": 2.4815669932717057,
+   "replicate_sd": 0.018655514585281023,
+   "z_checker": -0.0008703207646657752,
+   "z_pipeline": 0.8686192032331582,
+   "diff": 0.01622077449669046,
+   "diff_over_sd": 0.869489523997824,
+   "diff_over_sqrt2_sd": 0.6148219385895247,
+   "big_draw_value": 2.4827520399050305,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "beta lo pooled",
+   "checker": -0.5573992754968562,
+   "pipeline": -0.4926223944285118,
+   "replicate_mean": -0.5110333188396705,
+   "replicate_sd": 0.02110369893212354,
+   "z_checker": -2.197053550011015,
+   "z_pipeline": 0.872402722876891,
+   "diff": 0.0647768810683444,
+   "diff_over_sd": 3.069456272887906,
+   "diff_over_sqrt2_sd": 2.170433345114624,
+   "big_draw_value": -0.5108273448316075,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "beta hi pooled",
+   "checker": 1.946636586796124,
+   "pipeline": 1.955666809066538,
+   "replicate_mean": 1.9489541796155232,
+   "replicate_sd": 0.009865997484438508,
+   "z_checker": -0.23490709612026103,
+   "z_pipeline": 0.6803802110838186,
+   "diff": 0.009030222270413946,
+   "diff_over_sd": 0.9152873072040797,
+   "diff_over_sqrt2_sd": 0.6472058616579794,
+   "big_draw_value": 1.948627622480048,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "beta lo untied KIT",
+   "checker": -169.39278756720321,
+   "pipeline": -169.39278756720321,
+   "diff": 0.0,
+   "note": "two pairs in two sets: the ends are the two single-pair values in almost every run"
+  },
+  {
+   "quantity": "beta hi untied KIT",
+   "checker": 96.90951721302008,
+   "pipeline": 96.90951721302008,
+   "diff": 0.0,
+   "note": "two pairs in two sets: the ends are the two single-pair values in almost every run"
+  },
+  {
+   "quantity": "beta lo Sandia measure b",
+   "checker": -2.2556747214308857,
+   "pipeline": -2.026720282004891,
+   "replicate_mean": -2.1269812675515287,
+   "replicate_sd": 0.07945185816951583,
+   "z_checker": -1.6197664452954754,
+   "z_pipeline": 1.26190863066694,
+   "diff": 0.22895443942599458,
+   "diff_over_sd": 2.8816750759624155,
+   "diff_over_sqrt2_sd": 2.037651987389283,
+   "big_draw_value": -2.11327181480756,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "beta hi Sandia measure b",
+   "checker": 2.645927560682631,
+   "pipeline": 2.6420442734988234,
+   "replicate_mean": 2.5914169581476796,
+   "replicate_sd": 0.0659288883865035,
+   "z_checker": 0.8268090645694908,
+   "z_pipeline": 0.7679079170020999,
+   "diff": -0.0038832871838074823,
+   "diff_over_sd": -0.05890114756739083,
+   "diff_over_sqrt2_sd": -0.04164940086457157,
+   "big_draw_value": 2.5912865331738724,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "beta lo Sandia without NCA 15C 1C",
+   "checker": 0.11744741246365885,
+   "pipeline": 0.108834023035711,
+   "replicate_mean": 0.11728334130076724,
+   "replicate_sd": 0.025332794520861995,
+   "z_checker": 0.006476631022941006,
+   "z_pipeline": -0.3335328148695983,
+   "diff": -0.008613389427947843,
+   "diff_over_sd": -0.34000944589253934,
+   "diff_over_sqrt2_sd": -0.24042298485809507,
+   "big_draw_value": 0.11598894258549196,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "beta hi Sandia without NCA 15C 1C",
+   "checker": 2.8321231535904245,
+   "pipeline": 2.8957796225611596,
+   "replicate_mean": 2.8716794252575837,
+   "replicate_sd": 0.03571888490608226,
+   "z_checker": -1.1074329943716537,
+   "z_pipeline": 0.6747186360084864,
+   "diff": 0.06365646897073507,
+   "diff_over_sd": 1.7821516303801401,
+   "diff_over_sqrt2_sd": 1.2601715029444585,
+   "big_draw_value": 2.878508234042047,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "s_w lo KIT warm (per K)",
+   "checker": -0.16008217216724954,
+   "pipeline": -0.1634543488478575,
+   "replicate_mean": -0.16249437602190725,
+   "replicate_sd": 0.0012776841862441675,
+   "z_checker": 1.8879499962729689,
+   "z_pipeline": -0.7513381133503391,
+   "diff": -0.0033721766806079634,
+   "diff_over_sd": -2.639288109623308,
+   "diff_over_sqrt2_sd": -1.8662585198196648,
+   "big_draw_value": -0.16239646851244785,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "s_w hi KIT warm (per K)",
+   "checker": 0.0820114274947321,
+   "pipeline": 0.08183156854380558,
+   "replicate_mean": 0.08409949531276074,
+   "replicate_sd": 0.0023132952946879164,
+   "z_checker": -0.9026378183639293,
+   "z_pipeline": -0.9803879228748139,
+   "diff": -0.00017985895092652304,
+   "diff_over_sd": -0.07775010451088459,
+   "diff_over_sqrt2_sd": -0.054977626137609266,
+   "big_draw_value": 0.08436492223441606,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "s_w lo KIT cold (per K)",
+   "checker": -0.0932237554353926,
+   "pipeline": -0.09441398531411821,
+   "replicate_mean": -0.09456785678888695,
+   "replicate_sd": 0.0016049155357346805,
+   "z_checker": 0.8374903996920046,
+   "z_pipeline": 0.09587512323400901,
+   "diff": -0.0011902298787256071,
+   "diff_over_sd": -0.7416152764579955,
+   "diff_over_sqrt2_sd": -0.5244011910149847,
+   "big_draw_value": -0.09417229805248979,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "s_w hi KIT cold (per K)",
+   "checker": 0.04048240467331763,
+   "pipeline": 0.04062047902146028,
+   "replicate_mean": 0.04047938925677372,
+   "replicate_sd": 0.0005467355609023655,
+   "z_checker": 0.005515310800226152,
+   "z_pipeline": 0.2580585108707727,
+   "diff": 0.00013807434814264857,
+   "diff_over_sd": 0.25254320007054654,
+   "diff_over_sqrt2_sd": 0.17857500931243445,
+   "big_draw_value": 0.04047349897656862,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "s_w lo Sandia warm (per K)",
+   "checker": -0.07014789304711526,
+   "pipeline": -0.07124944497780987,
+   "replicate_mean": -0.07074246267213721,
+   "replicate_sd": 0.0014638616084088815,
+   "z_checker": 0.4061651877517376,
+   "z_pipeline": -0.34633212781890793,
+   "diff": -0.0011015519306946109,
+   "diff_over_sd": -0.7524973155706456,
+   "diff_over_sqrt2_sd": -0.5320959546646769,
+   "big_draw_value": -0.0705658157103851,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "s_w hi Sandia warm (per K)",
+   "checker": 0.005233815929940973,
+   "pipeline": 0.004554431054211509,
+   "replicate_mean": 0.005271624490103068,
+   "replicate_sd": 0.0005662330626614796,
+   "z_checker": -0.0667720814188815,
+   "z_pipeline": -1.2666046601385603,
+   "diff": -0.0006793848757294645,
+   "diff_over_sd": -1.1998325787196789,
+   "diff_over_sqrt2_sd": -0.848409752701227,
+   "big_draw_value": 0.005277276210476847,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "s_w lo Sandia cold (per K)",
+   "checker": -0.04031617101001738,
+   "pipeline": -0.040813109459255675,
+   "replicate_mean": -0.04099831389711671,
+   "replicate_sd": 0.0008469713351343583,
+   "z_checker": 0.8053907597606208,
+   "z_pipeline": 0.21866671300234003,
+   "diff": -0.0004969384492382947,
+   "diff_over_sd": -0.5867240467582808,
+   "diff_over_sqrt2_sd": -0.41487655214799335,
+   "big_draw_value": -0.04114520902189393,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "s_w hi Sandia cold (per K)",
+   "checker": 0.18630666269999624,
+   "pipeline": 0.18475036374850848,
+   "replicate_mean": 0.18558118703564047,
+   "replicate_sd": 0.0008709053735765717,
+   "z_checker": 0.833013191061661,
+   "z_pipeline": -0.9539765310208475,
+   "diff": -0.0015562989514877612,
+   "diff_over_sd": -1.7869897220825086,
+   "diff_over_sqrt2_sd": -1.2635925503952055,
+   "big_draw_value": 0.18550092294496284,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "s_w lo pooled warm (per K)",
+   "checker": -0.0710814647621066,
+   "pipeline": -0.07144936118674487,
+   "replicate_mean": -0.07100544676652365,
+   "replicate_sd": 0.0010373451699323996,
+   "z_checker": -0.07328129323424809,
+   "z_pipeline": -0.42793318279020953,
+   "diff": -0.00036789642463827543,
+   "diff_over_sd": -0.35465188955596144,
+   "diff_over_sqrt2_sd": -0.25077675606564287,
+   "big_draw_value": -0.07106463954422085,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "s_w hi pooled warm (per K)",
+   "checker": -0.0002992324667988162,
+   "pipeline": -0.0010472392897073303,
+   "replicate_mean": 0.00021198404676298286,
+   "replicate_sd": 0.0005668577251954119,
+   "z_checker": -0.9018427214440242,
+   "z_pipeline": -2.2214098538327645,
+   "diff": -0.0007480068229085142,
+   "diff_over_sd": -1.3195671323887401,
+   "diff_over_sqrt2_sd": -0.9330748675429648,
+   "big_draw_value": 0.00031210008333775813,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "s_w lo pooled cold (per K)",
+   "checker": -0.030529910190108277,
+   "pipeline": -0.03259910227993789,
+   "replicate_mean": -0.0322690718217812,
+   "replicate_sd": 0.0011406566741101873,
+   "z_checker": 1.524702104627253,
+   "z_pipeline": -0.289333737002101,
+   "diff": -0.0020691920898296134,
+   "diff_over_sd": -1.814035841629354,
+   "diff_over_sqrt2_sd": -1.2827170449315621,
+   "big_draw_value": -0.032292604810420796,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "s_w hi pooled cold (per K)",
+   "checker": 0.080569448422205,
+   "pipeline": 0.08095634051223491,
+   "replicate_mean": 0.08038516996601708,
+   "replicate_sd": 0.0005980489415041225,
+   "z_checker": 0.3081327352982976,
+   "z_pipeline": 0.9550565289544843,
+   "diff": 0.00038689209002991387,
+   "diff_over_sd": 0.6469237936561868,
+   "diff_over_sqrt2_sd": 0.45744420140521647,
+   "big_draw_value": 0.08040246431083582,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "s_w lo KIT 0 C (per K)",
+   "checker": -0.034724357629013686,
+   "pipeline": -0.035028946058671795,
+   "replicate_mean": -0.03480110092428342,
+   "replicate_sd": 0.00033296714198862023,
+   "z_checker": 0.2304830885455936,
+   "z_pipeline": -0.684287143252591,
+   "diff": -0.00030458842965810917,
+   "diff_over_sd": -0.9147702317981846,
+   "diff_over_sqrt2_sd": -0.6468402341320862,
+   "big_draw_value": -0.0348379051684943,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "s_w hi KIT 0 C (per K)",
+   "checker": 0.006671712435124952,
+   "pipeline": 0.006543238317114637,
+   "replicate_mean": 0.006397768976224196,
+   "replicate_sd": 0.00024145374262216345,
+   "z_checker": 1.1345587603064582,
+   "z_pipeline": 0.6024729180449179,
+   "diff": -0.000128474118010315,
+   "diff_over_sd": -0.5320858422615403,
+   "diff_over_sqrt2_sd": -0.3762415072364908,
+   "big_draw_value": 0.006413629859955677,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "s_w lo untied KIT warm (per K)",
+   "checker": 1.6858206979404486,
+   "pipeline": 1.6858206979404486,
+   "diff": 0.0,
+   "note": "two pairs in two sets: degenerate"
+  },
+  {
+   "quantity": "s_w hi untied KIT warm (per K)",
+   "checker": 1.8507198081070828,
+   "pipeline": 1.8507198081070828,
+   "diff": 0.0,
+   "note": "two pairs in two sets: degenerate"
+  },
+  {
+   "quantity": "resid_sd lo KIT",
+   "checker": 0.09114492413556946,
+   "pipeline": 0.0919219482334293,
+   "replicate_mean": 0.09142887986550041,
+   "replicate_sd": 0.0004754309567970208,
+   "z_checker": -0.5972596564682319,
+   "z_pipeline": 1.0370977339184717,
+   "diff": 0.0007770240978598325,
+   "diff_over_sd": 1.6343573903867037,
+   "diff_over_sqrt2_sd": 1.1556651936247875,
+   "big_draw_value": 0.09138450806013781,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "resid_sd hi KIT",
+   "checker": 0.16776712404030047,
+   "pipeline": 0.16762870610651337,
+   "replicate_mean": 0.16801771999060391,
+   "replicate_sd": 0.0005269986470651551,
+   "z_checker": -0.4755153579596517,
+   "z_pipeline": -0.7381686580353761,
+   "diff": -0.00013841793378710499,
+   "diff_over_sd": -0.26265330007572446,
+   "diff_over_sqrt2_sd": -0.18572392958456987,
+   "big_draw_value": 0.16799433030833705,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "resid_sd lo Sandia",
+   "checker": 0.08966589765481081,
+   "pipeline": 0.09057816345491684,
+   "replicate_mean": 0.08989098309654882,
+   "replicate_sd": 0.000599737215890771,
+   "z_checker": -0.37530677732529033,
+   "z_pipeline": 1.1458024283975403,
+   "diff": 0.0009122658001060324,
+   "diff_over_sd": 1.5211092057228306,
+   "diff_over_sqrt2_sd": 1.0755866342918965,
+   "big_draw_value": 0.08982955894123197,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "resid_sd hi Sandia",
+   "checker": 0.22034948212981578,
+   "pipeline": 0.2217686655887071,
+   "replicate_mean": 0.22193509624799737,
+   "replicate_sd": 0.0009171506518273863,
+   "z_checker": -1.7288480524135434,
+   "z_pipeline": -0.1814649086915849,
+   "diff": 0.0014191834588913044,
+   "diff_over_sd": 1.5473831437219585,
+   "diff_over_sqrt2_sd": 1.094165114019555,
+   "big_draw_value": 0.2220006157345137,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "resid_sd lo pooled",
+   "checker": 0.1055691067174742,
+   "pipeline": 0.10513465311531804,
+   "replicate_mean": 0.10565005188175357,
+   "replicate_sd": 0.00042190858621771405,
+   "z_checker": -0.19185474513570897,
+   "z_pipeline": -1.221588712038132,
+   "diff": -0.0004344536021561596,
+   "diff_over_sd": -1.0297339669024228,
+   "diff_over_sqrt2_sd": -0.728131870814827,
+   "big_draw_value": 0.10567651317033268,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "resid_sd hi pooled",
+   "checker": 0.17408739846004567,
+   "pipeline": 0.17532819036857952,
+   "replicate_mean": 0.1747094665716885,
+   "replicate_sd": 0.00046449253220188006,
+   "z_checker": -1.3392424388267041,
+   "z_pipeline": 1.3320425065996546,
+   "diff": 0.0012407919085338504,
+   "diff_over_sd": 2.671284945426359,
+   "diff_over_sqrt2_sd": 1.8888836993925147,
+   "big_draw_value": 0.17469906397096407,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "resid_sd lo untied KIT",
+   "checker": 0.0,
+   "pipeline": 0.0,
+   "diff": 0.0,
+   "note": "two pairs in two sets: degenerate"
+  },
+  {
+   "quantity": "resid_sd hi untied KIT",
+   "checker": 0.4561755629047363,
+   "pipeline": 0.4561755629047363,
+   "diff": 0.0,
+   "note": "two pairs in two sets: degenerate"
+  },
+  {
+   "quantity": "P7 width ratio Sandia/KIT",
+   "checker": 0.9544128782912048,
+   "pipeline": 0.9473819573056174,
+   "diff": -0.007030920985587441,
+   "replicate_means_ratio": 0.9595037400152125,
+   "big_draw_ratio": 0.9532163105415162
+  },
+  {
+   "quantity": "C1 simulated log-normal KIT | Geslin (% per K)",
+   "checker": 2.763749016670511,
+   "pipeline": 2.763128159354465,
+   "replicate_mean": 2.7559727787921475,
+   "replicate_sd": 0.014925977556716092,
+   "z_checker": 0.5209868398110019,
+   "z_pipeline": 0.4793910841101357,
+   "diff": -0.0006208573160457753,
+   "diff_over_sd": -0.041595755700866266,
+   "diff_over_sqrt2_sd": -0.029412640924661525,
+   "big_draw_value": null,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C1 simulated normal KIT | Geslin (% per K)",
+   "checker": 2.8059940752250685,
+   "pipeline": 2.791513648781054,
+   "replicate_mean": 2.8046438443690125,
+   "replicate_sd": 0.01781906555042321,
+   "z_checker": 0.0757745041251023,
+   "z_pipeline": -0.7368621856630824,
+   "diff": -0.014480426444014594,
+   "diff_over_sd": -0.8126366897881847,
+   "diff_over_sqrt2_sd": -0.5746209139902141,
+   "big_draw_value": null,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C1 simulated log-normal KIT | KIT (% per K)",
+   "checker": 6.508125227345019,
+   "pipeline": 6.471195763033501,
+   "replicate_mean": 6.491618013295827,
+   "replicate_sd": 0.03166987062333913,
+   "z_checker": 0.5212277071010997,
+   "z_pipeline": -0.6448479220270691,
+   "diff": -0.03692946431151789,
+   "diff_over_sd": -1.1660756291281689,
+   "diff_over_sqrt2_sd": -0.8245399847328978,
+   "big_draw_value": null,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C1 simulated normal KIT | KIT (% per K)",
+   "checker": 6.554125964441843,
+   "pipeline": 6.603955404259085,
+   "replicate_mean": 6.558610926827906,
+   "replicate_sd": 0.028889570492523043,
+   "z_checker": -0.1552450351320992,
+   "z_pipeline": 1.569579493849338,
+   "diff": 0.04982943981724208,
+   "diff_over_sd": 1.7248245289814372,
+   "diff_over_sqrt2_sd": 1.219635120799667,
+   "big_draw_value": null,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C1 simulated log-normal Sandia | Geslin (% per K)",
+   "checker": 1.0711653651605608,
+   "pipeline": 1.0640097563108064,
+   "replicate_mean": 1.0673649616879362,
+   "replicate_sd": 0.007694115466497327,
+   "z_checker": 0.493936371136209,
+   "z_pipeline": -0.43607421694402637,
+   "diff": -0.0071556088497544135,
+   "diff_over_sd": -0.9300105880802353,
+   "diff_over_sqrt2_sd": -0.6576167934068233,
+   "big_draw_value": null,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C1 simulated normal Sandia | Geslin (% per K)",
+   "checker": 1.100647231943357,
+   "pipeline": 1.113501839834327,
+   "replicate_mean": 1.1033817193229005,
+   "replicate_sd": 0.004797820398592082,
+   "z_checker": -0.5699436728281994,
+   "z_pipeline": 2.1093162458511925,
+   "diff": 0.012854607890970149,
+   "diff_over_sd": 2.679259918679392,
+   "diff_over_sqrt2_sd": 1.8945228570595158,
+   "big_draw_value": null,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C1 simulated log-normal Sandia | KIT (% per K)",
+   "checker": 2.5241960856335526,
+   "pipeline": 2.5098170319918487,
+   "replicate_mean": 2.5184388011934167,
+   "replicate_sd": 0.016482018082140667,
+   "z_checker": 0.3493070090958274,
+   "z_pipeline": -0.5231015497374215,
+   "diff": -0.014379053641703887,
+   "diff_over_sd": -0.8724085588332489,
+   "diff_over_sqrt2_sd": -0.6168860079161733,
+   "big_draw_value": null,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C1 simulated normal Sandia | KIT (% per K)",
+   "checker": 2.593892638961589,
+   "pipeline": 2.5795997611550656,
+   "replicate_mean": 2.587036366406217,
+   "replicate_sd": 0.013375699566332963,
+   "z_checker": 0.512591698203918,
+   "z_pipeline": -0.555978789316512,
+   "diff": -0.014292877806523219,
+   "diff_over_sd": -1.06857048752043,
+   "diff_over_sqrt2_sd": -0.755593437901511,
+   "big_draw_value": null,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C1 simulated log-normal pooled | Geslin (% per K)",
+   "checker": 0.990529718925258,
+   "pipeline": 0.9829358526600945,
+   "replicate_mean": 0.9930474477819957,
+   "replicate_sd": 0.004555035014765912,
+   "z_checker": -0.5527353463971388,
+   "z_pipeline": -2.2198720951919686,
+   "diff": -0.007593866265163451,
+   "diff_over_sd": -1.6671367487948296,
+   "diff_over_sqrt2_sd": -1.1788437002381178,
+   "big_draw_value": null,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C1 simulated normal pooled | Geslin (% per K)",
+   "checker": 1.0170107941346016,
+   "pipeline": 1.015152813319237,
+   "replicate_mean": 1.0176695724575644,
+   "replicate_sd": 0.005370514640271084,
+   "z_checker": -0.12266577173496754,
+   "z_pipeline": -0.4686253193419204,
+   "diff": -0.0018579808153647015,
+   "diff_over_sd": -0.34595954760695286,
+   "diff_over_sqrt2_sd": -0.24463034212910656,
+   "big_draw_value": null,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C1 simulated log-normal pooled | KIT (% per K)",
+   "checker": 2.335786936866209,
+   "pipeline": 2.3475569463057866,
+   "replicate_mean": 2.3333325090502948,
+   "replicate_sd": 0.011687293100799705,
+   "z_checker": 0.21000823670166052,
+   "z_pipeline": 1.217085695790287,
+   "diff": 0.0117700094395774,
+   "diff_over_sd": 1.0070774590886264,
+   "diff_over_sqrt2_sd": 0.7121113005016856,
+   "big_draw_value": null,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C1 simulated normal pooled | KIT (% per K)",
+   "checker": 2.3775963136177714,
+   "pipeline": 2.3782809328109065,
+   "replicate_mean": 2.3765853668324133,
+   "replicate_sd": 0.010173564940329425,
+   "z_checker": 0.09936996434264014,
+   "z_pipeline": 0.16666389691697217,
+   "diff": 0.0006846191931351164,
+   "diff_over_sd": 0.06729393257433201,
+   "diff_over_sqrt2_sd": 0.04758399605602047,
+   "big_draw_value": null,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C1 simulated log-normal KIT warm | Geslin (% per K)",
+   "checker": 4.289916784300743,
+   "pipeline": 4.298993745765283,
+   "replicate_mean": 4.293840509090581,
+   "replicate_sd": 0.027381892876919296,
+   "z_checker": -0.14329633117310014,
+   "z_pipeline": 0.188198701158669,
+   "diff": 0.009076961464539401,
+   "diff_over_sd": 0.33149503233176913,
+   "diff_over_sqrt2_sd": 0.2344023852914478,
+   "big_draw_value": null,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C1 simulated normal KIT warm | Geslin (% per K)",
+   "checker": 4.413232055612718,
+   "pipeline": 4.410963861461595,
+   "replicate_mean": 4.38855205266709,
+   "replicate_sd": 0.018622970775902685,
+   "z_checker": 1.3252452169211708,
+   "z_pipeline": 1.2034497108004385,
+   "diff": -0.002268194151122671,
+   "diff_over_sd": -0.12179550612073213,
+   "diff_over_sqrt2_sd": -0.08612242829601734,
+   "big_draw_value": null,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C1 simulated log-normal KIT warm | KIT (% per K)",
+   "checker": 10.06456978741148,
+   "pipeline": 10.105541490749353,
+   "replicate_mean": 10.114920077997983,
+   "replicate_sd": 0.048623460389366546,
+   "z_checker": -1.0355143419104207,
+   "z_pipeline": -0.19288193751592916,
+   "diff": 0.040971703337872256,
+   "diff_over_sd": 0.8426324043944916,
+   "diff_over_sqrt2_sd": 0.5958310871948701,
+   "big_draw_value": null,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C1 simulated normal KIT warm | KIT (% per K)",
+   "checker": 10.238141888795033,
+   "pipeline": 10.224660750497208,
+   "replicate_mean": 10.261394895737515,
+   "replicate_sd": 0.04241162626784014,
+   "z_checker": -0.5482696370951197,
+   "z_pipeline": -0.8661338522678289,
+   "diff": -0.013481138297825268,
+   "diff_over_sd": -0.3178642151727093,
+   "diff_over_sqrt2_sd": -0.2247639420451626,
+   "big_draw_value": null,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C1 simulated log-normal KIT cold | Geslin (% per K)",
+   "checker": 3.62459795636625,
+   "pipeline": 3.6116493154085356,
+   "replicate_mean": 3.609125077869388,
+   "replicate_sd": 0.023749670075186118,
+   "z_checker": 0.6514986712606194,
+   "z_pipeline": 0.10628516232673915,
+   "diff": -0.012948640957714197,
+   "diff_over_sd": -0.5452135089338803,
+   "diff_over_sqrt2_sd": -0.38552416936165906,
+   "big_draw_value": null,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C1 simulated normal KIT cold | Geslin (% per K)",
+   "checker": 3.70004745912124,
+   "pipeline": 3.740943524158314,
+   "replicate_mean": 3.737616136307971,
+   "replicate_sd": 0.015026098207576924,
+   "z_checker": -2.50022838049783,
+   "z_pipeline": 0.22144057654735644,
+   "diff": 0.040896065037074436,
+   "diff_over_sd": 2.721668957045187,
+   "diff_over_sqrt2_sd": 1.9245105756715697,
+   "big_draw_value": null,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C1 simulated log-normal KIT cold | KIT (% per K)",
+   "checker": 8.360601569066423,
+   "pipeline": 8.483639203821387,
+   "replicate_mean": 8.499180120999556,
+   "replicate_sd": 0.05867450411186716,
+   "z_checker": -2.3618188859154716,
+   "z_pipeline": -0.26486661307847864,
+   "diff": 0.12303763475496332,
+   "diff_over_sd": 2.096952272836993,
+   "diff_over_sqrt2_sd": 1.4827691719475808,
+   "big_draw_value": null,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C1 simulated normal KIT cold | KIT (% per K)",
+   "checker": 8.761341311074162,
+   "pipeline": 8.760916957292295,
+   "replicate_mean": 8.710408040388726,
+   "replicate_sd": 0.03377605398990766,
+   "z_checker": 1.507969838651207,
+   "z_pipeline": 1.4954060920988872,
+   "diff": -0.00042435378186667094,
+   "diff_over_sd": -0.012563746552319833,
+   "diff_over_sqrt2_sd": -0.00888391038425446,
+   "big_draw_value": null,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C1 simulated log-normal Sandia warm | Geslin (% per K)",
+   "checker": 1.175207201104844,
+   "pipeline": 1.1715088197863124,
+   "replicate_mean": 1.1791119846478229,
+   "replicate_sd": 0.007073074930108115,
+   "z_checker": -0.5520630816955258,
+   "z_pipeline": -1.0749447640015672,
+   "diff": -0.0036983813185316183,
+   "diff_over_sd": -0.5228816823060415,
+   "diff_over_sqrt2_sd": -0.36973318331683197,
+   "big_draw_value": null,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C1 simulated normal Sandia warm | Geslin (% per K)",
+   "checker": 1.2225392233694392,
+   "pipeline": 1.2132903432120492,
+   "replicate_mean": 1.2280721025062311,
+   "replicate_sd": 0.007464650118304862,
+   "z_checker": -0.7412107800235862,
+   "z_pipeline": -1.9802347142746828,
+   "diff": -0.009248880157390005,
+   "diff_over_sd": -1.2390239342510967,
+   "diff_over_sqrt2_sd": -0.8761222259613854,
+   "big_draw_value": null,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C1 simulated log-normal Sandia warm | KIT (% per K)",
+   "checker": 2.8092798059008257,
+   "pipeline": 2.7730761312129704,
+   "replicate_mean": 2.7817973906305165,
+   "replicate_sd": 0.020007223836712294,
+   "z_checker": 1.3736246215169716,
+   "z_pipeline": -0.43590552536044497,
+   "diff": -0.03620367468785535,
+   "diff_over_sd": -1.8095301468774165,
+   "diff_over_sqrt2_sd": -1.2795310376185105,
+   "big_draw_value": null,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C1 simulated normal Sandia warm | KIT (% per K)",
+   "checker": 2.8826204371840047,
+   "pipeline": 2.8646444971062195,
+   "replicate_mean": 2.8752765212261675,
+   "replicate_sd": 0.016484182204356043,
+   "z_checker": 0.44551290848365893,
+   "z_pipeline": -0.6449834142902423,
+   "diff": -0.017975940077785246,
+   "diff_over_sd": -1.0904963227739013,
+   "diff_over_sqrt2_sd": -0.7710973446924196,
+   "big_draw_value": null,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C1 simulated log-normal Sandia cold | Geslin (% per K)",
+   "checker": 2.575055896907345,
+   "pipeline": 2.5554641841134025,
+   "replicate_mean": 2.5824465306385207,
+   "replicate_sd": 0.01585101200363164,
+   "z_checker": -0.46625626991401364,
+   "z_pipeline": -1.702247561161159,
+   "diff": -0.019591712793942673,
+   "diff_over_sd": -1.2359912912471454,
+   "diff_over_sqrt2_sd": -0.8739778235283735,
+   "big_draw_value": null,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C1 simulated normal Sandia cold | Geslin (% per K)",
+   "checker": 2.7421749998822764,
+   "pipeline": 2.7587136456834833,
+   "replicate_mean": 2.7478530763395366,
+   "replicate_sd": 0.0128497403953886,
+   "z_checker": -0.4418825814798443,
+   "z_pipeline": 0.8451975689597815,
+   "diff": 0.016538645801206897,
+   "diff_over_sd": 1.2870801504396259,
+   "diff_over_sqrt2_sd": 0.9101031023064612,
+   "big_draw_value": null,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C1 simulated log-normal Sandia cold | KIT (% per K)",
+   "checker": 6.114219984001779,
+   "pipeline": 6.085199735812312,
+   "replicate_mean": 6.1114235040450025,
+   "replicate_sd": 0.037632367168691214,
+   "z_checker": 0.074310498306977,
+   "z_pipeline": -0.6968407837630772,
+   "diff": -0.029020248189467246,
+   "diff_over_sd": -0.7711512820700542,
+   "diff_over_sqrt2_sd": -0.5452863008724355,
+   "big_draw_value": null,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C1 simulated normal Sandia cold | KIT (% per K)",
+   "checker": 6.409369307697241,
+   "pipeline": 6.395688246143022,
+   "replicate_mean": 6.42978780258349,
+   "replicate_sd": 0.03238616002628165,
+   "z_checker": -0.6304697707193107,
+   "z_pipeline": -1.0529052043464022,
+   "diff": -0.013681061554218665,
+   "diff_over_sd": -0.4224354336270915,
+   "diff_over_sqrt2_sd": -0.2987069597311961,
+   "big_draw_value": null,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C1 simulated log-normal pooled warm | Geslin (% per K)",
+   "checker": 1.1209819082125025,
+   "pipeline": 1.1302913166592943,
+   "replicate_mean": 1.1251500446746452,
+   "replicate_sd": 0.00766504405520213,
+   "z_checker": -0.5437850626982118,
+   "z_pipeline": 0.6707426529609829,
+   "diff": 0.009309408446791734,
+   "diff_over_sd": 1.2145277156591947,
+   "diff_over_sqrt2_sd": 0.8588007836816236,
+   "big_draw_value": null,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C1 simulated normal pooled warm | Geslin (% per K)",
+   "checker": 1.1556867538581268,
+   "pipeline": 1.1696818757403666,
+   "replicate_mean": 1.1611964817302671,
+   "replicate_sd": 0.00471397797452941,
+   "z_checker": -1.1688064521961101,
+   "z_pipeline": 1.8000495666182228,
+   "diff": 0.013995121882239836,
+   "diff_over_sd": 2.968856018814333,
+   "diff_over_sqrt2_sd": 2.099298223270111,
+   "big_draw_value": null,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C1 simulated log-normal pooled warm | KIT (% per K)",
+   "checker": 2.6389290985611313,
+   "pipeline": 2.6518274091226273,
+   "replicate_mean": 2.6479633528174484,
+   "replicate_sd": 0.020416493047854357,
+   "z_checker": -0.4424978489274161,
+   "z_pipeline": 0.18926151009979253,
+   "diff": 0.01289831056149593,
+   "diff_over_sd": 0.6317593590272086,
+   "diff_over_sqrt2_sd": 0.44672132684620586,
+   "big_draw_value": null,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C1 simulated normal pooled warm | KIT (% per K)",
+   "checker": 2.715203110495602,
+   "pipeline": 2.719122829923433,
+   "replicate_mean": 2.719447358873619,
+   "replicate_sd": 0.009976279147942763,
+   "z_checker": -0.42543400350744975,
+   "z_pipeline": -0.03253005909049639,
+   "diff": 0.003919719427831314,
+   "diff_over_sd": 0.39290394441695337,
+   "diff_over_sqrt2_sd": 0.27782504345217,
+   "big_draw_value": null,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C1 simulated log-normal pooled cold | Geslin (% per K)",
+   "checker": 2.0688452735108824,
+   "pipeline": 2.0922918567145024,
+   "replicate_mean": 2.0767570323689424,
+   "replicate_sd": 0.012088472353937549,
+   "z_checker": -0.6544878977601226,
+   "z_pipeline": 1.2850940872193708,
+   "diff": 0.02344658320361992,
+   "diff_over_sd": 1.9395819849794933,
+   "diff_over_sqrt2_sd": 1.371491574246264,
+   "big_draw_value": null,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C1 simulated normal pooled cold | Geslin (% per K)",
+   "checker": 2.1635638025574693,
+   "pipeline": 2.1312654617401527,
+   "replicate_mean": 2.1498577459963313,
+   "replicate_sd": 0.009578845967647947,
+   "z_checker": 1.430867205447241,
+   "z_pipeline": -1.940973298764069,
+   "diff": -0.03229834081731653,
+   "diff_over_sd": -3.37184050421131,
+   "diff_over_sqrt2_sd": -2.384251285607285,
+   "big_draw_value": null,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C1 simulated log-normal pooled cold | KIT (% per K)",
+   "checker": 4.854890447438953,
+   "pipeline": 4.862642566314013,
+   "replicate_mean": 4.882759914803997,
+   "replicate_sd": 0.03193235299738139,
+   "z_checker": -0.8727658549725351,
+   "z_pipeline": -0.6299989384319435,
+   "diff": 0.007752118875059999,
+   "diff_over_sd": 0.24276691654059163,
+   "diff_over_sqrt2_sd": 0.17166213293360097,
+   "big_draw_value": null,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C1 simulated normal pooled cold | KIT (% per K)",
+   "checker": 5.01239526270048,
+   "pipeline": 5.004143936170307,
+   "replicate_mean": 5.045126964625581,
+   "replicate_sd": 0.02498628116650689,
+   "z_checker": -1.309986936710564,
+   "z_pipeline": -1.6402212150806363,
+   "diff": -0.008251326530173131,
+   "diff_over_sd": -0.3302342783700723,
+   "diff_over_sqrt2_sd": -0.2335108976157241,
+   "big_draw_value": null,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C1 simulated log-normal KIT all 142 | Geslin (% per K)",
+   "checker": 1.6135761375912967,
+   "pipeline": 1.6210008444204478,
+   "replicate_mean": 1.622056809698557,
+   "replicate_sd": 0.007947579910821534,
+   "z_checker": -1.0670760410616236,
+   "z_pipeline": -0.13286626746230423,
+   "diff": 0.007424706829151084,
+   "diff_over_sd": 0.9342097735993193,
+   "diff_over_sqrt2_sd": 0.660586065962828,
+   "big_draw_value": null,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C1 simulated normal KIT all 142 | Geslin (% per K)",
+   "checker": 1.6596228136933826,
+   "pipeline": 1.653120703570814,
+   "replicate_mean": 1.6495550555849208,
+   "replicate_sd": 0.00825639080532388,
+   "z_checker": 1.2193897243781082,
+   "z_pipeline": 0.431865214470469,
+   "diff": -0.006502110122568627,
+   "diff_over_sd": -0.7875245099076393,
+   "diff_over_sqrt2_sd": -0.5568639213063041,
+   "big_draw_value": null,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C1 simulated log-normal KIT all 142 | KIT (% per K)",
+   "checker": 3.8053957618222167,
+   "pipeline": 3.7859002675891387,
+   "replicate_mean": 3.8123079507417903,
+   "replicate_sd": 0.018617695352455704,
+   "z_checker": -0.37126984778284283,
+   "z_pipeline": -1.418418480521995,
+   "diff": -0.01949549423307806,
+   "diff_over_sd": -1.0471486327391522,
+   "diff_over_sqrt2_sd": -0.7404458991200761,
+   "big_draw_value": null,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C1 simulated normal KIT all 142 | KIT (% per K)",
+   "checker": 3.8272387849939924,
+   "pipeline": 3.8281777965694728,
+   "replicate_mean": 3.846194164170474,
+   "replicate_sd": 0.02413405798666472,
+   "z_checker": -0.7854203046564164,
+   "z_pipeline": -0.7465121535282793,
+   "diff": 0.0009390115754803752,
+   "diff_over_sd": 0.03890815112813711,
+   "diff_over_sqrt2_sd": 0.027512217506136766,
+   "big_draw_value": null,
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C2 simulated power KIT | warm | Geslin",
+   "checker": 0.1473,
+   "pipeline": 0.1436,
+   "replicate_mean": 0.14545,
+   "replicate_sd": 0.003525539639544562,
+   "z_checker": 0.5247423626299031,
+   "z_pipeline": -0.5247423626299031,
+   "diff": -0.003699999999999981,
+   "diff_over_sd": -1.0494847252598063,
+   "diff_over_sqrt2_sd": -0.7420977659829098,
+   "big_draw_value": null,
+   "note": "spread: the binomial sd of a 10,000-dataset estimate; replicate_mean is the mean of the two runs",
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C2 simulated pairs KIT | warm | Geslin",
+   "checker": 761,
+   "pipeline": 766,
+   "replicate_mean": 773.8,
+   "replicate_sd": 3.4928498393145966,
+   "z_checker": -3.664629339608743,
+   "z_pipeline": -2.2331335038240727,
+   "diff": 5,
+   "diff_over_sd": 1.4314958357846703,
+   "diff_over_sqrt2_sd": 1.012220412723645,
+   "big_draw_value": null,
+   "replicates": [
+    776,
+    768,
+    776,
+    773,
+    776
+   ],
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C2 simulated power KIT | warm | KIT",
+   "checker": 0.0619,
+   "pipeline": 0.0631,
+   "replicate_mean": 0.0625,
+   "replicate_sd": 0.0024206145913796356,
+   "z_checker": -0.24787093415727604,
+   "z_pipeline": 0.24787093415727604,
+   "diff": 0.0012000000000000066,
+   "diff_over_sd": 0.4957418683145521,
+   "diff_over_sqrt2_sd": 0.3505424368033082,
+   "big_draw_value": null,
+   "note": "spread: the binomial sd of a 10,000-dataset estimate; replicate_mean is the mean of the two runs",
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C2 simulated pairs KIT | warm | KIT",
+   "checker": 4147,
+   "pipeline": 4259,
+   "replicate_mean": 4209.4,
+   "replicate_sd": 26.566896694947264,
+   "z_checker": -2.3487876930641822,
+   "z_pipeline": 1.8669850893587336,
+   "diff": 112,
+   "diff_over_sd": 4.215772782422916,
+   "diff_over_sqrt2_sd": 2.981001522392923,
+   "big_draw_value": null,
+   "replicates": [
+    4176,
+    4196,
+    4242,
+    4230,
+    4203
+   ],
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C2 simulated power Sandia | warm | Geslin",
+   "checker": 0.8604,
+   "pipeline": 0.8601,
+   "replicate_mean": 0.86025,
+   "replicate_sd": 0.0034672746862629738,
+   "z_checker": 0.04326164309807378,
+   "z_pipeline": -0.04326164309804176,
+   "diff": -0.000300000000000078,
+   "diff_over_sd": -0.08652328619611553,
+   "diff_over_sqrt2_sd": -0.06118120239981769,
+   "big_draw_value": null,
+   "note": "spread: the binomial sd of a 10,000-dataset estimate; replicate_mean is the mean of the two runs",
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C2 simulated pairs Sandia | warm | Geslin",
+   "checker": 35,
+   "pipeline": 34,
+   "replicate_mean": 35.0,
+   "replicate_sd": 0.0,
+   "z_checker": null,
+   "z_pipeline": null,
+   "diff": -1,
+   "diff_over_sd": null,
+   "diff_over_sqrt2_sd": null,
+   "big_draw_value": null,
+   "replicates": [
+    35,
+    35,
+    35,
+    35,
+    35
+   ]
+  },
+  {
+   "quantity": "C2 simulated power Sandia | warm | KIT",
+   "checker": 0.27,
+   "pipeline": 0.2768,
+   "replicate_mean": 0.2734,
+   "replicate_sd": 0.004457044312097424,
+   "z_checker": -0.7628373787470749,
+   "z_pipeline": 0.7628373787470875,
+   "diff": 0.006799999999999973,
+   "diff_over_sd": 1.5256747574941625,
+   "diff_over_sqrt2_sd": 1.0788149669092637,
+   "big_draw_value": null,
+   "note": "spread: the binomial sd of a 10,000-dataset estimate; replicate_mean is the mean of the two runs",
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C2 simulated pairs Sandia | warm | KIT",
+   "checker": 169,
+   "pipeline": 170,
+   "replicate_mean": 168.4,
+   "replicate_sd": 1.816590212458495,
+   "z_checker": 0.33028912953790507,
+   "z_pipeline": 0.8807710121010853,
+   "diff": 1,
+   "diff_over_sd": 0.5504818825631803,
+   "diff_over_sqrt2_sd": 0.3892494720807615,
+   "big_draw_value": null,
+   "replicates": [
+    170,
+    167,
+    170,
+    169,
+    166
+   ],
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C2 simulated power pooled | warm | Geslin",
+   "checker": 0.8929,
+   "pipeline": 0.8874,
+   "replicate_mean": 0.89015,
+   "replicate_sd": 0.003127026982614637,
+   "z_checker": 0.8794295716951701,
+   "z_pipeline": -0.8794295716951701,
+   "diff": -0.00550000000000006,
+   "diff_over_sd": -1.7588591433903402,
+   "diff_over_sqrt2_sd": -1.2437012274432715,
+   "big_draw_value": null,
+   "note": "spread: the binomial sd of a 10,000-dataset estimate; replicate_mean is the mean of the two runs",
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C2 simulated pairs pooled | warm | Geslin",
+   "checker": 92,
+   "pipeline": 94,
+   "replicate_mean": 92.6,
+   "replicate_sd": 1.140175425099138,
+   "z_checker": -0.5262348115842125,
+   "z_pipeline": 1.2278812270298458,
+   "diff": 2,
+   "diff_over_sd": 1.7541160386140584,
+   "diff_over_sqrt2_sd": 1.2403473458920844,
+   "big_draw_value": null,
+   "replicates": [
+    93,
+    92,
+    93,
+    94,
+    91
+   ],
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C2 simulated power pooled | warm | KIT",
+   "checker": 0.2761,
+   "pipeline": 0.2722,
+   "replicate_mean": 0.27415,
+   "replicate_sd": 0.004460849442651029,
+   "z_checker": 0.4371364748058266,
+   "z_pipeline": -0.4371364748058266,
+   "diff": -0.0039000000000000146,
+   "diff_over_sd": -0.8742729496116532,
+   "diff_over_sqrt2_sd": -0.6182043312783647,
+   "big_draw_value": null,
+   "note": "spread: the binomial sd of a 10,000-dataset estimate; replicate_mean is the mean of the two runs",
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C2 simulated pairs pooled | warm | KIT",
+   "checker": 460,
+   "pipeline": 463,
+   "replicate_mean": 459.6,
+   "replicate_sd": 2.0736441353327724,
+   "z_checker": 0.19289712886815386,
+   "z_pipeline": 1.63962559537939,
+   "diff": 3,
+   "diff_over_sd": 1.446728466511236,
+   "diff_over_sqrt2_sd": 1.02299150920571,
+   "big_draw_value": null,
+   "replicates": [
+    458,
+    460,
+    463,
+    458,
+    459
+   ],
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C2 simulated power KIT | cold | Geslin",
+   "checker": 0.7925,
+   "pipeline": 0.7897,
+   "replicate_mean": 0.7910999999999999,
+   "replicate_sd": 0.004065228037884222,
+   "z_checker": 0.34438412481497793,
+   "z_pipeline": -0.3443841248149506,
+   "diff": -0.0028000000000000247,
+   "diff_over_sd": -0.6887682496299286,
+   "diff_over_sqrt2_sd": -0.4870326999793112,
+   "big_draw_value": null,
+   "note": "spread: the binomial sd of a 10,000-dataset estimate; replicate_mean is the mean of the two runs",
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C2 simulated pairs KIT | cold | Geslin",
+   "checker": 39,
+   "pipeline": 38,
+   "replicate_mean": 38.6,
+   "replicate_sd": 0.5477225575051661,
+   "z_checker": 0.730296743340219,
+   "z_pipeline": -1.0954451150103348,
+   "diff": -1,
+   "diff_over_sd": -1.8257418583505538,
+   "diff_over_sqrt2_sd": -1.2909944487358056,
+   "big_draw_value": null,
+   "replicates": [
+    39,
+    39,
+    39,
+    38,
+    38
+   ],
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C2 simulated power KIT | cold | KIT",
+   "checker": 0.2437,
+   "pipeline": 0.2423,
+   "replicate_mean": 0.243,
+   "replicate_sd": 0.004288950920679788,
+   "z_checker": 0.16321007466531184,
+   "z_pipeline": -0.16321007466531184,
+   "diff": -0.0014000000000000123,
+   "diff_over_sd": -0.3264201493306237,
+   "diff_over_sqrt2_sd": -0.23081390110760946,
+   "big_draw_value": null,
+   "note": "spread: the binomial sd of a 10,000-dataset estimate; replicate_mean is the mean of the two runs",
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C2 simulated pairs KIT | cold | KIT",
+   "checker": 198,
+   "pipeline": 207,
+   "replicate_mean": 204.6,
+   "replicate_sd": 1.51657508881031,
+   "z_checker": -4.351911124412191,
+   "z_pipeline": 1.5825131361498928,
+   "diff": 9,
+   "diff_over_sd": 5.934424260562084,
+   "diff_over_sqrt2_sd": 4.196271637081412,
+   "big_draw_value": null,
+   "replicates": [
+    204,
+    203,
+    207,
+    204,
+    205
+   ],
+   "within_3_sqrt2_sd": false
+  },
+  {
+   "quantity": "C2 simulated power Sandia | cold | Geslin",
+   "checker": 0.9425,
+   "pipeline": 0.9394,
+   "replicate_mean": 0.94095,
+   "replicate_sd": 0.0023571825873275076,
+   "z_checker": 0.6575646741720538,
+   "z_pipeline": -0.6575646741720067,
+   "diff": -0.0030999999999999917,
+   "diff_over_sd": -1.3151293483440605,
+   "diff_over_sqrt2_sd": -0.9299368803515304,
+   "big_draw_value": null,
+   "note": "spread: the binomial sd of a 10,000-dataset estimate; replicate_mean is the mean of the two runs",
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C2 simulated pairs Sandia | cold | Geslin",
+   "checker": 19,
+   "pipeline": 19,
+   "replicate_mean": 19.0,
+   "replicate_sd": 0.0,
+   "z_checker": null,
+   "z_pipeline": null,
+   "diff": 0,
+   "diff_over_sd": null,
+   "diff_over_sqrt2_sd": null,
+   "big_draw_value": null,
+   "replicates": [
+    19,
+    19,
+    19,
+    19,
+    19
+   ]
+  },
+  {
+   "quantity": "C2 simulated power Sandia | cold | KIT",
+   "checker": 0.4008,
+   "pipeline": 0.3991,
+   "replicate_mean": 0.39995,
+   "replicate_sd": 0.0048988773969145215,
+   "z_checker": 0.1735091391622335,
+   "z_pipeline": -0.17350913916224484,
+   "diff": -0.0016999999999999793,
+   "diff_over_sd": -0.34701827832447835,
+   "diff_over_sqrt2_sd": -0.24537897779891935,
+   "big_draw_value": null,
+   "note": "spread: the binomial sd of a 10,000-dataset estimate; replicate_mean is the mean of the two runs",
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C2 simulated pairs Sandia | cold | KIT",
+   "checker": 65,
+   "pipeline": 65,
+   "replicate_mean": 65.2,
+   "replicate_sd": 0.4472135954999579,
+   "z_checker": -0.4472135954999643,
+   "z_pipeline": -0.4472135954999643,
+   "diff": 0,
+   "diff_over_sd": 0.0,
+   "diff_over_sqrt2_sd": 0.0,
+   "big_draw_value": null,
+   "replicates": [
+    65,
+    65,
+    66,
+    65,
+    65
+   ],
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C2 simulated power pooled | cold | Geslin",
+   "checker": 0.9846,
+   "pipeline": 0.9865,
+   "replicate_mean": 0.98555,
+   "replicate_sd": 0.0011933648855232822,
+   "z_checker": -0.7960683371234256,
+   "z_pipeline": 0.7960683371234256,
+   "diff": 0.0019000000000000128,
+   "diff_over_sd": 1.5921366742468512,
+   "diff_over_sqrt2_sd": 1.1258106389357456,
+   "big_draw_value": null,
+   "note": "spread: the binomial sd of a 10,000-dataset estimate; replicate_mean is the mean of the two runs",
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C2 simulated pairs pooled | cold | Geslin",
+   "checker": 28,
+   "pipeline": 28,
+   "replicate_mean": 28.2,
+   "replicate_sd": 0.4472135954999579,
+   "z_checker": -0.4472135954999564,
+   "z_pipeline": -0.4472135954999564,
+   "diff": 0,
+   "diff_over_sd": 0.0,
+   "diff_over_sqrt2_sd": 0.0,
+   "big_draw_value": null,
+   "replicates": [
+    28,
+    28,
+    28,
+    29,
+    28
+   ],
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C2 simulated power pooled | cold | KIT",
+   "checker": 0.5503,
+   "pipeline": 0.5407,
+   "replicate_mean": 0.5455,
+   "replicate_sd": 0.004979254462266414,
+   "z_checker": 0.9639997385904242,
+   "z_pipeline": -0.9639997385904242,
+   "diff": -0.009600000000000053,
+   "diff_over_sd": -1.9279994771808484,
+   "diff_over_sqrt2_sd": -1.363301504438696,
+   "big_draw_value": null,
+   "note": "spread: the binomial sd of a 10,000-dataset estimate; replicate_mean is the mean of the two runs",
+   "within_3_sqrt2_sd": true
+  },
+  {
+   "quantity": "C2 simulated pairs pooled | cold | KIT",
+   "checker": 114,
+   "pipeline": 115,
+   "replicate_mean": 115.2,
+   "replicate_sd": 1.3038404810405297,
+   "z_checker": -0.9203579866168468,
+   "z_pipeline": -0.15339299776947626,
+   "diff": 1,
+   "diff_over_sd": 0.7669649888473704,
+   "diff_over_sqrt2_sd": 0.5423261445466404,
+   "big_draw_value": null,
+   "replicates": [
+    114,
+    117,
+    114,
+    115,
+    116
+   ],
+   "within_3_sqrt2_sd": true
+  }
+ ],
+ "monte_carlo_summary": {
+  "quantities": 101,
+  "with_spread": 92,
+  "max_abs_diff_over_sqrt2_sd": 4.196271637081412,
+  "where": "C2 simulated pairs KIT | cold | KIT",
+  "over_3_sqrt2_sd": [
+   "C2 simulated pairs KIT | cold | KIT"
+  ],
+  "over_2_sqrt2_sd": [
+   "beta lo KIT",
+   "beta lo pooled",
+   "beta lo Sandia measure b",
+   "C1 simulated normal pooled warm | Geslin (% per K)",
+   "C1 simulated normal pooled cold | Geslin (% per K)",
+   "C2 simulated pairs KIT | warm | KIT",
+   "C2 simulated pairs KIT | cold | KIT"
+  ],
+  "pipeline_max_abs_z": 2.2331335038240727,
+  "pipeline_where": "C2 simulated pairs KIT | warm | Geslin",
+  "pipeline_count_abs_z_over_2": 4,
+  "checker_max_abs_z": 4.351911124412191,
+  "checker_where": "C2 simulated pairs KIT | cold | KIT",
+  "checker_count_abs_z_over_2": 7,
+  "expected_count_over_2_by_chance": 4.2,
+  "zero_spread_cases": [
+   {
+    "quantity": "C2 simulated pairs Sandia | warm | Geslin",
+    "checker": 35,
+    "pipeline": 34,
+    "replicates": [
+     35,
+     35,
+     35,
+     35,
+     35
+    ],
+    "note": "all replicates equal; the spread is below one unit"
+   },
+   {
+    "quantity": "C2 simulated pairs Sandia | cold | Geslin",
+    "checker": 19,
+    "pipeline": 19,
+    "replicates": [
+     19,
+     19,
+     19,
+     19,
+     19
+    ],
+    "note": "all replicates equal; the spread is below one unit"
+   }
+  ],
+  "reading": "z is a run's distance from the mean of the checker's independent replicate runs, in replicate sd; the pipeline's values are the test of consistency, the checker's own registered run is one draw of the same distribution"
+ },
+ "deterministic_all_agree": true,
+ "table": [
+  {
+   "class": "pairs: categorical",
+   "mismatches": 0,
+   "max_abs_diff": null,
+   "max_rel_diff": null,
+   "where_max_rel": null
+  },
+  {
+   "class": "pairs: numeric",
+   "mismatches": null,
+   "max_abs_diff": 6.938893903907228e-18,
+   "max_rel_diff": 2.197529719804314e-16,
+   "where_max_rel": "d"
+  },
+  {
+   "class": "B point beta",
+   "mismatches": null,
+   "max_abs_diff": 2.220446049250313e-16,
+   "max_rel_diff": 1.2879326590077845e-15,
+   "where_max_rel": "KIT"
+  },
+  {
+   "class": "B point s_w_per_K",
+   "mismatches": null,
+   "max_abs_diff": 6.938893903907228e-18,
+   "max_rel_diff": 6.560879564670914e-16,
+   "where_max_rel": "KIT cold"
+  },
+  {
+   "class": "B point resid_sd",
+   "mismatches": null,
+   "max_abs_diff": 0.0,
+   "max_rel_diff": 0.0,
+   "where_max_rel": ""
+  },
+  {
+   "class": "counts",
+   "mismatches": 0,
+   "max_abs_diff": null,
+   "max_rel_diff": null,
+   "where_max_rel": null
+  },
+  {
+   "class": "sign counts",
+   "mismatches": 0,
+   "max_abs_diff": null,
+   "max_rel_diff": null,
+   "where_max_rel": null
+  },
+  {
+   "class": "sign p and share",
+   "mismatches": null,
+   "max_abs_diff": 0.0,
+   "max_rel_diff": 0.0,
+   "where_max_rel": ""
+  },
+  {
+   "class": "C1 counts",
+   "mismatches": 0,
+   "max_abs_diff": null,
+   "max_rel_diff": null,
+   "where_max_rel": null
+  },
+  {
+   "class": "C1 detectable_s_per_K",
+   "mismatches": null,
+   "max_abs_diff": 1.4960255256823984e-14,
+   "max_rel_diff": 1.7606146823476637e-13,
+   "where_max_rel": "pooled | Geslin"
+  },
+  {
+   "class": "C1 normal_shape_per_K",
+   "mismatches": null,
+   "max_abs_diff": 8.61116733474887e-15,
+   "max_rel_diff": 1.5208538163058424e-13,
+   "where_max_rel": "Sandia cold | KIT"
+  },
+  {
+   "class": "C1 F",
+   "mismatches": null,
+   "max_abs_diff": 8.881784197001252e-16,
+   "max_rel_diff": 5.921189482976256e-16,
+   "where_max_rel": "KIT | Geslin"
+  },
+  {
+   "class": "C1 shared_cells_per_K",
+   "mismatches": null,
+   "max_abs_diff": 1.201816424156732e-14,
+   "max_rel_diff": 2.1290950937529698e-13,
+   "where_max_rel": "pooled cold | KIT"
+  },
+  {
+   "class": "C1 dT_rms_K",
+   "mismatches": null,
+   "max_abs_diff": 2.220446049250313e-16,
+   "max_rel_diff": 2.546712926545177e-16,
+   "where_max_rel": "KIT | Geslin"
+  },
+  {
+   "class": "C1 sum_dT2_K2",
+   "mismatches": null,
+   "max_abs_diff": 2.842170943040401e-14,
+   "max_rel_diff": 3.5271494710935673e-16,
+   "where_max_rel": "KIT | Geslin"
+  },
+  {
+   "class": "C1 dT_median_K",
+   "mismatches": null,
+   "max_abs_diff": 0.0,
+   "max_rel_diff": 0.0,
+   "where_max_rel": ""
+  },
+  {
+   "class": "C1 sd_e",
+   "mismatches": null,
+   "max_abs_diff": 0.0,
+   "max_rel_diff": 0.0,
+   "where_max_rel": ""
+  },
+  {
+   "class": "C1 power_at_detectable",
+   "mismatches": null,
+   "max_abs_diff": 1.4721557306529576e-13,
+   "max_rel_diff": 1.840194663316176e-13,
+   "where_max_rel": "pooled | Geslin"
+  },
+  {
+   "class": "C2 pairs needed (calc, shared, normal shape)",
+   "mismatches": 0,
+   "max_abs_diff": null,
+   "max_rel_diff": null,
+   "where_max_rel": null
+  },
+  {
+   "class": "C2 power_calc",
+   "mismatches": null,
+   "max_abs_diff": 2.7755575615628914e-17,
+   "max_rel_diff": 2.147201697318135e-16,
+   "where_max_rel": "KIT | warm | KIT"
+  },
+  {
+   "class": "C2 dT_rms_K",
+   "mismatches": null,
+   "max_abs_diff": 2.220446049250313e-16,
+   "max_rel_diff": 1.2742761202544247e-16,
+   "where_max_rel": "Sandia | warm | Geslin"
+  },
+  {
+   "class": "C2 sd_e",
+   "mismatches": null,
+   "max_abs_diff": 0.0,
+   "max_rel_diff": 0.0,
+   "where_max_rel": ""
+  },
+  {
+   "class": "C2 F",
+   "mismatches": null,
+   "max_abs_diff": 2.220446049250313e-16,
+   "max_rel_diff": 1.4802973772515627e-16,
+   "where_max_rel": "KIT | warm | Geslin"
+  },
+  {
+   "class": "C2 abs_s_per_K",
+   "mismatches": null,
+   "max_abs_diff": 0.0,
+   "max_rel_diff": 0.0,
+   "where_max_rel": ""
+  },
+  {
+   "class": "verdicts P1 to P8",
+   "mismatches": 0,
+   "max_abs_diff": null,
+   "max_rel_diff": null,
+   "where_max_rel": null
+  },
+  {
+   "class": "B4 floor verdicts",
+   "mismatches": 0,
+   "max_abs_diff": null,
+   "max_rel_diff": null,
+   "where_max_rel": null
+  }
+ ]
+}
