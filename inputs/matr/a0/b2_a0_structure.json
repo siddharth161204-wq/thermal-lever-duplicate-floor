@@ -1,0 +1,101 @@
+{
+ "file": "2017-06-30_batchdata_updated_struct_errorcorrect.mat",
+ "label": "b2",
+ "root_keys": [
+  "#refs#",
+  "#subsystem#",
+  "batch",
+  "batch_date"
+ ],
+ "batch_keys": [
+  "Vdlin",
+  "barcode",
+  "channel_id",
+  "cycle_life",
+  "cycles",
+  "policy",
+  "policy_readable",
+  "summary"
+ ],
+ "batch_field_shapes": {
+  "policy_readable": [
+   48,
+   1
+  ],
+  "policy": [
+   48,
+   1
+  ],
+  "channel_id": [
+   48,
+   1
+  ],
+  "barcode": [
+   48,
+   1
+  ],
+  "summary": [
+   48,
+   1
+  ]
+ },
+ "cells": 48,
+ "batch_date": "2017-06-30",
+ "read_batch_fields": [
+  "policy_readable",
+  "policy",
+  "channel_id",
+  "barcode",
+  "summary"
+ ],
+ "read_summary_fields": [
+  "cycle",
+  "Tavg",
+  "Tmax",
+  "Tmin",
+  "IR"
+ ],
+ "never_read_batch_fields": [
+  "cycle_life",
+  "cycles",
+  "Vdlin"
+ ],
+ "never_read_summary_fields": [
+  "QDischarge",
+  "QCharge",
+  "chargetime"
+ ],
+ "cycles_read": [
+  1,
+  100
+ ],
+ "cycle_numbers_peeked": 101,
+ "python": "3.10.12",
+ "h5py": "3.16.0",
+ "numpy": "2.2.6",
+ "summary_keys": {
+  "IR|QCharge|QDischarge|Tavg|Tmax|Tmin|chargetime|cycle": 48
+ },
+ "orientation": {
+  "cycle:column": 48,
+  "Tavg:column": 48,
+  "Tmax:column": 48,
+  "Tmin:column": 48,
+  "IR:column": 48
+ },
+ "descriptor_classes": {
+  "policy_readable": {
+   "char": 48
+  },
+  "policy": {
+   "char": 48
+  },
+  "channel_id": {
+   "string": 48
+  },
+  "barcode": {
+   "string": 48
+  }
+ },
+ "notes": []
+}
