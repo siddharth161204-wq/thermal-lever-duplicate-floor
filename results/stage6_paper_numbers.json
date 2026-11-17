@@ -1,0 +1,1285 @@
+{
+ "files": {
+  "b1": {
+   "bytes": 3025320241,
+   "sha256": "9d928ab978f0e3c70b31cb833a749fedd35094d01af76475d69b40aa3497f5ba"
+  },
+  "b2": {
+   "bytes": 2007331155,
+   "sha256": "63ab200d09ecb237fee5ef3a5c5db76e3212e3206a0bd92f769e1427fed338b8"
+  },
+  "b3": {
+   "bytes": 3236690412,
+   "sha256": "62c30e413b63e6144720e016deed3661fac8468641794a5807b123fe84717998"
+  },
+  "b9": {
+   "bytes": 2601295745,
+   "sha256": "9604dfd58926a99d8aece76e1c407defb7359190edcc21e4d4dd217a726882af"
+  }
+ },
+ "counts": {
+  "Severson": {
+   "cells_entering": 124,
+   "sets": 71,
+   "sets_of_two_or_more": 27,
+   "cells_in_them": 80,
+   "pairs": 126,
+   "set_sizes": {
+    "1": 44,
+    "2": 19,
+    "3": 3,
+    "4": 1,
+    "6": 1,
+    "7": 1,
+    "8": 2
+   }
+  },
+  "Attia": {
+   "cells_entering": 45,
+   "sets": 9,
+   "sets_of_two_or_more": 9,
+   "cells_in_them": 45,
+   "pairs": 90,
+   "set_sizes": {
+    "5": 9
+   }
+  },
+  "pooled": {
+   "cells_entering": 169,
+   "sets": 80,
+   "sets_of_two_or_more": 36,
+   "cells_in_them": 125,
+   "pairs": 216,
+   "set_sizes": {
+    "1": 44,
+    "2": 19,
+    "3": 3,
+    "4": 1,
+    "5": 9,
+    "6": 1,
+    "7": 1,
+    "8": 2
+   }
+  },
+  "by_batch": {
+   "2017-05-12": {
+    "entries": 46,
+    "enter": 41,
+    "why_not": {
+     "excluded by the authors' loader: does not reach 80 % (the site: stopped before 80 %)": 5
+    }
+   },
+   "2017-06-30": {
+    "entries": 48,
+    "enter": 43,
+    "why_not": {
+     "continuation of 2017-05-12:0, appended to it by the authors' loader": 1,
+     "continuation of 2017-05-12:1, appended to it by the authors' loader": 1,
+     "continuation of 2017-05-12:2, appended to it by the authors' loader": 1,
+     "continuation of 2017-05-12:3, appended to it by the authors' loader": 1,
+     "continuation of 2017-05-12:4, appended to it by the authors' loader": 1
+    }
+   },
+   "2018-04-12": {
+    "entries": 46,
+    "enter": 40,
+    "why_not": {
+     "excluded by the authors' loader as a noisy channel": 3,
+     "excluded by the authors' loader as a noisy channel (the site: stopped before 80 %)": 2,
+     "excluded by the authors' loader as a noisy channel (the site: channel 46's noisy voltage)": 1
+    }
+   },
+   "2019-01-24": {
+    "entries": 45,
+    "enter": 45,
+    "why_not": {}
+   }
+  }
+ },
+ "contact": {
+  "flagged": 30,
+  "flagged_in_sets_of_two_or_more": 27,
+  "by_batch": {
+   "2017-05-12": 4,
+   "2017-06-30": 4,
+   "2018-04-12": 5,
+   "2019-01-24": 17
+  }
+ },
+ "reliability": {
+  "Severson": {
+   "cells": 80,
+   "odd_even": {
+    "r": 0.999974495659016,
+    "spearman_brown": 0.9999872476668881
+   },
+   "halves": {
+    "r": 0.9895372732804548,
+    "spearman_brown": 0.9947411255571534
+   }
+  },
+  "Attia": {
+   "cells": 45,
+   "odd_even": {
+    "r": 0.9999892046329457,
+    "spearman_brown": 0.9999946022873377
+   },
+   "halves": {
+    "r": 0.9895827689986054,
+    "spearman_brown": 0.9947641127759476
+   }
+  },
+  "pooled": {
+   "cells": 125,
+   "odd_even": {
+    "r": 0.9999830184227517,
+    "spearman_brown": 0.9999915091392818
+   },
+   "halves": {
+    "r": 0.9895341354214711,
+    "spearman_brown": 0.9947395400801646
+   }
+  }
+ },
+ "resistance": {
+  "2017-05-12": {
+   "cells": 41,
+   "all_99_valid": 31,
+   "some_invalid": 10,
+   "none_valid": 0,
+   "valid_cycles_min": 98,
+   "IR_ohm_range": [
+    0.015090236234693875,
+    0.018004754414141413
+   ]
+  },
+  "2017-06-30": {
+   "cells": 43,
+   "all_99_valid": 43,
+   "some_invalid": 0,
+   "none_valid": 0,
+   "valid_cycles_min": 99,
+   "IR_ohm_range": [
+    0.01586556781818182,
+    0.020188149979797978
+   ]
+  },
+  "2018-04-12": {
+   "cells": 40,
+   "all_99_valid": 40,
+   "some_invalid": 0,
+   "none_valid": 0,
+   "valid_cycles_min": 99,
+   "IR_ohm_range": [
+    0.01342088496969697,
+    0.018306992535353537
+   ]
+  },
+  "2019-01-24": {
+   "cells": 45,
+   "all_99_valid": 0,
+   "some_invalid": 0,
+   "none_valid": 45,
+   "valid_cycles_min": 0,
+   "IR_ohm_range": [
+    null,
+    null
+   ]
+  }
+ },
+ "channel": {
+  "recorded_by_batch": {
+   "2017-05-12": true,
+   "2017-06-30": true,
+   "2018-04-12": true,
+   "2019-01-24": true
+  },
+  "pairs": 108,
+  "r": -0.0539091711765905,
+  "p_permutation_two_sided": 0.5929407059294071,
+  "permutations": 10000,
+  "seed": [
+   20261116,
+   70
+  ],
+  "channel_carries_temperature": false,
+  "cells_with_instrument": 123
+ },
+ "power": [
+  {
+   "scope": "Severson",
+   "floor": "KIT",
+   "cells": 80,
+   "sets": 27,
+   "T_dev_rms_K": 0.8334298350814896,
+   "detectable_s_per_K": 0.02819694381976943,
+   "sim_registered_shape_detectable_s_per_K": 0.027774490356445313,
+   "v5_rel_diff": -0.014982242970173476,
+   "v5_pass": true,
+   "pairs": 126,
+   "shared_cell_F": 3.4010851531283666,
+   "pairs_form_detectable_s_per_K": 0.016425605245276153,
+   "pairs_form_shared_cells_detectable_s_per_K": 0.03029215246487653,
+   "without_flagged": {
+    "cells": 67,
+    "sets": 23,
+    "T_dev_rms_K": 0.7003794864615479,
+    "detectable_s_per_K": 0.03681162549868606
+   }
+  },
+  {
+   "scope": "Severson",
+   "floor": "Geslin",
+   "cells": 80,
+   "sets": 27,
+   "T_dev_rms_K": 0.8334298350814896,
+   "detectable_s_per_K": 0.012061619730386991,
+   "sim_registered_shape_detectable_s_per_K": 0.011693046569824218,
+   "v5_rel_diff": -0.030557517879147067,
+   "v5_pass": true,
+   "pairs": 126,
+   "shared_cell_F": 3.4010851531283666,
+   "pairs_form_detectable_s_per_K": 0.0070262722646934235,
+   "pairs_form_shared_cells_detectable_s_per_K": 0.012957873242637034,
+   "without_flagged": {
+    "cells": 67,
+    "sets": 23,
+    "T_dev_rms_K": 0.7003794864615479,
+    "detectable_s_per_K": 0.015746665002445003
+   }
+  },
+  {
+   "scope": "Attia",
+   "floor": "KIT",
+   "cells": 45,
+   "sets": 9,
+   "T_dev_rms_K": 1.4052538133000114,
+   "detectable_s_per_K": 0.022506620340602752,
+   "sim_registered_shape_detectable_s_per_K": 0.02203706359863281,
+   "v5_rel_diff": -0.020863049843287462,
+   "v5_pass": true,
+   "pairs": 90,
+   "shared_cell_F": 2.5,
+   "pairs_form_detectable_s_per_K": 0.01399149039704137,
+   "pairs_form_shared_cells_detectable_s_per_K": 0.022122488757514148,
+   "without_flagged": {
+    "cells": 28,
+    "sets": 9,
+    "T_dev_rms_K": 0.6898215984130054,
+    "detectable_s_per_K": 0.05976247241872937
+   }
+  },
+  {
+   "scope": "Attia",
+   "floor": "Geslin",
+   "cells": 45,
+   "sets": 9,
+   "T_dev_rms_K": 1.4052538133000114,
+   "detectable_s_per_K": 0.009627507778850105,
+   "sim_registered_shape_detectable_s_per_K": 0.009324668884277345,
+   "v5_rel_diff": -0.03145558555019212,
+   "v5_pass": true,
+   "pairs": 90,
+   "shared_cell_F": 2.5,
+   "pairs_form_detectable_s_per_K": 0.005985047092664255,
+   "pairs_form_shared_cells_detectable_s_per_K": 0.009463190358093952,
+   "without_flagged": {
+    "cells": 28,
+    "sets": 9,
+    "T_dev_rms_K": 0.6898215984130054,
+    "detectable_s_per_K": 0.025564196640248324
+   }
+  },
+  {
+   "scope": "pooled",
+   "floor": "KIT",
+   "cells": 125,
+   "sets": 36,
+   "T_dev_rms_K": 1.0749200743908611,
+   "detectable_s_per_K": 0.017354739900309495,
+   "sim_registered_shape_detectable_s_per_K": 0.01735020446777344,
+   "v5_rel_diff": -0.0002613368199182453,
+   "v5_pass": true,
+   "pairs": 216,
+   "shared_cell_F": 2.877506131001562,
+   "pairs_form_detectable_s_per_K": 0.010597141822296893,
+   "pairs_form_shared_cells_detectable_s_per_K": 0.01797615794880167,
+   "without_flagged": {
+    "cells": 95,
+    "sets": 32,
+    "T_dev_rms_K": 0.6972843030575989,
+    "detectable_s_per_K": 0.030832708740464437
+   }
+  },
+  {
+   "scope": "pooled",
+   "floor": "Geslin",
+   "cells": 125,
+   "sets": 36,
+   "T_dev_rms_K": 1.0749200743908611,
+   "detectable_s_per_K": 0.007423722036520613,
+   "sim_registered_shape_detectable_s_per_K": 0.007325160980224609,
+   "v5_rel_diff": -0.013276501438380661,
+   "v5_pass": true,
+   "pairs": 216,
+   "shared_cell_F": 2.877506131001562,
+   "pairs_form_detectable_s_per_K": 0.004533069105167984,
+   "pairs_form_shared_cells_detectable_s_per_K": 0.007689541915526885,
+   "without_flagged": {
+    "cells": 95,
+    "sets": 32,
+    "T_dev_rms_K": 0.6972843030575989,
+    "detectable_s_per_K": 0.013189103417108845
+   }
+  }
+ ],
+ "registered": {
+  "pooled": {
+   "cells_within": 125,
+   "sets_within": 36,
+   "cells_all": 169,
+   "sets_all": 80,
+   "s_w_pct_per_K": {
+    "value": -2.547455578105727,
+    "ci95": [
+     -4.32093676249798,
+     -0.4605181810749209
+    ]
+   },
+   "pairs_form_pct_per_K": {
+    "value": -3.070211568482134,
+    "ci95": [
+     -4.647011831163204,
+     -1.0383799216467993
+    ]
+   },
+   "pairs": 216,
+   "B3": {
+    "sets": 36,
+    "warmest_first": 12,
+    "share": 0.3333333333333333,
+    "chance_share": 0.3641534391534391,
+    "expected": 13.109523809523807,
+    "p_two_sided": 0.7196711221586856,
+    "left_out_ties": 0
+   },
+   "sd_cell": {
+    "value": 0.1506457210258515,
+    "ci95": [
+     0.11877376045800192,
+     0.18467030872469264
+    ],
+    "mc_sd_of_ends": [
+     0.00031283832703627584,
+     0.0004905412572241141
+    ],
+    "draws_used": 10000
+   },
+   "sqrt2_sd_cell": 0.21304522178823293,
+   "sqrt2_sd_cell_ci95": [
+    0.16797146289375955,
+    0.26116325516608685
+   ],
+   "s_b_pct_per_K": {
+    "value": 9.704200409547258,
+    "ci95": [
+     0.8797409526830757,
+     17.62698552232065
+    ]
+   },
+   "s_b_minus_s_w_pct_per_K": {
+    "value": 12.251655987652986,
+    "ci95": [
+     3.3179595585408865,
+     20.364199389072674
+    ]
+   },
+   "C3_share": {
+    "value": 0.006415184533081674,
+    "ci95": [
+     0.0002596668878854887,
+     0.025309716909716517
+    ],
+    "mc_sd_of_ends": [
+     2.5328092976742162e-05,
+     0.0003878073592472279
+    ],
+    "draws_used": 10000
+   },
+   "C3_share_residual_form": {
+    "value": -0.055290805296246706,
+    "ci95": [
+     -0.13255475038620043,
+     -0.0024011477797535037
+    ],
+    "mc_sd_of_ends": [
+     0.001392181776899884,
+     0.000528776593735172
+    ],
+    "draws_used": 10000
+   },
+   "reliability_bracket": {
+    "r_oe": 0.9999830184227517,
+    "s_w_over_r": -0.025474988386540456,
+    "s_b_over_r": 0.09704365204974633,
+    "s_w_R_held_over_r": -0.03587782131523848
+   },
+   "B2": {
+    "cells": 80,
+    "sets": 27,
+    "s_w_R_held_pct_per_K": {
+     "value": -3.587721205324432,
+     "ci95": [
+      -6.136544228216052,
+      -0.5002133195932966
+     ]
+    },
+    "s_w_same_cells_pct_per_K": {
+     "value": -3.461753826479161,
+     "ci95": [
+      -6.051211176819089,
+      -0.5266014869201396
+     ]
+    },
+    "lnL_per_lnR": {
+     "value": 0.1684804110138938,
+     "ci95": [
+      -0.7217934458226252,
+      4.077646523517912
+     ],
+     "mc_sd_of_ends": [
+      0.010658370212670798,
+      0.08802414001619407
+     ],
+     "draws_used": 10000
+    },
+    "lnR_per_K_within": {
+     "value": -0.007476678035577826,
+     "ci95": [
+      -0.01933024064481007,
+      0.00366119195574272
+     ],
+     "mc_sd_of_ends": [
+      0.00019109539278503417,
+      0.00013076802841600703
+     ],
+     "draws_used": 10000
+    }
+   }
+  },
+  "Severson": {
+   "cells_within": 80,
+   "sets_within": 27,
+   "cells_all": 124,
+   "sets_all": 71,
+   "s_w_pct_per_K": {
+    "value": -3.461753826479161,
+    "ci95": [
+     -6.1581266223733815,
+     -0.5153551092644553
+    ]
+   },
+   "pairs_form_pct_per_K": {
+    "value": -4.5882052408041645,
+    "ci95": [
+     -7.02523701704199,
+     -2.490035097877423
+    ]
+   },
+   "pairs": 126,
+   "B3": {
+    "sets": 27,
+    "warmest_first": 11,
+    "share": 0.4074074074074074,
+    "chance_share": 0.4188712522045855,
+    "expected": 11.309523809523808,
+    "p_two_sided": 1.0,
+    "left_out_ties": 0
+   },
+   "sd_cell": {
+    "value": 0.16286171873519986,
+    "ci95": [
+     0.11614993619824976,
+     0.21444013437896609
+    ],
+    "mc_sd_of_ends": [
+     0.000333185031070736,
+     0.0008183065958921737
+    ],
+    "draws_used": 10000
+   },
+   "sqrt2_sd_cell": 0.23032125142671206,
+   "sqrt2_sd_cell_ci95": [
+    0.16426081504033452,
+    0.30326414635584287
+   ],
+   "s_b_pct_per_K": {
+    "value": 10.567412274246953,
+    "ci95": [
+     -0.33908379974953395,
+     19.8730502379342
+    ]
+   },
+   "s_b_minus_s_w_pct_per_K": {
+    "value": 14.029166100726115,
+    "ci95": [
+     2.7064515543711036,
+     23.798446022960995
+    ]
+   },
+   "C3_share": {
+    "value": 0.01148111283019403,
+    "ci95": [
+     0.00040687878126017163,
+     0.0497526381038952
+    ],
+    "mc_sd_of_ends": [
+     4.514851221650495e-05,
+     0.0007391276429395584
+    ],
+    "draws_used": 10000
+   },
+   "C3_share_residual_form": {
+    "value": -0.0815760177398265,
+    "ci95": [
+     -0.20882306112688517,
+     -9.60054214308626e-05
+    ],
+    "mc_sd_of_ends": [
+     0.0014353827277373415,
+     0.000523199867873657
+    ],
+    "draws_used": 10000
+   },
+   "reliability_bracket": {
+    "r_oe": 0.999974495659016,
+    "s_w_over_r": -0.03461842118480984,
+    "s_b_over_r": 0.1056768179600689,
+    "s_w_R_held_over_r": -0.035878127101231776
+   },
+   "B2": {
+    "cells": 80,
+    "sets": 27,
+    "s_w_R_held_pct_per_K": {
+     "value": -3.587721205324432,
+     "ci95": [
+      -6.078087820184958,
+      -0.5554069193930341
+     ]
+    },
+    "s_w_same_cells_pct_per_K": {
+     "value": -3.461753826479161,
+     "ci95": [
+      -6.026939779887633,
+      -0.5975234435911362
+     ]
+    },
+    "lnL_per_lnR": {
+     "value": 0.1684804110138938,
+     "ci95": [
+      -0.7339990818177099,
+      4.0899833161908745
+     ],
+     "mc_sd_of_ends": [
+      0.012577960523065534,
+      0.06137798444094633
+     ],
+     "draws_used": 10000
+    },
+    "lnR_per_K_within": {
+     "value": -0.007476678035577826,
+     "ci95": [
+      -0.019259035334774917,
+      0.0036996334819810297
+     ],
+     "mc_sd_of_ends": [
+      0.0002084682322170614,
+      0.00010345661350567208
+     ],
+     "draws_used": 10000
+    }
+   }
+  },
+  "Attia": {
+   "cells_within": 45,
+   "sets_within": 9,
+   "cells_all": 45,
+   "sets_all": 9,
+   "s_w_pct_per_K": {
+    "value": -1.9757217323626903,
+    "ci95": [
+     -4.226932337558059,
+     1.020374901515202
+    ]
+   },
+   "pairs_form_pct_per_K": {
+    "value": -1.975721732362691,
+    "ci95": [
+     -4.22693233755806,
+     1.0203749015152024
+    ]
+   },
+   "pairs": 90,
+   "B3": {
+    "sets": 9,
+    "warmest_first": 1,
+    "share": 0.1111111111111111,
+    "chance_share": 0.2,
+    "expected": 1.8,
+    "p_two_sided": 1.0,
+    "left_out_ties": 0
+   },
+   "sd_cell": {
+    "value": 0.13204857607829443,
+    "ci95": [
+     0.10068245656299955,
+     0.15534969565208265
+    ],
+    "mc_sd_of_ends": [
+     0.000489512268294405,
+     0.0002717651545850325
+    ],
+    "draws_used": 10000
+   },
+   "sqrt2_sd_cell": 0.18674488718197943,
+   "sqrt2_sd_cell_ci95": [
+    0.142386495564434,
+    0.21969764650170792
+   ],
+   "s_b_pct_per_K": {
+    "value": 6.528904861867635,
+    "ci95": [
+     -16.113243150886237,
+     20.176081465527616
+    ]
+   },
+   "s_b_minus_s_w_pct_per_K": {
+    "value": 8.504626594230324,
+    "ci95": [
+     -14.020469272781241,
+     22.196894798204372
+    ]
+   },
+   "C3_share": {
+    "value": 0.004370310200931753,
+    "ci95": [
+     1.1546052943612132e-05,
+     0.0647889088465471
+    ],
+    "mc_sd_of_ends": [
+     1.8113920358748886e-06,
+     0.0016443214567983325
+    ],
+    "draws_used": 10000
+   },
+   "C3_share_residual_form": {
+    "value": -0.03325427604627486,
+    "ci95": [
+     -0.394403368589788,
+     0.041746255232855446
+    ],
+    "mc_sd_of_ends": [
+     0.01682124594813772,
+     0.0015111813980789937
+    ],
+    "draws_used": 10000
+   },
+   "reliability_bracket": {
+    "r_oe": 0.9999892046329457,
+    "s_w_over_r": -0.019757430612342412,
+    "s_b_over_r": 0.06528975344552967
+   },
+   "B2": {
+    "note": "no cell with a valid resistance (D90)"
+   }
+  }
+ },
+ "brackets": {
+  "T_max": {
+   "pooled": {
+    "cells_within": 125,
+    "s_w_pct_per_K": {
+     "value": -0.7052395892256061,
+     "ci95": [
+      -1.8404964473374283,
+      0.5859806018930145
+     ]
+    },
+    "s_b_pct_per_K": {
+     "value": 5.0789927423041075,
+     "ci95": [
+      0.5281454607702399,
+      9.166689200447383
+     ]
+    },
+    "B3": {
+     "sets": 36,
+     "warmest_first": 11,
+     "share": 0.3055555555555556,
+     "chance_share": 0.3641534391534391,
+     "expected": 13.109523809523807,
+     "p_two_sided": 0.4721747583026332,
+     "left_out_ties": 0
+    },
+    "s_w_R_held_pct_per_K": {
+     "value": -0.6761460208554096,
+     "ci95": [
+      -2.288189253815486,
+      1.0135875077546819
+     ]
+    }
+   },
+   "Severson": {
+    "cells_within": 80,
+    "s_w_pct_per_K": {
+     "value": -0.6999320408662955,
+     "ci95": [
+      -2.3328275544590102,
+      0.9141438384773435
+     ]
+    },
+    "s_b_pct_per_K": {
+     "value": 5.295144475996654,
+     "ci95": [
+      0.024966989272663585,
+      10.182527758803477
+     ]
+    },
+    "B3": {
+     "sets": 27,
+     "warmest_first": 10,
+     "share": 0.37037037037037035,
+     "chance_share": 0.4188712522045855,
+     "expected": 11.309523809523808,
+     "p_two_sided": 0.6869970000097677,
+     "left_out_ties": 0
+    },
+    "s_w_R_held_pct_per_K": {
+     "value": -0.6761460208554096,
+     "ci95": [
+      -2.265739450878429,
+      1.0328907440172288
+     ]
+    }
+   },
+   "Attia": {
+    "cells_within": 45,
+    "s_w_pct_per_K": {
+     "value": -0.7083887150589586,
+     "ci95": [
+      -2.2018468183872604,
+      1.0826808872248423
+     ]
+    },
+    "s_b_pct_per_K": {
+     "value": 4.18964340830744,
+     "ci95": [
+      -8.41741579513529,
+      15.453638182260654
+     ]
+    },
+    "B3": {
+     "sets": 9,
+     "warmest_first": 1,
+     "share": 0.1111111111111111,
+     "chance_share": 0.2,
+     "expected": 1.8,
+     "p_two_sided": 1.0,
+     "left_out_ties": 0
+    },
+    "s_w_R_held_pct_per_K": null
+   }
+  },
+  "T_2_50": {
+   "pooled": {
+    "cells_within": 125,
+    "s_w_pct_per_K": {
+     "value": -2.6639321133671663,
+     "ci95": [
+      -4.441462081914593,
+      -0.4223506922775557
+     ]
+    },
+    "s_b_pct_per_K": {
+     "value": 9.377440656879047,
+     "ci95": [
+      0.24065329987890158,
+      17.80389198220628
+     ]
+    },
+    "B3": {
+     "sets": 36,
+     "warmest_first": 12,
+     "share": 0.3333333333333333,
+     "chance_share": 0.3641534391534391,
+     "expected": 13.109523809523807,
+     "p_two_sided": 0.7196711221586856,
+     "left_out_ties": 0
+    },
+    "s_w_R_held_pct_per_K": {
+     "value": -3.6966306821134256,
+     "ci95": [
+      -6.340319879408758,
+      -0.6267089777086631
+     ]
+    }
+   },
+   "Severson": {
+    "cells_within": 80,
+    "s_w_pct_per_K": {
+     "value": -3.538342195903346,
+     "ci95": [
+      -6.165176792808005,
+      -0.5906144223869533
+     ]
+    },
+    "s_b_pct_per_K": {
+     "value": 10.324922232472373,
+     "ci95": [
+      -0.4391488143448018,
+      20.25664704111268
+     ]
+    },
+    "B3": {
+     "sets": 27,
+     "warmest_first": 11,
+     "share": 0.4074074074074074,
+     "chance_share": 0.4188712522045855,
+     "expected": 11.309523809523808,
+     "p_two_sided": 1.0,
+     "left_out_ties": 0
+    },
+    "s_w_R_held_pct_per_K": {
+     "value": -3.6966306821134256,
+     "ci95": [
+      -6.426710602715251,
+      -0.6482193140316385
+     ]
+    }
+   },
+   "Attia": {
+    "cells_within": 45,
+    "s_w_pct_per_K": {
+     "value": -2.107822929319334,
+     "ci95": [
+      -4.431535513712402,
+      0.915985199609628
+     ]
+    },
+    "s_b_pct_per_K": {
+     "value": 5.9207810017941656,
+     "ci95": [
+      -19.89446434040391,
+      19.56368085275019
+     ]
+    },
+    "B3": {
+     "sets": 9,
+     "warmest_first": 1,
+     "share": 0.1111111111111111,
+     "chance_share": 0.2,
+     "expected": 1.8,
+     "p_two_sided": 1.0,
+     "left_out_ties": 0
+    },
+    "s_w_R_held_pct_per_K": null
+   }
+  },
+  "T_min": {
+   "pooled": {
+    "cells_within": 125,
+    "s_w_pct_per_K": {
+     "value": -11.236663470042068,
+     "ci95": [
+      -13.959773661872143,
+      -8.12709972064383
+     ]
+    },
+    "s_b_pct_per_K": {
+     "value": 11.784849542197081,
+     "ci95": [
+      -8.452671921562867,
+      33.52936040454762
+     ]
+    },
+    "B3": {
+     "sets": 36,
+     "warmest_first": 10,
+     "share": 0.2777777777777778,
+     "chance_share": 0.3641534391534391,
+     "expected": 13.109523809523807,
+     "p_two_sided": 0.27957243481459754,
+     "left_out_ties": 0
+    },
+    "s_w_R_held_pct_per_K": {
+     "value": -12.306664012498727,
+     "ci95": [
+      -15.390495947940707,
+      -6.476594465536116
+     ]
+    }
+   },
+   "Severson": {
+    "cells_within": 80,
+    "s_w_pct_per_K": {
+     "value": -11.34728905235368,
+     "ci95": [
+      -15.244748856108908,
+      -6.224890883321916
+     ]
+    },
+    "s_b_pct_per_K": {
+     "value": 9.610221118357615,
+     "ci95": [
+      -12.307542741532323,
+      33.81682418634654
+     ]
+    },
+    "B3": {
+     "sets": 27,
+     "warmest_first": 10,
+     "share": 0.37037037037037035,
+     "chance_share": 0.4188712522045855,
+     "expected": 11.309523809523808,
+     "p_two_sided": 0.6869970000097677,
+     "left_out_ties": 0
+    },
+    "s_w_R_held_pct_per_K": {
+     "value": -12.306664012498727,
+     "ci95": [
+      -15.329917252531569,
+      -6.385145019874733
+     ]
+    }
+   },
+   "Attia": {
+    "cells_within": 45,
+    "s_w_pct_per_K": {
+     "value": -11.102993675828996,
+     "ci95": [
+      -15.076124360458484,
+      -7.053460041891503
+     ]
+    },
+    "s_b_pct_per_K": {
+     "value": 26.60690935294917,
+     "ci95": [
+      -22.5570285172566,
+      85.04894923322045
+     ]
+    },
+    "B3": {
+     "sets": 9,
+     "warmest_first": 0,
+     "share": 0.0,
+     "chance_share": 0.2,
+     "expected": 1.8,
+     "p_two_sided": 0.21985945600000018,
+     "left_out_ties": 0
+    },
+    "s_w_R_held_pct_per_K": null
+   }
+  },
+  "without_flagged": {
+   "pooled": {
+    "cells_within": 95,
+    "s_w_pct_per_K": {
+     "value": -5.719862706032297,
+     "ci95": [
+      -9.928893119176964,
+      -2.3143818169391563
+     ]
+    },
+    "s_b_pct_per_K": {
+     "value": 11.023861210572935,
+     "ci95": [
+      -0.8174190286182831,
+      21.952014150507214
+     ]
+    },
+    "B3": {
+     "sets": 32,
+     "warmest_first": 15,
+     "share": 0.46875,
+     "chance_share": 0.39482886904761905,
+     "expected": 12.63452380952381,
+     "p_two_sided": 0.4547668022764084,
+     "left_out_ties": 0
+    },
+    "s_w_R_held_pct_per_K": {
+     "value": -6.873739363268218,
+     "ci95": [
+      -12.817872582529105,
+      -1.6708748496171093
+     ]
+    }
+   },
+   "Severson": {
+    "cells_within": 67,
+    "s_w_pct_per_K": {
+     "value": -6.368017577690803,
+     "ci95": [
+      -12.855725672092703,
+      -2.1724774379681637
+     ]
+    },
+    "s_b_pct_per_K": {
+     "value": 12.728862990488807,
+     "ci95": [
+      -0.22335239966919151,
+      24.725275153468104
+     ]
+    },
+    "B3": {
+     "sets": 23,
+     "warmest_first": 11,
+     "share": 0.4782608695652174,
+     "chance_share": 0.41744306418219457,
+     "expected": 9.601190476190474,
+     "p_two_sided": 0.661254924441141,
+     "left_out_ties": 0
+    },
+    "s_w_R_held_pct_per_K": {
+     "value": -6.873739363268218,
+     "ci95": [
+      -12.698384910269336,
+      -1.7402574476421617
+     ]
+    }
+   },
+   "Attia": {
+    "cells_within": 28,
+    "s_w_pct_per_K": {
+     "value": -4.121082290086861,
+     "ci95": [
+      -8.087869729447107,
+      2.9600478980671086
+     ]
+    },
+    "s_b_pct_per_K": {
+     "value": -0.03308486185090403,
+     "ci95": [
+      -34.98118042363594,
+      16.85189974108192
+     ]
+    },
+    "B3": {
+     "sets": 9,
+     "warmest_first": 4,
+     "share": 0.4444444444444444,
+     "chance_share": 0.3370370370370371,
+     "expected": 3.0333333333333337,
+     "p_two_sided": 0.49227251943301353,
+     "left_out_ties": 0
+    },
+    "s_w_R_held_pct_per_K": null
+   }
+  }
+ },
+ "unscored": {
+  "T_rise": {
+   "pooled": {
+    "value": -1.5585244128881781,
+    "ci95": [
+     -4.711098479624527,
+     1.6898434587704476
+    ]
+   },
+   "Severson": {
+    "value": -2.203114299652629,
+    "ci95": [
+     -7.660155453158728,
+     2.4162067463075
+    ]
+   },
+   "Attia": {
+    "value": -1.2472575469012601,
+    "ci95": [
+     -5.022487158844148,
+     3.010891684788542
+    ]
+   }
+  },
+  "R_cycles_2_10": {
+   "pooled": {
+    "s_w_R_held_pct_per_K": {
+     "value": -3.4430042806152694,
+     "ci95": [
+      -6.218189399007476,
+      -0.3892227730423813
+     ]
+    },
+    "lnL_per_lnR": {
+     "value": -0.021096660112589757,
+     "ci95": [
+      -0.7512232474428243,
+      3.4693853148493177
+     ],
+     "mc_sd_of_ends": [
+      0.011202972221814933,
+      0.06135792791561223
+     ],
+     "draws_used": 10000
+    }
+   },
+   "Severson": {
+    "s_w_R_held_pct_per_K": {
+     "value": -3.4430042806152694,
+     "ci95": [
+      -6.180233674006173,
+      -0.4745923065017555
+     ]
+    },
+    "lnL_per_lnR": {
+     "value": -0.021096660112589757,
+     "ci95": [
+      -0.7501566170769848,
+      3.4004199932033057
+     ],
+     "mc_sd_of_ends": [
+      0.008422208533408526,
+      0.07086477434231497
+     ],
+     "draws_used": 10000
+    }
+   },
+   "Attia": {
+    "note": "no valid R"
+   }
+  },
+  "C1_sets_of_two_or_more": {
+   "pooled": {
+    "value": 16.350374226865878,
+    "ci95": [
+     2.8310469131921994,
+     29.354564739219803
+    ]
+   },
+   "Severson": {
+    "value": 21.42789488609844,
+    "ci95": [
+     1.3987040032321134,
+     37.32474464256496
+    ]
+   },
+   "Attia": {
+    "value": 6.528904861867635,
+    "ci95": [
+     -16.335327862521776,
+     20.624847364510348
+    ]
+   }
+  }
+ },
+ "part_D": {
+  "rows": [
+   {
+    "what": "Stage 6, within a set, pooled (s_w)",
+    "value": -2.547455578105727,
+    "ci95": [
+     -4.32093676249798,
+     -0.4605181810749209
+    ]
+   },
+   {
+    "what": "Stage 6, within a set, without flagged cells",
+    "value": -5.719862706032297,
+    "ci95": [
+     -9.928893119176964,
+     -2.3143818169391563
+    ]
+   },
+   {
+    "what": "Stage 6, within a set, the first paper",
+    "value": -3.461753826479161,
+    "ci95": [
+     -6.1581266223733815,
+     -0.5153551092644553
+    ]
+   },
+   {
+    "what": "Stage 6, within a set, the second paper",
+    "value": -1.9757217323626903,
+    "ci95": [
+     -4.226932337558059,
+     1.020374901515202
+    ]
+   },
+   {
+    "what": "Stage 6, between policies, pooled (s_b)",
+    "value": 9.704200409547258,
+    "ci95": [
+     0.8797409526830757,
+     17.62698552232065
+    ]
+   },
+   {
+    "what": "Sandia, 15 to 25 C at 1C (Stage 3, registered)",
+    "value": 3.371837126587428,
+    "ci95": [
+     2.949074115460169,
+     3.8270002135397494
+    ]
+   },
+   {
+    "what": "Sandia, 15 to 25 C at 2C (Stage 3)",
+    "value": 2.049870998889622,
+    "ci95": [
+     1.1837002110908612,
+     2.9076510430014992
+    ]
+   },
+   {
+    "what": "Sandia, 25 to 35 C at 2C (Stage 3)",
+    "value": 11.005822444213981,
+    "ci95": [
+     8.302214841830175,
+     13.729950535845456
+    ]
+   }
+  ],
+  "detectable_pct_per_K": {
+   "Stage 6, pooled": {
+    "KIT floor": 1.7354739900309495,
+    "Geslin floor": 0.7423722036520612
+   },
+   "Stage 6, pooled, without flagged cells": {
+    "KIT floor": 3.083270874046444,
+    "Geslin floor": 1.3189103417108845
+   },
+   "Stage 5, KIT replicates": {
+    "KIT floor": 6.559944091124832,
+    "Geslin floor": 2.8061037956985384
+   },
+   "Stage 5, Sandia replicates": {
+    "KIT floor": 2.5817689300349187,
+    "Geslin floor": 1.104386179752693
+   },
+   "Stage 5, pooled": {
+    "KIT floor": 2.3770703809925826,
+    "Geslin floor": 1.0168236384468803
+   }
+  },
+  "protocols": {
+   "Sandia (Stage 3)": "charged at 0.5C, discharged at 0.5C to 3C (the levers at 1C and 2C), cells in 15, 25 and 35 C air, a K-type thermocouple on the skin, periodic 0.5C capacity checks",
+   "these cells (Stage 6)": "charged at 3.6C to 8C to 80 % state of charge in one, two or four steps, then 1C CC-CV to 3.6 V, discharged at 4C CC-CV to 2.0 V, in a 30 C chamber, a type T thermocouple on the can, lifetime counted cycle by cycle to 0.88 Ah"
+  }
+ },
+ "scorecard": {
+  "P1": true,
+  "P2": false,
+  "P3": true,
+  "P4": true,
+  "P5": true,
+  "P6": true,
+  "P7": false,
+  "P8": false
+ },
+ "checks": {
+  "V1": true,
+  "V2": true,
+  "V3": true,
+  "V4": true,
+  "V5": true
+ }
+}

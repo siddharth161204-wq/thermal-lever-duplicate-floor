@@ -1,5 +1,9 @@
 {
- "scored_at": "end of Part A0",
+ "scored_at": {
+  "P1": "end of Part A0",
+  "P6": "end of Part A0",
+  "others": "after Parts B and C"
+ },
  "P1": {
   "quantity": "pooled detectable |s| under the KIT floor, % per K",
   "value": 1.7354739900309495,
@@ -13,5 +17,75 @@
   "threshold": 0.8,
   "holds": true,
   "note": "agreement of each reading with itself from cycle to cycle; a thermocouple's contact that lasts the window passes it, so it does not show that T measures the cell (D89)"
- }
+ },
+ "P2": {
+  "quantity": "pooled s_w and its 95 % interval, per K",
+  "value": -0.02547455578105727,
+  "ci95": [
+   -0.0432093676249798,
+   -0.004605181810749209
+  ],
+  "holds": false
+ },
+ "P3": {
+  "quantity": "temperature's lever with ln R held, against s_w over the same cells, per K",
+  "value": -0.03587721205324432,
+  "same_cells_s_w": -0.03461753826479161,
+  "ratio": 1.0363883121560347,
+  "cells": 80,
+  "holds": true
+ },
+ "P4": {
+  "quantity": "pooled s_b and its 95 % interval, per K",
+  "value": 0.09704200409547259,
+  "ci95": [
+   0.008797409526830757,
+   0.17626985522320648
+  ],
+  "holds": true
+ },
+ "P5": {
+  "quantity": "s_b - s_w and its 95 % interval, per K",
+  "value": 0.12251655987652986,
+  "ci95": [
+   0.033179595585408866,
+   0.20364199389072674
+  ],
+  "holds": true
+ },
+ "P7": {
+  "quantity": "pooled s_w against Sandia's 25 to 35 C 2C interval, per K",
+  "value": -0.02547455578105727,
+  "interval": [
+   0.08302214841830174,
+   0.13729950535845456
+  ],
+  "holds": false
+ },
+ "P8": {
+  "quantity": "sqrt(2) times the within-set residual sd of ln L after B1 (pair scale)",
+  "value": 0.21304522178823293,
+  "ci95": [
+   0.16797146289375955,
+   0.26116325516608685
+  ],
+  "floors": [
+   0.04454298465298393,
+   0.10412996462328801
+  ],
+  "holds": false
+ },
+ "held": [
+  "P1",
+  "P3",
+  "P4",
+  "P5",
+  "P6"
+ ],
+ "failed": [
+  "P2",
+  "P7",
+  "P8"
+ ],
+ "not_scored": []
 }

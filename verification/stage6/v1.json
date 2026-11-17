@@ -1,0 +1,74 @@
+{
+ "check": "V1 (D96 (1))",
+ "files": [
+  {
+   "batch": "2017-05-12",
+   "bytes": 3025320241,
+   "sha256": "9d928ab978f0e3c70b31cb833a749fedd35094d01af76475d69b40aa3497f5ba",
+   "manifest_agrees": true,
+   "extract_read_from": "2017-05-12_batchdata_updated_struct_errorcorrect (1).mat"
+  },
+  {
+   "batch": "2017-06-30",
+   "bytes": 2007331155,
+   "sha256": "63ab200d09ecb237fee5ef3a5c5db76e3212e3206a0bd92f769e1427fed338b8",
+   "manifest_agrees": true,
+   "extract_read_from": "2017-06-30_batchdata_updated_struct_errorcorrect.mat"
+  },
+  {
+   "batch": "2018-04-12",
+   "bytes": 3236690412,
+   "sha256": "62c30e413b63e6144720e016deed3661fac8468641794a5807b123fe84717998",
+   "manifest_agrees": true,
+   "extract_read_from": "2018-04-12_batchdata_updated_struct_errorcorrect (1).mat"
+  },
+  {
+   "batch": "2019-01-24",
+   "bytes": 2601295745,
+   "sha256": "9604dfd58926a99d8aece76e1c407defb7359190edcc21e4d4dd217a726882af",
+   "manifest_agrees": true,
+   "extract_read_from": "2019-01-24_batchdata_updated_struct_errorcorrect.mat"
+  }
+ ],
+ "authors_python_loader": {
+  "cells": {
+   "b1": 41,
+   "b2": 43,
+   "b3": 40
+  },
+  "same_cells_as_registered": true,
+  "same_policies": true,
+  "same_cycle_lives": true,
+  "continuation_entries": [
+   662,
+   981,
+   1060,
+   208,
+   482
+  ],
+  "add_len": [
+   662,
+   981,
+   1060,
+   208,
+   482
+  ],
+  "add_len_equals_continuations": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "matlab_label_differs_for": 0,
+  "pass": true
+ },
+ "validation_batch": {
+  "final_results_sha256": "94359f14e0066e1464e0e06d0ed3c4ceaccc8ea779b2fd492509cea02a22e5bb",
+  "expected_sha256": "94359f14e0066e1464e0e06d0ed3c4ceaccc8ea779b2fd492509cea02a22e5bb",
+  "protocols": 9,
+  "cells": 45,
+  "same_cycle_lives_by_protocol": true
+ },
+ "pass": true
+}

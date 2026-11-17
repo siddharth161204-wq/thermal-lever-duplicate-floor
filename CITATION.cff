@@ -7,9 +7,9 @@ authors:
     given-names: Siddharth
     affiliation: Independent Researcher
     orcid: https://orcid.org/0009-0001-3584-1008
-version: v1.4.0
-doi: 10.5281/zenodo.23753694
-date-released: 2026-10-29
+version: v1.5.0
+doi: 10.5281/zenodo.23309130
+date-released: 2026-11-17
 repository-code: https://github.com/siddharth161204-wq/thermal-lever-duplicate-floor
 license:
   - MIT
@@ -26,10 +26,13 @@ keywords:
   - LiFePO4, NCA and NMC 18650 cells
   - statistical power analysis
   - replicate cells
+  - fast charging
+  - LiFePO4 A123 APR18650M1A
+  - cell temperature
 identifiers:
   - type: doi
     value: 10.5281/zenodo.23753694
-    description: The archived version v1.4.0 on Zenodo
+    description: The archived version v1.4.0 on Zenodo (Stages 1 to 5)
   - type: doi
     value: 10.5281/zenodo.23309130
     description: All versions on Zenodo
@@ -98,3 +101,87 @@ references:
       - name: "Battery Archive"
     url: "https://www.batteryarchive.org"
     notes: "Source of the Sandia 18650 cycling data of Preger et al. 2020, shared on request on 23 October 2026"
+  - type: article
+    title: "Data-driven prediction of battery cycle life before capacity degradation"
+    authors:
+      - family-names: Severson
+        given-names: Kristen A.
+      - family-names: Attia
+        given-names: Peter M.
+      - family-names: Jin
+        given-names: Norman
+      - family-names: Perkins
+        given-names: Nicholas
+      - family-names: Jiang
+        given-names: Benben
+      - family-names: Yang
+        given-names: Zi
+      - family-names: Chen
+        given-names: Michael H.
+      - family-names: Aykol
+        given-names: Muratahan
+      - family-names: Herring
+        given-names: Patrick K.
+      - family-names: Fraggedakis
+        given-names: Dimitrios
+      - family-names: Bazant
+        given-names: Martin Z.
+      - family-names: Harris
+        given-names: Stephen J.
+      - family-names: Chueh
+        given-names: William C.
+      - family-names: Braatz
+        given-names: Richard D.
+    journal: Nature Energy
+    volume: 4
+    start: 383
+    end: 391
+    year: 2019
+    doi: 10.1038/s41560-019-0356-8
+  - type: article
+    title: "Closed-loop optimization of fast-charging protocols for batteries with machine learning"
+    authors:
+      - family-names: Attia
+        given-names: Peter M.
+      - family-names: Grover
+        given-names: Aditya
+      - family-names: Jin
+        given-names: Norman
+      - family-names: Severson
+        given-names: Kristen A.
+      - family-names: Markov
+        given-names: Todor M.
+      - family-names: Liao
+        given-names: Yang-Hung
+      - family-names: Chen
+        given-names: Michael H.
+      - family-names: Cheong
+        given-names: Bryan
+      - family-names: Perkins
+        given-names: Nicholas
+      - family-names: Yang
+        given-names: Zi
+      - family-names: Herring
+        given-names: Patrick K.
+      - family-names: Aykol
+        given-names: Muratahan
+      - family-names: Harris
+        given-names: Stephen J.
+      - family-names: Braatz
+        given-names: Richard D.
+      - family-names: Ermon
+        given-names: Stefano
+      - family-names: Chueh
+        given-names: William C.
+    journal: Nature
+    volume: 578
+    start: 397
+    end: 402
+    year: 2020
+    doi: 10.1038/s41586-020-1994-5
+  - type: data
+    title: "Experimental Data Platform: the fast-charging datasets of Severson et al. 2019 and Attia et al. 2020"
+    authors:
+      - name: "Toyota Research Institute"
+    url: "https://data.matr.io/1/"
+    notes: "Released under CC BY 4.0; the four MATLAB structs read in Stage 6 are listed with their SHA-256 in inputs/matr/MANIFEST.md"

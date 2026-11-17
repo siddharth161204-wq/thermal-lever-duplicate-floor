@@ -180,8 +180,8 @@ def split(res):
             within[part] = {s: pick(v, WITHIN_KEYS) for s, v in src.items()}
             between[part] = {s: pick(v, BETWEEN_KEYS) for s, v in src.items()}
         else:
-            within[part] = {b: {s: pick(v, WITHIN_KEYS) for s, v in d.items()} for b, d in src.items()
-                            if b != "C1_sets_of_two_or_more"}
+            within[part] = {b: {s: (v if b == "R_cycles_2_10" else pick(v, WITHIN_KEYS)) for s, v in d.items()}
+                            for b, d in src.items() if b != "C1_sets_of_two_or_more"}
             between[part] = {b: {s: pick(v, BETWEEN_KEYS) for s, v in d.items()} for b, d in src.items()
                              if b not in ("R_cycles_2_10",)}
     return within, between

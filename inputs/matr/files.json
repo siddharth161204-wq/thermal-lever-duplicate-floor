@@ -1,0 +1,33 @@
+{
+ "computed_where": "the author's laptop, Python 3.10.12",
+ "files": {
+  "b1": {
+   "local_name": "2017-05-12_batchdata_updated_struct_errorcorrect (1).mat",
+   "bytes": 3025320241,
+   "hdf5_end_of_file": 3025320241,
+   "sha256": "9d928ab978f0e3c70b31cb833a749fedd35094d01af76475d69b40aa3497f5ba",
+   "matlab_header": "MATLAB 7.3 MAT-file, Platform: MACI64, Created on: Wed Dec 12 14:05:35 2018 HDF5 schema 1.00 ."
+  },
+  "b2": {
+   "local_name": "2017-06-30_batchdata_updated_struct_errorcorrect.mat",
+   "bytes": 2007331155,
+   "hdf5_end_of_file": 2007331155,
+   "sha256": "63ab200d09ecb237fee5ef3a5c5db76e3212e3206a0bd92f769e1427fed338b8",
+   "matlab_header": "MATLAB 7.3 MAT-file, Platform: PCWIN64, Created on: Tue Feb 20 11:35:55 2018 HDF5 schema 1.00 ."
+  },
+  "b3": {
+   "local_name": "2018-04-12_batchdata_updated_struct_errorcorrect (1).mat",
+   "bytes": 3236690412,
+   "hdf5_end_of_file": 3236690412,
+   "sha256": "62c30e413b63e6144720e016deed3661fac8468641794a5807b123fe84717998",
+   "matlab_header": "MATLAB 7.3 MAT-file, Platform: PCWIN64, Created on: Mon Jun 18 15:20:48 2018 HDF5 schema 1.00 ."
+  },
+  "b9": {
+   "local_name": "2019-01-24_batchdata_updated_struct_errorcorrect.mat",
+   "bytes": 2601295745,
+   "hdf5_end_of_file": 2601295745,
+   "sha256": "9604dfd58926a99d8aece76e1c407defb7359190edcc21e4d4dd217a726882af",
+   "matlab_header": "MATLAB 7.3 MAT-file, Platform: PCWIN64, Created on: Fri Aug 30 08:25:47 2019 HDF5 schema 1.00 ."
+  }
+ }
+}

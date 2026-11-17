@@ -13,7 +13,7 @@ python3 -I src/stage6/a0_analysis.py
 python3 -I src/stage6/l_table.py
 python3 -I src/stage6/s6_parts.py
 python3 -I src/stage6/s6_score.py
-python3 -I verification/stage6/v1_files.py
+python3 -I verification/stage6/v1_files.py "$FINAL_RESULTS_CSV"   # the authors' Validation/final_results.csv (ec9508f)
 python3 -I verification/stage6/v2_separate.py
 python3 -I verification/stage6/v3_hand.py
 python3 -I src/stage6/s6_paper.py

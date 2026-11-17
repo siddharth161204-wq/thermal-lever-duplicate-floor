@@ -85,7 +85,8 @@ def panel_a(ax, cl, W, lev):
          Line2D([], [], ls="none", marker="o", ms=3, mfc="white", mec=INK2, label="flagged by the contact rule"),
          Line2D([], [], color=INK, lw=1.1, label=f"fit, s_w = {100 * sw['value']:+.2f} % per K"),
          Line2D([], [], color=MUTED, lw=0.7, ls=(0, (1, 1.2)), label="Sandia's levers, same cell")]
-    ax.legend(handles=h, frameon=False, fontsize=5.2, loc="lower left", handlelength=1.6)
+    ax.legend(handles=h, frameon=False, fontsize=5.2, loc="upper center", bbox_to_anchor=(0.5, -0.2), ncol=2,
+              handlelength=1.6, columnspacing=1.0)
 
 
 def panel_b(ax, cl, Bt, W):
@@ -122,21 +123,20 @@ def panel_b(ax, cl, Bt, W):
          if any(s["batch"] == b for s in sets)]
     h += [Line2D([], [], color=INK, lw=1.1, label=f"fit, s_b = {100 * sb['value']:+.2f} % per K"),
           Line2D([], [], color=INK2, lw=0.8, ls=(0, (3, 2)), label="the within-set lever")]
-    ax.legend(handles=h, frameon=False, fontsize=5.2, loc="lower left", handlelength=1.6)
+    ax.legend(handles=h, frameon=False, fontsize=5.2, loc="upper center", bbox_to_anchor=(0.5, -0.2), ncol=2,
+              handlelength=1.6, columnspacing=1.0)
 
 
 def panel_c(ax, P, s5, lev, sw):
     rows = []
-    for case, lab in (("KIT", "Stage 5, KIT replicates"), ("Sandia", "Stage 5, Sandia replicates"),
-                      ("pooled", "Stage 5, pooled")):
+    for case, lab in (("KIT", "Stage 5: KIT"), ("Sandia", "Stage 5: Sandia"), ("pooled", "Stage 5: pooled")):
         rows.append((lab, s5[(case, "KIT")]["detectable_s_per_K"], s5[(case, "Geslin")]["detectable_s_per_K"]))
     get = lambda scope, floor: next(p for p in P if p["scope"] == scope and p["floor"] == floor)
-    for scope, lab in (("Severson", "Stage 6, Severson et al."), ("Attia", "Stage 6, Attia et al."),
-                       ("pooled", "Stage 6, pooled")):
+    for scope, lab in (("Severson", "Stage 6: Severson"), ("Attia", "Stage 6: Attia"), ("pooled", "Stage 6: pooled")):
         rows.append((lab, get(scope, "KIT")["detectable_s_per_K"], get(scope, "Geslin")["detectable_s_per_K"]))
     wf = get("pooled", "KIT").get("without_flagged")
     if wf:
-        rows.append(("Stage 6, pooled, without flagged cells", wf["detectable_s_per_K"],
+        rows.append(("Stage 6: pooled,\nflagged cells out", wf["detectable_s_per_K"],
                      get("pooled", "Geslin")["without_flagged"]["detectable_s_per_K"]))
     y = np.arange(len(rows))[::-1]
     for (lab, k, g), yy in zip(rows, y):
@@ -149,13 +149,15 @@ def panel_c(ax, P, s5, lev, sw):
     ax.set_xscale("log")
     ax.set_yticks(y)
     ax.set_yticklabels([r[0] for r in rows], fontsize=5.4)
-    ax.set_xlabel("smallest |s| detectable at 80 % power (% per K)")
+    ax.set_xlim(0.3, 15)
+    ax.set_xlabel("|s| detectable at 80 % power (% per K)")
     ax.set_title("c  What the data could detect", loc="left", fontsize=6.8, fontweight="bold")
     h = [Line2D([], [], ls="none", marker="o", ms=3.4, mfc=INK, mec=INK, label="KIT floor"),
          Line2D([], [], ls="none", marker="o", ms=3.4, mfc="white", mec=INK, label="Geslin floor"),
          Line2D([], [], color=MUTED, lw=0.7, ls=(0, (1, 1.2)), label="Sandia's levers"),
          Line2D([], [], color=PAPER_COL["Attia"], lw=0.8, label="|s_w| measured here")]
-    ax.legend(handles=h, frameon=False, fontsize=5.2, loc="upper right", handlelength=1.6)
+    ax.legend(handles=h, frameon=False, fontsize=5.2, loc="upper center", bbox_to_anchor=(0.5, -0.2), ncol=2,
+              handlelength=1.6, columnspacing=1.0)
 
 
 def main(res_dir):
@@ -164,11 +166,11 @@ def main(res_dir):
     Bt = json.load(open(os.path.join(res_dir, "stage6_between.json")))["registered"]["pooled"]
     P = json.load(open(os.path.join(res_dir, "stage6_power.json")))["cases"]
     cl = cells(res_dir)
-    fig, axs = plt.subplots(1, 3, figsize=(7.2, 2.55), gridspec_kw={"width_ratios": [1, 1, 1.12]})
+    fig, axs = plt.subplots(1, 3, figsize=(7.2, 3.15), gridspec_kw={"width_ratios": [1, 1, 1.0]})
     panel_a(axs[0], cl, W, arch["levers"])
     panel_b(axs[1], cl, Bt, W)
     panel_c(axs[2], P, arch["stage5"], arch["levers"], W["B1"]["s_w_per_K"]["value"])
-    fig.tight_layout(w_pad=1.2)
+    fig.subplots_adjust(left=0.07, right=0.985, top=0.92, bottom=0.33, wspace=0.62)
     fig.savefig(os.path.join(res_dir, "stage6_figure.pdf"))
     fig.savefig(os.path.join(res_dir, "stage6_figure.png"), dpi=300)
     print("wrote", os.path.join(res_dir, "stage6_figure.pdf"))
