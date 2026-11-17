@@ -5,8 +5,8 @@ From the outputs of `l_read.py` (inputs/matr/life/<label>_life.csv): each enteri
 stored cycle_life, as the authors' Python loader and validation code take it, and for a carried cell the stored value of
 its 2017-05-12 entry plus the length the loader adds for its continuation (662, 981, 1060, 208 and 482 cycles, the
 loader's add_len, checked in V1 against the continuations' numbers of summary entries). Beside it, not used: the MATLAB
-loader's label, the first cycle below 0.88 Ah or one more than the number of cycles, over the combined summary for a
-carried cell.
+loader's label (`LoadData.m`): if the last discharge capacity is below 0.88 Ah, the first cycle below it, otherwise one
+more than the number of cycles, over the combined cycles of a carried cell.
 
 Usage: python3 -I src/stage6/l_table.py
 Writes inputs/matr/stage6_lifetimes.csv and adds the column cycle_life to results/stage6_cells.csv.
@@ -48,20 +48,20 @@ def main():
         rec = {"cell": r["cell"], "batch": r["batch"], "index": r["index"], "authors_key": r["authors_key"],
                "cycle_life_stored": stored, "summary_entries": n, "continuation_entries": "",
                "first_below_0p88_confirmed": e["first_below_0p88_confirmed"], "last_QDischarge": e["last_QDischarge"]}
+        # LoadData.m: if the last discharge capacity is below 0.88 Ah, the first cycle below it; else the number of
+        # cycles plus one; over the combined cycles of a carried cell
         if r["label"] == "b1" and r["index"] in cont:
             c = life["b2"][cont[r["index"]]]
             m = int(c["summary_entries"])
             rec["continuation_entries"] = m
             rec["cycle_life"] = stored + ADD_LEN[r["index"]]
-            if first is not None:
-                lab = first
-            elif c["first_below_0p88"]:
-                lab = n + int(c["first_below_0p88"])
+            if num(c["last_QDischarge"]) < 0.88:
+                lab = first if first is not None else n + int(c["first_below_0p88"])
             else:
                 lab = n + m + 1
         else:
             rec["cycle_life"] = stored
-            lab = first if first is not None else n + 1
+            lab = first if (num(e["last_QDischarge"]) < 0.88 and first is not None) else n + 1
         rec["matlab_label"] = lab
         out.append(rec)
     cols = ["cell", "batch", "index", "authors_key", "cycle_life", "cycle_life_stored", "summary_entries",
