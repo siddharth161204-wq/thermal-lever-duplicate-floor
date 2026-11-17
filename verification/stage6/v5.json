@@ -1,0 +1,60 @@
+{
+ "check": "V5 (D95)",
+ "cases": [
+  {
+   "scope": "Severson",
+   "floor": "KIT",
+   "detectable_s_per_K": 0.02819694381976943,
+   "sim_registered_shape_detectable_s_per_K": 0.027774490356445313,
+   "sim_normal_detectable_s_per_K": 0.028253585815429683,
+   "v5_rel_diff": -0.014982242970173476,
+   "v5_pass": true
+  },
+  {
+   "scope": "Severson",
+   "floor": "Geslin",
+   "detectable_s_per_K": 0.012061619730386991,
+   "sim_registered_shape_detectable_s_per_K": 0.011693046569824218,
+   "sim_normal_detectable_s_per_K": 0.011919532775878908,
+   "v5_rel_diff": -0.030557517879147067,
+   "v5_pass": true
+  },
+  {
+   "scope": "Attia",
+   "floor": "KIT",
+   "detectable_s_per_K": 0.022506620340602752,
+   "sim_registered_shape_detectable_s_per_K": 0.02203706359863281,
+   "sim_normal_detectable_s_per_K": 0.02244998168945312,
+   "v5_rel_diff": -0.020863049843287462,
+   "v5_pass": true
+  },
+  {
+   "scope": "Attia",
+   "floor": "Geslin",
+   "detectable_s_per_K": 0.009627507778850105,
+   "sim_registered_shape_detectable_s_per_K": 0.009324668884277345,
+   "sim_normal_detectable_s_per_K": 0.009652885437011722,
+   "v5_rel_diff": -0.03145558555019212,
+   "v5_pass": true
+  },
+  {
+   "scope": "pooled",
+   "floor": "KIT",
+   "detectable_s_per_K": 0.017354739900309495,
+   "sim_registered_shape_detectable_s_per_K": 0.01735020446777344,
+   "sim_normal_detectable_s_per_K": 0.01739886474609375,
+   "v5_rel_diff": -0.0002613368199182453,
+   "v5_pass": true
+  },
+  {
+   "scope": "pooled",
+   "floor": "Geslin",
+   "detectable_s_per_K": 0.007423722036520613,
+   "sim_registered_shape_detectable_s_per_K": 0.007325160980224609,
+   "sim_normal_detectable_s_per_K": 0.007400260925292968,
+   "v5_rel_diff": -0.013276501438380661,
+   "v5_pass": true
+  }
+ ],
+ "pass": true
+}

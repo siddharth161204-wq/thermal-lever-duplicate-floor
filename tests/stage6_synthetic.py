@@ -106,6 +106,10 @@ def main(scratch):
     print("B1 s_w (biased by the resistance it carries, as planted):", reg["B1"]["s_w_per_K"]["value"],
           "| sign test", reg["B3"], "| channel", {k: v for k, v in a0["channel"].items() if k != "instrument"})
     print("synthetic test pass:", ok)
+    rec = {"check": "V4 (D96 (1))", "pass": bool(ok),
+           "checks": {k: {"pass": bool(v[0]), "result": v[1]} for k, v in checks.items()}}
+    with open(os.path.join(ROOT, "verification", "stage6", "v4.json"), "w") as fh:
+        json.dump(rec, fh, indent=1, default=str)
     return ok
 
 

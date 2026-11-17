@@ -1,0 +1,147 @@
+{
+ "check": "V4 (D96 (1))",
+ "pass": true,
+ "checks": {
+  "A0 reader opened no lifetime or capacity field": {
+   "pass": true,
+   "result": []
+  },
+  "B2: temperature's lever with R held covers the planted s_w": {
+   "pass": true,
+   "result": {
+    "value": 0.058492155430942036,
+    "ci95": [
+     0.04734742597564558,
+     0.07188611011553746
+    ],
+    "mc_sd_of_ends": [
+     9.865999835245026e-05,
+     0.00022236367214743813
+    ],
+    "draws_used": 10000
+   }
+  },
+  "B2: resistance's slope covers the planted g": {
+   "pass": true,
+   "result": {
+    "value": -0.08783425276603687,
+    "ci95": [
+     -0.5068719103028485,
+     0.3439932918825702
+    ],
+    "mc_sd_of_ends": [
+     0.005254733976651493,
+     0.00615412570126081
+    ],
+    "draws_used": 10000
+   }
+  },
+  "C1: between-policy lever covers the planted s_b": {
+   "pass": true,
+   "result": {
+    "value": 0.11036714877255166,
+    "ci95": [
+     0.08808310056786858,
+     0.131913659998109
+    ],
+    "mc_sd_of_ends": [
+     0.000377020929634167,
+     0.00031001183980448876
+    ],
+    "draws_used": 10000
+   }
+  },
+  "B4: residual sd covers the planted cell noise": {
+   "pass": true,
+   "result": {
+    "value": 0.06904742688973667,
+    "ci95": [
+     0.05945018485891032,
+     0.07767796322605021
+    ],
+    "mc_sd_of_ends": [
+     0.0001348802107187623,
+     0.00012549384779187572
+    ],
+    "draws_used": 10000
+   }
+  },
+  "B1: s_w covers the planted within-set lever when T does not follow R": {
+   "pass": true,
+   "result": {
+    "value": 0.05648492031956953,
+    "ci95": [
+     0.04377967744889732,
+     0.06956812544631069
+    ],
+    "mc_sd_of_ends": [
+     0.00016430101382142182,
+     0.00018505597584231315
+    ],
+    "draws_used": 10000
+   }
+  },
+  "B1 pairs form covers it too": {
+   "pass": true,
+   "result": {
+    "value": 0.05777042409802003,
+    "ci95": [
+     0.04459068391464882,
+     0.07104837682304638
+    ],
+    "mc_sd_of_ends": [
+     0.00015074721831980983,
+     0.00018355286013232303
+    ],
+    "draws_used": 10000
+   }
+  },
+  "A0.7: the planted channel temperature is found": {
+   "pass": true,
+   "result": {
+    "recorded_by_batch": {
+     "2030-01-01": true,
+     "2030-02-01": true,
+     "2030-03-01": true
+    },
+    "pairs": 112,
+    "r": 0.7805732982001529,
+    "p_permutation_two_sided": 9.999000099990002e-05,
+    "permutations": 10000,
+    "seed": [
+     20261116,
+     70
+    ],
+    "channel_carries_temperature": true,
+    "cells_with_instrument": 116
+   }
+  },
+  "B5: the instrumented lever covers the planted lever": {
+   "pass": true,
+   "result": {
+    "seed": [
+     20261116,
+     201
+    ],
+    "cells": 116,
+    "sets": 30,
+    "s_iv_per_K": {
+     "value": 0.053150082314931284,
+     "ci95": [
+      0.046786142761433794,
+      0.06038489259857897
+     ],
+     "mc_sd_of_ends": [
+      9.182785534002716e-05,
+      0.00015503283368440215
+     ],
+     "draws_used": 10000
+    },
+    "first_stage_F": 282.17826400462127,
+    "first_stage_slope": 0.9784583067344917,
+    "registered": true,
+    "status": "registered (F > 10)"
+   }
+  }
+ }
+}

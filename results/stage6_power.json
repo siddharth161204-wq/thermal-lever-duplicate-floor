@@ -1,0 +1,239 @@
+{
+ "method": "D92",
+ "cases": [
+  {
+   "scope": "Severson",
+   "floor": "KIT",
+   "registered": true,
+   "cells": 80,
+   "sets": 27,
+   "df": 52,
+   "Sxx_K2": 55.568423200316715,
+   "T_dev_rms_K": 0.8334298350814896,
+   "sd_cell": 0.07363100410984225,
+   "sd_e_pair": 0.10412996462328801,
+   "detectable_s_per_K": 0.02819694381976943,
+   "sim_registered_shape_detectable_s_per_K": 0.027774490356445313,
+   "sim_normal_detectable_s_per_K": 0.028253585815429683,
+   "v5_rel_diff": -0.014982242970173476,
+   "v5_pass": true,
+   "seeds": [
+    [
+     20261116,
+     81
+    ],
+    [
+     20261116,
+     91
+    ]
+   ],
+   "pairs": 126,
+   "pair_dT_rms_K": 1.5945261455575588,
+   "shared_cell_F": 3.4010851531283666,
+   "pairs_form_detectable_s_per_K": 0.016425605245276153,
+   "pairs_form_shared_cells_detectable_s_per_K": 0.03029215246487653,
+   "normal_shape_detectable_s_per_K": 0.02488448658418375,
+   "without_flagged": {
+    "cells": 67,
+    "sets": 23,
+    "T_dev_rms_K": 0.7003794864615479,
+    "detectable_s_per_K": 0.03681162549868606
+   }
+  },
+  {
+   "scope": "Severson",
+   "floor": "Geslin",
+   "registered": true,
+   "cells": 80,
+   "sets": 27,
+   "df": 52,
+   "Sxx_K2": 55.568423200316715,
+   "T_dev_rms_K": 0.8334298350814896,
+   "sd_cell": 0.03149664650241325,
+   "sd_e_pair": 0.04454298465298393,
+   "detectable_s_per_K": 0.012061619730386991,
+   "sim_registered_shape_detectable_s_per_K": 0.011693046569824218,
+   "sim_normal_detectable_s_per_K": 0.011919532775878908,
+   "v5_rel_diff": -0.030557517879147067,
+   "v5_pass": true,
+   "seeds": [
+    [
+     20261116,
+     82
+    ],
+    [
+     20261116,
+     92
+    ]
+   ],
+   "pairs": 126,
+   "pair_dT_rms_K": 1.5945261455575588,
+   "shared_cell_F": 3.4010851531283666,
+   "pairs_form_detectable_s_per_K": 0.0070262722646934235,
+   "pairs_form_shared_cells_detectable_s_per_K": 0.012957873242637034,
+   "normal_shape_detectable_s_per_K": 0.010150847854244959,
+   "without_flagged": {
+    "cells": 67,
+    "sets": 23,
+    "T_dev_rms_K": 0.7003794864615479,
+    "detectable_s_per_K": 0.015746665002445003
+   }
+  },
+  {
+   "scope": "Attia",
+   "floor": "KIT",
+   "registered": true,
+   "cells": 45,
+   "sets": 9,
+   "df": 35,
+   "Sxx_K2": 88.86322259074007,
+   "T_dev_rms_K": 1.4052538133000114,
+   "sd_cell": 0.07363100410984225,
+   "sd_e_pair": 0.10412996462328801,
+   "detectable_s_per_K": 0.022506620340602752,
+   "sim_registered_shape_detectable_s_per_K": 0.02203706359863281,
+   "sim_normal_detectable_s_per_K": 0.02244998168945312,
+   "v5_rel_diff": -0.020863049843287462,
+   "v5_pass": true,
+   "seeds": [
+    [
+     20261116,
+     83
+    ],
+    [
+     20261116,
+     93
+    ]
+   ],
+   "pairs": 90,
+   "pair_dT_rms_K": 2.2219013703325268,
+   "shared_cell_F": 2.5,
+   "pairs_form_detectable_s_per_K": 0.01399149039704137,
+   "pairs_form_shared_cells_detectable_s_per_K": 0.022122488757514148,
+   "normal_shape_detectable_s_per_K": 0.019862638146214667,
+   "without_flagged": {
+    "cells": 28,
+    "sets": 9,
+    "T_dev_rms_K": 0.6898215984130054,
+    "detectable_s_per_K": 0.05976247241872937
+   }
+  },
+  {
+   "scope": "Attia",
+   "floor": "Geslin",
+   "registered": true,
+   "cells": 45,
+   "sets": 9,
+   "df": 35,
+   "Sxx_K2": 88.86322259074007,
+   "T_dev_rms_K": 1.4052538133000114,
+   "sd_cell": 0.03149664650241325,
+   "sd_e_pair": 0.04454298465298393,
+   "detectable_s_per_K": 0.009627507778850105,
+   "sim_registered_shape_detectable_s_per_K": 0.009324668884277345,
+   "sim_normal_detectable_s_per_K": 0.009652885437011722,
+   "v5_rel_diff": -0.03145558555019212,
+   "v5_pass": true,
+   "seeds": [
+    [
+     20261116,
+     84
+    ],
+    [
+     20261116,
+     94
+    ]
+   ],
+   "pairs": 90,
+   "pair_dT_rms_K": 2.2219013703325268,
+   "shared_cell_F": 2.5,
+   "pairs_form_detectable_s_per_K": 0.005985047092664255,
+   "pairs_form_shared_cells_detectable_s_per_K": 0.009463190358093952,
+   "normal_shape_detectable_s_per_K": 0.00810234187971254,
+   "without_flagged": {
+    "cells": 28,
+    "sets": 9,
+    "T_dev_rms_K": 0.6898215984130054,
+    "detectable_s_per_K": 0.025564196640248324
+   }
+  },
+  {
+   "scope": "pooled",
+   "floor": "KIT",
+   "registered": true,
+   "cells": 125,
+   "sets": 36,
+   "df": 88,
+   "Sxx_K2": 144.43164579105678,
+   "T_dev_rms_K": 1.0749200743908611,
+   "sd_cell": 0.07363100410984225,
+   "sd_e_pair": 0.10412996462328801,
+   "detectable_s_per_K": 0.017354739900309495,
+   "sim_registered_shape_detectable_s_per_K": 0.01735020446777344,
+   "sim_normal_detectable_s_per_K": 0.01739886474609375,
+   "v5_rel_diff": -0.0002613368199182453,
+   "v5_pass": true,
+   "seeds": [
+    [
+     20261116,
+     85
+    ],
+    [
+     20261116,
+     95
+    ]
+   ],
+   "pairs": 216,
+   "pair_dT_rms_K": 1.8815291631076372,
+   "shared_cell_F": 2.877506131001562,
+   "pairs_form_detectable_s_per_K": 0.010597141822296893,
+   "pairs_form_shared_cells_detectable_s_per_K": 0.01797615794880167,
+   "normal_shape_detectable_s_per_K": 0.015315978745134844,
+   "without_flagged": {
+    "cells": 95,
+    "sets": 32,
+    "T_dev_rms_K": 0.6972843030575989,
+    "detectable_s_per_K": 0.030832708740464437
+   }
+  },
+  {
+   "scope": "pooled",
+   "floor": "Geslin",
+   "registered": true,
+   "cells": 125,
+   "sets": 36,
+   "df": 88,
+   "Sxx_K2": 144.43164579105678,
+   "T_dev_rms_K": 1.0749200743908611,
+   "sd_cell": 0.03149664650241325,
+   "sd_e_pair": 0.04454298465298393,
+   "detectable_s_per_K": 0.007423722036520613,
+   "sim_registered_shape_detectable_s_per_K": 0.007325160980224609,
+   "sim_normal_detectable_s_per_K": 0.007400260925292968,
+   "v5_rel_diff": -0.013276501438380661,
+   "v5_pass": true,
+   "seeds": [
+    [
+     20261116,
+     86
+    ],
+    [
+     20261116,
+     96
+    ]
+   ],
+   "pairs": 216,
+   "pair_dT_rms_K": 1.8815291631076372,
+   "shared_cell_F": 2.877506131001562,
+   "pairs_form_detectable_s_per_K": 0.004533069105167984,
+   "pairs_form_shared_cells_detectable_s_per_K": 0.007689541915526885,
+   "normal_shape_detectable_s_per_K": 0.00624767440769909,
+   "without_flagged": {
+    "cells": 95,
+    "sets": 32,
+    "T_dev_rms_K": 0.6972843030575989,
+    "detectable_s_per_K": 0.013189103417108845
+   }
+  }
+ ]
+}

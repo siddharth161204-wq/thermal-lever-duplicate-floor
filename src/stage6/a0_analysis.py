@@ -234,7 +234,9 @@ def main(ext, out_dir, quick=False, batches=None):
                     "threshold": 100 * lever, "holds": bool(p1) if (pooled_kit["v5_pass"] or p1 == p1_sim) else None,
                     "note": "" if (pooled_kit["v5_pass"] or p1 == p1_sim) else "not scored: V5 fails and the simulation gives the other verdict"},
              "P6": {"quantity": "pooled within-set correlation of the registered temperature on odd and on even cycles",
-                    "value": r6, "threshold": 0.8, "holds": bool(r6 > 0.8)}}
+                    "value": r6, "threshold": 0.8, "holds": bool(r6 > 0.8),
+                    "note": ("agreement of each reading with itself from cycle to cycle; a thermocouple's contact that "
+                             "lasts the window passes it, so it does not show that T measures the cell (D89)")}}
     os.makedirs(out_dir, exist_ok=True)
     json.dump(res, open(os.path.join(out_dir, "stage6_a0.json"), "w"), indent=1)
     json.dump({"method": "D92", "cases": pw}, open(os.path.join(out_dir, "stage6_power.json"), "w"), indent=1)

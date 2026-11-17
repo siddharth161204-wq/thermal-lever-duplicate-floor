@@ -1,0 +1,17 @@
+{
+ "scored_at": "end of Part A0",
+ "P1": {
+  "quantity": "pooled detectable |s| under the KIT floor, % per K",
+  "value": 1.7354739900309495,
+  "threshold": 3.371837126587428,
+  "holds": true,
+  "note": ""
+ },
+ "P6": {
+  "quantity": "pooled within-set correlation of the registered temperature on odd and on even cycles",
+  "value": 0.9999830184227517,
+  "threshold": 0.8,
+  "holds": true,
+  "note": "agreement of each reading with itself from cycle to cycle; a thermocouple's contact that lasts the window passes it, so it does not show that T measures the cell (D89)"
+ }
+}

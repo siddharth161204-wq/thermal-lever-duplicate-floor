@@ -22,12 +22,17 @@ import a0_traces as TR                  # noqa: E402
 # takes all 45 cells of the struct. The site's channel numbers for the same cells are checked in D86.
 BATCHES = {
     "b1": {"date": "2017-05-12", "paper": "Severson", "authors_prefix": "b1c",
-           "drop": {i: "excluded by the authors' loader: does not reach 80 % of nominal capacity"
+           "drop": {i: "excluded by the authors' loader: does not reach 80 % (the site: stopped before 80 %)"
                     for i in (8, 10, 12, 13, 22)}},
     "b2": {"date": "2017-06-30", "paper": "Severson", "authors_prefix": "b2c", "drop": {},
            "carried": {7: ("b1", 0), 8: ("b1", 1), 9: ("b1", 2), 15: ("b1", 3), 16: ("b1", 4)}},
     "b3": {"date": "2018-04-12", "paper": "Severson", "authors_prefix": "b3c",
-           "drop": {i: "excluded by the authors' loader: noisy channel" for i in (37, 2, 23, 32, 42, 43)}},
+           "drop": {37: "excluded by the authors' loader as a noisy channel (the site: channel 46's noisy voltage)",
+                    23: "excluded by the authors' loader as a noisy channel (the site: stopped before 80 %)",
+                    32: "excluded by the authors' loader as a noisy channel (the site: stopped before 80 %)",
+                    2: "excluded by the authors' loader as a noisy channel",
+                    42: "excluded by the authors' loader as a noisy channel",
+                    43: "excluded by the authors' loader as a noisy channel"}},
     "b9": {"date": "2019-01-24", "paper": "Attia", "authors_prefix": None, "drop": {}},
 }
 WINDOW = (2, 100)
