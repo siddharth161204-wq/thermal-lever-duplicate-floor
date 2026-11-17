@@ -18,3 +18,5 @@ python3 -I verification/stage6/v2_separate.py
 python3 -I verification/stage6/v3_hand.py
 python3 -I src/stage6/s6_paper.py
 python3 -I src/stage6/s6_figure.py
+# post hoc, after the results (D97 (4), D98):
+python3 -I src/stage6/s6_posthoc.py

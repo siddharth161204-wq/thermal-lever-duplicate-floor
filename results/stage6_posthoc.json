@@ -1,0 +1,108 @@
+{
+ "note": "post hoc, after every registered result; nothing here is scored (DECISIONS.md D97 (4), D98)",
+ "channel": {
+  "T_min": {
+   "measure": "T_min",
+   "pairs": 108,
+   "r": 0.12107675375547658,
+   "p_permutation_two_sided": 0.20475904819036192,
+   "permutations": 5000,
+   "seed": [
+    20261117,
+    1
+   ]
+  },
+  "swing_med": {
+   "measure": "swing_med",
+   "pairs": 108,
+   "r": -0.08212832522696446,
+   "p_permutation_two_sided": 0.41011797640471903,
+   "permutations": 5000,
+   "seed": [
+    20261117,
+    1
+   ]
+  }
+ },
+ "leave_one_set_out_pooled": {
+  "T_reg": {
+   "s_w": {
+    "full": -0.02547455578105727,
+    "sets_left_out_in_turn": 36,
+    "min": -0.03331889869344242,
+    "set_at_min": "2019-01-24|5.2-5.2-4.8-4.16",
+    "max": -0.021709127677622984,
+    "set_at_max": "2018-04-12|5C(67%)-4C-newstructure"
+   },
+   "s_b": {
+    "full": 0.09704200409547259,
+    "sets_left_out_in_turn": 80,
+    "min": 0.06712074485953082,
+    "set_at_min": "2017-05-12|3.6C(80%)-3.6C",
+    "max": 0.1159075569089565,
+    "set_at_max": "2017-06-30|1C(4%)-6C"
+   }
+  },
+  "T_min": {
+   "s_w": {
+    "full": -0.11236663470042067,
+    "sets_left_out_in_turn": 36,
+    "min": -0.11789445366704547,
+    "set_at_min": "2017-06-30|4.8C(80%)-4.8C",
+    "max": -0.10278916032464532,
+    "set_at_max": "2018-04-12|5.6C(19%)-4.6C-newstructure"
+   }
+  }
+ },
+ "s_w_by_batch": {
+  "2017-05-12": {
+   "cells": 37,
+   "sets": 18,
+   "s_w": 0.02874973758019168,
+   "ci95": [
+    -0.05775267759837665,
+    0.07608146098899893
+   ],
+   "draws_used": 10000,
+   "seed": [
+    20261117,
+    10
+   ]
+  },
+  "2017-06-30": {
+   "cells": 3,
+   "sets": 1,
+   "s_w": 0.0032131936165733475,
+   "ci95": null,
+   "note": "one set of two or more: every draw takes it, so there is no interval"
+  },
+  "2018-04-12": {
+   "cells": 40,
+   "sets": 8,
+   "s_w": -0.04986151078475662,
+   "ci95": [
+    -0.07745406428692285,
+    -0.024833412243650852
+   ],
+   "draws_used": 10000,
+   "seed": [
+    20261117,
+    12
+   ]
+  },
+  "2019-01-24": {
+   "cells": 45,
+   "sets": 9,
+   "s_w": -0.019757217323626904,
+   "ci95": [
+    -0.04272987695446999,
+    0.010400480815957498
+   ],
+   "draws_used": 10000,
+   "seed": [
+    20261117,
+    13
+   ]
+  }
+ }
+}
