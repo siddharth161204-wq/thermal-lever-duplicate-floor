@@ -1,6 +1,6 @@
 # The thermal lever against the duplicate-cell floor: how large a temperature spread a lifetime divergence needs, and how large a module offers
 
-Siddharth Satte, Independent researcher, Pune, India, 17 November 2026 (first version 10 October 2026). doi.org/10.5281/zenodo.23309130 (all versions). Predictions commit 24ab8d3, public at 08:02 UTC on 10 October before any lever or spread was computed. [github.com/siddharth161204-wq/thermal-lever-duplicate-floor](https://github.com/siddharth161204-wq/thermal-lever-duplicate-floor){.nobr}.
+Siddharth Satte, Independent researcher, Pune, India, 18 November 2026 (first version 10 October 2026). doi.org/10.5281/zenodo.23309130 (all versions). Predictions commit 24ab8d3, public at 08:02 UTC on 10 October before any lever or spread was computed. [github.com/siddharth161204-wq/thermal-lever-duplicate-floor](https://github.com/siddharth161204-wq/thermal-lever-duplicate-floor){.nobr}.
 
 <div class="headline">
 
