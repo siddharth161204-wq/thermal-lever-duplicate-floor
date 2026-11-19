@@ -4,7 +4,7 @@ How large a temperature spread a lifetime divergence needs, and how large a modu
 
 Author: Siddharth Satte, independent researcher, Pune, India (ORCID 0009-0001-3584-1008).
 
-Archived at https://doi.org/10.5281/zenodo.23753694 (version v1.4.0: Stage 1, and Stages 2 to 5 below; all versions https://doi.org/10.5281/zenodo.23309130). Stage 6 below is version v1.5.0, to be archived under the same all-versions DOI.
+Archived at https://doi.org/10.5281/zenodo.24368252 (version v1.5.0: Stage 1, and Stages 2 to 6 below; all versions https://doi.org/10.5281/zenodo.23309130). Version v1.4.0 (Stages 1 to 5) is https://doi.org/10.5281/zenodo.23753694.
 
 Nominally identical cells cycled under one protocol at one temperature still drift apart. In the Stanford dynamic-cycling dataset (Geslin et al., Nature Energy 2025; 92 commercial cylindrical SiOx-graphite/NCA cells, 47 protocols in duplicate, all at 35 C) the duplicate cells' lifetimes to 90 % state of health differ by 3.0 % on average and by 8.7 % at the 95th percentile, and the worst of eight identical cells falls 4.1 % below the module mean by selection alone (the floor, doi.org/10.5281/zenodo.23205413). A thermal explanation of cell-to-cell divergence in a module has to exceed that floor. This repository asks two questions before any module experiment or model is built:
 
